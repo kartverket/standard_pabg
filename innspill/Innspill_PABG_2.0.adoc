@@ -1,0 +1,9 @@
+== Innspill til endringer i Standard Produksjon av Basis geodata 2.0
+
+[cols="5,10,10,10", options="header"]
+|===
+|Når
+|Fra hvem
+|Innspill
+|Tilsvar
+|===

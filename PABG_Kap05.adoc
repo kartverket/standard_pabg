@@ -1,0 +1,174 @@
+== Kartlegging med geodetiske metoder
+
+=== Innledning
+
+Geodetiske metoder benyttes til kartlegging ved høye krav til nøyaktighet eller når forholdene ellers gjør det naturlig, f.eks. ved mindre ajourføringer eller ved måling i områder som ikke kan kartlegges fotogrammetrisk pga. dårlig innsyn.
+
+Innmåling av eiendomsgrenser (matrikkelenhetsgrenser) og ledninger behandles ikke i denne standarden. I stedet vises det til standardene "Stedfesting av matrikkelenhets- og råderettsgrenser", "Norm for ledningskart" og "Norm for VA-ledningskartverk".
+
+Standarden "Satellittbasert posisjonsbestemmelse" gir anbefalinger om hvordan posisjonsbestemmelse med satellitter bør utføres i kart- og oppmålingsarbeider.
+
+=== Målemetoder
+
+Geodetisk kartlegging foregår enten med satellittbaserte metoder eller ved bruk av totalstasjon.
+
+==== Satellittbaserte metoder (GNSS)
+
+Satellittbasert måling baseres på ulike typer utstyr og satellittsystemer (GPS og GLONASS). Målingene kan utføres som sanntidsmåling eller med posisjonsberegning i ettertid. Sanntidsmåling vil være mest aktuelt. Nøyaktighet, oppgitt som punktstandardavvik, grunnriss (S~p~) og standardavvik i høyde (S~h~), ved aktuelle målemetoder er vist i tabell <<tab-satelittbasert-met-kartlegging>>.
+
+[[tab-satelittbasert-met-kartlegging]]
+.Satelittbaserte metoder for kartlegging
+[width="100%",options="header"]
+|====================
+|Metode |Oppnåelig nøyaktighet||Aktuell områdetype
+|Differensiell fasemåling|0,0005 - 0,1000|0,01 - 0,20|1, 2, 3 og 4
+|Differensiell kodemåling|0,3 - 1|0,5 - 3|3 og 4
+|Absolutt kodemåling|2 - 5|3 - 15| 4
+|====================
+I de aktuelle områdetypene forutsettes det at man måler med en nøyaktighet i den bedre delen av det angitte intervallet. Områdetypene i tabell <<tab-satelittbasert-met-kartlegging>> er hentet fra https://sosi.geonorge.no/standarder/FKB_generell_del/5.0[Produktspesifikasjon FKB].
+Denne standarden omhandler differensielle satellittbaserte metoder. Andre metoder kan benyttes i den grad det kan dokumenteres at kvalitetskravene tilfredsstilles.
+
+===== Sanntidsmåling
+Den mest aktuelle metoden for posisjonsbestemmelse i sanntid er RTK. I RTK overføres korreksjonsdata til satellittmottakeren (roveren) fra en referanse¬stasjon i et kjent punkt. En variant av RTK er nettverks-RTK hvor korreksjonsdataene kommer fra en virtuell referansestasjon, beregnet fra et nett av faste stasjoner og overføres til satellittmottakeren fra et sentralt kontrollsenter. Både private firma og Statens kartverk tilbyr sanntidstjenester basert på nettverks-RTK. 
+
+====
+[[Krav-1-Sanntidsmåling]]
+*KRAV 1 SANNTIDSMÅLING*
+
+* For kontroll skal minimum ett fastmerke (kontrollpunkt) registreres før og etter innmåling.
+* Under målingen skal en også oppsøke andre fastmerker. Dersom det ikke finnes lett tilgjengelige fastmerker, kan en kontrollere mot tidligere bestemte objekttyper av god kvalitet og som er godt definert, f.eks. kummer. Avvikene skal ikke overstige 1/3 av kravet til stedfestingsnøyaktighet for de mest nøyaktige objekttypene som skal innmåles. Avvikene skal dokumenteres.
+* Ved bytte av referansestasjon, skal minst en godt definert objekttype fra forrige oppstilling innmåles på nytt for kontroll. Avvikene skal dokumenteres.
+====
+
+
+Referansestasjon bør plasseres i nærmeste fastmerke med pålitelig kvalitet. I inhomogene nett bør en sørge for at referansen passer sammen med de øvrige fastmerkene i kartleggings-området. Dersom det ikke finnes aktuelle fastmerker må oppdragsgiver kontaktes.
+
+Når det gjelder den praktiske gjennomføringen av målearbeidene og kravene til disse, vises det til standarden "Satellittbasert posisjonsbestemmelse".
+
+===== Transformasjoner
+Ved differensielle satellittbaserte metoder fremkommer ellipsoidiske høyde¬forskjeller. Ønskes høyder i NN1954/NN2000 eller et lokalt vertikalt datum, må høyde¬forskjellene korrigeres. Dette kan gjøres på flere måter:
+
+* Korrigerte høydeforskjeller kan utledes fra transformasjonspunkt der både ellipsoidisk og ortometrisk høyde (NN1954/NN2000) er kjent, og der referansestasjonen er et av transformasjonspunktene.
+
+* Korrigerte høydeforskjeller kan utledes fra en eksisterende høydereferanse¬modell (se standarden "Norges offisielle høydesystem og referansenivåer").
+
+Hvor vidt korrigeringen kan gjøres i sanntid, avhenger av instrument¬utrustningen med tilhørende programvare.
+
+Dersom kartdataene leveres i et lokalt datum, står vi overfor nye utfordringer som setter ytterligere krav til utførelsen. De må da transformeres fra EUREF89, enten i sanntid eller i ettertid. Dette kan skje på ulike måter som beskrevet i standardene "Satellittbasert posisjonsbestemmelse" og "Koordinatbaserte referansesystemer":
+
+* ved bruk av gitte transformasjonsparametere
+* ved bruk av en offisiell transformasjon (en fylkes- eller kommuneformel)
+* ved å beregne nye transformasjonsparametere
+
+Den siste metoden krever transformasjonspunkter; punkter som har kjente koordinater i begge datum. Antall transformasjonspunkter er avhengig av størrelsen på området. Fem punkter godt fordelt i området er et minimum. Benyttet transformasjon skal dokumenteres.
+Ved beregning av nye transformasjonsparametere skal transformasjons¬punktene måles inn med minimum to "uavhengige" vektorer, f.eks. til to ulike tidspunkter eller fra to ulike referansestasjoner.
+
+Ved beregning av ny transformasjon skal det i tillegg dokumenteres:
+
+* grovfeil-søk av observasjonene til fellespunktene
+* hvilke transformasjonsparametere som er brukt
+* restavvik i transformasjonspunktene
+
+Overstiger restfeilene i transformasjonspunktene 1/3 av kravene til de mest nøyaktige objekttypene som skal innmåles, må oppdragsgiver kontaktes.
+
+Avgjørende for et godt resultat med transformasjon er hvorvidt trans¬formasjonsformelen er representativ for hele kartleggingsområdet – ikke bare i transformasjonspunktene. Det må derfor utføres kontroll mot andre fastmerker som måtte finnes i kartleggingsområdet. Særlig viktig er fastmerker som er benyttet til innmåling av andre objekttyper, f.eks. polygonpunkt som er benyttet til innmåling av eiendomsgrenser (matrikkelenhetsgrenser).
+
+For transformasjonsformelens gyldighetsområde har vi følgende retningslinjer:
+
+* Det skal som hovedregel kun gjøres målinger innenfor omrisset av transformasjonspunktene.
+* Innenfor omrisset av transformasjonspunktene skal det, hvis mulig, ikke kartlegges mer enn 1 km fra et transformasjonspunkt eller annet kontrollert fastmerke (kontrollpunkt).
+* Utenfor omrisset av transformasjonspunktene kan det kartlegges opptil 1 km forutsatt at kravene i de foregående kulepunktene er tilfredsstilt.
+* Avvikene skal dokumenteres og må ikke overskride 1/3 av kravene til de mest nøyaktige objekttypene. Ved overskridelse må oppdragsgiver kontaktes.
+* Finnes ingen fastmerker, må oppdragsgiver kontaktes.
+
+==== Bruk av totalstasjon
+Stasjonspunkter kan være et fastmerke eller et punkt som bestemmes med kontroll, f.eks. ved fri oppstilling. Ved fri oppstilling skal en måle retning, avstand og vertikalvinkel mot minimum to fastmerker.
+	
+Stasjonspunkter og orienteringspunkter skal fortrinnsvis være fastmerker i Stamnettet, Landsnettet eller det kommunale nettet (gjelder for kommuner), eller være punkter innmålt fra slike fast¬merker. Slike punkter dokumenteres ved beregning av ytre pålitelighet i program¬vare som håndterer dette. Påliteligheten må tilfredsstille de krav som stilles i standarden Grunnlagsnett for den aktuelle områdetypen.
+
+====
+[[Krav-2-innmåling-totalstasjon]]
+*KRAV 2 INNMÅLING MED TOTALSTASJON*
+For å sikre seg så godt som mulig mot grove feil må det settes krav til innmålingen av objekttyper: 
+
+* Det skal leses av mot samme orienteringspunkt først og sist i oppstillingen. +
+* Det skal om mulig benyttes minst to orienteringssikt i hver oppstilling. +
+* Ved ny oppstilling skal minst en godt definert objekttype fra forrige oppstilling innmåles på nytt for kontroll. +
+* Ved fri oppstilling skal standardavviket på bestemmelsen av oppstillingspunktet ikke overstige 1/3 av kravene til de mest nøyaktige objekttypene som skal innmåles. +
+* Innmåling av objekttyper skal bare unntaksvis gjøres med større avstander enn i tabell <<tab-Maksavstand-totalstasjon>>. Avstandene må ikke i noe tilfelle overstige avstanden til orienteringspunktene. Refraksjonsforholdene kan være avgjørende for høydenøyaktigheten. I noen tilfeller vil det innebære at avstandene må være kortere.
+====
+
+Innmåling av kartobjekter ved bruk av totalstasjon kan utføres i en kikkertstilling dersom instrumentleverandørens anbefalte kalibreringsprosedyrer av instrumentet er foretatt. Utførte kalibreringer skal dokumenteres. 
+
+[[tab-Maksavstand-totalstasjon]]
+.Maksimalavstander ved bruk av totalstasjon
+[width="100%",options="header"]
+|====================
+|Områdetype|Maksimalavstand
+|1| 300 m
+|2| 500 m
+|3| 1000 m
+|4| 2000 m
+|====================
+
+=== Måleinstrumenter
+
+Oppdragstaker er ansvarlig for å bruke instrumenter, materiell og måleopplegg som gir tilfredsstillende resultater i forhold til oppgavene.
+	
+Aktuelle dokumenter:
+
+* Standarden https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/grunnlagsnett-1.1-standarder-geografisk-informasjon.pdf[Grunnlagsnett], kapittel 7 Kontroll og kalibrering av måleutstyr.
+* Standarden https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/kontroll-og-kalibrering-av-elektrooptiske-avstandsmalere-2.1-standarder-geografisk-informasjon.pdf[Kontroll og kalibrering av elektrooptiske avstandsmålere].
+* Standarden https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/satellittbasert-posisjonsbestemmelse-2.1-standarder-geografisk-informasjon.pdf[Satellittbasert posisjonsbestemmelse].
+
+Oppdragstakeren skal i sin rapport dokumentere at instrumentene som blir brukt, minst har den nøyaktigheten som kreves for å tilfredsstille kravene til sluttproduktet. En slik dokumentasjon gis for hvert benyttet instrument. Fabrikkmerke, type og serienummer oppgis. Det vises til Instrument-levnetsoversikten i Tillegg B i standarden https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/grunnlagsnett-1.1-standarder-geografisk-informasjon.pdf[Grunnlagsnett].
+
+=== Kvalitetskrav til innmålte kartobjekter
+Hovedregelen er at innmålingen gjøres slik at gjeldende krav til innhold, struktur og kvalitet for den aktuelle produktspesifikasjonen, blir overholdt. I tillegg vises det til standarden https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/plassering-og-beliggenhetskontroll-2002-08-19-standarder-geografisk-informasjon.pdf[Plassering og beliggenhetskontroll].
+
+Produktspesifikasjon FKB tar utgangspunkt i fotogrammetriske metoder. Dersom måleopplegg, instrumenter og utførelse er av god kvalitet, vil kvaliteten på de geodetisk bestemte kartdataene være langt bedre enn kravene i Produktspesifikasjon FKB.
+	
+For spesielle prosjekter kan andre krav være aktuelle. Ved særskilt høye krav til nøyaktighet for kartdataene kan kravene ofte være av størrelsesorden 1–3 cm i grunnriss og høyde. Dette gjelder f.eks. ved innmåling av prosjekteringsdata til enkelte veganlegg.
+
+=== Beregning
+Oppdragstaker er ansvarlig for at valg av måleopplegg, programvare og beregningsopplegg gir god nok nøyaktighet og pålitelighet i forhold til kravene.
+
+Ved bruk av satellittutstyr er beregning beskrevet i standarden https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/satellittbasert-posisjonsbestemmelse-2.1-standarder-geografisk-informasjon.pdf[Satellittbasert posisjonsbestemmelse].
+
+=== Egenkontroll og rapportering (geodetisk kartlegging)
+Det skal leveres en rapport for den geodetiske kartleggingen, med leveransene som vedlegg til rapporten. Generelt gjelder at alle resultat fra beregninger skal vurderes og kommenteres. Ev. problemer i prosjektet skal omtales spesielt. Rapporten er en del av leveransen og skal leveres samtidig med det produktet som rapporten omhandler. 
+
+====
+[[Krav-3-Rapportering-geodetisk-kartlegging]]
+*KRAV 3 RAPPORTERING - GEODETISK KARTLEGGING*
+
+* Rapport for geodetisk kartlegging skal som minimum inneholde informasjonen spesifisert i tabell <<tab-rapp-geodetisk-kartlegging>>
+====
+
+[[tab-rapp-geodetisk-kartlegging]]
+.Rapport for geodetisk kartlegging
+[cols="3*",options="header"]
+|===
+|Kategori|Element|Innhold
+.6+|Generell informasjon|Oppdragsgiver|(adresse og prosjektleder)
+|Oppdragets navn og nummer|(LACHFFXX)
+|Oppdragstaker|(adresse, prosjektleder, fagansvarlig og underleverandører)
+|Beskrivelse av oppdraget|(kontraktsarbeid, areal, standard)
+|Antall eksemplar av rapport|(antall og oppbevaringssted)
+|Datering og signatur|(dd.mm.åååå, sign)
+.11+|Geodetisk kartlegging|Utførelse av målearbeidene|(navn, tidspunkt, beskrivelse av ev. vanskeligeheter)
+|Benyttet måleutstyr|(merke, type, nummer)
+|Dokumentasjon|(kalibreringssertifikat)
+|Geodetisk og vertikalt grunnlag|(geodetsik datum, vertikalt datum, ellipsoidisk/ortometrisk høyde, kartprojeksjon, akse/sone)
+|Benyttede grunnlagspunkter|(navn, nummer, dokumentasjon av kvalitet)
+|Målemetode og -prosedyre|Valgt målemetode og -prosedyre skal begrunnes
+|HREF|Versjon av HREF benyttet under datafangst
+|Innmålte objekttyper|Liste over alle objekter
+|Produktspesifikasjon, objektkatalog og topologisk nivå|(versjon)
+|Egenkontroll|Avvik ved kontrollmåling av objekter innmålt fra flere stasjoner, samt kontroll av tidligere kartlagte objekter
+|Dataleveranse|Spesifikasjon av leveranseformat og ev. inndeling i filer
+.4+|Vedlegg|Observasjoner|Sortert utlisting av observasjonene på digital form
+|Beregninger|Beregningsresultatet på digital form
+|Transformasjon|Resultat av ev. grovefeil-søk, transformasjonsparametre og restfeil i transformasjonspunktene, avvik i kontrollpunktene skal dokumenteres
+|Innmålte objekter|Innmålte objekter på avtalt vektorformat
+|===

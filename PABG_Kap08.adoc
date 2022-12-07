@@ -1,0 +1,65 @@
+== Konvertering av analoge kart til digitale vektordata
+
+=== Generelt
+De metoder som omtales her, manuell digitalisering og skanning/vektorisering, gir kun x- og y-koordinater. Om dataene i tillegg skal tildeles z-koordinat (høyde), må dette gjennomføres ut fra behov og muligheter.
+I dette kapitlet behandles ikke produksjonsmetoder for etablering av rasterdata (geo¬referert digitalt kartbilde) som produkt.
+
+=== Manuell digitalisering
+Manuell digitalisering av eksisterende kart blir ofte benyttet som en rask og enkel måte å skaffe til veie et digitalt kart. Kartet blir digitalisert av en operatør som følger alle linjer/punkter og tildeler objekttype og egenskaper basert på sin tolking.
+
+Dette kapittelet omfatter digitaliseringen direkte på skjerm, metoden forutsetter at kartet som skal digitaliseres er skannet og georeferert.
+ 
+==== Innpassing
+Ved skjermdigitalisering er kartbildet normalt allerede innpasset. Man skal likevel, så langt som mulig, kontrollere innpassingen. Dette gjøres ved at man digitaliserer 2 kontrollpunkter, f.eks. rutenettskryss.
+
+Opplysninger om målemetode og nøyaktighet kommer til syne under kvalitets¬angivelsen som blir lagt til hver gruppe som blir digitalisert.
+
+==== Tildeling av objekttype
+Alt som digitaliseres, skal gis en objekttype og ev. andre egenskaper (f.eks. ..HØYDE) i henhold til gjeldende spesifikasjoner for oppdraget. Det normale vil være at opera¬tøren tolker kartet og gir objekttype i henhold til denne tolkingen, eller at kartet er utarbeidet som et manuskart der kodingen går klart frem av farge- eller symbolbruk.
+
+==== Registreringsmetode
+Registrering av enkeltpunkter gir x- og y-koordinater og tilhørende objekttype. Registrering av linjer kan gjøres på ulike måter:
+
+* Kontinuerlig registrering: Dette innebærer et gitt antall punkter pr. tidsenhet eller pr. avstandsenhet. Denne metoden kan gi svært mange punkter, men blir ofte benyttet fordi den er rask. Antall punkter som registreres pr. sekund, må sees i sammenheng med aktuell målestokk som benyttes. Likeså må en ev. punktsiling, dvs. reduksjon av antall punkter uten at linjens utseende endres, tilpasses til den aktuelle målestokk som benyttes.
+* Enkeltpunkter i sekvens: Dette gir færre punkter, men kan gi en noe kantete kurve og ta noe lenger tid enn ovenstående metode.
+
+Ved digitalisering benyttes de samme registreringsmetodene som ved fotogrammetrisk kartlegging. I Produktspesifikasjon FKB er det for hver objekttype angitt hvilken metode som fortrinnsvis skal benyttes.
+
+ 
+==== Topologi
+Under digitaliseringen er det viktig å ta hensyn til hvilken topologi det ferdige resultatet skal ha, og hvilke metoder som skal benyttes for å etablere topologien. Produktspesifikasjoner vil angi krav til topologi.
+
+Datasett med topologi vil være på SOSI-nivå 3 (linjenettverk) eller 4 (lukkede poly¬goner). Under digitaliseringen må alle linjer ende i et knutepunkt mot andre linjer. Dette kan skje ved at digitaliseringsprogrammet beregner knutepunktet under digitali¬seringen, eller at det skjer i en prosess etter selve digitaliseringen. Danning av knute¬punkt, under eller etter digitaliseringen, skjer ved at punkter som ligger innen en viss avstand (snapperadius), slås sammen. Linjer som krysser hverandre, eller som ender innen en viss avstand fra en annen linje, vil også få dannet knutepunkt. Hvis enkelte linjer har en høyere nøyaktighet enn andre, bør de gis en tyngre vekting i beregning av endelig plassering av knutepunktet.
+
+=== Automatisk digitalisering
+Automatisk digitalisering omhandler skanning, vektorisering og ev. mønster-/symbol-gjenkjenning. Skanning gir rasterdata, mens vektorisering konverterer rasterdata til vektordata. Mønster-/symbolgjenkjenning konverterer rasterbilder av symboler, tekst og tall til meningsfylt informasjon. Metoden forutsetter ofte interaktiv styring og kontroll fra operatøren. Nøyaktighetsmessig vil det være liten praktisk forskjell på denne metoden i forhold til manuell digitalisering. Automatisk digitalisering kan resultere i en "dårlig datastruktur", f.eks. er det vanlig at rette linjer blir oppdelt i flere små linjebiter. Dette kan rettes opp ved etterprosessering.
+
+Ved skanning av rissefolier blir det best resultat med gjennomlysning, altså underlys.
+
+==== Skanneoppløsning
+Kravet til oppløsning vil være avhengig av kartet som skal skannes. Oppløsningen skal være bedre enn halvparten av den tynneste linje eller detalj som skal skannes. Det betyr at hvis tynneste linje er 0,1 mm, skal oppløsningen være 0,05 mm eller bedre. Oppløsningen må oppgis i optisk verdi, altså det som leses direkte i skanneren, og ikke som en oppløsning som er et resultat av en beregning i etterkant.
+
+==== Kalibrering av skanner
+Skannere skal kalibreres for systematiske feil, og rasterfila fra skanningen skal korrigeres for systematiske feil ved hjelp av denne kalibreringen. Kalibreringen av skanneren foretas med jevne mellomrom, f.eks. en gang hvert år.
+
+==== Innpassing/transformasjoner
+Kartet som skal skannes, må ha klart definerte merker eller punkter (rammemerker), med kjente terrengkoordinater for at de skannede data skal kunne transformeres til terrengkoordinater. Det bør være minst 6 slike rammemerker på kartet, men av praktiske årsaker vil det ofte være vanskelig å få flere enn 4. Dette kan godtas hvis kartet er av stabilt fysisk materiale (f.eks. kartfolier) og nøyaktighetskravet ikke er for høyt.
+
+==== Vektorisering
+===== Topologi
+På samme måte som ved manuell digitalisering må det spesifiseres hvilken topologi som skal ligge i det ferdige resultatet. Krav for danning av knutepunkt (avstand mellom punkter og linjer) må oppgis.
+
+===== Klipping mot kartkant
+Alle linjer skal klippes eksakt mot kartkant. Kartkant skal være oppgitt eller mulig å beregne. Linjer som slutter innenfor en gitt avstand til kartkant (f.eks. 2 mm), forlenges til skjæring med kartkant. Punkter eller linjer som går utenfor kartkanten, skal ikke med i det endelige resultatet med mindre det er spesielt avtalt og kodet på en spesiell måte.
+
+===== Punkttetthet
+Linjer kan representeres ved et punkt i hvert knekkpunkt, dvs. der linjen endrer retning, ved en serie punkter med konstant avstand eller en serie punkter med avstand varierende med hvor mye linjen endrer retning. Måten linjer represen¬teres på, skal oppgis.
+
+===== Gap
+I linjer som skal være sammenhengende, kan det være små brudd. Det skal oppgis hvor store gap som skal "tettes". Det normale vil være inntil 2 mm, men dette vil variere med kartets kompleksitet og innhold. Linjer med gap som lukkes, gis en kvalitetskode som viser at automatisk lukking er foretatt.
+
+==== Mønster-/symbolgjenkjenning
+Det kan utføres automatisk eller halvautomatisk mønstergjenkjenning på det skannede kartet. Normalt vil mønstergjenkjenningen være best å utføre på rasterfila, men det vil avhenge av hvilket program som benyttes. Objekter som er mønstergjenkjent, skal kodes i henhold til de egenskaper objektet har. Det må fremgå klart av kvalitets¬informasjonen (i hodet på fila) hvilket program og hvilken metode som er benyttet. Usikre gjenkjenninger må kodes spesielt.
+
+=== Kvalitetskoding
+Det er viktig å registrere kvalitetskoder under digitaliseringen. Med kvalitetskoding menes at alle registrerte objekter skal ha registrert målemetode, f.eks. digitalisert på digitaliseringsbord fra papirkart, og stedfestingsnøyaktighet. Det påhviler operatøren et ansvar for at alle vurderinger og tolkinger som blir gjort, kommer til kjennskap for de som skal benytte dataene senere.

@@ -1,0 +1,99 @@
+== Arkivering og sikring
+
+=== Generelle bestemmelser
+Kart og geodata (herunder flybilder (originaler, kopier og digitale opptak), kart (folier, papir)
+og måledata) er i utgangspunktet offentlig informasjon som skal arkiveres og behandles etter
+generelle lover og standarder. De viktigste lovene er:
+
+* Arkivlova som inneholder generelle bestemmelser for offentlige og private arkiver med
+viktig forvaltningsmessig informasjon.
+* Personopplysningsloven som skal sikre at personopplysninger blir behandlet i samsvar
+med grunnleggende personvernhensyn.
+* Sikkerhetsloven som skal bidra til å verne om nasjonale sikkerhetsinteresser.
+
+Av standarder og veiledere kan spesielt nevnes:
+
+* "Noark 4 standarden" som spesifiserer kravene til elektroniske arkivsystemer i offentlig
+forvaltning.
+* Miljøverndepartementets veileder "Det offentlige kartgrunnlaget " som beskriver
+etablering og drift av kommunens kartgrunnlag i henhold til kapittelet om kartverk i de
+tekniske forskriftene til plan- og bygningsloven.
+
+==== Arkivering
+Ved arkivering av både analogt og digitalt materiale skal:
+
+* arkivet være enkelt å vedlikeholde.
+* arkivet gi en fullstendig og systematisk oversikt over innholdet. Informasjonen skal
+være lett tilgjengelig.
+* det foreligge instruks for arkivtjenesten og rutiner som skal følges.
+* arkivet ha en ansvarshavende som plikter å påse at rutinene følges.
+
+==== Sikring
+Arkivmaterialet er offentlig informasjon som alle har rett til innsyn i. I noen tilfeller må
+imidlertid behandling og utlevering vurderes i forhold til personvernet (se veilederen
+"Kartgrunnlag for plan- og byggesaksbehandlingen").
+
+Materialet skal oppbevares på en sikkerhetsmessig forsvarlig måte, og det skal jevnlig tas
+sikkerhetskopier av digitale data. Lagring, behandling og tilgang til materialet skal inngå i
+beredskapsplan der slike planer er pålagt. For øvrig vises til KS som har gitt ut en egen
+veileder om datasikkerhet, "Rapp.3a/97-Datasikkerhet.Hvorfor det?" og "Rapp. 3b/97-
+Datasikkerhet.Veileder."
+
+Arkivmaterialet skal være sikret mot uforsvarlig behandling og forhold som kan forringe eller
+tilintetgjøre det, slik som ikke-kontrollerte uttak, ikke-autoriserte endringer og ødeleggelser.
+
+Originaler skal sikres ved kopiering på godkjent datamedium. Originaler og sikkerhetskopier
+skal oppbevares på hvert sitt geografiske sted.
+
+==== Historisk lagring
+Historisk lagring skal gjennomføres etter arkivlova med forskrifter og de bestemmelser som gis
+av arkivverket (Riksarkivet eller statsarkivene).
+
+Det skal lagres årsversjoner av alle datasett. Ved full datering i datasettene (også når objekter
+fjernes) er det tilstrekkelig med lagring av versjoner hvert 3. til 5. år.
+
+==== Sikkerhetsgradert materiale
+Arkivet vil normalt ikke inneholde opplysninger som må beskyttes av sikkerhetsmessige
+grunner.
+
+Flybilder og annet materiale som inneholder informasjon av betydning for landets sikkerhet,
+skal oppbevares på en slik måte at de ikke kommer uvedkommende i hende. Det skal foreligge
+egen instruks for flytting/tilintetgjørelse av sikkerhetsgradert arkivmateriale ved katastrofer.
+Det vises til lov om forebyggende sikkerhetstjeneste (sikkerhetsloven) med forskrifter.
+
+Oppdragsgivere for fotografering som mottar bildedata, skal sikre disse mot uvedkommende i
+henhold til lov om forebyggende sikkerhetstjeneste (sikkerhetsloven) med forskrifter. Slikt
+materiale skal ikke bringes ut av landet uten forutgående samtykke fra Nasjonal
+sikkerhetsmyndighet (NSM).
+
+=== Originalt materiale
+Inntil levering har funnet sted, har oppdragstaker risikoen for alt originalt materiale, ref.
+"Avtale for geodataarbeider".
+
+==== Film og digitale opptak
+Her omtales både analogt og digitalt filmmateriale og opptak med digitale sensorer.
+Oppdragstakeren for fotografering skal oppbevare originalmaterialet ved jevn og riktig
+temperatur og relativ fuktighet (klimarom), slik at plastiske deformasjoner og skader på
+dataene unngås. Oppbevaringen skal være slik at materialet ikke utsettes for nedstøving eller
+kjemisk og fysisk påvirkning som resulterer i at emulsjon, base eller data skades eller
+deformeres. Data må sikres mot avmagnetisering, samt tap pga. lang lagringstid på
+datamediet.
+
+Oppdragstaker skal oppbevare originalmaterialet i minimum 4 år etter fotograferingsåret.
+Deretter skal det overføres til Statens kartverk Sentralarkivet for vertikalbilder.
+
+Oppdragstakers arkiv skal godkjennes av Statens kartverk og NSM. NSM gir instruks for og
+kontrollerer den sikkerhetsmessige behandlingen av materialet. Dersom arkivet ikke blir
+godkjent, plikter oppdragstaker å overføre originalmaterialet til et godkjent arkiv tilvist av
+Statens kartverk.
+
+==== Kartmateriale og geodata
+Originalt kartmateriale og geodata skal oppbevares på en slik måte at det til enhver tid kan
+fremstilles kopier uten at kvaliteten forringes.
+
+==== Måledata og beregninger
+Med måledata og beregninger forstås observasjonsbøker, originale digitale måledata,
+observasjonsriss, beregninger utført på grunnlag av disse måledataene, samt punktskisser.
+Materialet skal oppbevares og sikres på en slik måte at det til enhver tid kan fremstilles kopier
+uten at kvaliteten forringes. Digitale data skal oppbevares på en slik form at nyberegninger
+kan foretas umiddelbart. Materialet skal være tydelig merket med eierens navn.

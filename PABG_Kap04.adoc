@@ -1,0 +1,445 @@
+== Termer og forkortelser
+
+=== Kilder for termer og forkortelser
+Termer og forkortelser som er definert utenfor denne standarden er basert på følgende kilder:
+
+[#FKB]
+*[FKB]*	: http://skjema.geonorge.no/SOSITEST/fagomr%c3%a5destandard/FKB_generell/5.0/[SOSI abstrakte spesifikasjoner – FKB generell del 5.0]
+
+[#G]
+*[G]* : https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/geodatakvalitet-1.0-standarder-geografisk-informasjon.pdf[Geodatakvalitet, versjon 1.0]
+
+[#GN]
+*[GN]* : https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/grunnlagsnett-1.1-standarder-geografisk-informasjon.pdf[Grunnlagsnett 1.1]
+
+[#LASER]
+*[LASER]* : https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/fkb-laser[Produktspesifikasjon Punktsky]
+
+[#POF]
+*[POF]*	: https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/digitale-ortofoto[Produktspesifikasjon Ortofoto] 
+
+[#SAT]
+*[SAT]* : https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/satellittbasert-posisjonsbestemmelse-2.1-standarder-geografisk-informasjon.pdf[Satellittbasert posisjonsbestemmelse 2.1]
+
+[#SOSI]
+*[SOSI]* : https://www.kartverket.no/geodataarbeid/standardisering/sosi-standarder2/sosi-del-1-generell-del[SOSI-Standarden]
+
+[#STYR]
+*[STYR]* : 	Styrende dokument Utvikling av Standarder Geografisk informasjon (2013)
+
+[#T]
+*[T]*	Geomatikkordbok (geomatikkordbok.kartverket.no) (Tidligere ”Termer for geografisk informasjon”)
+
+=== Termer
+.aerotriangulering
+metode for bestemmelse av flybilders ytre orientering vha. måling av punkter som knytter bilder og flystriper sammen
+
+_MERKNAD_: I tilegg til sammenbindingspunkter inngår kjentpunker og GNSS/INS-data som observasjoner i en samlet utjevningsberegning (blokkutjevning). I tillegg til  sammenbindingspunktene og ytre orienteringselementene kan også andre ukjente defineres og løses ut i utjevningen.
+
+.affin transformasjon
+koordinattransformasjon som ikke bevarer vinkelstørrelser uendret [T]
+
+_MERKNAD_: I motsetning til konform transformasjon kan hver koordinatakse ved affin transforma¬sjon ha individuell målestokk og rotasjon. Affin transformasjon kan utføres som lineær eller utvidet (ikke-lineær) transformasjon. I fotogrammetri benyttes affin transformasjon bl.a. ved korreksjon av bildekoordinater. 
+
+.ajourføring
+korrigering av innholdet i geodataene slik at de fremstiller de faktiske forhold på et gitt tidspunkt, etter de retningslinjer som gjelder for innhold og kvalitet
+
+_MERKNAD_:
+
+1.	Det er en selvfølge at "konsekvensrettelser" også blir utført. F.eks. når det bygges et nytt hus, blir ofte gjerder, arealbruksgrenser og veger omkring huset forandret. Ajourføring innebærer at alle disse forandringene blir gjort i de aktuelle databaser.
+
+2.	Oppgradering til nyere og bedre standard defineres som noe annet enn ajourføring, selv om det kan gjøres på samme måte som periodisk ajourføring.
+
+.avvik
+forskjell fra sann verdi, fra det man antar er den sanne verdi, eller forskjellen mellom to målte verdier for samme størrelse [G]
+
+_MERKNAD_:
+
+1.	Innen standardisering defineres vanligvis avvik som mangel på oppfyllelse av et krav [NS-ISO 9000:2005, 3.6.2]. F.eks. vil det som ved kartkontroll blir kalt grov feil være avvik i NS-ISO 8402s ordbruk.
+
+2.	Avvik er vanlig. Som oftest er de små og skyldes de vanlige målevariasjonene. Men et lite antall av dem kan være store, og noen kan utgjøre grove feil som bør grovfeil-/avviksbehandles.
+
+3.	Se definisjonen av grov feil, sant avvik, standardavvik, systematisk avvik, tilfeldig avvik og tilfeldig variasjon.
+
+4.	Det man antar er den sanne verdi, er svært ofte den utjevnede verdi.
+
+.bakkeoppløsning (for digitale kamera/sensorer)
+geometrisk utstrekning av et bildeelementene (pikslene) i terrengmålestokk [#POF][POF]
+
+_MERKNAD_: Se også GSD.
+
+.basis geodata
+geodata som alle må ha for å presentere et forståelig kart
+
+_MERKNAD_: Se også geodata.
+
+Eksempel: Høyder, kyst, vann, veg og bygninger.
+
+.bildeblokk
+samling av flybilder i striper som er forbundet med hverandre og dermed utgjør en felles enhet hvor ukjente størrelser knyttet til bildene og stripene kan bestemmes i en felles aerotriangulering/blokkutjevning
+
+_MERKNAD_: Et flyfotograferingsprosjekt kan ha flere delområder og dermed flere bildeblokker. Et flyfotograferingsområde kan ev. deles opp i flere bildeblokker.
+
+.bildeelement
+_MERKNAD_: Se piksel.
+
+.bore sight
+bore sight parametre beskriver den romlige relasjonen mellom referanseramme for kartleggingssensor (LiDAR eller Kamera) og bevegelsessensor (IMU) 
+
+_MERKNAD_: Parametrene består av vinkler (delta omega, delta phi, delta kappa) og vektor (delta X, delta Y, delta Z).
+
+.deformasjon
+feilaktig form på et objekt eller en punktgruppe [G] 
+
+_MERKNAD_: I utjevningsregningen brukt om mulige gjenværende grove feils virkning på utjevningsresultatet (koordinater, høydeforskjeller, retninger, 	avstander, vinkler eller målestokker). Bestemmes gjerne i forbindelse med pålitelighetsanalyse i tilslutning til beregningene. Se også ytre pålitelighet.
+
+.digital høydemodell (DHM)
+en digital representasjon av høydeverdier som varierer over en flate [LASER]
+
+_MERKNAD_: En DHM er en samling av et stort antall høydepunkter på en flate. Punktene kan være organisert som et regelmessig rutenett eller i et uregelmessig mønster som beskriver flatens knekklinjer. Den siste metoden vil normalt gi den beste beskrivelsen av flaten. Alternativ engelsk betegnelse er «Digital Elevation Model (DEM)».
+
+.digital overflatemodell (DOM)
+en DHM som beskriver en nærmere spesifisert flate [LASER]
+
+_MERKNAD_: Eksempel på DOM kan være vegetasjon, takflater og lignende. Alternativ engelsk betegnelse er «Digital Surface Model (DSM)».
+
+.digital terrengmodell (DTM)
+en DHM som beskriver terrengoverflaten [LASER]
+
+.digitalt stereoinstrument
+stereoinstrument hvor det brukes digitale bilder og hvor de analytiske beregningene og kartkonstruksjonen skjer i instrumentets datamaskin
+
+_MERKNAD_:
+Engelsk: Digital Photogrammetric Workstation, DPW.
+Norsk: Digital Fotogrammetrisk Arbeidsstasjon, DFA.
+
+.drone
+ubemannet luftfartøy som kan kontrolleres med fjernstyring eller autonomt ved hjelp av programvare, sensorer og GNSS. Drone kan benyttes til både fotografering og laserskanning og kan være både basert på rotorvinge og/eller fastvinge.
+
+.dual beam
+skannermekanisme der laserinstrumentet samtidig sender ut to laserkjegler som er uavhengige av hverandre
+
+_MERKNAD_: To laserkjegler skapes enten ved å splitte en energikilde (split beam LiDAR) eller ved å benytte to uavhengige energikilder (dual channel LiDAR).
+
+.egenskap
+navngitt kjennetegn eller karakteristikk av et objekt [G]
+
+_MERKNAD_: Egenskap defineres ved navn (f.eks. "bygge-år"), datatype (f.eks. årstall) og verdiområde (f.eks. "Kristi fødsel - dags dato"). Egenskapsverdi er verdien til egenskapen for det aktuelle objektet, f.eks. 1998. Egenskapsdata kalles noen ganger for attributtdata.
+
+Eksempel: Form, materiale, farge, høyde, størrelse, juridiske forhold, bruk, beskaffenhet,
+konsistens, økonomisk verdi osv.
+
+.fastmerke
+varig merket punkt, markert med bolt eller annen egnet permanent markering, der
+plane koordinater og/eller høyde er bestemt, eller planlagt bestemt i et geodetisk referansesystem [GN]
+
+_MERKNAD_: Fastmerke tjener hovedsakelig som grunnlag ved kartlegging og oppmåling.
+
+.feil
+Merknad: Se grov feil og avvik.
+
+.flybåren laserskanning
+måling av avstand mellom en laser, i fly eller helikopter, og terreng, vegetasjon og andre objekter
+
+_MERKNAD_: Flybåren laserskanning kalles også laseraltimetri.
+
+.flykamera
+kamera som er spesielt bygd for fotografering fra fly [T]
+
+_MERKNAD_: Denne standarden omfatter kun bruk av digitale flykamera.
+
+.fotavtrykk
+laserkjeglens størrelse på bakken
+
+.fotogrammetrisk signal
+vanligvis kvadratiske eller korsformede hvite eller gule flater som før flyfotografering plasseres på detaljer i terrenget for å gjøre dem synlige i bildene [T]
+
+_MERKNAD_: Til vanlig kalt bare "signal".
+
+.fullstendighet
+beskrivelse av hvilke enheter som er med i et datasett i forhold til de som burde vært med [G]
+
+_MERKNAD_: Brukes først og fremst ved sammenligning med "virkeligheten"/fasit. Ved sammenligning med krav i en informasjonsmodell brukes fortrinnsvis kvalitetsmål under Logisk konsistens. Fullstendighet karakteriseres ved kvalitetsmålene andel manglende enheter og andel overskytende enheter.
+
+.geodata
+stedfestet informasjon [G]
+
+.geodetisk landsnett
+overordnet nasjonalt nett av fastmerker som utgjør en fortetting av Stamnettet ned til ca. 5 km punktavstand i bebygde områder [GN]
+
+_MERKNAD_: I dagligtale benyttes betegnelsen "Landsnettet". Landsnettet er Statens kartverks ansvar, og det danner basis for grunnlagsnett av lavere orden (detaljnett) som kommunen har ansvar for.
+
+.geodetisk stamnett
+overordnet nasjonalt nett av fastmerker etablert av Statens kartverk i forbindelse med overgang til EUREF89 [GN]
+
+_MERKNAD_: I dagligtale brukes betegnelsen "Stamnettet". Stamnettet avløser det tidligere 1. ordens trekantnettet. Nettet har sidelengder på ca. 20 km i bebygde strøk. Statens kartverk er ansvarlig for Stamnettet.
+
+.georeferere
+stedfeste ved koordinater i et kjent geodetisk referansesystem [T]
+
+_MERKNAD_: Begrepet benyttes vanligvis i forbindelse med stedfesting av rasterdata.
+
+Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kjente.
+
+.grid
+punkter organisert i et regelmessig rutenett med fast maskevidde [T]
+
+_MERKNAD_: Se også TIN.
+
+.grov feil
+feil som er vesentlig større enn de tilfeldige avvikene [G]
+
+_MERKNAD_: For målbare størrelser antas ofte grov feil som avvik større enn 3 ganger standardavviket.
+
+.grunnlagsnett
+fastmerker systematisk bundet sammen på grunnlag av observerte vektorer, høyde¬forskjeller, vinkler, avstander og tyngdekraft [T]
+
+_MERKNAD_: Fastmerkene utgjør grunnlag for innmåling av nye fastmerker, innmåling av objekter, plassering og påvisning.
+
+.GSD (Ground Sample Distance)
+geometrisk utstrekning av et bildeelementene (pikslene) i terrengmålestokk
+
+_MERKNAD_: Se også bakkeoppløsning.
+
+.indre pålitelighet
+hvor godt observasjonene i et system gjensidig kontrollerer hverandre, dvs. hvordan en grov feil i en observasjon gjenspeiles i den tilhørende utjevningskorreksjon [T]
+
+_MERKNAD_: Pålitelighet bestemmes i egne pålitelighetsanalyser.
+
+.kamerakalibrering
+bestemmelse av en eller flere av parameterne kamerakonstant, beliggenhet til symmetrihovedpunkt, objektivets oppløsningsevne, grad av planhet til bildeplanet og objektivfortegningens virkning i bildeplanet ved den bestemte verdi for kamerakonstanten
+
+.kikkertsikker høyde
+minimumsavstand mellom laserinstrument og person som ser direkte mot laserinstrumentet i kikkert
+
+.kjentpunkt
+punkt som inngår i en aerotriangulering og er stedfestet med geodetiske målemetoder
+
+.konform transformasjon
+overføring av et punktsystem fra et koordinatsystem til et annet med origoforflytning (translasjon), dreining(er) og målestokkendring (lik i alle akseretninger) [T]
+
+_MERKNAD_: Konform transformasjon kjennetegnes ved at vinkelstørrelser (formen) beholdes uendret.
+
+.krav
+grenseverdi satt i en produktspesifikasjon, ytelsen til et datasett skal være bedre enn kravet [G]
+
+.kvalitet
+i hvilken grad en samling av iboende egenskaper oppfyller krav [NS-EN ISO 9000]
+
+_MERKNAD_: Engelsk original: degree to which a set of inherent characteristics fulfils requirements
+
+.landsnett
+_MERKNAD_: Se geodetisk landsnett.
+
+.laserskudd
+LiDAR instrumentet avfyrer hurtige skudd, eller pulser, med lysenergi mot jordoverflaten. En enkelt puls refereres til som et laserskudd.
+
+.laserkjegle
+laserlysets tredimensjonale avtrykk mellom laserinstrument og bakken. Kjegleformet grunnet divergens.
+
+.multipath
+Retning på laserpulsen endres av refleksjon mot objekter i signalbanen. Multipath fører til feilaktig registrering av bakkeretur.
+
+.nøyaktighet
+mål for en verdis nærhet til sin sanne verdi eller til det man antar er den sanne verdi [G]
+
+.oppdragsgiver
+kontraktspart som skal ha utført det geodataarbeid som kontrakten omfatter [T]
+
+.oppdragstaker
+kontraktspart som har påtatt seg utførelsen av det geodataarbeid som kontrakten omfatter [T]
+
+.oppgradering
+forbedring av den datatekniske kvaliteten av eksisterende data
+
+.ortofoto
+georeferert fly- eller satellittbilde i ortogonalprojeksjon
+
+_MERKNAD_: Ortofotoet har samme geometriske egenskaper som et kart og er knyttet til et kart-koordinatsystem. Objekter (f.eks. hus, stolper, trær, broer) som ikke er modellert i høydemodellen, vil ha avvikende projeksjon. Det kan også lages ortofoto av f.eks. en fasade fotografert med terrestrisk kamera.
+
+.passpunkt
+punkt som kommer skarpt og veldefinert til syne i bildene, med kjente terreng¬koordinater som brukes for orientering (innpassing) av bilder og stereomodeller til terreng
+
+_MERKNAD_: Som passpunkt kan brukes grunnlagspunkt, punkt innmålt fra grunnlagspunkt eller punkt bestemt ved aerotriangulering.
+
+.piksel
+et digitalt bildes minste enhet med en definert geometrisk utstrekning og intensitets¬verdi
+
+.posisjon
+sted angitt ved hjelp av koordinater i et geodetisk referansesystem [G]
+
+.primærdatasett
+et definert geodatasett som består av de mest detaljerte og nøyaktige data innen et definert område, har en viss utbredelse og jevnlig blir produsert og/eller ajourholdt [T]
+
+.punktnøyaktighet
+nøyaktigheten til stedfestingen for punkter [G]
+
+_MERKNAD_: Punktnøyaktighet beregnes som kvadratroten av summen av kvadratene til punktets koordinatnøyaktigheter.
+Punktnøyaktighet angis absolutt i forhold til en gitt geodetisk referanseramme eller relativt i forhold til andre stedfestede objekter.
+
+Eksempel:
+"Punktstandardavvik", "punktstandardavvik i horisontalplanet" _s~p~=&#8730;(s^2^~x~+s^2^~y~)_  og "sant punktavvik". 
+
+.pålitelighet
+_MERKNAD_: Se indre pålitelighet og ytre pålitelighet.
+
+.rektifisering
+metode for transformasjon av et fotografisk bilde (sentralprojeksjon) av et objekt, til en ortogonalprojeksjon av objektet på et bestemt plan
+
+.resampling
+metode for å bestemme gråtonen/fargen til et piksel etter en rektifisering
+
+.sammenbindingspunkt
+punkt i fellesområdet mellom bilder som brukes ved aerotriangulering til å binde sammen bilder, modeller og striper
+
+_MERKNAD_: Punktet får sine terrengkoordinater bestemt ved aerotriangulering og kan brukes som passpunkt senere. Engelsk: Tie point.
+
+.sant avvik
+differanse mellom målt/beregnet verdi og sann verdi [G]
+
+_MERKNAD_: Sann verdi vil ofte være ukjent, men den brukes i utjevningsregningen som en teoretisk størrelse. Ved kontroller blir den vanligvis erstattet med en verdi som er målt/beregnet med vesentlig høyere nøyaktighet enn den verdien som skal kontrolleres.
+
+.sanntidsmåling
+kode- eller fasemåling der beregninger skjer samtidig med at man måler [SAT]
+
+.signal
+.Merknad: Se fotogrammetrisk signal.
+
+.skanneblokk
+sammenhengende området dekket i en laserskanning
+
+.skanning
+sveipeprosess for konvertering fra analog til digital representasjon av bilder, kart og andre dokumenter
+
+.skanneråpning
+åpningsvinkel for LiDAR skanner
+
+_MERKNAD_: skanneråpning = FOV (Field of View) = 2 x åpningsvinkel fra nadir 
+
+.stamnett
+_MERKNAD_: Se geodetisk stamnett.
+
+.standardavvik
+statistisk størrelse som angir spredningen for en gruppe måle- eller beregningsverdier i forhold til deres sanne eller estimerte verdier [G]
+
+_MERKNAD_: Internasjonalt benyttes også begrepet RMSE. Ved høy overbestemmelse (mange målinger) vil RMSE og standardavvik være sammenfallende, forutsatt at ev. systematisk avvik er avspaltet.
+
+.systematisk avvik
+avvik som er regelmessig med hensyn til fortegn og størrelse [G]
+
+_MERKNAD_: Systematisk avvik beregnes ofte som gjennomsnittlig avvik
+
+.tilfeldig avvik
+avvik som følger tilfeldighetens lov, slik at en ikke kan forutsi det enkelte avvik verken med hensyn til fortegn eller størrelse [G]
+
+_MERKNAD_: Ofte er disse avvikene normalfordelt eller tilnærmet normalfordelt, men andre fordelinger kan forekomme.
+
+.tilfeldig variasjon
+variasjonen eller spredningen for en gruppe måle- eller beregningsverdier i forhold til deres sanne eller estimerte verdier [G]
+
+_MERKNAD_: Ordet "tilfeldig" i definisjonen markerer at det forutsettes at hver enkel forskjell mellom en måle- eller beregningsverdi og størrelsens sanne verdi eller middelverdi er et tilfeldig avvik. Et tallmessig uttrykk for tilfeldig variasjon er standardavvik.
+
+.TIN
+digital høydemodell hvor punktene er organisert som hjørnene i trekanter
+
+_MERKNAD_: 
+Fra engelsk: Triangulated Irregular Network.
+Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig nettverk. Se også grid.
+
+.topologi
+beskrivelse av den romlige sammenhengen mellom geografiske objekter [G]
+
+_MERKNAD_: Topologi er de av objektenes egenskaper som overlever det som er kalt "kontinuerlige transformasjoner" (også kalt "rubber sheet"-transformasjoner). Alle tallverdier (lengder, areal, retninger) kan bli forandret, mens f.eks. naboskapsforhold vil være uendret.
+
+.ytre pålitelighet
+virkningen på de ukjente i utjevningen av mulige gjenværende grove feil i observasjonene [T]
+
+_MERKNAD_: Pålitelighet bestemmes i egne pålitelighetsanalyser. Beregnet ytre pålitelighet kalles ofte deformasjon.
+
+=== Forkortelser
+*AT*
+
+Aerotriangulering
+
+*CPOS*
+
+CentimeterPOSisjonering
+
+*dGNSS*
+
+Differensiell Global Navigation Satellite System
+
+*FKB*
+
+Felles KartdataBase [FKB]
+
+*FLS*
+
+Flybåren LaserSkanning
+
+*GNSS*
+
+Global Navigation Satellite System
+
+*GSD*
+
+Ground Sample Distance
+
+*IMU*
+
+Inertial Measurement Unit
+
+*INS*
+
+Inertial Navigation System
+
+*ISO*
+
+International Organization for Standardization. Organisasjonen som utgir internasjonale standarder
+
+*LIDAR*
+
+LIght Detection And Ranging. Betegner et prinsipp for avstandsmålingen
+
+*NN1954*
+
+Normal null av 1954
+
+*NN2000*
+
+Normal null av 2000
+
+*NS-EN ISO*
+
+Betegnelse på standard som er utviklet internasjonalt (ISO) og som deretter har blitt fastsatt som europeiske standard (CEN), eller den kan være utviklet parallelt i CEN og ISO, for deretter igjen å bli fastsatt som Norsk Standard (NS). 
+
+*NS-ISO*
+
+Betegnelse på standard som er utviklet internasjonalt (ISO), og som Norge har valgt å fastsette som Norsk Standard (NS).
+
+*PDOP*
+
+Position Dilution of Precision
+
+*PPP*
+
+Precise Point Positioning
+
+*RTK*
+
+Real Time Kinematic
+
+*SOSI*
+
+Samordnet Opplegg for Stedfestet Informasjon - et system for standardisert beskrivelse av digitale geodata
+
+*UTM*
+
+Universal Transverse Mercator
+
+*WGS84*
+
+World Geodetic System 1984
+
+
+

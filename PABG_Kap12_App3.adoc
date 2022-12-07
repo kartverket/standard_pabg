@@ -1,0 +1,15 @@
+== Vedlegg C.  Eksempel fly- og signaleringsplaner
+
+=== Eksempel fly- og signaleringsplan (foto)
+
+[#imgFlyplan]
+//[caption="Figure 15:"]
+image::figurer/App_flyplan.png[Flyplan,800,align="center"]
+
+
+=== Eksempel flyplan laserskanning
+
+
+[#imgSkanneplan]
+//[caption="Figure 15:"]
+image::figurer/App_skanneplan.png[Skanneplan,800,align="center"]
