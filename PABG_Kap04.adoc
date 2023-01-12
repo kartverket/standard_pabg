@@ -64,34 +64,24 @@ _MERKNAD_:
 4.	Det man antar er den sanne verdi, er svært ofte den utjevnede verdi.
 
 .bakkeoppløsning (for digitale kamera/sensorer)
-geometrisk utstrekning av et bildeelementene (pikslene) i terrengmålestokk [#POF][POF]
+geometrisk utstrekning av et piksel i terrengmålestokk [#POF][POF]
 
 _MERKNAD_: Se også GSD.
 
 .basis geodata
-geodata som alle må ha for å presentere et forståelig kart
+Med basis geodata menes geografisk informasjon brukt til produksjon av kartdata, ortofoto, punktsky, med mer
 
 _MERKNAD_: Se også geodata.
 
 Eksempel: Høyder, kyst, vann, veg og bygninger.
 
 .bildeblokk
-samling av flybilder i striper som er forbundet med hverandre og dermed utgjør en felles enhet hvor ukjente størrelser knyttet til bildene og stripene kan bestemmes i en felles aerotriangulering/blokkutjevning
+samling av flybilder som er forbundet med sammenbindingspunkt og dermed utgjør en felles enhet hvor bildenes posisjon og orientering bestemmes i en felles aerotriangulering/blokkutjevning
 
-_MERKNAD_: Et flyfotograferingsprosjekt kan ha flere delområder og dermed flere bildeblokker. Et flyfotograferingsområde kan ev. deles opp i flere bildeblokker.
+_MERKNAD_: Et flyfotograferingsprosjekt kan ha flere delområder og dermed flere bildeblokker. Et flyfotograferingsområde kan eventuelt deles opp i flere bildeblokker.
 
-.bildeelement
-_MERKNAD_: Se piksel.
-
-.bore sight
-bore sight parametre beskriver den romlige relasjonen mellom referanseramme for kartleggingssensor (LiDAR eller Kamera) og bevegelsessensor (IMU) 
-
-_MERKNAD_: Parametrene består av vinkler (delta omega, delta phi, delta kappa) og vektor (delta X, delta Y, delta Z).
-
-.deformasjon
-feilaktig form på et objekt eller en punktgruppe [G] 
-
-_MERKNAD_: I utjevningsregningen brukt om mulige gjenværende grove feils virkning på utjevningsresultatet (koordinater, høydeforskjeller, retninger, 	avstander, vinkler eller målestokker). Bestemmes gjerne i forbindelse med pålitelighetsanalyse i tilslutning til beregningene. Se også ytre pålitelighet.
+.boresight
+boresight parametrene beskriver vinkelforskjellen mellom koordinatsystem til kartleggingssensor (LiDAR eller Kamera) og bevegelsessensor (IMU) 
 
 .digital høydemodell (DHM)
 en digital representasjon av høydeverdier som varierer over en flate [LASER]
@@ -135,11 +125,8 @@ plane koordinater og/eller høyde er bestemt, eller planlagt bestemt i et geodet
 
 _MERKNAD_: Fastmerke tjener hovedsakelig som grunnlag ved kartlegging og oppmåling.
 
-.feil
-Merknad: Se grov feil og avvik.
-
 .flybåren laserskanning
-måling av avstand mellom en laser, i fly eller helikopter, og terreng, vegetasjon og andre objekter
+Lasermåling fra fly, helikopter eller droner. Lasermåling er en avstandsobservasjon som gjøres fra en kjent posisjon og orientering. Observasjonsstørrelsene brukes til å beregne koordinaten samt egenskapsinformasjon til refleksjonsoverflaten. Lasermålingene fordeles utover skanningsområdet av lasersystemet slik at målingene gir en fulldekkende beskrivelse av måleområdet.
 
 _MERKNAD_: Flybåren laserskanning kalles også laseraltimetri.
 
@@ -157,7 +144,7 @@ vanligvis kvadratiske eller korsformede hvite eller gule flater som før flyfoto
 _MERKNAD_: Til vanlig kalt bare "signal".
 
 .fullstendighet
-beskrivelse av hvilke enheter som er med i et datasett i forhold til de som burde vært med [G]
+tallfesting av hvilke enheter som er med i et datasett i forhold til de som burde vært med [G]
 
 _MERKNAD_: Brukes først og fremst ved sammenligning med "virkeligheten"/fasit. Ved sammenligning med krav i en informasjonsmodell brukes fortrinnsvis kvalitetsmål under Logisk konsistens. Fullstendighet karakteriseres ved kvalitetsmålene andel manglende enheter og andel overskytende enheter.
 
@@ -170,7 +157,7 @@ overordnet nasjonalt nett av fastmerker som utgjør en fortetting av Stamnettet 
 _MERKNAD_: I dagligtale benyttes betegnelsen "Landsnettet". Landsnettet er Statens kartverks ansvar, og det danner basis for grunnlagsnett av lavere orden (detaljnett) som kommunen har ansvar for.
 
 .geodetisk stamnett
-overordnet nasjonalt nett av fastmerker etablert av Statens kartverk i forbindelse med overgang til EUREF89 [GN]
+overordnet nasjonalt nett av fastmerker etablert av Statens kartverk [GN]
 
 _MERKNAD_: I dagligtale brukes betegnelsen "Stamnettet". Stamnettet avløser det tidligere 1. ordens trekantnettet. Nettet har sidelengder på ca. 20 km i bebygde strøk. Statens kartverk er ansvarlig for Stamnettet.
 
@@ -197,7 +184,7 @@ fastmerker systematisk bundet sammen på grunnlag av observerte vektorer, høyde
 _MERKNAD_: Fastmerkene utgjør grunnlag for innmåling av nye fastmerker, innmåling av objekter, plassering og påvisning.
 
 .GSD (Ground Sample Distance)
-geometrisk utstrekning av et bildeelementene (pikslene) i terrengmålestokk
+geometrisk utstrekning av et piksel i terrengmålestokk
 
 _MERKNAD_: Se også bakkeoppløsning.
 
@@ -209,11 +196,14 @@ _MERKNAD_: Pålitelighet bestemmes i egne pålitelighetsanalyser.
 .kamerakalibrering
 bestemmelse av en eller flere av parameterne kamerakonstant, beliggenhet til symmetrihovedpunkt, objektivets oppløsningsevne, grad av planhet til bildeplanet og objektivfortegningens virkning i bildeplanet ved den bestemte verdi for kamerakonstanten
 
+.kamerakonstant
+avstanden fra ytre projeksjon til bildeplan
+
 .kikkertsikker høyde
 minimumsavstand mellom laserinstrument og person som ser direkte mot laserinstrumentet i kikkert
 
 .kjentpunkt
-punkt som inngår i en aerotriangulering og er stedfestet med geodetiske målemetoder
+punkt som inngår i en aerotriangulering med kjente koordinater.
 
 .konform transformasjon
 overføring av et punktsystem fra et koordinatsystem til et annet med origoforflytning (translasjon), dreining(er) og målestokkendring (lik i alle akseretninger) [T]
@@ -232,7 +222,7 @@ _MERKNAD_: Engelsk original: degree to which a set of inherent characteristics f
 _MERKNAD_: Se geodetisk landsnett.
 
 .laserskudd
-LiDAR instrumentet avfyrer hurtige skudd, eller pulser, med lysenergi mot jordoverflaten. En enkelt puls refereres til som et laserskudd.
+LiDAR instrumentet avfyrer hurtige skudd, eller pulser. En enkelt puls refereres til som et laserskudd.
 
 .laserkjegle
 laserlysets tredimensjonale avtrykk mellom laserinstrument og bakken. Kjegleformet grunnet divergens.
@@ -257,13 +247,8 @@ georeferert fly- eller satellittbilde i ortogonalprojeksjon
 
 _MERKNAD_: Ortofotoet har samme geometriske egenskaper som et kart og er knyttet til et kart-koordinatsystem. Objekter (f.eks. hus, stolper, trær, broer) som ikke er modellert i høydemodellen, vil ha avvikende projeksjon. Det kan også lages ortofoto av f.eks. en fasade fotografert med terrestrisk kamera.
 
-.passpunkt
-punkt som kommer skarpt og veldefinert til syne i bildene, med kjente terreng¬koordinater som brukes for orientering (innpassing) av bilder og stereomodeller til terreng
-
-_MERKNAD_: Som passpunkt kan brukes grunnlagspunkt, punkt innmålt fra grunnlagspunkt eller punkt bestemt ved aerotriangulering.
-
 .piksel
-et digitalt bildes minste enhet med en definert geometrisk utstrekning og intensitets¬verdi
+et digitalt bildes minste enhet med en definert geometrisk utstrekning og intensitetsverdi
 
 .posisjon
 sted angitt ved hjelp av koordinater i et geodetisk referansesystem [G]
@@ -271,28 +256,16 @@ sted angitt ved hjelp av koordinater i et geodetisk referansesystem [G]
 .primærdatasett
 et definert geodatasett som består av de mest detaljerte og nøyaktige data innen et definert område, har en viss utbredelse og jevnlig blir produsert og/eller ajourholdt [T]
 
-.punktnøyaktighet
-nøyaktigheten til stedfestingen for punkter [G]
-
-_MERKNAD_: Punktnøyaktighet beregnes som kvadratroten av summen av kvadratene til punktets koordinatnøyaktigheter.
-Punktnøyaktighet angis absolutt i forhold til en gitt geodetisk referanseramme eller relativt i forhold til andre stedfestede objekter.
-
-Eksempel:
-"Punktstandardavvik", "punktstandardavvik i horisontalplanet" _s~p~=&#8730;(s^2^~x~+s^2^~y~)_  og "sant punktavvik". 
-
-.pålitelighet
-_MERKNAD_: Se indre pålitelighet og ytre pålitelighet.
-
 .rektifisering
-metode for transformasjon av et fotografisk bilde (sentralprojeksjon) av et objekt, til en ortogonalprojeksjon av objektet på et bestemt plan
+metode for transformasjon av et fotografisk bilde (sentralprojeksjon) til en ortogonalprojeksjon. Rektifisering er en sentral del av ortofotoproduksjon
 
 .resampling
-metode for å bestemme gråtonen/fargen til et piksel etter en rektifisering
+metode for å bestemme gråtonen/fargen til et piksel. Resampling kan brukes til å endre bakkeoppløsning og/eller lokasjon til piksler i optiske produkter
 
 .sammenbindingspunkt
 punkt i fellesområdet mellom bilder som brukes ved aerotriangulering til å binde sammen bilder, modeller og striper
 
-_MERKNAD_: Punktet får sine terrengkoordinater bestemt ved aerotriangulering og kan brukes som passpunkt senere. Engelsk: Tie point.
+_MERKNAD_: Punktet får sine terrengkoordinater bestemt ved aerotriangulering. Engelsk: Tie point
 
 .sant avvik
 differanse mellom målt/beregnet verdi og sann verdi [G]
@@ -325,7 +298,7 @@ statistisk størrelse som angir spredningen for en gruppe måle- eller beregning
 _MERKNAD_: Internasjonalt benyttes også begrepet RMSE. Ved høy overbestemmelse (mange målinger) vil RMSE og standardavvik være sammenfallende, forutsatt at ev. systematisk avvik er avspaltet.
 
 .systematisk avvik
-avvik som er regelmessig med hensyn til fortegn og størrelse [G]
+avvik som er regelmessig med hensyn til fortegn og tallverdi [G]
 
 _MERKNAD_: Systematisk avvik beregnes ofte som gjennomsnittlig avvik
 
@@ -431,7 +404,7 @@ Real Time Kinematic
 
 *SOSI*
 
-Samordnet Opplegg for Stedfestet Informasjon - et system for standardisert beskrivelse av digitale geodata
+Samordnet Opplegg for Stedfestet Informasjon
 
 *UTM*
 
