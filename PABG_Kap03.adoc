@@ -1,2 +1,2 @@
-== Normative referfanser
-Geodatakvalitet:2015
+== Normative referanser
+https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/geodatakvalitet-1.0-standarder-geografisk-informasjon.pdf[Geodatakvalitet, versjon 1.0 2015]

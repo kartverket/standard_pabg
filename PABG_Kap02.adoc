@@ -6,5 +6,7 @@ Hensikten med standarden Produksjon av basis geodata er å bidra til høy kvalit
 * beskrive hvordan produksjon av basis geodata skal dokumenteres
 
 Standarden spesifiserer generelle kvalitetskrav for produksjon og dokumentasjon av basis geodata på land. Beskrevne datafangstmetoder er geodetiske metoder (landmåling), fotogrammetri og laserskanning.
-Kvalitetskravene til produktene finnes i produktspesifikasjonene for det enkelte produkt, f. eks http://skjema.geonorge.no/SOSITEST/fagomr%c3%a5destandard/FKB_generell/5.0/[Produktspesifikasjon FKB]. Hvordan produktene skal kontrolleres er beskrevet i standarden https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/geodatakvalitet-1.0-standarder-geografisk-informasjon.pdf[Geodatakvalitet].
+Kvalitetskravene til produktene finnes i produktspesifikasjonene for det enkelte produkt, f. eks https://sosi.geonorge.no/produktspesifikasjoner/FKB-Bygning/[FKB-Bygning 5.0]. Hvordan produktene skal kontrolleres er beskrevet i standarden https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/geodatakvalitet-1.0-standarder-geografisk-informasjon.pdf[Geodatakvalitet].
 Standarden kan nyttes som referansedokument ved inngåelse av avtaler om produksjon av basis geodata. I det enkelte prosjekt kan det avtales avvikende krav fra denne standarden, disse vil da være gjeldende for prosjektet.
+
+Innmåling av eiendomsgrenser (matrikkelenhetsgrenser) og ledninger behandles ikke i denne standarden. I stedet vises det til standardene "Stedfesting av matrikkelenhets- og råderettsgrenser", "Norm for ledningskart" og "Norm for VA-ledningskartverk".
