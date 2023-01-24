@@ -112,6 +112,11 @@ _MERKNAD_: Egenskap defineres ved navn (f.eks. "bygge-år"), datatype (f.eks. å
 Eksempel: Form, materiale, farge, høyde, størrelse, juridiske forhold, bruk, beskaffenhet,
 konsistens, økonomisk verdi osv.
 
+.elektronisk lukker
+fungerer ved at kameraets bildebrikke leser av linje for linje sekvensielt for å kontrollere eksponeringen. Når motiver beveger seg raskt kan rullende lukker-fortegning oppstå.
+
+
+
 .fastmerke
 varig merket punkt, markert med bolt eller annen egnet permanent markering, der
 plane koordinater og/eller høyde er bestemt, eller planlagt bestemt i et geodetisk referansesystem <<GN>>
