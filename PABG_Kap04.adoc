@@ -21,7 +21,7 @@ Termer og forkortelser som er definert utenfor denne standarden er basert på f�
 [#SAT]
 *[SAT]* : https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/satellittbasert-posisjonsbestemmelse-2.1-standarder-geografisk-informasjon.pdf[Satellittbasert posisjonsbestemmelse 2.1]
 
-<<GN>> og <<SAT>> er utgående standarder og vil bli erstattet av en ny https://www.kartverket.no/geodataarbeid/standardisering/prosjekter-og-horinger/revisjon-geodesistandarder[Geodesistandard] som er under utarbeidelse. 
+<<GN>> og <<SAT>> er utgående standarder og vil bli erstattet av en ny Geodesistandard som er under utarbeidelse. 
 
 === Termer
 .aerotriangulering
@@ -48,7 +48,7 @@ forskjell fra sann verdi, fra det man antar er den sanne verdi, eller forskjelle
 
 _MERKNAD_:
 
-1.	Innen standardisering defineres vanligvis avvik som mangel på oppfyllelse av et krav [NS-ISO 9000:2005, 3.6.2]. F.eks. vil det som ved kartkontroll blir kalt grov feil være avvik i NS-ISO 8402s ordbruk.
+1.	Innen standardisering defineres vanligvis avvik som mangel på oppfyllelse av et krav [NS-ISO 9000:2015]. 
 
 2.	Avvik er vanlig. Som oftest er de små og skyldes de vanlige målevariasjonene. Men et lite antall av dem kan være store, og noen kan utgjøre grove feil som bør grovfeil-/avviksbehandles.
 
@@ -342,7 +342,7 @@ Differensiell Global Navigation Satellite System
 
 *FKB*
 
-Felles KartdataBase [FKB]
+Felles KartdataBase <<FKB>>
 
 *FLS*
 
