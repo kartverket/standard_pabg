@@ -1,11 +1,11 @@
 == Vedlegg D.  Liste over krav
 
 
-<<krav-1-Sanntidsmåling,Krav 1 Sanntidsmåling>> +
-<<krav-2-Innmåling-totalstasjon,Krav 2 Innmåling med totalstasjon>> +
+<<krav-1,Krav 1 Sanntidsmåling>> +
+<<krav-2,Krav 2 Innmåling med totalstasjon>> +
 <<Krav-3-Rapportering-geodetisk-kartlegging,Krav 3 Rapportering - Geodetisk kartlegging>> +
 <<Krav-4-Flyplanlegging,Krav 4 Flyplanlegging>> +
-<<Krav-5-Kjentpunkt-Nøyaktighet,Krav 5 Kjentpunkt - nøyaktighet>> +
+<<Krav-5,Krav 5 Kjentpunkt - nøyaktighet>> +
 <<Krav-6-Kjentpunkt-ant-plassering,Krav 6 Kjentpunkt - antall og plassering>> +
 <<Krav-7-FLY-SIGNALERINGSPLAN,Krav 7 Fly- og signaleringsplan>> +
 <<Krav-8-SIGNALERING,Krav 8 Signalering>> +
@@ -19,8 +19,8 @@
 <<krav-16-beregning-GNSS-INS,Krav 16 Beregning GNSS/INS>> +
 <<krav-17-fremstilling-bilder,Krav 17 Fremstilling av bilder>> +
 <<krav-18-rapport-flyfotografering,Krav 18 Rapportering - Flyfotografering>> +
-<<Krav-19-måling-sammenbindingspunkt,Krav 19 Måling av sammenbindingspunkt>> +
-<<krav-20-måling-kjentpkt,Krav 20 Måling av kjentpunkter>> +
+<<Krav-19,Krav 19 Måling av sammenbindingspunkt>> +
+<<krav-20,Krav 20 Måling av kjentpunkter>> +
 <<krav-21-observasjonsvekting,Krav 21 Observasjonsvekting, parametre og ukjente>> +
 <<krav-22-AT-beregning-resultat,Krav 22 AT beregninger og resultat>> +
 <<krav-23-rapport-AT,Krav 23 Rapportering - Aerotriangulering>> +
@@ -28,22 +28,22 @@
 <<krav-25-logisk-konsistens,Krav 25 Logisk konsistens>> +
 <<krav-26-rapport-konstruksjon,Krav 26 Rapportering - Konstruksjon>> +
 <<krav-27-rapport-orto,Krav 27 Rapportering - Ortofoto>> +
-<<krav-28-leverandørkalibrering,Krav 28 Leverandørkalibrering>> +
+<<krav-28,Krav 28 Leverandørkalibrering>> +
 <<krav-29-installasjonskalibrering,Krav 29 Installasjonskalibrering>> +
 <<krav-30-daglig-kalibrering,Krav 30 Daglig kalibrering>> +
 <<krav-31-flyplan-laserskanning,Krav 31 Flyplan laserskanning>> +
 <<krav-32-opplysning-skanneparametre,Krav 32 Opplysninger om skanneparametre>> +
 <<krav-33-tverrstriper,Krav 33 Tverrstriper>> +
 <<krav-34-kontrollflate-ant-plassering,Krav 34 Kontrollflater - antall og plassering>> +
-<<krav-35-kontrollflate-form-størrelse,Krav 35 Kontrollflater - form og størrelse>> +
-<<krav-36-kontrollflate-nøyaktighet,Krav 36 Kontrollflater - nøyaktighet>> +
+<<krav-35,Krav 35 Kontrollflater - form og størrelse>> +
+<<krav-36,Krav 36 Kontrollflater - nøyaktighet>> +
 <<krav-37-kontrollprofiler-ant-plassering,Krav 37 Kontrollprofiler - antall og plassering>> +
-<<krav-38-kontrollprofiler-form-størrelse,Krav 38 Kontrollprofiler - form og størrelse>> +
-<<krav-39-kontrollprofiler-nøyaktighet,Krav 39 Kontrollprofiler - nøyaktighet>> +
-<<krav-40-utføring-laserskanning,Krav 40 Utføring av laserskanning>> +
+<<krav-38,Krav 38 Kontrollprofiler - form og størrelse>> +
+<<krav-39,Krav 39 Kontrollprofiler - nøyaktighet>> +
+<<krav-40,Krav 40 Utføring av laserskanning>> +
 <<krav-41-dokumentasjon-daglig-kalibrering,Krav 41 Dokumentasjon på daglig kalibrering>> +
 <<krav-42-dokumentasjon-stripejustering,Krav 42 Dokumentasjon på stripejustering>> +
-<<krav-43-dokumentasjon-høydekontroll,Krav 43 Dokumentasjon på høydekontroll>> +
+<<krav-43,Krav 43 Dokumentasjon på høydekontroll>> +
 <<krav-44-dokumentasjon-grunnriss,Krav 44 Dokumentasjon på grunnrisskontroll>> +
 <<krav-45-dokumentasjon-kontroll-punktsky,Krav 45 Dokumentasjon på kontroll av punktsky>> +
 <<krav-46-klassifisering,Krav 46 Klassifisering>> +
