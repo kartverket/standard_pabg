@@ -10,29 +10,3 @@ spec:
   lifecycle: "production"
   owner: "felles_kartdatabase"
   system: "standardisering"
----
-apiVersion: "backstage.io/v1alpha1"
-kind: "Group"
-metadata:
-  name: "security_champion_standard_pabg"
-  title: "Security Champion standard_pabg"
-spec:
-  type: "security_champion"
-  parent: "land_security_champions"
-  members:
-  - "NilsIvarNes"
-  children:
-  - "resource:standard_pabg"
----
-apiVersion: "backstage.io/v1alpha1"
-kind: "Resource"
-metadata:
-  name: "standard_pabg"
-  links:
-  - url: "https://github.com/kartverket/standard_pabg"
-    title: "standard_pabg på GitHub"
-spec:
-  type: "repo"
-  owner: "security_champion_standard_pabg"
-  dependencyOf:
-  - "component:standard_pabg"
