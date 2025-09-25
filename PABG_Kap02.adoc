@@ -1,4 +1,5 @@
 == Omfang
+
 Hensikten med standarden Produksjon av basis geodata er å bidra til høy kvalitet på basis geodata ved å
 
 * beskrive metoder for produksjon av basis geodata og stille krav til trinn i produksjonsprosessen
