@@ -1,10 +1,10 @@
 == Omfang
 
-Hensikten med standarden Produksjon av basis geodata er å bidra til høy kvalitet på basis geodata ved å
+Hensikten med standarden Produksjon av basis geodata er å bidra til høy kvalitet på basis geodata ved å:
 
-* beskrive metoder for produksjon av basis geodata og stille krav til trinn i produksjonsprosessen
-* beskrive hvilken kvalitet som kan forventes ved ulike produksjonsmetoder og –prosesser
-* beskrive hvordan produksjon av basis geodata skal dokumenteres
+* Beskrive metoder for produksjon av basis geodata og stille krav til trinn i produksjonsprosessen
+* Beskrive hvilken kvalitet som kan forventes ved ulike produksjonsmetoder og –prosesser
+* Beskrive hvordan produksjon av basis geodata skal dokumenteres
 
 Standarden spesifiserer generelle kvalitetskrav for produksjon og dokumentasjon av basis geodata på land. Beskrevne datafangstmetoder er geodetiske metoder (landmåling), fotogrammetri og laserskanning.
 Kvalitetskravene til produktene finnes i produktspesifikasjonene for det enkelte produkt, f. eks https://sosi.geonorge.no/produktspesifikasjoner/FKB-Bygning/[FKB-Bygning 5.0]. Hvordan produktene skal kontrolleres er beskrevet i standarden https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/geodatakvalitet-1.0-standarder-geografisk-informasjon.pdf[Geodatakvalitet].
