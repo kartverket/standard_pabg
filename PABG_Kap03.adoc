@@ -13,4 +13,10 @@
 [#SAT]
 *[SAT]* : https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/satellittbasert-posisjonsbestemmelse-2.1-standarder-geografisk-informasjon.pdf[Satellittbasert posisjonsbestemmelse, versjon 2.1 2009]
 
-<<GN>> og <<SAT>> er utgående standarder og vil bli erstattet av en ny Geodesistandard som er under utarbeidelse. 
+[#GG]
+*[GG]* : https://sosi.geonorge.no/standarder/Geodetisk_grunnlag_-_koordinatbaserte_referansesystemer_og_kvalitetssikring_av_grunnlagspunkt/1.0/[Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt]
+
+
+<<GN>> er erstattet av en ny standard <<GG>>. 
+
+<<SAT>> er en tilbaketrukket standard, men enkelte deler vil bli oppdatert og videreført i en planlagt veileder.
