@@ -4,8 +4,8 @@
 <<krav-1,Krav 1 Sanntidsmåling>> +
 <<krav-2,Krav 2 Innmåling med totalstasjon>> +
 <<Krav-3-Rapportering-geodetisk-kartlegging,Krav 3 Rapportering - Geodetisk kartlegging>> +
-<<Krav-4-Flyplanlegging,Krav 4 Flyplanlegging>> +
-<<Krav-5,Krav 5 Kjentpunkt - nøyaktighet>> +
+<<Krav-4-Flyplanlegging,Krav Flyplanlegging flyfotografering>> +
+<<Krav-5,Krav Kjentpunktnøyaktighet flyfotografering>> +
 <<Krav-6-Kjentpunkt-ant-plassering,Krav 6 Kjentpunkt - antall og plassering>> +
 <<Krav-7-FLY-SIGNALERINGSPLAN,Krav 7 Fly- og signaleringsplan>> +
 <<Krav-8-SIGNALERING,Krav 8 Signalering>> +
