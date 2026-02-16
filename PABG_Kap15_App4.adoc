@@ -13,7 +13,7 @@
 <<Krav-10-Digitalkamera,Krav 10 Digitale kamera>> +
 <<krav-11-GNSS-INS-systemer,Krav 11 GNSS/INS system>> +
 <<krav-12-fotografering,Krav 12 Fotografering>> +
-<<krav-13-innsamling-GNSS-IMU,Krav 13 Innsamling GNSS/IMU>> +
+<<krav-foto-innsamling-gnss-imu>> +
 <<krav-14-dGNSS,Krav 14 dGNSS>> +
 <<krav-15-PPP,Krav 15 PPP (Precise Point Positioning)>> +
 <<krav-16-beregning-GNSS-INS,Krav 16 Beregning GNSS/INS>> +
@@ -28,6 +28,10 @@
 <<krav-25-logisk-konsistens,Krav 25 Logisk konsistens>> +
 <<krav-26-rapport-konstruksjon,Krav 26 Rapportering - Konstruksjon>> +
 <<krav-27-rapport-orto,Krav 27 Rapportering - Ortofoto>> +
+<<krav-foto-drone-ortofoto-uten-rtk>> +
+<<krav-foto-drone-ortofoto-med-rtk>> +
+<<krav-foto-hoydemodell-drone>> +
+
 <<krav-28,Krav 28 Leverandørkalibrering>> +
 <<krav-29-installasjonskalibrering,Krav 29 Installasjonskalibrering>> +
 <<krav-30-daglig-kalibrering,Krav 30 Daglig kalibrering>> +
