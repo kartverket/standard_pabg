@@ -2,5 +2,6 @@
 
 
 <<anbefaling-foto-drone-ortofoto-med-rtk>> +
-
-
+<<anbefaling-foto-drone-kartkonstruksjon-i-stereo>> +
+<<anbefaling-foto-drone-detaljerte-prosjekter>> +
+<<anbefaling-foto-skråbilder-minimum>> +
