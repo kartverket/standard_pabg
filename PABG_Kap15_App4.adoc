@@ -1,54 +1,65 @@
 == Vedlegg D.  Liste over krav
 
 
-<<krav-1,Krav 1 Sanntidsmåling>> +
-<<krav-2,Krav 2 Innmåling med totalstasjon>> +
-<<Krav-3-Rapportering-geodetisk-kartlegging,Krav 3 Rapportering - Geodetisk kartlegging>> +
-<<Krav-4-Flyplanlegging,Krav Flyplanlegging flyfotografering>> +
-<<Krav-5,Krav Kjentpunktnøyaktighet flyfotografering>> +
-<<Krav-6-Kjentpunkt-ant-plassering,Krav 6 Kjentpunkt - antall og plassering>> +
-<<Krav-7-FLY-SIGNALERINGSPLAN,Krav 7 Fly- og signaleringsplan>> +
-<<Krav-8-SIGNALERING,Krav 8 Signalering>> +
-<<Krav-9-Rapport-SIGNALERING,Krav 9 Rapport - Signalering>> +
-<<Krav-10-Digitalkamera,Krav 10 Digitale kamera>> +
-<<krav-11-GNSS-INS-systemer,Krav 11 GNSS/INS system>> +
-<<krav-12-fotografering,Krav 12 Fotografering>> +
+<<krav-landmaling-sanntidsmaling>> +
+<<krav-landmaling-innmaling-med-totalstasjon>> +
+<<krav-landmaling-rapportering-geodetisk-kartlegging>> +
+<<krav-foto-flyplanlegging>> +
+<<krav-foto-kjentpunktnoyaktighet>> +
+<<krav-foto-kjentpunkt-antall-og-plassering>> +
+<<krav-foto-fly-og-signaleringsplan>> +
+<<krav-foto-signalering>> +
+<<krav-foto-rapport-signalering>> +
+<<krav-foto-digitale-kamera>> +
+<<krav-foto-gnssins-system>> +
+<<krav-foto-fotografering>> +
 <<krav-foto-innsamling-gnss-imu>> +
-<<krav-14-dGNSS,Krav 14 dGNSS>> +
-<<krav-15-PPP,Krav 15 PPP (Precise Point Positioning)>> +
-<<krav-16-beregning-GNSS-INS,Krav 16 Beregning GNSS/INS>> +
-<<krav-17-fremstilling-bilder,Krav 17 Fremstilling av bilder>> +
-<<krav-18-rapport-flyfotografering,Krav 18 Rapportering - Flyfotografering>> +
-<<Krav-19,Krav 19 Måling av sammenbindingspunkt>> +
-<<krav-20,Krav 20 Måling av kjentpunkter>> +
-<<krav-21-observasjonsvekting,Krav 21 Observasjonsvekting, parametre og ukjente>> +
-<<krav-22-AT-beregning-resultat,Krav 22 AT beregninger og resultat>> +
-<<krav-23-rapport-AT,Krav 23 Rapportering - Aerotriangulering>> +
-<<krav-24-konstruksjon,Krav 24 Konstruksjon>> +
-<<krav-25-logisk-konsistens,Krav 25 Logisk konsistens>> +
-<<krav-26-rapport-konstruksjon,Krav 26 Rapportering - Konstruksjon>> +
-<<krav-27-rapport-orto,Krav 27 Rapportering - Ortofoto>> +
+<<krav-foto-dgnss>> +
+<<krav-foto-ppp>> +
+<<krav-foto-beregning-gnss-ins>> +
+<<krav-foto-fremstilling-av-bilder>> +
+<<krav-foto-rapportering-flyfotografering>> +
+<<krav-foto-maling-av-sammenbindingspunkt>> +
+<<krav-foto-maling-av-kjentpunkter>> +
+<<krav-foto-observasjonsvekting-parametere-og-ukjente>> +
+<<krav-foto-at-beregninger-og-resultat>> +
+<<krav-foto-rapportering-aerotriangulering>> +
+<<krav-foto-konstruksjon>> +
+<<krav-foto-logisk-konsistens>> +
+<<krav-foto-rapportering-konstruksjon>> +
+<<krav-foto-rapportering-ortofoto>> +
 <<krav-foto-drone-ortofoto-uten-rtk>> +
 <<krav-foto-drone-ortofoto-med-rtk>> +
 <<krav-foto-hoydemodell-drone>> +
+<<krav-foto-vektorisering-fra-modell>> +
+<<krav-foto-kartkonstruksjon-i-stereo-fra-dronebilder>> +
+<<krav-foto-dronekamera>> +
+<<krav-foto-gnss-ins-i-drone>> +
+<<krav-foto-signalering-i-droneprosjekt>> +
+<<krav-foto-flyplan-i-droneprosjekt>> +
+<<krav-foto-flyfotografering-i-droneprosjekt>> +
+<<krav-foto-minimum-skrabilder>> +
+<<krav-foto-lav-skrabilder>> +
+<<krav-foto-middels-skrabilder>> +
+<<krav-foto-hoy-skrabilder>> +
+<<krav-laser-leverandørkalibrering>> +
+<<krav-laser-installasjonskalibrering>> +
+<<krav-laser-daglig-kalibrering>> +
+<<krav-laser-flyplan-laserskanning>> +
+<<krav-laser-opplysninger-om-skanneparametre>> +
+<<krav-laser-tverrstriper>> +
+<<krav-laser-kontrollflater-antall-og-plassering>> +
+<<krav-laser-kontrollflater-form-og-storrelse>> +
+<<krav-laser-kontrollflater-noyaktighet>> +
+<<krav-laser-kontrollprofiler-antall-og-plassering>> +
+<<krav-laser-kontrollprofiler-form-og-storrelse>> +
+<<krav-laser-kontrollprofiler-noyaktighet>> +
+<<krav-laser-utforing-av-laserskanning>> +
+<<krav-laser-dokumentasjon-pa-daglig-kalibrering>> +
+<<krav-laser-dokumentasjon-pa-stripejustering>> +
+<<krav-laser-dokumentasjon-pa-hoydekontroll>> +
+<<krav-laser-dokumentasjon-pa-grunnrisskontroll>> +
+<<krav-laser-dokumentasjon-pa-kontroll-av-punktsky>> +
+<<krav-laser-klassifisering>> +
+<<krav-laser-rapportering-laserskanning>> +
 
-<<krav-28,Krav 28 Leverandørkalibrering>> +
-<<krav-29-installasjonskalibrering,Krav 29 Installasjonskalibrering>> +
-<<krav-30-daglig-kalibrering,Krav 30 Daglig kalibrering>> +
-<<krav-31-flyplan-laserskanning,Krav 31 Flyplan laserskanning>> +
-<<krav-32-opplysning-skanneparametre,Krav 32 Opplysninger om skanneparametre>> +
-<<krav-33-tverrstriper,Krav 33 Tverrstriper>> +
-<<krav-34-kontrollflate-ant-plassering,Krav 34 Kontrollflater - antall og plassering>> +
-<<krav-35,Krav 35 Kontrollflater - form og størrelse>> +
-<<krav-36,Krav 36 Kontrollflater - nøyaktighet>> +
-<<krav-37-kontrollprofiler-ant-plassering,Krav 37 Kontrollprofiler - antall og plassering>> +
-<<krav-38,Krav 38 Kontrollprofiler - form og størrelse>> +
-<<krav-39,Krav 39 Kontrollprofiler - nøyaktighet>> +
-<<krav-40,Krav 40 Utføring av laserskanning>> +
-<<krav-41-dokumentasjon-daglig-kalibrering,Krav 41 Dokumentasjon på daglig kalibrering>> +
-<<krav-42-dokumentasjon-stripejustering,Krav 42 Dokumentasjon på stripejustering>> +
-<<krav-43,Krav 43 Dokumentasjon på høydekontroll>> +
-<<krav-44-dokumentasjon-grunnriss,Krav 44 Dokumentasjon på grunnrisskontroll>> +
-<<krav-45-dokumentasjon-kontroll-punktsky,Krav 45 Dokumentasjon på kontroll av punktsky>> +
-<<krav-46-klassifisering,Krav 46 Klassifisering>> +
-<<krav-47-rapport-laserskanning,Krav 47 Rapportering - Laserskanning>> +
