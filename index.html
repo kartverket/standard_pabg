@@ -649,7 +649,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_egenkontroll_og_rapportering_laserskanning">7.5. Egenkontroll og rapportering (laserskanning)</a></li>
 </ul>
 </li>
-<li><a href="#_kartlegging_med_mobil_datafangst">8. Kartlegging med mobil datafangst</a>
+<li><a href="#kartlegging-med-mobil-datafangst">8. Kartlegging med mobil datafangst</a>
 <ul class="sectlevel2">
 <li><a href="#_innledning_2">8.1. Innledning</a></li>
 <li><a href="#_omfang_2">8.2. Omfang</a></li>
@@ -678,6 +678,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_innledning_3">9.1. Innledning</a></li>
 <li><a href="#_kvalitetsparametere_ved_vektorisering_fra_punktsky">9.2. Kvalitetsparametere ved vektorisering fra punktsky</a></li>
+<li><a href="#_kvalitetskrav">9.3. Kvalitetskrav</a>
+<ul class="sectlevel3">
+<li><a href="#_krav_til_geometrisk_avvik_og_tverravvik_pilhøyde">9.3.1. Krav til geometrisk avvik og tverravvik/ pilhøyde</a></li>
+<li><a href="#_krav_til_fullstendighet">9.3.2. Krav til fullstendighet</a></li>
+</ul>
+</li>
+<li><a href="#_kontroll">9.4. Kontroll</a>
+<ul class="sectlevel3">
+<li><a href="#_egnethet_av_vektorisering_til_fremstilling_av_vektordata">9.4.1. Egnethet av vektorisering til fremstilling av vektordata</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#_konvertering_av_analoge_kart_til_digitale_vektordata">10. Konvertering av analoge kart til digitale vektordata</a>
@@ -1189,7 +1200,7 @@ plane koordinater og/eller høyde er bestemt, eller planlagt bestemt i et geodet
 <div class="title">kikkertsikker høyde</div>
 <p>minimumsavstand mellom laserinstrument og person som ser direkte mot laserinstrumentet i kikkert</p>
 </div>
-<div class="paragraph">
+<div id="termer-kjentpunkt" class="paragraph">
 <div class="title">kjentpunkt</div>
 <p>Kjentpunkt er signalerte eller naturlige punkt eller flater med kjente absolutte koordinater gitt i prosjektet referanseramme. Kjentpunkt brukes til justering, aerotriangulering, kalibrering av instrument og lignende. Justeringen kan utføres på selve posisjon og orienteringsløsningen til instrumentet, eller til å justere selve datasettet (punktsky, bilder, mm) med formål å forbedre den absolutte stedfestingsnøyaktigheten.</p>
 </div>
@@ -1200,7 +1211,7 @@ plane koordinater og/eller høyde er bestemt, eller planlagt bestemt i et geodet
 <div class="paragraph">
 <p><em>MERKNAD</em>: Konform transformasjon kjennetegnes ved at vinkelstørrelser (formen) beholdes uendret.</p>
 </div>
-<div class="paragraph">
+<div id="termer-kontrollpunkt" class="paragraph">
 <div class="title">kontrollpunkt</div>
 <p>Kontrollpunkt ("sjekkpunkt") er signalerte eller naturlige punkt eller flater med kjente absolutte koordinater gitt i prosjektets referanseramme.  Kontrollpunkt er uavhengige punkt som ikke skal benyttes i fremstilling og prosesseringen av produktet. Punktene skal kun benyttes til å dokumentere og kontrollere absolutt stedfestingsnøyaktighet til sluttproduktet. Kontrollpunkt skal være egnet til å kontrollere det aktuelle datasettet. De skal ha kjent og dokumentert kvalitet.</p>
 </div>
@@ -1584,8 +1595,10 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 <div class="exampleblock">
 <div class="content">
 <div id="krav-landmaling-innmaling-med-totalstasjon" class="paragraph">
-<p><strong>KRAV LANDMÅLING INNMÅLING MED TOTALSTASJON</strong>
-For å sikre seg så godt som mulig mot grove feil må det settes krav til innmålingen av objekttyper:</p>
+<p><strong>KRAV LANDMÅLING INNMÅLING MED TOTALSTASJON</strong></p>
+</div>
+<div class="paragraph">
+<p>For å sikre seg så godt som mulig mot grove feil må det settes krav til innmålingen av objekttyper:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -6749,7 +6762,7 @@ Klassifisering</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_kartlegging_med_mobil_datafangst">8. Kartlegging med mobil datafangst</h2>
+<h2 id="kartlegging-med-mobil-datafangst">8. Kartlegging med mobil datafangst</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_innledning_2">8.1. Innledning</h3>
@@ -7010,13 +7023,13 @@ Klassifisering</p></td>
 <div class="sect4">
 <h5 id="_kjentpunkt">8.8.1.1. Kjentpunkt</h5>
 <div class="paragraph">
-<p>se definisjon kap 4</p>
+<p>Se definisjon <a href="#termer-kjentpunkt">Kjentpunkt</a>.</p>
 </div>
 </div>
 <div class="sect4">
 <h5 id="_kontrollpunkt">8.8.1.2. Kontrollpunkt</h5>
 <div class="paragraph">
-<p>se definisjon kap 4.</p>
+<p>Se definisjon <a href="#termer-kontrollpunkt">Kontrollpunkt</a>.</p>
 </div>
 <div class="paragraph">
 <p>Den absolutte nøyaktighet til kjentpunktet, skal være like eller bedre enn kravet til den absolutte nøyaktigheten til punktskyen. Dersom nøyaktigheten er 1/3 av kravet, kan kontrollpunktene benyttes direkte i statestikkberegningene. Dersom nøyaktighetene til kontrollpunktene er svakere, skal standardavviket til kjentpunktene benyttes i statestikkberegningene. Dette etter krav i standarden  <a href="https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet">Geodatakvalitet</a>. Det stilles ikke konkrete krav til omfang av kjent- og kontrollpunkt, ettersom prosjektområde, GNSS tilgjengelighet, målesystem og prosesseringsløyper har stor betydning for kvaliteten som oppnås rett fra INS. Metodikk og omfang skal være behovsstyrt og faglig begrunnet av leverandør i hvert enkelt oppdrag.</p>
@@ -7231,7 +7244,7 @@ Kvalitetselementer knyttet til kriteriet om egenskapskvalitet er angitt i Tabell
 <p>Oppnådd kvalitet på vektordata kartlagt fra punktsky/modell vil være påvirket av flere faktorer. Vi kan skille mellom kvalitetselementer knyttet til punktskyen/modellen som ligger til grunn for vektoriseringen, og kvalitetselementer i selve arbeidet med fremstilling av vektordata fra punktsky.</p>
 </div>
 <div class="paragraph">
-<p>Kvalitetselementer i punktskyen (jfr. beskrivelser i PaBG – mobil datafangst):</p>
+<p>Kvalitetselementer i punktskyen (jfr. beskrivelser i PaBG – <a href="#kartlegging-med-mobil-datafangst">Kartlegging med mobil datafangst</a>):</p>
 </div>
 <div class="ulist">
 <ul>
@@ -7293,7 +7306,106 @@ Samsvaret bør vurderes basert på senter av punktskyens «målestøy» da dette
 </tr>
 </tbody>
 </table>
+<div class="imageblock text-center">
+<div class="content">
+<img src="figurer/Kap9_Knekkpkt%20og%20tverravvik.png" alt="Figuren illustrerer knekkpunktavvik og tverravvik. Blå linje illustrerer sann vegdekkekant." width="1000">
+</div>
+<div class="title">Figur 18. Figuren illustrerer knekkpunktavvik og tverravvik. Blå linje illustrerer sann vegdekkekant.</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_kvalitetskrav">9.3. Kvalitetskrav</h3>
+<div class="sect3">
+<h4 id="_krav_til_geometrisk_avvik_og_tverravvik_pilhøyde">9.3.1. Krav til geometrisk avvik og tverravvik/ pilhøyde</h4>
+<div class="paragraph">
+<p>Ved vurdering av kvalitet på vektordata basert på vektorisering i punktsky, må både stedfestingsnøyaktighet for punktskyen geometrisk avvik i vektorisering og tverravvik/pilhøyde i grunnriss og høyde (tverravvik/pilhøyde) vurderes.</p>
+</div>
+<div class="paragraph">
+<p>Når metoden brukes som alternativ til FKB-kartkonstruksjon vil kvalitetskrav til vektordata følge av FKB-Standard og kvalitetsklasser på objekttyper definert i aktuell Produktspesifikasjon.</p>
+</div>
+<div class="paragraph">
+<p>Kvadratsummen av stedfestingsnøyaktighet på punktsky/modell, og den største verdien av geometrisk avvik eller tverravvik/ pilhøyde må være bedre enn kvalitetskravet for den aktuelle objekttypen.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_krav_til_fullstendighet">9.3.2. Krav til fullstendighet</h4>
+<div class="paragraph">
+<p>Krav til fullstendighet vil følge av krav i aktuell Produktspesifikasjon.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_kontroll">9.4. Kontroll</h3>
+<div class="paragraph">
+<p>For å kontrollere geometrisk avvik og tverravvik/pilhøyde sammenlignes vektoriserte objekter med referanseobjekter i punktskyen, og avvik måles i både i grunnriss (horisontalt) og høyde (vertikalt).</p>
+</div>
+<div class="paragraph">
+<p>Avvik i høyde kan for egnede objekttyper beregnes ved geometrisk kontroll på vektoriserte noder mot tilsvarende interpolerte høydeverdi i punktskyen. Eksempel på egnet objekttype er Kjørebanekant som ligger i god avstand fra knekklinjer i punktskyen.</p>
+</div>
+<div class="paragraph">
+<p>Avvik i grunnriss må i større grad kontrolleres ved manuelle inspeksjoner, eventuelt være integrert i arbeidsflyten for selve vektoriseringsarbeidet.</p>
+</div>
+<div class="sect3">
+<h4 id="_egnethet_av_vektorisering_til_fremstilling_av_vektordata">9.4.1. Egnethet av vektorisering til fremstilling av vektordata</h4>
+<div class="paragraph">
+<p>Ulike typer av punktsky kan benyttes som grunnlag for vektorisering av FKB-datasett, avhengig av hvilken objekttype og hvilke kvalitetskrav som gjelder. Valg av datasett og metode har stor betydning for nøyaktigheten og detaljnivået på resultatet, og det er derfor viktig å vurdere egnetheten for hvert enkelt formål. Tabellen under gir en oversikt over hvilke punktskydatasett som anbefales for vektorisering av ulike relevante datasett, sammen med kommentarer om relevante metoder og eventuelle begrensninger.</p>
+</div>
+<table id="tab-anbefalte-punktskydatasett-for-vektorisering" class="tableblock frame-all grid-all stretch">
+<caption class="title">Tabell 28. Anbefalte punktskydatasett for vektorisering</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Datasett</th>
+<th class="tableblock halign-left valign-top">Egnethet av punktsky</th>
+<th class="tableblock halign-left valign-top">Kommentar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FKB-Bane</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mobil datafangst</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Svært godt egnet</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FKB-BygnAnlegg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mobil datafangst/punktsky fra drone (ved laserskanning eller bildematching)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enkelte objekttyper langs MurLoddrett, SkråForstøtningsmur godt egnet</p>
+<p class="tableblock">For fullstendighet kan det være nødvendig med punktsky fra drone.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FKB-Bygning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Punktsky fra drone (ved laserskanning eller bildematching)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ved mobil datafangst vil fullstendighet være begrenset, spesielt for objekter på tak, men metoden kan muliggjøre andre objekttyper enn de som typisk innhentes med fotogrammetrisk kartlegging (Fasadeliv, Grunnmur)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FKB-Vann</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Punktsky fra luftbåren datafangst
+Punktsky fra drone (ved laserskanning</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FKB-Veg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mobil datafangst</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Svært godt egnet</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB Vegnett Pluss</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mobil datafangst</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Svært godt egnet</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NRL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Punktsky fra luftbåren datafangst Punktsky fra drone (ved bruk av laserskanning)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ved punktsky fra luftbåren datafangst kreves tilstrekkelig punkttetthet til at det er registrert treff på linjen. Punkter kan ligge filtrert i klasse 7 – Støy.</p></td>
+</tr>
+</tbody>
+</table>
 <div style="page-break-after: always;"></div>
+</div>
 </div>
 </div>
 </div>
@@ -7629,7 +7741,7 @@ kan foretas umiddelbart. Materialet skal være tydelig merket med eierens navn.<
 <p>På denne bakgrunn benyttes som oftest følgende GSD til de ulike FKB-standardene, se tabell <a href="#tab-FKB-GSD">Eksempler på sammenheng mellom FKB standard og GSD</a>.</p>
 </div>
 <table id="tab-FKB-GSD" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 28. Eksempler på sammenheng mellom FKB standard og GSD</caption>
+<caption class="title">Tabell 29. Eksempler på sammenheng mellom FKB standard og GSD</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7663,7 +7775,7 @@ kan foretas umiddelbart. Materialet skal være tydelig merket med eierens navn.<
 <p>Tabell <a href="#tab-tolkning-flyhøyde">Eksempler på vanskeligheter ved tolkning av objekter i bildene fra ulike flyhøyder</a> gir informasjon om begrensninger i muligheten til å tolke bildene. Tabellen er basert på analog fotografering, tilsvarende tabell er ikke utarbeidet for fotografering med digitalt kamera. (Kilde: «Handbok till mätningskunngjörelse – Fotogrammetri»).</p>
 </div>
 <table id="tab-tolkning-flyhøyde" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 29. Eksempler på vanskeligheter ved tolkning av objekter i bildene fra ulike flyhøyder</caption>
+<caption class="title">Tabell 30. Eksempler på vanskeligheter ved tolkning av objekter i bildene fra ulike flyhøyder</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
