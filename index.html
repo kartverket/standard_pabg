@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.20">
+<meta name="generator" content="Asciidoctor 2.0.23">
 <title>Standard for geografisk informasjon: Produksjon av basis geodata 3.0 under revisjon</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -140,7 +140,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #content::before{content:none}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
-#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
 #header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
@@ -162,6 +162,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #toctitle{color:#7a2518;font-size:1.2em}
 @media screen and (min-width:768px){#toctitle{font-size:1.375em}
 body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
 #toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
 #toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
 #toc.toc2>ul{font-size:.9em;margin-bottom:0}
@@ -327,7 +328,7 @@ a.image{text-decoration:none;display:inline-block}
 a.image object{pointer-events:none}
 sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
 sup.footnote a,sup.footnoteref a{text-decoration:none}
-sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
 #footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
 #footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
 #footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
@@ -612,7 +613,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_planlegging_av_laserskanning">7.2.2. Planlegging av laserskanning</a>
 <ul class="sectlevel4">
 <li><a href="#_flyplan_2">7.2.2.1. Flyplan</a></li>
-<li><a href="#_tverrstriper">7.2.2.2. Tverrstriper</a></li>
+<li><a href="#tverrstriper">7.2.2.2. Tverrstriper</a></li>
 <li><a href="#_kontrollflater">7.2.2.3. Kontrollflater</a></li>
 <li><a href="#_kontrollprofiler">7.2.2.4. Kontrollprofiler</a></li>
 </ul>
@@ -673,7 +674,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_dokumentasjonskrav">8.9. Dokumentasjonskrav</a></li>
 </ul>
 </li>
-<li><a href="#_vektorisering_fra_punktsky_og_modell">9. Vektorisering fra punktsky og modell</a></li>
+<li><a href="#_vektorisering_fra_punktsky_og_modell_som_metode_for_etablering_av_basis_geodata">9. Vektorisering fra punktsky og modell som metode for etablering av basis geodata</a>
+<ul class="sectlevel2">
+<li><a href="#_innledning_3">9.1. Innledning</a></li>
+<li><a href="#_kvalitetsparametere_ved_vektorisering_fra_punktsky">9.2. Kvalitetsparametere ved vektorisering fra punktsky</a></li>
+</ul>
+</li>
 <li><a href="#_konvertering_av_analoge_kart_til_digitale_vektordata">10. Konvertering av analoge kart til digitale vektordata</a>
 <ul class="sectlevel2">
 <li><a href="#_generelt">10.1. Generelt</a></li>
@@ -1522,8 +1528,8 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="Krav-1" class="paragraph">
-<p><strong>KRAV 1 SANNTIDSMÅLING</strong></p>
+<div id="krav-landmaling-sanntidsmaling" class="paragraph">
+<p><strong>KRAV LANDMÅLING SANNTIDSMÅLING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -1577,8 +1583,8 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="Krav-2" class="paragraph">
-<p><strong>KRAV 2 INNMÅLING MED TOTALSTASJON</strong>
+<div id="krav-landmaling-innmaling-med-totalstasjon" class="paragraph">
+<p><strong>KRAV LANDMÅLING INNMÅLING MED TOTALSTASJON</strong>
 For å sikre seg så godt som mulig mot grove feil må det settes krav til innmålingen av objekttyper:</p>
 </div>
 <div class="ulist">
@@ -1648,8 +1654,8 @@ For å sikre seg så godt som mulig mot grove feil må det settes krav til innm�
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="Krav-3-Rapportering-geodetisk-kartlegging" class="paragraph">
-<p><strong>KRAV 3 RAPPORTERING - GEODETISK KARTLEGGING</strong></p>
+<div id="krav-landmaling-rapportering-geodetisk-kartlegging" class="paragraph">
+<p><strong>KRAV LANDMÅLING RAPPORTERING - GEODETISK KARTLEGGING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -1812,8 +1818,8 @@ For å sikre seg så godt som mulig mot grove feil må det settes krav til innm�
 <h4 id="_planlegging_av_flyfotografering_flyplan">6.1.1. Planlegging av flyfotografering (flyplan)</h4>
 <div class="exampleblock">
 <div class="content">
-<div id="Krav-4-Flyplanlegging" class="paragraph">
-<p><strong>KRAV FLYPLANLEGGING FLYFOTOGRAFERING</strong></p>
+<div id="krav-foto-flyplanlegging" class="paragraph">
+<p><strong>KRAV FOTO FLYPLANLEGGING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -1877,7 +1883,7 @@ For å sikre seg så godt som mulig mot grove feil må det settes krav til innm�
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tverrstriper</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">I blokker med flere enn to striper skal alle striper dekkes av en tverrstripe. Tverrstripene skal fortrinnsvis ligge vinkelrett på flystripene. Minste tillate vinkel for å kvalifisere som tverrstripe er 50 grader (vinkel mellom flystripe og tverrstripe), se kapittel <a href="#_tverrstriper">Tverrstriper</a>. Tverrstripen har redusert krav til sky og skyskygge, men dekningen må være god nok til å lage en sammenhengende flystripe i aerotrianguleringen (krav til antall sammenbindingspunkt vil være gjeldene for tverrstriper). For storformatkamera hvor fotograferingen gjennomføres med sideoverlapp på 60% eller høyere faller kravet om tverrstripe bort.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">I blokker med flere enn to striper skal alle striper dekkes av en tverrstripe. Tverrstripene skal fortrinnsvis ligge vinkelrett på flystripene. Minste tillate vinkel for å kvalifisere som tverrstripe er 50 grader (vinkel mellom flystripe og tverrstripe), se kapittel <a href="#tverrstriper">Tverrstriper</a>. Tverrstripen har redusert krav til sky og skyskygge, men dekningen må være god nok til å lage en sammenhengende flystripe i aerotrianguleringen (krav til antall sammenbindingspunkt vil være gjeldene for tverrstriper). For storformatkamera hvor fotograferingen gjennomføres med sideoverlapp på 60% eller høyere faller kravet om tverrstripe bort.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1899,8 +1905,8 @@ For å sikre seg så godt som mulig mot grove feil må det settes krav til innm�
 <h5 id="_krav_til_kjentpunkter">6.1.2.1. Krav til kjentpunkter</h5>
 <div class="exampleblock">
 <div class="content">
-<div id="Krav-5" class="paragraph">
-<p><strong>KRAV KJENTPUNKTNØYAKTIGHET FLYFOTOGRAFERING</strong></p>
+<div id="krav-foto-kjentpunktnoyaktighet" class="paragraph">
+<p><strong>KRAV FOTO KJENTPUNKTNØYAKTIGHET</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -1998,8 +2004,8 @@ For å sikre seg så godt som mulig mot grove feil må det settes krav til innm�
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="Krav-6-Kjentpunkt-ant-plassering" class="paragraph">
-<p><strong>KRAV 6 KJENTPUNKT - ANTALL OG PLASSERING</strong></p>
+<div id="krav-foto-kjentpunkt-antall-og-plassering" class="paragraph">
+<p><strong>KRAV FOTO KJENTPUNKT - ANTALL OG PLASSERING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -2028,8 +2034,8 @@ For å sikre seg så godt som mulig mot grove feil må det settes krav til innm�
 <h4 id="_krav_til_innhold_og_presentasjon_av_fly_og_signalplanen">6.1.3. Krav til innhold og presentasjon av fly- og signalplanen</h4>
 <div class="exampleblock">
 <div class="content">
-<div id="Krav-7-FLY-SIGNALERINGSPLAN" class="paragraph">
-<p><strong>KRAV 7 FLY- OG SIGNALERINGSPLAN</strong></p>
+<div id="krav-foto-fly-og-signaleringsplan" class="paragraph">
+<p><strong>KRAV FOTO FLY- OG SIGNALERINGSPLAN</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -2103,8 +2109,8 @@ For å sikre seg så godt som mulig mot grove feil må det settes krav til innm�
 <h4 id="_utføring_av_signalering">6.2.2. Utføring av signalering</h4>
 <div class="exampleblock">
 <div class="content">
-<div id="Krav-8-SIGNALERING" class="paragraph">
-<p><strong>KRAV 8 SIGNALERING</strong></p>
+<div id="krav-foto-signalering" class="paragraph">
+<p><strong>KRAV FOTO SIGNALERING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -2263,8 +2269,8 @@ Fjell, stein, sand, grus, asfalt eller betong gir dårlig kontrast, og det skal 
 <h4 id="_egenkontroll_og_rapportering_signaleringsrapport">6.2.3. Egenkontroll og rapportering (signaleringsrapport)</h4>
 <div class="exampleblock">
 <div class="content">
-<div id="Krav-9-Rapport-SIGNALERING" class="paragraph">
-<p><strong>KRAV 9 RAPPORT - SIGNALERING</strong></p>
+<div id="krav-foto-rapport-signalering" class="paragraph">
+<p><strong>KRAV FOTO RAPPORT SIGNALERING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -2383,8 +2389,8 @@ Fjell, stein, sand, grus, asfalt eller betong gir dårlig kontrast, og det skal 
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="Krav-10-Digitalkamera" class="paragraph">
-<p><strong>KRAV 10 DIGITALE KAMERA</strong></p>
+<div id="krav-foto-digitale-kamera" class="paragraph">
+<p><strong>KRAV FOTO DIGITALE KAMERA</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -2446,8 +2452,8 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 <h5 id="_krav_til_gnssins">6.3.1.2. Krav til GNSS/INS</h5>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-11-GNSS-INS-systemer" class="paragraph">
-<p><strong>Krav 11 GNSS/INS system</strong></p>
+<div id="krav-foto-gnssins-system" class="paragraph">
+<p><strong>KRAV FOTO GNSS/INS-SYSTEM</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -2498,8 +2504,8 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 <h5 id="_krav_til_fotografering">6.3.2.1. Krav til fotografering</h5>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-12-fotografering" class="paragraph">
-<p><strong>KRAV 12 FOTOGRAFERING</strong></p>
+<div id="krav-foto-fotografering" class="paragraph">
+<p><strong>KRAV FOTO FOTOGRAFERING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -2753,8 +2759,8 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-14-dGNSS" class="paragraph">
-<p><strong>Krav 14 dGNSS</strong></p>
+<div id="krav-foto-dgnss" class="paragraph">
+<p><strong>KRAV FOTO DGNSS</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -2776,8 +2782,8 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-15-PPP" class="paragraph">
-<p><strong>Krav 15 PPP (Precise Point Positioning)</strong></p>
+<div id="krav-foto-ppp" class="paragraph">
+<p><strong>KRAV FOTO PPP (Precise Point Positioning)</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -2803,8 +2809,8 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-16-beregning-GNSS-INS" class="paragraph">
-<p><strong>Krav 16 BEREGNING GNSS/INS</strong></p>
+<div id="krav-foto-beregning-gnss-ins" class="paragraph">
+<p><strong>KRAV FOTO BEREGNING GNSS/INS</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -2884,8 +2890,8 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 <h4 id="_fremstilling_av_bilder">6.3.4. Fremstilling av bilder</h4>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-17-fremstilling-bilder" class="paragraph">
-<p><strong>Krav 17 FREMSTILLING AV BILDER</strong></p>
+<div id="krav-foto-fremstilling-av-bilder" class="paragraph">
+<p><strong>KRAV FOTO FREMSTILLING AV BILDER</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -2935,8 +2941,8 @@ For hvert av de nevnte arbeidene, inkl. leveransene, skal resultatet av utførte
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-18-rapport-flyfotografering" class="paragraph">
-<p><strong>KRAV 18 RAPPORTERING - FLYFOTOGRAFERING</strong></p>
+<div id="krav-foto-rapportering-flyfotografering" class="paragraph">
+<p><strong>KRAV FOTO RAPPORTERING FLYFOTOGRAFERING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -3415,8 +3421,8 @@ En GNSS/INS fil pr fotosesjon.</p></td>
 <h4 id="_krav_til_målearbeidet">6.4.1. Krav til målearbeidet</h4>
 <div class="exampleblock">
 <div class="content">
-<div id="Krav-19" class="paragraph">
-<p><strong>KRAV 19 MÅLING AV SAMMENBINDINGSPUNKT</strong></p>
+<div id="krav-foto-maling-av-sammenbindingspunkt" class="paragraph">
+<p><strong>KRAV FOTO MÅLING AV SAMMENBINDINGSPUNKT</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -3558,8 +3564,8 @@ bilder til at en ev. grov feil kan oppdages. Dersom det er vurdert at måling av
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-20" class="paragraph">
-<p><strong>KRAV 20  MÅLING AV KJENTPUNKTER</strong></p>
+<div id="krav-foto-maling-av-kjentpunkter" class="paragraph">
+<p><strong>KRAV FOTO MÅLING AV KJENTPUNKTER</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -3581,8 +3587,8 @@ bilder til at en ev. grov feil kan oppdages. Dersom det er vurdert at måling av
 <h4 id="_krav_til_beregningsarbeidet">6.4.2. Krav til beregningsarbeidet</h4>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-21-observasjonsvekting" class="paragraph">
-<p><strong>KRAV 21  OBSERVASJONSVEKTING, PARAMETERE OG UKJENTE</strong></p>
+<div id="krav-foto-observasjonsvekting-parametere-og-ukjente" class="paragraph">
+<p><strong>KRAV FOTO OBSERVASJONSVEKTING, PARAMETERE OG UKJENTE</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -3610,8 +3616,8 @@ bilder til at en ev. grov feil kan oppdages. Dersom det er vurdert at måling av
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-22-AT-beregning-resultat" class="paragraph">
-<p><strong>KRAV 22 AT BEREGNINGER OG RESULTAT</strong></p>
+<div id="krav-foto-at-beregninger-og-resultat" class="paragraph">
+<p><strong>KRAV FOTO AT-BEREGNINGER OG -RESULTAT</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -3734,8 +3740,8 @@ For hvert av de nevnte arbeidene, inkl. leveransene, skal resultatet av utførte
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-23-rapport-AT" class="paragraph">
-<p><strong>KRAV 23 RAPPORTERING AEROTRIANGULERING</strong></p>
+<div id="krav-foto-rapportering-aerotriangulering" class="paragraph">
+<p><strong>KRAV FOTO RAPPORTERING AEROTRIANGULERING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -4118,8 +4124,8 @@ For hvert av de nevnte arbeidene, inkl. leveransene, skal resultatet av utførte
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-24-konstruksjon" class="paragraph">
-<p><strong>KRAV 24 KONSTRUKSJON</strong></p>
+<div id="krav-foto-konstruksjon" class="paragraph">
+<p><strong>KRAV FOTO KONSTRUKSJON</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -4190,8 +4196,8 @@ For hvert av de nevnte arbeidene, inkl. leveransene, skal resultatet av utførte
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-25-logisk-konsistens" class="paragraph">
-<p><strong>KRAV 25 LOGISK KONSISTENS</strong></p>
+<div id="krav-foto-logisk-konsistens" class="paragraph">
+<p><strong>KRAV FOTO LOGISK KONSISTENS</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -4275,8 +4281,8 @@ Antall ulovlige småpolygoner<br></p></td>
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-26-rapport-konstruksjon" class="paragraph">
-<p><strong>KRAV 26 RAPPORTERING KONSTRUKSJON</strong></p>
+<div id="krav-foto-rapportering-konstruksjon" class="paragraph">
+<p><strong>KRAV FOTO RAPPORTERING KONSTRUKSJON</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -4582,8 +4588,8 @@ Manus og støttedata<br></p></td>
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-27-rapport-orto" class="paragraph">
-<p><strong>KRAV 27 RAPPORTERING - ORTOFOTO</strong></p>
+<div id="krav-foto-rapportering-ortofoto" class="paragraph">
+<p><strong>KRAV FOTO RAPPORTERING ORTOFOTO</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -4777,10 +4783,10 @@ Høydedata</p></td>
 <p>Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt («sjekkpunkter»). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktigheten til kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.</p>
 </li>
 <li>
-<p>AT-rapport: <a href="#krav-23-rapport-AT">[krav-23-rapport-AT]</a></p>
+<p>AT-rapport: <a href="#krav-foto-rapportering-aerotriangulering">Krav foto rapportering aerotriangulering</a></p>
 </li>
 <li>
-<p>Ortofotorapport: <a href="#krav-27-rapport-orto">[krav-27-rapport-orto]</a></p>
+<p>Ortofotorapport: <a href="#krav-foto-rapportering-ortofoto">Krav foto rapportering ortofoto</a></p>
 </li>
 <li>
 <p>Personopplysningsloven skal følges (inkluder GDPR).</p>
@@ -4815,7 +4821,7 @@ Høydedata</p></td>
 <p>Full AT-rapport er ikke nødvendig.</p>
 </li>
 <li>
-<p>Ortofotorapport: <a href="#krav-27-rapport-orto">[krav-27-rapport-orto]</a></p>
+<p>Ortofotorapport: <a href="#krav-foto-rapportering-ortofoto">Krav foto rapportering ortofoto</a></p>
 </li>
 <li>
 <p>Personopplysningsloven skal følges (inkluder GDPR).</p>
@@ -4861,7 +4867,7 @@ Høydedata</p></td>
 <p>Bildene må være tatt med en RTK-drone med IMU.</p>
 </li>
 <li>
-<p>Bildene må aerotrianguleres i egnet programvare med krav om AT-rapport. <a href="#krav-23-rapport-AT">[krav-23-rapport-AT]</a></p>
+<p>Bildene må aerotrianguleres i egnet programvare med krav om AT-rapport. <a href="#krav-foto-rapportering-aerotriangulering">Krav foto rapportering aerotriangulering</a></p>
 </li>
 <li>
 <p>Krav til signalerte kjentpunkt og kontrollflater følger kapt. «Fotografering med drone» samt «Kartlegging med flybåren laserskanning».  Kjentpunkt og kontrollflater må være jevnt fordelt ut over blokken/området samt dekke ytterkantene.</p>
@@ -4918,7 +4924,7 @@ Høydedata</p></td>
 <p>Bildene må være tatt med en RTK-drone med IMU.</p>
 </li>
 <li>
-<p>Bildene må aerotrianguleres i egnet programvare med krav om AT-rapport. <a href="#krav-23-rapport-AT">[krav-23-rapport-AT]</a></p>
+<p>Bildene må aerotrianguleres i egnet programvare med krav om AT-rapport. <a href="#krav-foto-rapportering-aerotriangulering">Krav foto rapportering aerotriangulering</a></p>
 </li>
 <li>
 <p>Detaljeringsgrad må være tilstrekkelig for å kunne identifisere kartobjektet samt digitalisere kartobjekter med tilstrekkelig geografisk nøyaktighet etter gjeldene standard for sluttproduktet. (metodekrav må diskuteres og utarbeides)</p>
@@ -4964,8 +4970,8 @@ Høydedata</p></td>
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-drone-kartkonstruksjon-i-stereo" class="paragraph">
-<p><strong>KRAV KARTKONSTRUKSJON I STEREO FRA DRONEBILDER</strong></p>
+<div id="krav-foto-kartkonstruksjon-i-stereo-fra-dronebilder" class="paragraph">
+<p><strong>KRAV FOTO KARTKONSTRUKSJON I STEREO FRA DRONEBILDER</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -4976,7 +4982,7 @@ Høydedata</p></td>
 <p>Bildene må være tatt med en RTK-drone med IMU.</p>
 </li>
 <li>
-<p>Bildene må aerotrianguleres i egnet programvare med krav om AT-rapport. <a href="#krav-23-rapport-AT">[krav-23-rapport-AT]</a></p>
+<p>Bildene må aerotrianguleres i egnet programvare med krav om AT-rapport. <a href="#krav-foto-rapportering-aerotriangulering">Krav foto rapportering aerotriangulering</a></p>
 </li>
 <li>
 <p>Innad i en stereomodell skal delen av stereomodellen som skal brukes til konstruksjon tilfredsstille nøyaktighetskravene og eventuelle deler av stereomodellen som ikke bør brukes skal begrunnes i AT-rapporten.</p>
@@ -5035,8 +5041,8 @@ Høydedata</p></td>
 <h5 id="_kamera">6.8.2.1. Kamera</h5>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-dronekamera" class="paragraph">
-<p><strong>KRAV TIL DRONEKAMERA</strong></p>
+<div id="krav-foto-dronekamera" class="paragraph">
+<p><strong>KRAV FOTO DRONEKAMERA</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5050,7 +5056,7 @@ Høydedata</p></td>
 <p>Kameraet kan kalibreres sammen med blokkutjevningen som en del av aerotrianguleringen.</p>
 </li>
 <li>
-<p>Kameraet skal kaliberes for hver delblokk og kan utføres som selvkalibrering ref <a href="#krav-21-observasjonsvekting">Krav 21 Observasjonsvekting, parametere og ukjente</a>.</p>
+<p>Kameraet skal kaliberes for hver delblokk og kan utføres som selvkalibrering ref <a href="#krav-foto-observasjonsvekting-parametere-og-ukjente">Krav foto observasjonsvektig, parametere og ukjente</a>.</p>
 </li>
 <li>
 <p>Kamerakalibreringen kan påføres bildene.</p>
@@ -5073,8 +5079,8 @@ Høydedata</p></td>
 <h5 id="_gnssins">6.8.2.2. GNSS/INS</h5>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-drone-gnssins" class="paragraph">
-<p><strong>KRAV TIL GNSS/INS I DRONE</strong></p>
+<div id="krav-foto-gnss-ins-i-drone" class="paragraph">
+<p><strong>KRAV FOTO GNSS/INS I DRONE</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5082,7 +5088,7 @@ Høydedata</p></td>
 <p>Dronen skal ha flerfrekvent GNSS og 3 akset IMU. GNSS-posisjonen til kameraet skal beregnes med sanntidskorreksjonssignaler (RTK) eller etterprosseseres med tilsvarende teknikker.</p>
 </li>
 <li>
-<p>Det er krav om at posisjonsnøyaktigheten til de endelige ytre orienteringselementene skal følge <a href="#krav-22-AT-beregning-resultat">Krav 22 AT beregninger og resultat</a>.</p>
+<p>Det er krav om at posisjonsnøyaktigheten til de endelige ytre orienteringselementene skal følge <a href="#krav-foto-at-beregninger-og-resultat">Krav foto AT-beregninger og -resultat</a>.</p>
 </li>
 </ul>
 </div>
@@ -5093,13 +5099,13 @@ Høydedata</p></td>
 <h5 id="_signalering_2">6.8.2.3. Signalering</h5>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-drone-signalering" class="paragraph">
-<p><strong>KRAV TIL SIGNALERING I DRONEPROSJEKT</strong></p>
+<div id="krav-foto-signalering-i-droneprosjekt" class="paragraph">
+<p><strong>KRAV FOTO SIGNALERING I DRONEPROSJEKT</strong></p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Signalering skal følge standardkravene <a href="#krav-8-signalering">Krav 8 Signalering</a>.</p>
+<p>Signalering skal følge standardkravene <a href="#krav-foto-signalering">Krav foto signalering</a>.</p>
 </li>
 <li>
 <p>Der datainnsamlingen blir utført med en GSD mindre enn 1/4 av krav til GSD for oppdraget, kan antall signalerte kjentpunkt reduseres slik at avstanden mellom kjentpunktene ikke overstiger 600m. Det skal alltid være minst 5 signalerte kjentpunkt jevnt fordelt i prosjektområdet.</p>
@@ -5113,8 +5119,8 @@ Høydedata</p></td>
 <h5 id="_flyplan">6.8.2.4. Flyplan</h5>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-drone-flyplan" class="paragraph">
-<p><strong>KRAV TIL FLYPLAN I DRONEPROSJEKTER</strong></p>
+<div id="krav-foto-flyplan-i-droneprosjekt" class="paragraph">
+<p><strong>KRAV FOTO FLYPLAN I DRONEPROSJEKTER</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5150,13 +5156,13 @@ Høydedata</p></td>
 <h5 id="_krav_til_fotografering_2">6.8.2.5. Krav til fotografering</h5>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-drone-fotografering" class="paragraph">
-<p><strong>KRAV TIL FLYFOTOGRAFERING I DRONEPROSJEKT</strong></p>
+<div id="krav-foto-flyfotografering-i-droneprosjekt" class="paragraph">
+<p><strong>KRAV FOTO FLYFOTOGRAFERING I DRONEPROSJEKT</strong></p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>For fotografering med drone gis det unntak for krav til kamerarotasjoner definert i <a href="#krav-12-fotografering">Krav 12 Fotografering</a>.</p>
+<p>For fotografering med drone gis det unntak for krav til kamerarotasjoner definert i <a href="#krav-foto-fotografering">Krav foto fotografering</a>.</p>
 </li>
 </ul>
 </div>
@@ -5251,8 +5257,8 @@ Høydedata</p></td>
 <h4 id="_minimum">6.9.1. Minimum</h4>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-skråbilder-minimum" class="paragraph">
-<p><strong>KRAV MINIMUM SKRÅBILDER</strong></p>
+<div id="krav-foto-minimum-skrabilder" class="paragraph">
+<p><strong>KRAV FOTO MINIMUM SKRÅBILDER</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5266,7 +5272,7 @@ Høydedata</p></td>
 <p>Dersom AT benyttes skal det være minst 6 eller flere sammenbindingspunkter for alle bilder. Dersom dette ikke er oppfylt for et eller flere bilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.</p>
 </li>
 <li>
-<p>Hvis det gjøres en aerotriangulering så skal AT-rapporten følge  <a href="#krav-23-rapport-AT">[krav-23-rapport-AT]</a>.</p>
+<p>Hvis det gjøres en aerotriangulering så skal AT-rapporten følge  <a href="#krav-foto-rapportering-aerotriangulering">Krav foto rapportering aerotriangulering</a>.</p>
 </li>
 </ul>
 </div>
@@ -5294,8 +5300,8 @@ Høydedata</p></td>
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-skråbilder-lav" class="paragraph">
-<p><strong>KRAV LAV SKRÅBILDER</strong></p>
+<div id="krav-foto-lav-skrabilder" class="paragraph">
+<p><strong>KRAV FOTO LAV SKRÅBILDER</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5318,7 +5324,7 @@ Høydedata</p></td>
 <p>Det skal være minst 6 eller flere sammenbindingspunkter for alle bilder. Dersom dette ikke er oppfylt for et eller flere bilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.</p>
 </li>
 <li>
-<p>AT-rapport: <a href="#krav-23-rapport-AT">[krav-23-rapport-AT]</a></p>
+<p>AT-rapport: <a href="#krav-foto-rapportering-aerotriangulering">Krav foto rapportering aerotriangulering</a></p>
 </li>
 <li>
 <p>Må følge krav i gjeldene produktspesifikasjon for ortofoto.</p>
@@ -5335,8 +5341,8 @@ Høydedata</p></td>
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-skråbilder-middels" class="paragraph">
-<p><strong>KRAV MIDDELS SKRÅBILDER</strong></p>
+<div id="krav-foto-middels-skrabilder" class="paragraph">
+<p><strong>KRAV FOTO MIDDELS SKRÅBILDER</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5347,7 +5353,7 @@ Høydedata</p></td>
 <p>Resultatene fra AT skal brukes til å forbedre posisjon og orientering av vertikalbildene og skråbildene.</p>
 </li>
 <li>
-<p>AT-rapport: <a href="#krav-23-rapport-AT">[krav-23-rapport-AT]</a></p>
+<p>AT-rapport: <a href="#krav-foto-rapportering-aerotriangulering">Krav foto rapportering aerotriangulering</a></p>
 </li>
 </ul>
 </div>
@@ -5361,8 +5367,8 @@ Høydedata</p></td>
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-skråbilder-høy" class="paragraph">
-<p><strong>KRAV HØY SKRÅBILDER</strong></p>
+<div id="krav-foto-hoy-skrabilder" class="paragraph">
+<p><strong>KRAV FOTO HØY SKRÅBILDER</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5382,7 +5388,7 @@ Høydedata</p></td>
 <p>Det skal være minst 6 eller flere sammenbindingspunkter for alle bilder. Dersom dette ikke er oppfylt for et eller flere bilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.</p>
 </li>
 <li>
-<p>AT-rapport: <a href="#krav-23-rapport-AT">[krav-23-rapport-AT]</a></p>
+<p>AT-rapport: <a href="#krav-foto-rapportering-aerotriangulering">Krav foto rapportering aerotriangulering</a></p>
 </li>
 </ul>
 </div>
@@ -5569,8 +5575,8 @@ Feilklassifiserte punkt, for eksempel vegetasjonspunkt klassifisert som bakke, v
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-28" class="paragraph">
-<p><strong>KRAV 28 LEVERANDØRKALIBRERING</strong></p>
+<div id="krav-laser-leverandørkalibrering" class="paragraph">
+<p><strong>KRAV LASER LEVERANDØRKALIBRERING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5602,8 +5608,8 @@ Feilklassifiserte punkt, for eksempel vegetasjonspunkt klassifisert som bakke, v
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-29-installasjonskalibrering" class="paragraph">
-<p><strong>KRAV 29 INSTALLASJONSKALIBRERING</strong></p>
+<div id="krav-laser-installasjonskalibrering" class="paragraph">
+<p><strong>KRAV LASER INSTALLASJONSKALIBRERING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5628,8 +5634,8 @@ Feilklassifiserte punkt, for eksempel vegetasjonspunkt klassifisert som bakke, v
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-30-daglig-kalibrering" class="paragraph">
-<p><strong>KRAV 30 DAGLIG KALIBRERING</strong></p>
+<div id="krav-laser-daglig-kalibrering" class="paragraph">
+<p><strong>KRAV LASER DAGLIG KALIBRERING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5657,8 +5663,8 @@ Feilklassifiserte punkt, for eksempel vegetasjonspunkt klassifisert som bakke, v
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-31-flyplan-laserskanning" class="paragraph">
-<p><strong>KRAV 31 FLYPLAN LASERSKANNING</strong></p>
+<div id="krav-laser-flyplan-laserskanning" class="paragraph">
+<p><strong>KRAV LASER FLYPLAN LASERSKANNING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5696,8 +5702,8 @@ Feilklassifiserte punkt, for eksempel vegetasjonspunkt klassifisert som bakke, v
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-32-opplysning-skanneparametre" class="paragraph">
-<p><strong>KRAV 32 OPPLYSNINGER OM SKANNEPARAMETRE</strong></p>
+<div id="krav-laser-opplysninger-om-skanneparametre" class="paragraph">
+<p><strong>KRAV LASER OPPLYSNINGER OM SKANNEPARAMETRE</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5746,14 +5752,14 @@ Feilklassifiserte punkt, for eksempel vegetasjonspunkt klassifisert som bakke, v
 </div>
 </div>
 <div class="sect4">
-<h5 id="_tverrstriper">7.2.2.2. Tverrstriper</h5>
+<h5 id="tverrstriper">7.2.2.2. Tverrstriper</h5>
 <div class="paragraph">
 <p>Tverrstriper benyttes til daglig kalibrering og stripejustering av et laserprosjekt. Tverrstriper bør ligge vinkelrett på stripene for å fungere som en tverrstripe, samt plasseres slik at tverrstripen unngår større områder med vann.</p>
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-33-tverrstriper" class="paragraph">
-<p><strong>KRAV 33 TVERRSTRIPER</strong></p>
+<div id="krav-laser-tverrstriper" class="paragraph">
+<p><strong>KRAV LASER TVERRSTRIPER</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5870,8 +5876,8 @@ Feilklassifiserte punkt, for eksempel vegetasjonspunkt klassifisert som bakke, v
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-34-kontrollflate-ant-plassering" class="paragraph">
-<p><strong>KRAV 34 KONTROLLFLATER - ANTALL OG PLASSERING</strong></p>
+<div id="krav-laser-kontrollflater-antall-og-plassering" class="paragraph">
+<p><strong>KRAV LASER KONTROLLFLATER - ANTALL OG PLASSERING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5902,8 +5908,8 @@ Feilklassifiserte punkt, for eksempel vegetasjonspunkt klassifisert som bakke, v
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-35" class="paragraph">
-<p><strong>KRAV 35 KONTROLLFLATER - FORM OG STØRRELSE</strong></p>
+<div id="krav-laser-kontrollflater-form-og-storrelse" class="paragraph">
+<p><strong>KRAV LASER KONTROLLFLATER - FORM OG STØRRELSE</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5921,8 +5927,8 @@ minimum 4 m<sup>2</sup> kontrollflate. Se tabell <a href="#tab-kontrollflate">Kr
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-36" class="paragraph">
-<p><strong>KRAV 36 KONTROLLFLATER - NØYAKTIGHET</strong></p>
+<div id="krav-laser-kontrollflater-noyaktighet" class="paragraph">
+<p><strong>KRAV LASER KONTROLLFLATER - NØYAKTIGHET</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5959,8 +5965,8 @@ minimum 4 m<sup>2</sup> kontrollflate. Se tabell <a href="#tab-kontrollflate">Kr
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-37-kontrollprofiler-ant-plassering" class="paragraph">
-<p><strong>KRAV 37 KONTROLLPROFILER - ANTALL OG PLASSERING</strong></p>
+<div id="krav-laser-kontrollprofiler-antall-og-plassering" class="paragraph">
+<p><strong>KRAV LASER KONTROLLPROFILER - ANTALL OG PLASSERING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5982,8 +5988,8 @@ minimum 4 m<sup>2</sup> kontrollflate. Se tabell <a href="#tab-kontrollflate">Kr
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-38-kontrollprofiler" class="paragraph">
-<p><strong>KRAV 38 KONTROLLPROFILER - FORM OG STØRRELSE</strong></p>
+<div id="krav-laser-kontrollprofiler-form-og-storrelse" class="paragraph">
+<p><strong>KRAV LASER KONTROLLPROFILER - FORM OG STØRRELSE</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -6002,8 +6008,8 @@ minimum 4 m<sup>2</sup> kontrollflate. Se tabell <a href="#tab-kontrollflate">Kr
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-39" class="paragraph">
-<p><strong>KRAV 39 KONTROLLPROFILER - NØYAKTIGHET</strong></p>
+<div id="krav-laser-kontrollprofiler-noyaktighet" class="paragraph">
+<p><strong>KRAV LASER KONTROLLPROFILER - NØYAKTIGHET</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -6032,8 +6038,8 @@ minimum 4 m<sup>2</sup> kontrollflate. Se tabell <a href="#tab-kontrollflate">Kr
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-40" class="paragraph">
-<p><strong>KRAV 40 UTFØRING AV LASERSKANNING</strong></p>
+<div id="krav-laser-utforing-av-laserskanning" class="paragraph">
+<p><strong>KRAV LASER UTFØRING AV LASERSKANNING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -6081,8 +6087,8 @@ minimum 4 m<sup>2</sup> kontrollflate. Se tabell <a href="#tab-kontrollflate">Kr
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-41-dokumentasjon-daglig-kalibrering" class="paragraph">
-<p><strong>KRAV 41 DOKUMENTASJON PÅ DAGLIG KALIBRERING</strong></p>
+<div id="krav-laser-dokumentasjon-pa-daglig-kalibrering" class="paragraph">
+<p><strong>KRAV LASER DOKUMENTASJON PÅ DAGLIG KALIBRERING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -6116,8 +6122,8 @@ minimum 4 m<sup>2</sup> kontrollflate. Se tabell <a href="#tab-kontrollflate">Kr
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-42-dokumentasjon-stripejustering" class="paragraph">
-<p><strong>KRAV 42 DOKUMENTASJON PÅ STRIPEJUSTERING</strong></p>
+<div id="krav-laser-dokumentasjon-pa-stripejustering" class="paragraph">
+<p><strong>KRAV LASER DOKUMENTASJON PÅ STRIPEJUSTERING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -6176,8 +6182,8 @@ minimum 4 m<sup>2</sup> kontrollflate. Se tabell <a href="#tab-kontrollflate">Kr
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-43" class="paragraph">
-<p><strong>KRAV 43 DOKUMENTASJON PÅ HØYDEKONTROLL</strong></p>
+<div id="krav-laser-dokumentasjon-pa-hoydekontroll" class="paragraph">
+<p><strong>KRAV LASER DOKUMENTASJON PÅ HØYDEKONTROLL</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -6275,8 +6281,8 @@ minimum 4 m<sup>2</sup> kontrollflate. Se tabell <a href="#tab-kontrollflate">Kr
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-44-dokumentasjon-grunnriss" class="paragraph">
-<p><strong>KRAV 44 DOKUMENTASJON PÅ GRUNNRISSKONTROLL</strong></p>
+<div id="krav-laser-dokumentasjon-pa-grunnrisskontroll" class="paragraph">
+<p><strong>KRAV LASER DOKUMENTASJON PÅ GRUNNRISSKONTROLL</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -6399,8 +6405,8 @@ Typiske feilkilder er:</p>
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-45-dokumentasjon-kontroll-punktsky" class="paragraph">
-<p><strong>KRAV 45 DOKUMENTASJON PÅ KONTROLL AV PUNKTSKY</strong></p>
+<div id="krav-laser-dokumentasjon-pa-kontroll-av-punktsky" class="paragraph">
+<p><strong>KRAV LASER DOKUMENTASJON PÅ KONTROLL AV PUNKTSKY</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -6452,8 +6458,8 @@ Typiske feilkilder er:</p>
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-46-klassifisering" class="paragraph">
-<p><strong>KRAV 46 KLASSIFISERING</strong></p>
+<div id="krav-laser-klassifisering" class="paragraph">
+<p><strong>KRAV LASER KLASSIFISERING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -6479,8 +6485,8 @@ Typiske feilkilder er:</p>
 <h3 id="_egenkontroll_og_rapportering_laserskanning">7.5. Egenkontroll og rapportering (laserskanning)</h3>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-47-rapport-laserskanning" class="paragraph">
-<p><strong>KRAV 47 RAPPORTERING - LASERSKANNING</strong></p>
+<div id="krav-laser-rapportering-laserskanning" class="paragraph">
+<p><strong>KRAV LASER RAPPORTERING LASERSKANNING</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -7202,9 +7208,93 @@ Kvalitetselementer knyttet til kriteriet om egenskapskvalitet er angitt i Tabell
 </div>
 </div>
 <div class="sect1">
-<h2 id="_vektorisering_fra_punktsky_og_modell">9. Vektorisering fra punktsky og modell</h2>
+<h2 id="_vektorisering_fra_punktsky_og_modell_som_metode_for_etablering_av_basis_geodata">9. Vektorisering fra punktsky og modell som metode for etablering av basis geodata</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_innledning_3">9.1. Innledning</h3>
+<div class="paragraph">
+<p>Vektorisering fra punktsky og modell kan være en alternativ metode til fotogrammetrisk kartkonstruksjon for fremstilling av vektordata. Metoden er særlig aktuell for punktskyer fra mobil datafangst og drone, men kan også være aktuell for andre datafangst metoder.</p>
+</div>
+<div class="paragraph">
+<p>Vektorisering fra punktsky innebærer bruk av automatiserte og manuelle operasjoner som tar utgangspunkt i geometri og intensitetsinformasjon i punktsky for fremstilling av vektordata. Egnethet og kvalitet vil variere for ulike objekttype. Dersom ulike sensortyper benyttes til fremstilling av punktskyen slik som fargelagt punktsky skal bildematerialet og laser punktskyen inneha samme geometriske kvalitet og tidsepoke (innenfor et døgn).</p>
+</div>
+<div class="paragraph">
+<p>Vektorisering fra modell innebærer bruk av automatiserte og manuelle operasjoner som tar utgangspunkt i geometri og fargeinformasjon fra et 3D ortofoto / 3D Mesh. Egnethet og kvalitet vil variere for ulike objekttype.</p>
+</div>
+<div class="paragraph">
+<p>Felles for begge tilnærmingene er at Krav til vektorisering følger kravene i registreringsinstruksen gitt for den objekttypen som skal vektoriseres.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_kvalitetsparametere_ved_vektorisering_fra_punktsky">9.2. Kvalitetsparametere ved vektorisering fra punktsky</h3>
+<div class="paragraph">
+<p>Oppnådd kvalitet på vektordata kartlagt fra punktsky/modell vil være påvirket av flere faktorer. Vi kan skille mellom kvalitetselementer knyttet til punktskyen/modellen som ligger til grunn for vektoriseringen, og kvalitetselementer i selve arbeidet med fremstilling av vektordata fra punktsky.</p>
+</div>
+<div class="paragraph">
+<p>Kvalitetselementer i punktskyen (jfr. beskrivelser i PaBG – mobil datafangst):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Absolutt stedfestingsnøyaktighet på punktskyen.</p>
+</li>
+<li>
+<p>Relativ stedfestingsnøyaktighet</p>
+</li>
+<li>
+<p>Målestøy «tykkelsen» til punktskyen.</p>
+</li>
+<li>
+<p>Hvor godt definert elementet som skal kartlegges er i punktskyen (jfr. kvalitetselementer Punkttetthet/ Detaljeringsgrad, Punktdistribusjon).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Kvalitetselementer i vektorisering:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Geometrisk avvik. Hvor godt samsvarer vektorisert punkt, eller noder i kurve, med tilhørende lokasjon i punktskyen (i grunnriss og høyde).</p>
+</li>
+<li>
+<p>Tverravvik (grunnriss)/ pilhøyde (høyde). Tetthet på noder langs kurven, og resulterende maksimalt avvik mellom punktsky og linjestykke i vektordata.</p>
+</li>
+<li>
+<p>Fullstendighet i vektorisering. (også påvirket av fullstendighet i punktsky).</p>
+</li>
+</ul>
+</div>
+<table id="tab-kvalitetselementer-i-vektorisering" class="tableblock frame-all grid-all stretch">
+<caption class="title">Tabell 27. Kvalitetselementer i vektorisering</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Kvalitetselement</th>
+<th class="tableblock halign-left valign-top">Beskrivelse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Knekkpunkt avvik (i grunnriss og høyde)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mål på hvor godt samsvar det er mellom vektoriserte punkt eller noder i kurve med punktskyen. Måles som avstand fra node til punktsky (i grunnriss og høyde).
+Samsvaret bør vurderes basert på senter av punktskyens «målestøy» da dette midler feil som følge av målesystemets presisjon.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tverravvik/ pilhøyde (i grunnriss og høyde)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mål på graden av generalisering i vektoriseringen. Definerer avviket mellom vektorisert linjestykke (mellom noder) og det virkelige linjeforløpet i punktskyen (i grunnriss og høyde).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fullstendighet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mål på hvilke enheter som er med i et datasett i forhold til de som burde være med. Ved vektorisering fra punktsky har dette kvalitetselementet to ledd; fullstendighet på punktskyen som benyttes i vektorisering og fullstendighet i selve vektorisering.</p></td>
+</tr>
+</tbody>
+</table>
 <div style="page-break-after: always;"></div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -7539,7 +7629,7 @@ kan foretas umiddelbart. Materialet skal være tydelig merket med eierens navn.<
 <p>På denne bakgrunn benyttes som oftest følgende GSD til de ulike FKB-standardene, se tabell <a href="#tab-FKB-GSD">Eksempler på sammenheng mellom FKB standard og GSD</a>.</p>
 </div>
 <table id="tab-FKB-GSD" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 27. Eksempler på sammenheng mellom FKB standard og GSD</caption>
+<caption class="title">Tabell 28. Eksempler på sammenheng mellom FKB standard og GSD</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7573,7 +7663,7 @@ kan foretas umiddelbart. Materialet skal være tydelig merket med eierens navn.<
 <p>Tabell <a href="#tab-tolkning-flyhøyde">Eksempler på vanskeligheter ved tolkning av objekter i bildene fra ulike flyhøyder</a> gir informasjon om begrensninger i muligheten til å tolke bildene. Tabellen er basert på analog fotografering, tilsvarende tabell er ikke utarbeidet for fotografering med digitalt kamera. (Kilde: «Handbok till mätningskunngjörelse – Fotogrammetri»).</p>
 </div>
 <table id="tab-tolkning-flyhøyde" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 28. Eksempler på vanskeligheter ved tolkning av objekter i bildene fra ulike flyhøyder</caption>
+<caption class="title">Tabell 29. Eksempler på vanskeligheter ved tolkning av objekter i bildene fra ulike flyhøyder</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -7656,58 +7746,67 @@ mindre grøfter mistes helt</p></td>
 <h2 id="_vedlegg_d_liste_over_krav">15. Vedlegg D.  Liste over krav</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#krav-1">Krav 1 Sanntidsmåling</a><br>
-<a href="#krav-2">Krav 2 Innmåling med totalstasjon</a><br>
-<a href="#Krav-3-Rapportering-geodetisk-kartlegging">Krav 3 Rapportering - Geodetisk kartlegging</a><br>
-<a href="#Krav-4-Flyplanlegging">Krav Flyplanlegging flyfotografering</a><br>
-<a href="#Krav-5">Krav Kjentpunktnøyaktighet flyfotografering</a><br>
-<a href="#Krav-6-Kjentpunkt-ant-plassering">Krav 6 Kjentpunkt - antall og plassering</a><br>
-<a href="#Krav-7-FLY-SIGNALERINGSPLAN">Krav 7 Fly- og signaleringsplan</a><br>
-<a href="#Krav-8-SIGNALERING">Krav 8 Signalering</a><br>
-<a href="#Krav-9-Rapport-SIGNALERING">Krav 9 Rapport - Signalering</a><br>
-<a href="#Krav-10-Digitalkamera">Krav 10 Digitale kamera</a><br>
-<a href="#krav-11-GNSS-INS-systemer">Krav 11 GNSS/INS system</a><br>
-<a href="#krav-12-fotografering">Krav 12 Fotografering</a><br>
+<p><a href="#krav-landmaling-sanntidsmaling">Krav landmåling sanntidsmåling</a><br>
+<a href="#krav-landmaling-innmaling-med-totalstasjon">Krav landmåling innmåling med totalstasjon</a><br>
+<a href="#krav-landmaling-rapportering-geodetisk-kartlegging">Krav landmåling rapportering - geodetisk kartlegging</a><br>
+<a href="#krav-foto-flyplanlegging">Krav foto flyplanlegging</a><br>
+<a href="#krav-foto-kjentpunktnoyaktighet">Krav foto kjentpunktnøyaktighet</a><br>
+<a href="#krav-foto-kjentpunkt-antall-og-plassering">Krav foto kjentpunkt - Antall og plassering</a><br>
+<a href="#krav-foto-fly-og-signaleringsplan">Krav foto fly- og signaleringsplan</a><br>
+<a href="#krav-foto-signalering">Krav foto signalering</a><br>
+<a href="#krav-foto-rapport-signalering">Krav foto rapport signalering</a><br>
+<a href="#krav-foto-digitale-kamera">Krav foto digitale kamera</a><br>
+<a href="#krav-foto-gnssins-system">Krav foto GNSS/INS-system</a><br>
+<a href="#krav-foto-fotografering">Krav foto fotografering</a><br>
 <a href="#krav-foto-innsamling-gnss-imu">Krav foto innsamling GNSS/IMU</a><br>
-<a href="#krav-14-dGNSS">Krav 14 dGNSS</a><br>
-<a href="#krav-15-PPP">Krav 15 PPP (Precise Point Positioning)</a><br>
-<a href="#krav-16-beregning-GNSS-INS">Krav 16 Beregning GNSS/INS</a><br>
-<a href="#krav-17-fremstilling-bilder">Krav 17 Fremstilling av bilder</a><br>
-<a href="#krav-18-rapport-flyfotografering">Krav 18 Rapportering - Flyfotografering</a><br>
-<a href="#Krav-19">Krav 19 Måling av sammenbindingspunkt</a><br>
-<a href="#krav-20">Krav 20 Måling av kjentpunkter</a><br>
-<a href="#krav-21-observasjonsvekting">Krav 21 Observasjonsvekting, parametre og ukjente</a><br>
-<a href="#krav-22-AT-beregning-resultat">Krav 22 AT beregninger og resultat</a><br>
-<a href="#krav-23-rapport-AT">Krav 23 Rapportering - Aerotriangulering</a><br>
-<a href="#krav-24-konstruksjon">Krav 24 Konstruksjon</a><br>
-<a href="#krav-25-logisk-konsistens">Krav 25 Logisk konsistens</a><br>
-<a href="#krav-26-rapport-konstruksjon">Krav 26 Rapportering - Konstruksjon</a><br>
-<a href="#krav-27-rapport-orto">Krav 27 Rapportering - Ortofoto</a><br>
+<a href="#krav-foto-dgnss">Krav foto DGNSS</a><br>
+<a href="#krav-foto-ppp">Krav foto PPP (Precise Point Positioning)</a><br>
+<a href="#krav-foto-beregning-gnss-ins">Krav foto beregning GNSS/INS</a><br>
+<a href="#krav-foto-fremstilling-av-bilder">Krav foto fremstilling av bilder</a><br>
+<a href="#krav-foto-rapportering-flyfotografering">Krav foto rapportering flyfotografering</a><br>
+<a href="#krav-foto-maling-av-sammenbindingspunkt">Krav foto måling av sammenbindingspunkt</a><br>
+<a href="#krav-foto-maling-av-kjentpunkter">Krav foto måling av kjentpunkter</a><br>
+<a href="#krav-foto-observasjonsvekting-parametere-og-ukjente">Krav foto observasjonsvektig, parametere og ukjente</a><br>
+<a href="#krav-foto-at-beregninger-og-resultat">Krav foto AT-beregninger og -resultat</a><br>
+<a href="#krav-foto-rapportering-aerotriangulering">Krav foto rapportering aerotriangulering</a><br>
+<a href="#krav-foto-konstruksjon">Krav foto konstruksjon</a><br>
+<a href="#krav-foto-logisk-konsistens">Krav foto logisk konsistens</a><br>
+<a href="#krav-foto-rapportering-konstruksjon">Krav foto rapportering konstruksjon</a><br>
+<a href="#krav-foto-rapportering-ortofoto">Krav foto rapportering ortofoto</a><br>
 <a href="#krav-foto-drone-ortofoto-uten-rtk">Krav foto droneortofoto uten RTK-drone</a><br>
-<a href="#krav-foto-drone-ortofoto-med-rtk">KRAV FOTO DRONEORTOFOTO MED RTK-DRONE</a><br>
-<a href="#krav-foto-hoydemodell-drone">KRAV FOTO HØYDEMODELL DRONE</a><br></p>
-</div>
-<div class="paragraph">
-<p><a href="#krav-28">Krav 28 Leverandørkalibrering</a><br>
-<a href="#krav-29-installasjonskalibrering">Krav 29 Installasjonskalibrering</a><br>
-<a href="#krav-30-daglig-kalibrering">Krav 30 Daglig kalibrering</a><br>
-<a href="#krav-31-flyplan-laserskanning">Krav 31 Flyplan laserskanning</a><br>
-<a href="#krav-32-opplysning-skanneparametre">Krav 32 Opplysninger om skanneparametre</a><br>
-<a href="#krav-33-tverrstriper">Krav 33 Tverrstriper</a><br>
-<a href="#krav-34-kontrollflate-ant-plassering">Krav 34 Kontrollflater - antall og plassering</a><br>
-<a href="#krav-35">Krav 35 Kontrollflater - form og størrelse</a><br>
-<a href="#krav-36">Krav 36 Kontrollflater - nøyaktighet</a><br>
-<a href="#krav-37-kontrollprofiler-ant-plassering">Krav 37 Kontrollprofiler - antall og plassering</a><br>
-<a href="#krav-38">Krav 38 Kontrollprofiler - form og størrelse</a><br>
-<a href="#krav-39">Krav 39 Kontrollprofiler - nøyaktighet</a><br>
-<a href="#krav-40">Krav 40 Utføring av laserskanning</a><br>
-<a href="#krav-41-dokumentasjon-daglig-kalibrering">Krav 41 Dokumentasjon på daglig kalibrering</a><br>
-<a href="#krav-42-dokumentasjon-stripejustering">Krav 42 Dokumentasjon på stripejustering</a><br>
-<a href="#krav-43">Krav 43 Dokumentasjon på høydekontroll</a><br>
-<a href="#krav-44-dokumentasjon-grunnriss">Krav 44 Dokumentasjon på grunnrisskontroll</a><br>
-<a href="#krav-45-dokumentasjon-kontroll-punktsky">Krav 45 Dokumentasjon på kontroll av punktsky</a><br>
-<a href="#krav-46-klassifisering">Krav 46 Klassifisering</a><br>
-<a href="#krav-47-rapport-laserskanning">Krav 47 Rapportering - Laserskanning</a><br></p>
+<a href="#krav-foto-drone-ortofoto-med-rtk">Krav foto droneortofoto med RTK-drone</a><br>
+<a href="#krav-foto-hoydemodell-drone">Krav foto høydemodell drone</a><br>
+<a href="#krav-foto-vektorisering-fra-modell">Krav vektorisering fra modell fra dronebilder</a><br>
+<a href="#krav-foto-kartkonstruksjon-i-stereo-fra-dronebilder">Krav foto kartkonstruksjon i stereo fra dronebilder</a><br>
+<a href="#krav-foto-dronekamera">Krav foto dronekamera</a><br>
+<a href="#krav-foto-gnss-ins-i-drone">Krav foto GNSS/INS i drone</a><br>
+<a href="#krav-foto-signalering-i-droneprosjekt">Krav foto signalering i droneprosjekt</a><br>
+<a href="#krav-foto-flyplan-i-droneprosjekt">Krav foto flyplan i droneprosjekt</a><br>
+<a href="#krav-foto-flyfotografering-i-droneprosjekt">Krav foto flyfotografering i droneprosjekt</a><br>
+<a href="#krav-foto-minimum-skrabilder">Krav foto minimum skråbilder</a><br>
+<a href="#krav-foto-lav-skrabilder">Krav foto lav skråbilder</a><br>
+<a href="#krav-foto-middels-skrabilder">Krav foto middels skråbilder</a><br>
+<a href="#krav-foto-hoy-skrabilder">Krav foto høy skråbilder</a><br>
+<a href="#krav-laser-leverandørkalibrering">Krav laser leverandørkalibrering</a><br>
+<a href="#krav-laser-installasjonskalibrering">Krav laser installasjonskalibrering</a><br>
+<a href="#krav-laser-daglig-kalibrering">Krav laser daglig kalibrering</a><br>
+<a href="#krav-laser-flyplan-laserskanning">Krav laser flyplan laserskanning</a><br>
+<a href="#krav-laser-opplysninger-om-skanneparametre">Krav laser opplysninger om skanneparametre</a><br>
+<a href="#krav-laser-tverrstriper">Krav laser tverrstriper</a><br>
+<a href="#krav-laser-kontrollflater-antall-og-plassering">Krav laser kontrollflater - antall og plassering</a><br>
+<a href="#krav-laser-kontrollflater-form-og-storrelse">Krav laser kontrollflater - form og størrelse</a><br>
+<a href="#krav-laser-kontrollflater-noyaktighet">Krav laser kontrollflater - nøyaktighet</a><br>
+<a href="#krav-laser-kontrollprofiler-antall-og-plassering">Krav laser kontrollprofiler - antall og plassering</a><br>
+<a href="#krav-laser-kontrollprofiler-form-og-storrelse">Krav laser kontrollprofiler - form og strørrelse</a><br>
+<a href="#krav-laser-kontrollprofiler-noyaktighet">Krav laser kontrollprofiler - nøyaktighet</a><br>
+<a href="#krav-laser-utforing-av-laserskanning">Krav laser utføring av laserskanning</a><br>
+<a href="#krav-laser-dokumentasjon-pa-daglig-kalibrering">Krav laser dokumentasjon på daglig kalibrering</a><br>
+<a href="#krav-laser-dokumentasjon-pa-stripejustering">Krav laser dokumentasjon på stripejustering</a><br>
+<a href="#krav-laser-dokumentasjon-pa-hoydekontroll">Krav laser dokumentasjon på høydekontroll</a><br>
+<a href="#krav-laser-dokumentasjon-pa-grunnrisskontroll">Krav laser dokumentasjon på grunnrisskontroll</a><br>
+<a href="#krav-laser-dokumentasjon-pa-kontroll-av-punktsky">Krav laser dokumentasjon på kontroll av punktsky</a><br>
+<a href="#krav-laser-klassifisering">Krav laser klassifisering</a><br>
+<a href="#krav-laser-rapportering-laserskanning">Krav laser rapportering laserskanning</a><br></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -7716,10 +7815,10 @@ mindre grøfter mistes helt</p></td>
 <h2 id="_vedlegg_e_liste_over_anbefalinger">16. Vedlegg E.  Liste over anbefalinger</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#anbefaling-foto-drone-ortofoto-med-rtk">ANBEFALING FOTO DRONEORTOFOTO MED RTK-DRONE</a><br>
-<a href="#anbefaling-foto-drone-kartkonstruksjon-i-stereo">ANBEFALING FOTO KARTKONSTRUKSJON I STEREO FRA DRONEBILDER</a><br>
-<a href="#anbefaling-foto-drone-detaljerte-prosjekter">ANBEFALING FOTO FLYPLAN I DRONEPROSJEKTER</a><br>
-<a href="#anbefaling-foto-skråbilder-minimum">ANBEFALING FOTO MINIMUM SKRÅBILDER</a><br></p>
+<p><a href="#anbefaling-foto-drone-ortofoto-med-rtk">Anbefaling foto droneortofoto med RTK-drone</a><br>
+<a href="#anbefaling-foto-drone-kartkonstruksjon-i-stereo">Anbefaling foto kartkonstruksjon i stereo fra dronebilder</a><br>
+<a href="#anbefaling-foto-drone-detaljerte-prosjekter">Anbefaling foto flyplan i droneprosjekter</a><br>
+<a href="#anbefaling-foto-skråbilder-minimum">Anbefaling foto minimum skråbilder</a><br></p>
 </div>
 <div style="page-break-after: always;"></div>
 <h2 id="_lisensvilkår" class="discrete">Lisensvilkår</h2>
@@ -7781,7 +7880,7 @@ av denne lisensen og ikke kan viderebrukes</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-02-17 08:15:13 +0100
+Last updated 2026-02-16 16:48:07 +0100
 </div>
 </div>
 <script type="text/x-mathjax-config">
