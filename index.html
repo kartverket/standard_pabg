@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.23">
+<meta name="generator" content="Asciidoctor 2.0.26">
 <title>Standard for geografisk informasjon: Produksjon av basis geodata 3.0 under revisjon</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -116,7 +116,6 @@ h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title str
 :not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
 pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
 pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
-pre>code{display:block}
 pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
 em em{font-style:normal}
 strong strong{font-weight:400}
@@ -219,6 +218,7 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
 .literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
 .listingblock>.content{position:relative}
+.listingblock pre>code{display:block}
 .listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
 .listingblock:hover code[data-lang]::before{display:block}
 .listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
@@ -678,6 +678,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_innledning_3">9.1. Innledning</a></li>
 <li><a href="#_kvalitetsparametere_ved_vektorisering_fra_punktsky">9.2. Kvalitetsparametere ved vektorisering fra punktsky</a></li>
+<li><a href="#_kvalitetskrav">9.3. Kvalitetskrav</a>
+<ul class="sectlevel3">
+<li><a href="#_krav_til_geometrisk_avvik_og_tverravvik_pilhøyde">9.3.1. Krav til geometrisk avvik og tverravvik/ pilhøyde</a></li>
+<li><a href="#_krav_til_fullstendighet">9.3.2. Krav til fullstendighet</a></li>
+</ul>
+</li>
+<li><a href="#_kontroll">9.4. Kontroll</a>
+<ul class="sectlevel3">
+<li><a href="#_egnethet_av_vektorisering_til_fremstilling_av_vektordata">9.4.1. Egnethet av vektorisering til fremstilling av vektordata</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#_konvertering_av_analoge_kart_til_digitale_vektordata">10. Konvertering av analoge kart til digitale vektordata</a>
@@ -7293,7 +7304,106 @@ Samsvaret bør vurderes basert på senter av punktskyens «målestøy» da dette
 </tr>
 </tbody>
 </table>
+<div class="imageblock text-center">
+<div class="content">
+<img src="figurer/Kap9_Knekkpkt%20og%20tverravvik.png" alt="Figuren illustrerer knekkpunktavvik og tverravvik. Blå linje illustrerer sann vegdekkekant." width="1000">
+</div>
+<div class="title">Figur 18. Figuren illustrerer knekkpunktavvik og tverravvik. Blå linje illustrerer sann vegdekkekant.</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_kvalitetskrav">9.3. Kvalitetskrav</h3>
+<div class="sect3">
+<h4 id="_krav_til_geometrisk_avvik_og_tverravvik_pilhøyde">9.3.1. Krav til geometrisk avvik og tverravvik/ pilhøyde</h4>
+<div class="paragraph">
+<p>Ved vurdering av kvalitet på vektordata basert på vektorisering i punktsky, må både stedfestingsnøyaktighet for punktskyen geometrisk avvik i vektorisering og tverravvik/pilhøyde i grunnriss og høyde (tverravvik/pilhøyde) vurderes.</p>
+</div>
+<div class="paragraph">
+<p>Når metoden brukes som alternativ til FKB-kartkonstruksjon vil kvalitetskrav til vektordata følge av FKB-Standard og kvalitetsklasser på objekttyper definert i aktuell Produktspesifikasjon.</p>
+</div>
+<div class="paragraph">
+<p>Kvadratsummen av stedfestingsnøyaktighet på punktsky/modell, og den største verdien av geometrisk avvik eller tverravvik/ pilhøyde må være bedre enn kvalitetskravet for den aktuelle objekttypen.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_krav_til_fullstendighet">9.3.2. Krav til fullstendighet</h4>
+<div class="paragraph">
+<p>Krav til fullstendighet vil følge av krav i aktuell Produktspesifikasjon.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_kontroll">9.4. Kontroll</h3>
+<div class="paragraph">
+<p>For å kontrollere geometrisk avvik og tverravvik/pilhøyde sammenlignes vektoriserte objekter med referanseobjekter i punktskyen, og avvik måles i både i grunnriss (horisontalt) og høyde (vertikalt).</p>
+</div>
+<div class="paragraph">
+<p>Avvik i høyde kan for egnede objekttyper beregnes ved geometrisk kontroll på vektoriserte noder mot tilsvarende interpolerte høydeverdi i punktskyen. Eksempel på egnet objekttype er Kjørebanekant som ligger i god avstand fra knekklinjer i punktskyen.</p>
+</div>
+<div class="paragraph">
+<p>Avvik i grunnriss må i større grad kontrolleres ved manuelle inspeksjoner, eventuelt være integrert i arbeidsflyten for selve vektoriseringsarbeidet.</p>
+</div>
+<div class="sect3">
+<h4 id="_egnethet_av_vektorisering_til_fremstilling_av_vektordata">9.4.1. Egnethet av vektorisering til fremstilling av vektordata</h4>
+<div class="paragraph">
+<p>Ulike typer av punktsky kan benyttes som grunnlag for vektorisering av FKB-datasett, avhengig av hvilken objekttype og hvilke kvalitetskrav som gjelder. Valg av datasett og metode har stor betydning for nøyaktigheten og detaljnivået på resultatet, og det er derfor viktig å vurdere egnetheten for hvert enkelt formål. Tabellen under gir en oversikt over hvilke punktskydatasett som anbefales for vektorisering av ulike relevante datasett, sammen med kommentarer om relevante metoder og eventuelle begrensninger.</p>
+</div>
+<table id="tab-anbefalte-punktskydatasett-for-vektorisering" class="tableblock frame-all grid-all stretch">
+<caption class="title">Tabell 28. Anbefalte punktskydatasett for vektorisering</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Datasett</th>
+<th class="tableblock halign-left valign-top">Egnethet av punktsky</th>
+<th class="tableblock halign-left valign-top">Kommentar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FKB-Bane</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mobil datafangst</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Svært godt egnet</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FKB-BygnAnlegg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mobil datafangst/punktsky fra drone (ved laserskanning eller bildematching)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enkelte objekttyper langs MurLoddrett, SkråForstøtningsmur godt egnet</p>
+<p class="tableblock">For fullstendighet kan det være nødvendig med punktsky fra drone.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FKB-Bygning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Punktsky fra drone (ved laserskanning eller bildematching)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ved mobil datafangst vil fullstendighet være begrenset, spesielt for objekter på tak, men metoden kan muliggjøre andre objekttyper enn de som typisk innhentes med fotogrammetrisk kartlegging (Fasadeliv, Grunnmur)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FKB-Vann</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Punktsky fra luftbåren datafangst
+Punktsky fra drone (ved laserskanning</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FKB-Veg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mobil datafangst</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Svært godt egnet</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NVDB Vegnett Pluss</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mobil datafangst</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Svært godt egnet</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NRL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Punktsky fra luftbåren datafangst Punktsky fra drone (ved bruk av laserskanning)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ved punktsky fra luftbåren datafangst kreves tilstrekkelig punkttetthet til at det er registrert treff på linjen. Punkter kan ligge filtrert i klasse 7 – Støy.</p></td>
+</tr>
+</tbody>
+</table>
 <div style="page-break-after: always;"></div>
+</div>
 </div>
 </div>
 </div>
@@ -7629,7 +7739,7 @@ kan foretas umiddelbart. Materialet skal være tydelig merket med eierens navn.<
 <p>På denne bakgrunn benyttes som oftest følgende GSD til de ulike FKB-standardene, se tabell <a href="#tab-FKB-GSD">Eksempler på sammenheng mellom FKB standard og GSD</a>.</p>
 </div>
 <table id="tab-FKB-GSD" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 28. Eksempler på sammenheng mellom FKB standard og GSD</caption>
+<caption class="title">Tabell 29. Eksempler på sammenheng mellom FKB standard og GSD</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7663,7 +7773,7 @@ kan foretas umiddelbart. Materialet skal være tydelig merket med eierens navn.<
 <p>Tabell <a href="#tab-tolkning-flyhøyde">Eksempler på vanskeligheter ved tolkning av objekter i bildene fra ulike flyhøyder</a> gir informasjon om begrensninger i muligheten til å tolke bildene. Tabellen er basert på analog fotografering, tilsvarende tabell er ikke utarbeidet for fotografering med digitalt kamera. (Kilde: «Handbok till mätningskunngjörelse – Fotogrammetri»).</p>
 </div>
 <table id="tab-tolkning-flyhøyde" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 29. Eksempler på vanskeligheter ved tolkning av objekter i bildene fra ulike flyhøyder</caption>
+<caption class="title">Tabell 30. Eksempler på vanskeligheter ved tolkning av objekter i bildene fra ulike flyhøyder</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -7880,7 +7990,7 @@ av denne lisensen og ikke kan viderebrukes</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-02-16 16:48:07 +0100
+Last updated 2026-02-17 08:10:54 +0100
 </div>
 </div>
 <script type="text/x-mathjax-config">
@@ -7906,6 +8016,6 @@ MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
   })
 })
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>
