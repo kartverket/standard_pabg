@@ -20,14 +20,14 @@ _MERKNAD_: I tilegg til sammenbindingspunkter inngår kjentpunker og GNSS/INS-da
 .affin transformasjon
 koordinattransformasjon som ikke bevarer vinkelstørrelser uendret 
 
-_MERKNAD_: I motsetning til konform transformasjon kan hver koordinatakse ved affin transformasjon ha individuell målestokk og rotasjon. Affin transformasjon kan utføres som lineær eller utvidet (ikke-lineær) transformasjon. I fotogrammetri benyttes affin transformasjon bl.a. ved korreksjon av bildekoordinater. 
+_MERKNAD_: I motsetning til konform transformasjon kan hver koordinatakse ved affin transformasjon ha individuell målestokk og rotasjon. Affin transformasjon kan utføres som lineær eller utvidet (ikke-lineær) transformasjon. I fotogrammetri benyttes affin transformasjon blant annet ved korreksjon av bildekoordinater. 
 
 .ajourføring
 korrigering av innholdet i geodataene slik at de fremstiller de faktiske forhold på et gitt tidspunkt, etter de retningslinjer som gjelder for innhold og kvalitet
 
 _MERKNAD_:
 
-1.	Det er en selvfølge at "konsekvensrettelser" også blir utført. F.eks. når det bygges et nytt hus, blir ofte gjerder, arealbruksgrenser og veger omkring huset forandret. Ajourføring innebærer at alle disse forandringene blir gjort i de aktuelle databaser.
+1.	Det er en selvfølge at "konsekvensrettelser" også blir utført. For eksempel når det bygges et nytt hus, blir ofte gjerder, arealbruksgrenser og veger omkring huset forandret. Ajourføring innebærer at alle disse forandringene blir gjort i de aktuelle databaser.
 
 2.	Oppgradering til nyere og bedre standard defineres som noe annet enn ajourføring, selv om det kan gjøres på samme måte som periodisk ajourføring.
 
@@ -95,10 +95,10 @@ _MERKNAD_: To laserkjegler skapes enten ved å splitte en energikilde (split bea
 .egenskap
 navngitt kjennetegn eller karakteristikk av et objekt <<G>>
 
-_MERKNAD_: Egenskap defineres ved navn (f.eks. "bygge-år"), datatype (f.eks. årstall) og verdiområde (f.eks. "Kristi fødsel - dags dato"). Egenskapsverdi er verdien til egenskapen for det aktuelle objektet, f.eks. 1998. Egenskapsdata kalles noen ganger for attributtdata.
+_MERKNAD_: Egenskap defineres ved navn (for eksempel "bygge-år"), datatype (for eksempel årstall) og verdiområde (for eksempel "Kristi fødsel - dags dato"). Egenskapsverdi er verdien til egenskapen for det aktuelle objektet, for eksempel 1998. Egenskapsdata kalles noen ganger for attributtdata.
 
 Eksempel: Form, materiale, farge, høyde, størrelse, juridiske forhold, bruk, beskaffenhet,
-konsistens, økonomisk verdi osv.
+konsistens, økonomisk verdi og så videre.
 
 .elektronisk lukker
 fungerer ved at kameraets bildebrikke leser av linje for linje sekvensielt for å kontrollere eksponeringen. Når motiver beveger seg raskt kan rullende lukker-fortegning oppstå.
@@ -237,7 +237,7 @@ forbedring av den datatekniske kvaliteten av eksisterende data
 .ortofoto
 georeferert fly- eller satellittbilde i ortogonalprojeksjon
 
-_MERKNAD_: Ortofotoet har samme geometriske egenskaper som et kart og er knyttet til et kart-koordinatsystem. Objekter (f.eks. hus, stolper, trær, broer) som ikke er modellert i høydemodellen, vil ha avvikende projeksjon. Det kan også lages ortofoto av f.eks. en fasade fotografert med terrestrisk kamera.
+_MERKNAD_: Ortofotoet har samme geometriske egenskaper som et kart og er knyttet til et kart-koordinatsystem. Objekter (for eksempel hus, stolper, trær, broer) som ikke er modellert i høydemodellen, vil ha avvikende projeksjon. Det kan også lages ortofoto av for eksempel en fasade fotografert med terrestrisk kamera.
 
 .piksel
 et digitalt bildes minste enhet med en definert geometrisk utstrekning og intensitetsverdi
@@ -287,7 +287,7 @@ _MERKNAD_: Se geodetisk stamnett.
 .standardavvik
 statistisk størrelse som angir spredningen for en gruppe måle- eller beregningsverdier i forhold til deres sanne eller estimerte verdier <<G>>
 
-_MERKNAD_: Internasjonalt benyttes også begrepet RMSE. Ved høy overbestemmelse (mange målinger) vil RMSE og standardavvik være sammenfallende, forutsatt at ev. systematisk avvik er avspaltet.
+_MERKNAD_: Internasjonalt benyttes også begrepet RMSE. Ved høy overbestemmelse (mange målinger) vil RMSE og standardavvik være sammenfallende, forutsatt at eventuelt systematisk avvik er avspaltet.
 
 .systematisk avvik
 avvik som er regelmessig med hensyn til fortegn og tallverdi <<G>>
@@ -314,7 +314,7 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 .topologi
 beskrivelse av den romlige sammenhengen mellom geografiske objekter <<G>>
 
-_MERKNAD_: Topologi er de av objektenes egenskaper som overlever det som er kalt "kontinuerlige transformasjoner" (også kalt "rubber sheet"-transformasjoner). Alle tallverdier (lengder, areal, retninger) kan bli forandret, mens f.eks. naboskapsforhold vil være uendret.
+_MERKNAD_: Topologi er de av objektenes egenskaper som overlever det som er kalt "kontinuerlige transformasjoner" (også kalt "rubber sheet"-transformasjoner). Alle tallverdier (lengder, areal, retninger) kan bli forandret, mens for eksempel naboskapsforhold vil være uendret.
 
 .ytre pålitelighet
 virkningen på de ukjente i utjevningen av mulige gjenværende grove feil i observasjonene
