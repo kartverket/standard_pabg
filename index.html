@@ -649,7 +649,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_egenkontroll_og_rapportering_laserskanning">7.5. Egenkontroll og rapportering (laserskanning)</a></li>
 </ul>
 </li>
-<li><a href="#_kartlegging_med_mobil_datafangst">8. Kartlegging med mobil datafangst</a>
+<li><a href="#kartlegging-med-mobil-datafangst">8. Kartlegging med mobil datafangst</a>
 <ul class="sectlevel2">
 <li><a href="#_innledning_2">8.1. Innledning</a></li>
 <li><a href="#_omfang_2">8.2. Omfang</a></li>
@@ -1200,7 +1200,7 @@ plane koordinater og/eller høyde er bestemt, eller planlagt bestemt i et geodet
 <div class="title">kikkertsikker høyde</div>
 <p>minimumsavstand mellom laserinstrument og person som ser direkte mot laserinstrumentet i kikkert</p>
 </div>
-<div class="paragraph">
+<div id="termer-kjentpunkt" class="paragraph">
 <div class="title">kjentpunkt</div>
 <p>Kjentpunkt er signalerte eller naturlige punkt eller flater med kjente absolutte koordinater gitt i prosjektet referanseramme. Kjentpunkt brukes til justering, aerotriangulering, kalibrering av instrument og lignende. Justeringen kan utføres på selve posisjon og orienteringsløsningen til instrumentet, eller til å justere selve datasettet (punktsky, bilder, mm) med formål å forbedre den absolutte stedfestingsnøyaktigheten.</p>
 </div>
@@ -1211,7 +1211,7 @@ plane koordinater og/eller høyde er bestemt, eller planlagt bestemt i et geodet
 <div class="paragraph">
 <p><em>MERKNAD</em>: Konform transformasjon kjennetegnes ved at vinkelstørrelser (formen) beholdes uendret.</p>
 </div>
-<div class="paragraph">
+<div id="termer-kontrollpunkt" class="paragraph">
 <div class="title">kontrollpunkt</div>
 <p>Kontrollpunkt ("sjekkpunkt") er signalerte eller naturlige punkt eller flater med kjente absolutte koordinater gitt i prosjektets referanseramme.  Kontrollpunkt er uavhengige punkt som ikke skal benyttes i fremstilling og prosesseringen av produktet. Punktene skal kun benyttes til å dokumentere og kontrollere absolutt stedfestingsnøyaktighet til sluttproduktet. Kontrollpunkt skal være egnet til å kontrollere det aktuelle datasettet. De skal ha kjent og dokumentert kvalitet.</p>
 </div>
@@ -1595,8 +1595,10 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 <div class="exampleblock">
 <div class="content">
 <div id="krav-landmaling-innmaling-med-totalstasjon" class="paragraph">
-<p><strong>KRAV LANDMÅLING INNMÅLING MED TOTALSTASJON</strong>
-For å sikre seg så godt som mulig mot grove feil må det settes krav til innmålingen av objekttyper:</p>
+<p><strong>KRAV LANDMÅLING INNMÅLING MED TOTALSTASJON</strong></p>
+</div>
+<div class="paragraph">
+<p>For å sikre seg så godt som mulig mot grove feil må det settes krav til innmålingen av objekttyper:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -6760,7 +6762,7 @@ Klassifisering</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_kartlegging_med_mobil_datafangst">8. Kartlegging med mobil datafangst</h2>
+<h2 id="kartlegging-med-mobil-datafangst">8. Kartlegging med mobil datafangst</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_innledning_2">8.1. Innledning</h3>
@@ -7021,13 +7023,13 @@ Klassifisering</p></td>
 <div class="sect4">
 <h5 id="_kjentpunkt">8.8.1.1. Kjentpunkt</h5>
 <div class="paragraph">
-<p>se definisjon kap 4</p>
+<p>Se definisjon <a href="#termer-kjentpunkt">Kjentpunkt</a>.</p>
 </div>
 </div>
 <div class="sect4">
 <h5 id="_kontrollpunkt">8.8.1.2. Kontrollpunkt</h5>
 <div class="paragraph">
-<p>se definisjon kap 4.</p>
+<p>Se definisjon <a href="#termer-kontrollpunkt">Kontrollpunkt</a>.</p>
 </div>
 <div class="paragraph">
 <p>Den absolutte nøyaktighet til kjentpunktet, skal være like eller bedre enn kravet til den absolutte nøyaktigheten til punktskyen. Dersom nøyaktigheten er 1/3 av kravet, kan kontrollpunktene benyttes direkte i statestikkberegningene. Dersom nøyaktighetene til kontrollpunktene er svakere, skal standardavviket til kjentpunktene benyttes i statestikkberegningene. Dette etter krav i standarden  <a href="https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet">Geodatakvalitet</a>. Det stilles ikke konkrete krav til omfang av kjent- og kontrollpunkt, ettersom prosjektområde, GNSS tilgjengelighet, målesystem og prosesseringsløyper har stor betydning for kvaliteten som oppnås rett fra INS. Metodikk og omfang skal være behovsstyrt og faglig begrunnet av leverandør i hvert enkelt oppdrag.</p>
@@ -7242,7 +7244,7 @@ Kvalitetselementer knyttet til kriteriet om egenskapskvalitet er angitt i Tabell
 <p>Oppnådd kvalitet på vektordata kartlagt fra punktsky/modell vil være påvirket av flere faktorer. Vi kan skille mellom kvalitetselementer knyttet til punktskyen/modellen som ligger til grunn for vektoriseringen, og kvalitetselementer i selve arbeidet med fremstilling av vektordata fra punktsky.</p>
 </div>
 <div class="paragraph">
-<p>Kvalitetselementer i punktskyen (jfr. beskrivelser i PaBG – mobil datafangst):</p>
+<p>Kvalitetselementer i punktskyen (jfr. beskrivelser i PaBG – <a href="#kartlegging-med-mobil-datafangst">Kartlegging med mobil datafangst</a>):</p>
 </div>
 <div class="ulist">
 <ul>
