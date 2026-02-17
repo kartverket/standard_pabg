@@ -188,6 +188,7 @@ avstanden fra ytre projeksjon til bildeplan
 .kikkertsikker høyde
 minimumsavstand mellom laserinstrument og person som ser direkte mot laserinstrumentet i kikkert
 
+[#termer-kjentpunkt,reftext="Kjentpunkt"]
 .kjentpunkt
 Kjentpunkt er signalerte eller naturlige punkt eller flater med kjente absolutte koordinater gitt i prosjektet referanseramme. Kjentpunkt brukes til justering, aerotriangulering, kalibrering av instrument og lignende. Justeringen kan utføres på selve posisjon og orienteringsløsningen til instrumentet, eller til å justere selve datasettet (punktsky, bilder, mm) med formål å forbedre den absolutte stedfestingsnøyaktigheten.
 
@@ -196,6 +197,8 @@ overføring av et punktsystem fra et koordinatsystem til et annet med origoforfl
 
 _MERKNAD_: Konform transformasjon kjennetegnes ved at vinkelstørrelser (formen) beholdes uendret.
 
+
+[#termer-kontrollpunkt,reftext="Kontrollpunkt"]
 .kontrollpunkt
 Kontrollpunkt ("sjekkpunkt") er signalerte eller naturlige punkt eller flater med kjente absolutte koordinater gitt i prosjektets referanseramme.  Kontrollpunkt er uavhengige punkt som ikke skal benyttes i fremstilling og prosesseringen av produktet. Punktene skal kun benyttes til å dokumentere og kontrollere absolutt stedfestingsnøyaktighet til sluttproduktet. Kontrollpunkt skal være egnet til å kontrollere det aktuelle datasettet. De skal ha kjent og dokumentert kvalitet.
 
