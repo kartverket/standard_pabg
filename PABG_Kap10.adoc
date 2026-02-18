@@ -50,7 +50,7 @@ Kartet som skal skannes, må ha klart definerte merker eller punkter (rammemerke
 På samme måte som ved manuell digitalisering må det spesifiseres hvilken topologi som skal ligge i det ferdige resultatet. Krav for danning av knutepunkt (avstand mellom punkter og linjer) må oppgis.
 
 ===== Klipping mot kartkant
-Alle linjer skal klippes eksakt mot kartkant. Kartkant skal være oppgitt eller mulig å beregne. Linjer som slutter innenfor en gitt avstand til kartkant (f.eks. 2 mm), forlenges til skjæring med kartkant. Punkter eller linjer som går utenfor kartkanten, skal ikke med i det endelige resultatet med mindre det er spesielt avtalt og kodet på en spesiell måte.
+Alle linjer skal klippes eksakt mot kartkant. Kartkant skal være oppgitt eller mulig å beregne. Linjer som slutter innenfor en gitt avstand til kartkant (for eksempel 2 mm), forlenges til skjæring med kartkant. Punkter eller linjer som går utenfor kartkanten, skal ikke med i det endelige resultatet med mindre det er spesielt avtalt og kodet på en spesiell måte.
 
 ===== Punkttetthet
 Linjer kan representeres ved et punkt i hvert knekkpunkt, dvs. der linjen endrer retning, ved en serie punkter med konstant avstand eller en serie punkter med avstand varierende med hvor mye linjen endrer retning. Måten linjer representeres på, skal oppgis.
