@@ -15,7 +15,7 @@ Termer og forkortelser som er definert utenfor denne standarden er basert på f�
 .aerotriangulering
 metode for bestemmelse av flybilders ytre orientering vha. måling av punkter som knytter bilder og flystriper sammen
 
-_MERKNAD_: I tilegg til sammenbindingspunkter inngår kjentpunker og GNSS/INS-data som observasjoner i en samlet utjevningsberegning (blokkutjevning). I tillegg til  sammenbindingspunktene og ytre orienteringselementene kan også andre ukjente defineres og løses ut i utjevningen.
+_MERKNAD_: I tilegg til sammenbindingspunkter inngår kjentpunker og GNSS/INS-data som observasjoner i en samlet utjevningsberegning (blokkutjevning). I tillegg til sammenbindingspunktene og ytre orienteringselementene kan også andre ukjente defineres og løses ut i utjevningen.
 
 .affin transformasjon
 koordinattransformasjon som ikke bevarer vinkelstørrelser uendret 
@@ -330,7 +330,7 @@ Aerotriangulering
 
 CentimeterPOSisjonering
 
-*dGNSS*
+*DGNSS*
 
 Differensiell Global Navigation Satellite System
 
