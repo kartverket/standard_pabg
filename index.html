@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.26">
+<meta name="generator" content="Asciidoctor 2.0.23">
 <title>Standard for geografisk informasjon: Produksjon av basis geodata 3.0 under revisjon</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -116,6 +116,7 @@ h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title str
 :not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
 pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
 pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
 pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
 em em{font-style:normal}
 strong strong{font-weight:400}
@@ -218,7 +219,6 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
 .literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
 .listingblock>.content{position:relative}
-.listingblock pre>code{display:block}
 .listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
 .listingblock:hover code[data-lang]::before{display:block}
 .listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
@@ -6868,9 +6868,7 @@ Klassifisering</p></td>
 <div class="sect2">
 <h3 id="_klassifisering">8.6. Klassifisering</h3>
 <div class="paragraph">
-<p>Klassifisering av punktsky er opsjonelt. Der produktets målsetting krever klassifisering, følges kravene til klassifisering gitt i <a href="#Bearbeiding av laserdata (klassifisering)
- ">[Bearbeiding av laserdata (klassifisering)
- ]</a>.</p>
+<p>Klassifisering av punktsky er opsjonelt. Der produktets målsetting krever klassifisering, følges kravene til klassifisering gitt i kap 7.4.</p>
 </div>
 </div>
 <div class="sect2">
@@ -6887,7 +6885,7 @@ Klassifisering</p></td>
 <div class="sect3">
 <h4 id="_stedfestingsnøyaktighet">8.8.1. Stedfestingsnøyaktighet</h4>
 <div class="paragraph">
-<p>Med stedfestingsnøyaktighet menes hvor godt stedfestingen til et objekt samsvarer med virkeligheten, realisert i angitt referanseramme. Metoden som brukes til å evaluere absolutt stedfestningsnøyaktighet følger standarden <a href="https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet">Geodatakvalitet</a>. Kravene gjelder for tydelige, veldefinerte objekter innenfor prosjektområdet. Kvalitetselement knyttet til kriteriet om stedfestingsnøyaktighet er angitt i    <a href="#tab-kvalitetselementer-knyttet-til-kategorien-stedfestingsnøyaktighet">Tabell 23</a> med beskrivelse.</p>
+<p>Med stedfestingsnøyaktighet menes hvor godt stedfestingen til et objekt samsvarer med virkeligheten, realisert i angitt referanseramme. Metoden som brukes til å evaluere absolutt stedfestningsnøyaktighet følger standarden <a href="https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet">Geodatakvalitet</a>. Kravene gjelder for tydelige, veldefinerte objekter innenfor prosjektområdet. Kvalitetselement knyttet til kriteriet om stedfestingsnøyaktighet er angitt i Tabell 7 med beskrivelse.</p>
 </div>
 <table id="tab-kvalitetselementer-knyttet-til-kategorien-stedfestingsnøyaktighet" class="tableblock frame-all grid-all stretch">
 <caption class="title">Tabell 23. Kvalitetselementer knyttet til kategorien stedfestingsnøyaktighet</caption>
@@ -6912,7 +6910,7 @@ Klassifisering</p></td>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="figurer/Kap8_Absolutt%20stedfestingsnøyaktighet_Systematisk%20avvik4.png" alt="Rød pil viser en måling som kan inngå i beregningen av absolutt stedfestingsnøyaktighet" width="systematisk avvik." height="400">
+<img src="figurer/Kap8_Absolutt%20stedfestingsnøyaktighet_Systematisk%20avvik2.png" alt="Rød pil viser en måling som kan inngå i beregningen av absolutt stedfestingsnøyaktighet" width="systematisk avvik." height="400">
 </div>
 <div class="title">Figur 15. Rød pil viser en måling som kan inngå i beregningen av absolutt stedfestingsnøyaktighet, systematisk avvik.</div>
 </div>
@@ -6997,9 +6995,9 @@ Klassifisering</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Absolutt stedfestingsnøyaktighet</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Systematisk avvik</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0 - 200</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0 - 20</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0 - 6</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">20 - 200</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">6 - 20</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2 - 6</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">0 - 2</p></td>
 </tr>
 <tr>
@@ -7109,10 +7107,10 @@ Andre uavhengige datakilder kan benyttes dersom deres kvalitet er tilstrekkelig 
 <div class="sect3">
 <h4 id="_fullstendighet">8.8.2. Fullstendighet</h4>
 <div class="paragraph">
-<p>I kvalitetskategorien fullstendighet inngår elementene <em>dekning,</em> <em>punkttetthet</em>, <em>detaljeringsgrad</em>, <em>punktdistribusjon</em> og <em>overlapp foto</em>. Disse beskriver hvor komplett datasettet er, hvor tett punktene ligger, hvor detaljert informasjonen er, hvordan punktene fordeler seg i området og hvor mye fotodata overlapper hverandre. Kvalitetselementer knyttet til kriteriet om fullstendighet er angitt i tabell <a href="#tab-kvalitetselementer-knyttet-til-kriteriet-om-fullstendighet">Tabell 25</a> med beskrivelse.</p>
+<p>I kvalitetskategorien fullstendighet inngår elementene <em>dekning,</em> <em>punkttetthet</em>, <em>detaljeringsgrad</em>, <em>punktdistribusjon</em> og <em>overlapp foto</em>. Disse beskriver hvor komplett datasettet er, hvor tett punktene ligger, hvor detaljert informasjonen er, hvordan punktene fordeler seg i området og hvor mye fotodata overlapper hverandre. Kravene og definisjon følger standarden <a href="https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet">Geodatakvalitet kap x.x</a>. Kvalitetselementer knyttet til kriteriet om fullstendighet er angitt i Tabell 9 med beskrivelse.</p>
 </div>
 <table id="tab-kvalitetselementer-knyttet-til-kriteriet-om-fullstendighet" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 25. Kvalitetselementer knyttet til kriterier om fullstendighet</caption>
+<caption class="title">Tabell 25. Kvalitetselementer knyttet til kriterier om fullstendighetsnøyaktighet</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7126,7 +7124,9 @@ Andre uavhengige datakilder kan benyttes dersom deres kvalitet er tilstrekkelig 
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dekning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Punktsky fra bilbåren laserskanning begrenser seg til å dekke omgivelser der sensoren har innsyn fra de kjørbare, harde flatene i prosjektet. Krav til dekning innenfor prosjektområdet må fremkomme av produktspesifikasjonen i det enkelte prosjektet. Eksempelvis dersom det er krav til full dekning innenfor hele prosjektområdet må dette fremkomme av kravspesifikasjonen, slik at eventuelle skyggepartier fra den bilbårne innsamlingen kan vurderes supplert med andre innsamlingsmetoder.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Punktsky fra bilbåren laserskanning begrenser seg til å dekke omgivelser der sensoren har innsyn fra de kjørbare, harde flatene i prosjektet. Krav til dekning innenfor prosjektområdet må fremkomme av produktspesifikasjonen i det enkelte prosjektet. Eksempelvis dersom det er krav til full dekning innenfor hele prosjektområdet må dette fremkomme av kravspesifikasjonen, slik at eventuelle skyggepartier fra den bilbårne innsamlingen kan vurderes supplert med andre innsamlingsmetoder.</p>
+<p class="tableblock">--- Benytter kvalitetsmål fra kap 7 - sjekke dette!!!
+---</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Punkttetthet</p></td>
@@ -7147,9 +7147,9 @@ Andre uavhengige datakilder kan benyttes dersom deres kvalitet er tilstrekkelig 
 <h4 id="_egenskapskvalitet">8.8.3. Egenskapskvalitet</h4>
 <div class="paragraph">
 <p>I kategorien egenskapskvalitet inngår elementene <em>fotavtrykk</em>, <em>itensitet</em>, <em>farge</em>, <em>målemetode (fase/puls)</em> og <em>sensorID</em>.
-Disse elementene beskriver kvaliteten på ulike egenskaper ved datainnsamlingen, som fotavtrykkets størrelse <a href="#_laserskanner">Kapittel 7.1.1.1</a>, målt intensitet, eventuell fargeinformasjon, hvilken målemetode som er brukt, samt identifikasjonen til sensoren som har samlet inn dataene.
+Disse elementene beskriver kvaliteten på ulike egenskaper ved datainnsamlingen, som fotavtrykkets størrelse (se kap 7.x), målt intensitet, eventuell fargeinformasjon, hvilken målemetode som er brukt, samt identifikasjonen til sensoren som har samlet inn dataene.
 Med egenskapskvalitet i standarden <a href="https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet">Geodatakvalitet</a>, menes nøyaktighet av kvantitative egenskaper (kan måles på en skala) og riktighet av ikke-kvantitative egenskaper (egenskaper som skiller ut informasjon, men uten å kunne rangeres) og eventuelt objektenes klassifisering og relasjoner.
-Kvalitetselementer knyttet til kriteriet om egenskapskvalitet er angitt i <a href="#tab-kvalitetselementer-knyttet-til-kriterier-om-egenskapskvalitet">Tabell 26</a> med beskrivelse.</p>
+Kvalitetselementer knyttet til kriteriet om egenskapskvalitet er angitt i Tabell 10 med beskrivelse.</p>
 </div>
 <table id="tab-kvalitetselementer-knyttet-til-kriterier-om-egenskapskvalitet" class="tableblock frame-all grid-all stretch">
 <caption class="title">Tabell 26. Kvalitetselementer knyttet til kriterier om egenskapskvalitet</caption>
@@ -7752,7 +7752,7 @@ kan foretas umiddelbart. Materialet skal være tydelig merket med eierens navn.<
 <p>Bildeoppløsning (GSD) bestemmer hvilken kvalitet som kan forventes ved kartkonstruksjon (jamfør Produktspesifikasjon FKB), aerotriangulering, fremstilling av DTM eller ortofoto og så videre. Bildeoppløsningen må være god nok til at kartkonstruktøren kan identifisere alle objektene som skal konstrueres, og til at nøyaktigheten blir som forutsatt.</p>
 </div>
 <div class="paragraph">
-<p>På denne bakgrunn benyttes som oftest følgende GSD til de ulike FKB-standardene, se tabell <a href="#tab-FKB-GSD">Tabell 29</a>.</p>
+<p>På denne bakgrunn benyttes som oftest følgende GSD til de ulike FKB-standardene, se tabell <a href="#tab-FKB-GSD">Eksempler på sammenheng mellom FKB standard og GSD</a>.</p>
 </div>
 <table id="tab-FKB-GSD" class="tableblock frame-all grid-all stretch">
 <caption class="title">Tabell 29. Eksempler på sammenheng mellom FKB standard og GSD</caption>
@@ -7786,7 +7786,7 @@ kan foretas umiddelbart. Materialet skal være tydelig merket med eierens navn.<
 </tbody>
 </table>
 <div class="paragraph">
-<p>Tabell <a href="#tab-tolkning-flyhøyde">Tabell 30</a> gir informasjon om begrensninger i muligheten til å tolke bildene. Tabellen er basert på analog fotografering, tilsvarende tabell er ikke utarbeidet for fotografering med digitalt kamera. (Kilde: «Handbok till mätningskunngjörelse – Fotogrammetri»).</p>
+<p>Tabell <a href="#tab-tolkning-flyhøyde">Eksempler på vanskeligheter ved tolkning av objekter i bildene fra ulike flyhøyder</a> gir informasjon om begrensninger i muligheten til å tolke bildene. Tabellen er basert på analog fotografering, tilsvarende tabell er ikke utarbeidet for fotografering med digitalt kamera. (Kilde: «Handbok till mätningskunngjörelse – Fotogrammetri»).</p>
 </div>
 <table id="tab-tolkning-flyhøyde" class="tableblock frame-all grid-all stretch">
 <caption class="title">Tabell 30. Eksempler på vanskeligheter ved tolkning av objekter i bildene fra ulike flyhøyder</caption>
@@ -8007,7 +8007,7 @@ av denne lisensen og ikke kan viderebrukes</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-02-17 08:10:54 +0100
+Last updated 2026-02-16 16:48:07 +0100
 </div>
 </div>
 <script type="text/x-mathjax-config">
@@ -8033,6 +8033,6 @@ MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
   })
 })
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
 </body>
 </html>
