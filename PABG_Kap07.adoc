@@ -456,6 +456,7 @@ image::figurer/Kap7_Homogenitet.png[Homogenitet,400,align="center"]
 * Oppdragstaker skal gi sin vurdering av resultatet.
 ====
 
+[#bearbeiding-av-laserdata-klassifisering,reftext="Bearbeiding av laserdata (klassifisering)"]
 === Bearbeiding av laserdata (klassifisering)
 
 Hvert punkt i punktskyen kan klassifiseres i separate klasser. Vanligste form for klassifisering er å klassifisere en terrengmodell ved å skille punkter som er treff på bakken fra de øvrige punktene i punktskyen. Avhengig av formålet med laserskanningen vil oppdragstakeren kunne klassifisere punktene i ulike lag, for eksempel bygninger, broer, vann, objekter 0–2 m over bakken. 
