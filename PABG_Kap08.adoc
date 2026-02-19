@@ -44,8 +44,7 @@ Påføring av fargeverdier på punktskyen, er opsjonelt. Dersom opsjon utløses 
 
 ====
 === Klassifisering
-Klassifisering av punktsky er opsjonelt. Der produktets målsetting krever klassifisering, følges kravene til klassifisering gitt i <<Bearbeiding av laserdata (klassifisering)
- >>.
+Klassifisering av punktsky er opsjonelt. Der produktets målsetting krever klassifisering, følges kravene til klassifisering gitt i <<Bearbeiding av laserdata (klassifisering)>>.
 
 === Ulike kvalitetsnivåer
 Produkter fra mobil datafangst deles inn i ulike kvalitetsnivåer. De ulike nivåene vil påvirke kompleksitet, kostnad og krav til stedfestingsnøyaktighet. Det laveste nivået innebærer lav absoluttnøyaktighet. Mulige bruksområder kan være analyser knyttet til kollisjon, kjøreboks og vegetasjon, der relative målinger er viktigst. Nivåene «middels» og «god» kan brukes til generell prosjektering, tunnelinnmåling, NVDB/FKB-kartlegging og overvannsanalyser. Punktskyen er her en større del av sluttproduktet og ofte supplert med ekstra målemetoder som landmåling, terrestrisk skanning eller flybåren laserskanning. Det høyeste nivået brukes der høy absolutt stedfestingsnøyaktighet er nødvendig, for eksempel i jernbaneprosjektering, kontroll og vedlikehold av spor og tunneler, samt endringsanalyser som krever svært presise punktskydata.
