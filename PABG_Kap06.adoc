@@ -3,7 +3,7 @@
 Dette kapittelet angir krav og retningslinjer for følgende arbeider:
 
 * Fremstilling av grunnlaget for fotogrammetrisk kartlegging; herunder fly- og signalplanlegging, kalibrering og vedlikehold av kamera og instrumenter, signalering, flyfotografering og aerotriangulering.
-* Fremstilling av produkter vha. fotogrammetri; herunder kartkonstruksjon, bildematching for høydemodellering og ortofotoproduksjon.
+* Fremstilling av produkter ved hjelp av fotogrammetri; herunder kartkonstruksjon, bildematching for høydemodellering og ortofotoproduksjon.
 
 Kapittelet avgrenses til å gjelde følgende:
 
@@ -125,7 +125,7 @@ Ved GNSS/INS-støttet fotografering kreves det i teorien kun et fåtall kjentpun
 Eksempel på fly- og signaleringsplan finnes i vedlegg <<Eksempel fly- og signaleringsplan (foto)>>.
 
 === Signalering
-Dette kapittelet angir krav og retningslinjer til signalering av kjentpunkter for aerotriangulering og ev. objekter som skal kartlegges og som er for små til å synes i flybildene. For innmåling av kjentpunkter henvises til krav i kapittel <<Krav til kjentpunkter>> og til standarden <<SAT>>.
+Dette kapittelet angir krav og retningslinjer til signalering av kjentpunkter for aerotriangulering og eventuelle objekter som skal kartlegges og som er for små til å synes i flybildene. For innmåling av kjentpunkter henvises til krav i kapittel <<Krav til kjentpunkter>> og til standarden <<SAT>>.
 
 ==== Lovhjemmel for markarbeider - Matrikkellova
 Tillatelse til utsetting av fastmerker og signaler og rydding for sikt ved offentlige kart- og oppmålingsarbeider er hjemlet i Matrikkellova, §41 _Rett til å utføre oppmålingsarbeid på offentleg og privat grunn._
@@ -265,7 +265,7 @@ Oppdragstakeren for fotogrammetriske kart- og målearbeider er ansvarlig for at 
 |Moment|Krav
 |Bildevandring|Kameraene skal ha digital eller mekanisk bildevandringskompensasjon (FMC)
 For linjesensorene er ikke dette påkrevet. Alternativt må lukkerhastigheten være så kort at sensorens bevegelse under eksponeringsøyeblikket ikke påvirker bildets kvalitet.
-|Kamerakalibrering|Kameraet skal være kalibrert i løpet av de siste 24 månedene og ev. etter flytting eller annen fysisk påkjenning som kan ha påvirket kameraets kalibrering. Det skal foreligge et kalibreringssertifikat fra denne kalibreringen. For ikke metriske kamera skal det utføres kamerakalibrering for hver flygning.
+|Kamerakalibrering|Kameraet skal være kalibrert i løpet av de siste 24 månedene og eventuelt etter flytting eller annen fysisk påkjenning som kan ha påvirket kameraets kalibrering. Det skal foreligge et kalibreringssertifikat fra denne kalibreringen. For ikke metriske kamera skal det utføres kamerakalibrering for hver flygning.
 |Kalibrert kamerakonstant|Skal være bestemt med standardavvik &#8804; 3 &#956;m
 |Gyrostabilisert kameraramme|Kamera som skal brukes til kartleggingsformål og ortofotoproduksjon skal være montert i en gyrostabilisert kameraramme (gyromount). Dette kravet gjelder dog ikke mellomformatkameraer som brukes sammen med laserskanningsinstrumenter eller som en del av et skråbildesystem.
 |Bildehovedpunkt|Autokollimasjonshovedpunktet (PPA) skal være bestemt med standardavvik &#8804; 3 &#956;m. PPA = Principal Point of Autocollimation.
@@ -294,7 +294,7 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 
 * Utstyr og metode som velges skal kunne gi en kvalitet på resultatet som, sett i sammenheng med andre innsatsfaktorer, er tilstrekkelig for å oppfylle krav til sluttprodukt i de enkelte prosjekt. 
 
-* Ved oppstarten av en ny fotosesong, skal det utføres en «boresight» kalibrering for å bestemme avviket i orientering mellom IMU og kamera. Til dette skal det utføres en egen fotografering med tilstrekkelig geometrisk styrke (stor sideoverdekning og alternerende og kryssende striperetninger) for sikker bestemmelse av kalibreringen. Kalibreringsverdiene skal bestemmes vha. aerotriangulering. Denne fotograferingen skal også tjene som en funksjonstest av kamerautstyret, og dataene skal brukes til å kontrollere at visuell kvalitet i bildene er som forventet. Dersom IMU-en har vært fjernet fra kameraet, eller dersom andre forhold tilsier at dette er nødvendig, skal ny «boresight» kalibrering utføres.
+* Ved oppstarten av en ny fotosesong, skal det utføres en «boresight» kalibrering for å bestemme avviket i orientering mellom IMU og kamera. Til dette skal det utføres en egen fotografering med tilstrekkelig geometrisk styrke (stor sideoverdekning og alternerende og kryssende striperetninger) for sikker bestemmelse av kalibreringen. Kalibreringsverdiene skal bestemmes ved hjelp av aerotriangulering. Denne fotograferingen skal også tjene som en funksjonstest av kamerautstyret, og dataene skal brukes til å kontrollere at visuell kvalitet i bildene er som forventet. Dersom IMU-en har vært fjernet fra kameraet, eller dersom andre forhold tilsier at dette er nødvendig, skal ny «boresight» kalibrering utføres.
 ====
 
 
@@ -314,7 +314,7 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 [width="100%",options="header"]
 |===
 |Moment|Krav
-|Klarmelding|Dersom ikke annet er avtalt skal oppdragsgiver for fotograferingen gi skriftlig klarmelding om at fotografering kan starte. Klarmelding skal gis så tidlig som mulig, og for hvert ev. delområde. Klarmeldingen(e) skal bekreftes skriftlig av oppdragstaker.
+|Klarmelding|Dersom ikke annet er avtalt skal oppdragsgiver for fotograferingen gi skriftlig klarmelding om at fotografering kan starte. Klarmelding skal gis så tidlig som mulig, og for hvert eventuelle delområde. Klarmeldingen(e) skal bekreftes skriftlig av oppdragstaker.
 |Kameratype|Dersom ikke annet er avtalt skal fotograferingen utføres med geometrisk og radiometrisk kalibrert storformat digitalt kamera. Se kapittel <<Krav til kamera>> for krav til instrumenter, kalibrering og kontroll.
 |Eksponeringskontroll|Kameraet skal ha eksponeringskontroll og denne skal benyttes aktivt under fotografering for å unngå skadelig over- og undereksponering, uskarpe bilder og tap av detaljer.
 |Fotograferingsperiode|Et prosjekt skal fotograferes over et kortest mulig tidsrom og det skal tilstrebes at flystriper fotograferes mest mulig samlet. Ved fotografering over flere dager eller GNSS-sesjoner skal det sørges for at tilstrekkelig med kjentpunkter blir dekket slik at systematiske GNSS-skift kan bestemmes for hver dag/hver fotosesjon.
@@ -407,7 +407,7 @@ Metoden for GNSS-posisjonsbestemmelse ved bruk av DGNSS er basert på at det ben
 ====
 
 
-Metoden for GNSS-posisjonsbestemmelse ved bruk av PPP (Precise Point Positoning) er basert på en enkelt GNSS-mottaker i flyet, uten bruk av mottakere på bakken. Udifferensierte kode- og fase-målinger benyttes sammen med presise satellittbaner og satellittklokkekorreksjoner. Faseflertydighetene bestemmes som flyt-tall. Det forutsettes at ionosfærisk refraksjon elimineres vha. måling på to eller flere frekvenser, og at troposfærisk refraksjon estimeres sammen med de andre parameterne.
+Metoden for GNSS-posisjonsbestemmelse ved bruk av PPP (Precise Point Positoning) er basert på en enkelt GNSS-mottaker i flyet, uten bruk av mottakere på bakken. Udifferensierte kode- og fase-målinger benyttes sammen med presise satellittbaner og satellittklokkekorreksjoner. Faseflertydighetene bestemmes som flyt-tall. Det forutsettes at ionosfærisk refraksjon elimineres ved hjelp av måling på to eller flere frekvenser, og at troposfærisk refraksjon estimeres sammen med de andre parameterne.
 
 Det forutsettes videre at programvaren i all vesentlighet forholder seg til de modeller og konvensjoner som følger av å benytte de aktuelle bane- og klokkeprodukter.
 
@@ -616,7 +616,7 @@ Dette kapittelet angir krav og retningslinjer til aerotriangulering (AT) med blo
 [#krav-foto-maling-av-sammenbindingspunkt,reftext="Krav foto måling av sammenbindingspunkt"]
 *KRAV FOTO MÅLING AV SAMMENBINDINGSPUNKT*
 
-* Overlappende bilder og flystriper skal identifiseres og settes sammen til en samlet enhet (bildeblokk) som er egnet til å knyttes sammen vha. måling av sammenbindingspunkter.
+* Overlappende bilder og flystriper skal identifiseres og settes sammen til en samlet enhet (bildeblokk) som er egnet til å knyttes sammen ved hjelp av måling av sammenbindingspunkter.
 * Bildeblokker kan deles opp, måles og utjevnes hver for seg. Det skal da være rikelig overdekning mellom delblokkene og hver blokk skal ha foreskrevet antall og plassering av kjentpunkter. Avvik mellom veldefinerte detaljer skal ikke overstige 3 ganger standardavvikskravet til ytre orienteringselement mellom de overlappende delblokkene.
 * Hvert bilde skal ha minst 50 sammenbindingspunkt jevnt fordelt over hele bildet. Hvis bildet for eksempel dekker 70% land og 30% vann så reduseres kravet til antall sammenbindingspunkt med 30%. Det samme gjelder for andre typer terreng (for eksempel tett skog) hvor det er vanskelig å måle sammenbindingspunkt.
 * Kravene til sammenbindingspunkt kan avvikes dersom det er absolutt umulig å måle gode punkt. Det er bare delen av overlappen mellom bildene som det er mulig å måle gode punkt i som teller i kravene under.
@@ -653,20 +653,12 @@ Dette kapittelet angir krav og retningslinjer til aerotriangulering (AT) med blo
 
 
 * Som hovedregel skal de samme punktene benyttes til både bilde- og stripesammenbinding. Dette gir flere observasjoner pr. punkt og dermed bedre kontroll mot grove avvik. Punkt målt i kun to bilder skal som hovedregel ikke forekomme, men aksepteres i stripeender og i områder med mye vann.
-
 * Sammenbindingspunktene skal være jevnt fordelt langs midten og langs kanten av bildene. Unntak fra dette aksepteres dersom vann eller kontrastløs overflate gjør måling umulig. I bildeblokker med kryssende enkeltstriper skal det spesielt påses at stripesammenbindingspunktene er plassert langs ytterkantene av bildene.
-
 * Det anbefales å tynne de automatisk målte ("matchede") punktene noe ut for å oppnå en noe bedre balanse mellom de ulike observasjonstypene i blokkutjevningen. Graden av tynning avhenger av valgt punkttetthet under matching. Tynningen skal ikke medføre at kravene til antall og fordeling av punkter avvikes.
-
 * Det skal kontrolleres visuelt at antall og fordeling av sammenbindingspunkter oppfyller kravene. Kontrollmetoden må være i stand til å vise at punktene er målt i et tilstrekkelig antall bilder og striper.
-
 * Der matchingen ikke oppfyller kravene til antall og fordeling skal det suppleres med manuelt eller halvautomatisk målte punkter.
-
-* Punkter i vann skal som hovedregel fjernes. Punkter på bunnen av grunt vann kan som unntak aksepteres dersom de er målt i tilstrekkelig mange 
-bilder til at en ev. grov feil kan oppdages. Dersom det er vurdert at måling av punkter i vann (på bunnen) er nødvendig for å sikre tilstrekkelig sammenbinding kan dette i sjeldne tilfeller aksepteres. Dette skal beskrives i aerotrianguleringsrapporten.
-
+* Punkter i vann skal som hovedregel fjernes. Punkter på bunnen av grunt vann kan som unntak aksepteres dersom de er målt i tilstrekkelig mange bilder til at en eventuell grov feil kan oppdages. Dersom det er vurdert at måling av punkter i vann (på bunnen) er nødvendig for å sikre tilstrekkelig sammenbinding kan dette i sjeldne tilfeller aksepteres. Dette skal beskrives i aerotrianguleringsrapporten.
 * Det skal som hovedregel ikke være sammenbindingspunkter på flytende objekter. Hvis det flytende objektet er stabilt i tidsrommet mellom bildene og bruken kan begrunnes, så kan sammenbindingspunktene tillates i samme flystripe tatt med noen sekunders mellomrom.
-
 * Alle målinger i bildene, inkl. kjentpunkter, skal korrigeres for jordkrumning og refraksjon. Dersom korreksjonene blir påført selve målingen skal det påses at ikke dobbelkorreksjon påføres i den påfølgende blokkutjevningen.
 ====
 
@@ -703,7 +695,7 @@ bilder til at en ev. grov feil kan oppdages. Dersom det er vurdert at måling av
 * Bildenes ytre orienteringselementer skal ha et totalt standardavvik maksimalt lik 2/3 av kravene for de aktuelle geodata. Med "totalt" menes det samlede avvik på et målt objekt, sammensatt av de enkelte orienteringselementenes feilbidrag. Se tabell <<tab-nøyaktighetskrav-AT-FKB>> for eksempler på nøyaktighetskrav til nypunkter og ytre orienteringselementer.
 * Standardavviket på vektsenheten skal være &#8804; 1/3 piksel.
 * De utjevnede sammenbindingspunktene ("nypunkter") skal bestemmes med et gjennomsnittlig estimert standardavvik maksimalt lik 1/2 av kravene for de aktuelle geodata som skal produseres i prosjektet. Maksimalt estimert standardavvik på hvert “nypunkt” skal være under grovfeilgrensen til kravet for “nypunkt”.
-* Nøyaktigheten på resultatet fra AT-en/ blokkutjevningen, herunder bildenes ytre orienteringselementer, skal som hovedregel verifiseres vha. en utjevning med bruk av uavhengige kontrollpunkter ("sjekkpunkter") jevnt fordelt i bildeblokka. Standardavviket på restavvikene i sjekkpunktene kontrolleres mot kravet til ytre orienteringselementene. I tillegg skal resultatet kontrolleres ved at kjentpunktene (ev. et representativt utvalg) måles i stereoinstrument og sammenholdes med gitte koordinater. Deretter kontrolleres standardavviket på avvikene mot kravet til ytre orienteringselementene.
+* Nøyaktigheten på resultatet fra AT-en/ blokkutjevningen, herunder bildenes ytre orienteringselementer, skal som hovedregel verifiseres ved hjelp av en utjevning med bruk av uavhengige kontrollpunkter ("sjekkpunkter") jevnt fordelt i bildeblokka. Standardavviket på restavvikene i sjekkpunktene kontrolleres mot kravet til ytre orienteringselementene. I tillegg skal resultatet kontrolleres ved at kjentpunktene (eventuelt et representativt utvalg) måles i stereoinstrument og sammenholdes med gitte koordinater. Deretter kontrolleres standardavviket på avvikene mot kravet til ytre orienteringselementene.
 * Avvik på kjentpunktene skal ikke overstige 3 ganger standardavviket til ytre orientering i alle bildene.
 * Systematisk avvik i nord, øst og høyde for krav til geodata, svært veldefinert detalj og krav til ytre orienteringselement skal ikke overstige 1/3 av kravet til standardavviket.
 ====
@@ -872,7 +864,7 @@ Produktspesifikasjonen definerer hvordan objekttypene skal registreres:
 * Generelt gjelder at objekter som konstrueres, skal være stereoskopisk synlige og registreres i alle 3 dimensjoner (x, y og z). Objekter som ligger i modellskjøtene, skal registreres fra den modellen som gir best innsyn. Synbarheten av objektene vil variere med objekttype, bildekvalitet, GSD, skygger og innsyn. Konstruktøren skal angi dårlig synbare objekter med kvalitetskode. 
 * Dersom det er svært sannsynlig å feiltolke et eksisterende objekt (for eksempel bekk eller grøft), skal objektet ikke utelates fra konstruksjonen, men tas med og angis som "usikker". Hvis man er i tvil om det er et objekt eller ikke (for eksempel en kum eller en flekk i asfalten), det vil si det er svært sannsynlig at man feiltolker, utelater man objektet/flekken fra konstruksjonen. 
 * Produktspesifikasjoner kan angi at enkelte kurveobjekter skal registreres sammenhengende. Dersom deler av en kurve (for eksempel bekk) er dårlig synbare i flybildet, skal kurven splittes opp. Den delen av kurven som er dårlig synbar, skal kvalitetskodes deretter. Det er viktig å være klar over at dårlig synbare objekter kan ha svært dårlig stedfestingsnøyaktighet.
-* Manglende egenskapskoding og topologi bør fanges opp før konstruksjon avsluttes. Det skal utføres en sluttkontroll på modellen, opp mot manus eller støttedata for å sikre fullstendigheten. Ev. automatisk genererte data (for eksempel høydekurver) skal kontrolleres spesielt.
+* Manglende egenskapskoding og topologi bør fanges opp før konstruksjon avsluttes. Det skal utføres en sluttkontroll på modellen, opp mot manus eller støttedata for å sikre fullstendigheten. Eventuelle automatisk genererte data (for eksempel høydekurver) skal kontrolleres spesielt.
 ====
 
 
@@ -1100,7 +1092,7 @@ Høydedata
 * Beskrivelse av mulige konsekvenser av problemene.
 |Vurdering av resultat|En samlet vurdering av ortofotoproduksjonen og kvaliteten på arbeidene med hensyn til bestilling og øvrige krav.
 .2+|Leveranser|Produktspesifikasjon|Versjon av produktspesifikasjon og objektkatalog.
-|Leveranser|En fullstendig oversikt over alle leverte data, metadata og ev. medfølgende dokumentasjon skal stilles opp. Oversikten skal minimum inneholde spesifikasjon av leveranseformat, medium og ev. inndeling i kataloger og filer.
+|Leveranser|En fullstendig oversikt over alle leverte data, metadata og eventuell medfølgende dokumentasjon skal stilles opp. Oversikten skal minimum inneholde spesifikasjon av leveranseformat, medium og eventuell inndeling i kataloger og filer.
 |===
 ====
 === Fotografering med drone
