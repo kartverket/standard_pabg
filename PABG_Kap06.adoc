@@ -49,7 +49,7 @@ Dette avsnittet angir krav og retningslinjer til planlegging av flyfotografering
 For å sikre best mulig bildeorientering og redusere behovet for kjentpunkter, skal delområder i rimelig nærhet av hverandre forbindes ved at flystripene forlenges.
 
 ==== Planlegging av kjentpunkt og signalering (signaleringsplan)
-Signaleringsplan utarbeides av oppdragstaker som en integrert del av flyfotoplanleggingen og kjentpunktene planlegges slik at plasseringen blir optimal mht. krav til antall, plassering og enkel adkomst. For krav til antall og plassering, se kapittel <<Krav til antall og plassering av kjentpunkter>>.
+Signaleringsplan utarbeides av oppdragstaker som en integrert del av flyfotoplanleggingen og kjentpunktene planlegges slik at plasseringen blir optimal med hensyn til krav til antall, plassering og enkel adkomst. For krav til antall og plassering, se kapittel <<Krav til antall og plassering av kjentpunkter>>.
 
 Signaleringen bør planlegges og utføres slik at fotograferingen kan starte opp så snart forholdene tillater det, eksempelvis ved at lavereliggende områder signaleres først.
 
@@ -268,7 +268,7 @@ For linjesensorene er ikke dette påkrevet. Alternativt må lukkerhastigheten v�
 |Kamerakalibrering|Kameraet skal være kalibrert i løpet av de siste 24 månedene og ev. etter flytting eller annen fysisk påkjenning som kan ha påvirket kameraets kalibrering. Det skal foreligge et kalibreringssertifikat fra denne kalibreringen. For ikke metriske kamera skal det utføres kamerakalibrering for hver flygning.
 |Kalibrert kamerakonstant|Skal være bestemt med standardavvik &#8804; 3 &#956;m
 |Gyrostabilisert kameraramme|Kamera som skal brukes til kartleggingsformål og ortofotoproduksjon skal være montert i en gyrostabilisert kameraramme (gyromount). Dette kravet gjelder dog ikke mellomformatkameraer som brukes sammen med laserskanningsinstrumenter eller som en del av et skråbildesystem.
-|Bildehovedpunkt|Autokollimasjonshovedpunktet (PPA) skal være bestemt med standardavvik &#8804; 3 &#956;m.  PPA = Principal Point of Autocollimation.
+|Bildehovedpunkt|Autokollimasjonshovedpunktet (PPA) skal være bestemt med standardavvik &#8804; 3 &#956;m. PPA = Principal Point of Autocollimation.
 |Radiell fortegning|Radiell fortegning er normalt kompensert i leverte bildedata. 
 Skal være bestemt med standardavvik &#8804; 2 &#956;m
 |Levnetsdokumentasjon|For hvert kamerasystem skal det foreligge en levnetsdokumentasjon som skal inneholde alle vitale opplysninger om systemet: Anskaffelse, dokumentasjon av kontroller, justeringer, skader, reparasjoner, kalibreringer og så videre. Dokumentasjonen skal angi dato for kontrollen, hvem som har utført den og resultatene av kontrollen.
@@ -318,8 +318,8 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 |Kameratype|Dersom ikke annet er avtalt skal fotograferingen utføres med geometrisk og radiometrisk kalibrert storformat digitalt kamera. Se kapittel <<Krav til kamera>> for krav til instrumenter, kalibrering og kontroll.
 |Eksponeringskontroll|Kameraet skal ha eksponeringskontroll og denne skal benyttes aktivt under fotografering for å unngå skadelig over- og undereksponering, uskarpe bilder og tap av detaljer.
 |Fotograferingsperiode|Et prosjekt skal fotograferes over et kortest mulig tidsrom og det skal tilstrebes at flystriper fotograferes mest mulig samlet. Ved fotografering over flere dager eller GNSS-sesjoner skal det sørges for at tilstrekkelig med kjentpunkter blir dekket slik at systematiske GNSS-skift kan bestemmes for hver dag/hver fotosesjon.
-|Fotograferingstidspunkt|Mengden av skygge i bildene skal forsøkes holdt så lavt som mulig ved at fotografering blir utført på en tid på dagen som er mest mulig gunstig mht. overflateforhold og topografi.
-|Fotograferingsavbrudd|Ved avbrudd i fotografering i en flystripe skal hele stripen som hovedregel fotograferes på ny. Unntakene er striper med lengde tilsvarende minimum 20 bilder ved 60 % lengdeoverdekning, eller der fortsettelse kan skje kort tid etter avbrudd og i samme fotosesjon. Dersom det ikke er mulig å fly om stripen før etter lengre tid skal oppdragstaker i samråd med oppdragsgiver vurdere hva som er til prosjektets beste mht. nøyaktighet og samlet visuell kvalitet i bildene.
+|Fotograferingstidspunkt|Mengden av skygge i bildene skal forsøkes holdt så lavt som mulig ved at fotografering blir utført på en tid på dagen som er mest mulig gunstig med hensyn til overflateforhold og topografi.
+|Fotograferingsavbrudd|Ved avbrudd i fotografering i en flystripe skal hele stripen som hovedregel fotograferes på ny. Unntakene er striper med lengde tilsvarende minimum 20 bilder ved 60 % lengdeoverdekning, eller der fortsettelse kan skje kort tid etter avbrudd og i samme fotosesjon. Dersom det ikke er mulig å fly om stripen før etter lengre tid skal oppdragstaker i samråd med oppdragsgiver vurdere hva som er til prosjektets beste med hensyn til nøyaktighet og samlet visuell kvalitet i bildene.
 |Stripeskjøting|Dersom striper må skjøtes skal det fotograferes tilstrekkelig overlapp over bruddet slik at nøyaktighetstap unngås og slik at stereodekning over bruddet fra begge sider blir mulig. Det skal være minst 4 bilder overlapp over stripebruddet.
 |Fotograferingsretning|Parallelle nabostriper skal som hovedregel fotograferes i motsatt retning.
 |Solhøyde|Krav til min. solhøyde under fotografering &#8805; 27^o^ eller etter avtale.
@@ -345,7 +345,7 @@ Fotografering under slørskyer kan aksepteres så lenge de ovenfor nevnte kraven
 ** Systematisk avvik fra flyretningen: &#8804; 5.0^o^
 ** Avvik mellom to påfølgende bilder: &#8804; 5.0^o^
 
-Avvik fra disse kravene kan aksepteres av oppdragsgiver der oppdragstaker kan dokumentere at det ikke medfører kvalitetstap eller problemer i produksjonen. Avviket skal varsles oppdragsvier uten ugrunnet opphold.   Avvikene skal beskrives i fotorapport. 
+Avvik fra disse kravene kan aksepteres av oppdragsgiver der oppdragstaker kan dokumentere at det ikke medfører kvalitetstap eller problemer i produksjonen. Avviket skal varsles oppdragsvier uten ugrunnet opphold. Avvikene skal beskrives i fotorapport. 
 
 |Bakkeoppløsning 
 a| * Gjennomsnittlig GSD i prosjektområdet: Avtalt verdi
@@ -444,7 +444,7 @@ Beregningsarbeidet leder fram til en fil med ytreorienteringselementer for hvert
 *** Bilde ID (Navn)
 *** Eksponeringstidspunkt
 *** Projeksjonssenterkoordinater
-*** Omega, Phi, Kappa
+*** Omega, Phi og Kappa
 *** Standardavvikene for projeksjonssenter–koordinater og rotasjoner.
 ====
 
@@ -556,7 +556,7 @@ a| Eventuelle problemer i forbindelse med gjennomføringen:
 |Vurdering av resultat|En samlet vurdering av utføringen av fotograferingen og kvaliteten på arbeidene med hensyn til bestilling og øvrige krav.
 .6+|GNSS/INS|Programvare|(fabrikat, versjonsnummer)
 |GNSS/INS filer|Beskrivelse av innhold i GNSS/INS fil.
-En GNSS/INS fil pr fotosesjon.
+En GNSS/INS fil pr. fotosesjon.
 |Beregninger
 a| * Prinsipp/metode for beregning av GNSS/INS-løsning.
 * Prinsipp/metode for beregning av ytreorientering for det enkelte bilde.
@@ -969,7 +969,7 @@ Manus og støttedata +
 * Beskrivelse av problemer, inkludert årsaker til disse, som vil eller kan resultere i negative konsekvenser for mellom- og/eller sluttprodukter. +
 * Beskrivelse av tilhørende utførte tiltak. +
 * Beskrivelse av mulige konsekvenser av problemene.
-|Vurdering av resultat|En samlet vurdering av konstruksjonsarbeidene og kvaliteten på arbeidene mht. bestilling og øvrige krav.
+|Vurdering av resultat|En samlet vurdering av konstruksjonsarbeidene og kvaliteten på arbeidene med hensyn til bestilling og øvrige krav.
 .4+|Ferdigstilling|Programvare|Benyttet utstyr og programvare: (fabrikat, type og versjonsnummer)
 |Dato|Tidspunkt for ferdigstilling
 |Metode|Beskrivelse av utført redigeringsarbeid (oppgradering, sammenpassing og topologidanning)
