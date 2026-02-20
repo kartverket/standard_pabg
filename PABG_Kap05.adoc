@@ -69,7 +69,7 @@ Oppdragstaker er ansvarlig for å bruke instrumenter, materiell og måleopplegg 
 	
 Aktuelle dokumenter:
 
-* Standarden <<GN>>, kapittel 7 Kontroll og kalibrering av måleutstyr.
+* Standarden <<GN>>, kapittel 6 Kontroll og kalibrering av måleutstyr.
 * Standarden https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/kontroll-og-kalibrering-av-elektrooptiske-avstandsmalere-2.1-standarder-geografisk-informasjon.pdf[Kontroll og kalibrering av elektrooptiske avstandsmålere 2.1 2009].
 * Standarden <<SAT>>.
 
@@ -82,7 +82,7 @@ Oppdragstaker er ansvarlig for at valg av måleopplegg, programvare og beregning
 Ved bruk av satellittutstyr er beregning beskrevet i standarden <<SAT>>.
 
 === Egenkontroll og rapportering (geodetisk kartlegging)
-Det skal leveres en rapport for den geodetiske kartleggingen, med leveransene som vedlegg til rapporten. Generelt gjelder at alle resultat fra beregninger skal vurderes og kommenteres. Ev. problemer i prosjektet skal omtales spesielt. Rapporten er en del av leveransen og skal leveres samtidig med det produktet som rapporten omhandler. 
+Det skal leveres en rapport for den geodetiske kartleggingen, med leveransene som vedlegg til rapporten. Generelt gjelder at alle resultat fra beregninger skal vurderes og kommenteres. Eventuelle problemer i prosjektet skal omtales spesielt. Rapporten er en del av leveransen og skal leveres samtidig med det produktet som rapporten omhandler. 
 
 ====
 [#krav-landmaling-rapportering-geodetisk-kartlegging,reftext="Krav landmåling rapportering - geodetisk kartlegging"]
