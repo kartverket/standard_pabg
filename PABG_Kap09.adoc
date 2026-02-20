@@ -15,10 +15,9 @@ Oppnådd kvalitet på vektordata kartlagt fra punktsky/modell vil være påvirke
 
 Kvalitetselementer i punktskyen (jamfør beskrivelser i PaBG – <<kartlegging-med-mobil-datafangst>>):
 
-* Absolutt stedfestingsnøyaktighet på punktskyen.
-* Relativ stedfestingsnøyaktighet
-* Målestøy «tykkelsen» til punktskyen.  
-* Hvor godt definert elementet som skal kartlegges er i punktskyen (jamfør kvalitetselementer Punkttetthet/ Detaljeringsgrad, Punktdistribusjon). 
+* Stedfestingsnøyaktighet
+* Fullstendighet
+* Egenskapskvalitet.
 
 Kvalitetselementer i vektorisering: 
 
