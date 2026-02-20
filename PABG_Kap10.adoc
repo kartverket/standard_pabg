@@ -15,12 +15,12 @@ Ved skjermdigitalisering er kartbildet normalt allerede innpasset. Man skal like
 Opplysninger om målemetode og nøyaktighet kommer til syne under kvalitetsangivelsen som blir lagt til hver gruppe som blir digitalisert.
 
 ==== Tildeling av objekttype
-Alt som digitaliseres, skal gis en objekttype og ev. andre egenskaper (for eksempel ..HØYDE) i henhold til gjeldende spesifikasjoner for oppdraget. Det normale vil være at operatøren tolker kartet og gir objekttype i henhold til denne tolkingen, eller at kartet er utarbeidet som et manuskart der kodingen går klart frem av farge- eller symbolbruk.
+Alt som digitaliseres, skal gis en objekttype og eventuelle andre egenskaper (for eksempel ..HØYDE) i henhold til gjeldende spesifikasjoner for oppdraget. Det normale vil være at operatøren tolker kartet og gir objekttype i henhold til denne tolkingen, eller at kartet er utarbeidet som et manuskart der kodingen går klart frem av farge- eller symbolbruk.
 
 ==== Registreringsmetode
 Registrering av enkeltpunkter gir x- og y-koordinater og tilhørende objekttype. Registrering av linjer kan gjøres på ulike måter:
 
-* Kontinuerlig registrering: Dette innebærer et gitt antall punkter pr. tidsenhet eller pr. avstandsenhet. Denne metoden kan gi svært mange punkter, men blir ofte benyttet fordi den er rask. Antall punkter som registreres pr. sekund, må sees i sammenheng med aktuell målestokk som benyttes. Likeså må en ev. punktsiling, dvs. reduksjon av antall punkter uten at linjens utseende endres, tilpasses til den aktuelle målestokk som benyttes.
+* Kontinuerlig registrering: Dette innebærer et gitt antall punkter pr. tidsenhet eller pr. avstandsenhet. Denne metoden kan gi svært mange punkter, men blir ofte benyttet fordi den er rask. Antall punkter som registreres pr. sekund, må sees i sammenheng med aktuell målestokk som benyttes. Likeså må en eventuell punktsiling, det vil si reduksjon av antall punkter uten at linjens utseende endres, tilpasses til den aktuelle målestokk som benyttes.
 * Enkeltpunkter i sekvens: Dette gir færre punkter, men kan gi en noe kantete kurve og ta noe lenger tid enn ovenstående metode.
 
 Ved digitalisering benyttes de samme registreringsmetodene som ved fotogrammetrisk kartlegging. I Produktspesifikasjon FKB er det for hver objekttype angitt hvilken metode som fortrinnsvis skal benyttes.
@@ -32,7 +32,7 @@ Under digitaliseringen er det viktig å ta hensyn til hvilken topologi det ferdi
 Datasett med topologi vil være på SOSI-nivå 3 (linjenettverk) eller 4 (lukkede polygoner). Under digitaliseringen må alle linjer ende i et knutepunkt mot andre linjer. Dette kan skje ved at digitaliseringsprogrammet beregner knutepunktet under digitaliseringen, eller at det skjer i en prosess etter selve digitaliseringen. Danning av knutepunkt, under eller etter digitaliseringen, skjer ved at punkter som ligger innen en viss avstand (snapperadius), slås sammen. Linjer som krysser hverandre, eller som ender innen en viss avstand fra en annen linje, vil også få dannet knutepunkt. Hvis enkelte linjer har en høyere nøyaktighet enn andre, bør de gis en tyngre vekting i beregning av endelig plassering av knutepunktet.
 
 === Automatisk digitalisering
-Automatisk digitalisering omhandler skanning, vektorisering og ev. mønster-/symbol-gjenkjenning. Skanning gir rasterdata, mens vektorisering konverterer rasterdata til vektordata. Mønster-/symbolgjenkjenning konverterer rasterbilder av symboler, tekst og tall til meningsfylt informasjon. Metoden forutsetter ofte interaktiv styring og kontroll fra operatøren. Nøyaktighetsmessig vil det være liten praktisk forskjell på denne metoden i forhold til manuell digitalisering. Automatisk digitalisering kan resultere i en "dårlig datastruktur", for eksempel er det vanlig at rette linjer blir oppdelt i flere små linjebiter. Dette kan rettes opp ved etterprosessering.
+Automatisk digitalisering omhandler skanning, vektorisering og eventuell mønster-/symbol-gjenkjenning. Skanning gir rasterdata, mens vektorisering konverterer rasterdata til vektordata. Mønster-/symbolgjenkjenning konverterer rasterbilder av symboler, tekst og tall til meningsfylt informasjon. Metoden forutsetter ofte interaktiv styring og kontroll fra operatøren. Nøyaktighetsmessig vil det være liten praktisk forskjell på denne metoden i forhold til manuell digitalisering. Automatisk digitalisering kan resultere i en "dårlig datastruktur", for eksempel er det vanlig at rette linjer blir oppdelt i flere små linjebiter. Dette kan rettes opp ved etterprosessering.
 
 Ved skanning av rissefolier blir det best resultat med gjennomlysning, altså underlys.
 
