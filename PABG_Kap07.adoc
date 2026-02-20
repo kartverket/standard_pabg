@@ -218,7 +218,7 @@ I kartleggingsprosjekt med både Laser og Foto kan senter av kontrollflate signa
 * Avvik fra antall og plassering av kontrollflater (for eksempel ved laserskanning av store områder uten infrastruktur eller mange spredte øyer) kan tillates dersom oppdragsgiver har åpnet for dette i teknisk spesifikasjon for oppdraget. I slike tilfeller skal det sørges for at korrekte GNSS-skift blir påført alle striper.
 * Kontrollflatene skal plasseres på en hard flat flate (asfalt, betong, plan og hard grusveg). Som hovedregel skal kontrollflatene plasseres innenfor prosjektavgrensingen. Dersom dette ikke er praktisk mulig, plasseres kontrollflatene i umiddelbar nærhet. Uansett skal laserdata over kontrollflatene inngå i leveransen.  
 * Maksimum helning internt i flaten skal ikke overstiger 5 %. Dersom helningen overstiger dette kan en grunnrissfeil påvirke resultatet av høydeanalyse.
-* Rundt kontrollflatene skal det være en buffersone på minimum 0,5 m. Helningen på buffersonen skal ikke overskride 5%. Dersom det ikke benyttes en buffersone rundt målt kontrollflate kan grunnrissfeil påvirke resultatet av høydeanalysen.
+* Rundt kontrollflatene skal det være en buffersone på minimum 0,5 m. Helningen på buffersonen skal ikke overskride 5 %. Dersom det ikke benyttes en buffersone rundt målt kontrollflate kan grunnrissfeil påvirke resultatet av høydeanalysen.
 ====
 
 
@@ -263,7 +263,7 @@ Kontrollprofiler skal benyttes for å kontrollere og eventuelt justere for syste
 * Et profilpar består av en profil i N-S-retning og en profil i Ø-V-retning.
 * Minimum antall profilpar i et laserprosjekt skal være 3.
 * Minimum antall profilpar i hver laserblokk skal være 1.
-* Profilene kan ha en annen orientering enn N-S/ Ø-V, men det skal etterstrebes at profilene i ulik retning er orientert vinkelrett på hverandre.
+* Profilene kan ha en annen orientering enn N-S/Ø-V, men det skal etterstrebes at profilene i ulik retning er orientert vinkelrett på hverandre.
 ====
 
 ====
@@ -435,7 +435,7 @@ Oppdragstaker skal undersøke og kommentere eventuelle avvik i grunnrisskontroll
 Punktskyen må kontrolleres for tilfeldige feil. Dette er viktig for å avdekke mulige grove feil og manglende homogenitet i punktskyen. 
 Typiske feilkilder er:
 
-* Drift i GNSS/INS løsningen.
+* Drift i GNSS/INS-løsningen.
 * Stripejustering.
 * Kalibrering av instrumentet.
 
@@ -543,9 +543,9 @@ Ved vanskelige forhold skal det rapporteres hvilke striper dette kan angå.
 * Beskrivelse av problemer, inkludert årsaker til disse, som vil eller kan resultere i negative konsekvenser for mellom- og/eller sluttprodukter. +
 * Beskrivelse av tilhørende utførte tiltak. +
 * Beskrivelse av mulige konsekvenser av problemene.
-|Vurdering av resultat|En samlet vurdering av utføringen av laserskanningen og kvaliteten på arbeidene mht. bestilling og øvrige krav.
+|Vurdering av resultat|En samlet vurdering av utføringen av laserskanningen og kvaliteten på arbeidene med hensyn til bestilling og øvrige krav.
 .5+|Bearbeiding av Laserdata|GNSS/INS Beregning a|* Beregningsdato (dato for ferdigstilling av beregning). +
-* Programvare (fabrikat, versjonsnummer). +
+* Programvare (fabrikat og versjonsnummer). +
 * Prinsipp/metode for beregning av GNSS/INS-løsning. +
 * Eventuelle geodetiske transformasjoner. +
 * Eventuelle høydetransformasjoner/høydeskaleringer. +
@@ -562,7 +562,7 @@ Klassifisering|Dokumentasjon i henhold til krav stilt i kapittel <<Bearbeiding a
 |Leveranser a|En fullstendig oversikt over alle leverte data, metadata og eventuelt medfølgende dokumentasjon skal listes opp. Oversikten skal minimum inneholde: +
 
 * Spesifikasjon av leveranseformat, medium og eventuell inndeling i kataloger og filer. +
-* Spesifikasjon av enheter (koordinater, rotasjoner, avstander, og så videre).
+* Spesifikasjon av enheter (koordinater, rotasjoner, avstander og så videre).
 |===
 ====
 
