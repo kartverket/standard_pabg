@@ -395,10 +395,10 @@ image::figurer/Kap7_DokDagligKalib.png[DokDagligKalib,400,align="center"]
 [#krav-laser-dokumentasjon-pa-daglig-kalibrering,reftext="Krav laser dokumentasjon på daglig kalibrering"]
 *KRAV LASER DOKUMENTASJON PÅ DAGLIG KALIBRERING*
 
-* Beskrivelse av benyttet metode for daglig kalibrering. 
-* Beregnede korreksjonsparametere med standardavvik før og etter korrigering. Se <<#imgDokDagligKalib>>.
-* Oppdragstaker skal gi sin vurdering av resultatet.  
-* Dersom daglig kalibrering ikke påføres skal dette begrunnes. 
+
+* Beskrivelse av benyttet metode for daglig kalibrering.
+* Oppdragstaker skal gi sin vurdering av resultatet.
+* Dersom daglig kalibrering ikke påføres skal dette begrunnes.
 ====
 
 
@@ -417,10 +417,13 @@ image::figurer/Kap7_Stripejust.png[Stripejust,400,align="center"]
 [#krav-laser-dokumentasjon-pa-stripejustering,reftext="Krav laser dokumentasjon på stripejustering"]
 *KRAV LASER DOKUMENTASJON PÅ STRIPEJUSTERING*
 
-* Beskrivelse av benyttet metode for stripejustering. 
-* Beregnede korreksjonsparametere per flystripe med standardavvik før og etter korrigering. Se <<#imgStripejust>>.
-* Oppdragstaker skal gi sin vurdering av resultatet.  
-* Dersom stripejustering ikke påføres skal dette begrunnes. 
+* Beskrivelse av benyttet metode for stripejustering.
+* Oppdragstaker skal gi sin vurdering av resultatet.
+* Dersom stripejustering ikke påføres skal dette begrunnes.
+* Stripejustering og datasettets homogenitet dokumenteres med
+homogenitetsplott, se <<krav-laser-dokumentasjon-pa-kontroll-av-punktsky>>.
+
+
 ====
 
 ==== Kontroll av punktsky, systematiske avvik
@@ -521,10 +524,20 @@ image::figurer/Kap7_Homogenitet.png[Homogenitet,400,align="center"]
 [#krav-laser-dokumentasjon-pa-kontroll-av-punktsky,reftext="Krav laser dokumentasjon på kontroll av punktsky"]
 *KRAV LASER DOKUMENTASJON PÅ KONTROLL AV PUNKTSKY*
 
-* I overlappsområder skal det beregnes høydeavvik mellom stripene ved sammenligning av automatisk klassifisert terrengmodell for hver flystripe.
-* Resultatet skal dokumenteres numerisk i tabell.
-* Resultatet skal dokumenteres visuelt ved kartbladvise georefererte TIF-filer med oppløsning 1 m. Benyttet fargeskala skal inkluderes i kartleggingsrapport.
+
+* I overlappsområder skal det beregnes høydeavvik mellom stripene ved
+sammenligning av automatisk klassifisert terrengmodell for hver
+flystripe.
+* Resultatet skal dokumenteres numerisk i tabell
 * Oppdragstaker skal gi sin vurdering av resultatet.
+* Stripejustering samt systemets kalibrering kan dokumenters med en
+av følgende fremgangsmåter:
+* Homogenitetsplott før og etter matching/stripejustering.
+* Resultat fra daglig kalibrering, stripejustering og
+homogenitetsplott etter matching/stripejustering.
+* Homogenitetsplottet skal dokumenteres med kartbladvise georefererte
+TIF-filer med oppløsning 1m, med tilhørende dZ-verdi per piksel i
+meter med 2 desimaler.
 ====
 
 [#bearbeiding-av-laserdata-klassifisering,reftext="Bearbeiding av laserdata (klassifisering)"]
@@ -587,8 +600,11 @@ Ved behov kan oppdragsgiver etterspørre klassifisering av objekter utover terre
 |Antall eksemplar av rapport|(antall og oppbevaringssted)
 |Versjon|(rapportversjonsnummer)
 |Datering og signatur|(dd.mm.åååå, signatur)
-.2+|Landmålingsrapporter|Rapport innmåling Kontrollflater|Dokumentasjon i henhold til krav stilt i kapittel <<Kontrollflater>>
-|Rapport innmåling Kontrollprofiler|Dokumentasjon i henhold til krav stilt i kapittel <<Kontrollprofiler>>
+.2+|Landmålingsrapporter|Rapport innmåling Kontrollflater/Hjulspormetoden|Dokumentasjon i henhold til krav stilt i kapittel <<Kontrollflater>>.
+Rapport fra innmåling av kontrollflater skal legges ved som vedlegg til
+prosjektrapporten. Rapporten fra innmålingen skal inneholde bilder av
+innmålte flater, gjelder ikke for hjulspormetoden.
+|Rapport innmåling Kontrollprofiler|Dokumentasjon i henhold til krav stilt i kapittel.   <<Kontrollprofiler>>
 .7+|Gjennomføring av Laserskanning|Fly|(fabrikat, type, kallesignal og trykkabin ja/nei)
 |Skannersystem a|* Skanner: +
 ** Fabrikat, type, serienummer og eventuelt revisjonsnummer. +
