@@ -164,6 +164,9 @@ Tverrstriper benyttes til daglig kalibrering og stripejustering av et laserprosj
 * For flystriper som er lenger enn 40 km skal det plasseres tverrstripe i hver ende. +
 * Tverrstripene skal fortrinnsvis ligge vinkelrett på flystripene. Minste tillate vinkel for å kvalifisere som tverrstripe er 50 grader, se figur <<#imgTverrstriper>>. +
 * Ved enkeltstriper i kjede, for eksempel ved kartlegging av traséer, skal den neste stripen overlappe den forrige (i knekkene) på en slik måte at den også kan fungere som tverrstripe, se figur <<#imgEnkeltstripe>>. Hvis knekkvinkel er mindre enn 50 grader må man planlegge en egen tverrstripe.
+* Ved store endringer i overflatemodellen som for eksempel
+snøsmelting og ulik vekstsesong skal berørte deler av tverrstripen skannes
+på nytt.
 ====
 
 .Minimum vinkel på tverrstriper
@@ -182,18 +185,28 @@ Absolutt nøyaktighet på punktsky i vertikaldomene etterprøves ved hjelp av la
 Størrelsen på kontrollflaten er avhengig av den planlagte punkttettheten. Ved punkttetthet fra 0,5 punkt/m^2^ til 3 punkt/m^2^ skal størrelse på kontrollflaten være minimum 16 m^2^. I tilfeller hvor man ikke finner egnet lokasjon for en 4 x 4 m kontrollflate kan en 2 x 8 m kontrollflate benyttes. Ved punkttetthet fra og med 3 punkt/m2 og oppover skal størrelsen være minimum 
 4 m^2^. Rundt en kontrollflate skal det være 0,5 m buffersone fri for obstruksjoner.
 
+
+
 [[tab-kontrollflate]]
 .Krav til kontrollflatens form og størrelse
 [cols="7*",options="header"]
+[cols="1,1,1,1,1,1,1,1", options="header"]
 |===
-|Form Kontrollflate|Størrelse (m^2^)|Antall landmålte punkt
-4+|Antall lasermålinger innenfor kontrollflaten ved ulik punkttetthet
-||||0,5 pkt/m^2^|2 pkt/m^2^|3 pkt/m^2^|5 pkt/m^2^
-|4x4|16|25|8|32||    
-|2x8|16|27|8|32||    
-|2x2|4|13|||12|20    
-|===
+| Form Kontrollflate (m)
+| Størrelse (m2)
+| Antall landmålte punkt
+5+|Antall lasermålinger innenfor kontrollflaten ved ulik punkttettheter
+|||| 0,5 pkt/m2
+| 2 pkt/m2
+| 3 pkt/m2
+| 5 pkt/m2
+| 70 pkt/m2
+|4x4|16|25|8|32|||   
+|2x8|16|27|8|32|||    
 
+|2x2|4|13|||12|20| 
+|0.5x0.5|0.25|5|||||17
+|===
 
 .Kontrollflate - punkttetthet < 3 pkt/m^2^
 [#imgKontrollflateUnder]
@@ -206,7 +219,22 @@ image::figurer/Kap7_KontrollflateUnder3.png[KontrollflateUnder,400,align="center
 //[caption="Figure 7:"]
 image::figurer/Kap7_KontrollflateOver3.png[KontrollflateOver,400,align="center"]
 
+.Kontrollflate - punkttetthet > 70 pkt/m^2^
+[#imgKontrollflateOver]
+//[caption="Figure 7:"]
+image::figurer/Kap7_KontrollflateOver70.png[KontrollflateOver,250,align="center"]
+
 I kartleggingsprosjekt med både Laser og Foto kan senter av kontrollflate signaleres. Signalet skal i så fall inngå i signaleringsplan for foto.
+
+====
+[#krav-laser-kontrollflater-Tidsgyldighet="krav-laser-kontrollflater-Tidsgyldighet"]
+*KRAV LASER KONTROLFLATER  TIDSGYLDIGHET*
+
+* Kontrolflater og hjulspor skal Måles inn samme år som datafangsten gjennomføres.
+Unntak kan avtales der prosjekter går over flere år.
+
+
+====
 
 ====
 [#krav-laser-kontrollflater-antall-og-plassering,reftext="Krav laser kontrollflater - antall og plassering"]
@@ -219,6 +247,10 @@ I kartleggingsprosjekt med både Laser og Foto kan senter av kontrollflate signa
 * Kontrollflatene skal plasseres på en hard flat flate (asfalt, betong, plan og hard grusveg). Som hovedregel skal kontrollflatene plasseres innenfor prosjektavgrensingen. Dersom dette ikke er praktisk mulig, plasseres kontrollflatene i umiddelbar nærhet. Uansett skal laserdata over kontrollflatene inngå i leveransen.  
 * Maksimum helning internt i flaten skal ikke overstiger 5 %. Dersom helningen overstiger dette kan en grunnrissfeil påvirke resultatet av høydeanalyse.
 * Rundt kontrollflatene skal det være en buffersone på minimum 0,5 m. Helningen på buffersonen skal ikke overskride 5 %. Dersom det ikke benyttes en buffersone rundt målt kontrollflate kan grunnrissfeil påvirke resultatet av høydeanalysen.
+* Når kontrollflater måles inn i terrenget er det ikke krav om oppmerking av
+målepunktene. I praksis så vil oppmerking være gunstig for å sikre at
+samme målepunkt blir benyttet. Dersom målepunktene merkes i felt skal det
+benyttes en krittspray eller kritt som forsvinner etter kort tid.
 ====
 
 
@@ -230,6 +262,45 @@ I kartleggingsprosjekt med både Laser og Foto kan senter av kontrollflate signa
 minimum 16 m^2^ kontrollflate. Se tabell <<tab-kontrollflate>>.
 * Punkttetthet >= 3pkt/m^2^ 
 minimum 4 m^2^ kontrollflate. Se tabell <<tab-kontrollflate>>.
+====
+
+
+Som et alternativ til innmåling av tradisjonelle kontrollflater, kan
+hjulsportmetoden benyttes. Ved hjulspormetoden måler man inn posisjonen
+til målebilens bakhjul vha. GNSS og treghetsnavigasjonsutstyr (INS). De
+målte punktene brukes til kontroll og støtte for stripejusteringen. Det
+benyttes robust statistikk i analysen av høydedifferanser mellom hjulspor og
+laserdata for å filtrere bort grove feil. Det store antallet målepunkt gir et bra
+datagrunnlag slik at evt. støy vil bli utlignet av antall målinger. Målinger
+utført med hjulspormetoden har et gyldighetsområdet tilsvarende en sirkel
+med radius 6 km. Dette gjelder for samtlige innmålte punkt med
+hjulspormetoden med tilstrekkelig nøyaktighet.
+
+====
+[#krav-Kontrollflater-Hjulspor metoden="krav-Kontrollflater-Hjulspor metoden"]
+*KRAV KONTROLLFLATER - HJULSPORMETODEN*
+
+* Svake posisjonsløsninger skal utelates. Nøyaktighet til målingene skal
+følge <<krav-laser-kontrollflater-noyaktighet>> 
+*  Måleutstyret skal kalibreres for hver installasjon. Dokumentasjon for
+kalibrering skal leveres sammen med kontrollflaten.
+* Krav til målingenes utstrekning/spredning er likt for
+kontrollflatemetoden og hjulspormetoden.
+* Ved datainnsamling med hjulspormetoden skal målingene utføres
+kontinuerlig gjennom prosjektområdet. Dette på en slik måte at hele
+området er dekket av kontrollmålingenes gyldighetsområder.
+* Nøyaktigheten på hjulspormetoden skal tilsvare nøyaktigheten til
+kontrollflate metoden.
+* Alle prosjekt skal ha minst en kontrollflate målt med
+kontrollflatemetoden. Dette for å kontrollere innmålingssystem for
+hjulspormetoden der denne metodikken er benyttet. Lokasjonen til
+denne kontrollflaten skal da være i umiddelbar nærhet til
+hjulspordataene.
+* Helningskravet på maks 5% i <<krav-laser-kontrollflater-antall-og-plassering>> gjelder ikke for
+hjulspormetoden.
+* Det er krav til leveranse av gyldighetsplott for både hjulspormetoden
+og kontrollflatemetoden.
+
 ====
 
 ====
@@ -244,7 +315,7 @@ minimum 4 m^2^ kontrollflate. Se tabell <<tab-kontrollflate>>.
 .Kontrollflaters gyldighetsområde
 [#imgKontrollflateGyldighet]
 //[caption="Figure 8:"]
-image::figurer/Kap7_KontrollflateGyldighet.png[KontrollflateGyldighet,400,align="center"]
+image::figurer/Kap7_KontrollflateGyldighet2.png[KontrollflateGyldighet,400,align="center"]
 
 
 .Sammenslåing av polygoner til en skanneblokk
