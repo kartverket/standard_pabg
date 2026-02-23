@@ -119,7 +119,7 @@ Planlegging av et laserskanningsprosjekt omfatter utarbeidelse av flyplan som si
 ===== Flyplan
 Ved flyplanlegging med FLS vil skanneparametere, samt flyhøyde og flyhastighet, bestemmes for det aktuelle prosjekt. Flyplanen lages ut fra oppdragets formål og forutsetninger (nøyaktighet, bestilt punktetthet), eventuelle tilgjengelige kontrollflater, forventet vegetasjonstetthet, topografi, arrondering og tilgjengelig instrument. Før utføring av laserskanning skal det leveres flyplan for oppdraget.
 
-Se Vedlegg <<Eksempel flyplan laserskanning>> for eksempel på en flyplan.
+Se <<kapittel-eksempel-flyplan-laserskanning>> for eksempel på en flyplan.
 
 ====
 [#krav-laser-flyplan-laserskanning,reftext="Krav laser flyplan laserskanning"]
