@@ -11,9 +11,9 @@ Vektorisering fra modell innebærer bruk av automatiserte og manuelle operasjone
 Felles for begge tilnærmingene er at Krav til vektorisering følger kravene i registreringsinstruksen gitt for den objekttypen som skal vektoriseres.
 
 === Kvalitetsparametere ved vektorisering fra punktsky
-Oppnådd kvalitet på vektordata kartlagt fra punktsky/modell vil være påvirket av flere faktorer. Vi kan skille mellom kvalitetselementer knyttet til grunnlagsdatene, og kvalitetselementer i selve arbeidet med fremstilling av vektordata fra grunnlagsdatene. Kvalitetselementene til grunnlagsdatene følger angitte elementer gitt av datafangstmetode. Bildedata følger <<Kartlegging med fotogrammetri>>, punktsky fra bil følger <<kartlegging-med-mobil-datafangst>> og punksky fra luftbøren sensor følger <<Kartlegging med flybåren laserskanning>> 
+Oppnådd kvalitet på vektordata kartlagt fra punktsky/modell vil være påvirket av flere faktorer. Vi kan skille mellom kvalitetselementer knyttet til datagrunnlaget, og kvalitetselementer i selve arbeidet med fremstilling av vektordata fra datagrunnlaget.  Kvalitetselementene til datagrunnlagt følger angitte elementer gitt av datafangstmetode. Kartlegging fra bildedata følger <<Kartlegging med fotogrammetri>>, punktsky fra bil følger <<kartlegging-med-mobil-datafangst>> og punktsky fra luftbøren sensor følger <<Kartlegging med flybåren laserskanning>> 
 
-Kvalitetselementer i grunnlagsdata:
+Kvalitetselementer i datagrunnlaget:
 
 * Stedfestingsnøyaktighet
 * Fullstendighet
@@ -44,8 +44,11 @@ image::figurer/Kap9_Knekkpkt og tverravvik.png[Figuren illustrerer knekkpunktavv
 
 
 === Kvalitetskrav
+
+Legge dette i kravboksSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+
 ==== Krav til geometrisk avvik og tverravvik/ pilhøyde
-Ved vurdering av kvalitet på vektordata basert på vektorisering i punktsky, må både stedfestingsnøyaktighet for punktskyen geometrisk avvik i vektorisering og tverravvik/pilhøyde i grunnriss og høyde (tverravvik/pilhøyde) vurderes.
+Ved vurdering av kvalitet på vektordata basert på vektorisering i punktsky/modell, må både stedfestingsnøyaktighet for punktskyen geometrisk avvik i vektorisering og tverravvik/pilhøyde i grunnriss og høyde (tverravvik/pilhøyde) vurderes.
 
 Når metoden brukes som alternativ til FKB-kartkonstruksjon vil kvalitetskrav til vektordata følge av FKB-Standard og kvalitetsklasser på objekttyper definert i aktuell Produktspesifikasjon.
 
@@ -61,17 +64,22 @@ Avvik i høyde kan for egnede objekttyper beregnes ved geometrisk kontroll på v
 
 Avvik i grunnriss må i større grad kontrolleres ved manuelle inspeksjoner, eventuelt være integrert i arbeidsflyten for selve vektoriseringsarbeidet. 
 
+:xrefstyle: short
+
 ==== Egnethet av vektorisering til fremstilling av vektordata
-Ulike typer av punktsky kan benyttes som grunnlag for vektorisering av FKB-datasett, avhengig av hvilken objekttype og hvilke kvalitetskrav som gjelder. Valg av datasett og metode har stor betydning for nøyaktigheten og detaljnivået på resultatet, og det er derfor viktig å vurdere egnetheten for hvert enkelt formål. Tabellen under gir en oversikt over hvilke punktskydatasett som anbefales for vektorisering av ulike relevante datasett, sammen med kommentarer om relevante metoder og eventuelle begrensninger.
+Ulike typer av punktsky kan benyttes som grunnlag for vektorisering av FKB-datasett, avhengig av hvilken objekttype og hvilke kvalitetskrav som gjelder. Valg av datasett og metode har stor betydning for nøyaktigheten og detaljnivået på resultatet, og det er derfor viktig å vurdere egnetheten for hvert enkelt formål. <<tab-anbefalte-punktskydatasett-for-vektorisering>> gir eksempler på punktsky/modell som egner seg for vektorisering av ulike relevante datasett, sammen med kommentarer om relevante metoder og eventuelle begrensninger. Eksemplene  vil endre seg i takt med teknologiutviklingen.
 
 [[tab-anbefalte-punktskydatasett-for-vektorisering]]
 
-.Anbefalte punktskydatasett for vektorisering
+.Eksempler på datasett egnethet for vektorisering fra punktsky/modell
 [width="100%",options="header"]
 |====================
 |Datasett  |Egnethet av punktsky  | Kommentar 
 |FKB-Bane |Mobil datafangst |Svært godt egnet
 |FKB-BygnAnlegg  |Mobil datafangst/punktsky fra drone (ved laserskanning eller bildematching)  |Enkelte objekttyper langs MurLoddrett, SkråForstøtningsmur godt egnet 
+
+
+:xrefstyle: long
 
 For fullstendighet kan det være nødvendig med punktsky fra drone. 
   
