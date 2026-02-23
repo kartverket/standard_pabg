@@ -79,7 +79,7 @@ Ulike typer av punktsky kan benyttes som grunnlag for vektorisering av FKB-datas
 |FKB-BygnAnlegg  |Mobil datafangst/punktsky fra drone (ved laserskanning eller bildematching)  |Enkelte objekttyper langs MurLoddrett, SkråForstøtningsmur godt egnet 
 
 
-:xrefstyle: long
+:xrefstyle: full
 
 For fullstendighet kan det være nødvendig med punktsky fra drone. 
   
