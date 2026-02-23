@@ -45,17 +45,58 @@ image::figurer/Kap9_Knekkpkt og tverravvik.png[Figuren illustrerer knekkpunktavv
 
 === Kvalitetskrav
 
-Legge dette i kravboksSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+
 
 ==== Krav til geometrisk avvik og tverravvik/ pilhøyde
+
 Ved vurdering av kvalitet på vektordata basert på vektorisering i punktsky/modell, må både stedfestingsnøyaktighet for punktskyen geometrisk avvik i vektorisering og tverravvik/pilhøyde i grunnriss og høyde (tverravvik/pilhøyde) vurderes.
+
+====
+[#krav-til-geometrisk-avvik-og-tverravvik/pilhøyde,reftext="Krav til geometrisk avvik og tverravvik/pilhøyde"]
+*KRAV TIL GEOMETRISK AVVIK OG TVERRAVVIK/PILHØYDE*
+
+
 
 Når metoden brukes som alternativ til FKB-kartkonstruksjon vil kvalitetskrav til vektordata følge av FKB-Standard og kvalitetsklasser på objekttyper definert i aktuell Produktspesifikasjon.
 
 Kvadratsummen av stedfestingsnøyaktighet på punktsky/modell, og den største verdien av geometrisk avvik eller tverravvik/ pilhøyde må være bedre enn kvalitetskravet for den aktuelle objekttypen.
 
+
+
+[asciimath]
+
+krav > sqrt(nøyaktighet^2  + (størstefeil vektorisering)^2)
+
+
+
+====
+
+
+
+
 ==== Krav til fullstendighet
-Krav til fullstendighet vil følge av krav i aktuell Produktspesifikasjon. 
+ 
+
+
+
+====
+[#krav-til-fullstendighet,reftext="krav til fullstendighet"]
+*KRAV TIL FULLSTENDIGHET*
+
+
+
+* Krav til fullstendighet vil følge av krav i aktuell Produktspesifikasjon.
+
+
+
+
+
+
+====
+
+
+
+
 
 === Kontroll
 For å kontrollere geometrisk avvik og tverravvik/pilhøyde sammenlignes vektoriserte objekter med referanseobjekter i punktskyen, og avvik måles i både i grunnriss (horisontalt) og høyde (vertikalt).
