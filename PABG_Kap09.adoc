@@ -1,4 +1,4 @@
-[#vektorisering-fra-punktsky-og-modell, reftext="Vektorisering fra punktsky og modell som metode for etablering av basis geodata"]
+[[kapittel-vektorisering-fra-punktsky-og-modell]]
 == Vektorisering fra punktsky og modell som metode for etablering av basis geodata
 
 === Innledning
