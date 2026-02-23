@@ -1,5 +1,4 @@
 :xrefstyle: short
-:lang: nb
 
 [#kartlegging-med-mobil-datafangst,reftext="Kartlegging med mobil datafangst"]
 == Kartlegging med mobil datafangst
