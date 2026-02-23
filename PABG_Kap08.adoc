@@ -121,10 +121,10 @@ image::figurer/Kap8_Relative nøyaktighet Tilfeldig variasjon2.png[Figuren viser
 
 
 
-| |Standardavvik ^|<10 ^|<3 ^|<2 ^|<1 
+| |Standardavvik ^|<50 ^|<5 ^|<2 ^|<1 
 | |Maks avvik 4+^|Systematisk avvik + 2 x Standardavvik
 
-|Relativ nøyaktighet |  Systematisk avvik  ^| 0 - 200 ^|0 - 20 ^| 0 - 6 ^|0 - 2
+|Relativ nøyaktighet |  Systematisk avvik  ^| 0 - 200 ^|0 - 10 ^| 0 - 4 ^|0 - 2
  
 | |Tilfeldig varisasjon, Toleranse ^|5 (+0/-5) ^|5 (+0/-5) ^|3 (+0/-3) ^|1 (+0/-1) 
 
