@@ -2,7 +2,7 @@
 
 
 === Introduksjon
-Flybåren laserskanning (FLS) brukes ombord i fly eller helikopter for å utføre lasermålinger på objekter som både er naturlige og menneskeskapte. En lasermåling gir x, y og z koordinater for målte punkt samt egenskaper tilknyttet hver enkel retur (intensitet på retursignalet, vinkel på lasermålingen, ekkoinformasjon, og så videre). Flybåren laserskanning er også kjent som laseraltimetri og "airborne LiDAR (Light Detection And Ranging )".
+Flybåren laserskanning (FLS) brukes ombord i fly eller helikopter for å utføre lasermålinger på objekter som både er naturlige og menneskeskapte. En lasermåling gir x, y og z koordinater for målte punkt samt egenskaper tilknyttet hver enkel retur (intensitet på retursignalet, vinkel på lasermålingen, ekkoinformasjon, og så videre). Flybåren laserskanning er også kjent som laseraltimetri og "airborne LiDAR (Light Detection And Ranging )". Laserskanning som penetrerer vann kalles laserbatymetri se https://github.com/kartverket/ALB_Best_Practice_Manual[Airborne LiDAR Bathymetry - Best Practice Manual]
 
 Laserskanning kan også utføres fra andre plattformer slik som UAV, fra kjøretøy (bilbåren laserskanning) og fra fast oppstilling (terrestrisk/ bakkebasert laserskanning). I dette kapittel omtales datafangst med laserskanning fra enten fly eller helikopter. 
 
