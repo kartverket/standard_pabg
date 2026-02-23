@@ -277,6 +277,7 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 |===
 ====
 
+[[kapittel-krav-til-gnssins]]
 ===== Krav til GNSS/INS
 ====
 [#krav-foto-gnssins-system,reftext="Krav foto GNSS/INS-system"]
@@ -381,7 +382,7 @@ a|* Gjennomsnittlig lengdeoverdekning: avtalt verdi
 ====
 
 
-
+[[kapittel-krav-til-innsamling-av-gnssimu-data]]
 ===== Krav til innsamling av GNSS/IMU data
 Ved GNSS/INS-støttet flyfotografering kombineres observasjoner fra IMU (Inertial Measurement Unit) med data fra GNSS mottaker for å bestemme både posisjon og orientering på kameraet. Ulike beregningsmetoder kan benyttes for å komme fram til posisjon og rotasjon for hvert enkelt bilde. 
 
@@ -420,6 +421,7 @@ Det forutsettes videre at programvaren i all vesentlighet forholder seg til de m
 * Satellittklokkekorreksjoner med oppløsning på 30 sekunder eller bedre skal benyttes.
 ====
 
+[[kapittel-beregning-av-GNSSINS-data]]
 ==== Beregning av GNSS/INS data
 Ved beregning av GNSS/INS-dataene står oppdragstager fritt til å velge egnet beregningsstrategi, avhengig av hvordan datainnsamlingen har foregått og hvilken programvare som er tilgjengelig. 
 
@@ -471,6 +473,7 @@ Kravene til dokumentasjon fra beregningen er listet opp i avsnittet om egenkontr
 * I stripeskjøter skal navnet på de overlappende bildene skilles med suffiks «_2» i bildenummeret for de senest fotograferte bildene hvis ikke annen informasjon skiller bildene, slik som telleverksnummer.
 ====
 
+[[kapittel-egenkontroll-og-rapportering-fotorapport]]
 ==== Egenkontroll og rapportering (fotorapport)
 Det skal leveres en rapport (fotorapport) for de utførte arbeidene, med leveransene som vedlegg til rapporten. Rapporten skal ha egne seksjoner for generell informasjon, utføring av fotograferingen, beregning av GNSS/INS-data og fremstilling av bilder, samt en egen seksjon med oversikt og spesifikasjon av vedlagte leveranser.
 For hvert av de nevnte arbeidene, inkludert leveransene, skal resultatet av utførte kvalitetskontroller dokumenteres. 
