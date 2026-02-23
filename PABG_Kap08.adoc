@@ -1,6 +1,5 @@
 :xrefstyle: short
-
-[#kartlegging-med-mobil-datafangst,reftext="Kartlegging med mobil datafangst"]
+[[kapittel-kartlegging-med-mobil-datafangst]]
 == Kartlegging med mobil datafangst
 
 
