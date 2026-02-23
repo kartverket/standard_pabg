@@ -1146,12 +1146,12 @@ Målsetning: Innlegging i norgeibilder.no.
 ===== Høydemodell (bildematching)
 Målsetning: Produktet gjelder for punktsky, terrengmodell og overflatemodell. Innlegging i hoydedata.no. Høydemodell generert fra bilder har vanligvis dårligere gjengivelse av terrenget i vegeterte områder. Laserskanning finner ofte en åpning i vegetasjonen, mens bildematching som trenger to ulike innsynsvinkler har større problemer med å få gode terrengpunkt i vegeterte områder.
 
-Laserskanning fra drone følger samme krav som laserskanning fra fly og helikopter i kapittel <<Kartlegging med flybåren laserskanning>>.
+Laserskanning fra drone følger samme krav som laserskanning fra fly og helikopter i <<kapittel-kartlegging-med-flybåren-laserskanning>>.
 ====
 [#krav-foto-hoydemodell-drone,reftext="Krav foto høydemodell drone"]
 *KRAV FOTO HØYDEMODELL DRONE*
 
-* Skal følge kravene i kapittel <<detaljertkartleggingkameradrone>>.
+* Skal følge kravene i <<kapittel-detaljert-kartlegging-med-kamera-i-drone>>.
 * Bildene må være tatt med en RTK-drone med IMU.
 * Bildene må aerotrianguleres i egnet programvare med krav om AT-rapport. <<krav-foto-rapportering-aerotriangulering>>
 * Krav til signalerte kjentpunkt og kontrollflater følger kapt. «Fotografering med drone» samt «Kartlegging med flybåren laserskanning».  Kjentpunkt og kontrollflater må være jevnt fordelt ut over blokken/området samt dekke ytterkantene. 
@@ -1172,12 +1172,15 @@ Målsetning: Innlegging i Felles kart database (FKB), fellesløsninger og offent
 [#krav-foto-vektorisering-fra-modell,reftext="Krav vektorisering fra modell fra dronebilder"]
 *KRAV FOTO VEKTORISERNIG FRA MODELL FRA DRONEBILDER*
 
-* Skal følge kravene i kapittel <<detaljertkartleggingkameradrone>>.
+:lang: nb
+:section-refsig: Kapittel
+
+* Skal følge kravene i <<kapittel-detaljert-kartlegging-med-kamera-i-drone>>.
 * Følge krav til høydemodell
 * Bildene må være tatt med en RTK-drone med IMU.
 * Bildene må aerotrianguleres i egnet programvare med krav om AT-rapport. <<krav-foto-rapportering-aerotriangulering>>
 * Detaljeringsgrad må være tilstrekkelig for å kunne identifisere kartobjektet samt digitalisere kartobjekter med tilstrekkelig geografisk nøyaktighet etter gjeldene standard for sluttproduktet. (metodekrav må diskuteres og utarbeides)
-* Vektoriseringskapitlet i PaBG skal følges: <<vektorisering-fra-punktsky-og-modell>>
+* Vektoriseringskapitlet i PaBG skal følges: <<kapittel-vektorisering-fra-punktsky-og-modell>>
 * Personopplysningsloven skal følges (inkludert GDPR).
 * Dokumentasjon av kamera og kamerakalibrering:
 ** Selvkalibrering av kameraet i aerotrianguleringen skal bare bruke parametere som er signifikante.
@@ -1192,7 +1195,7 @@ Målsetning: Konstruksjon fra flybiler i en Digital Fotogrammetrisk Arbeidsstasj
 [#krav-foto-kartkonstruksjon-i-stereo-fra-dronebilder,reftext="Krav foto kartkonstruksjon i stereo fra dronebilder"]
 *KRAV FOTO KARTKONSTRUKSJON I STEREO FRA DRONEBILDER*
 
-* Skal følge kravene i kapittel <<detaljertkartleggingkameradrone>>.
+* Skal følge kravene i <<kapittel-detaljert-kartlegging-med-kamera-i-drone>>.
 * Bildene må være tatt med en RTK-drone med IMU.
 * Bildene må aerotrianguleres i egnet programvare med krav om AT-rapport. <<krav-foto-rapportering-aerotriangulering>>
 * Innad i en stereomodell skal delen av stereomodellen som skal brukes til konstruksjon tilfredsstille nøyaktighetskravene og eventuelle deler av stereomodellen som ikke bør brukes skal begrunnes i AT-rapporten. 
@@ -1214,7 +1217,7 @@ Målsetning: Konstruksjon fra flybiler i en Digital Fotogrammetrisk Arbeidsstasj
 
 ====
 
-[#detaljertkartleggingkameradrone, reftext="Detaljert kartlegging med kamera i drone"]
+[[kapittel-detaljert-kartlegging-med-kamera-i-drone]]
 ==== Detaljert kartlegging med kamera i drone
 
 
