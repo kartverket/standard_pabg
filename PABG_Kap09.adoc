@@ -69,6 +69,8 @@ Avvik i grunnriss må i større grad kontrolleres ved manuelle inspeksjoner, eve
 ==== Egnethet av vektorisering til fremstilling av vektordata
 Ulike typer av punktsky kan benyttes som grunnlag for vektorisering av FKB-datasett, avhengig av hvilken objekttype og hvilke kvalitetskrav som gjelder. Valg av datasett og metode har stor betydning for nøyaktigheten og detaljnivået på resultatet, og det er derfor viktig å vurdere egnetheten for hvert enkelt formål. <<tab-anbefalte-punktskydatasett-for-vektorisering>> gir eksempler på punktsky/modell som egner seg for vektorisering av ulike relevante datasett, sammen med kommentarer om relevante metoder og eventuelle begrensninger. Eksemplene  vil endre seg i takt med teknologiutviklingen.
 
+:xrefstyle: full
+
 [[tab-anbefalte-punktskydatasett-for-vektorisering]]
 
 .Eksempler på datasett egnethet for vektorisering fra punktsky/modell
@@ -79,7 +81,7 @@ Ulike typer av punktsky kan benyttes som grunnlag for vektorisering av FKB-datas
 |FKB-BygnAnlegg  |Mobil datafangst/punktsky fra drone (ved laserskanning eller bildematching)  |Enkelte objekttyper langs MurLoddrett, SkråForstøtningsmur godt egnet 
 
 
-:xrefstyle: full
+
 
 For fullstendighet kan det være nødvendig med punktsky fra drone. 
   
