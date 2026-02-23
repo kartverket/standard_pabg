@@ -262,6 +262,9 @@ benyttes en krittspray eller kritt som forsvinner etter kort tid.
 minimum 16 m^2^ kontrollflate. Se tabell <<tab-kontrollflate>>.
 * Punkttetthet >= 3pkt/m^2^ 
 minimum 4 m^2^ kontrollflate. Se tabell <<tab-kontrollflate>>.
+
+
+
 ====
 
 
