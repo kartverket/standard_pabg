@@ -188,7 +188,7 @@ Størrelsen på kontrollflaten er avhengig av den planlagte punkttettheten. Ved 
 
 
 [[tab-kontrollflate]]
-.Krav til kontrollflatens form og størrelse
+.Minimumskrav til kontrollflatens form og størrelse
 [cols="7*",options="header"]
 [cols="1,1,1,1,1,1,1,1", options="header"]
 |===
