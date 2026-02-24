@@ -1129,6 +1129,8 @@ Høydedata
 |Leveranser|En fullstendig oversikt over alle leverte data, metadata og eventuell medfølgende dokumentasjon skal stilles opp. Oversikten skal minimum inneholde spesifikasjon av leveranseformat, medium og eventuell inndeling i kataloger og filer.
 |===
 ====
+
+[[kapittel-fotografering-med-drone]]
 === Fotografering med drone
 
 ==== Bruksområder
@@ -1324,7 +1326,7 @@ Det er ikke krav om gyromount.
 
 
 
-
+[[kapittel-skråbilder]]
 === Skråbilder
 Skille mellom 4 kvaliteter for posisjon- og orienteringsnøyaktighet for skråbildeprosjekter tatt med skråbildekamera som er et kamerasystem med flere kamera, som for eksempel et kamerasystem med totalt 5 kamera der det er 1 vertikalbildekamera, 1 kamra framover, 1 kamera bakover, 1 kamera til venstre og 1 kamera til høyre:
 
