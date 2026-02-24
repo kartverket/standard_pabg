@@ -66,4 +66,6 @@
 <<krav-laser-rapportering-laserskanning>> +
 <<krav-mobil-stedfestingsnøyaktighet-ved-mobil-datafangst>> +
 <<krav-mobil-dokumentasjon-av-mobil-datafangst>> +
+<<krav-vektor-geometrisk-avvik-og-tverravvik-pilhøyde>> +
+<<krav-vektor-fullstendighet>> +
 
