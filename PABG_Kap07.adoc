@@ -285,8 +285,9 @@ målepunktene. I praksis så vil oppmerking være gunstig for å sikre at samme 
 Som et alternativ til innmåling av tradisjonelle kontrollflater, kan hjulsportmetoden benyttes. Ved hjulspormetoden måler man inn posisjonen til målebilens bakhjul vha. GNSS og treghetsnavigasjonsutstyr (INS). De målte punktene brukes til kontroll og støtte for stripejusteringen. Det benyttes robust statistikk i analysen av høydedifferanser mellom hjulspor og laserdata for å filtrere bort grove feil. Det store antallet målepunkt gir et bra datagrunnlag slik at evt. støy vil bli utlignet av antall målinger. Målinger utført med hjulspormetoden har et gyldighetsområdet tilsvarende en sirkel med radius 6 km. Dette gjelder for samtlige innmålte punkt med hjulspormetoden med tilstrekkelig nøyaktighet.
 
 ====
-[#krav-Kontrollflater-Hjulspor metoden="krav-Kontrollflater-Hjulspor metoden"]
-*KRAV KONTROLLFLATER - HJULSPORMETODEN*
+
+[#krav-laser-kontrollflater-hjulspormetoden,reftext="Krav laser kontrollflater - hjulspormetoden"]
+*KRAV LASER KONTROLLFLATER - HJULSPORMETODEN*
 
 * Svake posisjonsløsninger skal utelates. Nøyaktighet til målingene skal følge <<krav-laser-kontrollflater-noyaktighet>> 
 *  Måleutstyret skal kalibreres for hver installasjon. Dokumentasjon for kalibrering skal leveres sammen med kontrollflaten.
