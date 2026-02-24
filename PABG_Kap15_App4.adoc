@@ -52,6 +52,7 @@
 <<krav-laser-tverrstriper>> +
 <<krav-laser-kontrollflater-antall-og-plassering>> +
 <<krav-laser-kontrollflater-form-og-storrelse>> +
+<<krav-laser-kontrollflater-hjulspormetoden>> +
 <<krav-laser-kontrollflater-noyaktighet>> +
 <<krav-laser-kontrollprofiler-antall-og-plassering>> +
 <<krav-laser-kontrollprofiler-form-og-storrelse>> +
