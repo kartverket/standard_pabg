@@ -64,4 +64,6 @@
 <<krav-laser-dokumentasjon-pa-kontroll-av-punktsky>> +
 <<krav-laser-klassifisering>> +
 <<krav-laser-rapportering-laserskanning>> +
+<<krav-mobil-stedfestingsnøyaktighet-ved-mobil-datafangst>> +
+<<krav-mobil-dokumentasjon-av-mobil-datafangst>> +
 
