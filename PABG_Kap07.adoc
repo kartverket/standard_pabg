@@ -3,6 +3,7 @@
 
 
 === Introduksjon
+
 Flybåren laserskanning (FLS) brukes ombord i fly eller helikopter for å utføre lasermålinger på objekter som både er naturlige og menneskeskapte. En lasermåling gir x, y og z koordinater for målte punkt samt egenskaper tilknyttet hver enkel retur (intensitet på retursignalet, vinkel på lasermålingen, ekkoinformasjon, og så videre). Flybåren laserskanning er også kjent som laseraltimetri og "airborne LiDAR (Light Detection And Ranging )". Laserskanning som penetrerer vann kalles laserbatymetri se https://github.com/kartverket/ALB_Best_Practice_Manual[Airborne LiDAR Bathymetry - Best Practice Manual]
 
 Laserskanning kan også utføres fra andre plattformer slik som UAV, fra kjøretøy (bilbåren laserskanning) og fra fast oppstilling (terrestrisk/ bakkebasert laserskanning). I dette kapittel omtales datafangst med laserskanning fra enten fly eller helikopter. 
@@ -10,10 +11,14 @@ Laserskanning kan også utføres fra andre plattformer slik som UAV, fra kjøret
 Krav til produkt og leveranser spesifiseres i Produktspesifikasjon nasjonal modell for høydedata fra laserskanning (FKB-Laser). For definisjon av kvalitetsmål vises det til standarden Geodatakvalitet.
 
 ==== Virkemåte
+
+[[kapittel-laserskanner]]
 ===== Laserskanner
+
 Laserskanneren måler retning og avstand ned til bakken i laserskannerens koordinatsystem. Avstandene bestemmes ved å måle tiden det tar for lyset å nå terrenget og reflekteres tilbake. Deretter ganges tiden med lyshastigheten og deles på to. Dersom laserpulsen treffer halvgjennomtrengelige objekter, vil en kunne få flere retursignaler fra en laserpuls. Dette kan forekomme der pulsen treffer trær, master, kraftlinjer, bygningskanter e.l. For topografisk kartlegging er det vanlig å benytte bølgelengder i det nærinfrarøde området. Lyskjeglen som sendes ut må ha en liten åpningsvinkel for å sikre et lite fotavtrykk. I laserskanneren er det en skanner som sikrer at avstandsmålinger blir fordelt innenfor en gitt skanningsbredde. Skannermekanismen er oftest et oscillerende speil, men kan også være et roterende speil eller fiberoptikk. Et system som opererer med en lyskjegle kalles single channel system. System med flere lyskjegler benytter enten et dual channel system hvor to laserkjegler skapes fra to uavhengige energikilder, eller et split beam system hvor to laserkjegles skapes ved å splitte en energikilde.
 
 ===== Posisjons- og rotasjonssystem
+
 Posisjons og rotasjonssystemet er bygd opp rundt et treghetsnavigasjonssystem også kalt “Inertial Navigation System” (INS). Systemet består av en “Inertial measurment Unit” (IMU), et eller flere “Global Navigation Satellite System” (GNSS) samt en datamaskin med tilhørende program. Programmene beregner i sanntid posisjons- og rotasjonsinformasjon som piloten kan navigere etter. I tillegg lagrer programmene alle rotasjons- og posisjonsobservasjoner. De lagrede dataene brukes til å beregne posisjon og rotasjon til laserskannerens koordinatsystem. I dette dokumentet er posisjons- og rotasjonssystemet kalt GNSS/INS System.
 
 Ved å kombinere posisjonen og rotasjonen fra GNSS/INS systemet og de relative avstands- og vinkelmålingene fra laserskanneren får man et absolutt bestemt målepunkt på jordoverflaten. 
