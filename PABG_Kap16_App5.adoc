@@ -6,3 +6,5 @@
 <<anbefaling-foto-drone-kartkonstruksjon-i-stereo>> +
 <<anbefaling-foto-drone-detaljerte-prosjekter>> +
 <<anbefaling-foto-skråbilder-minimum>> +
+<<anbefaling-mobil-fargelegging-av-punktsky>> +
+
