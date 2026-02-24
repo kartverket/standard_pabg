@@ -8,7 +8,7 @@ Vektorisering fra punktsky innebærer bruk av automatiserte og manuelle operasjo
 
 Vektorisering fra modell innebærer bruk av automatiserte og manuelle operasjoner som tar utgangspunkt i geometri og fargeinformasjon fra et 3D ortofoto / 3D Mesh. Egnethet og kvalitet vil variere for ulike objekttype. 
 
-Felles for begge tilnærmingene er at Krav til vektorisering følger kravene i registreringsinstruksen gitt for den objekttypen som skal vektoriseres.
+Felles for begge tilnærmingene er at krav til vektorisering følger kravene i registreringsinstruksen gitt for den objekttypen som skal vektoriseres.
 
 === Kvalitetsparametere ved vektorisering fra punktsky
 Oppnådd kvalitet på vektordata kartlagt fra punktsky/modell vil være påvirket av flere faktorer. Vi kan skille mellom kvalitetselementer knyttet til datagrunnlaget, og kvalitetselementer i selve arbeidet med fremstilling av vektordata fra datagrunnlaget.  Kvalitetselementene til datagrunnlagt følger angitte elementer gitt av datafangstmetode. Kartlegging fra bildedata følger <<kapittel-kartlegging-med-fotogrammetri>>, punktsky fra bil følger <<kapittel-kartlegging-med-mobil-datafangst>> og punktsky fra luftbøren sensor følger <<kapittel-kartlegging-med-flybåren-laserskanning>> 
