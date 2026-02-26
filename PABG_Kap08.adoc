@@ -148,7 +148,7 @@ Se definisjon <<termer-kontrollpunkt>>.
 
 Den absolutte nøyaktighet til kjentpunktet, skal være lik eller bedre enn kravet til den absolutte nøyaktigheten til punktskyen. Dersom nøyaktigheten er 1/3 av kravet, kan kontrollpunktene benyttes direkte i statestikkberegningene. Dersom nøyaktighetene til kontrollpunktene er dårligere, skal standardavviket til kjentpunktene benyttes i statestikkberegningene. Dette etter krav i standarden https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet[Geodatakvalitet]. Det stilles ikke konkrete krav til omfang av kjent- og kontrollpunkt, ettersom prosjektområde, GNSS-tilgjengelighet, målesystem og prosesseringsløyper har stor betydning for kvaliteten som oppnås rett fra INS. Metodikk og omfang skal være behovsstyrt og faglig begrunnet av leverandør i hvert enkelt oppdrag.
 
-[[Kapittel-Kontrollmetode-og-kontrollplan]]
+[[kapittel-Kontrollmetode-og-kontrollplan]]
 ===== Kontrollmetode og kontrollplan
 
 Kontroll kan gjennomføres ved å benytte en eller flere metodikker:
