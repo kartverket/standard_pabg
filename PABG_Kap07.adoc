@@ -246,7 +246,7 @@ image::figurer/Kap7_KontrollflateOver3.png[KontrollflateOver3,400,align="center"
 
 .Kontrollflate - punkttetthet > 70 pkt/m^2^
 [#imgKontrollflateOver]
-//[caption="Figure 7:"]
+//[caption="Figure 8:"]
 image::figurer/Kap7_KontrollflateOver70.png[KontrollflateOver70,250,align="center"]
 
 I kartleggingsprosjekt med både Laser og Foto kan senter av kontrollflate signaleres. Signalet skal i så fall inngå i signaleringsplan for foto.
