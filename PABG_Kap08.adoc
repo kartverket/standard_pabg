@@ -17,7 +17,7 @@ MLS benytter seg av posisjons- og orienteringssystemer bygd opp rundt et treghet
 Laser punktsky (også fargelagt punktsky) fra mobil datafangst vil i de fleste tilfellene ikke kunne brukes til å identifisere personer eller bilskilt.  Produktet vil da ikke omfattes av https://lovdata.no/dokument/NL/lov/2018-06-15-38[GDPR-forordningen]. Det vil være oppdragsgivers ansvar å påse at dette gjelder for sitt prosjekt. Bildematerialet for en mobil datafangst, vil som hovedregel være omfattet av GDPR forordningen og nødvendige tiltak må utføres.
 
 === Fargelegging av punktsky
-Påføring av fargeverdier på punktskyen, er opsjonelt. Dersom opsjon utløses, bør følgende kvalitetselementer hensyntas:
+Påføring av fargeverdier på punktskyen, er opsjonelt. Dersom opsjon utløses, bør  kvalitetselementer gitt i <<tab-fargelegging-av-punktsky>> hensyntas:
 
 ====
 
@@ -95,9 +95,9 @@ Avgrensing:
 
 * Avstand fra skanner (maksimalt 10 meter). Der skannerens posisjon ikke er kjent gjelder avstand til senterlinje for kjørebane.
 * Fysisk utstrekning (minst 20 laserpunkt, maksimalt 1 m^2^).
-* Området må være flatt.
+* Området må være flatt, men flaten kan være orientert i alle himmelretninger.
 
-Målingene for å beregne relativ stedfestningsnøyaktighet utføres langs loddlinjen til avgrensningens senterpunkt. Relative stedfestningsnøyaktighet deles inn i de to kvalitetsmålene systematisk avvik og tilfeldig variasjon:
+Målingene for å beregne relativ stedfestningsnøyaktighet utføres langs normalenvektoren til avgrensningens senterpunkt. Relative stedfestningsnøyaktighet deles inn i de to kvalitetsmålene systematisk avvik og tilfeldig variasjon:
 
 *Systematisk avvik* beregnes ut fra flere utvalgte avgrensningsområder. For hvert område måles avstanden mellom senter punktsky for skanninger utført i forskjellig tidsintervaller. Et tidsintervall vil typisk være kun få sekunder. Middelet av målingene fra alle de utvalgte avgrensningsområdene gir det systematiske avviket. 
 
@@ -133,11 +133,6 @@ image::figurer/Kap8_Relative nøyaktighet Tilfeldig variasjon2.png[Figuren viser
 |Relativ nøyaktighet |  Systematisk avvik  ^| 0 - 200 ^|0 - 10 ^| 0 - 4 ^|0 - 2
  
 | |Tilfeldig variasjon, Toleranse ^|5 (+0/-5) ^|5 (+0/-5) ^|3 (+0/-3) ^|1 (+0/-1) 
-
-
---- 
-
-
 
 
 
@@ -194,7 +189,7 @@ I kvalitetskategorien fullstendighet inngår elementene _dekning,_ __punkttetthe
 
 
 |Punkttetthet|Punkttettheten må være tilstrekkelig høy til å kunne identifisere og definere objekter i punktskyen relevant for det enkelte prosjekt.
-|Detaljeringsgrad | Detaljeringsgraden i prosjektet angir krav til definerbarhet av relevante objekter i punktskyen. Detaljeringsgraden stiller krav til punkttetthet.
+|Detaljeringsgrad | Detaljeringsgraden i prosjektet angir krav til definerbarhet av relevante objekter i punktskyen. 
 |Punktdistribusjon | Hvordan punktene blir fordelt i punktskyen er avhengig av valg av skanner under datainnsamling, samt valg av skanningsparametere og -hastighet. Hva som er optimal punktdistribusjon i det enkelte prosjekt er avhengig av bruksområde og sluttprodukt. 
 |====================
 
@@ -225,6 +220,7 @@ Kvalitetselementer knyttet til kriteriet om egenskapskvalitet er angitt i <<tab-
 |Tidsstempling|Dato og tid for målepunkter, hvis tilgjengelig for sensortypen, angitt som GPS-standardtid. Dersom systemet ikke angir GPS-tid skal siste datafangst dato angis i punktskyfilens hode.
 |====================
 
+:xrefstyle: full
 
 === Dokumentasjonskrav
 
