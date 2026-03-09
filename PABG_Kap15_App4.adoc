@@ -1,5 +1,6 @@
+[appendix]
 [[kapittel-vedlegg-d-liste-over-krav]]
-== Vedlegg D. Liste over krav
+== Liste over krav
 
 
 <<krav-landmaling-sanntidsmaling>> +
