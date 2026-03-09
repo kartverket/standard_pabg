@@ -97,7 +97,7 @@ Avgrensing:
 * Fysisk utstrekning (minst 20 laserpunkt, maksimalt 1 m^2^).
 * Området må være flatt, men flaten kan være orientert i alle himmelretninger.
 
-Målingene for å beregne relativ stedfestningsnøyaktighet utføres langs normalenvektoren til avgrensningens senterpunkt. Relative stedfestningsnøyaktighet deles inn i de to kvalitetsmålene systematisk avvik og tilfeldig variasjon:
+Målingene for å beregne relativ stedfestningsnøyaktighet utføres langs normalenvektoren til avgrensningens senterpunkt. Relativ stedfestningsnøyaktighet deles inn i de to kvalitetsmålene systematisk avvik og tilfeldig variasjon:
 
 *Systematisk avvik* beregnes ut fra flere utvalgte avgrensningsområder. For hvert område måles avstanden mellom senter punktsky for skanninger utført i forskjellig tidsintervaller. Et tidsintervall vil typisk være kun få sekunder. Middelet av målingene fra alle de utvalgte avgrensningsområdene gir det systematiske avviket. 
 
@@ -169,6 +169,14 @@ Tradisjonelt innmålte kontrollpunkt er fysiske objekt som lar seg gjenfinne i p
 ** Andre datasett av kjent kvalitet
 
 Uavhengig av kontrollmetodikk, skal leverandøren utarbeide en kontrollplan hvor det beskrives hvor store feil kontrollmetodikken er i stand til å avdekke ved kontrollpunktene. Videre skal det angis hvor store feil som kan oppstå mellom kontrollpunktene.
+
+====
+[#krav-mobil-kontrollplan,reftext="Krav mobil kontrollplan"]
+*KRAV MOBIL KONTROLLPLAN*
+
+* Oppdragstaker skal utarbeide en kontrollplan.
+====
+
 
 ==== Fullstendighet
 
