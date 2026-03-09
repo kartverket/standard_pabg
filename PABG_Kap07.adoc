@@ -160,7 +160,8 @@ Se <<kapittel-eksempel-flyplan-laserskanning>> for eksempel på en flyplan.
 * Planlagt flyhøyde over terrenget.
 ====
 
-[#tverrstriper,reftext="Tverrstriper"]
+
+[[kapittel-laser-tverrstriper]]
 ===== Tverrstriper
 Tverrstriper benyttes til daglig kalibrering og stripejustering av et laserprosjekt. Tverrstriper bør ligge vinkelrett på stripene for å fungere som en tverrstripe, samt plasseres slik at tverrstripen unngår større områder med vann.
 
