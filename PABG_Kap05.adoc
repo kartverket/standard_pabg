@@ -84,12 +84,16 @@ Ved bruk av satellittutstyr er beregning beskrevet i standarden <<SAT>>.
 === Egenkontroll og rapportering (geodetisk kartlegging)
 Det skal leveres en rapport for den geodetiske kartleggingen, med leveransene som vedlegg til rapporten. Generelt gjelder at alle resultat fra beregninger skal vurderes og kommenteres. Eventuelle problemer i prosjektet skal omtales spesielt. Rapporten er en del av leveransen og skal leveres samtidig med det produktet som rapporten omhandler. 
 
+:xrefstyle: short
+
 ====
 [#krav-landmaling-rapportering-geodetisk-kartlegging,reftext="Krav landmåling rapportering - geodetisk kartlegging"]
 *KRAV LANDMÅLING RAPPORTERING - GEODETISK KARTLEGGING*
 
-* Rapport for geodetisk kartlegging skal som minimum inneholde informasjonen spesifisert i tabell <<tab-rapp-geodetisk-kartlegging>>
+* Rapport for geodetisk kartlegging skal som minimum inneholde informasjonen spesifisert i <<tab-rapp-geodetisk-kartlegging>>.
 ====
+
+:xrefstyle: full
 
 [[tab-rapp-geodetisk-kartlegging]]
 .Rapport for geodetisk kartlegging
