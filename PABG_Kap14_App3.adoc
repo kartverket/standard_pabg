@@ -1,5 +1,6 @@
+[appendix]
 [[kapittel-vedlegg-c-eksempel-fly-og-signaleringsplaner]]
-== Vedlegg C.  Eksempel fly- og signaleringsplaner
+== Eksempel fly- og signaleringsplaner
 
 === Eksempel fly- og signaleringsplan (foto)
 
