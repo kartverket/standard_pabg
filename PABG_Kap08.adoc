@@ -81,12 +81,7 @@ image::figurer/Kap8_Absolutt stedfestingsnøyaktighet_Systematisk avvik4.png[Rø
 *Kvalitetsmålet tilfeldig variasjon* tar utgangspunkt i målingene utført for å beregne systematisk avvik. Målingene brukes til å beregne standardavvik og følger standarden https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet[Geodatakvalitet]. 
 
 
-
 *Kvalitetsmålet maksimalt avvik* tar utgangspunkt i målingene utført for å beregne systematisk avvik, hvor størst målte avvik angir kvalitetsmålet maksimalt avvik.
-
-
-
-
 
 
 |Relativ Stedfestningsnøyaktighet| Relativ stedfestningsnøyaktighet undersøkes innad i et avgrenset observerbart område på harde veldefinerte flater. 
@@ -124,8 +119,6 @@ image::figurer/Kap8_Relative nøyaktighet Tilfeldig variasjon2.png[Figuren viser
 |====================
 |Kvalitetselement|Kvalitetsmål|Lav (cm)|Middels (cm)|God (cm)|Høy (cm)
 |Absolutt stedfestingsnøyaktighet |Systematisk avvik ^|0 - 200 ^|0 - 20 ^|0 - 6 ^|0 - 2
-
-
 
 | |Standardavvik ^|<50 ^|<5 ^|<2 ^|<1 
 | |Maks avvik 4+^|Systematisk avvik + 2 x Standardavvik
