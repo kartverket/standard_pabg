@@ -22,19 +22,22 @@ Dette avsnittet angir krav og retningslinjer til planlegging av flyfotografering
 
 ==== Planlegging av flyfotografering (flyplan)
 
+:xrefstyle: short
+
 ====
 [#krav-foto-flyplanlegging,reftext="Krav foto flyplanlegging"]
 *KRAV FOTO FLYPLANLEGGING*
 
-* Flyplanleggingen skal utføres slik det er beskrevet i tabell <<tab-flyplanlegging>>.
+* Flyplanleggingen skal utføres slik det er beskrevet i <<tab-flyplanlegging>>.
 
+:xrefstyle: full
 
 [[tab-flyplanlegging]]
 .Krav til flyplanlegging
 [width="100%",options="header"]
 |====================
 |Parameter|Krav
-|GSD|GSD bestemmes av oppdragsgiver og velges slik at kravene til fullstendighet og nøyaktighet blir oppfylt. Se tabell <<tab-FKB-GSD>>.
+|GSD|GSD bestemmes av oppdragsgiver og velges slik at kravene til fullstendighet og nøyaktighet blir oppfylt. Se xref:tab-FKB-GSD[xrefstyle=short].
 |Flyhøyde|Flyhøyden skal velges slik at kravet til GSD oppfylles for hver enkelt flystripe. Dersom annet ikke avtales skal GSD refereres til midlere terrenghøyde i hver stripe. Det tillates et planlagt avvik i GSD på maks. + 10 %. Eventuelle avvik fra dette skal avtales.
 |Bildeblokk|Flystripene skal plasseres optimalt, slik at den resulterende bildeblokka får en mest mulig regulær form og flest mulig parallelt overlappende striper (for å sikre best mulig bildeorientering).
 |Innsyn og sammenbinding|Flystripene skal plasseres, og overdekningen skal eventuelt økes, slik at det sikres best mulig innsyn i alle områder og god bilde- og stripesammenbinding i områder med mye vann.
@@ -44,7 +47,7 @@ Dette avsnittet angir krav og retningslinjer til planlegging av flyfotografering
 |Overlapp kryssende striper|I bildeblokker med flere striperetninger skal striper med kryssende retning ha stereodekning over hele bredden til kryssende flystripe.
 |Overlapp kjedede enkeltstriper|Kjedede enkeltstriper, dreid en vinkel i forhold til hverandre, skal overlappe hverandre med minimum to stereomodeller i hver stripe og med minimum 60% stereomodell over hele stripebredden. Det skal være tilstrekkelig med terreng for å kunne finne nok sammenbindingspunkter mellom stripene. I overlappsområdet mellom kryssende flystriper skal som hovedregel minimum 50% av overlapsområde være land.
 |Plassering kjedede enkeltstriper|For vegkartlegging eller annen stripekartlegging skal det tilstrebes at vegen blir sentrisk i stripene. Dette skal likevel ikke hindre en hensiktsmessig flyplan og kravene til bildeorientering skal ivaretas
-|Tverrstriper|I blokker med flere enn to striper skal alle striper dekkes av en tverrstripe. Tverrstripene skal fortrinnsvis ligge vinkelrett på flystripene. Minste tillate vinkel for å kvalifisere som tverrstripe er 50 grader (vinkel mellom flystripe og tverrstripe), se kapittel <<tverrstriper>>. Tverrstripen har redusert krav til sky og skyskygge, men dekningen må være god nok til å lage en sammenhengende flystripe i aerotrianguleringen (krav til antall sammenbindingspunkt vil være gjeldene for tverrstriper). For storformatkamera hvor fotograferingen gjennomføres med sideoverlapp på 60% eller høyere faller kravet om tverrstripe bort. 
+|Tverrstriper|I blokker med flere enn to striper skal alle striper dekkes av en tverrstripe. Tverrstripene skal fortrinnsvis ligge vinkelrett på flystripene. Minste tillate vinkel for å kvalifisere som tverrstripe er 50 grader (vinkel mellom flystripe og tverrstripe), se <<kapittel-laser-tverrstriper>>. Tverrstripen har redusert krav til sky og skyskygge, men dekningen må være god nok til å lage en sammenhengende flystripe i aerotrianguleringen (krav til antall sammenbindingspunkt vil være gjeldene for tverrstriper). For storformatkamera hvor fotograferingen gjennomføres med sideoverlapp på 60% eller høyere faller kravet om tverrstripe bort. 
 |====================
 ====
 
@@ -52,7 +55,7 @@ Dette avsnittet angir krav og retningslinjer til planlegging av flyfotografering
 For å sikre best mulig bildeorientering og redusere behovet for kjentpunkter, skal delområder i rimelig nærhet av hverandre forbindes ved at flystripene forlenges.
 
 ==== Planlegging av kjentpunkt og signalering (signaleringsplan)
-Signaleringsplan utarbeides av oppdragstaker som en integrert del av flyfotoplanleggingen og kjentpunktene planlegges slik at plasseringen blir optimal med hensyn til krav til antall, plassering og enkel adkomst. For krav til antall og plassering, se kapittel <<Krav til antall og plassering av kjentpunkter>>.
+Signaleringsplan utarbeides av oppdragstaker som en integrert del av flyfotoplanleggingen og kjentpunktene planlegges slik at plasseringen blir optimal med hensyn til krav til antall, plassering og enkel adkomst. For krav til antall og plassering, se <<Krav til antall og plassering av kjentpunkter>>.
 
 Signaleringen bør planlegges og utføres slik at fotograferingen kan starte opp så snart forholdene tillater det, eksempelvis ved at lavereliggende områder signaleres først.
 
@@ -65,7 +68,7 @@ Signaleringen bør planlegges og utføres slik at fotograferingen kan starte opp
 *KRAV FOTO KJENTPUNKTNØYAKTIGHET*
 
 * Alle kjentpunkter skal måles inn med geodetiske metoder og beregnes (utjevnes) med kontroll mot grove feil i alle trinn.
-* Kjentpunktene skal måles inn og bestemmes med et standardavvik maksimalt lik ¼ av det strengeste kravet til geodata i det aktuelle prosjektet. For FKB kartlegging se tabell <<tab-nøyaktighet-innmåling-kjentpunkt-FKB>>.
+* Kjentpunktene skal måles inn og bestemmes med et standardavvik maksimalt lik ¼ av det strengeste kravet til geodata i det aktuelle prosjektet. For FKB kartlegging se xref:tab-nøyaktighet-innmåling-kjentpunkt-FKB[xrefstyle=short].
 * Naturlige kjentpunkter kan benyttes unntaksvis, for eksempel for å erstatte tapte signaler i kritiske posisjoner. I prosjekter med høye nøyaktighetskrav skal da et veldefinert punkt først velges i bildene og deretter måles inn i marka. I prosjekter med lavere nøyaktighetskrav, som for eksempel Omløpsfotograferingen, kan eksisterende, antatt synlige geodetiske punkter (varder, fyrlykter, og lignende med tilfredsstillende oppgitt nøyaktighet) planlegges som supplement til de signalerte kjentpunktene for å oppnå bedre kontroll i utilgjengelige områder.
 ====
 
@@ -82,9 +85,9 @@ Signaleringen bør planlegges og utføres slik at fotograferingen kan starte opp
 |FKB-C|48|48|12|12    
 |FKB-D|48|48|12|12    
 |====================
-Det presiseres at tallene i tabell <<tab-nøyaktighet-innmåling-kjentpunkt-FKB>> henviser til kravene som er stilt i FKB 5.0 produktspesifikasjonen, ved endringer i FKB spesifikasjonen vil eventuelle endringer til nøyaktighetskrav gjelde foran kravene som er satt opp i tabell <<tab-nøyaktighet-innmåling-kjentpunkt-FKB>>. Det stilles krav til hhv. punktstandardavvik, grunnriss (S~p~) og standardavvik i høyde (S~h~). For systematisk avvik skal dette for FKB være 1/3 av standardavvikskravet.
+Det presiseres at tallene i xref:tab-nøyaktighet-innmåling-kjentpunkt-FKB[xrefstyle=short] henviser til kravene som er stilt i FKB 5.0 produktspesifikasjonen, ved endringer i FKB spesifikasjonen vil eventuelle endringer til nøyaktighetskrav gjelde foran kravene som er satt opp i xref:tab-nøyaktighet-innmåling-kjentpunkt-FKB[xrefstyle=short]. Det stilles krav til hhv. punktstandardavvik, grunnriss (S~p~) og standardavvik i høyde (S~h~). For systematisk avvik skal dette for FKB være 1/3 av standardavvikskravet.
 
-For øvrige krav til innmåling vises det til standarden <<SAT>>, og for krav til utførelse av signaleringen vises det til kapittel <<Signalering>>.
+For øvrige krav til innmåling vises det til standarden <<SAT>>, og for krav til utførelse av signaleringen vises det til <<Signalering>>.
 
 ===== Krav til antall og plassering av kjentpunkter
 Ved GNSS/INS-støttet fotografering kreves det i teorien kun et fåtall kjentpunkt for å kunne utføre AT. Kjentpunktene er kun nødvendige for å kunne bestemme systematiske avvik i de GNSS-bestemte projeksjonssentrene (datumstransformasjon), samt for å ha en minimums-kontroll. I praksis trengs vesentlig flere punkt for å kunne:
@@ -125,11 +128,11 @@ Ved GNSS/INS-støttet fotografering kreves det i teorien kun et fåtall kjentpun
 ====
 
 
-Eksempel på fly- og signaleringsplan finnes i vedlegg <<Eksempel fly- og signaleringsplan (foto)>>.
+Eksempel på fly- og signaleringsplan finnes i <<Eksempel fly- og signaleringsplan (foto)>>.
 
 [[kapittel-signalering]]
 === Signalering
-Dette kapittelet angir krav og retningslinjer til signalering av kjentpunkter for aerotriangulering og eventuelle objekter som skal kartlegges og som er for små til å synes i flybildene. For innmåling av kjentpunkter henvises til krav i kapittel <<Krav til kjentpunkter>> og til standarden <<SAT>>.
+Dette kapittelet angir krav og retningslinjer til signalering av kjentpunkter for aerotriangulering og eventuelle objekter som skal kartlegges og som er for små til å synes i flybildene. For innmåling av kjentpunkter henvises til krav i <<Krav til kjentpunkter>> og til standarden <<SAT>>.
 
 ==== Lovhjemmel for markarbeider - Matrikkellova
 Tillatelse til utsetting av fastmerker og signaler og rydding for sikt ved offentlige kart- og oppmålingsarbeider er hjemlet i Matrikkellova, §41 _Rett til å utføre oppmålingsarbeid på offentleg og privat grunn._
@@ -148,8 +151,9 @@ Plassering av fastmerker eller signal i eller på automatisk fredete kulturminne
 [#krav-foto-signalering,reftext="Krav foto signalering"]
 *KRAV FOTO SIGNALERING*
 
-* Signaleringsarbeidet skal utføres slik det er beskrevet i tabell <<tab-krav-signaleringsarbeid>>
+* Signaleringsarbeidet skal utføres slik det er beskrevet i xref:tab-krav-signaleringsarbeid[xrefstyle=short].
 
+:xrefstyle: short
 
 [[tab-krav-signaleringsarbeid]]
 .Krav til signaleringsarbeidet
@@ -157,19 +161,20 @@ Plassering av fastmerker eller signal i eller på automatisk fredete kulturminne
 |===
 |Parameter|Krav
 |Markering av nye kjentpunkt|Nye kjentpunkt skal markeres med bolt, spiker eller annen varig markering.
-|Plassering av signal|Signalet plasseres på horisontalt flatt/plant underlag og skal som hovedregel males. Signal skal ikke plasseres på løse gjenstander som kumlokk. Prefabrikkerte signalplater skal ha sentrumshull og plasseres og festes slik at de ikke kommer ut av posisjon/horisontering eller blir ødelagt før fotografering. Sentrisk plassering skal være innenfor 1/3 av krav til markmåling av kjentpunkt se tabell <<tab-nøyaktighet-innmåling-kjentpunkt-FKB>>. 
+|Plassering av signal|Signalet plasseres på horisontalt flatt/plant underlag og skal som hovedregel males. Signal skal ikke plasseres på løse gjenstander som kumlokk. Prefabrikkerte signalplater skal ha sentrumshull og plasseres og festes slik at de ikke kommer ut av posisjon/horisontering eller blir ødelagt før fotografering. Sentrisk plassering skal være innenfor 1/3 av krav til markmåling av kjentpunkt se <<tab-nøyaktighet-innmåling-kjentpunkt-FKB>>. 
 |Signalfarge|Signalfargen skal være matt hvit med matt svart kontrastfelt.
-|Signalform og -størrelse|Signalet skal ha en regulær og symmetrisk form. Størrelsen skal avpasses etter bildeoppløsning (GSD). Krav til størrelser på signaler er vist i tabell <<tab-krav-signalstørrelser>>, mens tillatte signaltyper er vist i figur <<#imgSignalutforming>>.
-|Planhet for signal og kontrastområdet|Krav til flatt/plant underlag gjelder både signal og kontrastområdet. Høydevariasjon på signal og kontrastområdet målt fra senter av signal skal ikke overstige kravet til markmåling av kjentpunkt se tabell <<tab-nøyaktighet-innmåling-kjentpunkt-FKB>>. Eksempler på egnede og ikke egnede signaler kan sees i figur <<#imgSignaler>>. Dersom det ikke er mulig å etablere signal som overholder krav til planhet i området hvor signalet må etableres, kan kravet om planhet til signal og kontrastområdet fravikes etter avtale med oppdragsgiver.
+|Signalform og -størrelse|Signalet skal ha en regulær og symmetrisk form. Størrelsen skal avpasses etter bildeoppløsning (GSD). Krav til størrelser på signaler er vist i <<tab-krav-signalstørrelser>>, mens tillatte signaltyper er vist i <<#imgSignalutforming>>.
+|Planhet for signal og kontrastområdet|Krav til flatt/plant underlag gjelder både signal og kontrastområdet. Høydevariasjon på signal og kontrastområdet målt fra senter av signal skal ikke overstige kravet til markmåling av kjentpunkt se <<tab-nøyaktighet-innmåling-kjentpunkt-FKB>>. Eksempler på egnede og ikke egnede signaler kan sees i <<#imgSignaler>>. Dersom det ikke er mulig å etablere signal som overholder krav til planhet i området hvor signalet må etableres, kan kravet om planhet til signal og kontrastområdet fravikes etter avtale med oppdragsgiver.
 |Kontrast|Det skal sørges for god kontrast rundt signalet. Kontrastfeltet skal være minst halvparten av signalbredden (til hver side av signalet).
 Fjell, stein, sand, grus, asfalt eller betong gir dårlig kontrast, og det skal da lages kunstig kontrast rundt signalet. Kontrastområdet skal være horisontalt flatt/plant og ha samme høyde som signalet.
 |Bolthøyde|Høydeforskjellen mellom punktets høydereferanse og signalmidt skal alltid måles. Ved signalering av eksisterende punkter skal punktets høydereferanse observert i marka verifiseres mot den oppgitte og målt bolthøyde skal verifiseres mot oppgitt bolthøyde. Ved uoverensstemmelse eller dersom bolten er borte eller bøyd skal som hovedregel den oppgitte bolthøyden antas å være korrekt.
-|Innsyn|Signalet skal være synlig i alle bildene/stripene som er planlagt å dekke punktet (for å sikre at det er synlig også i bilder/striper som eventuelt fotograferes på ulike datoer eller flysesjoner). Vegetasjon som kan hindre dette skal ryddes bort. Som tommelfingerregel kan benyttes at synslinjen fra et signal på marka til flyet skal gå på skrå med en vinkel på opptil 40 gon fra senit, se figur <<#imgInnsynSign>> og figur <<#imgInnsynSor>>.
-|Skygge|Skygge på signalet skal unngås. De samlede retningslinjene til innsyn går fram av figur <<#imgInnsynSign>> og figur <<#imgInnsynSor>>. Det skal være godt innsyn til signalet hele veien rundt. For å unngå skygge på signalet skal det være innsyn ned til 67 gon fra vertikalen i en sektor mot sør. Retningslinjene forutsetter fotografering i det mest vanlige tidsrommet på dagen.
+|Innsyn|Signalet skal være synlig i alle bildene/stripene som er planlagt å dekke punktet (for å sikre at det er synlig også i bilder/striper som eventuelt fotograferes på ulike datoer eller flysesjoner). Vegetasjon som kan hindre dette skal ryddes bort. Som tommelfingerregel kan benyttes at synslinjen fra et signal på marka til flyet skal gå på skrå med en vinkel på opptil 40 gon fra senit, se <<#imgInnsynSign>> og <<#imgInnsynSor>>.
+|Skygge|Skygge på signalet skal unngås. De samlede retningslinjene til innsyn går fram av <<#imgInnsynSign>> og <<#imgInnsynSor>>. Det skal være godt innsyn til signalet hele veien rundt. For å unngå skygge på signalet skal det være innsyn ned til 67 gon fra vertikalen i en sektor mot sør. Retningslinjene forutsetter fotografering i det mest vanlige tidsrommet på dagen.
 |Rydding av vegetasjon|Rydding av vegetasjon skal utføres med varsomhet. På privat grunn skal alltid grunneieren kontaktes før man går i gang med rydding.
 |Erstatningspunkt|Dersom planlagt posisjon blir funnet å være ubrukelig på grunn av innsyn, eller lignende skal et nytt eller eksisterende punkt etableres så nær som mulig det opprinnelig planlagte.
 |===
 ====
+
 
 .Innsyn rundt signalet
 [#imgInnsynSign]
@@ -182,7 +187,9 @@ image::figurer/Kap6_InnsynRundtSignal.png[InnsynSign,400,align="center"]
 image::figurer/Kap6_InnsynMotSor.png[InnsynSor,400,align="center"]
 
 
-Krav til signalstørrelse settes til 2 til 3 ganger GSD, eller etter avtale med oppdragsgiver. Eksempler kan sees i tabell <<tab-krav-signalstørrelser>>. Alle typer signaler i figur <<#imgSignalutforming>> kan benyttes for de forskjellige oppløsningene. For figur <<#imgSignaler>> vises eksempler på signal som overholder krav til planhet (1) og signaler som ikke overholder krav til planhet (2 og 3).
+Krav til signalstørrelse settes til 2 til 3 ganger GSD, eller etter avtale med oppdragsgiver. Eksempler kan sees i <<tab-krav-signalstørrelser>>. Alle typer signaler i <<#imgSignalutforming>> kan benyttes for de forskjellige oppløsningene. For <<#imgSignaler>> vises eksempler på signal som overholder krav til planhet (1) og signaler som ikke overholder krav til planhet (2 og 3).
+
+:xrefstyle: full
 
 [[tab-krav-signalstørrelser]]
 .Anbefalte signalstørrelser
@@ -216,7 +223,7 @@ image::figurer/Kap6_IkkeLovligSignal2.png[Signaler_ikke_lovlig,600,align="center
 [#krav-foto-rapport-signalering,reftext="Krav foto rapport signalering"]
 *KRAV FOTO RAPPORT SIGNALERING*
 
-* Signaleringsrapporten skal som minimum inneholde informasjonen spesifisert i tabell <<tab-signaleringsrapport>>. Som hovedregel skal det leveres en felles rapport for signalering og innmåling av kjentpunkter.
+* Signaleringsrapporten skal som minimum inneholde informasjonen spesifisert i xref:tab-signaleringsrapport[xrefstyle=short]. Som hovedregel skal det leveres en felles rapport for signalering og innmåling av kjentpunkter.
 
 [[tab-signaleringsrapport]]
 .Signaleringsrapport
@@ -261,7 +268,7 @@ Oppdragstakeren for fotogrammetriske kart- og målearbeider er ansvarlig for at 
 [#krav-foto-digitale-kamera,reftext="Krav foto digitale kamera"]
 *KRAV FOTO DIGITALE KAMERA*
 
-* Digitale kamera skal tilfredsstille kravene gitt i tabell <<tab-krav-digitalkamera>>.
+* Digitale kamera skal tilfredsstille kravene gitt i xref:tab-krav-digitalkamera[xrefstyle=short].
 
 [[tab-krav-digitalkamera]]
 .Krav til digitale kamera
@@ -312,7 +319,7 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 [#krav-foto-fotografering,reftext="Krav foto fotografering"]
 *KRAV FOTO FOTOGRAFERING*
 
-* Flyfotograferingen skal gjennomføres i henhold til krav gitt i tabell <<tab-krav-fotografering-digitalkamera>>.
+* Flyfotograferingen skal gjennomføres i henhold til krav gitt i xref:tab-krav-fotografering-digitalkamera[xrefstyle=short].
 
 
 [[tab-krav-fotografering-digitalkamera]]
@@ -402,7 +409,7 @@ Ved GNSS/INS-støttet flyfotografering kombineres observasjoner fra IMU (Inertia
 ====
 
 
-Metoden for GNSS-posisjonsbestemmelse ved bruk av DGNSS er basert på at det benyttes differensierte observasjoner mellom en eller flere GNSS basestasjoner på bakken (evt. virtuelle basestasjoner) og GNSS mottakeren i flyet.
+Metoden for GNSS-posisjonsbestemmelse ved bruk av DGNSS er basert på at det benyttes differensierte observasjoner mellom en eller flere GNSS basestasjoner på bakken (evtentuelle virtuelle basestasjoner) og GNSS mottakeren i flyet.
 
 ====
 [#krav-foto-dgnss,reftext="Krav foto DGNSS"]
@@ -488,7 +495,7 @@ For hvert av de nevnte arbeidene, inkludert leveransene, skal resultatet av utf�
 
 :xrefstyle: short
 
-* Rapport for flyfotografering skal som minimum inneholde informasjonen spesifisert i tabell <<tab-rapport-fotografering>>
+* Rapport for flyfotografering skal som minimum inneholde informasjonen spesifisert i <<tab-rapport-fotografering>>
 
 :xrefstyle: full
 
@@ -1087,7 +1094,7 @@ Egenkontrollen begrenses her til å være en ren visuell kontroll. Geometrisk kv
 [#krav-foto-rapportering-ortofoto,reftext="Krav foto rapportering ortofoto"]
 *KRAV FOTO RAPPORTERING ORTOFOTO*
 
-* Rapport for ortofotoproduksjonen skal som minimum inneholde informasjonen spesifisert i tabell <<tab-rapport-orto>>
+* Rapport for ortofotoproduksjonen skal som minimum inneholde informasjonen spesifisert i xref:tab-rapport-orto[xrefstyle=short].
 
 
 [[tab-rapport-orto]]
@@ -1262,7 +1269,7 @@ Målsetning: Konstruksjon fra flybiler i en Digital Fotogrammetrisk Arbeidsstasj
 * Kameraet skal ikke benytte elektronisk lukker (engelsk: rolling shutter).
 * Minstestørrelse på kameraet er 15 megapiksel.
 * Kameraet kan kalibreres sammen med blokkutjevningen som en del av aerotrianguleringen.
-* Kameraet skal kaliberes for hver delblokk og kan utføres som selvkalibrering ref <<krav-foto-observasjonsvekting-parametere-og-ukjente>>.
+* Kameraet skal kaliberes for hver delblokk og kan utføres som selvkalibrering, se <<krav-foto-observasjonsvekting-parametere-og-ukjente>>.
 * Kamerakalibreringen kan påføres bildene.
 * Hvis kameraparameterne ikke endrer seg over tid kan kalibrering fra kameraprodusent eller kalibrering utført av oppdragstaker benyttes. Kalibreringen må ikke være eldre enn 24 måneder og minimum dekke kravene til bestilt oppdrag.
 * Kameraet trenger ikke digital og mekanisk bildevandringskompensasjon (FMC), men lukkehastighet må være slik at den ikke forringer bildets kvalitet.
