@@ -168,13 +168,14 @@ Tradisjonelt innmålte kontrollpunkt er fysiske objekt som lar seg gjenfinne i p
 ** FKB/NVDB eller andre kvalitetssikrede vektordatasett
 ** Andre datasett av kjent kvalitet
 
-Uavhengig av kontrollmetodikk, skal leverandøren utarbeide en kontrollplan hvor det beskrives hvor store feil kontrollmetodikken er i stand til å avdekke ved kontrollpunktene. Videre skal det angis hvor store feil som kan oppstå mellom kontrollpunktene.
+
 
 ====
 [#krav-mobil-kontrollplan,reftext="Krav mobil kontrollplan"]
 *KRAV MOBIL KONTROLLPLAN*
 
-* Oppdragstaker skal utarbeide en kontrollplan.
+* Uavhengig av kontrollmetodikk, skal leverandøren utarbeide en kontrollplan hvor det beskrives hvor store feil kontrollmetodikken er i stand til å avdekke ved kontrollpunktene. 
+* Kontrollplanen skal angi hvor store feil som kan oppstå mellom kontrollpunktene.
 ====
 
 
