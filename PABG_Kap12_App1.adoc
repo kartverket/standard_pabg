@@ -1,5 +1,6 @@
+[appendix]
 [[kapittel-vedlegg-a-informativt-solhøydetabell]]
-== Vedlegg A. (informativt) Solhøydetabell
+== (informativt) - Solhøydetabell
 
 
 [#imgSolhøyde1]
