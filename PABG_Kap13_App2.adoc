@@ -1,5 +1,6 @@
+[appendix]
 [[kapittel-vedlegg-b-informativt-valg-av-bildeoppløsning-gsd]]
-== Vedlegg B.  (informativt) - Valg av bildeoppløsning (GSD)
+== (informativt) - Valg av bildeoppløsning (GSD)
 
 Bildeoppløsning (GSD) bestemmer hvilken kvalitet som kan forventes ved kartkonstruksjon (jamfør Produktspesifikasjon FKB), aerotriangulering, fremstilling av DTM eller ortofoto og så videre. Bildeoppløsningen må være god nok til at kartkonstruktøren kan identifisere alle objektene som skal konstrueres, og til at nøyaktigheten blir som forutsatt.
 
