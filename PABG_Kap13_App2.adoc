@@ -3,7 +3,7 @@
 
 Bildeoppløsning (GSD) bestemmer hvilken kvalitet som kan forventes ved kartkonstruksjon (jamfør Produktspesifikasjon FKB), aerotriangulering, fremstilling av DTM eller ortofoto og så videre. Bildeoppløsningen må være god nok til at kartkonstruktøren kan identifisere alle objektene som skal konstrueres, og til at nøyaktigheten blir som forutsatt.
 
-På denne bakgrunn benyttes som oftest følgende GSD til de ulike FKB-standardene, se tabell <<tab-FKB-GSD>>.
+På denne bakgrunn benyttes som oftest følgende GSD til de ulike FKB-standardene, se xref:tab-FKB-GSD[xrefstyle=short].
 
 [[tab-FKB-GSD]]
 .Eksempler på sammenheng mellom FKB standard og GSD
@@ -17,7 +17,7 @@ På denne bakgrunn benyttes som oftest følgende GSD til de ulike FKB-standarden
 |===
 
 
-Tabell <<tab-tolkning-flyhøyde>> gir informasjon om begrensninger i muligheten til å tolke bildene. Tabellen er basert på analog fotografering, tilsvarende tabell er ikke utarbeidet for fotografering med digitalt kamera. (Kilde: «Handbok till mätningskunngjörelse – Fotogrammetri»).
+xref:tab-tolkning-flyhøyde[xrefstyle=short] gir informasjon om begrensninger i muligheten til å tolke bildene. Tabellen er basert på analog fotografering, tilsvarende tabell er ikke utarbeidet for fotografering med digitalt kamera. (Kilde: «Handbok till mätningskunngjörelse – Fotogrammetri»).
 
 [[tab-tolkning-flyhøyde]]
 .Eksempler på vanskeligheter ved tolkning av objekter i bildene fra ulike flyhøyder
