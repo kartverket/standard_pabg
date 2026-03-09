@@ -234,22 +234,22 @@ Absolutt nøyaktighet på punktsky i vertikaldomene etterprøves ved hjelp av la
 
 :xrefstyle: full
 
-.Kontrollflate - punkttetthet < 3 pkt/m^2^
+.Kontrollflate - punkttetthet < 3 punkt/m^2^
 [#imgKontrollflateUnder]
 //[caption="Figure 6:"]
-image::figurer/Kap7_KontrollflateUnder3.png[KontrollflateUnder,400,align="center"]
+image::figurer/Kap7_KontrollflateUnder3.png["Kontrollflater under 3 punkt/m^2^",400,align="center"]
 
 
-.Kontrollflate - punkttetthet > 3 pkt/m^2^
+.Kontrollflate - punkttetthet > 3 punkt/m^2^
 [#imgKontrollflateOver]
 //[caption="Figure 7:"]
-image::figurer/Kap7_KontrollflateOver3.png[KontrollflateOver3,400,align="center"]
+image::figurer/Kap7_KontrollflateOver3.png["Kontrollflater over 3 punkt/m^2^",400,align="center"]
 
 
-.Kontrollflate - punkttetthet > 70 pkt/m^2^
+.Kontrollflate - punkttetthet > 70 punkt/m^2^
 [#imgKontrollflateOver70]
 //[caption="Figure 8:"]
-image::figurer/Kap7_KontrollflateOver70.png[KontrollflateOver70,250,align="center"]
+image::figurer/Kap7_KontrollflateOver70.png["Kontrollflater over 70 punkt/m^2^",250,align="center"]
 
 I kartleggingsprosjekt med både Laser og Foto kan senter av kontrollflate signaleres. Signalet skal i så fall inngå i signaleringsplan for foto.
 
@@ -314,13 +314,13 @@ Som et alternativ til innmåling av tradisjonelle kontrollflater, kan hjulsportm
 .Kontrollflaters gyldighetsområde
 [#imgKontrollflateGyldighet]
 //[caption="Figure 8:"]
-image::figurer/Kap7_KontrollflateGyldighet2.png[KontrollflateGyldighet,400,align="center"]
+image::figurer/Kap7_KontrollflateGyldighet2.png["Kontrollflate gyldighet",400,align="center"]
 
 
 .Sammenslåing av polygoner til en skanneblokk
 [#imgSammenslåingBlokk]
 //[caption="Figure 9:"]
-image::figurer/Kap7_SammenslåingBlokk.jpg[SammenslåingBlokk,400,align="center"]
+image::figurer/Kap7_SammenslåingBlokk.jpg["Sammenslåing av polygoner til en skanneblokk",400,align="center"]
 
 [[kapittel-kontrollprofiler]]
 ===== Kontrollprofiler
