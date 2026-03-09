@@ -59,9 +59,10 @@ Når metoden brukes som alternativ til FKB-kartkonstruksjon vil kvalitetskrav ti
 
 Kvadratsummen av stedfestingsnøyaktighet på punktsky/modell, og den største verdien av geometrisk avvik eller tverravvik/ pilhøyde må være bedre enn kvalitetskravet for den aktuelle objekttypen.
 
-[asciimath]
+
+[stem]
 ++++
-Krav > sqrt(Nøyaktighet^2  + ("Største feil vektorisering")^2)
+Krav > sqrt(Nøyaktighet^2  + ("Største feil vektorisering")^2
 ++++
 
 ====
