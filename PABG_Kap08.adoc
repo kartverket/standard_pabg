@@ -199,7 +199,7 @@ I kvalitetskategorien fullstendighet inngår elementene _dekning,_ __punkttetthe
 
 ==== Egenskapskvalitet
 
-I kategorien egenskapskvalitet inngår elementene __fotavtrykk__, __intensitet__, __farge__, _målemetode (fase/puls)_ og __sensorID__. 
+I kategorien egenskapskvalitet inngår elementene __fotavtrykk__, __intensitet__, __farge__, __klassifisering__, _målemetode (fase/puls)_ , __sensorID__ og __tidsstempling__. 
 Disse elementene beskriver kvaliteten på ulike egenskaper ved datainnsamlingen, som fotavtrykkets størrelse <<kapittel-laserskanner>>, målt intensitet, eventuell fargeinformasjon, hvilken målemetode som er brukt, samt identifikasjonen til sensoren som har samlet inn dataene.
 Med egenskapskvalitet i standarden https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet[Geodatakvalitet], menes nøyaktighet av kvantitative egenskaper (kan måles på en skala) og riktighet av ikke-kvantitative egenskaper (egenskaper som skiller ut informasjon, men uten å kunne rangeres) og eventuelt objektenes klassifisering og relasjoner. 
 
@@ -217,6 +217,7 @@ Kvalitetselementer knyttet til kriteriet om egenskapskvalitet er angitt i <<tab-
 |Fotavtrykk|Laserstrålens fotavtrykk er avhengig av sensorens spesifikasjoner, avstanden mellom observert objektet og lasersensoren, samt innfallsvinkelen til objektet som måles. Fotavtrykkets avgrensning defineres ut fra en prosentvis reduksjon av lysintensitet fra fotavtrykkets senter. Fotavtrykkets yttergrense settes der energien målt fra fotavtrykkets senter er redusert til 1/e^2^ som utgjør omtrent 13,5 %.
 |Intensitet|Alle målepunkter i punktskyen skal ha en intensitetsverdi. Ved bruk av flere lasersensorer i innsamlingen må intensitetsverdier tilpasses (strekkes) ved behov for å oppnå en homogen punktsky.
 |Farge| Punktene i punktskyen kan gis RGB-farge fra bilder tatt samtidig som laserskanningen, med forutsetning om at datainnsamling kan utføres i tilstrekkelige lysforhold. Farge er valgfritt og opp til det enkelte prosjekt å vurdere om relevant og derfor om det skal stilles krav til dette eller ikke.
+|Klassifisering| Følger krav fra kap 7 samt produksspesifikasjon punktsky. Klassifisering er valgfritt og opp til det enkelte prosjekt å vurdere om relevant og derfor om det skal stilles krav til dette eller ikke.
 |Målemetode (fase/puls)|Valg av lasersensortype, fase- eller pulsskanner, avhenger av sluttprodukt og bruksområde.
 |SensorID|Punkter fra ulike skannere skal kunne skilles fra hverandre.
 |Tidsstempling|Dato og tid for målepunkter, hvis tilgjengelig for sensortypen, angitt som GPS-standardtid. Dersom systemet ikke angir GPS-tid skal siste datafangst dato angis i punktskyfilens hode.
