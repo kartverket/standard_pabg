@@ -3,7 +3,7 @@
 
 
 === Innledning
-Datainnsamling med mobile lasersystemer (MLS), brukes ofte i kombinasjon av andre innsamlingsmetoder. I tillegg til laserskanner, kan datainnsamlingen utføres med opptak fra ulike sensorer som optiske kamera og georadar.
+Datainnsamling med mobile lasersystemer (MLS), brukes ofte i kombinasjon med andre innsamlingsmetoder. I tillegg til laserskanner, kan datainnsamlingen utføres med opptak fra ulike sensorer som optiske kamera og georadar.
 
 Standarden beskriver krav og anbefalinger for å sikre kvaliteten til sluttproduktet. Selve definisjonen av og kravet til sluttproduktene, vil ligge i registreringsinstrukser og produktspesifikasjoner. En viktig målsetting med standarden, er å legge til rette for økt bruk og gjenbruk av data fra MLS-datafangst.
 
@@ -14,7 +14,7 @@ Standarden omfatter mobil datafangst med laser med opsjonelt kamera.
 MLS benytter seg av posisjons- og orienteringssystemer bygd opp rundt et treghetsnavigasjonssystem, også kalt "Inertial Navigation System" (INS). Et INS består av en "Inertial measurement Unit" (IMU) og tilhørende støttesensorer. Den primære støttesensoren er vanligvis en eller flere GNSS-mottakere ("Global Navigation Satellite System"), ofte i kombinasjon med optisk eller mekanisk hastighets- eller distansemåling (odometer). Det er også mulig å benytte andre former for støtteobservasjoner fra ulike sensorer sammen med et INS. Eksempler på dette har vi fra robotverden og "Simultaneous Localization and Mapping" (SLAM).
 
 === GDPR
-Laser punktsky (også fargelagt punktsky) fra mobil datafangst vil i de fleste tilfellene ikke kunne brukes til å identifisere personer eller bilskilt.  Produktet vil da ikke omfattes av https://lovdata.no/dokument/NL/lov/2018-06-15-38[GDPR-forordningen]. Det vil være oppdragsgivers ansvar å påse at dette gjelder for sitt prosjekt. Bildematerialet for en mobil datafangst, vil som hovedregel være omfattet av GDPR forordningen og nødvendige tiltak må utføres.
+Laser punktsky (også fargelagt punktsky) fra mobil datafangst vil i de fleste tilfellene ikke kunne brukes til å identifisere personer eller bilskilt.  Produktet vil da ikke omfattes av https://lovdata.no/dokument/NL/lov/2018-06-15-38[GDPR-forordningen]. Det vil være oppdragsgivers ansvar å påse at dette gjelder for sitt prosjekt. Bildematerialet fra mobil datafangst, vil som hovedregel være omfattet av GDPR forordningen og nødvendige tiltak må utføres.
 
 === Fargelegging av punktsky
 Påføring av fargeverdier på punktskyen, er opsjonelt. Dersom opsjon utløses, bør  kvalitetselementer gitt i xref:tab-fargelegging-av-punktsky[xrefstyle=short] hensyntas:
