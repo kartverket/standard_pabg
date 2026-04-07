@@ -1,3 +1,5 @@
+:stem:
+
 [[kapittel-kartlegging-med-fotogrammetri]]
 == Kartlegging med fotogrammetri
 
@@ -31,29 +33,31 @@ Vi skiller mellom to ulike oppløsninger "Ground sample distance (GSD) og Ground
 
 GSD
 
-latexmath:[GSD = \frac{c \cdot flyhøyde}{f}]
+GSD er avstanden på bakken som tilsvarer en piksel i kameraet. GSD beregnes etter <<formel-GSD>>, hvor c er pikselstørrelsen i kameraets bildesensor, H er flyhøyden over bakken og f er fokallengden til kameraet. 
 
-GSD = (c * flyhøyde) / f
-
+[stem#formel-GSD, reftext=formel 1]
+++++
+\begin{equation}
+[GSD = \frac{c \cdot H}{f}]
+\end{equation}
+++++
 
 GRD
 
+GRD beskriver den minste avstanden mellom to objekter på bakken som et kamera klarer å skille fra hverandre i bildet. Dersom avstanden blir mindre vil objektene smelte sammen i bildet. Beregningene av GRD utføres etter fremgangsmåte beskrevet i *[Meißner and Berger, 2025]*.
 
-[latexmath]
+For å beregne GRD må det andvendes en Siemens stjerne innenfor prosjektområdet. Dette er en sirkel bestående av like store svarte of hvite segmenter. Anbfalte antall segmenter følger *[Meißner and Berger, 2025]* og bør ligge mellom 16 og 96 segmenter. Radisuen til stjernen beregnes etter <<formel-radius>>. 
+
+
+
+[stem#formel-radius, reftext=formel 2]
 ++++
+\begin{equation}
 r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\pi} \right)
+\end{equation}
 ++++
 
 
-//article{meissner2025adaptable,
-//  title={Adaptable Siemens Star Targets for Reliable and //Standardized Spatial Resolution Measurement under DIN 18740-8},
-//  author={Mei{\ss}ner, Henry and Berger, Ralf},
-//  journal={The International Archives of the Photogrammetry, //Remote Sensing and Spatial Information Sciences},
-//  volume={48},
-//  pages={139--146},
-//  year={2025},
-//  publisher={Copernicus GmbH}
-//}
 
 ===== Fargenøyaktighet
 
