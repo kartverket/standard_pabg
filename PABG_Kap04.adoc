@@ -88,8 +88,7 @@ konsistens, økonomisk verdi og så videre.
 fungerer ved at kameraets bildebrikke leser av linje for linje sekvensielt for å kontrollere eksponeringen. Når motiver beveger seg raskt kan rullende lukker-fortegning oppstå.
 
 .fastmerke
-varig merket punkt, markert med bolt eller annen egnet permanent markering, der
-plane koordinater og/eller høyde er bestemt, eller planlagt bestemt i et geodetisk referansesystem <<GN>> +
+varig merket grunnlagspunkt, markert med bolt eller annen egnet permanent markering, der plane koordinater og/eller høyde er bestemt, eller planlagt bestemt i et geodetisk referansesystem. +
 _MERKNAD_: Fastmerke tjener hovedsakelig som grunnlag ved kartlegging og oppmåling.
 
 .flybåren laserskanning
