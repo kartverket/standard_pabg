@@ -23,31 +23,27 @@ Dette avsnittet angir krav og retningslinjer til planlegging av flyfotografering
 
 ==== Bildekvalitet
 
-En vikitg faktor ved fotografering fra luften er bildekvalitet. Det er en rekke faktorer som er med på å påvirke vår opplevese av bildekvalitet. Hva som er bra kvalitet vil bestemmes av bruken av bildene. Dersom bildene skal brukes av maskin er informasjonsmengden i bilde viktig, men når menneske skal benytte bildene er det persepsjon som er viktigs. For de fleste tilfeller vil en balangsegang mellom de to tilnærmingene være beste løsning. 
+En viktig faktor ved fotografering fra luften er bildekvalitet. Det er en rekke faktorer som er med på å påvirke vår opplevelse av bildekvalitet. Hva som er bra kvalitet vil bestemmes av bruken av bildene. Dersom bildene skal brukes av maskin er informasjonsmengden i bilde viktig, men når menneske skal benytte bildene er det persepsjon som er viktigst. For de fleste tilfeller vil en balansegang mellom de to tilnærmingene være beste løsning. 
 
-I kvaliatitesmodellen kan vi knytte ulike bildekvalitetsmål til kategorien egenskapkvalitet - Kvantitativ egenskaps nøyaktighet. Noen vil også kunne havne under kategorien egenskapkvalitet - Ikke kvantitativ egenskapsriktighet.
+I kvalitetsmodellen kan vi knytte ulike bildekvalitetsmål til kategorien egenskapkvalitet - Kvantitativ egenskaps nøyaktighet. Noen vil også kunne havne under kategorien egenskapkvalitet - Ikke kvantitativ egenskapsriktighet.
+
  
 ===== Oppløsning
 
 Vi skiller mellom to ulike oppløsninger "Ground sample distance (GSD) og Ground Resolved Distance (GRD).
-
-GSD
 
 GSD er avstanden på bakken som tilsvarer en piksel i kameraet. GSD beregnes etter <<formel-GSD>>, hvor c er pikselstørrelsen i kameraets bildesensor, H er flyhøyden over bakken og f er fokallengden til kameraet. 
 
 [stem#formel-GSD, reftext=formel 1]
 ++++
 \begin{equation}
-[GSD = \frac{c \cdot H}{f}]
+GSD = \frac{c \cdot H}{f}
 \end{equation}
 ++++
 
-GRD
+GRD beskriver den minste avstanden mellom to objekter på bakken som et kamera klarer å skille fra hverandre i bildet. Dersom avstanden blir mindre, vil objektene smelte sammen i bildet. Beregningene av GRD utføres etter fremgangsmåte beskrevet i *[Meißner and Berger, 2025]*.
 
-GRD beskriver den minste avstanden mellom to objekter på bakken som et kamera klarer å skille fra hverandre i bildet. Dersom avstanden blir mindre vil objektene smelte sammen i bildet. Beregningene av GRD utføres etter fremgangsmåte beskrevet i *[Meißner and Berger, 2025]*.
-
-For å beregne GRD må det andvendes en Siemens stjerne innenfor prosjektområdet. Dette er en sirkel bestående av like store svarte of hvite segmenter. Anbfalte antall segmenter følger *[Meißner and Berger, 2025]* og bør ligge mellom 16 og 96 segmenter. Radisuen til stjernen beregnes etter <<formel-radius>>. 
-
+For å beregne GRD må det anvendes en Siemens stjerne innenfor prosjektområdet. Dette er en sirkel bestående av like store svarte og hvite segmenter. Anbefalte antall segmenter følger *[Meißner and Berger, 2025]* og bør ligge mellom 16 og 96 segmenter. Radiusen til stjernen beregnes etter <<formel-radius>>. Når <<formel-radius>> benyttes bør det etableres svart og hvite referanseflater som har en størrelse som sikrer helt svarte og helt hvite piksler. Dette benyttes i utregningene av GRD og styrker nøyaktigheten til beregningen.
 
 
 [stem#formel-radius, reftext=formel 2]
@@ -56,6 +52,7 @@ For å beregne GRD må det andvendes en Siemens stjerne innenfor prosjektområde
 r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\pi} \right)
 \end{equation}
 ++++
+
 
 
 
