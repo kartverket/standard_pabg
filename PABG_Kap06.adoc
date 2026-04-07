@@ -136,7 +136,7 @@ Signaleringen bør planlegges og utføres slik at fotograferingen kan starte opp
 |FKB-C|48|48|12|12    
 |FKB-D|48|48|12|12    
 |====================
-Det presiseres at tallene i xref:tab-nøyaktighet-innmåling-kjentpunkt-FKB[xrefstyle=short] henviser til kravene som er stilt i FKB 5.0 produktspesifikasjonen, ved endringer i FKB spesifikasjonen vil eventuelle endringer til nøyaktighetskrav gjelde foran kravene som er satt opp i xref:tab-nøyaktighet-innmåling-kjentpunkt-FKB[xrefstyle=short]. Det stilles krav til hhv. punktstandardavvik, grunnriss (S~p~) og standardavvik i høyde (S~h~). For systematisk avvik skal dette for FKB være 1/3 av standardavvikskravet.
+Det presiseres at tallene i xref:tab-nøyaktighet-innmåling-kjentpunkt-FKB[xrefstyle=short] henviser til kravene som er stilt i FKB 5.0 produktspesifikasjonen, ved endringer i FKB spesifikasjonen vil eventuelle endringer til nøyaktighetskrav gjelde foran kravene som er satt opp i xref:tab-nøyaktighet-innmåling-kjentpunkt-FKB[xrefstyle=short]. Det stilles krav til henholdsvis punktstandardavvik, grunnriss (S~p~) og standardavvik i høyde (S~h~). For systematisk avvik skal dette for FKB være 1/3 av standardavvikskravet.
 
 For øvrige krav til innmåling vises det til standarden <<SAT>>, og for krav til utførelse av signaleringen vises det til <<Signalering>>.
 
