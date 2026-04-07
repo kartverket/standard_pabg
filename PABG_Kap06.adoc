@@ -23,7 +23,51 @@ Dette avsnittet angir krav og retningslinjer til planlegging av flyfotografering
 
 En vikitg faktor ved fotografering fra luften er bildekvalitet. Det er en rekke faktorer som er med på å påvirke vår opplevese av bildekvalitet. Hva som er bra kvalitet vil bestemmes av bruken av bildene. Dersom bildene skal brukes av maskin er informasjonsmengden i bilde viktig, men når menneske skal benytte bildene er det persepsjon som er viktigs. For de fleste tilfeller vil en balangsegang mellom de to tilnærmingene være beste løsning. 
 
-I kvaliatitesmodellen kan vi knytte ulike bildekvalitetsmål til kategorien egenskapkvalitet - Kvantitativ egenskaps nøyaktighet. 
+I kvaliatitesmodellen kan vi knytte ulike bildekvalitetsmål til kategorien egenskapkvalitet - Kvantitativ egenskaps nøyaktighet. Noen vil også kunne havne under kategorien egenskapkvalitet - Ikke kvantitativ egenskapsriktighet.
+ 
+===== Oppløsning
+
+Vi skiller mellom to ulike oppløsninger "Ground sample distance (GSD) og Ground Resolved Distance (GRD).
+
+GSD
+
+latexmath:[GSD = \frac{c \cdot flyhøyde}{f}]
+
+GSD = (c * flyhøyde) / f
+
+
+GRD
+
+
+[latexmath]
+++++
+r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\pi} \right)
+++++
+
+
+//article{meissner2025adaptable,
+//  title={Adaptable Siemens Star Targets for Reliable and //Standardized Spatial Resolution Measurement under DIN 18740-8},
+//  author={Mei{\ss}ner, Henry and Berger, Ralf},
+//  journal={The International Archives of the Photogrammetry, //Remote Sensing and Spatial Information Sciences},
+//  volume={48},
+//  pages={139--146},
+//  year={2025},
+//  publisher={Copernicus GmbH}
+//}
+
+===== Fargenøyaktighet
+
+
+[[tabBildekvalitet]]
+.bildekvalitet
+[width="100%",options="header"]
+|====================
+| Kvalitetselement  | Beskrivelse | Kvalitetsmål
+| GSD |Teoretisk oppløsning.  | innenfor krav.
+| GRD | Bildepikslenes faktiske størrelse i terrenget.  |  Bør sammenfalle med produktets krav til detaljrikdom. 
+| Fargenøyaktighet|  Naturtro farger.  |  Subjektiv vurdering.  
+
+|==================== 
 
 
 ==== Planlegging av flyfotografering (flyplan)
