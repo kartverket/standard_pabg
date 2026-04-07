@@ -24,6 +24,17 @@
 
 === Juridiske referanser
 
+Ikke fullstendig liste på juridiske referanser som man må ta hensyn til ved publisering av standarden. Den til enhver tid gjeldene versjon skal brukes.
+
+Personopplysningsloven, som består av nasjonale regler og EUs personvernforordning (også kalt GDPR - General Data Protection Regulation).
+
+Nasjonal sikkermyndighet (NSM) fører kontroll av datainnsamling med fotografering, laserskanning og andre luftbårne sensorsystemer, for å skjerme detaljer ved militære og andre forbudsområder. https://nsm.no/fysisk/luftbarne-sensorsystemer/[NSM luftbårne sensorsystemer]. NSM har kart for sensorforbudsområder. +
+https://lovdata.no/dokument/SF/forskrift/2018-06-22-951[Forskrift om kontroll med informasjon innhentet med luftbårne sensorsystemer]
+
+I mange tilfeller er et krav om operative flytillatelser fra luftfartstilsynet.
+https://www.luftfartstilsynet.no/[Luftfartstilsynet]
+
+
 // må poengtere at det gjelder til enhver tid gjeldene versjon
 
 // huskeliste: GDPR, forbudsområder, DSA vertikalbilder, Spesielle hensyn knyttet til signalering (.
