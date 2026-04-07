@@ -28,7 +28,7 @@
 
 // huskeliste: GDPR, forbudsområder, DSA vertikalbilder, Spesielle hensyn knyttet til signalering (.
 
-=== Fag referanser
+=== Faglige referanser
 
 // Benytter ISO690 til å beskreve referansene
 
