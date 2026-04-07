@@ -24,6 +24,7 @@
 <<krav-foto-maling-av-sammenbindingspunkt>> +
 <<krav-foto-maling-av-kjentpunkter>> +
 <<krav-foto-observasjonsvekting-parametere-og-ukjente>> +
+<<krav-foto-selvkalibrering>> +
 <<krav-foto-at-beregninger-og-resultat>> +
 <<krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringa>> +
 <<krav-foto-rapportering-aerotriangulering>> +
