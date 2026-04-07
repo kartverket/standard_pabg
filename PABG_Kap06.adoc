@@ -108,18 +108,19 @@ For å kunne benytte fargereferansene må fargen måles med et fargespektrometer
 
 I blokker med mer enn to flystriper og med mindre sideoverlapp enn 50%, så må et av disse to alternativene være dekket på alle flystripene i blokken:
 
-* Alle flystriper må ha minst en stereomodell med 60% lengeoverlapp som dekker minimum 50% av bredden av flybildet fra en annen flystripe, i deler av flystripen. Se xref:imgTverrstripe1[xrefstyle=short].
 * Alle stripene skal dekkes av minst en tverrstripe. Tverrstripen må ha en stereomodell som er over midten av flybildet i en hel 60% stereomodell. Se xref:imgTverrstripe2[xrefstyle=short]. 
+* Alle flystriper må ha minst en stereomodell med 60% lengeoverlapp som dekker minimum 50% av bredden av flybildet fra en annen flystripe, i deler av flystripen. Se xref:imgTverrstripe1[xrefstyle=short].
 
 Felles for begge alternativene er at det overlappende området skal ligge i et område egnet for etablering av sammenbindingspunkt. Det betyr at overlappsområdet for eksempel ikke bare skal inneholde vann. 
+
+.Viser overlapp som er nødvendig for at stripen som går oppover skal være tverrstripe for de 2 andre flystripene. Stereomodellen som lages av de 2 svarte bildeomrissene krysser midten av flybildene i den øverste flystripen. Dermed er alternativ 2 oppfylt.
+[#imgTverrstripe2]
+image::figurer/Kap6_Tverrstripe2.png[Viser overlapp som er nødvendig for at stripen som går oppover skal være tverrstripe for de 2 andre flystripene. Stereomodellen som lages av de 2 svarte bildeomrissene krysser midten av flybildene i den øverste flystripen. Dermed er alternativ 2 oppfylt,400,align="center"]
 
 .Viser flystriper som er tverrstriper for hverandre. Stereomodellen som lages av de 2 svarte bildeomrissene krysser midten av flybildene i stripen under. Dermed er alternativ 1 oppfylt.
 [#imgTverrstripe1]
 image::figurer/Kap6_Tverrstripe1.png[Viser flystriper som er tverrstriper for hverandre. Stereomodellen som lages av de 2 svarte bildeomrissene krysser midten av flybildene i stripen under. Dermed er valg 1 oppfylt,400,align="center"]
 
-.Viser overlapp som er nødvendig for at stripen som går oppover skal være tverrstripe for de 2 andre flystripene. Stereomodellen som lages av de 2 svarte bildeomrissene krysser midten av flybildene i den øverste flystripen. Dermed er alternativ 2 oppfylt.
-[#imgTverrstripe2]
-image::figurer/Kap6_Tverrstripe2.png[Viser overlapp som er nødvendig for at stripen som går oppover skal være tverrstripe for de 2 andre flystripene. Stereomodellen som lages av de 2 svarte bildeomrissene krysser midten av flybildene i den øverste flystripen. Dermed er alternativ 2 oppfylt,400,align="center"]
 |====================
 ====
 
