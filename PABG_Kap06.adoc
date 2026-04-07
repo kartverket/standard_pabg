@@ -58,6 +58,10 @@ r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\p
 
 ===== Fargenøyaktighet
 
+Fargenøyaktighet kan måles ved å måle fargen på naturlige eller kunstige fargereferanser innad i prosjektområdet. Fargereferansen bør ha en homogen farge, tilnærmet horisontal og ha en størrelse som sikrer 3x3 piksler som kun er påvirket av fargereferansens farge og ikke omliggende flater. For pansharpenings systemer med ratio 1:3 bør da fargereferanse ha en størrelse på 9x9 piksler. Tilsvarende for bayer pattern systemer bør størrelsen være 6x6 piksler. 
+
+For å kunne benytte fargereferansene må fargen måles med et fargespektrometer. Det måles da med referanselyskilde og observasjonsvinkel definert av «International Commission on Illumination».  Referanselyskilden bør være D65 som tilsvarer sollyset midt på dagen med en fargetemperatur på ca 6504 kelvin og observasjonsvinkel bør være 10°. Observasjonsvinkelen refereres til øyets observasjonsvinkel. Målt farger og korresponderende fargereferanser i bildet sammenlignes i fargerommet CIELAB, hvor avstanden mellom dem beregnes. Denne avstanden kalles ofte ∆E.  Når ∆E verdien er under 1 er det vanskelig å se forskjell på fargene. Verdier over 2 er lett å se forskjell på.
+
 
 [[tabBildekvalitet]]
 .bildekvalitet
