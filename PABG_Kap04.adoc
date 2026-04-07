@@ -51,6 +51,9 @@ _MERKNAD_: Et flyfotograferingsprosjekt kan ha flere delområder og dermed flere
 .boresight
 boresight parametrene beskriver vinkelforskjellen mellom koordinatsystem til kartleggingssensor (LiDAR eller Kamera) og bevegelsessensor (IMU) 
 
+.digital fotogrammetrisk arbeidsstasjon (DFA)
+_MERKNAD_: Se digitalt stereoinstrument.
+
 .digital høydemodell (DHM)
 en digital representasjon av høydeverdier som varierer over en flate <<LASER>> +
 _MERKNAD_: En DHM er en samling av et stort antall høydepunkter på en flate. Punktene kan være organisert som et regelmessig rutenett eller i et uregelmessig mønster som beskriver flatens knekklinjer. Den siste metoden vil normalt gi den beste beskrivelsen av flaten. Alternativ engelsk betegnelse er «Digital Elevation Model (DEM)».

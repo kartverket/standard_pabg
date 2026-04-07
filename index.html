@@ -454,7 +454,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#_omfang">2. Omfang</a></li>
-<li><a href="#_normative_referanser">3. Normative referanser</a></li>
+<li><a href="#_referanser">3. Referanser</a>
+<ul class="sectlevel2">
+<li><a href="#_normative_referanser">3.1. Normative referanser</a></li>
+<li><a href="#_fag_referanser">3.2. Fag referanser</a></li>
+</ul>
+</li>
 <li><a href="#_termer_og_forkortelser">4. Termer og forkortelser</a>
 <ul class="sectlevel2">
 <li><a href="#_kilder_for_termer_og_forkortelser">4.1. Kilder for termer og forkortelser</a></li>
@@ -485,14 +490,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#kapittel-fly-og-signalplanlegging">6.1. Fly- og signalplanlegging</a>
 <ul class="sectlevel3">
-<li><a href="#_planlegging_av_flyfotografering_flyplan">6.1.1. Planlegging av flyfotografering (flyplan)</a></li>
-<li><a href="#_planlegging_av_kjentpunkt_og_signalering_signaleringsplan">6.1.2. Planlegging av kjentpunkt og signalering (signaleringsplan)</a>
+<li><a href="#_bildekvalitet">6.1.1. Bildekvalitet</a>
 <ul class="sectlevel4">
-<li><a href="#_krav_til_kjentpunkter">6.1.2.1. Krav til kjentpunkter</a></li>
-<li><a href="#_krav_til_antall_og_plassering_av_kjentpunkter">6.1.2.2. Krav til antall og plassering av kjentpunkter</a></li>
+<li><a href="#_oppløsning">6.1.1.1. Oppløsning</a></li>
+<li><a href="#_fargenøyaktighet">6.1.1.2. Fargenøyaktighet</a></li>
 </ul>
 </li>
-<li><a href="#_krav_til_innhold_og_presentasjon_av_fly_og_signalplanen">6.1.3. Krav til innhold og presentasjon av fly- og signalplanen</a></li>
+<li><a href="#_planlegging_av_flyfotografering_flyplan">6.1.2. Planlegging av flyfotografering (flyplan)</a></li>
+<li><a href="#_planlegging_av_kjentpunkt_og_signalering_signaleringsplan">6.1.3. Planlegging av kjentpunkt og signalering (signaleringsplan)</a>
+<ul class="sectlevel4">
+<li><a href="#_krav_til_kjentpunkter">6.1.3.1. Krav til kjentpunkter</a></li>
+<li><a href="#_krav_til_antall_og_plassering_av_kjentpunkter">6.1.3.2. Krav til antall og plassering av kjentpunkter</a></li>
+</ul>
+</li>
+<li><a href="#_krav_til_innhold_og_presentasjon_av_fly_og_signalplanen">6.1.4. Krav til innhold og presentasjon av fly- og signalplanen</a></li>
 </ul>
 </li>
 <li><a href="#kapittel-signalering">6.2. Signalering</a>
@@ -1000,8 +1011,10 @@ Standarden kan nyttes som referansedokument ved inngåelse av avtaler om produks
 </div>
 </div>
 <div class="sect1">
-<h2 id="_normative_referanser">3. Normative referanser</h2>
+<h2 id="_referanser">3. Referanser</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_normative_referanser">3.1. Normative referanser</h3>
 <div id="FKB" class="paragraph">
 <p><strong>[FKB]</strong>	: <a href="https://sosi.geonorge.no/standarder/FKB_generell_del/">SOSI abstrakte spesifikasjoner – FKB generell del 5.0</a></p>
 </div>
@@ -1023,7 +1036,14 @@ Standarden kan nyttes som referansedokument ved inngåelse av avtaler om produks
 <div class="paragraph">
 <p><a href="#SAT">[SAT]</a> er en tilbaketrukket standard, men enkelte deler vil bli oppdatert og videreført i en planlagt veileder.</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_fag_referanser">3.2. Fag referanser</h3>
+<div class="paragraph">
+<p><strong>[Meißner and Berger, 2025]</strong> : MEIßNER, Henry; BERGER, Ralf. Adaptable Siemens Star Targets for Reliable and Standardized Spatial Resolution Measurement under DIN 18740-8. The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, 2025, 48: 139-146.</p>
+</div>
 <div style="page-break-after: always;"></div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1090,6 +1110,10 @@ Standarden kan nyttes som referansedokument ved inngåelse av avtaler om produks
 <div class="paragraph">
 <div class="title">boresight</div>
 <p>boresight parametrene beskriver vinkelforskjellen mellom koordinatsystem til kartleggingssensor (LiDAR eller Kamera) og bevegelsessensor (IMU)</p>
+</div>
+<div class="paragraph">
+<div class="title">digital fotogrammetrisk arbeidsstasjon (DFA)</div>
+<p><em>MERKNAD</em>: Se digitalt stereoinstrument.</p>
 </div>
 <div class="paragraph">
 <div class="title">digital høydemodell (DHM)</div>
@@ -1816,7 +1840,74 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 <p>Dette avsnittet angir krav og retningslinjer til planlegging av flyfotografering, kjentpunkter for aerotriangulering og signalering av disse. Oppdragstaker skal utføre planleggingen og det skal utarbeides en kombinert fly- og signalplan.</p>
 </div>
 <div class="sect3">
-<h4 id="_planlegging_av_flyfotografering_flyplan">6.1.1. Planlegging av flyfotografering (flyplan)</h4>
+<h4 id="_bildekvalitet">6.1.1. Bildekvalitet</h4>
+<div class="paragraph">
+<p>En vikitg faktor ved fotografering fra luften er bildekvalitet. Det er en rekke faktorer som er med på å påvirke vår opplevese av bildekvalitet. Hva som er bra kvalitet vil bestemmes av bruken av bildene. Dersom bildene skal brukes av maskin er informasjonsmengden i bilde viktig, men når menneske skal benytte bildene er det persepsjon som er viktigs. For de fleste tilfeller vil en balangsegang mellom de to tilnærmingene være beste løsning.</p>
+</div>
+<div class="paragraph">
+<p>I kvaliatitesmodellen kan vi knytte ulike bildekvalitetsmål til kategorien egenskapkvalitet - Kvantitativ egenskaps nøyaktighet. Noen vil også kunne havne under kategorien egenskapkvalitet - Ikke kvantitativ egenskapsriktighet.</p>
+</div>
+<div class="sect4">
+<h5 id="_oppløsning">6.1.1.1. Oppløsning</h5>
+<div class="paragraph">
+<p>Vi skiller mellom to ulike oppløsninger "Ground sample distance (GSD) og Ground Resolved Distance (GRD).</p>
+</div>
+<div class="paragraph">
+<p>GSD</p>
+</div>
+<div class="paragraph">
+<p>\(GSD = \frac{c \cdot flyhøyde}{f}\)</p>
+</div>
+<div class="paragraph">
+<p>GSD = (c * flyhøyde) / f</p>
+</div>
+<div class="paragraph">
+<p>GRD</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\[r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\pi} \right)\]
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_fargenøyaktighet">6.1.1.2. Fargenøyaktighet</h5>
+<table id="tabBildekvalitet" class="tableblock frame-all grid-all stretch">
+<caption class="title">Tabell 2. bildekvalitet</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Kvalitetselement</th>
+<th class="tableblock halign-left valign-top">Beskrivelse</th>
+<th class="tableblock halign-left valign-top">Kvalitetsmål</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GSD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Teoretisk oppløsning.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">innenfor krav.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GRD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bildepikslenes faktiske størrelse i terrenget.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bør sammenfalle med produktets krav til detaljrikdom.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fargenøyaktighet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Naturtro farger.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Subjektiv vurdering.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_planlegging_av_flyfotografering_flyplan">6.1.2. Planlegging av flyfotografering (flyplan)</h4>
 <div class="exampleblock">
 <div class="content">
 <div id="krav-foto-flyplanlegging" class="paragraph">
@@ -1825,12 +1916,12 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 <div class="ulist">
 <ul>
 <li>
-<p>Flyplanleggingen skal utføres slik det er beskrevet i <a href="#tab-flyplanlegging">Tabell 2</a>.</p>
+<p>Flyplanleggingen skal utføres slik det er beskrevet i <a href="#tab-flyplanlegging">Tabell 3</a>.</p>
 </li>
 </ul>
 </div>
 <table id="tab-flyplanlegging" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 2. Krav til flyplanlegging</caption>
+<caption class="title">Tabell 3. Krav til flyplanlegging</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1844,7 +1935,7 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">GSD</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GSD bestemmes av oppdragsgiver og velges slik at kravene til fullstendighet og nøyaktighet blir oppfylt. Se <a href="#tab-FKB-GSD">Tabell 29</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GSD bestemmes av oppdragsgiver og velges slik at kravene til fullstendighet og nøyaktighet blir oppfylt. Se <a href="#tab-FKB-GSD">Tabell 30</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Flyhøyde</p></td>
@@ -1895,15 +1986,15 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 </div>
 </div>
 <div class="sect3">
-<h4 id="_planlegging_av_kjentpunkt_og_signalering_signaleringsplan">6.1.2. Planlegging av kjentpunkt og signalering (signaleringsplan)</h4>
+<h4 id="_planlegging_av_kjentpunkt_og_signalering_signaleringsplan">6.1.3. Planlegging av kjentpunkt og signalering (signaleringsplan)</h4>
 <div class="paragraph">
-<p>Signaleringsplan utarbeides av oppdragstaker som en integrert del av flyfotoplanleggingen og kjentpunktene planlegges slik at plasseringen blir optimal med hensyn til krav til antall, plassering og enkel adkomst. For krav til antall og plassering, se <a href="#_krav_til_antall_og_plassering_av_kjentpunkter">Kapittel 6.1.2.2, &#8220;Krav til antall og plassering av kjentpunkter&#8221;</a>.</p>
+<p>Signaleringsplan utarbeides av oppdragstaker som en integrert del av flyfotoplanleggingen og kjentpunktene planlegges slik at plasseringen blir optimal med hensyn til krav til antall, plassering og enkel adkomst. For krav til antall og plassering, se <a href="#_krav_til_antall_og_plassering_av_kjentpunkter">Kapittel 6.1.3.2, &#8220;Krav til antall og plassering av kjentpunkter&#8221;</a>.</p>
 </div>
 <div class="paragraph">
 <p>Signaleringen bør planlegges og utføres slik at fotograferingen kan starte opp så snart forholdene tillater det, eksempelvis ved at lavereliggende områder signaleres først.</p>
 </div>
 <div class="sect4">
-<h5 id="_krav_til_kjentpunkter">6.1.2.1. Krav til kjentpunkter</h5>
+<h5 id="_krav_til_kjentpunkter">6.1.3.1. Krav til kjentpunkter</h5>
 <div class="exampleblock">
 <div class="content">
 <div id="krav-foto-kjentpunktnoyaktighet" class="paragraph">
@@ -1915,7 +2006,7 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 <p>Alle kjentpunkter skal måles inn med geodetiske metoder og beregnes (utjevnes) med kontroll mot grove feil i alle trinn.</p>
 </li>
 <li>
-<p>Kjentpunktene skal måles inn og bestemmes med et standardavvik maksimalt lik ¼ av det strengeste kravet til geodata i det aktuelle prosjektet. For FKB kartlegging se <a href="#tab-nøyaktighet-innmåling-kjentpunkt-FKB">Tabell 3</a>.</p>
+<p>Kjentpunktene skal måles inn og bestemmes med et standardavvik maksimalt lik ¼ av det strengeste kravet til geodata i det aktuelle prosjektet. For FKB kartlegging se <a href="#tab-nøyaktighet-innmåling-kjentpunkt-FKB">Tabell 4</a>.</p>
 </li>
 <li>
 <p>Naturlige kjentpunkter kan benyttes unntaksvis, for eksempel for å erstatte tapte signaler i kritiske posisjoner. I prosjekter med høye nøyaktighetskrav skal da et veldefinert punkt først velges i bildene og deretter måles inn i marka. I prosjekter med lavere nøyaktighetskrav, som for eksempel Omløpsfotograferingen, kan eksisterende, antatt synlige geodetiske punkter (varder, fyrlykter, og lignende med tilfredsstillende oppgitt nøyaktighet) planlegges som supplement til de signalerte kjentpunktene for å oppnå bedre kontroll i utilgjengelige områder.</p>
@@ -1925,7 +2016,7 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 </div>
 </div>
 <table id="tab-nøyaktighet-innmåling-kjentpunkt-FKB" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 3. Nøyaktighetskrav for innmåling av kjentpunkt i FKB</caption>
+<caption class="title">Tabell 4. Nøyaktighetskrav for innmåling av kjentpunkt i FKB</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -1979,14 +2070,14 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 </tbody>
 </table>
 <div class="paragraph">
-<p>Det presiseres at tallene i <a href="#tab-nøyaktighet-innmåling-kjentpunkt-FKB">Tabell 3</a> henviser til kravene som er stilt i FKB 5.0 produktspesifikasjonen, ved endringer i FKB spesifikasjonen vil eventuelle endringer til nøyaktighetskrav gjelde foran kravene som er satt opp i <a href="#tab-nøyaktighet-innmåling-kjentpunkt-FKB">Tabell 3</a>. Det stilles krav til hhv. punktstandardavvik, grunnriss (S<sub>p</sub>) og standardavvik i høyde (S<sub>h</sub>). For systematisk avvik skal dette for FKB være 1/3 av standardavvikskravet.</p>
+<p>Det presiseres at tallene i <a href="#tab-nøyaktighet-innmåling-kjentpunkt-FKB">Tabell 4</a> henviser til kravene som er stilt i FKB 5.0 produktspesifikasjonen, ved endringer i FKB spesifikasjonen vil eventuelle endringer til nøyaktighetskrav gjelde foran kravene som er satt opp i <a href="#tab-nøyaktighet-innmåling-kjentpunkt-FKB">Tabell 4</a>. Det stilles krav til hhv. punktstandardavvik, grunnriss (S<sub>p</sub>) og standardavvik i høyde (S<sub>h</sub>). For systematisk avvik skal dette for FKB være 1/3 av standardavvikskravet.</p>
 </div>
 <div class="paragraph">
 <p>For øvrige krav til innmåling vises det til standarden <a href="#SAT">[SAT]</a>, og for krav til utførelse av signaleringen vises det til <a href="#kapittel-signalering">Kapittel 6.2, &#8220;Signalering&#8221;</a>.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_krav_til_antall_og_plassering_av_kjentpunkter">6.1.2.2. Krav til antall og plassering av kjentpunkter</h5>
+<h5 id="_krav_til_antall_og_plassering_av_kjentpunkter">6.1.3.2. Krav til antall og plassering av kjentpunkter</h5>
 <div class="paragraph">
 <p>Ved GNSS/INS-støttet fotografering kreves det i teorien kun et fåtall kjentpunkt for å kunne utføre AT. Kjentpunktene er kun nødvendige for å kunne bestemme systematiske avvik i de GNSS-bestemte projeksjonssentrene (datumstransformasjon), samt for å ha en minimums-kontroll. I praksis trengs vesentlig flere punkt for å kunne:</p>
 </div>
@@ -2032,7 +2123,7 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 </div>
 </div>
 <div class="sect3">
-<h4 id="_krav_til_innhold_og_presentasjon_av_fly_og_signalplanen">6.1.3. Krav til innhold og presentasjon av fly- og signalplanen</h4>
+<h4 id="_krav_til_innhold_og_presentasjon_av_fly_og_signalplanen">6.1.4. Krav til innhold og presentasjon av fly- og signalplanen</h4>
 <div class="exampleblock">
 <div class="content">
 <div id="krav-foto-fly-og-signaleringsplan" class="paragraph">
@@ -2086,7 +2177,7 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 <div class="sect2">
 <h3 id="kapittel-signalering">6.2. Signalering</h3>
 <div class="paragraph">
-<p>Dette kapittelet angir krav og retningslinjer til signalering av kjentpunkter for aerotriangulering og eventuelle objekter som skal kartlegges og som er for små til å synes i flybildene. For innmåling av kjentpunkter henvises til krav i <a href="#_krav_til_kjentpunkter">Kapittel 6.1.2.1, &#8220;Krav til kjentpunkter&#8221;</a> og til standarden <a href="#SAT">[SAT]</a>.</p>
+<p>Dette kapittelet angir krav og retningslinjer til signalering av kjentpunkter for aerotriangulering og eventuelle objekter som skal kartlegges og som er for små til å synes i flybildene. For innmåling av kjentpunkter henvises til krav i <a href="#_krav_til_kjentpunkter">Kapittel 6.1.3.1, &#8220;Krav til kjentpunkter&#8221;</a> og til standarden <a href="#SAT">[SAT]</a>.</p>
 </div>
 <div class="sect3">
 <h4 id="_lovhjemmel_for_markarbeider_matrikkellova">6.2.1. Lovhjemmel for markarbeider - Matrikkellova</h4>
@@ -2116,12 +2207,12 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 <div class="ulist">
 <ul>
 <li>
-<p>Signaleringsarbeidet skal utføres slik det er beskrevet i <a href="#tab-krav-signaleringsarbeid">Tabell 4</a>.</p>
+<p>Signaleringsarbeidet skal utføres slik det er beskrevet i <a href="#tab-krav-signaleringsarbeid">Tabell 5</a>.</p>
 </li>
 </ul>
 </div>
 <table id="tab-krav-signaleringsarbeid" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 4. Krav til signaleringsarbeidet</caption>
+<caption class="title">Tabell 5. Krav til signaleringsarbeidet</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2139,7 +2230,7 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Plassering av signal</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Signalet plasseres på horisontalt flatt/plant underlag og skal som hovedregel males. Signal skal ikke plasseres på løse gjenstander som kumlokk. Prefabrikkerte signalplater skal ha sentrumshull og plasseres og festes slik at de ikke kommer ut av posisjon/horisontering eller blir ødelagt før fotografering. Sentrisk plassering skal være innenfor 1/3 av krav til markmåling av kjentpunkt se <a href="#tab-nøyaktighet-innmåling-kjentpunkt-FKB">Tabell 3</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Signalet plasseres på horisontalt flatt/plant underlag og skal som hovedregel males. Signal skal ikke plasseres på løse gjenstander som kumlokk. Prefabrikkerte signalplater skal ha sentrumshull og plasseres og festes slik at de ikke kommer ut av posisjon/horisontering eller blir ødelagt før fotografering. Sentrisk plassering skal være innenfor 1/3 av krav til markmåling av kjentpunkt se <a href="#tab-nøyaktighet-innmåling-kjentpunkt-FKB">Tabell 4</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Signalfarge</p></td>
@@ -2147,11 +2238,11 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Signalform og -størrelse</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Signalet skal ha en regulær og symmetrisk form. Størrelsen skal avpasses etter bildeoppløsning (GSD). Krav til størrelser på signaler er vist i <a href="#tab-krav-signalstørrelser">Tabell 5</a>, mens tillatte signaltyper er vist i <a href="#imgSignalutforming">Figur 3</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Signalet skal ha en regulær og symmetrisk form. Størrelsen skal avpasses etter bildeoppløsning (GSD). Krav til størrelser på signaler er vist i <a href="#tab-krav-signalstørrelser">Tabell 6</a>, mens tillatte signaltyper er vist i <a href="#imgSignalutforming">Figur 3</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Planhet for signal og kontrastområdet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Krav til flatt/plant underlag gjelder både signal og kontrastområdet. Høydevariasjon på signal og kontrastområdet målt fra senter av signal skal ikke overstige kravet til markmåling av kjentpunkt se <a href="#tab-nøyaktighet-innmåling-kjentpunkt-FKB">Tabell 3</a>. Eksempler på egnede og ikke egnede signaler kan sees i <a href="#imgSignaler">Figur 4</a>. Dersom det ikke er mulig å etablere signal som overholder krav til planhet i området hvor signalet må etableres, kan kravet om planhet til signal og kontrastområdet fravikes etter avtale med oppdragsgiver.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Krav til flatt/plant underlag gjelder både signal og kontrastområdet. Høydevariasjon på signal og kontrastområdet målt fra senter av signal skal ikke overstige kravet til markmåling av kjentpunkt se <a href="#tab-nøyaktighet-innmåling-kjentpunkt-FKB">Tabell 4</a>. Eksempler på egnede og ikke egnede signaler kan sees i <a href="#imgSignaler">Figur 4</a>. Dersom det ikke er mulig å etablere signal som overholder krav til planhet i området hvor signalet må etableres, kan kravet om planhet til signal og kontrastområdet fravikes etter avtale med oppdragsgiver.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kontrast</p></td>
@@ -2195,10 +2286,10 @@ Fjell, stein, sand, grus, asfalt eller betong gir dårlig kontrast, og det skal 
 <div class="title">Figur 2. Innsyn mot sør</div>
 </div>
 <div class="paragraph">
-<p>Krav til signalstørrelse settes til 2 til 3 ganger GSD, eller etter avtale med oppdragsgiver. Eksempler kan sees i <a href="#tab-krav-signalstørrelser">Tabell 5</a>. Alle typer signaler i <a href="#imgSignalutforming">Figur 3</a> kan benyttes for de forskjellige oppløsningene. For <a href="#imgSignaler">Figur 4</a> vises eksempler på signal som overholder krav til planhet (1) og signaler som ikke overholder krav til planhet (2 og 3).</p>
+<p>Krav til signalstørrelse settes til 2 til 3 ganger GSD, eller etter avtale med oppdragsgiver. Eksempler kan sees i <a href="#tab-krav-signalstørrelser">Tabell 6</a>. Alle typer signaler i <a href="#imgSignalutforming">Figur 3</a> kan benyttes for de forskjellige oppløsningene. For <a href="#imgSignaler">Figur 4</a> vises eksempler på signal som overholder krav til planhet (1) og signaler som ikke overholder krav til planhet (2 og 3).</p>
 </div>
 <table id="tab-krav-signalstørrelser" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 5. Anbefalte signalstørrelser</caption>
+<caption class="title">Tabell 6. Anbefalte signalstørrelser</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -2276,12 +2367,12 @@ Fjell, stein, sand, grus, asfalt eller betong gir dårlig kontrast, og det skal 
 <div class="ulist">
 <ul>
 <li>
-<p>Signaleringsrapporten skal som minimum inneholde informasjonen spesifisert i <a href="#tab-signaleringsrapport">Tabell 6</a>. Som hovedregel skal det leveres en felles rapport for signalering og innmåling av kjentpunkter.</p>
+<p>Signaleringsrapporten skal som minimum inneholde informasjonen spesifisert i <a href="#tab-signaleringsrapport">Tabell 7</a>. Som hovedregel skal det leveres en felles rapport for signalering og innmåling av kjentpunkter.</p>
 </li>
 </ul>
 </div>
 <table id="tab-signaleringsrapport" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 6. Signaleringsrapport</caption>
+<caption class="title">Tabell 7. Signaleringsrapport</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -2396,12 +2487,12 @@ Fjell, stein, sand, grus, asfalt eller betong gir dårlig kontrast, og det skal 
 <div class="ulist">
 <ul>
 <li>
-<p>Digitale kamera skal tilfredsstille kravene gitt i <a href="#tab-krav-digitalkamera">Tabell 7</a>.</p>
+<p>Digitale kamera skal tilfredsstille kravene gitt i <a href="#tab-krav-digitalkamera">Tabell 8</a>.</p>
 </li>
 </ul>
 </div>
 <table id="tab-krav-digitalkamera" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 7. Krav til digitale kamera</caption>
+<caption class="title">Tabell 8. Krav til digitale kamera</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2511,12 +2602,12 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 <div class="ulist">
 <ul>
 <li>
-<p>Flyfotograferingen skal gjennomføres i henhold til krav gitt i <a href="#tab-krav-fotografering-digitalkamera">Tabell 8</a>.</p>
+<p>Flyfotograferingen skal gjennomføres i henhold til krav gitt i <a href="#tab-krav-fotografering-digitalkamera">Tabell 9</a>.</p>
 </li>
 </ul>
 </div>
 <table id="tab-krav-fotografering-digitalkamera" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 8. Krav til fotografering</caption>
+<caption class="title">Tabell 9. Krav til fotografering</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2948,12 +3039,12 @@ For hvert av de nevnte arbeidene, inkludert leveransene, skal resultatet av utf�
 <div class="ulist">
 <ul>
 <li>
-<p>Rapport for flyfotografering skal som minimum inneholde informasjonen spesifisert i <a href="#tab-rapport-fotografering">Tabell 9</a></p>
+<p>Rapport for flyfotografering skal som minimum inneholde informasjonen spesifisert i <a href="#tab-rapport-fotografering">Tabell 10</a></p>
 </li>
 </ul>
 </div>
 <table id="tab-rapport-fotografering" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 9. Krav til rapportering av fotografering</caption>
+<caption class="title">Tabell 10. Krav til rapportering av fotografering</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -3443,12 +3534,12 @@ En GNSS/INS fil pr. fotosesjon.</p></td>
 <p>Avstand mellom sammenbindingspunkt skal være minst 100 piksler, inkludert kjentpunktsmålinger. Sammenbindingspunkter som er nærmere enn kravet kan godtas hvis det er en god begrunnelse for avviket.</p>
 </li>
 <li>
-<p>Det skal være minst antall sammenbindingspunkter nevnt i <a href="#tab-ant-sammenbindingpkt">Tabell 10</a> mellom 2 påfølgende bilder i flystripen og mellom bilder som er nærmest 60 % overlapp i flystripen. Sammenbindingspunktene skal være jevnt fordelt over overlappen mellom bildene.</p>
+<p>Det skal være minst antall sammenbindingspunkter nevnt i <a href="#tab-ant-sammenbindingpkt">Tabell 11</a> mellom 2 påfølgende bilder i flystripen og mellom bilder som er nærmest 60 % overlapp i flystripen. Sammenbindingspunktene skal være jevnt fordelt over overlappen mellom bildene.</p>
 </li>
 </ul>
 </div>
 <table id="tab-ant-sammenbindingpkt" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 10. Krav til antall sammenbindingspunkt</caption>
+<caption class="title">Tabell 11. Krav til antall sammenbindingspunkt</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3489,12 +3580,12 @@ En GNSS/INS fil pr. fotosesjon.</p></td>
 <div class="ulist">
 <ul>
 <li>
-<p>Mellom striper skal det være et minimum antall sammenbindingspunkter pr. bilde i god innbyrdes avstand, se <a href="#tab-ant-stripesammenbindingpkt">Tabell 11</a>. Hvert stripesammenbindingspunkt skal måles i minst 2 bilder fra hver stripe. Unntak fra dette aksepteres kun i stripenes ender. Kravet til antall sammenbindingspunkt kan avvikes dersom det er absolutt umulig å måle gode punkt.</p>
+<p>Mellom striper skal det være et minimum antall sammenbindingspunkter pr. bilde i god innbyrdes avstand, se <a href="#tab-ant-stripesammenbindingpkt">Tabell 12</a>. Hvert stripesammenbindingspunkt skal måles i minst 2 bilder fra hver stripe. Unntak fra dette aksepteres kun i stripenes ender. Kravet til antall sammenbindingspunkt kan avvikes dersom det er absolutt umulig å måle gode punkt.</p>
 </li>
 </ul>
 </div>
 <table id="tab-ant-stripesammenbindingpkt" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 11. Krav til antall stripesammenbindingspunkt</caption>
+<caption class="title">Tabell 12. Krav til antall stripesammenbindingspunkt</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3631,7 +3722,7 @@ En GNSS/INS fil pr. fotosesjon.</p></td>
 <p>Bildenes ytre orienteringselementer, terrengkoordinatene til alle målte sammenbindingspunkter samt eventuelle tilleggsukjente (som spesifisert over) skal bestemmes i en samlet blokkutjevning. Konstante GNSS-skift, korreksjoner til "boresight"-kalibreringen og estimering av antenneeksentrisitet og andre systemavstander (lever arm) kan eventuelt bestemmes i forprosessering (ved hjelp av blokkutjevning) og deretter påføres endelig GNSS/INS resultat, dette forutsetter tilstrekkelig observasjonsgrunnlag og geometrisk styrke i blokka.</p>
 </li>
 <li>
-<p>Bildenes ytre orienteringselementer skal ha et totalt standardavvik maksimalt lik 2/3 av kravene for de aktuelle geodata. Med "totalt" menes det samlede avvik på et målt objekt, sammensatt av de enkelte orienteringselementenes feilbidrag. Se <a href="#tab-nøyaktighetskrav-AT-FKB">Tabell 12</a> for eksempler på nøyaktighetskrav til nypunkter og ytre orienteringselementer.</p>
+<p>Bildenes ytre orienteringselementer skal ha et totalt standardavvik maksimalt lik 2/3 av kravene for de aktuelle geodata. Med "totalt" menes det samlede avvik på et målt objekt, sammensatt av de enkelte orienteringselementenes feilbidrag. Se <a href="#tab-nøyaktighetskrav-AT-FKB">Tabell 13</a> for eksempler på nøyaktighetskrav til nypunkter og ytre orienteringselementer.</p>
 </li>
 <li>
 <p>Standardavviket på vektsenheten skal være &#8804; 1/3 piksel.</p>
@@ -3653,7 +3744,7 @@ En GNSS/INS fil pr. fotosesjon.</p></td>
 </div>
 </div>
 <table id="tab-nøyaktighetskrav-AT-FKB" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 12. Eksempel på nøyaktighetskrav (standardavvik) FKB</caption>
+<caption class="title">Tabell 13. Eksempel på nøyaktighetskrav (standardavvik) FKB</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 14.2857%;">
@@ -3725,7 +3816,7 @@ En GNSS/INS fil pr. fotosesjon.</p></td>
 <em><sup>2</sup> 2/3 av kravet til geodata. Det stilles altså samme krav uavhengig av orienteringsmåte; gjennom transformasjon eller direkte bruk av eksisterende ytre orienteringselementer</em></p>
 </div>
 <div class="paragraph">
-<p>Det presiseres at tallene i <a href="#tab-nøyaktighetskrav-AT-FKB">Tabell 12</a> henviser til kravene som er stilt i FKB 5.0 produktspesifikasjonen, ved endringer i FKB spesifikasjonen vil eventuelle endringer til nøyaktighetskrav gjelde foran kravene som er satt opp i <a href="#tab-nøyaktighetskrav-AT-FKB">Tabell 12</a>.
+<p>Det presiseres at tallene i <a href="#tab-nøyaktighetskrav-AT-FKB">Tabell 13</a> henviser til kravene som er stilt i FKB 5.0 produktspesifikasjonen, ved endringer i FKB spesifikasjonen vil eventuelle endringer til nøyaktighetskrav gjelde foran kravene som er satt opp i <a href="#tab-nøyaktighetskrav-AT-FKB">Tabell 13</a>.
 Kravet til nypunkt gjelder kun signalerte kjentpunkt og eventuelt ikke-signalerte høydepunkt med høy nøyaktighet.<br></p>
 </div>
 </div>
@@ -3760,12 +3851,12 @@ For hvert av de nevnte arbeidene, inkl. leveransene, skal resultatet av utførte
 <div class="ulist">
 <ul>
 <li>
-<p>Rapport for aerotriangulering skal som minimum inneholde informasjonen spesifisert i <a href="#tab-rapportering-AT">Tabell 13</a></p>
+<p>Rapport for aerotriangulering skal som minimum inneholde informasjonen spesifisert i <a href="#tab-rapportering-AT">Tabell 14</a></p>
 </li>
 </ul>
 </div>
 <table id="tab-rapportering-AT" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 13. Krav til rapportering av aerotriangulering</caption>
+<caption class="title">Tabell 14. Krav til rapportering av aerotriangulering</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -4216,12 +4307,12 @@ For hvert av de nevnte arbeidene, inkl. leveransene, skal resultatet av utførte
 <div class="ulist">
 <ul>
 <li>
-<p>Det skal som minimum gjennomføres kontroller i henhold til <a href="#tab-kontr-logisk-konsistens">Tabell 14</a>.</p>
+<p>Det skal som minimum gjennomføres kontroller i henhold til <a href="#tab-kontr-logisk-konsistens">Tabell 15</a>.</p>
 </li>
 </ul>
 </div>
 <table id="tab-kontr-logisk-konsistens" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 14. Krav til kontroll av logisk konsistens</caption>
+<caption class="title">Tabell 15. Krav til kontroll av logisk konsistens</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4301,12 +4392,12 @@ Antall ulovlige småpolygoner<br></p></td>
 <div class="ulist">
 <ul>
 <li>
-<p>Rapport for konstruksjonsarbeidene skal som minimum inneholde informasjonen spesifisert i <a href="#tab-rapportering-konstruksjon">Tabell 15</a>.</p>
+<p>Rapport for konstruksjonsarbeidene skal som minimum inneholde informasjonen spesifisert i <a href="#tab-rapportering-konstruksjon">Tabell 16</a>.</p>
 </li>
 </ul>
 </div>
 <table id="tab-rapportering-konstruksjon" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 15. Krav til rapportering av konstruksjonsarbeider</caption>
+<caption class="title">Tabell 16. Krav til rapportering av konstruksjonsarbeider</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -4608,12 +4699,12 @@ Manus og støttedata<br></p></td>
 <div class="ulist">
 <ul>
 <li>
-<p>Rapport for ortofotoproduksjonen skal som minimum inneholde informasjonen spesifisert i <a href="#tab-rapport-orto">Tabell 16</a>.</p>
+<p>Rapport for ortofotoproduksjonen skal som minimum inneholde informasjonen spesifisert i <a href="#tab-rapport-orto">Tabell 17</a>.</p>
 </li>
 </ul>
 </div>
 <table id="tab-rapport-orto" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 16. Krav til rapportering av ortofoto</caption>
+<caption class="title">Tabell 17. Krav til rapportering av ortofoto</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -5200,7 +5291,7 @@ Høydedata</p></td>
 </ul>
 </div>
 <table id="tab-ulike-bruksområder-skråbilder" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 17. Oppsummering av ulike bruksområder av skråbilder satt i sammenheng med kvalitetsnivåer</caption>
+<caption class="title">Tabell 18. Oppsummering av ulike bruksområder av skråbilder satt i sammenheng med kvalitetsnivåer</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 14.2857%;">
@@ -5279,7 +5370,7 @@ Høydedata</p></td>
 <p>Dersom AT benyttes skal det være minst 6 eller flere sammenbindingspunkter for alle bilder. Dersom dette ikke er oppfylt for et eller flere bilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.</p>
 </li>
 <li>
-<p>Hvis det gjøres en aerotriangulering så skal AT-rapporten følge  <a href="#krav-foto-rapportering-aerotriangulering">Krav foto rapportering aerotriangulering</a>.</p>
+<p>Hvis det gjøres en aerotriangulering så skal AT-rapporten følge  <a href="#krav-foto-rapportering-aerotriangulering">Krav foto rapportering aerotriangulering</a>, men måling i stereo (DFA) er ikke nødvendig.</p>
 </li>
 </ul>
 </div>
@@ -5331,7 +5422,7 @@ Høydedata</p></td>
 <p>Det skal være minst 6 eller flere sammenbindingspunkter for alle bilder. Dersom dette ikke er oppfylt for et eller flere bilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.</p>
 </li>
 <li>
-<p>AT-rapport: <a href="#krav-foto-rapportering-aerotriangulering">Krav foto rapportering aerotriangulering</a></p>
+<p>AT-rapport: <a href="#krav-foto-rapportering-aerotriangulering">Krav foto rapportering aerotriangulering</a>, men måling i stereo (DFA) er ikke nødvendig.</p>
 </li>
 <li>
 <p>Må følge krav i gjeldene produktspesifikasjon for ortofoto.</p>
@@ -5815,7 +5906,7 @@ Feilklassifiserte punkt, for eksempel vegetasjonspunkt klassifisert som bakke, v
 <div class="ulist">
 <ul>
 <li>
-<p>Størrelsen på kontrollflaten er avhengig av den planlagte punkttettheten. Ved punkttetthet fra 0,5 punkt/m<sup>2</sup> til 3 punkt/m<sup>2</sup> skal størrelse på kontrollflaten være minimum 16 m<sup>2</sup>. Ved planlagt punkttettheten på 20 punkt/m<sup>2</sup> er minimumstørrelsen 4 m<sup>2</sup>, se <a href="#tab-kontrollflate">Tabell 18</a>.</p>
+<p>Størrelsen på kontrollflaten er avhengig av den planlagte punkttettheten. Ved punkttetthet fra 0,5 punkt/m<sup>2</sup> til 3 punkt/m<sup>2</sup> skal størrelse på kontrollflaten være minimum 16 m<sup>2</sup>. Ved planlagt punkttettheten på 20 punkt/m<sup>2</sup> er minimumstørrelsen 4 m<sup>2</sup>, se <a href="#tab-kontrollflate">Tabell 19</a>.</p>
 </li>
 <li>
 <p>I tilfeller hvor man ikke finner egnet lokasjon for en kvaderatisk utformet kontrollflate kan det velges en regtagulær form hvor høyden halveres og størrelsen i m<sup>2</sup> blir ivaretatt. Et eksempel vil være å endre formen på kontrolflaten fra 4x4 meter til 2x8 meter.</p>
@@ -5826,7 +5917,7 @@ Feilklassifiserte punkt, for eksempel vegetasjonspunkt klassifisert som bakke, v
 </ul>
 </div>
 <table id="tab-kontrollflate" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 18. Minimumskrav til kontrollflatens form og størrelse</caption>
+<caption class="title">Tabell 19. Minimumskrav til kontrollflatens form og størrelse</caption>
 <colgroup>
 <col style="width: 12.5%;">
 <col style="width: 12.5%;">
@@ -6280,7 +6371,7 @@ homogenitetsplott, se <a href="#krav-laser-dokumentasjon-pa-kontroll-av-punktsky
 <p>Det kan maksimalt justeres for ett systematisk avvik i øst, nord og høyde per prosjektområde.</p>
 </li>
 <li>
-<p>Endelig resultat etter eventuell høydejustering skal dokumenteres med høyderapport per kontrollflate, samt en sammenfattet oversikt med statistisk informasjon for alle flater. Se <a href="#imgDokKontrollFL">Figur 14</a> og <a href="#tab-statistikk-kontrollFL">Tabell 19</a>.</p>
+<p>Endelig resultat etter eventuell høydejustering skal dokumenteres med høyderapport per kontrollflate, samt en sammenfattet oversikt med statistisk informasjon for alle flater. Se <a href="#imgDokKontrollFL">Figur 14</a> og <a href="#tab-statistikk-kontrollFL">Tabell 20</a>.</p>
 </li>
 <li>
 <p>Oppdragstaker skal gi sin vurdering av resultatet.</p>
@@ -6299,7 +6390,7 @@ homogenitetsplott, se <a href="#krav-laser-dokumentasjon-pa-kontroll-av-punktsky
 <div class="title">Figur 14. Eksempel på dokumentasjon per kontrollflate</div>
 </div>
 <table id="tab-statistikk-kontrollFL" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 19. Eksempel på samlet oversikt over statistikk fra kontrollflatene</caption>
+<caption class="title">Tabell 20. Eksempel på samlet oversikt over statistikk fra kontrollflatene</caption>
 <colgroup>
 <col style="width: 16.6666%;">
 <col style="width: 16.6666%;">
@@ -6373,7 +6464,7 @@ homogenitetsplott, se <a href="#krav-laser-dokumentasjon-pa-kontroll-av-punktsky
 <p>Beskrivelse av benyttet metode for grunnrisskontroll.</p>
 </li>
 <li>
-<p>Dokumentasjon på beregnede avvik i grunnriss i sammenfattet oversikt. Se <a href="#tab-statistikk-kontrollprofil">Tabell 20</a>.</p>
+<p>Dokumentasjon på beregnede avvik i grunnriss i sammenfattet oversikt. Se <a href="#tab-statistikk-kontrollprofil">Tabell 21</a>.</p>
 </li>
 <li>
 <p>Oppdragstaker skal gi sin vurdering av resultatet.</p>
@@ -6386,7 +6477,7 @@ homogenitetsplott, se <a href="#krav-laser-dokumentasjon-pa-kontroll-av-punktsky
 </div>
 </div>
 <table id="tab-statistikk-kontrollprofil" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 20. Eksempel på samlet oversikt over målte avvik i grunnriss</caption>
+<caption class="title">Tabell 21. Eksempel på samlet oversikt over målte avvik i grunnriss</caption>
 <colgroup>
 <col style="width: 16.6666%;">
 <col style="width: 16.6666%;">
@@ -6585,12 +6676,12 @@ homogenitetsplott, se <a href="#krav-laser-dokumentasjon-pa-kontroll-av-punktsky
 <div class="ulist">
 <ul>
 <li>
-<p>Rapport for laserskanning skal som minimum inneholde informasjonen spesifisert i <a href="#tab-rapport-laserskanning">Tabell 21</a>.</p>
+<p>Rapport for laserskanning skal som minimum inneholde informasjonen spesifisert i <a href="#tab-rapport-laserskanning">Tabell 22</a>.</p>
 </li>
 </ul>
 </div>
 <table id="tab-rapport-laserskanning" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 21. Krav til rapportering av laserskanning</caption>
+<caption class="title">Tabell 22. Krav til rapportering av laserskanning</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -6878,7 +6969,7 @@ Klassifisering</p></td>
 <div class="sect2">
 <h3 id="_fargelegging_av_punktsky">8.5. Fargelegging av punktsky</h3>
 <div class="paragraph">
-<p>Påføring av fargeverdier på punktskyen, er opsjonelt. Dersom opsjon utløses, bør  kvalitetselementer gitt i <a href="#tab-fargelegging-av-punktsky">Tabell 22</a> hensyntas:</p>
+<p>Påføring av fargeverdier på punktskyen, er opsjonelt. Dersom opsjon utløses, bør  kvalitetselementer gitt i <a href="#tab-fargelegging-av-punktsky">Tabell 23</a> hensyntas:</p>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -6886,7 +6977,7 @@ Klassifisering</p></td>
 <p><strong>ANBEFALING MOBIL FARGELEGGING AV PUNKTSKY</strong></p>
 </div>
 <table id="tab-fargelegging-av-punktsky" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 22. Fargelegging av punktsky</caption>
+<caption class="title">Tabell 23. Fargelegging av punktsky</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -6955,10 +7046,10 @@ Klassifisering</p></td>
 <div class="sect3">
 <h4 id="_stedfestingsnøyaktighet">8.8.1. Stedfestingsnøyaktighet</h4>
 <div class="paragraph">
-<p>Med stedfestingsnøyaktighet menes hvor godt stedfestingen til et objekt samsvarer med virkeligheten, realisert i angitt referanseramme. Metoden som brukes til å evaluere absolutt stedfestningsnøyaktighet følger standarden <a href="https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet">Geodatakvalitet</a>. Kravene gjelder for tydelige, veldefinerte objekter innenfor prosjektområdet. Kvalitetselement knyttet til kriteriet om stedfestingsnøyaktighet er angitt i    <a href="#tab-kvalitetselementer-knyttet-til-kategorien-stedfestingsnøyaktighet">Tabell 23</a> med beskrivelse.</p>
+<p>Med stedfestingsnøyaktighet menes hvor godt stedfestingen til et objekt samsvarer med virkeligheten, realisert i angitt referanseramme. Metoden som brukes til å evaluere absolutt stedfestningsnøyaktighet følger standarden <a href="https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet">Geodatakvalitet</a>. Kravene gjelder for tydelige, veldefinerte objekter innenfor prosjektområdet. Kvalitetselement knyttet til kriteriet om stedfestingsnøyaktighet er angitt i    <a href="#tab-kvalitetselementer-knyttet-til-kategorien-stedfestingsnøyaktighet">Tabell 24</a> med beskrivelse.</p>
 </div>
 <table id="tab-kvalitetselementer-knyttet-til-kategorien-stedfestingsnøyaktighet" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 23. Kvalitetselementer knyttet til kategorien stedfestingsnøyaktighet</caption>
+<caption class="title">Tabell 24. Kvalitetselementer knyttet til kategorien stedfestingsnøyaktighet</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7042,7 +7133,7 @@ Klassifisering</p></td>
 <p><strong>KRAV MOBIL STEDFESTINGSNØYAKTIGHET VED MOBIL DATAFANGST</strong></p>
 </div>
 <table id="tab-krav-til-stedfestingsnøyaktighet-ved-mobil-datafangst" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 24. Krav knyttet til kriterier om stedfestingsnøyaktighet</caption>
+<caption class="title">Tabell 25. Krav knyttet til kriterier om stedfestingsnøyaktighet</caption>
 <colgroup>
 <col style="width: 16.6666%;">
 <col style="width: 16.6666%;">
@@ -7188,10 +7279,10 @@ Tradisjonelt innmålte kontrollpunkt er fysiske objekt som lar seg gjenfinne i p
 <div class="sect3">
 <h4 id="_fullstendighet">8.8.2. Fullstendighet</h4>
 <div class="paragraph">
-<p>I kvalitetskategorien fullstendighet inngår elementene <em>dekning,</em> <em>punkttetthet</em>, <em>detaljeringsgrad</em>, <em>punktdistribusjon</em> og <em>overlapp foto</em>. Disse beskriver hvor komplett datasettet er, hvor tett punktene ligger, hvor detaljert informasjonen er, hvordan punktene fordeler seg i området og hvor mye fotodata overlapper hverandre. Kvalitetselementer knyttet til kriteriet om fullstendighet er angitt i <a href="#tab-kvalitetselementer-knyttet-til-kriteriet-om-fullstendighet">Tabell 25</a> med beskrivelse.</p>
+<p>I kvalitetskategorien fullstendighet inngår elementene <em>dekning,</em> <em>punkttetthet</em>, <em>detaljeringsgrad</em>, <em>punktdistribusjon</em> og <em>overlapp foto</em>. Disse beskriver hvor komplett datasettet er, hvor tett punktene ligger, hvor detaljert informasjonen er, hvordan punktene fordeler seg i området og hvor mye fotodata overlapper hverandre. Kvalitetselementer knyttet til kriteriet om fullstendighet er angitt i <a href="#tab-kvalitetselementer-knyttet-til-kriteriet-om-fullstendighet">Tabell 26</a> med beskrivelse.</p>
 </div>
 <table id="tab-kvalitetselementer-knyttet-til-kriteriet-om-fullstendighet" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 25. Kvalitetselementer knyttet til kriterier om fullstendighet</caption>
+<caption class="title">Tabell 26. Kvalitetselementer knyttet til kriterier om fullstendighet</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7230,10 +7321,10 @@ Disse elementene beskriver kvaliteten på ulike egenskaper ved datainnsamlingen,
 Med egenskapskvalitet i standarden <a href="https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet">Geodatakvalitet</a>, menes nøyaktighet av kvantitative egenskaper (kan måles på en skala) og riktighet av ikke-kvantitative egenskaper (egenskaper som skiller ut informasjon, men uten å kunne rangeres) og eventuelt objektenes klassifisering og relasjoner.</p>
 </div>
 <div class="paragraph">
-<p>Kvalitetselementer knyttet til kriteriet om egenskapskvalitet er angitt i <a href="#tab-kvalitetselementer-knyttet-til-kriterier-om-egenskapskvalitet">Tabell 26</a> med beskrivelse.</p>
+<p>Kvalitetselementer knyttet til kriteriet om egenskapskvalitet er angitt i <a href="#tab-kvalitetselementer-knyttet-til-kriterier-om-egenskapskvalitet">Tabell 27</a> med beskrivelse.</p>
 </div>
 <table id="tab-kvalitetselementer-knyttet-til-kriterier-om-egenskapskvalitet" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 26. Kvalitetselementer knyttet til kriterier om egenskapskvalitet</caption>
+<caption class="title">Tabell 27. Kvalitetselementer knyttet til kriterier om egenskapskvalitet</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7375,7 +7466,7 @@ Med egenskapskvalitet i standarden <a href="https://register.geonorge.no/standar
 </ul>
 </div>
 <table id="tab-kvalitetselementer-i-vektorisering" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 27. Kvalitetselementer i vektorisering</caption>
+<caption class="title">Tabell 28. Kvalitetselementer i vektorisering</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7467,10 +7558,10 @@ Samsvaret bør vurderes basert på senter av punktskyens «målestøy» da dette
 <div class="sect3">
 <h4 id="_egnethet_av_vektorisering_til_fremstilling_av_vektordata">9.4.1. Egnethet av vektorisering til fremstilling av vektordata</h4>
 <div class="paragraph">
-<p>Ulike typer av punktsky kan benyttes som grunnlag for vektorisering av FKB-datasett, avhengig av hvilken objekttype og hvilke kvalitetskrav som gjelder. Valg av datasett og metode har stor betydning for nøyaktigheten og detaljnivået på resultatet, og det er derfor viktig å vurdere egnetheten for hvert enkelt formål. <a href="#tab-anbefalte-punktskydatasett-for-vektorisering">Tabell 28</a> gir eksempler på punktsky/modell som egner seg for vektorisering av ulike relevante datasett, sammen med kommentarer om relevante metoder og eventuelle begrensninger. Eksemplene vil endre seg i takt med teknologiutviklingen.</p>
+<p>Ulike typer av punktsky kan benyttes som grunnlag for vektorisering av FKB-datasett, avhengig av hvilken objekttype og hvilke kvalitetskrav som gjelder. Valg av datasett og metode har stor betydning for nøyaktigheten og detaljnivået på resultatet, og det er derfor viktig å vurdere egnetheten for hvert enkelt formål. <a href="#tab-anbefalte-punktskydatasett-for-vektorisering">Tabell 29</a> gir eksempler på punktsky/modell som egner seg for vektorisering av ulike relevante datasett, sammen med kommentarer om relevante metoder og eventuelle begrensninger. Eksemplene vil endre seg i takt med teknologiutviklingen.</p>
 </div>
 <table id="tab-anbefalte-punktskydatasett-for-vektorisering" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 28. Eksempler på datasett egnethet for vektorisering fra punktsky/modell</caption>
+<caption class="title">Tabell 29. Eksempler på datasett egnethet for vektorisering fra punktsky/modell</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -7857,10 +7948,10 @@ kan foretas umiddelbart. Materialet skal være tydelig merket med eierens navn.<
 <p>Bildeoppløsning (GSD) bestemmer hvilken kvalitet som kan forventes ved kartkonstruksjon (jamfør Produktspesifikasjon FKB), aerotriangulering, fremstilling av DTM eller ortofoto og så videre. Bildeoppløsningen må være god nok til at kartkonstruktøren kan identifisere alle objektene som skal konstrueres, og til at nøyaktigheten blir som forutsatt.</p>
 </div>
 <div class="paragraph">
-<p>På denne bakgrunn benyttes som oftest følgende GSD til de ulike FKB-standardene, se <a href="#tab-FKB-GSD">Tabell 29</a>.</p>
+<p>På denne bakgrunn benyttes som oftest følgende GSD til de ulike FKB-standardene, se <a href="#tab-FKB-GSD">Tabell 30</a>.</p>
 </div>
 <table id="tab-FKB-GSD" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 29. Eksempler på sammenheng mellom FKB standard og GSD</caption>
+<caption class="title">Tabell 30. Eksempler på sammenheng mellom FKB standard og GSD</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7891,10 +7982,10 @@ kan foretas umiddelbart. Materialet skal være tydelig merket med eierens navn.<
 </tbody>
 </table>
 <div class="paragraph">
-<p><a href="#tab-tolkning-flyhøyde">Tabell 30</a> gir informasjon om begrensninger i muligheten til å tolke bildene. Tabellen er basert på analog fotografering, tilsvarende tabell er ikke utarbeidet for fotografering med digitalt kamera. (Kilde: «Handbok till mätningskunngjörelse – Fotogrammetri»).</p>
+<p><a href="#tab-tolkning-flyhøyde">Tabell 31</a> gir informasjon om begrensninger i muligheten til å tolke bildene. Tabellen er basert på analog fotografering, tilsvarende tabell er ikke utarbeidet for fotografering med digitalt kamera. (Kilde: «Handbok till mätningskunngjörelse – Fotogrammetri»).</p>
 </div>
 <table id="tab-tolkning-flyhøyde" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 30. Eksempler på vanskeligheter ved tolkning av objekter i bildene fra ulike flyhøyder</caption>
+<caption class="title">Tabell 31. Eksempler på vanskeligheter ved tolkning av objekter i bildene fra ulike flyhøyder</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -8118,7 +8209,7 @@ av denne lisensen og ikke kan viderebrukes</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-03-10 12:01:08 +0100
+Last updated 2026-03-09 15:01:31 +0100
 </div>
 </div>
 <script type="text/x-mathjax-config">
