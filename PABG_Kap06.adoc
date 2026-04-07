@@ -119,7 +119,7 @@ Signaleringen bør planlegges og utføres slik at fotograferingen kan starte opp
 *KRAV FOTO KJENTPUNKTNØYAKTIGHET*
 
 * Alle kjentpunkter skal måles inn med geodetiske metoder og beregnes (utjevnes) med kontroll mot grove feil i alle trinn.
-* Kjentpunktene skal måles inn og bestemmes med et standardavvik maksimalt lik ¼ av det strengeste kravet til geodata i det aktuelle prosjektet. For FKB kartlegging se xref:tab-nøyaktighet-innmåling-kjentpunkt-FKB[xrefstyle=short].
+* Kjentpunktene skal måles inn og bestemmes med et standardavvik maksimalt lik ¼ av det strengeste kravet til geodata i det aktuelle prosjektet. Eksempel for FKB kartlegging se xref:tab-nøyaktighet-innmåling-kjentpunkt-FKB[xrefstyle=short].
 * Naturlige kjentpunkter kan benyttes unntaksvis, for eksempel for å erstatte tapte signaler i kritiske posisjoner. I prosjekter med høye nøyaktighetskrav skal da et veldefinert punkt først velges i bildene og deretter måles inn i marka. I prosjekter med lavere nøyaktighetskrav, som for eksempel Omløpsfotograferingen, kan eksisterende, antatt synlige geodetiske punkter (varder, fyrlykter, og lignende med tilfredsstillende oppgitt nøyaktighet) planlegges som supplement til de signalerte kjentpunktene for å oppnå bedre kontroll i utilgjengelige områder.
 ====
 
