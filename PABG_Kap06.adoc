@@ -65,16 +65,16 @@ Fargenøyaktighet kan måles ved å måle fargen på naturlige eller kunstige fa
 For å kunne benytte fargereferansene må fargen måles med et fargespektrometer. Det måles da med referanselyskilde og observasjonsvinkel definert av «International Commission on Illumination».  Referanselyskilden bør være D65 som tilsvarer sollyset midt på dagen med en fargetemperatur på ca 6504 kelvin og observasjonsvinkel bør være 10°. Observasjonsvinkelen refereres til øyets observasjonsvinkel. Målt farger og korresponderende fargereferanser i bildet sammenlignes i fargerommet CIELAB, hvor avstanden mellom dem beregnes. Denne avstanden kalles ofte ∆E.  Når ∆E verdien er under 1 er det vanskelig å se forskjell på fargene. Verdier over 2 er lett å se forskjell på.
 
 
-[[tabBildekvalitet]]
-.bildekvalitet
-[width="100%",options="header"]
-|====================
-| Kvalitetselement  | Beskrivelse | Kvalitetsmål
-| GSD |Bakkeoppløsning  | Innenfor krav.
-| GRD | Minste avstanden mellom to objekter.  |  Bør sammenfalle med produktets krav til detaljrikdom. 
-| Fargenøyaktighet|  Naturtro farger.  |  Subjektiv vurdering.  
+//[[tabBildekvalitet]]
+//.bildekvalitet
+//[width="100%",options="header"]
+//|====================
+//| Kvalitetselement  | Beskrivelse | Kvalitetsmål
+//| GSD |Bakkeoppløsning  | Innenfor krav.
+//| GRD | Minste avstanden mellom to objekter.  |  Bør sammenfalle //med produktets krav til detaljrikdom. 
+//| Fargenøyaktighet|  Naturtro farger.  |  Subjektiv vurdering.  
 
-|==================== 
+//|==================== 
 
 
 ==== Planlegging av flyfotografering (flyplan)
