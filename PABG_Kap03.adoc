@@ -1,5 +1,6 @@
-== Normative referanser
+== Referanser
 
+=== Normative referanser
 
 [#FKB]
 *[FKB]*	: https://sosi.geonorge.no/standarder/FKB_generell_del/[SOSI abstrakte spesifikasjoner – FKB generell del 5.0]
@@ -20,3 +21,9 @@
 <<GN>> er erstattet av en ny standard <<GG>>. 
 
 <<SAT>> er en tilbaketrukket standard, men enkelte deler vil bli oppdatert og videreført i en planlagt veileder.
+
+=== Fag referanser
+
+// Benytter ISO690 til å beskreve referansene
+
+*[Meißner and Berger, 2025]* : MEIßNER, Henry; BERGER, Ralf. Adaptable Siemens Star Targets for Reliable and Standardized Spatial Resolution Measurement under DIN 18740-8. The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, 2025, 48: 139-146. 
