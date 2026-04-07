@@ -324,7 +324,7 @@ image::figurer/Kap7_SammenslåingBlokk.jpg["Sammenslåing av polygoner til en sk
 
 [[kapittel-kontrollprofiler]]
 ===== Kontrollprofiler
-Kontrollprofiler skal benyttes for å kontrollere og eventuelt justere for systematisk avvik i grunnriss. Dersom mønelinjen i eksisterende FKB data oppfyller nøyaktighetskravet kan denne benyttes i grunnrissanalysen. I prosjekt utenfor bebyggelse må terrenglinjer benyttes.
+Kontrollprofiler skal benyttes for å kontrollere og eventuelt justere for systematisk avvik i grunnriss. Dersom mønelinjen i eksisterende FKB-data oppfyller nøyaktighetskravet kan denne benyttes i grunnrissanalysen. I prosjekt utenfor bebyggelse må terrenglinjer benyttes.
 
 ====
 [#krav-laser-kontrollprofiler-antall-og-plassering,reftext="Krav laser kontrollprofiler - antall og plassering"]
