@@ -1842,10 +1842,10 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 <div class="sect3">
 <h4 id="_bildekvalitet">6.1.1. Bildekvalitet</h4>
 <div class="paragraph">
-<p>En vikitg faktor ved fotografering fra luften er bildekvalitet. Det er en rekke faktorer som er med på å påvirke vår opplevese av bildekvalitet. Hva som er bra kvalitet vil bestemmes av bruken av bildene. Dersom bildene skal brukes av maskin er informasjonsmengden i bilde viktig, men når menneske skal benytte bildene er det persepsjon som er viktigs. For de fleste tilfeller vil en balangsegang mellom de to tilnærmingene være beste løsning.</p>
+<p>En viktig faktor ved fotografering fra luften er bildekvalitet. Det er en rekke faktorer som er med på å påvirke vår opplevelse av bildekvalitet. Hva som er bra kvalitet vil bestemmes av bruken av bildene. Dersom bildene skal brukes av maskin er informasjonsmengden i bilde viktig, men når menneske skal benytte bildene er det persepsjon som er viktigst. For de fleste tilfeller vil en balansegang mellom de to tilnærmingene være beste løsning.</p>
 </div>
 <div class="paragraph">
-<p>I kvaliatitesmodellen kan vi knytte ulike bildekvalitetsmål til kategorien egenskapkvalitet - Kvantitativ egenskaps nøyaktighet. Noen vil også kunne havne under kategorien egenskapkvalitet - Ikke kvantitativ egenskapsriktighet.</p>
+<p>I kvalitetsmodellen kan vi knytte ulike bildekvalitetsmål til kategorien egenskapkvalitet - Kvantitativ egenskaps nøyaktighet. Noen vil også kunne havne under kategorien egenskapkvalitet - Ikke kvantitativ egenskapsriktighet.</p>
 </div>
 <div class="sect4">
 <h5 id="_oppløsning">6.1.1.1. Oppløsning</h5>
@@ -1853,20 +1853,26 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 <p>Vi skiller mellom to ulike oppløsninger "Ground sample distance (GSD) og Ground Resolved Distance (GRD).</p>
 </div>
 <div class="paragraph">
-<p>GSD</p>
+<p>GSD er avstanden på bakken som tilsvarer en piksel i kameraet. GSD beregnes etter <a href="#formel-GSD">formel 1</a>, hvor c er pikselstørrelsen i kameraets bildesensor, H er flyhøyden over bakken og f er fokallengden til kameraet.</p>
 </div>
-<div class="paragraph">
-<p>\(GSD = \frac{c \cdot flyhøyde}{f}\)</p>
-</div>
-<div class="paragraph">
-<p>GSD = (c * flyhøyde) / f</p>
-</div>
-<div class="paragraph">
-<p>GRD</p>
-</div>
-<div class="stemblock">
+<div id="formel-GSD" class="stemblock">
 <div class="content">
-\[r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\pi} \right)\]
+\$\begin{equation}
+GSD = \frac{c \cdot H}{f}
+\end{equation}\$
+</div>
+</div>
+<div class="paragraph">
+<p>GRD beskriver den minste avstanden mellom to objekter på bakken som et kamera klarer å skille fra hverandre i bildet. Dersom avstanden blir mindre, vil objektene smelte sammen i bildet. Beregningene av GRD utføres etter fremgangsmåte beskrevet i <strong>[Meißner and Berger, 2025]</strong>.</p>
+</div>
+<div class="paragraph">
+<p>For å beregne GRD må det anvendes en Siemens stjerne innenfor prosjektområdet. Dette er en sirkel bestående av like store svarte og hvite segmenter. Anbefalte antall segmenter følger <strong>[Meißner and Berger, 2025]</strong> og bør ligge mellom 16 og 96 segmenter. Radiusen til stjernen beregnes etter <a href="#formel-radius">formel 2</a>. Når <a href="#formel-radius">formel 2</a> benyttes bør det etableres svart og hvite referanseflater som har en størrelse som sikrer helt svarte og helt hvite piksler. Dette benyttes i utregningene av GRD og styrker nøyaktigheten til beregningen.</p>
+</div>
+<div id="formel-radius" class="stemblock">
+<div class="content">
+\$\begin{equation}
+r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\pi} \right)
+\end{equation}\$
 </div>
 </div>
 </div>
