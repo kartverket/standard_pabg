@@ -19,6 +19,12 @@ Kapittelet avgrenses til å gjelde følgende:
 
 Dette avsnittet angir krav og retningslinjer til planlegging av flyfotografering, kjentpunkter for aerotriangulering og signalering av disse. Oppdragstaker skal utføre planleggingen og det skal utarbeides en kombinert fly- og signalplan.
 
+==== Bildekvalitet
+
+En vikitg faktor ved fotografering fra luften er bildekvalitet. Det er en rekke faktorer som er med på å påvirke vår opplevese av bildekvalitet. Hva som er bra kvalitet vil bestemmes av bruken av bildene. Dersom bildene skal brukes av maskin er informasjonsmengden i bilde viktig, men når menneske skal benytte bildene er det persepsjon som er viktigs. For de fleste tilfeller vil en balangsegang mellom de to tilnærmingene være beste løsning. 
+
+I kvaliatitesmodellen kan vi knytte ulike bildekvalitetsmål til kategorien egenskapkvalitet - Kvantitativ egenskaps nøyaktighet. 
+
 
 ==== Planlegging av flyfotografering (flyplan)
 
