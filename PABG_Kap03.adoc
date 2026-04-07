@@ -22,6 +22,12 @@
 
 <<SAT>> er en tilbaketrukket standard, men enkelte deler vil bli oppdatert og videreført i en planlagt veileder.
 
+=== Juridiske referanser
+
+// må poengtere at det gjelder til enhver tid gjeldene versjon
+
+
+
 === Fag referanser
 
 // Benytter ISO690 til å beskreve referansene
