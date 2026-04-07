@@ -32,7 +32,7 @@ I PABG har vi formalisert et rammeverk for å kvantifisere bildekvalitetsegenska
  
 ===== Oppløsning
 
-Vi skiller mellom to ulike oppløsninger bakkeoppløsning eller "Ground sample distance" (GSD) og "Ground Resolved Distance" (GRD).
+Vi skiller mellom to ulike oppløsninger: bakkeoppløsning eller "Ground sample distance" (GSD) og "Ground Resolved Distance" (GRD).
 
 GSD er avstanden på bakken som tilsvarer en piksel i kameraet. GSD beregnes etter <<formel-GSD>>, hvor p er pikselstørrelsen i kameraets bildesensor, H er flyhøyden over bakken og f er kamerakonstanten til kameraet. 
 
