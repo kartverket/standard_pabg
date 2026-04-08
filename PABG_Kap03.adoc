@@ -22,22 +22,21 @@
 
 <<SAT>> er en tilbaketrukket standard, men enkelte deler vil bli oppdatert og videreført i en planlagt veileder.
 
-=== Juridiske referanser
+=== Juridiske og regulative referanser
 
-Ikke fullstendig liste på juridiske referanser som man må ta hensyn til ved publisering av standarden. Den til enhver tid gjeldene versjon skal brukes.
+Det er de til en hver tid gjeldende juridiske og regulative føringer som berører standardens tematikk, som skal benyttes. Listen under viser et utvalg av aktuelle referanser: 
 
-Personopplysningsloven, som består av nasjonale regler og EUs personvernforordning (også kalt GDPR - General Data Protection Regulation).
+* https://lovdata.no/dokument/NL/lov/2018-06-15-38[Lov om behandling av personopplysninger] (også kalt GDPR - General Data Protection Regulation)
+* https://lovdata.no/dokument/SF/forskrift/2018-06-22-951[Forskrift om kontroll med informasjon innhentet med luftbårne sensorsystemer]
+* https://nsm.no/fysisk/luftbarne-sensorsystemer/[Nasjonal sikkerhetsmyndighet (NSM)] fører kontroll med fotografering og filming fra luften og andre luftbårne sensorsystemer for å skjerme detaljer ved militære og andre forbudsområder.
+* https://lovdata.no/dokument/NL/lov/2025-06-20-96[Lov om dokumentasjon og arkiv]
+* Stortingsproposisjon nr.1 1979-1980 som viser til Kartverkets oppdrag om å etablere et bildearkiv og sikre at alle flybilder og fjernmåledata arkiveres i dette.
 
-Nasjonal sikkermyndighet (NSM) fører kontroll av datainnsamling med fotografering, laserskanning og andre luftbårne sensorsystemer, for å skjerme detaljer ved militære og andre forbudsområder. https://nsm.no/fysisk/luftbarne-sensorsystemer/[NSM luftbårne sensorsystemer]. NSM har kart for sensorforbudsområder. +
-https://lovdata.no/dokument/SF/forskrift/2018-06-22-951[Forskrift om kontroll med informasjon innhentet med luftbårne sensorsystemer]
-
-I mange tilfeller er et krav om operative flytillatelser fra luftfartstilsynet.
-https://www.luftfartstilsynet.no/[Luftfartstilsynet]
+* https://www.luftfartstilsynet.no/[Luftfartstilsynet]. Krav om operative flytillatelser
+* https://lovdata.no/dokument/NL/lov/2005-06-17-101/KAPITTEL_8#KAPITTEL_8[Matrikkelloven kapittel 8] - Om geodetisk grunnlag og oppmålingsarbeid
 
 
-// må poengtere at det gjelder til enhver tid gjeldene versjon
-
-// huskeliste: GDPR, forbudsområder, DSA vertikalbilder, Spesielle hensyn knyttet til signalering (.
+// huskeliste: DSA vertikalbilder
 
 === Faglige referanser
 
