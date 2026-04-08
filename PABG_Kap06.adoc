@@ -511,6 +511,11 @@ Ved beregning av GNSS/INS-dataene står oppdragstager fritt til å velge egnet b
 
 Beregningsarbeidet leder fram til en fil med ytreorienteringselementer for hvert bilde, i det koordinat- og høydesystem som er spesifisert av oppdragsgiver. Ytre orienteringsparameterne skal referere seg til kameraets projeksjonssenter.
 
+Ved avtale så er det tillatt å bruke flere sensorer (GNSS, IMU og AT) enn det som er definert i dette kapittelet i posisjon- og orienteringsbestemmelse av flybildene. 
+
+Samtidig georeferering av flere sensorplattformer som flybildekamera og laserskanner er tillatt ved avtale. Alle kravene for hver sensor skal følges. Det kreveres at vinkler og avstander mellom koordinatsystemet til hvert sensorsystem er kjent. Dersom vinkler og avstander mellom koordinatsystemene endres under datafangsten skal denne endringen måles og anvendes i navigasjonsløsningen for hvert enkelt sensorsystem. Hvis det er avvik mellom kravene som stilles for hver sensor, så brukes det strengeste kravet.
+
+
 ====
 [#krav-foto-beregning-gnss-ins,reftext="Krav foto beregning GNSS/INS"]
 *KRAV FOTO BEREGNING GNSS/INS*
