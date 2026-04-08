@@ -375,6 +375,10 @@ Laserskanning kan gjerne gjennomføres dersom det er skyer over flyet. Ved fukti
 ==== Prosessering av GNSS/INS data
 Krav til GNSS/INS prosessering for laserskanning baserer seg på krav til GNSS/INS prosessering for Fotogrammetri og det vises til relevante paragrafer i <<kapittel-beregning-av-GNSSINS-data>>. 
 
+Ved avtale så er det tillatt å bruke flere sensorer (GNSS, IMU og stripejustering) enn det som er definert i dette kapittelet i posisjon- og orienteringsbestemmelse av punktskya. 
+
+Samtidig georeferering av flere sensorplattformer som flybildekamera og laserskanner er tillatt ved avtale. Alle kravene for hver sensor skal følges. Det kreveres at vinkler og avstander mellom koordinatsystemet til hvert sensorsystem er kjent. Dersom vinkler og avstander mellom koordinatsystemene endres under datafangsten skal denne endringen måles og anvendes i navigasjonsløsningen for hvert enkelt sensorsystem. Hvis det er avvik mellom kravene som stilles for hver sensor, så brukes det strengeste kravet.
+
 Krav til rapportering er detaljert i <<kapittel-egenkontroll-og-rapportering-fotorapport>>, kategori «GNSS/INS».
 
 [[kapittel-matching-av-punktsky]]

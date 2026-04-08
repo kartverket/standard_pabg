@@ -1865,15 +1865,15 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 <p>I kvalitetsmodellen kan vi knytte ulike bildekvalitetsmål til kategorien egenskapkvalitet - Kvantitativ egenskaps nøyaktighet. Noen vil også kunne havne under kategorien egenskapkvalitet - Ikke kvantitativ egenskapsriktighet.</p>
 </div>
 <div class="paragraph">
-<p>I PABG har vi formalisert et rammeverk for å kvantifisere bildekvalitetsegenskapene oppløsning og fargenøyaktighet. Dette kan brukes som utgangspunkt for kravstilling i produktspesifikasjon eller bestillingdokumentene.</p>
+<p>I denne standarden er det formalisert et rammeverk for å kvantifisere bildekvalitetsegenskapene oppløsning og fargenøyaktighet. Dette kan brukes som utgangspunkt for kravstilling i produktspesifikasjon eller bestillingdokumentene.</p>
 </div>
 <div class="sect4">
 <h5 id="_oppløsning">6.1.1.1. Oppløsning</h5>
 <div class="paragraph">
-<p>Vi skiller mellom to ulike oppløsninger bakkeoppløsning eller "Ground sample distance" (GSD) og "Ground Resolved Distance" (GRD).</p>
+<p>Vi skiller mellom to ulike oppløsninger: bakkeoppløsning eller "Ground sample distance" (GSD) og "Ground Resolved Distance" (GRD).</p>
 </div>
 <div class="paragraph">
-<p>GSD er avstanden på bakken som tilsvarer en piksel i kameraet. GSD beregnes etter <a href="#formel-GSD">formel 1</a>, hvor p er pikselstørrelsen i kameraets bildesensor, H er flyhøyden over bakken og f er kamerakonstanten til kameraet.</p>
+<p>Bakkeoppløsning (GSD) er avstanden på bakken som tilsvarer en piksel i kameraet. GSD beregnes etter <a href="#formel-GSD">formel 1</a>, hvor p er pikselstørrelsen i kameraets bildesensor, H er flyhøyden over bakken og f er kamerakonstanten til kameraet.</p>
 </div>
 <div id="formel-GSD" class="stemblock">
 <div class="content">
@@ -1886,7 +1886,7 @@ GSD = \frac{p \cdot H}{f}
 <p>GRD beskriver den minste avstanden mellom to objekter på bakken som et kamera klarer å skille fra hverandre i bildet. Dersom avstanden blir mindre, vil objektene smelte sammen i bildet. Beregningene av GRD utføres etter fremgangsmåte beskrevet i <strong>[Meißner and Berger, 2025]</strong>.</p>
 </div>
 <div class="paragraph">
-<p>For å beregne GRD må det anvendes en Siemens stjerne innenfor prosjektområdet. Dette er en sirkel bestående av like store svarte og hvite segmenter. Anbefalte antall segmenter s følger <strong>[Meißner and Berger, 2025]</strong> og bør ligge mellom 16 og 96 segmenter. Radiusen til stjernen beregnes etter <a href="#formel-radius">formel 2</a>. Når <a href="#formel-radius">formel 2</a> benyttes bør det etableres svart og hvite referanseflater som har en størrelse som sikrer helt svarte og helt hvite piksler. Dette benyttes i utregningene av GRD og styrker nøyaktigheten til beregningen.</p>
+<p>For å beregne GRD må det anvendes en Siemensstjerne innenfor prosjektområdet. Dette er en sirkel bestående av like store svarte og hvite segmenter. Anbefalt totalt antall segmenter s følger <strong>[Meißner and Berger, 2025]</strong> og bør ligge mellom 16 og 96 segmenter. Radiusen til stjernen beregnes etter <a href="#formel-radius">formel 2</a>. Når <a href="#formel-radius">formel 2</a> benyttes bør det etableres svart og hvite referanseflater som har en størrelse som sikrer helt svarte og helt hvite piksler. Dette benyttes i utregningene av GRD og styrker nøyaktigheten til beregningen.</p>
 </div>
 <div id="formel-radius" class="stemblock">
 <div class="content">
@@ -1902,7 +1902,7 @@ r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\p
 <p>Fargenøyaktighet kan måles ved å måle fargen på naturlige eller kunstige fargereferanser innad i prosjektområdet. Fargereferansen bør ha en homogen farge, tilnærmet horisontal og ha en størrelse som sikrer 3x3 piksler som kun er påvirket av fargereferansens farge og ikke omliggende flater. For pansharpenings systemer med ratio 1:3 bør da fargereferanse ha en størrelse på 9x9 piksler. Tilsvarende for bayer pattern systemer bør størrelsen være 6x6 piksler.</p>
 </div>
 <div class="paragraph">
-<p>For å kunne benytte fargereferansene må fargen måles med et fargespektrometer. Det måles da med referanselyskilde og observasjonsvinkel definert av «International Commission on Illumination».  Referanselyskilden bør være D65 som tilsvarer sollyset midt på dagen med en fargetemperatur på ca 6504 kelvin og observasjonsvinkel bør være 10°. Observasjonsvinkelen refereres til øyets observasjonsvinkel. Målt farger og korresponderende fargereferanser i bildet sammenlignes i fargerommet CIELAB, hvor avstanden mellom dem beregnes. Denne avstanden kalles ofte ∆E.  Når ∆E verdien er under 1 er det vanskelig å se forskjell på fargene. Verdier over 2 er lett å se forskjell på.</p>
+<p>For å kunne benytte fargereferansene må fargen måles med et fargespektrometer. Det måles da i forhold til en referanselyskilde og observasjonsvinkel definert av «International Commission on Illumination».  Referanselyskilden bør være D65 som tilsvarer sollyset midt på dagen med en fargetemperatur på ca 6504 kelvin og observasjonsvinkel bør være 10°. Observasjonsvinkelen refereres til øyets observasjonsvinkel. Målt farger og korresponderende fargereferanser i bildet sammenlignes i fargerommet CIELAB, hvor avstanden mellom dem beregnes. Denne avstanden kalles ofte ∆E.  Når ∆E verdien er under 1 er det vanskelig å se forskjell på fargene. Farger med ∆E verdier over 2 er lette å se forskjell på.</p>
 </div>
 </div>
 </div>
@@ -2928,6 +2928,12 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 </div>
 <div class="paragraph">
 <p>Beregningsarbeidet leder fram til en fil med ytreorienteringselementer for hvert bilde, i det koordinat- og høydesystem som er spesifisert av oppdragsgiver. Ytre orienteringsparameterne skal referere seg til kameraets projeksjonssenter.</p>
+</div>
+<div class="paragraph">
+<p>Ved avtale så er det tillatt å bruke flere sensorer (GNSS, IMU og AT) enn det som er definert i dette kapittelet i posisjon- og orienteringsbestemmelse av flybildene.</p>
+</div>
+<div class="paragraph">
+<p>Samtidig georeferering av flere sensorplattformer som flybildekamera og laserskanner er tillatt ved avtale. Alle kravene for hver sensor skal følges. Det kreveres at vinkler og avstander mellom koordinatsystemet til hvert sensorsystem er kjent. Dersom vinkler og avstander mellom koordinatsystemene endres under datafangsten skal denne endringen måles og anvendes i navigasjonsløsningen for hvert enkelt sensorsystem. Hvis det er avvik mellom kravene som stilles for hver sensor, så brukes det strengeste kravet.</p>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -6309,6 +6315,12 @@ målepunktene. I praksis så vil oppmerking være gunstig for å sikre at samme 
 <h4 id="_prosessering_av_gnssins_data">7.3.1. Prosessering av GNSS/INS data</h4>
 <div class="paragraph">
 <p>Krav til GNSS/INS prosessering for laserskanning baserer seg på krav til GNSS/INS prosessering for Fotogrammetri og det vises til relevante paragrafer i <a href="#kapittel-beregning-av-GNSSINS-data">Kapittel 6.3.3, &#8220;Beregning av GNSS/INS data&#8221;</a>.</p>
+</div>
+<div class="paragraph">
+<p>Ved avtale så er det tillatt å bruke flere sensorer (GNSS, IMU og stripejustering) enn det som er definert i dette kapittelet i posisjon- og orienteringsbestemmelse av punktskya.</p>
+</div>
+<div class="paragraph">
+<p>Samtidig georeferering av flere sensorplattformer som flybildekamera og laserskanner er tillatt ved avtale. Alle kravene for hver sensor skal følges. Det kreveres at vinkler og avstander mellom koordinatsystemet til hvert sensorsystem er kjent. Dersom vinkler og avstander mellom koordinatsystemene endres under datafangsten skal denne endringen måles og anvendes i navigasjonsløsningen for hvert enkelt sensorsystem. Hvis det er avvik mellom kravene som stilles for hver sensor, så brukes det strengeste kravet.</p>
 </div>
 <div class="paragraph">
 <p>Krav til rapportering er detaljert i <a href="#kapittel-egenkontroll-og-rapportering-fotorapport">Kapittel 6.3.5, &#8220;Egenkontroll og rapportering (fotorapport)&#8221;</a>, kategori «GNSS/INS».</p>
