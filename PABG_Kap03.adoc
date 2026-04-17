@@ -6,7 +6,7 @@
 *[FKB]*	: https://sosi.geonorge.no/standarder/FKB_generell_del/[SOSI abstrakte spesifikasjoner – FKB generell del 5.0]
 
 [#G]
-*[G]* : https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/geodatakvalitet-1.0-standarder-geografisk-informasjon.pdf[Geodatakvalitet, versjon 1.0 2015]
+*[G]* : https://standarder.geonorge.no/sosi/standarder-geografisk-informasjon/geodatakvalitet/1.0/geodatakvalitet-10-standarder-geografisk-informasjon.pdf[Geodatakvalitet, versjon 1.0 2015]
 
 [#GN]
 *[GN]* : https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/grunnlagsnett-1.1-standarder-geografisk-informasjon.pdf[Grunnlagsnett, versjon 1.1 2009]
