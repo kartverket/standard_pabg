@@ -10,10 +10,10 @@ Dette kapittelet angir krav og retningslinjer for følgende arbeider:
 
 Kapittelet avgrenses til å gjelde følgende:
 
-* Bruk av digitalt vertikalbildekamera.
+* Bruk av digitale flybildekamera.
 * Bruk av GNSS/INS-støttet fotografering.
 * Bruk av digital fotogrammetrisk arbeidsstasjon / ren programvarebasert produktfremstilling.
-* Fremstilling av produkter definert i <<FKB>> og <<POF>>
+* Fremstilling av produkter definert i <<FKB>> og <<POF>>.
 
 
 [[kapittel-fly-og-signalplanlegging]]
@@ -94,8 +94,8 @@ For å kunne benytte fargereferansene må fargen måles med et fargespektrometer
 [width="100%",options="header"]
 |====================
 |Parameter|Krav
-|GSD|GSD bestemmes av oppdragsgiver og velges slik at kravene til fullstendighet og nøyaktighet blir oppfylt. Se xref:tab-FKB-GSD[xrefstyle=short].
-|Flyhøyde|Flyhøyden skal velges slik at kravet til GSD oppfylles for hver enkelt flystripe. Dersom annet ikke avtales skal GSD refereres til midlere terrenghøyde i hver stripe. Det tillates et planlagt avvik i GSD på maks. + 10 %. Eventuelle avvik fra dette skal avtales.
+|Bakkeoppløsning (GSD)| Bakkeoppløsning (GSD) bestemmes av oppdragsgiver og velges slik at kravene til fullstendighet og nøyaktighet blir oppfylt. Se xref:tab-FKB-GSD[xrefstyle=short].
+|Flyhøyde|Flyhøyden skal velges slik at kravet til bakkeoppløsning (GSD) oppfylles for hver enkelt flystripe. Dersom annet ikke avtales skal GSD refereres til midlere terrenghøyde i hver stripe. Det tillates et planlagt avvik i GSD på maksimalt + 10 %. Eventuelle avvik fra dette skal avtales.
 |Bildeblokk|Flystripene skal plasseres optimalt, slik at den resulterende bildeblokka får en mest mulig regulær form og flest mulig parallelt overlappende striper (for å sikre best mulig bildeorientering).
 |Innsyn og sammenbinding|Flystripene skal plasseres, og overdekningen skal eventuelt økes, slik at det sikres best mulig innsyn i alle områder og god bilde- og stripesammenbinding i områder med mye vann.
 |Sideoverdekning|Sideoverdekningen skal i gjennomsnitt ikke være mindre enn avtalt verdi. På høyeste punkt mellom stripene kan det planlegges ned til 5 % sideoverdekning. Lengre strekk med slik marginal sideoverdekning skal ikke forekomme.
@@ -241,13 +241,7 @@ Plassering av fastmerker eller signal i eller på automatisk fredete kulturminne
 |Kontrast|Det skal sørges for god kontrast rundt signalet. Kontrastfeltet skal være minst halvparten av signalbredden (til hver side av signalet).
 Fjell, stein, sand, grus, asfalt eller betong gir dårlig kontrast, og det skal da lages kunstig kontrast rundt signalet. Kontrastområdet skal være horisontalt flatt/plant og ha samme høyde som signalet.
 |Bolthøyde|Høydeforskjellen mellom punktets høydereferanse og signalmidt skal alltid måles. Ved signalering av eksisterende punkter skal punktets høydereferanse observert i marka verifiseres mot den oppgitte og målt bolthøyde skal verifiseres mot oppgitt bolthøyde. Ved uoverensstemmelse eller dersom bolten er borte eller bøyd skal som hovedregel den oppgitte bolthøyden antas å være korrekt.
-|Innsyn|Signalet skal være synlig i alle bildene/stripene som er planlagt å dekke punktet (for å sikre at det er synlig også i bilder/striper som eventuelt fotograferes på ulike datoer eller flysesjoner). Vegetasjon som kan hindre dette skal ryddes bort. Som tommelfingerregel kan benyttes at synslinjen fra et signal på marka til flyet skal gå på skrå med en vinkel på opptil 40 gon fra senit, se <<#imgInnsynSign>> og <<#imgInnsynSor>>.
-|Skygge|Skygge på signalet skal unngås. De samlede retningslinjene til innsyn går fram av <<#imgInnsynSign>> og <<#imgInnsynSor>>. Det skal være godt innsyn til signalet hele veien rundt. For å unngå skygge på signalet skal det være innsyn ned til 67 gon fra vertikalen i en sektor mot sør. Retningslinjene forutsetter fotografering i det mest vanlige tidsrommet på dagen.
-|Rydding av vegetasjon|Rydding av vegetasjon skal utføres med varsomhet. På privat grunn skal alltid grunneieren kontaktes før man går i gang med rydding.
-|Erstatningspunkt|Dersom planlagt posisjon blir funnet å være ubrukelig på grunn av innsyn, eller lignende skal et nytt eller eksisterende punkt etableres så nær som mulig det opprinnelig planlagte.
-|===
-====
-
+|Innsyn a|Signalet skal være synlig i alle bildene/stripene som er planlagt å dekke punktet (for å sikre at det er synlig også i bilder/striper som eventuelt fotograferes på ulike datoer eller flysesjoner). Vegetasjon som kan hindre dette skal ryddes bort. Som tommelfingerregel kan benyttes at synslinjen fra et signal på marka til flyet skal gå på skrå med en vinkel på opptil 40 gon fra senit, se <<#imgInnsynSign>> og <<#imgInnsynSor>>.
 
 .Innsyn rundt signalet
 [#imgInnsynSign]
@@ -259,10 +253,24 @@ image::figurer/Kap6_InnsynRundtSignal.png[InnsynSign,400,align="center"]
 //[caption="Figure 2:"]
 image::figurer/Kap6_InnsynMotSor.png[InnsynSor,400,align="center"]
 
-
-Krav til signalstørrelse settes til 2 til 3 ganger GSD, eller etter avtale med oppdragsgiver. Eksempler kan sees i <<tab-krav-signalstørrelser>>. Alle typer signaler i <<#imgSignalutforming>> kan benyttes for de forskjellige oppløsningene. For <<#imgSignaler>> vises eksempler på signal som overholder krav til planhet (1) og signaler som ikke overholder krav til planhet (2 og 3).
+|Skygge|Skygge på signalet skal unngås. De samlede retningslinjene til innsyn går fram av <<#imgInnsynSign>> og <<#imgInnsynSor>>. Det skal være godt innsyn til signalet hele veien rundt. For å unngå skygge på signalet skal det være innsyn ned til 67 gon fra vertikalen i en sektor mot sør. Retningslinjene forutsetter fotografering i det mest vanlige tidsrommet på dagen.
+|Rydding av vegetasjon|Rydding av vegetasjon skal utføres med varsomhet. På privat grunn skal alltid grunneieren kontaktes før man går i gang med rydding.
+|Erstatningspunkt|Dersom planlagt posisjon blir funnet å være ubrukelig på grunn av innsyn, eller lignende skal et nytt eller eksisterende punkt etableres så nær som mulig det opprinnelig planlagte.
+|Signaleringsstørrelse | Krav til signalstørrelse settes til 2 til 3 ganger GSD, eller etter avtale med oppdragsgiver. Anbefalte signalstørrelser kan sees i <<tab-krav-signalstørrelser>>. Alle typer signaler i <<#imgSignalutforming>> kan benyttes for de forskjellige oppløsningene. For <<#imgSignaler>> vises eksempler på signal som overholder krav til planhet (1) og signaler som ikke overholder krav til planhet (2 og 3).
+|Signaltyper a|
+.Ulike signaltyper (a, b, c og d)
+[#imgSignalutforming]
+//[caption="Figure 3:"]
+image::figurer/Kap6_Signalutforming.png[Signalutforming,400,align="center"]
+|===
+====
 
 :xrefstyle: full
+
+
+====
+[#anbefaling-foto-signalstørrelser,reftext="Anbefaling foto signalstørrelser"]
+*ANBEFALING FOTO SIGNALSTØRRELSER*
 
 [[tab-krav-signalstørrelser]]
 .Anbefalte signalstørrelser
@@ -278,10 +286,7 @@ Krav til signalstørrelse settes til 2 til 3 ganger GSD, eller etter avtale med 
 |25|60|120
 |====
 
-.Ulike signaltyper (a, b og c)
-[#imgSignalutforming]
-//[caption="Figure 3:"]
-image::figurer/Kap6_Signalutforming.png[Signalutforming,400,align="center"]
+====
 
 
 image::figurer/Kap6_LovligSignal.png[Signaler_lovlig,600,align="center"]
@@ -328,7 +333,7 @@ For krav til rapportering av innmålingsarbeidet vises til standarden <<SAT>>.
 
 [[kapittel-flyfotografering]]
 === Flyfotografering
-Dette avsnittet angir krav og retningslinjer til gjennomføring av fotograferingen, til fremstilling av GNSS/INS-data og bilder samt til egenkontroller og rapportering av arbeidene. For krav til leveranse av flyfoto vises det til https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/vertikalbilde[Produktspesifikasjon Vertikalbilde, versjon 2.2 2017].
+Dette avsnittet angir krav og retningslinjer til gjennomføring av fotograferingen, til fremstilling av GNSS/INS-data og bilder samt til egenkontroller og rapportering av arbeidene. For krav til leveranse av flyfoto vises det til nyeste versjon av https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/vertikalbilde[Produktspesifikasjon Vertikalbilde, versjon 2.2 2017].
 
 
 ==== Krav til kamerasystem
@@ -401,15 +406,15 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 |===
 |Moment|Krav
 |Klarmelding|Dersom ikke annet er avtalt skal oppdragsgiver for fotograferingen gi skriftlig klarmelding om at fotografering kan starte. Klarmelding skal gis så tidlig som mulig, og for hvert eventuelle delområde. Klarmeldingen(e) skal bekreftes skriftlig av oppdragstaker.
-|Kameratype|Dersom ikke annet er avtalt skal fotograferingen utføres med geometrisk og radiometrisk kalibrert storformat digitalt kamera. Se kapittel <<Krav til kamera>> for krav til instrumenter, kalibrering og kontroll.
+|Kameratype|Dersom ikke annet er avtalt skal fotograferingen utføres med geometrisk og radiometrisk kalibrert storformat digitalt kamera. Se <<Krav til kamera>> for krav til instrumenter, kalibrering og kontroll.
 |Eksponeringskontroll|Kameraet skal ha eksponeringskontroll og denne skal benyttes aktivt under fotografering for å unngå skadelig over- og undereksponering, uskarpe bilder og tap av detaljer.
 |Fotograferingsperiode|Et prosjekt skal fotograferes over et kortest mulig tidsrom og det skal tilstrebes at flystriper fotograferes mest mulig samlet. Ved fotografering over flere dager eller GNSS-sesjoner skal det sørges for at tilstrekkelig med kjentpunkter blir dekket slik at systematiske GNSS-skift kan bestemmes for hver dag/hver fotosesjon.
 |Fotograferingstidspunkt|Mengden av skygge i bildene skal forsøkes holdt så lavt som mulig ved at fotografering blir utført på en tid på dagen som er mest mulig gunstig med hensyn til overflateforhold og topografi.
 |Fotograferingsavbrudd|Ved avbrudd i fotografering i en flystripe skal hele stripen som hovedregel fotograferes på ny. Unntakene er striper med lengde tilsvarende minimum 20 bilder ved 60 % lengdeoverdekning, eller der fortsettelse kan skje kort tid etter avbrudd og i samme fotosesjon. Dersom det ikke er mulig å fly om stripen før etter lengre tid skal oppdragstaker i samråd med oppdragsgiver vurdere hva som er til prosjektets beste med hensyn til nøyaktighet og samlet visuell kvalitet i bildene.
 |Stripeskjøting|Dersom striper må skjøtes skal det fotograferes tilstrekkelig overlapp over bruddet slik at nøyaktighetstap unngås og slik at stereodekning over bruddet fra begge sider blir mulig. Det skal være minst 4 bilder overlapp over stripebruddet.
 |Fotograferingsretning|Parallelle nabostriper skal som hovedregel fotograferes i motsatt retning.
-|Solhøyde|Krav til min. solhøyde under fotografering &#8805; 27^o^ eller etter avtale.
-|Skyer og skyskygger a|Krav til maks. innhold av skyer og skyskygger under fotografering:
+|Solhøyde|Krav til minste solhøyde under fotografering &#8805; 27^o^ eller etter avtale.
+|Skyer og skyskygger a|Krav til maksimalt innhold av skyer og skyskygger under fotografering:
 
 * Skyer: 0 % av prosjektområdet
 * Skyskygger: < 3 % av prosjektområdet
@@ -435,13 +440,13 @@ Avvik fra disse kravene kan aksepteres av oppdragsgiver der oppdragstaker kan do
 
 |Bakkeoppløsning 
 a| * Gjennomsnittlig GSD i prosjektområdet: Avtalt verdi
-* Maks. GSD i enkeltbilder: Avtalt verdi + 10 %
+* Maksimal GSD i enkeltbilder: Avtalt verdi + 10 %
 
 Krav til GSD kontrolleres indirekte som avvik fra planlagt/korrekt flyhøyde.
 
 |Sideoverdekning 
 a| * Gjennomsnittlig sideoverdekning: &#8805; avtalt verdi
-* Min. sideoverdekning i enkeltbilder: &#8805; 5 % (aksepteres kun lokalt på høyeste topp(er))
+* Minste sideoverdekning i enkeltbilder: &#8805; 5 % (aksepteres kun lokalt på høyeste topp(er))
 |Lengdeoverdekning
 a|* Gjennomsnittlig lengdeoverdekning: avtalt verdi
 * Lengdeoverdekning i enkeltbilder: &#8804; 5 % fra avtalt verdi 
@@ -461,7 +466,7 @@ a|* Gjennomsnittlig lengdeoverdekning: avtalt verdi
 * Informasjon om eventuelle avbrudd i flystripe.
 * Informasjon om eventuelle problemer med utstyr, værforhold, eller lignende som kan forårsake redusert kvalitet i innsamlede data.
 
-|Kontroll|Umiddelbart etter fotograferingen skal det utføres tilstrekkelig prosessering og kontroller som verifiserer at innsamlede data er egnet for den planlagte bruk. Oppdages avvik eller forhold som kan medføre behov for ny fotografering skal oppdragsgiver underrettes umiddelbart sammen med et forslag til plan for fullføring av oppdraget.
+|Kontroll|Umiddelbart etter fotograferingen skal det utføres tilstrekkelig prosessering og kontroller som verifiserer at innsamlede data er egnet for den planlagte bruken. Oppdages avvik eller forhold som kan medføre behov for ny fotografering skal oppdragsgiver underrettes umiddelbart sammen med et forslag til plan for fullføring av oppdraget.
 |===
 ====
 
@@ -474,7 +479,7 @@ Ved GNSS/INS-støttet flyfotografering kombineres observasjoner fra IMU (Inertia
 [#krav-foto-innsamling-gnss-imu,reftext="Krav foto innsamling GNSS/IMU"]
 *KRAV FOTO INNSAMLING GNSS/IMU*
 
-* GNSS-mottaker i flyet skal ha en målerate på 1 sekund eller hyppigere
+* GNSS-mottaker i flyet skal ha en målerate på 1 sekund eller hyppigere.
 * Før flyging og fotografering skal det kontrolleres at man har en satellittkonstellasjon som gir en akseptabel geometri, PDOP skal være under 6 for hele flygingen.
 * Datainnsamlingen skal legges opp med tilstrekkelig dynamikk før, under og etter selve fotograferingen slik at IMU-ens sensorfeil kan estimeres med nødvendig kvalitet relativt kravene til sluttproduktene. Hva som anses som tilstrekkelig dynamikk skal oppdragstaker vurdere blant annet ut fra lengden på flystripene, svingradius og IMU-ens kvalitet.
 * For å oppnå tilstrekkelig dynamikk skal det foretas IMU-initialisering umiddelbart før første flylinje og umiddelbart etter siste flylinje. Minimum initialisering er en retningsendring på 90 grader en vei og 90 grader motsatt vei. Under datainnsamling skal det etterstrebes å fly annenhver høyre og venstresving ved stripebytte.
@@ -493,20 +498,22 @@ Metoden for GNSS-posisjonsbestemmelse ved bruk av DGNSS er basert på at det ben
 ====
 
 
-Metoden for GNSS-posisjonsbestemmelse ved bruk av PPP (Precise Point Positoning) er basert på en enkelt GNSS-mottaker i flyet, uten bruk av mottakere på bakken. Udifferensierte kode- og fase-målinger benyttes sammen med presise satellittbaner og satellittklokkekorreksjoner. Faseflertydighetene bestemmes som flyt-tall. Det forutsettes at ionosfærisk refraksjon elimineres ved hjelp av måling på to eller flere frekvenser, og at troposfærisk refraksjon estimeres sammen med de andre parameterne.
-
-Det forutsettes videre at programvaren i all vesentlighet forholder seg til de modeller og konvensjoner som følger av å benytte de aktuelle bane- og klokkeprodukter.
+Metoden for GNSS-posisjonsbestemmelse ved bruk av PPP (Precise Point Positoning) er basert på en enkelt GNSS-mottaker i flyet, uten bruk av mottakere på bakken. 
 
 ====
 [#krav-foto-ppp,reftext="Krav foto PPP (Precise Point Positioning)"]
 *KRAV FOTO PPP (Precise Point Positioning)*
 
+* Udifferensierte kode- og fase-målinger benyttes sammen med presise satellittbaner og satellittklokkekorreksjoner. 
+* Faseflertydighetene bestemmes som flyttall. 
+* Ionosfærisk refraksjon elimineres ved hjelp av måling på to eller flere frekvenser, og at troposfærisk refraksjon estimeres sammen med de andre parameterne.
+* Programvaren må i all vesentlighet forholde seg til de modeller og konvensjoner som følger av å benytte de aktuelle bane- og klokkeproduktene.
 * Total måletid (på bakken og i lufta) må overstige en time for å sikre god konvergens i løsningen. Dette gjelder dersom kun GPS benyttes. Ved bruk av andre GNSS system i tillegg til GPS (for eksempel Galileo og GLONASS), kan noe kortere måletid aksepteres.
 * Satellittklokkekorreksjoner med oppløsning på 30 sekunder eller bedre skal benyttes.
 ====
 
 [[kapittel-beregning-av-GNSSINS-data]]
-==== Beregning av GNSS/INS data
+==== Beregning av GNSS/INS-data
 Ved beregning av GNSS/INS-dataene står oppdragstager fritt til å velge egnet beregningsstrategi, avhengig av hvordan datainnsamlingen har foregått og hvilken programvare som er tilgjengelig. 
 
 Beregningsarbeidet leder fram til en fil med ytreorienteringselementer for hvert bilde, i det koordinat- og høydesystem som er spesifisert av oppdragsgiver. Ytre orienteringsparameterne skal referere seg til kameraets projeksjonssenter.
@@ -524,19 +531,19 @@ Samtidig georeferering av flere sensorplattformer som flybildekamera og laserska
 
 ** Korrigeres for eksentrisiteter mellom IMU, GNSS-antenne(r), og projeksjonssenter, også når disse ikke er konstante.
 ** Korrigeres for GNSS-antennen(e)s fasesentereksentrisitet og fasesentervariasjoner. 
-** Korrigeres for vinkelavvik mellom INS-koordinatsystem og kamerakoordinatsystem («boresight misalignment»)
+** Korrigeres for vinkelavvik mellom INS-koordinatsystem og kamerakoordinatsystem («boresight misalignment»).
 * Fil med ytre orienteringsparametere skal minimum inneholde:
 ** En header som inneholder informasjon om:
-*** Koordinat- og høydesystem for ytre orienteringsparameterne
-*** Definisjon av rotasjonsrekkefølgen og vinkelenhet for rotasjonene (Omega, Phi, Kappa)
-*** «Boresight misalignment» vinklene
-*** Beskrivelse av data-kolonnene i fila
+*** Koordinat- og høydesystem for ytre orienteringsparameterne.
+*** Definisjon av rotasjonsrekkefølgen og vinkelenhet for rotasjonene (Omega, Phi og Kappa).
+*** «Boresight misalignment» vinklene.
+*** Beskrivelse av data-kolonnene i fila.
 
-** En linje per bilde, som inneholder minimum: 
-*** Bilde ID (Navn)
-*** Eksponeringstidspunkt
-*** Projeksjonssenterkoordinater
-*** Omega, Phi og Kappa
+** En linje pr. bilde, som inneholder minimum: 
+*** Bilde-ID (Navn).
+*** Eksponeringstidspunkt.
+*** Projeksjonssenterkoordinater.
+*** Omega, Phi og Kappa.
 *** Standardavvikene for projeksjonssenter–koordinater og rotasjoner.
 ====
 
@@ -557,8 +564,8 @@ Kravene til dokumentasjon fra beregningen er listet opp i avsnittet om egenkontr
 * Dersom det ikke lar seg gjøre å oppnå forventet visuell kvalitet i bildene (på grunn av værforhold eller lignende) skal oppdragsgiver informeres tidligst mulig og involveres i eventuell tiltaksplan.
 * Eventuell konvertering til lavere radiometrisk oppløsning (for eksempel 8 bit) og eventuell komprimering skal utføres som siste ledd før leveranse for å unngå akkumulert tap av informasjon gjennom prosesseringen.
 * Dersom en stripe må skjøtes, og fortsettelse av fotograferingen ble gjort på et senere tidspunkt slik at lys/skygge- og eventuelle overflateforhold er endret, skal stripeseksjonene i det endelige bildesettet overlappe hverandre slik at de hver for seg har stereodekning over stripebruddet.
-* Ved sammensetting av det endelige bildesettet i prosjekt der det finnes overlappende versjoner av bilder, skal overskytende bilder fjernes. Fragmentering av striper eller områder pga. fotografering over flere dager skal reduseres til et minimum.
-* Filnavn på bilder skal som hovedregel være på formen _Dekningsnr_Stripenr_Bildenr_Kameraløpenr_ og alle representasjoner av bildene skal benytte/vise til samme filnavn (for eksempel i GNSS/INS-filer, i aerotriangulering og i ortofotoproduksjon).
+* Ved sammensetting av det endelige bildesettet i prosjekt der det finnes overlappende versjoner av bilder, skal overskytende bilder fjernes. Fragmentering av striper eller områder på grunn av fotografering over flere dager skal reduseres til et minimum.
+* Filnavn på bilder skal som hovedregel være på formen _Dekningsnr_Stripenr_Bildenr_Kameraløpenr_ og alle representasjoner av bildene skal benytte/vise til samme filnavn (for eksempel i GNSS/INS-filer, i aerotrianguleringen og i ortofotoproduksjonen).
 * I stripeskjøter skal navnet på de overlappende bildene skilles med suffiks «_2» i bildenummeret for de senest fotograferte bildene hvis ikke annen informasjon skiller bildene, slik som telleverksnummer.
 ====
 
@@ -585,8 +592,8 @@ For hvert av de nevnte arbeidene, inkludert leveransene, skal resultatet av utf�
 .10+|Generell informasjon|Oppdragsgiver|(adresse og prosjektleder)
 |Oppdragets navn og nummer|(LACHFFXX)
 |Dekningsnummer|(XX-12345)
-|GSD|(cm)
-|Datum|(horisontalt datum, vertikalt datum, projeksjon og benyttet HREF modell)
+|Bakkeoppløsning (GSD)|(cm)
+|Datum|(horisontalt datum, vertikalt datum, projeksjon og benyttet HREF-modell)
 |Oppdragstaker|(adresse, prosjektleder, fagansvarlig og underleverandører)
 |Beskrivelse av oppdraget|(kontraktsarbeid, fotografert areal og standard)
 |Antall eksemplar av rapport|(antall og oppbevaringssted)
@@ -607,7 +614,7 @@ a| * Kamera:
 * IMU:	
 ** Fabrikat, type, serienummer og benyttet loggerate.
 
-* Beskrivelse av hvordan antenneeksentrisitet er bestemt, dokumentasjon av andre eksentrisiteter (for eksempel IMU montering).
+* Beskrivelse av hvordan antenneeksentrisitet er bestemt, dokumentasjon av andre eksentrisiteter (for eksempel IMU-montering).
 
 * Kamera/sensor-styringssystem:
 ** Fabrikat og type.
@@ -628,7 +635,7 @@ a| * Tidspunkt for avgitt klarmelding(er) for fotografering.
 Ved vanskelige forhold skal det rapporteres hvilke striper/bilder dette kan angå.
 |Skyer og skyskygger|Prosentvis innhold av skyer og skyskygger, med angivelse av hvilke striper/bilder som er berørt.
 |Kamerarotasjoner
-a| * Omega, Phi:
+a| * Omega og Phi:
 ** Gjennomsnittlige kamerarotasjoner.
 ** Maksimalt avvik fra vertikal.
 
@@ -651,8 +658,8 @@ a| Eventuelle problemer i forbindelse med gjennomføringen:
 * Beskrivelse av mulige konsekvenser av problemene.
 |Vurdering av resultat|En samlet vurdering av utføringen av fotograferingen og kvaliteten på arbeidene med hensyn til bestilling og øvrige krav.
 .6+|GNSS/INS|Programvare|(fabrikat, versjonsnummer)
-|GNSS/INS filer|Beskrivelse av innhold i GNSS/INS fil.
-En GNSS/INS fil pr. fotosesjon.
+|GNSS/INS filer|Beskrivelse av innhold i GNSS/INS-fil.
+En GNSS/INS-fil pr. fotosesjon.
 |Beregninger
 a| * Prinsipp/metode for beregning av GNSS/INS-løsning.
 * Prinsipp/metode for beregning av ytreorientering for det enkelte bilde.
@@ -670,12 +677,12 @@ a|Eventuelle problemer i forbindelse med fremstillingen av GNSS/INS-data:
 * Beskrivelse av problemer, inkludert årsaker til disse, som vil eller kan resultere i negative konsekvenser for mellom- og/eller sluttprodukter.
 * Beskrivelse av tilhørende utførte tiltak.
 * Beskrivelse av mulige konsekvenser av problemene.
-|Vurdering av resultat|En samlet vurdering av fremstillingen av GNSS/INS data og kvaliteten på arbeidene med hensyn til bestilling og øvrige krav.
+|Vurdering av resultat|En samlet vurdering av fremstillingen av GNSS/INS-data og kvaliteten på arbeidene med hensyn til bestilling og øvrige krav.
 .6+|Bildefremstilling|Programvare|(fabrikat og versjonsnummer)
 |Prosessering
 a| * Metode for geometrisk prosessering av bildene.
 * Metode for radiometrisk prosessering av bildene, herunder minimum:
-** Konvertering til 8 bit radiometrisk oppløsning.
+** Eventuell konvertering til 8 bit radiometrisk oppløsning.
 ** Benyttede funksjoner for å oppnå tilfredsstillende og enhetlig kontrast, fargetone og lyshet pr. bilde og samlet for alle bilder i prosjektet.
 ** Eventuelle spesielle metoder og tiltak nødvendige i det aktuelle prosjektet.
 |Kontroll a|Metode for kontroll av visuell kvalitet i bildene, herunder minimum:
@@ -760,7 +767,7 @@ Dette kapittelet angir krav og retningslinjer til aerotriangulering (AT) med blo
 * Der matchingen ikke oppfyller kravene til antall og fordeling skal det suppleres med manuelt eller halvautomatisk målte punkter.
 * Punkter i vann skal som hovedregel fjernes. Punkter på bunnen av grunt vann kan som unntak aksepteres dersom de er målt i tilstrekkelig mange bilder til at en eventuell grov feil kan oppdages. Dersom det er vurdert at måling av punkter i vann (på bunnen) er nødvendig for å sikre tilstrekkelig sammenbinding kan dette i sjeldne tilfeller aksepteres. Dette skal beskrives i aerotrianguleringsrapporten.
 * Det skal som hovedregel ikke være sammenbindingspunkter på flytende objekter. Hvis det flytende objektet er stabilt i tidsrommet mellom bildene og bruken kan begrunnes, så kan sammenbindingspunktene tillates i samme flystripe tatt med noen sekunders mellomrom.
-* Alle målinger i bildene, inkl. kjentpunkter, skal korrigeres for jordkrumning og refraksjon. Dersom korreksjonene blir påført selve målingen skal det påses at ikke dobbelkorreksjon påføres i den påfølgende blokkutjevningen.
+* Alle målinger i bildene, inkludert kjentpunkter, skal korrigeres for jordkrumning og refraksjon. Dersom korreksjonene blir påført selve målingen skal det påses at ikke dobbelkorreksjon påføres i den påfølgende blokkutjevningen.
 ====
 
 ====
@@ -838,7 +845,7 @@ _^2^ 2/3 av kravet til geodata. Det stilles altså samme krav uavhengig av orien
 
 :xrefstyle: short
 
-Det presiseres at tallene i <<tab-nøyaktighetskrav-AT-FKB>> henviser til kravene som er stilt i FKB 5.0 produktspesifikasjonen, ved endringer i FKB spesifikasjonen vil eventuelle endringer til nøyaktighetskrav gjelde foran kravene som er satt opp i <<tab-nøyaktighetskrav-AT-FKB>>.
+Det presiseres at tallene i <<tab-nøyaktighetskrav-AT-FKB>> henviser til kravene som er stilt i FKB 5.1.1 produktspesifikasjonen, ved endringer i FKB spesifikasjonen vil eventuelle endringer til nøyaktighetskrav gjelde foran kravene som er satt opp i <<tab-nøyaktighetskrav-AT-FKB>>.
 Kravet til nypunkt gjelder kun signalerte kjentpunkt og eventuelt ikke-signalerte høydepunkt med høy nøyaktighet. +
 
 :xrefstyle: full
@@ -846,14 +853,13 @@ Kravet til nypunkt gjelder kun signalerte kjentpunkt og eventuelt ikke-signalert
 
 ==== Egenkontroll og rapportering (AT-rapport)
 
-Det skal leveres en rapport for de utførte arbeidene, med leveransene som vedlegg til rapporten. Rapporten skal ha egne seksjoner for generell informasjon, måle- og beregningsarbeidene, samt resultater og kontroll av resultatene.
-For hvert av de nevnte arbeidene, inkl. leveransene, skal resultatet av utførte kvalitetskontroller dokumenteres. +
+Det skal leveres en rapport for de utførte arbeidene, med leveransene som vedlegg til rapporten. Rapporten skal ha egne seksjoner for generell informasjon, måle- og beregningsarbeidene, samt resultater og kontroll av resultatene. For hvert av de nevnte arbeidene, inkludert leveransene, skal resultatet av utførte kvalitetskontroller dokumenteres.
 
 ====
 [#krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringa,reftext="Krav foto kontrollmåling i DFA av aerotrianguleringa"]
 *KRAV FOTO KONTROLLMÅLING I DFA AV AEROTRIANGULERINGA*
 
-* Alle kjentpunkt og kontrollpunkt skal kontrollmåles i DFA i alle 60% modeller eller den stereooverlappen leverandøren har bestemt passer best i intervallet 35 % - 65 % lengdeoverlapp, der kjentpunktet er synlig. 
+* Alle kjentpunkt og kontrollpunkt skal kontrollmåles i DFA i alle 60% modeller eller den stereooverlappen leverandøren har bestemt passer best i intervallet 35 % - 65 % lengdeoverlapp, der kjentpunktet/kontrollpunktet er synlig. 
 * Stereomodeller benyttet i målearbeidet skal beskrives. 
 ====
 
@@ -875,7 +881,7 @@ For hvert av de nevnte arbeidene, inkl. leveransene, skal resultatet av utførte
 .9+|Generell informasjon|Oppdragsgiver|(adresse og prosjektleder)
 |Oppdragets navn og nummer|(LACHFFXX)
 |Dekningsnummer|(XX-12345)
-|Datum|(horisontalt datum, vertikalt datum, projeksjon og benyttet HREF modell)
+|Datum|(horisontalt datum, vertikalt datum, projeksjon og benyttet HREF-modell)
 |Oppdragstaker|(adresse, prosjektleder, fagansvarlig og underleverandører)
 |Beskrivelse av oppdraget|(kontraktsarbeid, areal og standard)
 |Antall eksemplar av rapport|(antall og oppbevaringssted)
@@ -887,14 +893,14 @@ a| * Benyttet kamera: +
 ** Kalibreringsrapport skal legges ved AT-rapporten. +
 * Antall striper og bilder mottatt, og antall benyttet i AT. +
 * Oversikt over bilder som ikke ble benyttet i AT, inkludert årsak. +
-* Antall kjentpunkter mottatt inkl. deres opprinnelse, og antall benyttet i AT. +
+* Antall kjentpunkter mottatt inkludert deres opprinnelse, og antall benyttet i AT. +
 * Tekstfil med benyttede kjentpunkt med kjentpunktnavn og koordinater med signalhøyde. +
 * Oversikt over kjentpunkter som ikke ble benyttet i AT samt eventuelle tilleggspunkter, inkludert årsaker. +
 * Benyttet GNSS/INS-utstyr: +
-** Fabrikat, type, serienummer. +
+** Fabrikat, type og serienummer. +
 ** Estimert nøyaktighet på GNSS/INS-data. +
 |Målearbeidet a| * Benyttet utstyr og programvare: +	
-** Fabrikat, type, versjonsnummer. +
+** Fabrikat, type og versjonsnummer. +
 * Oversikt over bildeblokker, inkludert spesifisering av striper/bilder pr. blokk. +
 * Målemetode.
 |Beregningsarbeidet a|* Benyttet vektingsregime: Pr. observasjonstype og eventuell differensiering i nøyaktighetsklasser. +
@@ -1022,17 +1028,17 @@ I tillegg inneholder produktspesifikasjonen overordnede krav til datastruktur og
 [cols="2*",options="header"]
 |===
 |Kvalitetsmål|Kontroll
-|Antall enheter der regler for konseptuelt skjema ikke er oppfylt|SOSI-kontroll
-|Antall ulovlige løse ender|Det kun er lovlige løse ender (også mot tilstøtende data).
-|Antall manglende forbindelse grunnet for korte linjer +
-Antall manglende forbindelse grunnet for lange linjer +
-Antall ulovlige lenkekryssing +|Kurver som skal være konnektert, har eksakt like koordinater 
-|Prosentandel feil på fulldekkende flater +
-Antall ulovlige overlapp mellom flater|Lukking av polygon er i henhold til aktuell produktspesifikasjon
-|Antall brudd på krav om konstant høyde|Det ikke er utilsiktet sprang i linjeforløpet, hverken i grunnriss eller i høyde.
-|Antall ulovlige egenoverlappinger +
-Antall ulovlige egenkryssinger +
-Antall ulovlige småpolygoner +
+|Antall enheter der regler for konseptuelt skjema ikke er oppfylt.|SOSI-kontroll.
+|Antall ulovlige løse ender.|Det kun er lovlige løse ender (også mot tilstøtende data).
+|Antall manglende forbindelse grunnet for korte linjer. +
+Antall manglende forbindelse grunnet for lange linjer. +
+Antall ulovlige lenkekryssing. +|Kurver som skal være konnektert, har eksakt like koordinater.
+|Prosentandel feil på fulldekkende flater. +
+Antall ulovlige overlapp mellom flater.|Lukking av polygon er i henhold til aktuell produktspesifikasjon.
+|Antall brudd på krav om konstant høyde.|Det ikke er utilsiktet sprang i linjeforløpet, hverken i grunnriss eller i høyde.
+|Antall ulovlige egenoverlappinger. +
+Antall ulovlige egenkryssinger. +
+Antall ulovlige småpolygoner. +
 a|* Det ikke forekommer doble data, eller delvis doble data (overlappende vektorer), for kurver som beskriver samme objekt. +
 * Det ikke forekommer doble punkter (eksakt like koordinater) i kurver. +
 * Det ikke ligger igjen korte linjer fra konstruksjon som ikke har noen informasjonsverdi.
@@ -1067,7 +1073,7 @@ Rapport fra konstruksjonsarbeidene skal minimum inneholde:
 |Oppdragets navn og nummer|(LACHFFXX)
 |Dekningsnummer|(XX-12345)
 |GSD|(cm)
-|Datum|(horisontalt datum, vertikalt datum, projeksjon og benyttet HREF modell)
+|Datum|(horisontalt datum, vertikalt datum, projeksjon og benyttet HREF-modell)
 |Oppdragstaker|(adresse, prosjektleder, fagansvarlig og underleverandører)
 |Beskrivelse av oppdraget|(kontraktsarbeid, areal og standard)
 |Antall eksemplar av rapport|(antall og oppbevaringssted)
@@ -1080,12 +1086,12 @@ Rapport fra konstruksjonsarbeidene skal minimum inneholde:
 * Antall kjentpunkter målt og antall stereomodeller det er målt i +
 * Utlisting av individuelle avvik 
 |Tilleggsparametere|Beskrivelse av metode for påføring av korreksjoner som følge av eventuell bruk av tilleggsparametere under forutgående AT/blokkutjevning.
-.7+|Kartkonstruksjon|Grunnlag|Bildegrunnlag +
-Referanse til aerotrianguleringsrapport +
-Manus og støttedata +
+.7+|Kartkonstruksjon|Grunnlag|Bildegrunnlag. +
+Referanse til aerotrianguleringsrapport. +
+Manus og støttedata. +
 |Programvare|Benyttet utstyr og programvare: (fabrikat, type og versjonsnummer)
 |Areal|Konstruert areal fordelt på eventuelle delområder.
-|Konstruksjonstidspunkt|Tidsperiode for utførelse
+|Konstruksjonstidspunkt|Tidsperiode for utførelse.
 |Metode|Beskrivelse av eventuelle anvendte metoder og parametere for generering, glatting og vinkling av objekttyper.
 |Problem, utfordringer og kommentarer til arbeidet a|Eventuelle problemer i forbindelse med konstruksjonsarbeidet: +
 
@@ -1120,7 +1126,10 @@ Stedfestingsnøyaktigheten avtar med økende pikselstørrelse (GSD).
 
 Automatisk generering av DTM fra bildematching forutsetter at terrengmodellen blir grundig kontrollert og editert i etterkant. 
 
-Krav for DTM og høydekurver (høydegrunnlag) står i Produktspesifikasjon FKB-Høydekurve, mens kontrollen er beskrevet i standarden Geodatakvalitet.
+Spesifikasjon for etablering og forvaltning av punktskyer ligger i gjeldende versjon av https://dokument.geonorge.no/produktspesifikasjoner/punktsky/1.0.3/index.html[Produktspesifikasjon Punktsky]
+
+Krav for DTM og høydekurver (høydegrunnlag) står i Produktspesifikasjon FKB-Høydekurve, mens kontrollen er beskrevet i standarden Geodatakvalitet. 
+
 
 
 === Ortofotoproduksjon
@@ -1143,40 +1152,72 @@ For å få et nøyaktig ortofoto trengs en høydemodell med høy detaljeringsgra
 
 Høydemodellen etableres ut fra høydedata som punktskyer fra laserskanning eller bildematching, høydekurver, høydepunkt, terrenglinjer og høydebærende FKB-data.
 
-Primært vil høydemodellen referere seg til terrengoverflaten (DTM). For bruer, trafikkmaskiner og tekniske anlegg (som ligger over bakkenivå) skal imidlertid høydemodellen modifiseres til å gjelde for brubanen/vegbanen/topp anlegg, altså være en digital høydemodell (DHM) i disse områdene. Dette er nødvendig for å unngå at for eksempel bruer blir fortegnet i ortofotoet.
+====
+[#krav-foto-ortofoto-høydemodell,reftext="Krav foto ortofoto høydemodell"]
+*KRAV FOTO ORTOFOTO HØYDEMODELL*
 
+*  Høydemodell må ha høy nok detaljeringsgrad og god nok stedfestingsnøyaktighet til å lage detaljert nok ortofoto, spesielt i kupert terreng.
+* Primært vil høydemodellen referere seg til terrengoverflaten (DTM). For bruer, trafikkmaskiner og tekniske anlegg (som ligger over bakkenivå) skal imidlertid høydemodellen modifiseres til å gjelde for brubanen/vegbanen/topp anlegg, altså være en digital høydemodell (DHM) i disse områdene. Dette er nødvendig for å unngå at for eksempel bruer blir fortegnet i ortofotoet.
+
+====
 
 
 ==== Ortofoto-typer
 I produksjon av ortofoto brukes en litt modifisert terrengmodell, DTM, som referer seg til terrengoverflaten med enkelte unntak for broer og store tekniske anlegg. Se <<kapittel-ortofoto-høydemodell>>.
 
 ===== Sant ortofoto (True orthophoto)
-Det er også mulig å benytte en høydemodell som referer seg til overflatens høyder. I en slik modell vil for eksempel bygninger også inngå. Ortofoto som lages med en overflatemodell, DOM, kalles ”True orthophoto” (sanne ortofoto). I ”True orthophoto” vil oppstikkende detaljer som for eksempel bygninger ikke bli fortegnet.
+Det er også mulig å benytte en høydemodell som referer seg til overflatens høyder. I en slik modell vil for eksempel bygninger også inngå. Ortofoto som lages med en overflatemodell, DOM, kalles sanne ortofoto (True orthophoto). I sant ortofoto vil oppstikkende detaljer som for eksempel bygninger ikke bli fortegnet.
+
+====
+[#krav-foto-sant-ortofoto,reftext="Krav foto sant ortofoto"]
+*KRAV FOTO SANT ORTOFOTO*
+
+* En overflatemodell må brukes til å lage ortofotoet.
+
+====
+
 
 ===== Enkelt ortofoto (rektifiserte bilder)
 I en del sammenhenger vil det være aktuelt å framstille enkelt ortofoto. Dette gjøres ved en helautomatisk prosess der eksisterende DTM benyttes uten modifiseringer og sømlinjer genereres automatisk. Dette er en rask og billig måte å produsere ortofoto på, men gir ikke ortofoto som følger produktspesifikasjonens krav til geometrisk og visuell kvalitet.
 
-==== Ortofoto-oppløsning
+==== Ortofotooppløsning
 Ortofoto-oppløsningen oppgis som bakkeoppløsning for det ferdige ortofotoet. 
 
-Ortofoto vil ikke ha samme GSD som de originale flybildene. For at ortofotoet skal beholde flybildets detaljrikdom må imidlertid ortofoto-oppløsningen være tilnærmet lik GSD fra flybildet.
+Ortofoto vil ikke ha samme bakkeoppløsning (GSD) som de originale flybildene. 
 
+====
+[#krav-foto-ortofotooppløsning,reftext="Krav foto ortofotooppløsning"]
+*KRAV FOTO ORTOFOTOOPPLØSNING*
+
+* For at ortofotoet skal beholde flybildets detaljrikdom må  ortofotooppløsningen være tilnærmet lik bakkeoppløsning (GSD) fra flybildet.
+
+====
 
 ==== Fremstilling av ortofoto
-Det fremstilles ortofoto for alle bildene som til sammen dekker ønsket område. Ved rektifiseringen skal programmet innhente informasjon fra terrengmodellen med tilstrekkelig hyppighet for formålet.
+====
+[#krav-foto-fremstilling-av-ortofoto,reftext="Krav foto fremstilling av ortofoto"]
+*KRAV FOTO FREMSTILLING AV ORTOFOTO*
+
+* Det fremstilles ortofoto for alle bildene som til sammen dekker ønsket område.
+* Ved rektifiseringen skal programmet innhente informasjon fra terrengmodellen (DTM) med tilstrekkelig hyppighet for formålet.
+* Gråtonen/fargen til ortofotopikslene tas fra pikslene i flybildet. Som regel korresponderer ikke et ortofotopiksel helt med et bildepiksel. Gråtonen/fargen til ortofotopikselet bestemmes for eksempel ved interpolering av gråtonene/fargene til de nærmeste bildepikslene. Dette kalles resampling.
+
+====
 
 En DTM referer seg til terrengoverflaten slik at oppstikkende detaljer som for eksempel bygninger og høye tårn får en radiell forskyvning. Den radielle forskyvningen blir større dess lengre man kommer ut fra bildesenteret. Det kan være aktuelt å korrigere for den radielle forskyvningen, men det er bedre å redusere denne ved å benytte kun de sentrale delene av hvert flybilde. En slik tilnærming krever at flyfotograferingen utføres med tilstrekkelig lengde- og sideoverlapp.
 
-Gråtonen/fargen til ortofotopikslene tas fra pikslene i flybildet. Som regel korresponderer ikke et ortofotopiksel helt med et bildepiksel. Gråtonen/fargen til ortofotopikselet bestemmes for eksempel ved interpolering av gråtonene/fargene til de nærmeste bildepikslene. Dette kalles resampling.
 
+==== Ortofotomosaikk
+====
+[#krav-foto-ortofotomosaikk,reftext="Krav foto ortofotomosaikk"]
+*KRAV FOTO ORTOFOTOMOSAIKK*
 
+* Et ortofoto for et større område må settes sammen av ortofoto laget fra flere flybilder; det må lages en mosaikk. Dette skal i utgangspunktet gjøres slik at hvert lille ortofotoutsnitt lages fra det flybildet hvor utsnittet er nærmest bildenadir. 
+* Tverrflystriper trenger ikke være med i ortofotomosaikken i områder som er dekket av andre flystriper, hvis flybildene i tverrflystripen ikke er bedre enn de andre flystripene.
+* Når man setter sammen flere bilder, er målsettingen at skjøtene mellom bildene blir usynlige. Det mest representative bildet for hele arealet, velges som referansebilde. Gråtonene/fargene i de andre bildene justeres slik at de samsvarer med referansebildets. De fleste programsystemer som brukes til ortofotoproduksjon, har automatiske algoritmer for å utføre dette arbeidet, men ofte vil en halvautomatisk metode gi bedre resultat. Da vil operatøren manuelt bestemme hvor sømlinjene mellom bildene skal gå. 
+* Sømlinjer skal i ikke gå gjennom bygninger, over broer eller lignende, og sømlinjene skal følge naturlige kanter i terrenget som for eksempel vannkanter.
 
-==== Ortofoto mosaikk
-Et ortofoto for et større område må settes sammen av ortofoto laget fra flere flybilder; det må lages en mosaikk. Dette skal i utgangspunktet gjøres slik at hvert lille ortofotoutsnitt lages fra det flybildet hvor utsnittet er nærmest bildenadir. Tverrflystriper trenger ikke være med i ortofotomosaikken i områder som er dekket av andre flystriper, hvis flybildene i tverrflystripen ikke er bedre enn de andre flystripene. 
-
-Når man setter sammen flere bilder, er målsettingen at skjøtene mellom bildene blir usynlige. Det mest representative bildet for hele arealet, velges som referansebilde. Gråtonene/fargene i de andre bildene justeres slik at de samsvarer med referansebildets. De fleste programsystemer som brukes til ortofotoproduksjon, har automatiske algoritmer for å utføre dette arbeidet, men ofte vil en halvautomatisk metode gi bedre resultat. Da vil operatøren manuelt bestemme hvor sømlinjene mellom bildene skal gå. Sømlinjer skal i ikke gå gjennom bygninger, over broer eller lignende, og sømlinjene skal følge naturlige kanter i terrenget som for eksempel vannkanter.
-
-
+====
 
 ==== Egenkontroll og rapportering (ortofotorapport)
 Egenkontrollen begrenses her til å være en ren visuell kontroll. Geometrisk kvalitet kan kontrolleres ved å sammenlikne med eksisterende kartdata i samme projeksjon, og ved å se etter for eksempel krumme broer. Radiometrisk kvalitet sjekkes ved å påse at det ikke er noen nyanseforskjeller i gråtone/farge og kontrast i ortofotoet (typisk kan det bli forskjeller i områder som stammer fra ulike flybilder), og at sømlinjer er minimalt synlige i mosaikken. Det vises for øvrig til kravene til ortofotokvalitet i "Produktspesifikasjon for ortofoto".
@@ -1187,7 +1228,6 @@ Egenkontrollen begrenses her til å være en ren visuell kontroll. Geometrisk kv
 
 * Rapport for ortofotoproduksjonen skal som minimum inneholde informasjonen spesifisert i xref:tab-rapport-orto[xrefstyle=short].
 
-
 [[tab-rapport-orto]]
 .Krav til rapportering av ortofoto
 [cols="3*",options="header"]
@@ -1196,19 +1236,20 @@ Egenkontrollen begrenses her til å være en ren visuell kontroll. Geometrisk kv
 .10+|Generell informasjon|Oppdragsgiver|(adresse og prosjektleder)
 |Oppdragets navn og nummer|(LACHFFXX)
 |Dekningsnummer|(XX-12345)
-|GSD|(cm)
-|Datum|(horisontalt datum, vertikalt datum, projeksjon og benyttet HREF modell)
+|Bakkeoppløsning (GSD)|(cm)
+|Datum|(horisontalt datum, vertikalt datum, projeksjon og benyttet HREF-modell)
 |Oppdragstaker|(adresse, prosjektleder, fagansvarlig og underleverandører)
 |Beskrivelse av oppdraget|(kontraktsarbeid, areal og standard)
 |Antall eksemplar av rapport|(antall og oppbevaringssted)
 |Versjon|(rapportversjonsnummer)
 |Datering og signatur|(dd.mm.åååå, signatur)
-.10+|Ortofotoproduksjon|Grunnlag|Bildegrunnlag +
-Referanse til aerotrianguleringsrapport +
-Høydedata
-|Programvare a|Benyttet utstyr og programvare: +	
+.10+|Ortofotoproduksjon|Grunnlag a|
+* Bildegrunnlag.
+* Referanse til aerotrianguleringsrapport.
+* Høydedata.
+|Programvare a|Benyttet utstyr og programvare:
 
-* Fabrikat, type og versjonsnummer. +
+* Fabrikat, type og versjonsnummer.
 * Beskrivelse av fargekalibrering av PC-skjermer brukt i produksjonen.
 |Areal|Ortofotoareal fordelt på eventuelle delområder.
 |Dato|Tidspunkt for ferdigstillelse
@@ -1282,7 +1323,7 @@ Laserskanning fra drone følger samme krav som laserskanning fra fly og helikopt
 * Skal følge kravene i <<kapittel-detaljert-kartlegging-med-kamera-i-drone>>.
 * Bildene må være tatt med en RTK-drone med IMU.
 * Bildene må aerotrianguleres i egnet programvare. AT-rapport krav: <<krav-foto-rapportering-aerotriangulering>>, men måling i stereo (DFA) er ikke nødvendig.
-* Krav til signalerte kjentpunkt og kontrollflater følger <<krav-foto-signalering-i-droneprosjekt>> samt «Kartlegging med flybåren laserskanning». Kjentpunkt og kontrollflater må være jevnt fordelt ut over blokken/området samt dekke ytterkantene. 
+* Krav om antall signalerte kjentpunkt og kontrollpunkt følger <<krav-foto-signalering-i-droneprosjekt>>.
 * Sluttkontroll skal utføres på sluttproduktet.  
 * Generelt følger krav etter denne standard samt gjeldene punktsky standard.
 * Personopplysningsloven skal følges (inkludert GDPR).
@@ -1300,13 +1341,11 @@ Målsetning: Innlegging i Felles kart database (FKB), fellesløsninger og offent
 [#krav-foto-vektorisering-fra-modell,reftext="Krav vektorisering fra modell fra dronebilder"]
 *KRAV FOTO VEKTORISERNIG FRA MODELL FRA DRONEBILDER*
 
-:lang: nb
-:section-refsig: Kapittel
-
 * Skal følge kravene i <<kapittel-detaljert-kartlegging-med-kamera-i-drone>>.
 * Følge krav til høydemodell
 * Bildene må være tatt med en RTK-drone med IMU.
 * Bildene må aerotrianguleres i egnet programvare. AT-rapport krav: <<krav-foto-rapportering-aerotriangulering>>, men måling i stereo (DFA) er ikke nødvendig.
+* Krav om antall signalerte kjentpunkt og kontrollpunkt følger <<krav-foto-signalering-i-droneprosjekt>>.
 * Detaljeringsgrad må være tilstrekkelig for å kunne identifisere kartobjektet samt digitalisere kartobjekter med tilstrekkelig geografisk nøyaktighet etter gjeldene standard for sluttproduktet. (metodekrav må diskuteres og utarbeides)
 * Vektoriseringskapitlet i PaBG skal følges: <<kapittel-vektorisering-fra-punktsky-og-modell>>
 * Personopplysningsloven skal følges (inkludert GDPR).
@@ -1327,6 +1366,7 @@ Målsetning: Konstruksjon fra flybiler i en Digital Fotogrammetrisk Arbeidsstasj
 * Bildene må være tatt med en RTK-drone med IMU.
 * Bildene må aerotrianguleres i egnet programvare. AT-rapport krav: <<krav-foto-rapportering-aerotriangulering>>.
 * Innad i en stereomodell skal delen av stereomodellen som skal brukes til konstruksjon tilfredsstille nøyaktighetskravene og eventuelle deler av stereomodellen som ikke bør brukes skal begrunnes i AT-rapporten. 
+* Krav om antall signalerte kjentpunkt og kontrollpunkt følger <<krav-foto-signalering-i-droneprosjekt>>.
 * Personopplysningsloven skal følges (inkludert GDPR).
 * Dokumentasjon av kamera og kamerakalibrering:
 ** Selvkalibrering av kameraet i aerotrianguleringen skal bare bruke parametere som er signifikante. 
@@ -1384,8 +1424,19 @@ Det er ikke krav om gyromount.
 *KRAV FOTO SIGNALERING I DRONEPROSJEKT*
 
 * Signalering skal følge standardkravene <<krav-foto-signalering>>.
+* Minst 5 kjentpunkter og kontrollpunkt til sammen i alle blokker, jevnt fordelt i hele blokken.
+* Maksimal avstand til kjentpunkt/kontrollpunkt i meter = bestilt GSD i meter ganger 10000:
+** GSD 1 cm gir en radius på 100 m
+** GSD 5 cm gir en radius på 500 m
+** GSD 10 cm gir en radius på 1000 m
 
-* Der datainnsamlingen blir utført med en GSD mindre enn 1/4 av krav til GSD for oppdraget, kan antall signalerte kjentpunkt reduseres slik at avstanden mellom kjentpunktene ikke overstiger 600m. Det skal alltid være minst 5 signalerte kjentpunkt jevnt fordelt i prosjektområdet.
+====
+
+====
+[#anbefaling-foto-signalering-i-droneprosjekter,reftext="Anbefaling foto signalering i droneprosjekter"]
+*ANBEFALING FOTO SIGNALERING I DRONEPROSJEKTER*
+
+*  Kjentpunktene bør være plassert i ulike høydenivå for å styrke kamerakalibreringa.
 
 ====
 
@@ -1407,6 +1458,7 @@ Det er ikke krav om gyromount.
 *ANBEFALING FOTO FLYPLAN I DRONEPROSJEKTER*
 
 * Det er anbefalt at minst 1 flystripe flys i 2 forskjellige flyhøyder over terrenget, dette for å ha mulighet til å kontrollere kamerakonstanten. Høydeforskjellen mellom de to flyhøydene må være på minst 40 meter og stripen må dekke minimum 2 kjentpunkt. 
+
 ====
 
 ===== Krav til fotografering
@@ -1508,7 +1560,7 @@ AT på alle bilder, inkludert skråbilder.
 * Vertikalbildene skal tilfredsstille krav til vanlig vertikalbildeprosjekt.
 * Skråbildene har ikke det samme nøyaktighetskravet som vertikalbildene, så lenge det ikke er spesifisert i sluttproduktet.
 * Skråbildene må ha minst 12 sammenbindingspunkt mot neste flybilde i flystripen i en retning på kamera (høyre, venstre, fram og tilbake) og nok sammenbindingspunkt, slik at det ikke blir parallakser i stereomodellene innad i en flystripe og retning på kamera. Minstemålet skaleres etter hvor stor andel vann og skog det er i overlappsområdet, for eksempel så blir minstekravet på sammenbindingspunkt mot neste flybilde 12*(1-0,75) = 3 sammenbindingspunkt hvis overlappsområdet er dekket av 75% vann og skog.
-* Skråbildene må være bundet sammen med vertikalbildene nok til at nøyaktighetskravene til sluttproduktet overholdes. Minst 2 sammenbindingspunkt til vertikalbilder per skråbilde hvis det er gode forhold og overlappsområdet mellom bildene inneholder maksimalt 20% skog og vann, minst 1 sammenbindingspunkt til vertikalbilder hvis det er maksimalt 50% skog og vann i overlappsområdet mellom bildene og ingen sammenbindingspunkt til vertikalbilder hvis det er mer enn 50% skog og vann i overlappsområdet mellom bildene. Hvis det er avvik, så må det argumenteres for at orienteringen mellom skråbildene og vertikalbildene blir god nok i AT-rapporten. 
+* Skråbildene må være bundet sammen med vertikalbildene nok til at nøyaktighetskravene til sluttproduktet overholdes. Minst 2 sammenbindingspunkt til vertikalbilder pr. skråbilde hvis det er gode forhold og overlappsområdet mellom bildene inneholder maksimalt 20% skog og vann, minst 1 sammenbindingspunkt til vertikalbilder hvis det er maksimalt 50% skog og vann i overlappsområdet mellom bildene og ingen sammenbindingspunkt til vertikalbilder hvis det er mer enn 50% skog og vann i overlappsområdet mellom bildene. Hvis det er avvik, så må det argumenteres for at orienteringen mellom skråbildene og vertikalbildene blir god nok i AT-rapporten. 
 * Det skal være minst 6 eller flere sammenbindingspunkter for alle bilder. Dersom dette ikke er oppfylt for et eller flere bilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.
 * AT-rapport: <<krav-foto-rapportering-aerotriangulering>>. I tillegg så må dette inkluderes i rapporten:
 ** Vurdering av sammenbindingen mellom skråbildene.
