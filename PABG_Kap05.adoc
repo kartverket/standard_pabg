@@ -2,7 +2,7 @@
 
 === Innledning
 
-Geodetiske metoder benyttes til kartlegging ved høye krav til nøyaktighet eller når forholdene ellers gjør det naturlig, for eksempel ved mindre ajourføringer eller ved måling i områder som ikke kan kartlegges fotogrammetrisk pga. dårlig innsyn.
+Geodetiske metoder benyttes til kartlegging ved høye krav til nøyaktighet eller når forholdene ellers gjør det naturlig, for eksempel ved mindre ajourføringer eller ved måling i områder som ikke kan kartlegges fotogrammetrisk på grunn av dårlig innsyn.
 
 Standarden <<SAT>> gir anbefalinger om hvordan posisjonsbestemmelse med satellitter bør utføres i kart- og oppmålingsarbeider.
 
