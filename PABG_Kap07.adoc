@@ -171,7 +171,7 @@ Tverrstriper benyttes til daglig kalibrering og stripejustering av et laserprosj
 
 :xrefstyle: short
 
-* Alle flystriper i et laserprosjekt skal dekkes av minimum en tverrstripe per 60 km. +
+* Alle flystriper i et laserprosjekt skal dekkes av minimum en tverrstripe pr. 60 km. +
 * For flystriper som er lenger enn 40 km skal det plasseres tverrstripe i hver ende. +
 * Tverrstripene skal fortrinnsvis ligge vinkelrett på flystripene. Minste tillate vinkel for å kvalifisere som tverrstripe er 50 grader, se <<#imgTverrstriper>>. +
 * Ved enkeltstriper i kjede, for eksempel ved kartlegging av traséer, skal den neste stripen overlappe den forrige (i knekkene) på en slik måte at den også kan fungere som tverrstripe, se <<#imgEnkeltstripe>>. Hvis knekkvinkel er mindre enn 50 grader må man planlegge en egen tverrstripe.
@@ -271,7 +271,7 @@ Unntak kan avtales der prosjekter går over flere år.
 
 * En kontrollflates gyldighetsområde defineres med en buffer på 6 km radius fra kontrollflatens senter.
 * Kontrollflater skal planlegges slik at hele prosjektområdet er dekket av kontrollflatenes gyldighetsområder. Se <<#imgKontrollflateGyldighet>>.
-* Antall kontrollflater skal ikke være under et minimum på 3 flater per sammenhengende skanneblokk. Oppdragstaker kan slå sammen mindre områder til sammenhengende skanneblokk for å redusere behov for flater. Se <<#imgSammenslåingBlokk>>. 
+* Antall kontrollflater skal ikke være under et minimum på 3 flater pr. sammenhengende skanneblokk. Oppdragstaker kan slå sammen mindre områder til sammenhengende skanneblokk for å redusere behov for flater. Se <<#imgSammenslåingBlokk>>. 
 * Avvik fra antall og plassering av kontrollflater (for eksempel ved laserskanning av store områder uten infrastruktur eller mange spredte øyer) kan tillates dersom oppdragsgiver har åpnet for dette i teknisk spesifikasjon for oppdraget. I slike tilfeller skal det sørges for at korrekte GNSS-skift blir påført alle striper.
 * Kontrollflatene skal plasseres på en hard flat flate (asfalt, betong, plan og hard grusveg). Som hovedregel skal kontrollflatene plasseres innenfor prosjektavgrensingen. Dersom dette ikke er praktisk mulig, plasseres kontrollflatene i umiddelbar nærhet. Uansett skal laserdata over kontrollflatene inngå i leveransen.  
 * Maksimum helning internt i flaten skal ikke overstiger 5 %. Dersom helningen overstiger dette kan en grunnrissfeil påvirke resultatet av høydeanalyse.
@@ -284,7 +284,7 @@ målepunktene. I praksis så vil oppmerking være gunstig for å sikre at samme 
 
 
 
-Som et alternativ til innmåling av tradisjonelle kontrollflater, kan hjulsportmetoden benyttes. Ved hjulspormetoden måler man inn posisjonen til målebilens bakhjul vha. GNSS og treghetsnavigasjonsutstyr (INS). De målte punktene brukes til kontroll og støtte for stripejusteringen. Det benyttes robust statistikk i analysen av høydedifferanser mellom hjulspor og laserdata for å filtrere bort grove feil. Det store antallet målepunkt gir et bra datagrunnlag slik at evt. støy vil bli utlignet av antall målinger. Målinger utført med hjulspormetoden har et gyldighetsområdet tilsvarende en sirkel med radius 6 km. Dette gjelder for samtlige innmålte punkt med hjulspormetoden med tilstrekkelig nøyaktighet.
+Som et alternativ til innmåling av tradisjonelle kontrollflater, kan hjulsportmetoden benyttes. Ved hjulspormetoden måler man inn posisjonen til målebilens bakhjul ved hjelp av GNSS og treghetsnavigasjonsutstyr (INS). De målte punktene brukes til kontroll og støtte for stripejusteringen. Det benyttes robust statistikk i analysen av høydedifferanser mellom hjulspor og laserdata for å filtrere bort grove feil. Det store antallet målepunkt gir et bra datagrunnlag slik at evt. støy vil bli utlignet av antall målinger. Målinger utført med hjulspormetoden har et gyldighetsområdet tilsvarende en sirkel med radius 6 km. Dette gjelder for samtlige innmålte punkt med hjulspormetoden med tilstrekkelig nøyaktighet.
 
 ====
 
@@ -297,7 +297,7 @@ Som et alternativ til innmåling av tradisjonelle kontrollflater, kan hjulsportm
 * Ved datainnsamling med hjulspormetoden skal målingene utføres kontinuerlig gjennom prosjektområdet. Dette på en slik måte at hele området er dekket av kontrollmålingenes gyldighetsområder.
 * Nøyaktigheten på hjulspormetoden skal tilsvare nøyaktigheten til kontrollflate metoden.
 * Alle prosjekt skal ha minst en kontrollflate målt med kontrollflatemetoden. Dette for å kontrollere innmålingssystem for hjulspormetoden der denne metodikken er benyttet. Lokasjonen til denne kontrollflaten skal da være i umiddelbar nærhet til hjulspordataene.
-* Helningskravet på maks 5% i <<krav-laser-kontrollflater-antall-og-plassering>> gjelder ikke for hjulspormetoden.
+* Helningskravet på maksimalt 5 % i <<krav-laser-kontrollflater-antall-og-plassering>> gjelder ikke for hjulspormetoden.
 * Det er krav til leveranse av gyldighetsplott for både hjulspormetoden og kontrollflatemetoden.
 
 ====
@@ -308,7 +308,7 @@ Som et alternativ til innmåling av tradisjonelle kontrollflater, kan hjulsportm
 
 * Punktene i kontrollflaten skal måles inn med standardavvik maksimalt lik 1/3 av kravet til høydenøyaktighet i den ferdige punktskyen. 
 * Samme høydereferansemodell skal benyttes for innmåling av kontrollflate som for laser punktskyen.
-* Landmålingsarbeidene inkl. rapportering skal utføres i henhold til standarden «Satellittbasert Posisjonsbestemmelse»
+* Landmålingsarbeidene inkludert rapportering skal utføres i henhold til standarden <<SAT>> 
 ====
 
 .Kontrollflaters gyldighetsområde
@@ -341,7 +341,7 @@ Kontrollprofiler skal benyttes for å kontrollere og eventuelt justere for syste
 *KRAV LASER KONTROLLPROFILER - FORM OG STØRRELSE*
 
 * Ved mønelinjer skal det måles minimum 4 punkt på hver takflate slik at mønelinjen kan beregnes fra skjæringspunktet mellom flatene. 
-* Ved terrenglinjer skal det utføres minimum en måling per meter, total lengde bør være minimum 10m. Knekkpunkter i terrenget skal måles.
+* Ved terrenglinjer skal det utføres minimum en måling pr. meter, total lengde bør være minimum 10m. Knekkpunkter i terrenget skal måles.
 * Maksimal terrenghelning skal være 60 grader, og minimum terrengvariasjon i høyde på terrengprofilen skal være 2 m.
 ====
 
@@ -458,15 +458,15 @@ Oppdragstaker skal begrunne årsak til at en kontrollflater som skiller seg fra 
 
 * Beskrivelse av benyttet metode for høydekontroll. 
 * Dokumentasjon av beregnet og påført høydejustering på laserdataene.
-* Det kan maksimalt justeres for ett systematisk avvik i øst, nord og høyde per prosjektområde.
-* Endelig resultat etter eventuell høydejustering skal dokumenteres med høyderapport per kontrollflate, samt en sammenfattet oversikt med statistisk informasjon for alle flater. Se <<#imgDokKontrollFL>> og <<tab-statistikk-kontrollFL>>.
+* Det kan maksimalt justeres for ett systematisk avvik i øst, nord og høyde pr. prosjektområde.
+* Endelig resultat etter eventuell høydejustering skal dokumenteres med høyderapport pr. kontrollflate, samt en sammenfattet oversikt med statistisk informasjon for alle flater. Se <<#imgDokKontrollFL>> og <<tab-statistikk-kontrollFL>>.
 * Oppdragstaker skal gi sin vurdering av resultatet.
 * Kontrollflatenes navngiving skal følge navngiving i landmålingsrapporten.
 ====
 
 :xrefstyle: full
 
-.Eksempel på dokumentasjon per kontrollflate
+.Eksempel på dokumentasjon pr. kontrollflate
 [#imgDokKontrollFL]
 //[caption="Figure 11:"]
 image::figurer/Kap7_DokKontrollFL.png[DokKontrollFL,400,align="center"]
@@ -544,7 +544,7 @@ image::figurer/Kap7_Homogenitet.png[Homogenitet,400,align="center"]
 * Stripejustering samt systemets kalibrering kan dokumenters med en av følgende fremgangsmåter:
 * Homogenitetsplott før og etter matching/stripejustering.
 * Resultat fra daglig kalibrering, stripejustering og homogenitetsplott etter matching/stripejustering.
-* Homogenitetsplottet skal dokumenteres med kartbladvise georefererte TIF-filer med oppløsning 1m, med tilhørende dZ-verdi per piksel i meter med 2 desimaler.
+* Homogenitetsplottet skal dokumenteres med kartbladvise georefererte TIF-filer med oppløsning 1m, med tilhørende dZ-verdi pr. piksel i meter med 2 desimaler.
 ====
 
 [[kapittel-bearbeiding-av-laserdata-klassifisering]]
@@ -604,7 +604,7 @@ Ved behov kan oppdragsgiver etterspørre klassifisering av objekter utover terre
 |Oppdragets navn og nummer|(LACHFFXX)
 |Dekningsnummer|(XX-12345)
 |Punkttetthet|(X pr m^2^)
-|Datum|(horisontalt datum, vertikalt datum, projeksjon og benyttet HREF modell)
+|Datum|(horisontalt datum, vertikalt datum, projeksjon og benyttet HREF-modell)
 |Oppdragstaker|(adresse, prosjektleder, fagansvarlig og underleverandører)
 |Beskrivelse av oppdraget|(produkt, areal, referanse til standarddokumenter)(eventuelle endringer/ utvidelser til opprinnelig teknisk spesifikasjon)
 |Antall eksemplar av rapport|(antall og oppbevaringssted)
@@ -632,7 +632,7 @@ Dokumentasjon i henhold til krav stilt i <<kapittel-kalibrering-av-laserskannere
 * Beskrivelse av utført initialisering av GNSS/INS-utstyr +
 |Klarmelding a|* Tidspunkt for avgitt klarmelding(er) for laserskanning +
 * Kopi av klarmelding(er) og flyfirmaets bekreftelse på denne/disse
-|Progresjon|Oversikt over flydager med skannede flystriper per flydag.
+|Progresjon|Oversikt over flydager med skannede flystriper pr. flydag.
 |Værforhold|Beskrivelse av generelle forhold, inkludert skyforhold, sikt, vind og turbulens. +
 Ved vanskelige forhold skal det rapporteres hvilke striper dette kan angå.
 |Problem, utfordringer og kommentarer til arbeidet a|Eventuelle problemer i forbindelse med gjennomføringen: +
