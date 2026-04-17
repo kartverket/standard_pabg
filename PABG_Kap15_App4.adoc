@@ -31,6 +31,11 @@
 <<krav-foto-konstruksjon>> +
 <<krav-foto-logisk-konsistens>> +
 <<krav-foto-rapportering-konstruksjon>> +
+<<krav-foto-ortofoto-høydemodell>> +
+<<krav-foto-sant-ortofoto>> +
+<<krav-foto-ortofotooppløsning>> +
+<<krav-foto-fremstilling-av-ortofoto>> +
+<<krav-foto-ortofotomosaikk>> +
 <<krav-foto-rapportering-ortofoto>> +
 <<krav-foto-drone-ortofoto-uten-rtk>> +
 <<krav-foto-drone-ortofoto-med-rtk>> +
