@@ -4,9 +4,17 @@
 === Innledning
 Vektorisering fra punktsky og modell kan være en alternativ metode til fotogrammetrisk kartkonstruksjon for fremstilling av vektordata. Metoden er særlig aktuell for punktskyer fra mobil datafangst og drone, men kan også være aktuell for andre datafangstmetoder.
 
-Vektorisering fra punktsky innebærer bruk av automatiserte og manuelle operasjoner som tar utgangspunkt i geometri og intensitetsinformasjon i punktsky for fremstilling av vektordata. Egnethet og kvalitet vil variere for ulike objekttype. Dersom ulike sensortyper benyttes til fremstilling av punktskyen, slik som fargelagt punktsky, skal bildematerialet og laser punktskyen inneha samme geometriske kvalitet og tidsepoke (innenfor et døgn).
+Vektorisering fra punktsky innebærer bruk av automatiserte og manuelle operasjoner som tar utgangspunkt i geometri og intensitetsinformasjon i punktsky for fremstilling av vektordata. Egnethet og kvalitet vil variere for ulike objekttype. 
 
 Vektorisering fra modell innebærer bruk av automatiserte og manuelle operasjoner som tar utgangspunkt i geometri og fargeinformasjon fra et 3D ortofoto / 3D Mesh. Egnethet og kvalitet vil variere for ulike objekttyper. 
+
+====
+[#krav-vektor-sensortyper,reftext="Krav vektor sensortyper"]
+*KRAV VEKTOR SENSORTYPER*
+
+* Dersom ulike sensortyper benyttes til fremstilling av punktskyen, slik som fargelagt punktsky, skal bildematerialet og laser punktskyen inneha samme geometriske kvalitet og tidsepoke (innenfor et døgn).
+
+====
 
 Felles for begge tilnærmingene er at krav til vektorisering følger kravene i registreringsinstruksen gitt for den objekttypen som skal vektoriseres.
 
@@ -49,15 +57,15 @@ image::figurer/Kap9_Knekkpkt og tverravvik.png[Figuren illustrerer knekkpunktavv
 
 ==== Krav til geometrisk avvik og tverravvik/ pilhøyde
 
-Ved vurdering av kvalitet på vektordata basert på vektorisering i punktsky/modell, må både stedfestingsnøyaktighet for punktskyen, geometrisk avvik i vektorisering og tverravvik/pilhøyde i grunnriss og høyde (tverravvik/pilhøyde) vurderes.
-
 ====
 [#krav-vektor-geometrisk-avvik-og-tverravvik-pilhøyde,reftext="Krav vektor geometrisk avvik og tverravvik/pilhøyde"]
 *KRAV VEKTOR GEOMETRISK AVVIK OG TVERRAVVIK/PILHØYDE*
 
-Når metoden brukes som alternativ til FKB-kartkonstruksjon vil kvalitetskrav til vektordata følge av FKB-Standard og kvalitetsklasser på objekttyper definert i aktuell produktspesifikasjon.
+* Ved vurdering av kvalitet på vektordata basert på vektorisering i punktsky/modell, må både stedfestingsnøyaktighet for punktskyen, geometrisk avvik i vektorisering og tverravvik/pilhøyde i grunnriss og høyde (tverravvik/pilhøyde) vurderes.
 
-Kvadratsummen av stedfestingsnøyaktighet på punktsky/modell, og den største verdien av geometrisk avvik eller tverravvik/ pilhøyde må være bedre enn kvalitetskravet for den aktuelle objekttypen.
+* Når metoden brukes som alternativ til FKB-kartkonstruksjon vil kvalitetskrav til vektordata følge av kartleggingsstandard og kvalitetsklasser på objekttyper definert i aktuell produktspesifikasjon.
+
+* Kvadratsummen av stedfestingsnøyaktighet på punktsky/modell, og den største verdien av geometrisk avvik eller tverravvik/pilhøyde må være bedre enn kvalitetskravet for den aktuelle objekttypen:
 
 
 [stem]
