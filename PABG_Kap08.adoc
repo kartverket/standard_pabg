@@ -8,7 +8,7 @@ Datainnsamling med mobile lasersystemer (MLS), brukes ofte i kombinasjon med and
 Standarden beskriver krav og anbefalinger for å sikre kvaliteten til sluttproduktet. Selve definisjonen av og kravet til sluttproduktene, vil ligge i registreringsinstrukser og produktspesifikasjoner. En viktig målsetting med standarden, er å legge til rette for økt bruk og gjenbruk av data fra MLS-datafangst.
 
 === Omfang
-Standarden omfatter mobil datafangst med laser med opsjonelt kamera.
+Standarden omfatter mobil datafangst med laserskanner med opsjonelt kamera.
 
 === Posisjonering av mobil datafangst
 MLS benytter seg av posisjons- og orienteringssystemer bygd opp rundt et treghetsnavigasjonssystem, også kalt "Inertial Navigation System" (INS). Et INS består av en "Inertial measurement Unit" (IMU) og tilhørende støttesensorer. Den primære støttesensoren er vanligvis en eller flere GNSS-mottakere ("Global Navigation Satellite System"), ofte i kombinasjon med optisk eller mekanisk hastighets- eller distansemåling (odometer). Det er også mulig å benytte andre former for støtteobservasjoner fra ulike sensorer sammen med et INS. Eksempler på dette har vi fra robotverden og "Simultaneous Localization and Mapping" (SLAM).
@@ -125,7 +125,7 @@ image::figurer/Kap8_Relative nøyaktighet Tilfeldig variasjon2.png[Figuren viser
 
 |Relativ nøyaktighet |  Systematisk avvik  ^| 0 - 200 ^|0 - 10 ^| 0 - 4 ^|0 - 2
  
-| |Tilfeldig variasjon, Toleranse ^|5 (+0/-5) ^|5 (+0/-5) ^|3 (+0/-3) ^|1 (+0/-1) 
+| |Tilfeldig variasjon og toleranse ^|5 (+0/-5) ^|5 (+0/-5) ^|3 (+0/-3) ^|1 (+0/-1) 
 
 
 
@@ -139,7 +139,7 @@ Se definisjon <<termer-kjentpunkt>>.
 
 Se definisjon <<termer-kontrollpunkt>>.
 
-Den absolutte nøyaktighet til kjentpunktet, skal være lik eller bedre enn kravet til den absolutte nøyaktigheten til punktskyen. Dersom nøyaktigheten er 1/3 av kravet, kan kontrollpunktene benyttes direkte i statestikkberegningene. Dersom nøyaktighetene til kontrollpunktene er dårligere, skal standardavviket til kjentpunktene benyttes i statestikkberegningene. Dette etter krav i standarden https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet[Geodatakvalitet]. Det stilles ikke konkrete krav til omfang av kjent- og kontrollpunkt, ettersom prosjektområde, GNSS-tilgjengelighet, målesystem og prosesseringsløyper har stor betydning for kvaliteten som oppnås rett fra INS. Metodikk og omfang skal være behovsstyrt og faglig begrunnet av leverandør i hvert enkelt oppdrag.
+Den absolutte nøyaktighet til kjentpunktet skal være lik eller bedre enn kravet til den absolutte nøyaktigheten til punktskyen. Dersom nøyaktigheten er 1/3 av kravet, kan kontrollpunktene benyttes direkte i statestikkberegningene. Dersom nøyaktighetene til kontrollpunktene er dårligere, skal standardavviket til kjentpunktene benyttes i statestikkberegningene. Dette etter krav i standarden https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet[Geodatakvalitet]. Det stilles ikke konkrete krav til omfang av kjent- og kontrollpunkt, ettersom prosjektområde, GNSS-tilgjengelighet, målesystem og prosesseringsløyper har stor betydning for kvaliteten som oppnås rett fra INS. Metodikk og omfang skal være behovsstyrt og faglig begrunnet av leverandør i hvert enkelt oppdrag.
 
 [[kapittel-kontrollmetode-og-kontrollplan]]
 ===== Kontrollmetode og kontrollplan
@@ -148,29 +148,24 @@ Kontroll kan gjennomføres ved å benytte en eller flere metodikker:
 
 * Innmålte kontrollpunkt, 
 Tradisjonelt innmålte kontrollpunkt er fysiske objekt som lar seg gjenfinne i punktskyen, for eksempel i form av geometri eller intensitet. Kontrollpunkt kan eksempelvis være signalerte flater, targets eller skarpe detaljer.
-
-* Gjentatte passeringer ved mobil datafangst, vil kunne gi observasjoner/målinger av samme område. Metoden kan erstatte innmålte kontrollpunkt dersom:
-** Passeringene har tilstrekkelig tidsforskyvning over 15 minutter
-** Datasettene skal være fri for systematiske avvik, dokumentert med kalibrering
-** Samsvaret mellom passeringene dokumenteres i XY og Z
-** Avviket ligger innenfor kravene for valgt nøyaktighetsnivå
-
+* Gjentatte passeringer ved mobil datafangst kan gi observasjoner/målinger av samme område. Metoden kan erstatte innmålte kontrollpunkt dersom:
+** Passeringene har tilstrekkelig tidsforskyvning over 15 minutter.
+** Datasettene skal være fri for systematiske avvik, dokumentert med kalibrering.
+** Samsvaret mellom passeringene dokumenteres i XY og Z.
+** Avviket ligger innenfor kravene for valgt nøyaktighetsnivå.
 * Andre uavhengige datakilder kan benyttes dersom deres kvalitet er tilstrekkelig for kontroll av det aktuelle kravet. Eksempler på andre uavhengige kilder er:
-
-** Eksisterende høydedata
-** FKB/NVDB eller andre kvalitetssikrede vektordatasett
-** Andre datasett av kjent kvalitet
-
+** Eksisterende høydedata.
+** FKB/NVDB eller andre kvalitetssikrede vektordatasett.
+** Andre datasett av kjent kvalitet.
 
 
 ====
 [#krav-mobil-kontrollplan,reftext="Krav mobil kontrollplan"]
 *KRAV MOBIL KONTROLLPLAN*
 
-* Uavhengig av kontrollmetodikk, skal leverandøren utarbeide en kontrollplan hvor det beskrives hvor store feil kontrollmetodikken er i stand til å avdekke ved kontrollpunktene. 
+* Uavhengig av kontrollmetodikk skal leverandøren utarbeide en kontrollplan hvor det beskrives hvor store feil kontrollmetodikken er i stand til å avdekke ved kontrollpunktene. 
 * Kontrollplanen skal angi hvor store feil som kan oppstå mellom kontrollpunktene.
 ====
-
 
 ==== Fullstendighet
 

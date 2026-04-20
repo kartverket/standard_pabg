@@ -179,7 +179,7 @@ Ved GNSS/INS-støttet fotografering kreves det i teorien kun et fåtall kjentpun
 * Det skal være minimum ett fullbestemt kjentpunkt i hver flystripe.
 * Kravet til antall kjentpunkt kan avvikes etter avtale. Dette må da kompenseres med flere tverrstriper.
 * I en bildeblokk skal det være minimum 5 fullbestemte kjentpunkter. Kravet gjelder også for enkeltstriper og enkeltstriper i kjede. Avvik fra dette (for eksempel ved svært små blokker og ved mange spredte øyer) kan tillates dersom oppdragsgiver har åpnet for dette i teknisk spesifikasjon for oppdraget. I slike tilfeller skal det sørges for at korrekte GNSS-skift blir påført bildene.
-* I blokker som inneholder kjedede enkeltstriper skal det være minimum ett fullbestemt kjentpunkt i hvert overlappsområde mellom stripene, samt minimum ett i, eller nær, enden av hver kjede.
+* I blokker som inneholder kjedede enkeltstriper skal det være minimum ett fullbestemt kjentpunkt i hvert overlappsområde mellom stripene, samt minimum ett i eller nær enden av hver kjede.
 * Kjentpunktene skal fordeles jevnt over hele bildeblokka og det skal påses at det finnes kjentpunkter nær blokkas ytterkanter. Det er dog ikke nødvendig å plassere kjentpunktene helt i ytterkant, dersom for eksempel adkomst gjør dette vanskelig.
 ====
 
@@ -191,15 +191,15 @@ Ved GNSS/INS-støttet fotografering kreves det i teorien kun et fåtall kjentpun
 [#krav-foto-fly-og-signaleringsplan,reftext="Krav foto fly- og signaleringsplan"]
 *KRAV FOTO FLY- OG SIGNALERINGSPLAN*
 
-* Endelig fly- og signaleringsplan skal bestå av rapport i PDF-format, samt avgrensninger og kjentpunkt i avtalt vektorformat. Rapporten skal minimum inneholde: +
-** Kamerafabrikat- og type, samt kamerakonstant. +
-** GSD, samt flyhøyde over havnivå for hver stripe. +
-** Lengde- og sideoverdekning i prosent. +
-** Antall striper og bilder, samt totalt antall stripekilometer. +
-** Omriss av bilde- eller stripedekning. +
-** Planlagte kjentpunkter med navn og ulike farger el. som skiller nye og eksisterende punkter. +
-** Estimert total effektiv flytid. Med effektiv flytid menes flytiden for å dekke prosjektområdet, (striper + svinger). Flytid til og fra prosjektområdet medregnes ikke. +
-** Prosjektgrense og topografisk bakgrunnskart. +
+* Endelig fly- og signaleringsplan skal bestå av rapport i PDF-format, samt avgrensninger og kjentpunkt i avtalt vektorformat. Rapporten skal minimum inneholde:
+** Kamerafabrikat- og type, samt kamerakonstant.
+** GSD, samt flyhøyde over havnivå for hver stripe.
+** Lengde- og sideoverdekning i prosent.
+** Antall striper og bilder, samt totalt antall stripekilometer.
+** Omriss av bilde- eller stripedekning.
+** Planlagte kjentpunkter med navn og ulike farger eller lignende som skiller nye og eksisterende punkter.
+** Estimert total effektiv flytid. Med effektiv flytid menes flytiden for å dekke prosjektområdet, (striper og svinger). Flytid til og fra prosjektområdet medregnes ikke.
+** Prosjektgrense og topografisk bakgrunnskart.
 ** Dato for godkjenning av planen og navnet på planleggeren.
 ====
 
@@ -490,7 +490,7 @@ Ved GNSS/INS-støttet flyfotografering kombineres observasjoner fra IMU (Inertia
 ====
 
 
-Metoden for GNSS-posisjonsbestemmelse ved bruk av DGNSS er basert på at det benyttes differensierte observasjoner mellom en eller flere GNSS basestasjoner på bakken (evtentuelle virtuelle basestasjoner) og GNSS mottakeren i flyet.
+Metoden for GNSS-posisjonsbestemmelse ved bruk av DGNSS er basert på at det benyttes differensierte observasjoner mellom en eller flere GNSS basestasjoner på bakken (eventuelle virtuelle basestasjoner) og GNSS mottakeren i flyet.
 
 ====
 [#krav-foto-dgnss,reftext="Krav foto DGNSS"]

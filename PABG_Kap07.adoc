@@ -4,18 +4,18 @@
 
 === Introduksjon
 
-Flybåren laserskanning (FLS) brukes ombord i fly eller helikopter for å utføre lasermålinger på objekter som både er naturlige og menneskeskapte. En lasermåling gir x, y og z koordinater for målte punkt samt egenskaper tilknyttet hver enkel retur (intensitet på retursignalet, vinkel på lasermålingen, ekkoinformasjon, og så videre). Flybåren laserskanning er også kjent som laseraltimetri og "airborne LiDAR (Light Detection And Ranging )". Laserskanning som penetrerer vann kalles laserbatymetri se https://github.com/kartverket/ALB_Best_Practice_Manual[Airborne LiDAR Bathymetry - Best Practice Manual]
+Flybåren laserskanning (FLS) brukes ombord i fly eller helikopter for å utføre lasermålinger på objekter som både er naturlige og menneskeskapte. En lasermåling gir x, y og z koordinater for målte punkt samt egenskaper tilknyttet hver enkel retur (intensitet på retursignalet, vinkel på lasermålingen, ekkoinformasjon, og så videre). Flybåren laserskanning er også kjent som laseraltimetri og "airborne LiDAR (Light Detection And Ranging )". Laserskanning som penetrerer vann kalles laserbatymetri se https://github.com/kartverket/ALB_Best_Practice_Manual[Airborne LiDAR Bathymetry - Best Practice Manual] for anbefalinger.
 
-Laserskanning kan også utføres fra andre plattformer slik som UAV, fra kjøretøy (bilbåren laserskanning) og fra fast oppstilling (terrestrisk/ bakkebasert laserskanning). I dette kapittel omtales datafangst med laserskanning fra enten fly eller helikopter. 
+Laserskanning kan også utføres fra andre plattformer slik som fra drone (UAV), fra kjøretøy (bilbåren laserskanning) og fra fast oppstilling (terrestrisk/bakkebasert laserskanning). I dette kapittel omtales datafangst med laserskanning fra luften (drone, fly eller helikopter). 
 
-Krav til produkt og leveranser spesifiseres i Produktspesifikasjon nasjonal modell for høydedata fra laserskanning (FKB-Laser). For definisjon av kvalitetsmål vises det til standarden Geodatakvalitet.
+Krav til produkt og leveranser spesifiseres i nyeste versjon av https://dokument.geonorge.no/produktspesifikasjoner/punktsky/1.0.3/index.html[Produktspesifikasjon Punktsky]. For definisjon av kvalitetsmål vises det til standarden Geodatakvalitet.
 
 ==== Virkemåte
 
 [[kapittel-laserskanner]]
 ===== Laserskanner
 
-Laserskanneren måler retning og avstand ned til bakken i laserskannerens koordinatsystem. Avstandene bestemmes ved å måle tiden det tar for lyset å nå terrenget og reflekteres tilbake. Deretter ganges tiden med lyshastigheten og deles på to. Dersom laserpulsen treffer halvgjennomtrengelige objekter, vil en kunne få flere retursignaler fra en laserpuls. Dette kan forekomme der pulsen treffer trær, master, kraftlinjer, bygningskanter e.l. For topografisk kartlegging er det vanlig å benytte bølgelengder i det nærinfrarøde området. Lyskjeglen som sendes ut må ha en liten åpningsvinkel for å sikre et lite fotavtrykk. I laserskanneren er det en skanner som sikrer at avstandsmålinger blir fordelt innenfor en gitt skanningsbredde. Skannermekanismen er oftest et oscillerende speil, men kan også være et roterende speil eller fiberoptikk. Et system som opererer med en lyskjegle kalles single channel system. System med flere lyskjegler benytter enten et dual channel system hvor to laserkjegler skapes fra to uavhengige energikilder, eller et split beam system hvor to laserkjegles skapes ved å splitte en energikilde.
+Laserskanneren måler retning og avstand ned til bakken i laserskannerens koordinatsystem. Avstandene bestemmes ved å måle tiden det tar for lyset å nå terrenget og reflekteres tilbake. Deretter ganges tiden med lyshastigheten og deles på to. Dersom laserpulsen treffer halvgjennomtrengelige objekter, vil en kunne få flere retursignaler fra en laserpuls. Dette kan forekomme der pulsen treffer trær, master, kraftlinjer, bygningskanter eller lignende For topografisk kartlegging er det vanlig å benytte bølgelengder i det nærinfrarøde området. Lyskjeglen som sendes ut må ha en liten åpningsvinkel for å sikre et lite fotavtrykk. I laserskanneren er det en skanner som sikrer at avstandsmålinger blir fordelt innenfor en gitt skanningsbredde. Skannermekanismen er oftest et oscillerende speil, men kan også være et roterende speil eller fiberoptikk. Et system som opererer med en lyskjegle kalles single channel system. System med flere lyskjegler benytter enten et dual channel system hvor to laserkjegler skapes fra to uavhengige energikilder, eller et split beam system hvor to laserkjegles skapes ved å splitte en energikilde.
 
 ===== Posisjons- og rotasjonssystem
 
@@ -47,7 +47,7 @@ Produksjonsmetodene for disse produktene vil ikke bli beskrevet i denne standard
 ==== Forventet nøyaktighet
 Den absolutte nøyaktigheten til en punktsky avhenger av nøyaktighet til følgende komponenter: 
 
-* GNSS/INS løsning (posisjon (Ø,N,H) og rotasjon (Pitch,Roll,Heading)).
+* GNSS/INS løsning (posisjon (Ø,N og H) og rotasjon (Pitch,Roll og Heading)).
 * Avstands- og vinkelmåling til laserskanneren.
 * Systemkalibrering.
 * Stripejustering.
@@ -56,10 +56,8 @@ Den absolutte nøyaktigheten til en punktsky avhenger av nøyaktighet til følge
 
 Den absolutte nøyaktigheten til eventuelle avledede produkter vil videre avhenge av: 
 
-* Punktfordeling + 
-Ved lang avstand mellom punktene vil en eventuell interpolasjon introdusere svakheter i det avledede produktet.
-* Klassifisering.
-Feilklassifiserte punkt, for eksempel vegetasjonspunkt klassifisert som bakke, vil gi et unøyaktig produkt.
+* Punktfordeling: Ved lang avstand mellom punktene vil en eventuell interpolasjon introdusere svakheter i det avledede produktet.
+* Klassifisering: Feilklassifiserte punkt, for eksempel vegetasjonspunkt klassifisert som bakke, vil gi et unøyaktig produkt.
 
 Punktskyens nøyaktighet kan beregnes ved bruk av kontrollflater og kontrollprofiler. Med dagens utstyr kan en forvente en punktnøyaktighet i størrelsesorden 0,02–0,20 m (standardavvik) i høyde.
 
@@ -76,17 +74,18 @@ Kalibreringen til et laserskanningssystem gjøres dels hos instrumentleverandør
 ===== Leverandørkalibrering
 Leverandørkalibrering utføres av leverandøren. Selve kalibreringen gjøres på fabrikken til leverandøren, men deler av kalibreringen kan også utføres i felt ved behov. Nødvendig hyppighet på leverandørkalibrering vil være sensoravhengig. 
 
-Generelt skal følgende parametere bestemmes av instrumentleverandøren:
 
-* Avstand og vinkel avstander mellom de ulike koordinatsystemene internt i laserskanneren.
-* Offset-verdier for avstandsmålingene (fast klokkefeil).
-* Korreksjonstabell hvor avstanden blir korrigert basert på retursignalets intensitetsverdi. (For de systemer hvor dette er relevant).
-* Korreksjonsfaktorer for skannermekanismens retningsmåling.
-* Beregne tidsforsinkelser mellom målingene fra de ulike komponentene.
 
 ====
 [#krav-laser-leverandørkalibrering,reftext="Krav laser leverandørkalibrering"]
 *KRAV LASER LEVERANDØRKALIBRERING*
+
+* Generelt skal følgende parametere bestemmes av instrumentleverandøren:
+** Avstand og vinkel avstander mellom de ulike koordinatsystemene internt i laserskanneren.
+** Offset-verdier for avstandsmålingene (fast klokkefeil).
+** Korreksjonstabell hvor avstanden blir korrigert basert på retursignalets intensitetsverdi. (For de systemer hvor dette er relevant).
+** Korreksjonsfaktorer for skannermekanismens retningsmåling.
+** Beregne tidsforsinkelser mellom målingene fra de ulike komponentene.
 
 * Oppdragstaker skal gi en beskrivelse av sensorleverandørens vedlikeholdsrutiner.
 * Oppdragstaker skal dokumentere gjeldende leverandørkalibrering.
@@ -94,15 +93,14 @@ Generelt skal følgende parametere bestemmes av instrumentleverandøren:
 
 ===== Installasjonskalibrering
 
-For hver installasjon i et fly eller helikopter må det utføres en kalibrering. Følgende momenter er viktig å utføre:
-
-* Avstand mellom GNSS antennens fasesenter og origo i laserskannerens referansesystem bestemmes. Avstanden bestemmes ved landmåling, men kan også estimeres i egnet program.
-* Installasjonen må testes i luften for å verifisere at leverandørkalibreringen er stabil og av tilfredsstillende kvalitet. Dette gjelder særlig «boresight verdiene». Dersom dette ikke er tilfredsstillende må korrigerende tiltak utføres.
 
 ====
 [#krav-laser-installasjonskalibrering,reftext="Krav laser installasjonskalibrering"]
 *KRAV LASER INSTALLASJONSKALIBRERING*
 
+* For hver installasjon i et fly eller helikopter må det utføres en kalibrering:
+** Avstand mellom GNSS antennens fasesenter og origo i laserskannerens referansesystem må bestemmes. Avstanden bestemmes ved landmåling, men kan også estimeres i egnet program.
+** Installasjonen må testes i luften for å verifisere at leverandørkalibreringen er stabil og av tilfredsstillende kvalitet. Dette gjelder særlig «boresight verdiene». Dersom dette ikke er tilfredsstillende må korrigerende tiltak utføres.
 * Installasjonskalibrering skal gjennomføres minimum en gang i året.
 * Installasjonskalibrering skal gjennomføres etter endringer på installasjonen.
 * Oppdragstaker skal dokumentere gjeldende installasjonskalibrering.
@@ -122,7 +120,7 @@ Daglig kalibrering er ofte relatert til den enkelte flyging. De innsamlede data 
 Planlegging av et laserskanningsprosjekt omfatter utarbeidelse av flyplan som sikrer dekning av aktuelt areal, oppnåelse av etterspurt nøyaktighet og punktetthet, samt plan for plassering av kontrollflater.
 
 ===== Flyplan
-Ved flyplanlegging med FLS vil skanneparametere, samt flyhøyde og flyhastighet, bestemmes for det aktuelle prosjekt. Flyplanen lages ut fra oppdragets formål og forutsetninger (nøyaktighet, bestilt punktetthet), eventuelle tilgjengelige kontrollflater, forventet vegetasjonstetthet, topografi, arrondering og tilgjengelig instrument. Før utføring av laserskanning skal det leveres flyplan for oppdraget.
+Ved flyplanlegging med FLS vil skanneparametere, samt flyhøyde og flyhastighet, bestemmes for det aktuelle prosjekt. Flyplanen lages ut fra oppdragets formål og forutsetninger (nøyaktighet og bestilt punktetthet), eventuelle tilgjengelige kontrollflater, forventet vegetasjonstetthet, topografi, arrondering og tilgjengelig instrument. Før utføring av laserskanning skal det leveres flyplan for oppdraget.
 
 Se <<kapittel-eksempel-flyplan-laserskanning>> for eksempel på en flyplan.
 
@@ -130,12 +128,12 @@ Se <<kapittel-eksempel-flyplan-laserskanning>> for eksempel på en flyplan.
 [#krav-laser-flyplan-laserskanning,reftext="Krav laser flyplan laserskanning"]
 *KRAV LASER FLYPLAN LASERSKANNING*
 
-* Flyplan skal bestå av plott i PDF-format, samt avgrensninger og kontrollflater i avtalt vektorformat. Flyplanen skal minimum inneholde: +
-** Flyplanen skal ha et lesbart bakgrunnskart med skalabar. +
-** Planlagte flystriper skal presenteres med dekningsområde, overlappsområde og nummerering på hver stripe. (Minste overlapp som følge av terrengvariasjoner eller turbulens skal være 5 %). +
-** Planlagt stripeoverlapp i prosent. +
-** Planlagte tverrstriper skal tydelig fremkomme. +
-** Planlagte kontrollflater med gyldighetsområde. +
+* Flyplan skal bestå av plott i PDF-format, samt avgrensninger og kontrollflater i avtalt vektorformat. Flyplanen skal minimum inneholde:
+** Flyplanen skal ha et lesbart bakgrunnskart med skalabar.
+** Planlagte flystriper skal presenteres med dekningsområde, overlappsområde og nummerering på hver stripe. (Minste overlapp som følge av terrengvariasjoner eller turbulens skal være 5 %).
+** Planlagt stripeoverlapp i prosent.
+** Planlagte tverrstriper skal tydelig fremkomme.
+** Planlagte kontrollflater med gyldighetsområde.
 ** Antall flystriper, total stripelengde og effektiv flytid. Med effektiv flytid menes flytiden for å dekke prosjektområdet, (striper + svinger). Flytid til og fra prosjektområdet medregnes ikke. +
 ** Opplysninger om skanneparametere (se <<krav-laser-opplysninger-om-skanneparametre>>).
 ====
@@ -163,7 +161,7 @@ Se <<kapittel-eksempel-flyplan-laserskanning>> for eksempel på en flyplan.
 
 [[kapittel-laser-tverrstriper]]
 ===== Tverrstriper
-Tverrstriper benyttes til daglig kalibrering og stripejustering av et laserprosjekt. Tverrstriper bør ligge vinkelrett på stripene for å fungere som en tverrstripe, samt plasseres slik at tverrstripen unngår større områder med vann.
+Tverrstriper benyttes til daglig kalibrering og stripejustering av et laserprosjekt. 
 
 ====
 [#krav-laser-tverrstriper,reftext="Krav laser tverrstriper"]
@@ -171,14 +169,23 @@ Tverrstriper benyttes til daglig kalibrering og stripejustering av et laserprosj
 
 :xrefstyle: short
 
-* Alle flystriper i et laserprosjekt skal dekkes av minimum en tverrstripe pr. 60 km. +
-* For flystriper som er lenger enn 40 km skal det plasseres tverrstripe i hver ende. +
+
+* Alle flystriper i et laserprosjekt skal dekkes av minimum en tverrstripe pr. 60 km.
+* For flystriper som er lenger enn 40 km skal det plasseres tverrstripe i hver ende.
 * Tverrstripene skal fortrinnsvis ligge vinkelrett på flystripene. Minste tillate vinkel for å kvalifisere som tverrstripe er 50 grader, se <<#imgTverrstriper>>. +
 * Ved enkeltstriper i kjede, for eksempel ved kartlegging av traséer, skal den neste stripen overlappe den forrige (i knekkene) på en slik måte at den også kan fungere som tverrstripe, se <<#imgEnkeltstripe>>. Hvis knekkvinkel er mindre enn 50 grader må man planlegge en egen tverrstripe.
 * Ved store endringer i overflatemodellen som for eksempel snøsmelting og ulik vekstsesong skal berørte deler av tverrstripen skannes på nytt.
 ====
 
 :xrefstyle: full
+
+====
+[#anbefaling-laser-tverrstriper,reftext="Anbefaling laser tverrstriper"]
+*ANBEFALING LASER TVERRSTRIPER*
+
+* Tverrstriper bør plasseres slik at tverrstripen unngår større områder med vann.
+
+====
 
 .Minimum vinkel på tverrstriper
 [#imgTverrstriper]
@@ -278,27 +285,28 @@ Unntak kan avtales der prosjekter går over flere år.
 * Rundt kontrollflatene skal det være en buffersone på minimum 0,5 m. Helningen på buffersonen skal ikke overskride 5 %. Dersom det ikke benyttes en buffersone rundt målt kontrollflate kan grunnrissfeil påvirke resultatet av høydeanalysen.
 * Når kontrollflater måles inn i terrenget er det ikke krav om oppmerking av
 målepunktene. I praksis så vil oppmerking være gunstig for å sikre at samme målepunkt blir benyttet. Dersom målepunktene merkes i felt skal det benyttes en krittspray eller kritt som forsvinner etter kort tid.
+* Det skal leveres gyldighetsplott for kontrollflatemetoden.
 ====
 
 :xrefstyle: full
 
 
 
-Som et alternativ til innmåling av tradisjonelle kontrollflater, kan hjulsportmetoden benyttes. Ved hjulspormetoden måler man inn posisjonen til målebilens bakhjul ved hjelp av GNSS og treghetsnavigasjonsutstyr (INS). De målte punktene brukes til kontroll og støtte for stripejusteringen. Det benyttes robust statistikk i analysen av høydedifferanser mellom hjulspor og laserdata for å filtrere bort grove feil. Det store antallet målepunkt gir et bra datagrunnlag slik at evt. støy vil bli utlignet av antall målinger. Målinger utført med hjulspormetoden har et gyldighetsområdet tilsvarende en sirkel med radius 6 km. Dette gjelder for samtlige innmålte punkt med hjulspormetoden med tilstrekkelig nøyaktighet.
+Som et alternativ til innmåling av tradisjonelle kontrollflater, kan hjulsportmetoden benyttes. Ved hjulspormetoden måler man inn posisjonen til målebilens bakhjul ved hjelp av GNSS og treghetsnavigasjonsutstyr (INS). De målte punktene brukes til kontroll og støtte for stripejusteringen. Det benyttes robust statistikk i analysen av høydedifferanser mellom hjulspor og laserdata for å filtrere bort grove feil. Det store antallet målepunkt gir et bra datagrunnlag slik at eventuell støy vil bli utlignet av antall målinger. Målinger utført med hjulspormetoden har et gyldighetsområdet tilsvarende en sirkel med radius 6 km. Dette gjelder for samtlige innmålte punkt med hjulspormetoden med tilstrekkelig nøyaktighet.
 
 ====
 
 [#krav-laser-kontrollflater-hjulspormetoden,reftext="Krav laser kontrollflater - hjulspormetoden"]
 *KRAV LASER KONTROLLFLATER - HJULSPORMETODEN*
 
-* Svake posisjonsløsninger skal utelates. Nøyaktighet til målingene skal følge <<krav-laser-kontrollflater-noyaktighet>> 
+* Svake posisjonsløsninger skal utelates. Nøyaktighet til målingene skal følge <<krav-laser-kontrollflater-noyaktighet>>.
 *  Måleutstyret skal kalibreres for hver installasjon. Dokumentasjon for kalibrering skal leveres sammen med kontrollflaten.
 * Krav til målingenes utstrekning/spredning er likt for kontrollflatemetoden og hjulspormetoden.
 * Ved datainnsamling med hjulspormetoden skal målingene utføres kontinuerlig gjennom prosjektområdet. Dette på en slik måte at hele området er dekket av kontrollmålingenes gyldighetsområder.
 * Nøyaktigheten på hjulspormetoden skal tilsvare nøyaktigheten til kontrollflate metoden.
 * Alle prosjekt skal ha minst en kontrollflate målt med kontrollflatemetoden. Dette for å kontrollere innmålingssystem for hjulspormetoden der denne metodikken er benyttet. Lokasjonen til denne kontrollflaten skal da være i umiddelbar nærhet til hjulspordataene.
 * Helningskravet på maksimalt 5 % i <<krav-laser-kontrollflater-antall-og-plassering>> gjelder ikke for hjulspormetoden.
-* Det er krav til leveranse av gyldighetsplott for både hjulspormetoden og kontrollflatemetoden.
+* Det skal leveres gyldighetsplott for hjulspormetoden.
 
 ====
 
@@ -324,7 +332,14 @@ image::figurer/Kap7_SammenslåingBlokk.jpg["Sammenslåing av polygoner til en sk
 
 [[kapittel-kontrollprofiler]]
 ===== Kontrollprofiler
-Kontrollprofiler skal benyttes for å kontrollere og eventuelt justere for systematisk avvik i grunnriss. Dersom mønelinjen i eksisterende FKB-data oppfyller nøyaktighetskravet kan denne benyttes i grunnrissanalysen. I prosjekt utenfor bebyggelse må terrenglinjer benyttes.
+
+====
+[#krav-laser-kontrollprofiler,reftext="Krav laser kontrollprofiler"]
+*KRAV LASER KONTROLLPROFILER*
+
+* Kontrollprofiler skal benyttes for å kontrollere og eventuelt justere for systematisk avvik i grunnriss. Dersom mønelinjen i eksisterende FKB-data oppfyller nøyaktighetskravet kan denne benyttes i grunnrissanalysen. I prosjekt utenfor bebyggelse må terrenglinjer benyttes.
+
+====
 
 ====
 [#krav-laser-kontrollprofiler-antall-og-plassering,reftext="Krav laser kontrollprofiler - antall og plassering"]
@@ -435,20 +450,25 @@ Erfaring viser at det ofte er behov for korreksjon for systematiske avvik i de e
 
 Ulike Feilkilder som kan gi systematiske avvik er:
 
-* GNSS/INS løsningen
-* Systematisk avvik fra stripejustering
-* Ytre væravhengige faktorer som trykk og temperatur
-* Kalibrering av instrumentet
+* GNSS/INS løsningen.
+* Systematisk avvik fra stripejustering.
+* Ytre væravhengige faktorer som trykk og temperatur.
+* Kalibrering av instrumentet.
 
-Med bakgrunn i dette stilles det i det følgende krav om bruk av kontrolldata. For å kontrollere høydenøyaktighet benyttes kontrollflater og for å kontrollere grunnriss benyttes kontrollprofiler.  
+Med bakgrunn i dette stilles krav om bruk av kontrolldata. For å kontrollere høydenøyaktighet benyttes kontrollflater og for å kontrollere grunnriss benyttes kontrollprofiler.
 
 
 
 ===== Kontroll av høydenøyaktighet
 
-Kontrollflater skal benyttes for å kontrollere og eventuelt justere for systematisk avvik i høyde på punktskyen. Analysen mot kontrollflaten skal utføres mot alle klasser med unntak av klasse 7 «støy-punkter». 
+====
+[#krav-laser-hoydekontroll,reftext="Krav laser høydekontroll"]
+*KRAV LASER HØYDEKONTROLL*
 
-Oppdragstaker skal begrunne årsak til at en kontrollflater som skiller seg fra resterende flater forkastes. Benyttede kontrollflater i justering og statistikk skal være i henhold til antall spesifisert i godkjent flyplan. Ved avvik uten åpenbare forklaringer (terrengendringer) skal det utføres kontrollmåling. 
+* Kontrollflater skal benyttes for å kontrollere og eventuelt justere for systematisk avvik i høyde på punktskyen. Analysen mot kontrollflaten skal utføres mot alle klasser med unntak av klasse 7 «støy-punkter». 
+* Oppdragstaker skal begrunne årsak til at en kontrollflater som skiller seg fra resterende flater forkastes. Benyttede kontrollflater i justering og statistikk skal være i henhold til antall spesifisert i godkjent flyplan. Ved avvik uten åpenbare forklaringer (terrengendringer) skal det utføres kontrollmåling. 
+
+====
 
 ====
 [#krav-laser-dokumentasjon-pa-hoydekontroll,reftext="Krav laser dokumentasjon på høydekontroll"]
@@ -484,9 +504,14 @@ image::figurer/Kap7_DokKontrollFL.png[DokKontrollFL,400,align="center"]
 |===
 ===== Kontroll av grunnrissnøyaktighet
 
-For å dokumentere de aktuelle prosjektenes kvalitet i grunnriss skal målte kontrollprofiler benyttes for grunnrisskontroll.
+====
+[#krav-laser-grunnrisskontroll,reftext="Krav laser grunnrisskontroll"]
+*KRAV LASER GRUNNRISSKONTROLL*
 
-Oppdragstaker skal undersøke og kommentere eventuelle avvik i grunnrisskontrollen som overstiger kravet til grunnrissnøyaktighet for det aktuelle prosjekt.  
+* For å dokumentere de aktuelle prosjektenes kvalitet i grunnriss skal målte kontrollprofiler benyttes for grunnrisskontroll.
+* Oppdragstaker skal undersøke og kommentere eventuelle avvik i grunnrisskontrollen som overstiger kravet til grunnrissnøyaktighet for det aktuelle prosjekt.  
+
+====
 
 ====
 [#krav-laser-dokumentasjon-pa-grunnrisskontroll,reftext="Krav laser dokumentasjon på grunnrisskontroll"]
@@ -518,15 +543,18 @@ Oppdragstaker skal undersøke og kommentere eventuelle avvik i grunnrisskontroll
 [[kapittel-dokumentasjon-av-homogenitet]]
 ==== Dokumentasjon av homogenitet
 
-Punktskyen må kontrolleres for tilfeldige feil. Dette er viktig for å avdekke mulige grove feil og manglende homogenitet i punktskyen. 
+====
+[#krav-laser-kontroll-av-punktsky,reftext="Krav laser kontroll av punktsky"]
+*KRAV LASER KONTROLL AV PUNKTSKY*
 
+* Punktskyen må kontrolleres for tilfeldige feil. Dette er viktig for å avdekke mulige grove feil og manglende homogenitet i punktskyen. +
 Typiske feilkilder er:
+** Drift i GNSS/INS-løsningen.
+** Stripejustering.
+** Kalibrering av instrumentet.
+* Oppdragstaker skal gi sin vurdering av resultatet. Resultatet skal være homogent, eventuelle mønster skal ikke forekomme.
 
-* Drift i GNSS/INS-løsningen.
-* Stripejustering.
-* Kalibrering av instrumentet.
-
-Oppdragstaker skal gi sin vurdering av resultatet. Resultatet skal være homogent, eventuelle mønster skal ikke forekomme.
+====
 
 .Eksempel på plott over beregnede høydeavvik mellom flystriper
 [#imgHomogenitet]
@@ -539,12 +567,12 @@ image::figurer/Kap7_Homogenitet.png[Homogenitet,400,align="center"]
 
 
 * I overlappsområder skal det beregnes høydeavvik mellom stripene ved sammenligning av automatisk klassifisert terrengmodell for hver flystripe.
-* Resultatet skal dokumenteres numerisk i tabell
+* Resultatet skal dokumenteres numerisk i tabell.
 * Oppdragstaker skal gi sin vurdering av resultatet.
 * Stripejustering samt systemets kalibrering kan dokumenters med en av følgende fremgangsmåter:
-* Homogenitetsplott før og etter matching/stripejustering.
-* Resultat fra daglig kalibrering, stripejustering og homogenitetsplott etter matching/stripejustering.
-* Homogenitetsplottet skal dokumenteres med kartbladvise georefererte TIF-filer med oppløsning 1m, med tilhørende dZ-verdi pr. piksel i meter med 2 desimaler.
+** Homogenitetsplott før og etter matching/stripejustering.
+** Resultat fra daglig kalibrering, stripejustering og homogenitetsplott etter matching/stripejustering.
+** Homogenitetsplottet skal dokumenteres med kartbladvise georefererte TIF-filer med oppløsning 1m, med tilhørende dZ-verdi pr. piksel i meter med 2 desimaler.
 ====
 
 [[kapittel-bearbeiding-av-laserdata-klassifisering]]
@@ -552,14 +580,14 @@ image::figurer/Kap7_Homogenitet.png[Homogenitet,400,align="center"]
 
 Hvert punkt i punktskyen kan klassifiseres i separate klasser. Vanligste form for klassifisering er å klassifisere en terrengmodell ved å skille punkter som er treff på bakken fra de øvrige punktene i punktskyen. Avhengig av formålet med laserskanningen vil oppdragstakeren kunne klassifisere punktene i ulike lag, for eksempel bygninger, broer, vann, objekter 0–2 m over bakken. 
 
-Gjeldende versjon av dokumentet Produktspesifikasjon Nasjonal modell for høydedata fra laserskanning (FKB-Laser) detaljerer hvilke klasser som tillates. 
+Gjeldende versjon av https://dokument.geonorge.no/produktspesifikasjoner/punktsky/1.0.3/index.html[Produktspesifikasjon Punktsky] detaljerer hvilke klasser som tillates. 
 
 For å sikre et godt sluttresultat må datasettet gjennomgå en manuell etterkontroll for å fange eventuelle feil introdusert ved kjøring av automatiske klassifiseringsrutiner.
 
 
 
 ==== Grovfeilsøk
-I laserdata vil det forekomme feil av type atmosfæriske treff og lave punkter som skyldes "multipath" eller gal bestemmelse av siste puls. Punkter av den siste feiltypen vil ofte bli inkludert i terrengmodellen siden mange klassifiseringsrutiner bygger på det prinsippet at det laveste punktet innen et gitt areal antas å tilhøre terrengmodellen. Prosessen med å oppdage lave punkter omfatter både automatiske rutiner og visuell betraktning av for eksempel skyggelagte relieffbilder. 
+I laserdata vil det forekomme feil av type atmosfæriske treff og lave punkter som skyldes "multipath" eller feil bestemmelse av siste puls. Punkter av den siste feiltypen vil ofte bli inkludert i terrengmodellen siden mange klassifiseringsrutiner bygger på det prinsippet at det laveste punktet innen et gitt areal antas å tilhøre terrengmodellen. Prosessen med å oppdage lave punkter omfatter både automatiske rutiner og visuell betraktning av for eksempel skyggelagte relieffbilder. 
 
 
 
@@ -606,56 +634,53 @@ Ved behov kan oppdragsgiver etterspørre klassifisering av objekter utover terre
 |Punkttetthet|(X pr m^2^)
 |Datum|(horisontalt datum, vertikalt datum, projeksjon og benyttet HREF-modell)
 |Oppdragstaker|(adresse, prosjektleder, fagansvarlig og underleverandører)
-|Beskrivelse av oppdraget|(produkt, areal, referanse til standarddokumenter)(eventuelle endringer/ utvidelser til opprinnelig teknisk spesifikasjon)
+|Beskrivelse av oppdraget|(produkt, areal og referanse til standarddokumenter)(eventuelle endringer/utvidelser til opprinnelig teknisk spesifikasjon)
 |Antall eksemplar av rapport|(antall og oppbevaringssted)
 |Versjon|(rapportversjonsnummer)
 |Datering og signatur|(dd.mm.åååå, signatur)
-.2+|Landmålingsrapporter|Rapport innmåling Kontrollflater/Hjulspormetoden|Dokumentasjon i henhold til krav stilt i <<kapittel-kontrollflater>>.
+.2+|Landmålingsrapporter|Rapport innmåling av kontrollflater/hjulspormetoden|Dokumentasjon i henhold til krav stilt i <<kapittel-kontrollflater>>.
 Rapport fra innmåling av kontrollflater skal legges ved som vedlegg til
 prosjektrapporten. Rapporten fra innmålingen skal inneholde bilder av
 innmålte flater, gjelder ikke for hjulspormetoden.
-|Rapport innmåling Kontrollprofiler|Dokumentasjon i henhold til krav stilt i <<kapittel-kontrollprofiler>>
+|Rapport innmåling kontrollprofiler|Dokumentasjon i henhold til krav stilt i <<kapittel-kontrollprofiler>>
 .7+|Gjennomføring av Laserskanning|Fly|(fabrikat, type, kallesignal og trykkabin ja/nei)
-|Skannersystem a|* Skanner: +
-** Fabrikat, type, serienummer og eventuelt revisjonsnummer. +
+|Skannersystem a|* Skanner:
+** Fabrikat, type, serienummer og eventuelt revisjonsnummer.
 ** Leverandørkalibreringer: +
-Dokumentasjon i henhold til krav stilt i <<kapittel-kalibrering-av-laserskanneren>> +
-* Gyromount:	+
-** Fabrikat og type. +
-* GNSS-mottaker og antenne: +
-** Fabrikat, type, serienummer og benyttet loggerate. +
-* IMU: +
-** Fabrikat, type, serienummer og benyttet loggerate. +
-* Beskrivelse av hvordan antenneeksentrisitet er bestemt, dokumentasjon av andre eksentrisiteter (for eksempel IMU montering) +
+Dokumentasjon i henhold til krav stilt i <<kapittel-kalibrering-av-laserskanneren>>
+* Gyromount:
+** Fabrikat og type.
+* GNSS-mottaker og antenne:
+** Fabrikat, type, serienummer og benyttet loggerate.
+* IMU:
+** Fabrikat, type, serienummer og benyttet loggerate.
+* Beskrivelse av hvordan antenneeksentrisitet er bestemt og dokumentasjon av andre eksentrisiteter (for eksempel IMU montering) +
 * Installasjonskalibreringer: +
-Dokumentasjon i henhold til krav stilt i <<kapittel-kalibrering-av-laserskanneren>>. +
-* Beskrivelse av utført initialisering av GNSS/INS-utstyr +
-|Klarmelding a|* Tidspunkt for avgitt klarmelding(er) for laserskanning +
-* Kopi av klarmelding(er) og flyfirmaets bekreftelse på denne/disse
+Dokumentasjon i henhold til krav stilt i <<kapittel-kalibrering-av-laserskanneren>>.
+* Beskrivelse av utført initialisering av GNSS/INS-utstyr.
+|Klarmelding a|* Tidspunkt for avgitt klarmelding(er) for laserskanning.
+* Kopi av klarmelding(er) og flyfirmaets bekreftelse på denne/disse.
 |Progresjon|Oversikt over flydager med skannede flystriper pr. flydag.
 |Værforhold|Beskrivelse av generelle forhold, inkludert skyforhold, sikt, vind og turbulens. +
 Ved vanskelige forhold skal det rapporteres hvilke striper dette kan angå.
 |Problem, utfordringer og kommentarer til arbeidet a|Eventuelle problemer i forbindelse med gjennomføringen: +
 
-* Beskrivelse av problemer, inkludert årsaker til disse, som vil eller kan resultere i negative konsekvenser for mellom- og/eller sluttprodukter. +
-* Beskrivelse av tilhørende utførte tiltak. +
+* Beskrivelse av problemer, inkludert årsaker til disse, som vil eller kan resultere i negative konsekvenser for mellom- og/eller sluttprodukter.
+* Beskrivelse av tilhørende utførte tiltak.
 * Beskrivelse av mulige konsekvenser av problemene.
 |Vurdering av resultat|En samlet vurdering av utføringen av laserskanningen og kvaliteten på arbeidene med hensyn til bestilling og øvrige krav.
-.5+|Bearbeiding av Laserdata|GNSS/INS Beregning a|* Beregningsdato (dato for ferdigstilling av beregning). +
-* Programvare (fabrikat og versjonsnummer). +
-* Prinsipp/metode for beregning av GNSS/INS-løsning. +
-* Eventuelle geodetiske transformasjoner. +
-* Eventuelle høydetransformasjoner/høydeskaleringer. +
-* Eventuelle andre transformasjoner eller korreksjoner. +
+.5+|Bearbeiding av laserdata|GNSS/INS Beregning a|* Beregningsdato (dato for ferdigstilling av beregning). +
+* Programvare (fabrikat og versjonsnummer).
+* Prinsipp/metode for beregning av GNSS/INS-løsning.
+* Eventuelle geodetiske transformasjoner.
+* Eventuelle høydetransformasjoner/høydeskaleringer.
+* Eventuelle andre transformasjoner eller korreksjoner.
 * Vurdering av resultatet.
-|Matching av punktsky|Dokumentasjon i henhold til krav stilt i <<kapittel-matching-av-punktsky>>
-|Kontroll av Punktsky +
-Systematiske Avvik|Dokumentasjon i henhold til krav stilt i <<kapittel-kontroll-av-punktsky-systematiske-avvik>>
-|Kontroll av Punktsky +
-Homogenitet|Dokumentasjon i henhold til krav stilt i <<kapittel-dokumentasjon-av-homogenitet>>
-|Bearbeiding av Laserdata +
-Klassifisering|Dokumentasjon i henhold til krav stilt i <<kapittel-bearbeiding-av-laserdata-klassifisering>> 
-.2+|Leveranser|Produktspesifikasjon|Versjon av produktspesifikasjon og objektkatalog
+|Matching av punktsky|Dokumentasjon i henhold til krav stilt i <<kapittel-matching-av-punktsky>>.
+|Kontroll av punktsky og systematiske avvik|Dokumentasjon i henhold til krav stilt i <<kapittel-kontroll-av-punktsky-systematiske-avvik>>.
+|Kontroll av punktsky og homogenitet|Dokumentasjon i henhold til krav stilt i <<kapittel-dokumentasjon-av-homogenitet>>.
+|Bearbeiding av laserdata og klassifisering|Dokumentasjon i henhold til krav stilt i <<kapittel-bearbeiding-av-laserdata-klassifisering>>.
+.2+|Leveranser|Produktspesifikasjon|Versjon av produktspesifikasjon og objektkatalog.
 |Leveranser a|En fullstendig oversikt over alle leverte data, metadata og eventuelt medfølgende dokumentasjon skal listes opp. Oversikten skal minimum inneholde: +
 
 * Spesifikasjon av leveranseformat, medium og eventuell inndeling i kataloger og filer. +
