@@ -8,5 +8,6 @@
 <<anbefaling-foto-signalering-i-droneprosjekter>> +
 <<anbefaling-foto-drone-detaljerte-prosjekter>> +
 <<anbefaling-foto-skråbilder-minimum>> +
+<<anbefaling-laser-tverrstriper>> +
 <<anbefaling-mobil-fargelegging-av-punktsky>> +
 
