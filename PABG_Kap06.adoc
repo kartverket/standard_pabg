@@ -821,7 +821,7 @@ Dette kapittelet angir krav og retningslinjer til aerotriangulering (AT) med blo
 * Bildenes ytre orienteringselementer skal ha et totalt standardavvik maksimalt lik 2/3 av kravene for de aktuelle geodata. Med "totalt" menes det samlede avvik på et målt objekt, sammensatt av de enkelte orienteringselementenes feilbidrag. Se <<tab-nøyaktighetskrav-AT-FKB>> for eksempler på nøyaktighetskrav til nypunkter og ytre orienteringselementer.
 * Standardavviket på vektsenheten skal være &#8804; 1/3 piksel.
 * De utjevnede sammenbindingspunktene ("nypunkter") skal bestemmes med et gjennomsnittlig estimert standardavvik maksimalt lik 1/2 av kravene for de aktuelle geodata som skal produseres i prosjektet. Maksimalt estimert standardavvik på hvert “nypunkt” skal være under grovfeilgrensen til kravet for “nypunkt”.
-* Nøyaktigheten på resultatet fra AT-en/ blokkutjevningen, herunder bildenes ytre orienteringselementer, skal som hovedregel verifiseres ved hjelp av en utjevning med bruk av uavhengige kontrollpunkter ("sjekkpunkter") jevnt fordelt i bildeblokka. Standardavviket på restavvikene i kontrollpunktene kontrolleres mot kravet til ytre orienteringselementene. I tillegg skal resultatet kontrolleres ved at kjentpunktene (eventuelt et representativt utvalg) måles i stereoinstrument og sammenholdes med gitte koordinater. Deretter kontrolleres standardavviket på avvikene mot kravet til ytre orienteringselementene.
+* Nøyaktigheten på resultatet fra AT-en/blokkutjevningen, herunder bildenes ytre orienteringselementer, skal som hovedregel verifiseres ved hjelp av en utjevning med bruk av uavhengige kontrollpunkter ("sjekkpunkter") jevnt fordelt i bildeblokka. Standardavviket på restavvikene i kontrollpunktene kontrolleres mot kravet til ytre orienteringselementene. I tillegg skal resultatet kontrolleres ved at kjentpunktene (eventuelt et representativt utvalg) måles i stereoinstrument og sammenholdes med gitte koordinater. Deretter kontrolleres standardavviket på avvikene mot kravet til ytre orienteringselementene.
 * Avvik på kjentpunktene skal ikke overstige 3 ganger standardavviket til ytre orientering i alle bildene.
 * Systematisk avvik i nord, øst og høyde for krav til geodata, svært veldefinert detalj og krav til ytre orienteringselement skal ikke overstige 1/3 av kravet til standardavviket.
 ====
@@ -1439,7 +1439,8 @@ Det er ikke krav om gyromount.
 [#anbefaling-foto-signalering-i-droneprosjekter,reftext="Anbefaling foto signalering i droneprosjekter"]
 *ANBEFALING FOTO SIGNALERING I DRONEPROSJEKTER*
 
-*  Kjentpunktene bør være plassert i ulike høydenivå for å styrke kamerakalibreringa.
+* Det er anbefalt å ha minst 5 kjentpunkter og 3 kontrollpunkter i alle blokkene.
+* Kjentpunktene bør være plassert i ulike høydenivå for å styrke kamerakalibreringa.
 
 ====
 
@@ -1533,7 +1534,7 @@ Forenklet aerotriangulering til ortofotoproduksjon og følger ikke kravet til ae
 * Hver bildeblokk skal ha minimum 5 uavhengige kontrollpunkt («sjekkpunkt») jevnt fordelt i bildeblokka.
 * Avvik mot uavhengige kontrollpunkt måles i sluttproduktet og dokumenteres.
 * Prosjektet må ha tilstrekkelig med sammenbindingspunkter for å oppnå tilstrekkelig nøyaktighet på ortofotoet.
-* Det skal være minst 6 eller flere sammenbindingspunkter for alle bilder. Dersom dette ikke er oppfylt for et eller flere bilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.
+* Det skal være minst 6 eller flere sammenbindingspunkter for alle vertikalbilder. Dersom dette ikke er oppfylt for et eller flere vertikalbilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.
 * AT-rapport: <<krav-foto-rapportering-aerotriangulering>>, men måling i stereo (DFA) er ikke nødvendig.
 * Må følge krav i gjeldene produktspesifikasjon for ortofoto.
 ====
@@ -1548,6 +1549,7 @@ AT utført på vertikalbildene slik at konstruksjon fra vertikalbildene er mulig
 *KRAV FOTO MIDDELS SKRÅBILDER*
 
 * Vertikalbildene skal tilfredsstille krav til vanlig vertikalbildeprosjekt.
+* Skråbildene trenger ikke følge krav til vanlig vertikalbildeprosjekt.
 * Resultatene fra AT skal brukes til å forbedre posisjon og orientering av vertikalbildene og skråbildene.
 * AT-rapport: <<krav-foto-rapportering-aerotriangulering>>.
 
