@@ -56,7 +56,7 @@ Produksjonsmetodene for disse produktene vil ikke bli beskrevet i denne standard
 ==== Forventet nøyaktighet
 Den absolutte nøyaktigheten til en punktsky avhenger av nøyaktighet til følgende komponenter: 
 
-* GNSS/INS løsning (posisjon (Ø,N og H) og rotasjon (Pitch,Roll og Heading)).
+* GNSS/INS løsning (posisjon (Ø, N og H) og rotasjon (Pitch, Roll og Heading)).
 * Avstands- og vinkelmåling til laserskanneren.
 * Systemkalibrering.
 * Stripejustering.
@@ -218,9 +218,9 @@ Absolutt nøyaktighet på punktsky i vertikaldomene etterprøves ved hjelp av la
 
 :xrefstyle: short
 
-* Størrelsen på kontrollflaten er avhengig av den planlagte punkttettheten. Ved punkttetthet fra 0,5 punkt/m^2^ til 3 punkt/m^2^ skal størrelse på kontrollflaten være minimum 16 m^2^. Ved planlagt punkttettheten på 20 punkt/m^2^ er minimumstørrelsen 4 m^2^, se <<tab-kontrollflate>>.
+* Størrelsen på kontrollflaten er avhengig av den planlagte punkttettheten. Ved punkttetthet fra 0,5 punkt/m^2^ til 3 punkt/m^2^ skal størrelse på kontrollflaten være minimum 16 m^2^. Ved planlagt punkttettheten på 20 punkt/m^2^ er minimumsstørrelsen 4 m^2^, se <<tab-kontrollflate>>.
 
-* I tilfeller hvor man ikke finner egnet lokasjon for en kvaderatisk utformet kontrollflate kan det velges en regtagulær form hvor høyden halveres og størrelsen i m^2^ blir ivaretatt. Et eksempel vil være å endre formen på kontrolflaten fra 4x4 meter til 2x8 meter.
+* I tilfeller hvor man ikke finner egnet lokasjon for en kvadratisk utformet kontrollflate kan det velges en rektangulær form hvor høyden halveres og størrelsen i m^2^ blir ivaretatt. Et eksempel vil være å endre formen på kontrollflaten fra 4x4 meter til 2x8 meter.
 
 
 * Rundt en kontrollflate skal det være 0,5 m buffersone fri for obstruksjoner.
@@ -273,8 +273,7 @@ I kartleggingsprosjekt med både Laser og Foto kan senter av kontrollflate signa
 [#krav-laser-kontrollflater-Tidsgyldighet="krav-laser-kontrollflater-Tidsgyldighet"]
 *KRAV LASER KONTROLFLATER  TIDSGYLDIGHET*
 
-* Kontrolflater og hjulspor skal Måles inn samme år som datafangsten gjennomføres.
-Unntak kan avtales der prosjekter går over flere år.
+* Kontrollflater og hjulspor skal måles inn samme år som datafangsten gjennomføres. Unntak kan avtales der prosjekter går over flere år.
 
 
 ====
@@ -361,7 +360,7 @@ image::figurer/Kap7_SammenslåingBlokk.jpg["Sammenslåing av polygoner til en sk
 ====
 
 ====
-[#krav-laser-kontrollprofiler-form-og-storrelse,reftext="Krav laser kontrollprofiler - form og strørrelse"]
+[#krav-laser-kontrollprofiler-form-og-storrelse,reftext="Krav laser kontrollprofiler - form og størrelse"]
 *KRAV LASER KONTROLLPROFILER - FORM OG STØRRELSE*
 
 * Ved mønelinjer skal det måles minimum 4 punkt på hver takflate slik at mønelinjen kan beregnes fra skjæringspunktet mellom flatene. 
