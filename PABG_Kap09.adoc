@@ -20,7 +20,13 @@ Vektorisering fra modell innebærer bruk av automatiserte og manuelle operasjone
 Felles for begge tilnærmingene er at krav til vektorisering følger kravene i registreringsinstruksen gitt for den objekttypen som skal vektoriseres.
 
 
-Referanserammer og transformasjoner som er brukt skal følge kravene gitt i <<krav-landmaling-referanserammer-transformasjoner>>.
+====
+[#krav-vektor-referanserammer-transformasjoner,reftext="Krav vektor referanserammer og transformasjoner"]
+*KRAV VEKTOR REFERANSERAMMER OG TRANSFORMASJONER*
+
+* Referanserammer og transformasjoner som er brukt skal følge kravene gitt i <<krav-landmaling-referanserammer-transformasjoner>>.
+
+====
 
 
 === Kvalitetsparametere ved vektorisering fra punktsky
