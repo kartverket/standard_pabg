@@ -471,20 +471,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_kartlegging_med_geodetiske_metoder">5. Kartlegging med geodetiske metoder</a>
 <ul class="sectlevel2">
 <li><a href="#_innledning">5.1. Innledning</a></li>
-<li><a href="#_målemetoder">5.2. Målemetoder</a>
+<li><a href="#_referanserammer_og_transformasjoner">5.2. Referanserammer og transformasjoner</a></li>
+<li><a href="#_målemetoder">5.3. Målemetoder</a>
 <ul class="sectlevel3">
-<li><a href="#_satellittbaserte_metoder_gnss">5.2.1. Satellittbaserte metoder (GNSS)</a>
+<li><a href="#_satellittbaserte_metoder_gnss">5.3.1. Satellittbaserte metoder (GNSS)</a>
 <ul class="sectlevel4">
-<li><a href="#_sanntidsmåling">5.2.1.1. Sanntidsmåling</a></li>
-<li><a href="#_transformasjoner">5.2.1.2. Transformasjoner</a></li>
+<li><a href="#_sanntidsmåling">5.3.1.1. Sanntidsmåling</a></li>
+<li><a href="#_transformasjoner">5.3.1.2. Transformasjoner</a></li>
 </ul>
 </li>
-<li><a href="#_bruk_av_totalstasjon">5.2.2. Bruk av totalstasjon</a></li>
+<li><a href="#_bruk_av_totalstasjon">5.3.2. Bruk av totalstasjon</a></li>
 </ul>
 </li>
-<li><a href="#_måleinstrumenter">5.3. Måleinstrumenter</a></li>
-<li><a href="#_beregning">5.4. Beregning</a></li>
-<li><a href="#_egenkontroll_og_rapportering_geodetisk_kartlegging">5.5. Egenkontroll og rapportering (geodetisk kartlegging)</a></li>
+<li><a href="#_måleinstrumenter">5.4. Måleinstrumenter</a></li>
+<li><a href="#_beregning">5.5. Beregning</a></li>
+<li><a href="#_egenkontroll_og_rapportering_geodetisk_kartlegging">5.6. Egenkontroll og rapportering (geodetisk kartlegging)</a></li>
 </ul>
 </li>
 <li><a href="#kapittel-kartlegging-med-fotogrammetri">6. Kartlegging med fotogrammetri</a>
@@ -498,10 +499,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#_planlegging_av_flyfotografering_flyplan">6.1.2. Planlegging av flyfotografering (flyplan)</a></li>
-<li><a href="#_planlegging_av_kjentpunkt_og_signalering_signaleringsplan">6.1.3. Planlegging av kjentpunkt og signalering (signaleringsplan)</a>
+<li><a href="#_planlegging_av_kjentpunkt_kontrollpunkt_og_signalering_signaleringsplan">6.1.3. Planlegging av kjentpunkt, kontrollpunkt og signalering (signaleringsplan)</a>
 <ul class="sectlevel4">
-<li><a href="#_krav_til_kjentpunkter">6.1.3.1. Krav til kjentpunkter</a></li>
-<li><a href="#_krav_til_antall_og_plassering_av_kjentpunkter">6.1.3.2. Krav til antall og plassering av kjentpunkter</a></li>
+<li><a href="#_krav_til_kjentpunkter_og_kontrollpunkter">6.1.3.1. Krav til kjentpunkter og kontrollpunkter</a></li>
+<li><a href="#kapittel-krav-til-antall-og-plassering-av-kjentpunkter-og-kontrollpunkter">6.1.3.2. Krav til antall og plassering av kjentpunkter og kontrollpunkter</a></li>
 </ul>
 </li>
 <li><a href="#_krav_til_innhold_og_presentasjon_av_fly_og_signalplanen">6.1.4. Krav til innhold og presentasjon av fly- og signalplanen</a></li>
@@ -700,6 +701,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_kontroll">9.4. Kontroll</a>
 <ul class="sectlevel3">
 <li><a href="#_egnethet_av_vektorisering_til_fremstilling_av_vektordata">9.4.1. Egnethet av vektorisering til fremstilling av vektordata</a></li>
+<li><a href="#_regneeksempel">9.4.2. Regneeksempel</a></li>
 </ul>
 </li>
 </ul>
@@ -1504,17 +1506,37 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 </div>
 </div>
 <div class="sect2">
-<h3 id="_målemetoder">5.2. Målemetoder</h3>
+<h3 id="_referanserammer_og_transformasjoner">5.2. Referanserammer og transformasjoner</h3>
+<div class="exampleblock">
+<div class="content">
+<div id="krav-landmaling-referanserammer-transformasjoner" class="paragraph">
+<p><strong>KRAV LANDMÅLING REFERANSERAMMER OG TRANSFORMASJONER</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Produksjonen av produktene beskrevet i denne standarden skal anvende Kartverkets offisielle transformasjonsformler.</p>
+</li>
+<li>
+<p>Det skal kun benyttes referanserammer som ivartar sluttproduktets nøyaktighetskrav.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_målemetoder">5.3. Målemetoder</h3>
 <div class="paragraph">
 <p>Geodetisk kartlegging foregår enten med satellittbaserte metoder eller ved bruk av totalstasjon.</p>
 </div>
 <div class="sect3">
-<h4 id="_satellittbaserte_metoder_gnss">5.2.1. Satellittbaserte metoder (GNSS)</h4>
+<h4 id="_satellittbaserte_metoder_gnss">5.3.1. Satellittbaserte metoder (GNSS)</h4>
 <div class="paragraph">
 <p>Satellittbasert måling baseres på ulike typer utstyr og satellittsystemer. Målingene kan utføres som sanntidsmåling eller med posisjonsberegning i ettertid.</p>
 </div>
 <div class="sect4">
-<h5 id="_sanntidsmåling">5.2.1.1. Sanntidsmåling</h5>
+<h5 id="_sanntidsmåling">5.3.1.1. Sanntidsmåling</h5>
 <div class="paragraph">
 <p>Den mest aktuelle metoden for posisjonsbestemmelse i sanntid er RTK. I RTK overføres korreksjonsdata til satellittmottakeren (roveren) fra en referansestasjon i et kjent punkt. En variant av RTK er nettverks-RTK hvor korreksjonsdataene kommer fra en virtuell referansestasjon (VRS), beregnet fra et nett av faste stasjoner og overføres til satellittmottakeren fra et sentralt kontrollsenter. Både private firma og Statens kartverk tilbyr sanntidstjenester basert på nettverks-RTK.</p>
 </div>
@@ -1546,7 +1568,7 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 </div>
 </div>
 <div class="sect4">
-<h5 id="_transformasjoner">5.2.1.2. Transformasjoner</h5>
+<h5 id="_transformasjoner">5.3.1.2. Transformasjoner</h5>
 <div class="paragraph">
 <p>Ved differensielle satellittbaserte metoder fremkommer ellipsoidiske høydeforskjeller. Ønskes høyder i NN1954/NN2000 eller et lokalt vertikalt datum, må høydeforskjellene korrigeres. Dette kan gjøres på flere måter:</p>
 </div>
@@ -1566,7 +1588,7 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 </div>
 </div>
 <div class="sect3">
-<h4 id="_bruk_av_totalstasjon">5.2.2. Bruk av totalstasjon</h4>
+<h4 id="_bruk_av_totalstasjon">5.3.2. Bruk av totalstasjon</h4>
 <div class="paragraph">
 <p>Stasjonspunkter kan være et fastmerke eller et punkt som bestemmes med kontroll, for eksempel ved fri oppstilling. Ved fri oppstilling skal en måle retning, avstand og vertikalvinkel mot minimum to fastmerker.</p>
 </div>
@@ -1608,7 +1630,7 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 </div>
 </div>
 <div class="sect2">
-<h3 id="_måleinstrumenter">5.3. Måleinstrumenter</h3>
+<h3 id="_måleinstrumenter">5.4. Måleinstrumenter</h3>
 <div class="paragraph">
 <p>Oppdragstaker er ansvarlig for å bruke instrumenter, materiell og måleopplegg som gir tilfredsstillende resultater i forhold til oppgavene. Det skal fortrinnsvis utføres årlig service på benyttede måleinstrumenter.</p>
 </div>
@@ -1633,7 +1655,7 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 </div>
 </div>
 <div class="sect2">
-<h3 id="_beregning">5.4. Beregning</h3>
+<h3 id="_beregning">5.5. Beregning</h3>
 <div class="paragraph">
 <p>Oppdragstaker er ansvarlig for at valg av måleopplegg, programvare og beregningsopplegg gir god nok nøyaktighet i forhold til kravene.</p>
 </div>
@@ -1642,7 +1664,7 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 </div>
 </div>
 <div class="sect2">
-<h3 id="_egenkontroll_og_rapportering_geodetisk_kartlegging">5.5. Egenkontroll og rapportering (geodetisk kartlegging)</h3>
+<h3 id="_egenkontroll_og_rapportering_geodetisk_kartlegging">5.6. Egenkontroll og rapportering (geodetisk kartlegging)</h3>
 <div class="paragraph">
 <p>Det skal leveres en rapport for den geodetiske kartleggingen, med leveransene som vedlegg til rapporten. Generelt gjelder at alle resultat fra beregninger skal vurderes og kommenteres. Eventuelle problemer i prosjektet skal omtales spesielt. Rapporten er en del av leveransen og skal leveres samtidig med det produktet som rapporten omhandler.</p>
 </div>
@@ -1657,8 +1679,6 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 <p>Rapport for geodetisk kartlegging skal som minimum inneholde informasjonen spesifisert i <a href="#tab-rapp-geodetisk-kartlegging">Tabell 1</a>.</p>
 </li>
 </ul>
-</div>
-</div>
 </div>
 <table id="tab-rapp-geodetisk-kartlegging" class="tableblock frame-all grid-all stretch">
 <caption class="title">Tabell 1. Rapport for geodetisk kartlegging</caption>
@@ -1764,6 +1784,8 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
@@ -1803,6 +1825,20 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 </li>
 </ul>
 </div>
+<div class="exampleblock">
+<div class="content">
+<div id="krav-foto-referanserammer-transformasjoner" class="paragraph">
+<p><strong>KRAV FOTO REFERANSERAMMER OG TRANSFORMASJONER</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Referanserammer og transformasjoner som er brukt skal følge kravene gitt i <a href="#krav-landmaling-referanserammer-transformasjoner">Krav landmåling referanserammer og transformasjoner</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 <div class="sect2">
 <h3 id="kapittel-fly-og-signalplanlegging">6.1. Fly- og signalplanlegging</h3>
 <div class="paragraph">
@@ -1814,10 +1850,10 @@ Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig net
 <p>En viktig faktor ved fotografering fra luften er bildekvalitet. Det er en rekke faktorer som er med på å påvirke vår opplevelse av bildekvalitet. Hva som er bra kvalitet vil bestemmes av bruken av bildene. Dersom bildene skal brukes av maskin er informasjonsmengden i bilde viktig, men når menneske skal benytte bildene er det persepsjon som er viktigst. For de fleste tilfeller vil en balansegang mellom de to tilnærmingene være beste løsning.</p>
 </div>
 <div class="paragraph">
-<p>I kvalitetsmodellen kan vi knytte ulike bildekvalitetsmål til kategorien egenskapkvalitet - Kvantitativ egenskaps nøyaktighet. Noen vil også kunne havne under kategorien egenskapkvalitet - Ikke kvantitativ egenskapsriktighet.</p>
+<p>I kvalitetsmodellen kan vi knytte ulike bildekvalitetsmål til kategorien egenskapskvalitet - Kvantitativ egenskaps nøyaktighet. Noen vil også kunne havne under kategorien egenskapskvalitet - Ikke kvantitativ egenskapsriktighet.</p>
 </div>
 <div class="paragraph">
-<p>I denne standarden er det formalisert et rammeverk for å kvantifisere bildekvalitetsegenskapene oppløsning og fargenøyaktighet. Dette kan brukes som utgangspunkt for kravstilling i produktspesifikasjon eller bestillingdokumentene.</p>
+<p>I denne standarden er det formalisert et rammeverk for å kvantifisere bildekvalitetsegenskapene oppløsning og fargenøyaktighet. Dette kan brukes som utgangspunkt for kravstilling i produktspesifikasjon eller bestillingsdokumentene.</p>
 </div>
 <div class="sect4">
 <h5 id="_oppløsning">6.1.1.1. Oppløsning</h5>
@@ -1851,10 +1887,13 @@ r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\p
 <div class="sect4">
 <h5 id="_fargenøyaktighet">6.1.1.2. Fargenøyaktighet</h5>
 <div class="paragraph">
-<p>Fargenøyaktighet kan måles ved å måle fargen på naturlige eller kunstige fargereferanser innad i prosjektområdet. Fargereferansen bør ha en homogen farge, tilnærmet horisontal og ha en størrelse som sikrer 3x3 piksler som kun er påvirket av fargereferansens farge og ikke omliggende flater. For pansharpenings systemer med ratio 1:3 bør da fargereferanse ha en størrelse på 9x9 piksler. Tilsvarende for bayer pattern systemer bør størrelsen være 6x6 piksler.</p>
+<p>Fargenøyaktighet kan måles ved å måle fargen på naturlige eller kunstige fargereferanser innad i prosjektområdet. Fargereferansen bør ha en homogen farge, tilnærmet horisontal og ha en størrelse som sikrer 3x3 piksler som kun er påvirket av fargereferansens farge og ikke omliggende flater. For pansharpenings systemer med forhold 1:3 bør da fargereferanse ha en størrelse på 9x9 piksler. Tilsvarende for bayer pattern systemer bør størrelsen være 6x6 piksler.</p>
 </div>
 <div class="paragraph">
-<p>For å kunne benytte fargereferansene må fargen måles med et fargespektrometer. Det måles da i forhold til en referanselyskilde og observasjonsvinkel definert av «International Commission on Illumination».  Referanselyskilden bør være D65 som tilsvarer sollyset midt på dagen med en fargetemperatur på ca 6504 kelvin og observasjonsvinkel bør være 10°. Observasjonsvinkelen refereres til øyets observasjonsvinkel. Målt farger og korresponderende fargereferanser i bildet sammenlignes i fargerommet CIELAB, hvor avstanden mellom dem beregnes. Denne avstanden kalles ofte ∆E.  Når ∆E verdien er under 1 er det vanskelig å se forskjell på fargene. Farger med ∆E verdier over 2 er lette å se forskjell på.</p>
+<p>For å kunne benytte fargereferansene må fargen måles med et fargespektrometer. Det måles da i forhold til en referanselyskilde og observasjonsvinkel definert av «International Commission on Illumination». Referanselyskilden bør være D65 som tilsvarer midlere dagslys med en fargetemperatur på ca. 6504 kelvin og observasjonsvinkel bør være 10°. Observasjonsvinkelen refereres til øyets observasjonsvinkel. For å få et varmere fargeuttrykk kan en alternativt benytte D50 med fargetemperatur på ca. 5003 kelvin. Det anbefales at feltmålinger leveres i ulike formateringer som RGB, CIEXYZ, CIELAB med fargetemperatur D50 og D65.</p>
+</div>
+<div class="paragraph">
+<p>Målt farger og korresponderende fargereferanser i bildet sammenlignes i fargerommet CIELAB, hvor avstanden mellom dem beregnes. Denne avstanden kalles ofte ∆E. Når ∆E verdien er under 1 er det vanskelig å se forskjell på fargene. Farger med ∆E verdier over 2 er lette å se forskjell på. Når en beregner ∆E kan en gjøre dette i 2 eller 3 dimensjoner. Dersom en benytter 2 dimensjoner ser en kun på CIELAB (a*b) som uttrykker selve fargen. Ved å inkludere 3 dimensjoner CIELAB (L*a*b) vil fargens lysstyrke også bli evaluert. Dersom dette gjøres må feltmålingene utføres med riktig kalibrert lysstyrke.</p>
 </div>
 </div>
 </div>
@@ -1968,30 +2007,30 @@ r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\p
 </div>
 </div>
 <div class="sect3">
-<h4 id="_planlegging_av_kjentpunkt_og_signalering_signaleringsplan">6.1.3. Planlegging av kjentpunkt og signalering (signaleringsplan)</h4>
+<h4 id="_planlegging_av_kjentpunkt_kontrollpunkt_og_signalering_signaleringsplan">6.1.3. Planlegging av kjentpunkt, kontrollpunkt og signalering (signaleringsplan)</h4>
 <div class="paragraph">
-<p>Signaleringsplan utarbeides av oppdragstaker som en integrert del av flyfotoplanleggingen og kjentpunktene planlegges slik at plasseringen blir optimal med hensyn til krav til antall, plassering og enkel adkomst. For krav til antall og plassering, se <a href="#_krav_til_antall_og_plassering_av_kjentpunkter">Kapittel 6.1.3.2, &#8220;Krav til antall og plassering av kjentpunkter&#8221;</a>.</p>
+<p>Signaleringsplan utarbeides av oppdragstaker som en integrert del av flyfotoplanleggingen og kjentpunktene planlegges slik at plasseringen blir optimal med hensyn til krav til antall, plassering og enkel adkomst. For krav til antall og plassering, se <a href="#kapittel-krav-til-antall-og-plassering-av-kjentpunkter-og-kontrollpunkter">Kapittel 6.1.3.2, &#8220;Krav til antall og plassering av kjentpunkter og kontrollpunkter&#8221;</a>.</p>
 </div>
 <div class="paragraph">
 <p>Signaleringen bør planlegges og utføres slik at fotograferingen kan starte opp så snart forholdene tillater det, eksempelvis ved at lavereliggende områder signaleres først.</p>
 </div>
 <div class="sect4">
-<h5 id="_krav_til_kjentpunkter">6.1.3.1. Krav til kjentpunkter</h5>
+<h5 id="_krav_til_kjentpunkter_og_kontrollpunkter">6.1.3.1. Krav til kjentpunkter og kontrollpunkter</h5>
 <div class="exampleblock">
 <div class="content">
 <div id="krav-foto-kjentpunktnoyaktighet" class="paragraph">
-<p><strong>KRAV FOTO KJENTPUNKTNØYAKTIGHET</strong></p>
+<p><strong>KRAV FOTO KJENTPUNKTNØYAKTIGHET OG KONTROLLPUNKTNØYAKTIGHET</strong></p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Alle kjentpunkter skal måles inn med geodetiske metoder og beregnes (utjevnes) med kontroll mot grove feil i alle trinn.</p>
+<p>Alle kjentpunkter og kontrollpunkter skal måles inn med geodetiske metoder og beregnes (utjevnes) med kontroll mot grove feil i alle trinn.</p>
 </li>
 <li>
-<p>Kjentpunktene skal måles inn og bestemmes med et standardavvik maksimalt lik ¼ av det strengeste kravet til geodata i det aktuelle prosjektet. Eksempel for FKB kartlegging se <a href="#tab-nøyaktighet-innmåling-kjentpunkt-FKB">Tabell 3</a>.</p>
+<p>Kjentpunktene og kontrollpunktene skal måles inn og bestemmes med et standardavvik maksimalt lik ¼ av det strengeste kravet til geodata i det aktuelle prosjektet. Eksempel for FKB kartlegging se <a href="#tab-nøyaktighet-innmåling-kjentpunkt-FKB">Tabell 3</a>.</p>
 </li>
 <li>
-<p>Naturlige kjentpunkter kan benyttes unntaksvis, for eksempel for å erstatte tapte signaler i kritiske posisjoner. I prosjekter med høye nøyaktighetskrav skal da et veldefinert punkt først velges i bildene og deretter måles inn i marka. I prosjekter med lavere nøyaktighetskrav, som for eksempel Omløpsfotograferingen, kan eksisterende, antatt synlige geodetiske punkter (varder, fyrlykter, og lignende med tilfredsstillende oppgitt nøyaktighet) planlegges som supplement til de signalerte kjentpunktene for å oppnå bedre kontroll i utilgjengelige områder.</p>
+<p>Naturlige kjentpunkter og kontrollpunkter kan benyttes unntaksvis, for eksempel for å erstatte tapte signaler i kritiske posisjoner. I prosjekter med høye nøyaktighetskrav skal da et veldefinert punkt først velges i bildene og deretter måles inn i marka. I prosjekter med lavere nøyaktighetskrav, som for eksempel Omløpsfotograferingen, kan eksisterende, antatt synlige geodetiske punkter (varder, fyrlykter, og lignende med tilfredsstillende oppgitt nøyaktighet) planlegges som supplement til de signalerte kjentpunktene for å oppnå bedre kontroll i utilgjengelige områder.</p>
 </li>
 </ul>
 </div>
@@ -2059,7 +2098,7 @@ r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\p
 </div>
 </div>
 <div class="sect4">
-<h5 id="_krav_til_antall_og_plassering_av_kjentpunkter">6.1.3.2. Krav til antall og plassering av kjentpunkter</h5>
+<h5 id="kapittel-krav-til-antall-og-plassering-av-kjentpunkter-og-kontrollpunkter">6.1.3.2. Krav til antall og plassering av kjentpunkter og kontrollpunkter</h5>
 <div class="paragraph">
 <p>Ved GNSS/INS-støttet fotografering kreves det i teorien kun et fåtall kjentpunkt for å kunne utføre AT. Kjentpunktene er kun nødvendige for å kunne bestemme systematiske avvik i de GNSS-bestemte projeksjonssentrene (datumstransformasjon), samt for å ha en minimums-kontroll. I praksis trengs vesentlig flere punkt for å kunne:</p>
 </div>
@@ -2097,6 +2136,39 @@ r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\p
 </li>
 <li>
 <p>Kjentpunktene skal fordeles jevnt over hele bildeblokka og det skal påses at det finnes kjentpunkter nær blokkas ytterkanter. Det er dog ikke nødvendig å plassere kjentpunktene helt i ytterkant, dersom for eksempel adkomst gjør dette vanskelig.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div id="krav-foto-kontrollpunkt-antall-og-plassering" class="paragraph">
+<p><strong>KRAV FOTO KONTROLLPUNKT - ANTALL OG PLASSERING</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Nøyaktigheten på resultatet fra AT-en/blokkutjevningen, herunder bildenes ytre orienteringselementer, skal som hovedregel verifiseres ved hjelp av en utjevning med bruk av uavhengige kontrollpunkter ("sjekkpunkter"). Uavhengige kontrollpunkt bidrar ikke til forbedring av orienteringa, men brukes kun til kontroll.</p>
+</li>
+<li>
+<p>Kontrollpunktene skal være jevnt fordelt i bildeblokka.</p>
+</li>
+<li>
+<p>I blokker med kontrollpunkt så er dette minstekravene til antall kontrollpunkt:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Minst 2 kontrollpunkter i små blokker med 1 flystripe.</p>
+</li>
+<li>
+<p>Minst 3 kontrollpunkter i blokker med færre enn 10 kjentpunkt, men ikke i små blokker med 1 flystripe.</p>
+</li>
+<li>
+<p>Minst 30% kontrollpunkter av kravet til antall kjentpunkt i blokker med 10 eller flere kjentpunkt.</p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
@@ -2159,7 +2231,7 @@ r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\p
 <div class="sect2">
 <h3 id="kapittel-signalering">6.2. Signalering</h3>
 <div class="paragraph">
-<p>Dette kapittelet angir krav og retningslinjer til signalering av kjentpunkter for aerotriangulering og eventuelle objekter som skal kartlegges og som er for små til å synes i flybildene. For innmåling av kjentpunkter henvises til krav i <a href="#_krav_til_kjentpunkter">Kapittel 6.1.3.1, &#8220;Krav til kjentpunkter&#8221;</a> og til standarden <a href="#SAT">[SAT]</a>.</p>
+<p>Dette kapittelet angir krav og retningslinjer til signalering av kjentpunkter for aerotriangulering og eventuelle objekter som skal kartlegges og som er for små til å synes i flybildene. For innmåling av kjentpunkter henvises til krav i <a href="#Krav til kjentpunkter">[Krav til kjentpunkter]</a> og til standarden <a href="#SAT">[SAT]</a>.</p>
 </div>
 <div class="sect3">
 <h4 id="_lovhjemmel_for_markarbeider_matrikkellova">6.2.1. Lovhjemmel for markarbeider - Matrikkellova</h4>
@@ -3773,7 +3845,10 @@ En GNSS/INS-fil pr. fotosesjon.</p></td>
 <p>De utjevnede sammenbindingspunktene ("nypunkter") skal bestemmes med et gjennomsnittlig estimert standardavvik maksimalt lik 1/2 av kravene for de aktuelle geodata som skal produseres i prosjektet. Maksimalt estimert standardavvik på hvert “nypunkt” skal være under grovfeilgrensen til kravet for “nypunkt”.</p>
 </li>
 <li>
-<p>Nøyaktigheten på resultatet fra AT-en/ blokkutjevningen, herunder bildenes ytre orienteringselementer, skal som hovedregel verifiseres ved hjelp av en utjevning med bruk av uavhengige kontrollpunkter ("sjekkpunkter") jevnt fordelt i bildeblokka. Standardavviket på restavvikene i kontrollpunktene kontrolleres mot kravet til ytre orienteringselementene. I tillegg skal resultatet kontrolleres ved at kjentpunktene (eventuelt et representativt utvalg) måles i stereoinstrument og sammenholdes med gitte koordinater. Deretter kontrolleres standardavviket på avvikene mot kravet til ytre orienteringselementene.</p>
+<p>Nøyaktigheten på resultatet fra AT-en/blokkutjevningen, herunder bildenes ytre orienteringselementer, skal som hovedregel verifiseres ved hjelp av en utjevning med bruk av uavhengige kontrollpunkter ("sjekkpunkter") jevnt fordelt i bildeblokka. Standardavviket på restavvikene i kontrollpunktene kontrolleres mot kravet til ytre orienteringselementene. I tillegg skal resultatet kontrolleres ved at kjentpunktene (eventuelt et representativt utvalg) måles i stereoinstrument og sammenholdes med gitte koordinater. Deretter kontrolleres standardavviket på avvikene mot kravet til ytre orienteringselementene.</p>
+</li>
+<li>
+<p>Ved færre kontrollpunt enn 5, så utføres kontrollen på bakgrunn av maksimalt avvik og kontrollpunktene skal da ikke ha avvik større enn 2 ganger standardavviket i grunnriss og høyde.</p>
 </li>
 <li>
 <p>Avvik på kjentpunktene skal ikke overstige 3 ganger standardavviket til ytre orientering i alle bildene.</p>
@@ -4119,10 +4194,13 @@ Kravet til nypunkt gjelder kun signalerte kjentpunkt og eventuelt ikke-signalert
 <div class="ulist">
 <ul>
 <li>
-<p>Standardavvik og systematisk avvik av restavvik i uavhengige kontrollpunkter, inkludert maksimalt avvik.<br></p>
+<p>Standardavvik og systematisk avvik av restavvik i uavhengige kontrollpunkter, inkludert maksimalt avvik.</p>
 </li>
 <li>
-<p>Antall kjentpunkter og kontrollpunkter benyttet.<br></p>
+<p>Ved færre kontrollpunkt enn fem oppgis kun maksimalt avvik.</p>
+</li>
+<li>
+<p>Antall kjentpunkter og kontrollpunkter benyttet.</p>
 </li>
 <li>
 <p>Utlisting av individuelle avvik.</p>
@@ -4138,7 +4216,7 @@ Kravet til nypunkt gjelder kun signalerte kjentpunkt og eventuelt ikke-signalert
 <div class="ulist">
 <ul>
 <li>
-<p>Standardavvik og systematisk avvik av restavvik i kjentpunkter, inkludert maksimalt avvik.<br></p>
+<p>Standardavvik og systematisk avvik av restavvik i kjentpunkter og kontrollpunkter, inkludert maksimalt avvik.<br></p>
 </li>
 <li>
 <p>Antall kjentpunkter målt og antall stereomodeller det er målt i.<br></p>
@@ -4656,7 +4734,7 @@ Manus og støttedata.<br></p></td>
 <p>Ortofoto er et fotografisk bilde som ved en transformasjon har fått geometriske egenskaper som tilsvarer en ortogonal projeksjon av det avbildede objektet. Det vil si at et ortofoto er et måleriktig bilde som kombinerer flybildets detaljrikdom med kartets geometriske egenskaper.</p>
 </div>
 <div class="paragraph">
-<p>Omregningsprosessen vil være en digital transformasjon av det originale flybildet til et gitt datum og en gitt kartprojeksjon. Hvert piksel i ortofotoet har kjente koordinater i kartprojeksjonsplanet, og ortofotoet kan følgelig brukes som en sentral komponent i et geografisk informasjonssystem (GIS) sammen med digitale kartdata som for eksempel FKB-data og plandata.</p>
+<p>Omregningsprosessen vil være en digital transformasjon av det originale flybildet til et gitt datum og en gitt kartprojeksjon. Hver piksel i ortofotoet har kjente koordinater i kartprojeksjonsplanet, og ortofotoet kan følgelig brukes som en sentral komponent i et geografisk informasjonssystem (GIS) sammen med digitale kartdata som for eksempel FKB-data og plandata.</p>
 </div>
 <div class="paragraph">
 <p>Dette kapittelet inneholder generelle krav og anbefalinger til produksjon av ortofoto og dokumentasjon av denne. Krav til produkt og leveranser er spesifisert i Produktspesifikasjon for ortofoto i Norge.</p>
@@ -4767,7 +4845,7 @@ Manus og støttedata.<br></p></td>
 <p>Ved rektifiseringen skal programmet innhente informasjon fra terrengmodellen (DTM) med tilstrekkelig hyppighet for formålet.</p>
 </li>
 <li>
-<p>Gråtonen/fargen til ortofotopikslene tas fra pikslene i flybildet. Som regel korresponderer ikke et ortofotopiksel helt med et bildepiksel. Gråtonen/fargen til ortofotopikselet bestemmes for eksempel ved interpolering av gråtonene/fargene til de nærmeste bildepikslene. Dette kalles resampling.</p>
+<p>Gråtonen/fargen til ortofotopikslene tas fra pikslene i flybildet. Som regel korresponderer ikke en ortofotopiksel helt med en bildepiksel. Gråtonen/fargen til ortofotopikselet bestemmes for eksempel ved interpolering av gråtonene/fargene til de nærmeste bildepikslene. Dette kalles resampling.</p>
 </li>
 </ul>
 </div>
@@ -5159,7 +5237,7 @@ Manus og støttedata.<br></p></td>
 <p>Detaljeringsgrad må være tilstrekkelig for å kunne identifisere kartobjektet samt digitalisere kartobjekter med tilstrekkelig geografisk nøyaktighet etter gjeldene standard for sluttproduktet. (metodekrav må diskuteres og utarbeides)</p>
 </li>
 <li>
-<p>Vektoriseringskapitlet i PaBG skal følges: <a href="#kapittel-vektorisering-fra-punktsky-og-modell">Kapittel 9, <em>Vektorisering fra punktsky og modell som metode for etablering av basis geodata</em></a></p>
+<p>Vektoriseringskapitlet skal følges: <a href="#kapittel-vektorisering-fra-punktsky-og-modell">Kapittel 9, <em>Vektorisering fra punktsky og modell som metode for etablering av basis geodata</em></a></p>
 </li>
 <li>
 <p>Personopplysningsloven skal følges (inkludert GDPR).</p>
@@ -5336,6 +5414,9 @@ Manus og støttedata.<br></p></td>
 <p>Minst 5 kjentpunkter og kontrollpunkt til sammen i alle blokker, jevnt fordelt i hele blokken.</p>
 </li>
 <li>
+<p>Minst 2 kontrollpunkter i alle blokker.</p>
+</li>
+<li>
 <p>Maksimal avstand til kjentpunkt/kontrollpunkt i meter = bestilt GSD i meter ganger 10000:</p>
 <div class="ulist">
 <ul>
@@ -5362,6 +5443,9 @@ Manus og støttedata.<br></p></td>
 </div>
 <div class="ulist">
 <ul>
+<li>
+<p>Det er anbefalt å ha minst 5 kjentpunkter i alle blokkene.</p>
+</li>
 <li>
 <p>Kjentpunktene bør være plassert i ulike høydenivå for å styrke kamerakalibreringa.</p>
 </li>
@@ -5524,10 +5608,10 @@ Manus og støttedata.<br></p></td>
 <p>Orienteringen av alle bildene må være innenfor nøyaktighetskravene til slutt produktet.</p>
 </li>
 <li>
-<p>Dersom AT benyttes skal det være minst 6 eller flere sammenbindingspunkter for alle bilder. Dersom dette ikke er oppfylt for et eller flere bilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.</p>
+<p>Dersom AT benyttes skal det være minst 6 eller flere sammenbindingspunkter for alle vertikalbilder. Dersom dette ikke er oppfylt for et eller flere vertikalbilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.</p>
 </li>
 <li>
-<p>Hvis det gjøres en aerotriangulering så skal AT-rapporten følge  <a href="#krav-foto-rapportering-aerotriangulering">Krav foto rapportering aerotriangulering</a>, men måling i stereo (DFA) er ikke nødvendig.</p>
+<p>Hvis det gjøres en aerotriangulering så skal AT-rapporten følge <a href="#krav-foto-rapportering-aerotriangulering">Krav foto rapportering aerotriangulering</a>, men måling i stereo (DFA) er ikke nødvendig.</p>
 </li>
 </ul>
 </div>
@@ -5576,7 +5660,7 @@ Manus og støttedata.<br></p></td>
 <p>Prosjektet må ha tilstrekkelig med sammenbindingspunkter for å oppnå tilstrekkelig nøyaktighet på ortofotoet.</p>
 </li>
 <li>
-<p>Det skal være minst 6 eller flere sammenbindingspunkter for alle bilder. Dersom dette ikke er oppfylt for et eller flere bilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.</p>
+<p>Det skal være minst 6 eller flere sammenbindingspunkter for alle vertikalbilder. Dersom dette ikke er oppfylt for et eller flere vertikalbilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.</p>
 </li>
 <li>
 <p>AT-rapport: <a href="#krav-foto-rapportering-aerotriangulering">Krav foto rapportering aerotriangulering</a>, men måling i stereo (DFA) er ikke nødvendig.</p>
@@ -5603,6 +5687,9 @@ Manus og støttedata.<br></p></td>
 <ul>
 <li>
 <p>Vertikalbildene skal tilfredsstille krav til vanlig vertikalbildeprosjekt.</p>
+</li>
+<li>
+<p>Skråbildene trenger ikke følge krav til vanlig vertikalbildeprosjekt.</p>
 </li>
 <li>
 <p>Resultatene fra AT skal brukes til å forbedre posisjon og orientering av vertikalbildene og skråbildene.</p>
@@ -5681,6 +5768,20 @@ Manus og støttedata.<br></p></td>
 <div class="paragraph">
 <p>Krav til produkt og leveranser spesifiseres i nyeste versjon av <a href="https://dokument.geonorge.no/produktspesifikasjoner/punktsky/1.0.3/index.html">Produktspesifikasjon Punktsky</a>. For definisjon av kvalitetsmål vises det til standarden Geodatakvalitet.</p>
 </div>
+<div class="exampleblock">
+<div class="content">
+<div id="krav-laser-referanserammer-transformasjoner" class="paragraph">
+<p><strong>KRAV LASER REFERANSERAMMER OG TRANSFORMASJONER</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Referanserammer og transformasjoner som er brukt skal følge kravene gitt i <a href="#krav-landmaling-referanserammer-transformasjoner">Krav landmåling referanserammer og transformasjoner</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 <div class="sect3">
 <h4 id="_virkemåte">7.1.1. Virkemåte</h4>
 <div class="sect4">
@@ -5755,7 +5856,7 @@ Fra punktskyen kan en produsere en rekke sekundærprodukter:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>GNSS/INS løsning (posisjon (Ø,N og H) og rotasjon (Pitch,Roll og Heading)).</p>
+<p>GNSS/INS løsning (posisjon (Ø, N og H) og rotasjon (Pitch, Roll og Heading)).</p>
 </li>
 <li>
 <p>Avstands- og vinkelmåling til laserskanneren.</p>
@@ -6088,10 +6189,10 @@ Fra punktskyen kan en produsere en rekke sekundærprodukter:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Størrelsen på kontrollflaten er avhengig av den planlagte punkttettheten. Ved punkttetthet fra 0,5 punkt/m<sup>2</sup> til 3 punkt/m<sup>2</sup> skal størrelse på kontrollflaten være minimum 16 m<sup>2</sup>. Ved planlagt punkttettheten på 20 punkt/m<sup>2</sup> er minimumstørrelsen 4 m<sup>2</sup>, se <a href="#tab-kontrollflate">Tabell 18</a>.</p>
+<p>Størrelsen på kontrollflaten er avhengig av den planlagte punkttettheten. Ved punkttetthet fra 0,5 punkt/m<sup>2</sup> til 3 punkt/m<sup>2</sup> skal størrelse på kontrollflaten være minimum 16 m<sup>2</sup>. Ved planlagt punkttettheten på 20 punkt/m<sup>2</sup> er minimumsstørrelsen 4 m<sup>2</sup>, se <a href="#tab-kontrollflate">Tabell 18</a>.</p>
 </li>
 <li>
-<p>I tilfeller hvor man ikke finner egnet lokasjon for en kvaderatisk utformet kontrollflate kan det velges en regtagulær form hvor høyden halveres og størrelsen i m<sup>2</sup> blir ivaretatt. Et eksempel vil være å endre formen på kontrolflaten fra 4x4 meter til 2x8 meter.</p>
+<p>I tilfeller hvor man ikke finner egnet lokasjon for en kvadratisk utformet kontrollflate kan det velges en rektangulær form hvor høyden halveres og størrelsen i m<sup>2</sup> blir ivaretatt. Et eksempel vil være å endre formen på kontrollflaten fra 4x4 meter til 2x8 meter.</p>
 </li>
 <li>
 <p>Rundt en kontrollflate skal det være 0,5 m buffersone fri for obstruksjoner.</p>
@@ -6202,8 +6303,7 @@ Fra punktskyen kan en produsere en rekke sekundærprodukter:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Kontrolflater og hjulspor skal Måles inn samme år som datafangsten gjennomføres.
-Unntak kan avtales der prosjekter går over flere år.</p>
+<p>Kontrollflater og hjulspor skal måles inn samme år som datafangsten gjennomføres. Unntak kan avtales der prosjekter går over flere år.</p>
 </li>
 </ul>
 </div>
@@ -7181,6 +7281,20 @@ Ved vanskelige forhold skal det rapporteres hvilke striper dette kan angå.</p><
 <div class="paragraph">
 <p>Standarden beskriver krav og anbefalinger for å sikre kvaliteten til sluttproduktet. Selve definisjonen av og kravet til sluttproduktene, vil ligge i registreringsinstrukser og produktspesifikasjoner. En viktig målsetting med standarden, er å legge til rette for økt bruk og gjenbruk av data fra MLS-datafangst.</p>
 </div>
+<div class="exampleblock">
+<div class="content">
+<div id="krav-mobil-referanserammer-transformasjoner" class="paragraph">
+<p><strong>KRAV MOBIL REFERANSERAMMER OG TRANSFORMASJONER</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Referanserammer og transformasjoner som er brukt skal følge kravene gitt i <a href="#krav-landmaling-referanserammer-transformasjoner">Krav landmåling referanserammer og transformasjoner</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_omfang_2">8.2. Omfang</h3>
@@ -7338,7 +7452,7 @@ Ved vanskelige forhold skal det rapporteres hvilke striper dette kan angå.</p><
 </ul>
 </div>
 <div class="paragraph">
-<p>Målingene for å beregne relativ stedfestningsnøyaktighet utføres langs normalenvektoren til avgrensningens senterpunkt. Relativ stedfestningsnøyaktighet deles inn i de to kvalitetsmålene systematisk avvik og tilfeldig variasjon:</p>
+<p>Målingene for å beregne relativ stedfestningsnøyaktighet utføres langs normalvektoren til avgrensningens senterpunkt. Relativ stedfestningsnøyaktighet deles inn i de to kvalitetsmålene systematisk avvik og tilfeldig variasjon:</p>
 </div>
 <div class="paragraph">
 <p><strong>Systematisk avvik</strong> beregnes ut fra flere utvalgte avgrensningsområder. For hvert område måles avstanden mellom senter punktsky for skanninger utført i forskjellig tidsintervaller. Et tidsintervall vil typisk være kun få sekunder. Middelet av målingene fra alle de utvalgte avgrensningsområdene gir det systematiske avviket.</p>
@@ -7675,6 +7789,9 @@ Med egenskapskvalitet i standarden <a href="https://register.geonorge.no/standar
 <div class="paragraph">
 <p>Felles for begge tilnærmingene er at krav til vektorisering følger kravene i registreringsinstruksen gitt for den objekttypen som skal vektoriseres.</p>
 </div>
+<div class="paragraph">
+<p>Referanserammer og transformasjoner som er brukt skal følge kravene gitt i <a href="#krav-landmaling-referanserammer-transformasjoner">Krav landmåling referanserammer og transformasjoner</a>.</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_kvalitetsparametere_ved_vektorisering_fra_punktsky">9.2. Kvalitetsparametere ved vektorisering fra punktsky</h3>
@@ -7763,7 +7880,7 @@ Samsvaret bør vurderes basert på senter av punktskyens «målestøy» da dette
 <p>Ved vurdering av kvalitet på vektordata basert på vektorisering i punktsky/modell, må både stedfestingsnøyaktighet for punktskyen, geometrisk avvik i vektorisering og tverravvik/pilhøyde i grunnriss og høyde (tverravvik/pilhøyde) vurderes.</p>
 </li>
 <li>
-<p>Når metoden brukes som alternativ til FKB-kartkonstruksjon vil kvalitetskrav til vektordata følge av kartleggingsstandard og kvalitetsklasser på objekttyper definert i aktuell produktspesifikasjon.</p>
+<p>Når metoden brukes som alternativ til kartkonstruksjon vil kvalitetskrav til vektordata følge av kartleggingsstandard og kvalitetsklasser på objekttyper definert i aktuell produktspesifikasjon.</p>
 </li>
 <li>
 <p>Kvadratsummen av stedfestingsnøyaktighet på punktsky/modell, og den største verdien av geometrisk avvik eller tverravvik/pilhøyde må være bedre enn kvalitetskravet for den aktuelle objekttypen:</p>
@@ -7866,6 +7983,9 @@ Punktsky fra drone (ved laserskanning</p></td>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="sect3">
+<h4 id="_regneeksempel">9.4.2. Regneeksempel</h4>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
@@ -8280,11 +8400,13 @@ mindre grøfter mistes helt</p></td>
 <h2 id="kapittel-vedlegg-d-liste-over-krav">Vedlegg D: Liste over krav</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#krav-landmaling-sanntidsmaling">Krav landmåling sanntidsmåling</a><br>
+<p><a href="#krav-landmaling-referanserammer-transformasjoner">Krav landmåling referanserammer og transformasjoner</a><br>
+<a href="#krav-landmaling-sanntidsmaling">Krav landmåling sanntidsmåling</a><br>
 <a href="#krav-landmaling-innmaling-med-totalstasjon">Krav landmåling innmåling med totalstasjon</a><br>
 <a href="#krav-landmaling-rapportering-geodetisk-kartlegging">Krav landmåling rapportering - geodetisk kartlegging</a><br>
+<a href="#krav-foto-referanserammer-transformasjoner">Krav foto referanserammer og transformasjoner</a><br>
 <a href="#krav-foto-flyplanlegging">Krav foto flyplanlegging</a><br>
-<a href="#krav-foto-kjentpunktnoyaktighet">Krav foto kjentpunktnøyaktighet</a><br>
+<a href="#krav-foto-kjentpunktnoyaktighet">Krav foto kjentpunktnøyaktighet og kontrollpunktnøyaktighet</a><br>
 <a href="#krav-foto-kjentpunkt-antall-og-plassering">Krav foto kjentpunkt - Antall og plassering</a><br>
 <a href="#krav-foto-fly-og-signaleringsplan">Krav foto fly- og signaleringsplan</a><br>
 <a href="#krav-foto-signalering">Krav foto signalering</a><br>
@@ -8328,6 +8450,7 @@ mindre grøfter mistes helt</p></td>
 <a href="#krav-foto-lav-skrabilder">Krav foto lav skråbilder</a><br>
 <a href="#krav-foto-middels-skrabilder">Krav foto middels skråbilder</a><br>
 <a href="#krav-foto-hoy-skrabilder">Krav foto høy skråbilder</a><br>
+<a href="#krav-laser-referanserammer-transformasjoner">Krav laser referanserammer og transformasjoner</a><br>
 <a href="#krav-laser-leverandørkalibrering">Krav laser leverandørkalibrering</a><br>
 <a href="#krav-laser-installasjonskalibrering">Krav laser installasjonskalibrering</a><br>
 <a href="#krav-laser-daglig-kalibrering">Krav laser daglig kalibrering</a><br>
@@ -8340,7 +8463,7 @@ mindre grøfter mistes helt</p></td>
 <a href="#krav-laser-kontrollflater-noyaktighet">Krav laser kontrollflater - nøyaktighet</a><br>
 <a href="#krav-laser-kontrollprofiler">Krav laser kontrollprofiler</a><br>
 <a href="#krav-laser-kontrollprofiler-antall-og-plassering">Krav laser kontrollprofiler - antall og plassering</a><br>
-<a href="#krav-laser-kontrollprofiler-form-og-storrelse">Krav laser kontrollprofiler - form og strørrelse</a><br>
+<a href="#krav-laser-kontrollprofiler-form-og-storrelse">Krav laser kontrollprofiler - form og størrelse</a><br>
 <a href="#krav-laser-kontrollprofiler-noyaktighet">Krav laser kontrollprofiler - nøyaktighet</a><br>
 <a href="#krav-laser-utforing-av-laserskanning">Krav laser utføring av laserskanning</a><br>
 <a href="#krav-laser-dokumentasjon-pa-daglig-kalibrering">Krav laser dokumentasjon på daglig kalibrering</a><br>
@@ -8353,6 +8476,7 @@ mindre grøfter mistes helt</p></td>
 <a href="#krav-laser-dokumentasjon-pa-kontroll-av-punktsky">Krav laser dokumentasjon på kontroll av punktsky</a><br>
 <a href="#krav-laser-klassifisering">Krav laser klassifisering</a><br>
 <a href="#krav-laser-rapportering-laserskanning">Krav laser rapportering laserskanning</a><br>
+<a href="#krav-mobil-referanserammer-transformasjoner">Krav mobil referanserammer og transformasjoner</a><br>
 <a href="#krav-mobil-stedfestingsnøyaktighet-ved-mobil-datafangst">Krav mobil stedfestingsnøyaktighet ved mobil datafangst</a><br>
 <a href="#krav-mobil-dokumentasjon-av-mobil-datafangst">Krav mobil dokumentasjon av mobil datafangst</a><br>
 <a href="#krav-vektor-geometrisk-avvik-og-tverravvik-pilhøyde">Krav vektor geometrisk avvik og tverravvik/pilhøyde</a><br>
