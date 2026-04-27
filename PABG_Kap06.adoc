@@ -32,9 +32,9 @@ Dette avsnittet angir krav og retningslinjer til planlegging av flyfotografering
 
 En viktig faktor ved fotografering fra luften er bildekvalitet. Det er en rekke faktorer som er med på å påvirke vår opplevelse av bildekvalitet. Hva som er bra kvalitet vil bestemmes av bruken av bildene. Dersom bildene skal brukes av maskin er informasjonsmengden i bilde viktig, men når menneske skal benytte bildene er det persepsjon som er viktigst. For de fleste tilfeller vil en balansegang mellom de to tilnærmingene være beste løsning. 
 
-I kvalitetsmodellen kan vi knytte ulike bildekvalitetsmål til kategorien egenskapkvalitet - Kvantitativ egenskaps nøyaktighet. Noen vil også kunne havne under kategorien egenskapkvalitet - Ikke kvantitativ egenskapsriktighet.
+I kvalitetsmodellen kan vi knytte ulike bildekvalitetsmål til kategorien egenskapskvalitet - Kvantitativ egenskaps nøyaktighet. Noen vil også kunne havne under kategorien egenskapskvalitet - Ikke kvantitativ egenskapsriktighet.
 
-I denne standarden er det formalisert et rammeverk for å kvantifisere bildekvalitetsegenskapene oppløsning og fargenøyaktighet. Dette kan brukes som utgangspunkt for kravstilling i produktspesifikasjon eller bestillingdokumentene.
+I denne standarden er det formalisert et rammeverk for å kvantifisere bildekvalitetsegenskapene oppløsning og fargenøyaktighet. Dette kan brukes som utgangspunkt for kravstilling i produktspesifikasjon eller bestillingsdokumentene.
 
  
 ===== Oppløsning
@@ -951,7 +951,7 @@ a| * Benyttet kamera: +
 |Resultat fra beregning med uavhengig kontrollpunkt a|Oppstilling av resultat fra beregning med uavhengige kontrollpunkter (pr. bildeblokk): +
 
 * Standardavvik og systematisk avvik av restavvik i uavhengige kontrollpunkter, inkludert maksimalt avvik.
-* Ved færre kontrollpunt enn fem oppgis kun maksimalt avvik.
+* Ved færre kontrollpunkt enn fem oppgis kun maksimalt avvik.
 * Antall kjentpunkter og kontrollpunkter benyttet.
 * Utlisting av individuelle avvik.
 
@@ -1160,7 +1160,7 @@ Krav for DTM og høydekurver (høydegrunnlag) står i Produktspesifikasjon FKB-H
 === Ortofotoproduksjon
 Ortofoto er et fotografisk bilde som ved en transformasjon har fått geometriske egenskaper som tilsvarer en ortogonal projeksjon av det avbildede objektet. Det vil si at et ortofoto er et måleriktig bilde som kombinerer flybildets detaljrikdom med kartets geometriske egenskaper. 
 
-Omregningsprosessen vil være en digital transformasjon av det originale flybildet til et gitt datum og en gitt kartprojeksjon. Hvert piksel i ortofotoet har kjente koordinater i kartprojeksjonsplanet, og ortofotoet kan følgelig brukes som en sentral komponent i et geografisk informasjonssystem (GIS) sammen med digitale kartdata som for eksempel FKB-data og plandata.
+Omregningsprosessen vil være en digital transformasjon av det originale flybildet til et gitt datum og en gitt kartprojeksjon. Hver piksel i ortofotoet har kjente koordinater i kartprojeksjonsplanet, og ortofotoet kan følgelig brukes som en sentral komponent i et geografisk informasjonssystem (GIS) sammen med digitale kartdata som for eksempel FKB-data og plandata.
 
 Dette kapittelet inneholder generelle krav og anbefalinger til produksjon av ortofoto og dokumentasjon av denne. Krav til produkt og leveranser er spesifisert i Produktspesifikasjon for ortofoto i Norge.
 
@@ -1225,7 +1225,7 @@ Ortofoto vil ikke ha samme bakkeoppløsning (GSD) som de originale flybildene.
 
 * Det fremstilles ortofoto for alle bildene som til sammen dekker ønsket område.
 * Ved rektifiseringen skal programmet innhente informasjon fra terrengmodellen (DTM) med tilstrekkelig hyppighet for formålet.
-* Gråtonen/fargen til ortofotopikslene tas fra pikslene i flybildet. Som regel korresponderer ikke et ortofotopiksel helt med et bildepiksel. Gråtonen/fargen til ortofotopikselet bestemmes for eksempel ved interpolering av gråtonene/fargene til de nærmeste bildepikslene. Dette kalles resampling.
+* Gråtonen/fargen til ortofotopikslene tas fra pikslene i flybildet. Som regel korresponderer ikke en ortofotopiksel helt med en bildepiksel. Gråtonen/fargen til ortofotopikselet bestemmes for eksempel ved interpolering av gråtonene/fargene til de nærmeste bildepikslene. Dette kalles resampling.
 
 ====
 
@@ -1372,7 +1372,7 @@ Målsetning: Innlegging i Felles kart database (FKB), fellesløsninger og offent
 * Bildene må aerotrianguleres i egnet programvare. AT-rapport krav: <<krav-foto-rapportering-aerotriangulering>>, men måling i stereo (DFA) er ikke nødvendig.
 * Krav om antall signalerte kjentpunkt og kontrollpunkt følger <<krav-foto-signalering-i-droneprosjekt>>.
 * Detaljeringsgrad må være tilstrekkelig for å kunne identifisere kartobjektet samt digitalisere kartobjekter med tilstrekkelig geografisk nøyaktighet etter gjeldene standard for sluttproduktet. (metodekrav må diskuteres og utarbeides)
-* Vektoriseringskapitlet i PaBG skal følges: <<kapittel-vektorisering-fra-punktsky-og-modell>>
+* Vektoriseringskapitlet skal følges: <<kapittel-vektorisering-fra-punktsky-og-modell>>
 * Personopplysningsloven skal følges (inkludert GDPR).
 * Dokumentasjon av kamera og kamerakalibrering:
 ** Selvkalibrering av kameraet i aerotrianguleringen skal bare bruke parametere som er signifikante.
@@ -1534,7 +1534,7 @@ Skille mellom 4 kvaliteter for posisjon- og orienteringsnøyaktighet for skråbi
 
 * Orienteringen av alle bildene må være innenfor nøyaktighetskravene til slutt produktet.
 * Dersom AT benyttes skal det være minst 6 eller flere sammenbindingspunkter for alle vertikalbilder. Dersom dette ikke er oppfylt for et eller flere vertikalbilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.
-* Hvis det gjøres en aerotriangulering så skal AT-rapporten følge  <<krav-foto-rapportering-aerotriangulering>>, men måling i stereo (DFA) er ikke nødvendig.
+* Hvis det gjøres en aerotriangulering så skal AT-rapporten følge <<krav-foto-rapportering-aerotriangulering>>, men måling i stereo (DFA) er ikke nødvendig.
 ====
 
 ====
