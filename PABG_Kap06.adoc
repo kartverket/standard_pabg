@@ -107,6 +107,9 @@ Målt farger og korresponderende fargereferanser i bildet sammenlignes i fargero
 |Bakkeoppløsning (GSD)| Bakkeoppløsning (GSD) bestemmes av oppdragsgiver og velges slik at kravene til fullstendighet og nøyaktighet blir oppfylt. Se xref:tab-FKB-GSD[xrefstyle=short].
 |Flyhøyde|Flyhøyden skal velges slik at kravet til bakkeoppløsning (GSD) oppfylles for hver enkelt flystripe. Dersom annet ikke avtales skal GSD refereres til midlere terrenghøyde i hver stripe. Det tillates et planlagt avvik i GSD på maksimalt + 10 %. Eventuelle avvik fra dette skal avtales.
 |Bildeblokk|Flystripene skal plasseres optimalt, slik at den resulterende bildeblokka får en mest mulig regulær form og flest mulig parallelt overlappende striper (for å sikre best mulig bildeorientering).
+
+En bildeblokk er en blokk med sammenhengende flybilder. Det er tillatt å fly over vann og sammenbinde flybilder så lenge ukjente parametere er stabile, som kamera og GNSS/INS, og det tas bilder kontinuerlig over vannområdet. 
+
 |Innsyn og sammenbinding|Flystripene skal plasseres, og overdekningen skal eventuelt økes, slik at det sikres best mulig innsyn i alle områder og god bilde- og stripesammenbinding i områder med mye vann.
 |Sideoverdekning|Sideoverdekningen skal i gjennomsnitt ikke være mindre enn avtalt verdi. På høyeste punkt mellom stripene kan det planlegges ned til 5 % sideoverdekning. Lengre strekk med slik marginal sideoverdekning skal ikke forekomme.
 |Lengdeoverdekning|Lengdeoverdekningen skal være avtalt verdi overalt i fotograferingsområdet. Det tillates kortere avvik +/- 5 prosentpoeng, som eksempel ved bestilt 80% overlapp tillates det inntil 75% eller 85% overlapp over kortere strekninger.
@@ -191,18 +194,6 @@ Ved GNSS/INS-støttet fotografering kreves det i teorien kun et fåtall kjentpun
 * Kjentpunktene skal fordeles jevnt over hele bildeblokka og det skal påses at det finnes kjentpunkter nær blokkas ytterkanter. Det er dog ikke nødvendig å plassere kjentpunktene helt i ytterkant, dersom for eksempel adkomst gjør dette vanskelig.
 ====
 
-====
-[#krav-foto-kontrollpunkt-antall-og-plassering,reftext="Krav foto kontrollpunkt - Antall og plassering"]
-*KRAV FOTO KONTROLLPUNKT - ANTALL OG PLASSERING*
-
-* Nøyaktigheten på resultatet fra AT-en/blokkutjevningen, herunder bildenes ytre orienteringselementer, skal som hovedregel verifiseres ved hjelp av en utjevning med bruk av uavhengige kontrollpunkter ("sjekkpunkter"). Uavhengige kontrollpunkt bidrar ikke til forbedring av orienteringa, men brukes kun til kontroll.
-* Kontrollpunktene skal være jevnt fordelt i bildeblokka.
-* I blokker med kontrollpunkt så er dette minstekravene til antall kontrollpunkt:
-** Minst 2 kontrollpunkter i små blokker med 1 flystripe.
-** Minst 3 kontrollpunkter i blokker med færre enn 10 kjentpunkt, men ikke i små blokker med 1 flystripe.
-** Minst 30% kontrollpunkter av kravet til antall kjentpunkt i blokker med 10 eller flere kjentpunkt.
-
-====
 
 ==== Krav til innhold og presentasjon av fly- og signalplanen
 
