@@ -13,75 +13,74 @@ Termer og forkortelser som er definert utenfor denne standarden er basert på f�
 
 === Termer
 .aerotriangulering
-Metode for bestemmelse av flybilders ytre orientering ved hjelp av måling av punkter som knytter bilder og flystriper sammen +
+Metode for bestemmelse av flybilders ytre orientering ved hjelp av måling av punkter som knytter bilder og flystriper sammen. +
 _MERKNAD_: I tilegg til sammenbindingspunkter inngår kjentpunker og GNSS/INS-data som observasjoner i en samlet utjevningsberegning (blokkutjevning). I tillegg til sammenbindingspunktene og ytre orienteringselementene kan også andre ukjente defineres og løses ut i utjevningen.
 
 .affin transformasjon
-Koordinattransformasjon som ikke bevarer vinkelstørrelser uendret +
+Koordinattransformasjon som ikke bevarer vinkelstørrelser uendret. +
 _MERKNAD_: I motsetning til konform transformasjon kan hver koordinatakse ved affin transformasjon ha individuell målestokk og rotasjon. Affin transformasjon kan utføres som lineær eller utvidet (ikke-lineær) transformasjon. I fotogrammetri benyttes affin transformasjon blant annet ved korreksjon av bildekoordinater. 
 
 .ajourføring
-Korrigering av innholdet i geodataene slik at de fremstiller de faktiske forhold på et gitt tidspunkt, etter de retningslinjer som gjelder for innhold og kvalitet +
+Korrigering av innholdet i geodataene slik at de fremstiller de faktiske forhold på et gitt tidspunkt, etter de retningslinjer som gjelder for innhold og kvalitet. +
 _MERKNAD_: +
 1. Det er en selvfølge at "konsekvensrettelser" også blir utført. For eksempel når det bygges et nytt hus, blir ofte gjerder, arealbruksgrenser og veger omkring huset forandret. Ajourføring innebærer at alle disse forandringene blir gjort i de aktuelle databaser. +
 2. Oppgradering til nyere og bedre standard defineres som noe annet enn ajourføring, selv om det kan gjøres på samme måte som periodisk ajourføring.
 
 .avvik
-Forskjell fra sann verdi, fra det man antar er den sanne verdi, eller forskjellen mellom to målte verdier for samme størrelse <<G>> +
-_MERKNAD_: +
-1. Innen standardisering defineres vanligvis avvik som mangel på oppfyllelse av et krav [NS-ISO 9000:2015]. +
-2. Avvik er vanlig. Som oftest er de små og skyldes de vanlige målevariasjonene. Men et lite antall av dem kan være store, og noen kan utgjøre grove feil som bør grovfeil-/avviksbehandles. +
-3. Se definisjonen av grov feil, sant avvik, standardavvik, systematisk avvik, tilfeldig avvik og tilfeldig variasjon. +
-4. Det man antar er den sanne verdi, er svært ofte den utjevnede verdi.
+Forskjell fra sann verdi, fra det man antar er den sanne verdi, eller forskjellen mellom to målte verdier for samme størrelse. <<G>> +
+_MERKNAD 1_: Innen standardisering defineres vanligvis avvik som mangel på oppfyllelse av et krav [NS-ISO 9000:2015]. +
+_MERKNAD 2_: Avvik er vanlig. Som oftest er de små og skyldes de vanlige målevariasjonene. Men et lite antall av dem kan være store, og noen kan utgjøre grove feil som bør grovfeil-/avviksbehandles. +
+_MERKNAD 3_: Se definisjonen av grov feil, sant avvik, standardavvik, systematisk avvik, tilfeldig avvik og tilfeldig variasjon. +
+_MERKNAD 4_: Det man antar er den sanne verdi, er svært ofte den utjevnede verdi.
 
 .bakkeoppløsning (for digitale kamera/sensorer)
-Geometrisk utstrekning av et piksel i terrengmålestokk <<POF>> +
+Geometrisk utstrekning av et piksel i terrengmålestokk. +
+Kilde: <<POF>> +
 _MERKNAD_: Se også GSD.
 
 .basis geodata
-Med basis geodata menes geografisk informasjon brukt til produksjon av kartdata, ortofoto, punktsky, med mer +
+Med basis geodata menes geografisk informasjon brukt til produksjon av kartdata, ortofoto, punktsky, med mer. +
 _MERKNAD_: Se også geodata. +
 Eksempler: Høyder, kyst, vann, veg og bygninger.
 
 .bildeblokk
-Samling av flybilder som er forbundet med sammenbindingspunkt og dermed utgjør en felles enhet hvor bildenes posisjon og orientering bestemmes i en felles aerotriangulering/blokkutjevning +
+Samling av flybilder som er forbundet med sammenbindingspunkt og dermed utgjør en felles enhet hvor bildenes posisjon og orientering bestemmes i en felles aerotriangulering/blokkutjevning. +
 _MERKNAD_: Et flyfotograferingsprosjekt kan ha flere delområder og dermed flere bildeblokker. Et flyfotograferingsområde kan eventuelt deles opp i flere bildeblokker.
 
 .boresight
-Boresight parametrene beskriver vinkelforskjellen mellom koordinatsystem til kartleggingssensor (LiDAR eller kamera) og bevegelsessensor (IMU) 
+Boresight parametrene beskriver vinkelforskjellen mellom koordinatsystem til kartleggingssensor (LiDAR eller kamera) og bevegelsessensor (IMU).
 
 .digital fotogrammetrisk arbeidsstasjon (DFA)
 _MERKNAD_: Se digitalt stereoinstrument.
 
 .digital høydemodell (DHM)
-En digital representasjon av høydeverdier som varierer over en flate +
+En digital representasjon av høydeverdier som varierer over en flate. +
+Kilde: <<POF>> +
 _MERKNAD_: En DHM er en samling av et stort antall høydepunkter på en flate. Punktene kan være organisert som et regelmessig rutenett eller i et uregelmessig mønster. Den siste metoden vil normalt gi den beste beskrivelsen av flaten. Alternativ engelsk betegnelse er «Digital Elevation Model (DEM)».
 
 .digital overflatemodell (DOM)
 En digital høydemodell (DHM) som beskriver overflaten av terrenget inkludert objekter som vegetasjon, bygninger og så videre. +
+Kilde: <<POF>> +
 _MERKNAD_: Alternativ engelsk betegnelse er «Digital Surface Model (DSM)».
 
+
 .digital terrengmodell (DTM)
-En digital høydemodell (DHM) som beskriver terrengoverflaten uten vegetasjon, bygninger og andre objekter.
+En digital høydemodell (DHM) som beskriver terrengoverflaten uten vegetasjon, bygninger og andre objekter. +
+Kilde: <<POF>>
 
 .digitalt stereoinstrument
 Stereoinstrument hvor det brukes digitale bilder og hvor de analytiske beregningene og kartkonstruksjonen skjer i instrumentets datamaskin. +
-_MERKNAD_:
-Engelsk: Digital Photogrammetric Workstation, DPW. +
+_MERKNAD_: Engelsk: Digital Photogrammetric Workstation, DPW. +
 Norsk: Digital Fotogrammetrisk Arbeidsstasjon, DFA.
 
 .drone
 Ubemannet luftfartøy som kan kontrolleres med fjernstyring eller autonomt ved hjelp av programvare, sensorer og GNSS. Drone kan benyttes til både fotografering og laserskanning og kan være både basert på rotorvinge og/eller fastvinge.
 
-.dual beam
-Skannermekanisme der laserinstrumentet samtidig sender ut to laserkjegler som er uavhengige av hverandre +
-_MERKNAD_: To laserkjegler skapes enten ved å splitte en energikilde (split beam LiDAR) eller ved å benytte to uavhengige energikilder (dual channel LiDAR).
-
 .egenskap
-Navngitt kjennetegn eller karakteristikk av et objekt <<G>> +
+Navngitt kjennetegn eller karakteristikk av et objekt.
+Kilde: <<G>> +
 _MERKNAD_: Egenskap defineres ved navn (for eksempel "bygge-år"), datatype (for eksempel årstall) og verdiområde (for eksempel "Kristi fødsel - dags dato"). Egenskapsverdi er verdien til egenskapen for det aktuelle objektet, for eksempel 1998. Egenskapsdata kalles noen ganger for attributtdata. +
-Eksempel: Form, materiale, farge, høyde, størrelse, juridiske forhold, bruk, beskaffenhet,
-konsistens, økonomisk verdi og så videre.
+Eksempel: Form, materiale, farge, høyde, størrelse, juridiske forhold, bruk, beskaffenhet, konsistens, økonomisk verdi og så videre.
 
 .elektronisk lukker
 Fungerer ved at kameraets bildebrikke leser av linje for linje sekvensielt for å kontrollere eksponeringen. Når motiver beveger seg raskt kan rullende lukker-fortegning oppstå.
@@ -106,11 +105,13 @@ Vanligvis kvadratiske eller korsformede hvite eller gule flater som før flyfoto
 _MERKNAD_: Til vanlig kalt bare "signal".
 
 .fullstendighet
-Tallfesting av hvilke enheter som er med i et datasett i forhold til de som burde vært med <<G>>. +
+Tallfesting av hvilke enheter som er med i et datasett i forhold til de som burde vært med. +
+Kilde: <<G>> +
 _MERKNAD_: Brukes først og fremst ved sammenligning med "virkeligheten"/fasit. Ved sammenligning med krav i en informasjonsmodell brukes fortrinnsvis kvalitetsmål under Logisk konsistens. Fullstendighet karakteriseres ved kvalitetsmålene andel manglende enheter og andel overskytende enheter.
 
 .geodata
-Stedfestet informasjon <<G>>.
+Stedfestet informasjon. +
+Kilde: <<G>>
 
 .georeferere
 Stedfeste ved koordinater i et kjent geodetisk referansesystem. +
@@ -122,12 +123,21 @@ Punkter organisert i et regelmessig rutenett med fast maskevidde. +
 _MERKNAD_: Se også TIN.
 
 .grov feil
-Feil som er vesentlig større enn de tilfeldige avvikene <<G>>. +
+Feil som er vesentlig større enn de tilfeldige avvikene. +
+Kilde: <<G>> +
 _MERKNAD_: For målbare størrelser antas ofte grov feil som avvik større enn 3 ganger standardavviket.
 
 .grunnlagsnett
-Fastmerker systematisk bundet sammen på grunnlag av observerte vektorer, høydeforskjeller, vinkler, avstander og tyngdekraft. +
-_MERKNAD_: Fastmerkene utgjør grunnlag for innmåling av nye fastmerker, innmåling av objekter, plassering og påvisning.
+Nett av grunnlagspunkt. +
+Kilde: <<GG>> +
+_MERKNAD 1_: Tilsvarer det engelske begrepet "Control network" +
+_MERKNAD 2_: Se også grunnlagspunkt.
+
+.grunnlagspunkt
+Punkt som danner utgangspunkt for bestemmelse av grunnrisskoordinater, høyde eller tyngde. +
+Kilde: <<GG>> +
+_MERKNAD 1_: Inkluderer geodetisk stasjon, som ikke trenger være varig merket +
+_MERKNAD 2_: Tilsvarer det engelske begrepet "Control point"
 
 .GSD (Ground Sample Distance)
 Geometrisk utstrekning av et piksel i terrengmålestokk. +
@@ -160,17 +170,20 @@ _MERKNAD_: Konform transformasjon kjennetegnes ved at vinkelstørrelser (formen)
 Kontrollpunkt ("sjekkpunkt") er signalerte eller naturlige punkt eller flater med kjente absolutte koordinater gitt i prosjektets referanseramme.  Kontrollpunkt er uavhengige punkt som ikke skal benyttes i fremstilling og prosesseringen av produktet. Punktene skal kun benyttes til å dokumentere og kontrollere absolutt stedfestingsnøyaktighet til sluttproduktet. Kontrollpunkt skal være egnet til å kontrollere det aktuelle datasettet. De skal ha kjent og dokumentert kvalitet.
 
 .krav
-Grenseverdi satt i en produktspesifikasjon, ytelsen til et datasett skal være bedre enn kravet <<G>>.
+Grenseverdi satt i en produktspesifikasjon, ytelsen til et datasett skal være bedre enn kravet. +
+Kilde: <<G>>
 
 .kvalitet
 I hvilken grad en samling av iboende egenskaper oppfyller krav <<NS-EN ISO 9000>>. +
+Kilde: <<G>> +
 _MERKNAD_: Engelsk original: degree to which a set of inherent characteristics fulfils requirements.
 
 .landsnett
-Overordnet nett av fastmerker som Kartverket vedlikeholder og har ansvaret for <<GG>>. +
-_MERKNAD1_: Historisk var koordinatene i Landsnettet en fortetting av koordinatene i Stamnettet, men ved oppdateringer i høyde i 2015 og grunnriss i 2018 er ikke denne koblinga ivaretatt. +
-_MERKNAD2_: I dag er Landnettet en samlebetegnelse på både Stamnettet, det opprinnelige Landsnettet og nye overordnede grunnlagspunkt som er etablert. +
-_MERKNAD3_: Kartverkets trekantpunkt er ikke en del Landsnettet.
+Overordnet nett av fastmerker som Kartverket vedlikeholder og har ansvaret for. +
+Kilde: <<GG>> +
+_MERKNAD 1_: Historisk var koordinatene i Landsnettet en fortetting av koordinatene i Stamnettet, men ved oppdateringer i høyde i 2015 og grunnriss i 2018 er ikke denne koblinga ivaretatt. +
+_MERKNAD 2_: I dag er Landnettet en samlebetegnelse på både Stamnettet, det opprinnelige Landsnettet og nye overordnede grunnlagspunkt som er etablert. +
+_MERKNAD 3_: Kartverkets trekantpunkt er ikke en del Landsnettet.
 
 .laserskudd
 Laserskanneren (LiDAR) avfyrer hurtige skudd, eller pulser. En enkelt puls refereres til som et laserskudd.
@@ -182,7 +195,8 @@ Laserlysets tredimensjonale avtrykk mellom laserinstrument og bakken. Kjegleform
 Retning på laserpulsen endres av refleksjon mot objekter i signalbanen. Multipath fører til feilaktig registrering av bakkeretur.
 
 .nøyaktighet
-Mål for en verdis nærhet til sin sanne verdi eller til det man antar er den sanne verdi <<G>>.
+Mål for en verdis nærhet til sin sanne verdi eller til det man antar er den sanne verdi. +
+Kilde: <<G>>
 
 .oppdragsgiver
 Kontraktspart som skal ha utført det geodataarbeid som kontrakten omfatter.
@@ -201,7 +215,8 @@ _MERKNAD_: Ortofotoet har samme geometriske egenskaper som et kart og er knyttet
 Et digitalt bildes minste enhet med en definert geometrisk utstrekning og intensitetsverdi.
 
 .posisjon
-Sted angitt ved hjelp av koordinater i et geodetisk referansesystem <<G>>.
+Sted angitt ved hjelp av koordinater i et geodetisk referansesystem.
+Kilde: <<G>>
 
 .primærdatasett
 Et definert geodatasett som består av de mest detaljerte og nøyaktige data innen et definert område, har en viss utbredelse og jevnlig blir produsert og/eller ajourholdt.
@@ -217,11 +232,13 @@ Punkt i fellesområdet mellom bilder som brukes ved aerotriangulering til å bin
 _MERKNAD_: Punktet får sine terrengkoordinater bestemt ved aerotriangulering. Engelsk: Tie point
 
 .sant avvik
-Differanse mellom målt/beregnet verdi og sann verdi <<G>>. +
+Differanse mellom målt/beregnet verdi og sann verdi. +
+Kilde: <<G>> +
 _MERKNAD_: Sann verdi vil ofte være ukjent, men den brukes i utjevningsregningen som en teoretisk størrelse. Ved kontroller blir den vanligvis erstattet med en verdi som er målt/beregnet med vesentlig høyere nøyaktighet enn den verdien som skal kontrolleres.
 
 .sanntidsmåling
-Kode- eller fasemåling der beregninger skjer samtidig med at man måler <<SAT>>.
+Kode- eller fasemåling der beregninger skjer samtidig med at man måler.
+Kilde: <<SAT>> +
 
 .signal
 _MERKNAD_: Se fotogrammetrisk signal.
@@ -237,34 +254,37 @@ Sveipeprosess for konvertering fra analog til digital representasjon av bilder, 
 _MERKNAD_: Skanneråpning = FOV (Field of View) = 2 x åpningsvinkel fra nadir 
 
 .stamnett
-Tidligere overordnet nett av fastmerker i Norge, etablert av Statens kartverk i forbindelse med overgang til EUREF89 <<GG>>. +
-_Kilde_: Standarden "Koordinatbasert referansesystem" fra 2009. +
+Tidligere overordnet nett av fastmerker i Norge, etablert av Statens kartverk i forbindelse med overgang til EUREF89. +
+Kilde: <<GG>> +
 _MERKNAD_: Avløste det tidligere 1. ordens trekantnettet. Har sidelengder på ca. 20 km i bebygde strøk. Kartverket er ansvarlig for vedlikehold og forvaltning av Stamnettet.
 
 .standardavvik
-Statistisk størrelse som angir spredningen for en gruppe måle- eller beregningsverdier i forhold til deres sanne eller estimerte verdier <<G>>. +
+Statistisk størrelse som angir spredningen for en gruppe måle- eller beregningsverdier i forhold til deres sanne eller estimerte verdier. +
+Kilde: <<G>> +
 _MERKNAD_: Internasjonalt benyttes også begrepet RMSE. Ved høy overbestemmelse (mange målinger) vil RMSE og standardavvik være sammenfallende, forutsatt at eventuelt systematisk avvik er avspaltet.
 
 .systematisk avvik
-Avvik som er regelmessig med hensyn til fortegn og tallverdi <<G>>. +
+Avvik som er regelmessig med hensyn til fortegn og tallverdi. +
+Kilde: <<G>> +
 _MERKNAD_: Systematisk avvik beregnes ofte som gjennomsnittlig avvik.
 
 .tilfeldig avvik
-Avvik som følger tilfeldighetens lov, slik at en ikke kan forutsi det enkelte avvik verken med hensyn til fortegn eller størrelse <<G>>. +
+Avvik som følger tilfeldighetens lov, slik at en ikke kan forutsi det enkelte avvik verken med hensyn til fortegn eller størrelse. +
+Kilde: <<G>> +
 _MERKNAD_: Ofte er disse avvikene normalfordelt eller tilnærmet normalfordelt, men andre fordelinger kan forekomme.
 
 .tilfeldig variasjon
-Variasjonen eller spredningen for en gruppe måle- eller beregningsverdier i forhold til deres sanne eller estimerte verdier <<G>>. +
+Variasjonen eller spredningen for en gruppe måle- eller beregningsverdier i forhold til deres sanne eller estimerte verdier. +
+Kilde: <<G>> +
 _MERKNAD_: Ordet "tilfeldig" i definisjonen markerer at det forutsettes at hver enkel forskjell mellom en måle- eller beregningsverdi og størrelsens sanne verdi eller middelverdi er et tilfeldig avvik. Et tallmessig uttrykk for tilfeldig variasjon er standardavvik.
 
 .TIN
 Digital høydemodell hvor punktene er organisert som hjørnene i trekanter. +
-_MERKNAD_: 
-Fra engelsk: Triangulated Irregular Network.
-Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig nettverk. Se også grid.
+_MERKNAD_: Fra engelsk: Triangulated Irregular Network. Trekantene kan ha ulik form og størrelse, og utgjør dermed et uregelmessig nettverk. Se også grid.
 
 .topologi
-Beskrivelse av den romlige sammenhengen mellom geografiske objekter <<G>>. +
+Beskrivelse av den romlige sammenhengen mellom geografiske objekter. +
+Kilde: <<G>> +
 _MERKNAD_: Topologi er de av objektenes egenskaper som overlever det som er kalt "kontinuerlige transformasjoner" (også kalt "rubber sheet"-transformasjoner). Alle tallverdier (lengder, areal, retninger) kan bli forandret, mens for eksempel naboskapsforhold vil være uendret.
 
 .ytre pålitelighet
