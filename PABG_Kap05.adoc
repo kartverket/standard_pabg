@@ -15,8 +15,8 @@ Standarden <<SAT>> gir anbefalinger om hvordan posisjonsbestemmelse med satellit
 [#krav-landmaling-referanserammer-transformasjoner,reftext="Krav landmåling referanserammer og transformasjoner"]
 *KRAV LANDMÅLING REFERANSERAMMER OG TRANSFORMASJONER*
 
-* Produksjonen av produktene beskrevet i denne standarden skal anvende Kartverkets offisielle transformasjonsformler.
-* Det skal kun benyttes referanserammer som ivaretar sluttproduktets nøyaktighetskrav.
+* Produksjonen av produktene beskrevet i denne standarden skal anvende Kartverkets offisielle transformasjonsformler. Se også kapittel "6.5 Omforming av koordinater" i <<GG>>.
+* Det skal kun benyttes referanserammer som ivaretar sluttproduktets nøyaktighetskrav i hele produksjonskjeden. Dersom dette ikke er mulig så må dette avtales.
 ====
 
 
