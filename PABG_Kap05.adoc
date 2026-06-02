@@ -9,7 +9,6 @@ Standarden <<SAT>> gir anbefalinger om hvordan posisjonsbestemmelse med satellit
 
 === Referanserammer og transformasjoner
 
- 
 
 ====
 [#krav-landmaling-referanserammer-transformasjoner,reftext="Krav landmåling referanserammer og transformasjoner"]
