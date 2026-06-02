@@ -30,7 +30,7 @@ Felles for begge tilnærmingene er at krav til vektorisering følger kravene i r
 
 
 === Kvalitetsparametere ved vektorisering fra punktsky
-Oppnådd kvalitet på vektordata kartlagt fra punktsky/modell vil være påvirket av flere faktorer. Vi kan skille mellom kvalitetselementer knyttet til datagrunnlaget og kvalitetselementer i selve arbeidet med fremstilling av vektordata fra datagrunnlaget. Kvalitetselementene til datagrunnlaget følger angitte elementer gitt av datafangstmetode. Kartlegging fra bildedata følger <<kapittel-kartlegging-med-fotogrammetri>>, punktsky fra bil følger <<kapittel-kartlegging-med-mobil-datafangst>> og punktsky fra luftbøren sensor følger <<kapittel-kartlegging-med-flybåren-laserskanning>> 
+Oppnådd kvalitet på vektordata kartlagt fra punktsky/modell vil være påvirket av flere faktorer. Vi kan skille mellom kvalitetselementer knyttet til datagrunnlaget og kvalitetselementer i selve arbeidet med fremstilling av vektordata fra datagrunnlaget. Kvalitetselementene til datagrunnlaget følger angitte elementer gitt av datafangstmetode. Kartlegging fra bildedata følger <<kapittel-kartlegging-med-fotogrammetri>>, punktsky fra bil følger <<kapittel-kartlegging-med-mobil-datafangst>> og punktsky fra luftbåren sensor følger <<kapittel-kartlegging-med-flybåren-laserskanning>> 
 
 Kvalitetselementer i datagrunnlaget:
 
@@ -94,7 +94,7 @@ Krav > sqrt(Nøyaktighet^2  + ("Største feil vektorisering")^2
 [#krav-vektor-fullstendighet,reftext="Krav vektor fullstendighet"]
 *KRAV VEKTOR FULLSTENDIGHET*
 
-* Krav til fullstendighet vil følge av krav i aktuell produktspesifikasjon.
+* Krav til fullstendighet skal følge krav i aktuell produktspesifikasjon.
 
 
 ====
