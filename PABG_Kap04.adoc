@@ -13,7 +13,7 @@ Termer og forkortelser som er definert utenfor denne standarden er basert på f�
 
 === Termer
 .aerotriangulering
-Metode for bestemmelse av flybilders ytre orientering ved hjelp av måling av punkter som knytter bilder og flystriper sammen. +
+Metode for bestemmelse av flybilders ytre orientering ved hjelp av måling av punkter som knytter bilder og flystriper sammen. AT er forkortelse for aerotrinagulering. +
 _MERKNAD_: I tilegg til sammenbindingspunkter inngår kjentpunker og GNSS/INS-data som observasjoner i en samlet utjevningsberegning (blokkutjevning). I tillegg til sammenbindingspunktene og ytre orienteringselementene kan også andre ukjente defineres og løses ut i utjevningen.
 
 .affin transformasjon
