@@ -118,6 +118,7 @@ Presisert noen definisjoner.
 Oppdatert <<kapittel-fotografering-med-drone>> med bruksområder og oppdaterte krav. +
 Nytt kapittel om skråbilder: <<kapittel-skråbilder>>
 
+
 *Kapittel 7* +
 
 
