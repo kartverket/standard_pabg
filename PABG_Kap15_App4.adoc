@@ -27,7 +27,7 @@
 <<krav-foto-observasjonsvekting-parametere-og-ukjente>> +
 <<krav-foto-selvkalibrering>> +
 <<krav-foto-at-beregninger-og-resultat>> +
-<<krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringa>> +
+<<krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringen>> +
 <<krav-foto-rapportering-aerotriangulering>> +
 <<krav-foto-konstruksjon>> +
 <<krav-foto-logisk-konsistens>> +
