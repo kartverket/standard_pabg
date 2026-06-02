@@ -125,19 +125,14 @@ image::figurer/Kap8_Relative nøyaktighet Tilfeldig variasjon2.png[Figuren viser
 [cols="1,1,1,1,1,1]
 [width="100%",options="header"]
 |====================
-|Kvalitetselement|Kvalitetsmål|Lav (cm)|Middels (cm)|God (cm)|Høy (cm)
-|Absolutt stedfestingsnøyaktighet |Systematisk avvik ^|0 - 200 ^|0 - 20 ^|0 - 6 ^|0 - 2
-
-| |Standardavvik ^|<50 ^|<5 ^|<2 ^|<1 
-| |Maksimalt avvik 4+^|Systematisk avvik + 2 x Standardavvik
-
-|Relativ nøyaktighet |  Systematisk avvik  ^| 0 - 200 ^|0 - 10 ^| 0 - 4 ^|0 - 2
- 
-| |Tilfeldig variasjon og toleranse ^|5 (+0/-5) ^|5 (+0/-5) ^|3 (+0/-3) ^|1 (+0/-1) 
-
-
-
+|Kvalitetselement |Kvalitetsmål ^|Lav (cm) ^|Middels (cm) ^|God (cm) ^|Høy (cm)
+.3+|Absolutt stedfestingsnøyaktighet |Systematisk avvik ^|0 - 200 ^|0 - 20 ^|0 - 6 ^|0 - 2
+|Standardavvik ^|<50 ^|<5 ^|<2 ^|<1 
+|Maksimalt avvik 4+^|Systematisk avvik + 2 ganger Standardavvik
+.2+|Relativ nøyaktighet |  Systematisk avvik  ^| 0 - 200 ^|0 - 10 ^| 0 - 4 ^|0 - 2
+|Tilfeldig variasjon og toleranse ^|5 (+0/-5) ^|5 (+0/-5) ^|3 (+0/-3) ^|1 (+0/-1) 
 |====================
+
 ====
 
 ===== Kjentpunkt
@@ -154,8 +149,7 @@ Den absolutte nøyaktighet til kjentpunktet skal være lik eller bedre enn krave
 
 Kontroll kan gjennomføres ved å benytte en eller flere metodikker:
 
-* Innmålte kontrollpunkt, 
-Tradisjonelt innmålte kontrollpunkt er fysiske objekt som lar seg gjenfinne i punktskyen, for eksempel i form av geometri eller intensitet. Kontrollpunkt kan eksempelvis være signalerte flater, targets eller skarpe detaljer.
+* Innmålte kontrollpunkt. Tradisjonelt innmålte kontrollpunkt er fysiske objekt som lar seg gjenfinne i punktskyen, for eksempel i form av geometri eller intensitet. Kontrollpunkt kan eksempelvis være signalerte flater, targets eller skarpe detaljer.
 * Gjentatte passeringer ved mobil datafangst kan gi observasjoner/målinger av samme område. Metoden kan erstatte innmålte kontrollpunkt dersom:
 ** Passeringene har tilstrekkelig tidsforskyvning over 15 minutter.
 ** Datasettene skal være fri for systematiske avvik, dokumentert med kalibrering.
@@ -220,7 +214,7 @@ Kvalitetselementer knyttet til kriteriet om egenskapskvalitet er angitt i <<tab-
 |Fotavtrykk|Laserstrålens fotavtrykk er avhengig av sensorens spesifikasjoner, avstanden mellom observert objektet og lasersensoren, samt innfallsvinkelen til objektet som måles. Fotavtrykkets avgrensning defineres ut fra en prosentvis reduksjon av lysintensitet fra fotavtrykkets senter. Fotavtrykkets yttergrense settes der energien målt fra fotavtrykkets senter er redusert til 1/e^2^ som utgjør omtrent 13,5 %.
 |Intensitet|Alle målepunkter i punktskyen skal ha en intensitetsverdi. Ved bruk av flere lasersensorer i innsamlingen må intensitetsverdier tilpasses (strekkes) ved behov for å oppnå en homogen punktsky.
 |Farge| Punktene i punktskyen kan gis RGB-farge fra bilder tatt samtidig som laserskanningen, med forutsetning om at datainnsamling kan utføres i tilstrekkelige lysforhold. Farge er valgfritt og opp til det enkelte prosjekt å vurdere om relevant og derfor om det skal stilles krav til dette eller ikke.
-|Klassifisering| Følger krav fra <<kapittel-bearbeiding-av-laserdata-klassifisering>> samt [LASER]. Klassifisering er valgfritt og opp til det enkelte prosjekt å vurdere om relevant og derfor om det skal stilles krav til dette eller ikke.
+|Klassifisering| Følger krav fra <<kapittel-bearbeiding-av-laserdata-klassifisering>> samt https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/fkb-laser[Produktspesifikasjon Punktsky]. Klassifisering er valgfritt og opp til det enkelte prosjekt å vurdere om relevant og derfor om det skal stilles krav til dette eller ikke.
 |Målemetode (fase/puls)|Valg av lasersensortype, fase- eller pulsskanner, avhenger av sluttprodukt og bruksområde.
 |SensorID|Punkter fra ulike skannere skal kunne skilles fra hverandre.
 |Tidsstempling|Dato og tid for målepunkter, hvis tilgjengelig for sensortypen, angitt som GPS-standardtid. Dersom systemet ikke angir GPS-tid skal siste datafangst dato angis i punktskyfilens hode.
