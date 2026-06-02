@@ -220,52 +220,49 @@ Absolutt nøyaktighet på punktsky i vertikaldomene etterprøves ved hjelp av la
 
 * Størrelsen på kontrollflaten er avhengig av den planlagte punkttettheten. Ved punkttetthet fra 0,5 punkt/m^2^ til 3 punkt/m^2^ skal størrelse på kontrollflaten være minimum 16 m^2^. Ved planlagt punkttettheten på 20 punkt/m^2^ er minimumsstørrelsen 4 m^2^, se <<tab-kontrollflate>>.
 
-* I tilfeller hvor man ikke finner egnet lokasjon for en kvadratisk utformet kontrollflate kan det velges en rektangulær form hvor høyden halveres og størrelsen i m^2^ blir ivaretatt. Et eksempel vil være å endre formen på kontrollflaten fra 4x4 meter til 2x8 meter.
-
 
 * Rundt en kontrollflate skal det være 0,5 m buffersone fri for obstruksjoner.
+
+* Ved punkttetthet mindre enn 3 punkt pr. kvadratmeter skal det brukes innmålte punkt som xref:imgKontrollflateUnder[xrefstyle=short]. Ved punkttetthet mellom 3 og 70 punkt pr. kvadratmeter skal det være innmålte punkt som xref:imgKontrollflateOver[xrefstyle=short]. Ved punkttetthet over 70 punkt pr. kvadratmeter skal det være innmålte punkt som xref:imgKontrollflateOver70[xrefstyle=short].
 
 [[tab-kontrollflate]]
 .Minimumskrav til kontrollflatens form og størrelse
 [cols="7*",options="header"]
-[cols="1,1,1,1,1,1,1,1", options="header"]
+[cols="1,1,1,1,1,1,1",options="header"]
 |===
-| Form Kontrollflate (m)
-| Størrelse (m^2^)
-| Antall landmålte punkt
-5+|Antall lasermålinger innenfor kontrollflaten ved ulik punkttettheter
-|||| 0,5 pkt/m^2^
-| 2 pkt/m^2^
-| 3 pkt/m^2^
-| 5 pkt/m^2^
-| 70 pkt/m^2^
-|4x4|16|25|8|32|||   
-|2x8|16|27|8|32|||    
-
-|2x2|4|13|||12|20| 
-|0,5x0,5|0,25|5|||||17
+^| Form Kontrollflate (m)
+^| Størrelse (m^2^)
+^| Antall landmålte punkt
+4+^|Antall lasermålinger innenfor kontrollflaten ved ulike punkttettheter
+h| h| h|
+^h| 2 punkt/m^2^
+^h| 5 punkt/m^2^
+^h| 10 punkt/m^2^
+^h| 80 punkt/m^2^
+^|4x4 ^|16 ^|25 ^|32|||  
+^|2x2 ^|4 ^|13 ^| ^|20 ^|40| 
+^|1,5x1,5 ^|2,25 ^|13|| ^|23 ^|180 
+^|0,5x0,5 ^|0,25 ^|5||| ^|20
 |===
-
-====
-
-:xrefstyle: full
 
 .Kontrollflate - punkttetthet < 3 punkt/m^2^
 [#imgKontrollflateUnder]
 //[caption="Figure 6:"]
 image::figurer/Kap7_KontrollflateUnder3.png["Kontrollflater under 3 punkt/m^2^",400,align="center"]
 
-
 .Kontrollflate - punkttetthet > 3 punkt/m^2^
 [#imgKontrollflateOver]
 //[caption="Figure 7:"]
 image::figurer/Kap7_KontrollflateOver3.png["Kontrollflater over 3 punkt/m^2^",400,align="center"]
 
-
 .Kontrollflate - punkttetthet > 70 punkt/m^2^
 [#imgKontrollflateOver70]
 //[caption="Figure 8:"]
 image::figurer/Kap7_KontrollflateOver70.png["Kontrollflater over 70 punkt/m^2^",250,align="center"]
+
+====
+
+:xrefstyle: full
 
 I kartleggingsprosjekt med både Laser og Foto kan senter av kontrollflate signaleres. Signalet skal i så fall inngå i signaleringsplan for foto.
 
@@ -274,7 +271,6 @@ I kartleggingsprosjekt med både Laser og Foto kan senter av kontrollflate signa
 *KRAV LASER KONTROLFLATER  TIDSGYLDIGHET*
 
 * Kontrollflater og hjulspor skal måles inn samme år som datafangsten gjennomføres. Unntak kan avtales der prosjekter går over flere år.
-
 
 ====
 
@@ -380,7 +376,7 @@ image::figurer/Kap7_SammenslåingBlokk.jpg["Sammenslåing av polygoner til en sk
 ==== Utføring av datainnsamling
 Til forskjell fra flyfotografering, kan laserskanning utføres uavhengig av solvinkel og sollys. Laserskanneren er en aktiv sensor som skaper sin egen belysning av overflaten. Dette medfører at laserskanning i utgangspunktet kan utføres hele året og når som helst på døgnet. Det er likevel viktig å vurdere når på året det er ønskelig å fly med hensyn til vegetasjon og snø. Best gjennomtrengning til bakken vil oppnås før løvsprett eller etter løvfall. Dersom man ønsker å ha en god terrengmodell bør laserskanningen gjennomføres før åkrene og bunnvegetasjon i skog har kommet for langt i vekst.
 
-Laserskanning kan gjerne gjennomføres dersom det er skyer over flyet. Ved fuktighet mellom fly og bakke (snø, regn, tåke eller lavt skydekke) vil imidlertid lyset reflekteres og medføre svært få eller ingen retursignaler fra bakken. FLS bør derfor ikke gjennomføres ved slike forhold. For å unngå skjev punktfordeling og redusert nøyaktighet bør FLS heller ikke gjennomføres ved sterk vind (i flyhøyden) eller ved mye turbulens.
+Laserskanning kan gjerne gjennomføres dersom det er skyer over flyet. Hvis det kommer fuktighet mellom fly og bakke (snø, regn, tåke eller lavt skydekke) vil lyset reflekteres og medføre svært få eller ingen retursignaler fra bakken. 
 
 ====
 [#krav-laser-utforing-av-laserskanning,reftext="Krav laser utføring av laserskanning"]
@@ -389,8 +385,16 @@ Laserskanning kan gjerne gjennomføres dersom det er skyer over flyet. Ved fukti
 * Krav til GNSS/INS sensor se <<kapittel-krav-til-gnssins>>.
 * Krav til GNSS/INS datafangst se <<kapittel-krav-til-innsamling-av-gnssimu-data>>.
 * Parallelle nabostriper skal som hovedregel flys i motsatt retning for å bestemme eventuelle systematiske avvik mellom stripene.
+* Det skal ikke være fuktighet mellom fly og bakke (snø, regn, tåke eller lavt skydekke).
 ====
 
+====
+[#anbefaling-laser-utforing-av-laserskanning,reftext="Anbefaling laser utføring av laserskanning"]
+*ANBEFALING LASER UTFØRING AV LASERSKANNING*
+
+* For å unngå skjev punktfordeling og redusert nøyaktighet bør FLS ikke gjennomføres ved sterk vind (i flyhøyden) eller ved mye turbulens.
+
+====
 
 === Prosessering av georeferert punktsky
 
