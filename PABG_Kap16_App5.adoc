@@ -9,5 +9,6 @@
 <<anbefaling-foto-drone-detaljerte-prosjekter>> +
 <<anbefaling-foto-skråbilder-minimum>> +
 <<anbefaling-laser-tverrstriper>> +
+<<anbefaling-laser-utforing-av-laserskanning>> +
 <<anbefaling-mobil-fargelegging-av-punktsky>> +
 
