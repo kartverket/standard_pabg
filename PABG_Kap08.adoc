@@ -16,13 +16,22 @@ Standarden beskriver krav og anbefalinger for å sikre kvaliteten til sluttprodu
 ====
 
 === Omfang
-Standarden omfatter mobil datafangst med laserskanner med opsjonelt kamera.
+Kapittelet omfatter mobil datafangst med laserskanner med opsjonelt kamera.
 
 === Posisjonering av mobil datafangst
 MLS benytter seg av posisjons- og orienteringssystemer bygd opp rundt et treghetsnavigasjonssystem, også kalt "Inertial Navigation System" (INS). Et INS består av en "Inertial measurement Unit" (IMU) og tilhørende støttesensorer. Den primære støttesensoren er vanligvis en eller flere GNSS-mottakere ("Global Navigation Satellite System"), ofte i kombinasjon med optisk eller mekanisk hastighets- eller distansemåling (odometer). Det er også mulig å benytte andre former for støtteobservasjoner fra ulike sensorer sammen med et INS. Eksempler på dette har vi fra robotverden og "Simultaneous Localization and Mapping" (SLAM).
 
 === GDPR
-Laser punktsky (også fargelagt punktsky) fra mobil datafangst vil i de fleste tilfellene ikke kunne brukes til å identifisere personer eller bilskilt.  Produktet vil da ikke omfattes av https://lovdata.no/dokument/NL/lov/2018-06-15-38[GDPR-forordningen]. Det vil være oppdragsgivers ansvar å påse at dette gjelder for sitt prosjekt. Bildematerialet fra mobil datafangst, vil som hovedregel være omfattet av GDPR forordningen og nødvendige tiltak må utføres.
+Laser punktsky (også fargelagt punktsky) fra mobil datafangst vil i de fleste tilfellene ikke kunne brukes til å identifisere personer eller bilskilt. Produktet vil da ikke omfattes av https://lovdata.no/dokument/NL/lov/2018-06-15-38[GDPR-forordningen]. Bildematerialet fra mobil datafangst, vil som hovedregel være omfattet av GDPR forordningen og nødvendige tiltak må utføres.
+
+
+====
+[#krav-mobil-gdpr,reftext="Krav mobil GDPR"]
+*KRAV MOBIL GDPR*
+
+* Oppdragsgiver har ansvar for å påse at GDPR følges, dersom ikke annet er avtalt. Dette avklares i samarbeid med oppdragstaker pr. prosjekt.
+
+====
 
 === Fargelegging av punktsky
 Påføring av fargeverdier på punktskyen, er opsjonelt. Dersom opsjon utløses, bør  kvalitetselementer gitt i xref:tab-fargelegging-av-punktsky[xrefstyle=short] hensyntas:
@@ -42,7 +51,7 @@ Påføring av fargeverdier på punktskyen, er opsjonelt. Dersom opsjon utløses,
 | Lysforhold | Tilstrekkelig lysmengde til at lukkertid/bilens hastighet kan settes slik at bildene forbli skarpe.   |  Lysforholdene bør være tilstrekkelige for å få fram informasjonen ønsket i hovedmålsettingen.
 | Oppløsning | Bildepikslenes faktiske størrelse i terrenget. | Bør sammenfalle med produktets krav til detaljrikdom.
 | Posisjon og orientering | Geometrisk nøyaktighet til kameraet. |Bør ha samme kvalitet som laserdataene.
-|GDPR  | Informasjon som faller inn under GDPR-forordningen.  |  Skal redigeres.
+|GDPR  | Informasjon som faller inn under GDPR-forordningen.  | Informasjon som faller under GDPR skal manipuleres, slik at sluttproduktet er innenfor GDPR-forordningen.
 |==================== 
 
 
@@ -142,7 +151,13 @@ Se definisjon <<termer-kjentpunkt>>.
 
 Se definisjon <<termer-kontrollpunkt>>.
 
-Den absolutte nøyaktighet til kjentpunktet skal være lik eller bedre enn kravet til den absolutte nøyaktigheten til punktskyen. Dersom nøyaktigheten er 1/3 av kravet, kan kontrollpunktene benyttes direkte i statestikkberegningene. Dersom nøyaktighetene til kontrollpunktene er dårligere, skal standardavviket til kjentpunktene benyttes i statestikkberegningene. Dette etter krav i standarden https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet[Geodatakvalitet]. Det stilles ikke konkrete krav til omfang av kjent- og kontrollpunkt, ettersom prosjektområde, GNSS-tilgjengelighet, målesystem og prosesseringsløyper har stor betydning for kvaliteten som oppnås rett fra INS. Metodikk og omfang skal være behovsstyrt og faglig begrunnet av leverandør i hvert enkelt oppdrag.
+====
+[#krav-mobil-kjentpunkt-og-kontrollpunkt,reftext="Krav mobil kjentpunkt og kontrollpunkt"]
+*KRAV MOBIL KJENTPUNKT OG KONTOLLPUNKT*
+
+* Den absolutte nøyaktighet til kjentpunktet skal være lik eller bedre enn kravet til den absolutte nøyaktigheten til punktskyen. Dersom nøyaktigheten er 1/3 av kravet, kan kontrollpunktene benyttes direkte i statestikkberegningene. Dersom nøyaktighetene til kontrollpunktene er dårligere, skal standardavviket til kjentpunktene benyttes i statestikkberegningene. Dette etter krav i standarden https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet[Geodatakvalitet]. 
+* Det stilles ikke konkrete krav til omfang av kjent- og kontrollpunkt, ettersom prosjektområde, GNSS-tilgjengelighet, målesystem og prosesseringsløyper har stor betydning for kvaliteten som oppnås rett fra INS. Metodikk og omfang skal være behovsstyrt og faglig begrunnet av leverandør i hvert enkelt oppdrag.
+====
 
 [[kapittel-kontrollmetode-og-kontrollplan]]
 ===== Kontrollmetode og kontrollplan
