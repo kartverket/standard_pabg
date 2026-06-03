@@ -196,12 +196,12 @@ Tverrstriper benyttes til daglig kalibrering og stripejustering av et laserprosj
 
 ====
 
-.Minimum vinkel på tverrstriper
+.Eksempel på minste tillate vinkel på tverrstriper
 [#imgTverrstriper]
 //[caption="Figure 4:"]
 image::figurer/Kap7_TverrstripeVinkel.png[Tverrstriper,400,align="center"]
 
-.Enkeltstriper i kjede
+.Eksempel på enkeltstriper i kjede
 [#imgEnkeltstripe]
 //[caption="Figure 5:"]
 image::figurer/Kap7_EnkeltstripeKjede.png[Enkeltstripe,400,align="center"]
@@ -218,44 +218,36 @@ Absolutt nøyaktighet på punktsky i vertikaldomene etterprøves ved hjelp av la
 
 :xrefstyle: short
 
-* Størrelsen på kontrollflaten er avhengig av den planlagte punkttettheten. Ved punkttetthet fra 0,5 punkt/m^2^ til 3 punkt/m^2^ skal størrelse på kontrollflaten være minimum 16 m^2^. Ved planlagt punkttettheten på 20 punkt/m^2^ er minimumsstørrelsen 4 m^2^, se <<tab-kontrollflate>>.
-
-
+* Størrelsen på kontrollflaten er avhengig av den planlagte punkttettheten, intensjonen er at hver kontrollflate inneholder minst 20 lasermålinger. Se <<tab-kontrollflate>>. 
 * Rundt en kontrollflate skal det være 0,5 m buffersone fri for obstruksjoner.
-
-* Ved punkttetthet mindre enn 3 punkt pr. kvadratmeter skal det brukes innmålte punkt som xref:imgKontrollflateUnder[xrefstyle=short]. Ved punkttetthet mellom 3 og 70 punkt pr. kvadratmeter skal det være innmålte punkt som xref:imgKontrollflateOver[xrefstyle=short]. Ved punkttetthet over 70 punkt pr. kvadratmeter skal det være innmålte punkt som xref:imgKontrollflateOver70[xrefstyle=short].
+* En kontrollflate er definert av et gitt antall landmålte punkt. Punktene skal fordeles jevnt som vist i xref:imgKontrollflateUnder[xrefstyle=short],  xref:imgKontrollflateOver[xrefstyle=short] og xref:imgKontrollflateOver70[xrefstyle=short] ut fra planlagt punkttetthet.
 
 [[tab-kontrollflate]]
 .Minimumskrav til kontrollflatens form og størrelse
-[cols="7*",options="header"]
-[cols="1,1,1,1,1,1,1",options="header"]
+[cols="3*",options="header"]
+[cols="1,1,1",options="header"]
 |===
 ^| Form Kontrollflate (m)
-^| Størrelse (m^2^)
-^| Antall landmålte punkt
-4+^|Antall lasermålinger innenfor kontrollflaten ved ulike punkttettheter
-h| h| h|
-^h| 2 punkt/m^2^
-^h| 5 punkt/m^2^
-^h| 10 punkt/m^2^
-^h| 80 punkt/m^2^
-^|4x4 ^|16 ^|25 ^|32|||  
-^|2x2 ^|4 ^|13 ^| ^|20 ^|40| 
-^|1,5x1,5 ^|2,25 ^|13|| ^|23 ^|180 
-^|0,5x0,5 ^|0,25 ^|5||| ^|20
+^| Krav til antall landmålte punkt
+^| Planlagt punkttetthet
+^|4x4 ^|25 ^|Fra 2 punkt/m^2^
+^|2x2 ^|13 ^|Fra 5 punkt/m^2^
+^|1,5x1,5 ^|13 ^|Fra 10 punkt/m^2^
+^|0,5x0,5 ^|5 ^|Fra 80 punkt/m^2^
 |===
 
-.Kontrollflate - punkttetthet < 3 punkt/m^2^
+
+.Kontrollflate - punkttetthet fra 2 punkt/m^2^
 [#imgKontrollflateUnder]
 //[caption="Figure 6:"]
 image::figurer/Kap7_KontrollflateUnder3.png["Kontrollflater under 3 punkt/m^2^",400,align="center"]
 
-.Kontrollflate - punkttetthet > 3 punkt/m^2^
+.Kontrollflate - punkttetthet fra 5 punkt/m^2^. Ved 10 punkt/m^2^ så er avstanden 0,75 meter ikke 1 meter.
 [#imgKontrollflateOver]
 //[caption="Figure 7:"]
 image::figurer/Kap7_KontrollflateOver3.png["Kontrollflater over 3 punkt/m^2^",400,align="center"]
 
-.Kontrollflate - punkttetthet > 70 punkt/m^2^
+.Kontrollflate - punkttetthet fra 80 punkt/m^2^
 [#imgKontrollflateOver70]
 //[caption="Figure 8:"]
 image::figurer/Kap7_KontrollflateOver70.png["Kontrollflater over 70 punkt/m^2^",250,align="center"]
@@ -283,7 +275,7 @@ I kartleggingsprosjekt med både Laser og Foto kan senter av kontrollflate signa
 * En kontrollflates gyldighetsområde defineres med en buffer på 6 km radius fra kontrollflatens senter.
 * Kontrollflater skal planlegges slik at hele prosjektområdet er dekket av kontrollflatenes gyldighetsområder. Se <<#imgKontrollflateGyldighet>> for et eksempel.
 * Antall kontrollflater skal ikke være under et minimum på 3 flater pr. sammenhengende skanneblokk. Oppdragstaker kan slå sammen mindre områder til sammenhengende skanneblokk for å redusere behov for flater. Se <<#imgSammenslåingBlokk>> for et eksempel. 
-* Avvik fra antall og plassering av kontrollflater (for eksempel ved laserskanning av store områder uten infrastruktur eller mange spredte øyer) kan tillates dersom oppdragsgiver har åpnet for dette i teknisk spesifikasjon for oppdraget. I slike tilfeller skal det sørges for at korrekte GNSS-skift blir påført alle striper.
+* Avvik fra antall og plassering av kontrollflater (for eksempel ved laserskanning av store områder uten infrastruktur eller mange spredte øyer) kan tillates dersom oppdragsgiver har åpnet for dette i teknisk spesifikasjon for oppdraget. I slike tilfeller skal det sørges for at korrekte "GNSS-shift" blir påført alle striper.
 * Kontrollflatene skal plasseres på en hard flat flate (asfalt, betong, plan og hard grusveg). Som hovedregel skal kontrollflatene plasseres innenfor prosjektavgrensingen. Dersom dette ikke er praktisk mulig, plasseres kontrollflatene i umiddelbar nærhet. Uansett skal laserdata over kontrollflatene inngå i leveransen.  
 * Maksimum helning internt i flaten skal ikke overstiger 5 %. Dersom helningen overstiger dette kan en grunnrissfeil påvirke resultatet av høydeanalyse.
 * Rundt kontrollflatene skal det være en buffersone på minimum 0,5 meter. Helningen på buffersonen skal ikke overskride 5 %. Dersom det ikke benyttes en buffersone rundt målt kontrollflate kan grunnrissfeil påvirke resultatet av høydeanalysen.
