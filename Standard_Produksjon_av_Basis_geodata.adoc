@@ -28,7 +28,7 @@ ifdef::backend-pdf[:toc: macro]
 :html-navn: Produksjon_av_basis_geodata
 :standard-navn: {datasett} {versjon}
 :standard-url: {base-url}{html-navn}
-:forrige-versjon-url: https://kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/produksjon-av-basis-geodata-1.0-standarder-geografisk-informasjon.pdf
+:forrige-versjon-url: https://sosi.geonorge.no/Standarder/Produksjon_av_basis_geodata/2.0/
 = Standard for geografisk informasjon: {standard-navn}
 
 
@@ -102,10 +102,13 @@ Oppdatert skrivefeil, formateringsfeil og henvisninger i hele standarden.
 
 Alle krav skal være i kravbokser og alle anbefalinger skal være i anbefalingsbokser.
 
+Presiseringer der tidligere krav var utydelige i hele standarden.
+
 <<kapittel-kartlegging-med-mobil-datafangst>> og <<kapittel-vektorisering-fra-punktsky-og-modell>> er nye og de gamle kapitlene fra om med gamle kapittel 8 er flyttet ned 2 hakk, slik at gamle kapittel 8 nå er <<kapittel-konvertering-av-analoge-kart-til-digitale-vektordata>>.
 
 *Kapittel 3* +
-Splittet normative referanser til i normative referanser, juridiske og regulatative referanser og faglige referanser.
+Splittet normative referanser til i normative referanser, juridiske og regulatative referanser og faglige referanser. +
+Oppdatert referanser.
 
 *Kapittel 4* +
 Oppdatert lenker til standarder, omtalt at noen standarder er på vei til å erstattes av en ny geodesistandard. +
@@ -115,12 +118,19 @@ Presisert noen definisjoner.
 
 
 *Kapittel 6* +
+Nytt kapittel om bildekvalitet: <<kapittel-bildekvalitet>> +
+Presisering av bildeblokk, tverrstriper, kontrollkrav ved færre kontrollpunkt enn 5 og nøyaktighetskrav fra nypunkt til punktmålinger i AT. +
+Ved avtale så er det tillatt å orientere flybilder og laserskanner samtidig. +
+Selvkalibrering av kamera er tillatt ved avtale. +
 Oppdatert <<kapittel-fotografering-med-drone>> med bruksområder og oppdaterte krav. +
-Nytt kapittel om skråbilder: <<kapittel-skråbilder>>
+Nytt kapittel om skråbilder: <<kapittel-skråbilder>> +
 
 
 *Kapittel 7* +
-
+Oppdatert krav om kontrollflater. +
+Lagt inn krav om tidsgyldighet på kontrollflater og mulighet å bruke krittspray. +
+Tillatt å bruke hjulspormetoden som kontrollflater. +
+Ved avtale så er det tillatt å orientere flybilder og laserskanner samtidig. +
 
 
 *Kapittel 8* +
@@ -174,7 +184,7 @@ Oppdatert eksempel på flyplan. +
 Flyttet oversikt over kravliste til eget vedlegg
 
 ==== Revisjon
-Standardiseringsprosjektet avsluttes ikke med publisering av 2.0 versjonen av standarden. Det er fortsatt behov for å beskrive nye produksjonsmetoder (blant annet hybrid orientering), samt at en del innspill som kom i høringsrunden ikke ble tatt inn i standarden, men utsatt til neste revisjon da de var omfattende og må behandles grundig. En del av innspillene har også gått på å gjøre standarden mer generell og ikke knytte den så sterkt opp til nøyaktighetskravene som er stilt i FKB.
+Standardiseringsprosjektet avsluttes ikke med publisering av 3.0 versjonen av standarden. Det er fortsatt behov for å beskrive nye produksjonsmetoder (blant annet hybrid orientering), samt at en del innspill som kom i høringsrunden ikke ble tatt inn i standarden, men utsatt til neste revisjon da de var omfattende og må behandles grundig. En del av innspillene har også gått på å gjøre standarden mer generell og ikke knytte den så sterkt opp til nøyaktighetskravene som er stilt i FKB.
 
 
 
