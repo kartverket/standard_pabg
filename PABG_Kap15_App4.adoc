@@ -79,7 +79,9 @@
 <<krav-laser-klassifisering>> +
 <<krav-laser-rapportering-laserskanning>> +
 <<krav-mobil-referanserammer-transformasjoner>> +
+<<krav-mobil-gdpr>> +
 <<krav-mobil-stedfestingsnøyaktighet-ved-mobil-datafangst>> +
+<<krav-mobil-kjentpunkt-og-kontrollpunkt>> +
 <<krav-mobil-dokumentasjon-av-mobil-datafangst>> +
 <<krav-vektor-geometrisk-avvik-og-tverravvik-pilhøyde>> +
 <<krav-vektor-fullstendighet>> +
