@@ -42,27 +42,39 @@ I denne standarden er det formalisert et rammeverk for å kvantifisere bildekval
 
 Vi skiller mellom to ulike oppløsninger: bakkeoppløsning eller "Ground sample distance" (GSD) og "Ground Resolved Distance" (GRD).
 
-Bakkeoppløsning (GSD) er avstanden på bakken som tilsvarer en piksel i kameraet. GSD beregnes etter <<formel-GSD>>, hvor p er pikselstørrelsen i kameraets bildesensor, H er flyhøyden over bakken og f er kamerakonstanten til kameraet. 
+Bakkeoppløsning (GSD) er avstanden på bakken som tilsvarer en piksel i kameraet. GSD beregnes etter xref:imgFormel1[xrefstyle=short], hvor p er pikselstørrelsen i kameraets bildesensor, H er flyhøyden over bakken og f er kamerakonstanten til kameraet. 
 
+////
 [stem#formel-GSD, reftext=formel 1]
 ++++
 \begin{equation}
 GSD = \frac{p \cdot H}{f}
 \end{equation}
 ++++
+////
+
+[caption="Formel 1"]
+.: GSD
+[#imgFormel1]
+image::figurer/Formel_1.png["Formel 1: GSD",align="center"]
 
 GRD beskriver den minste avstanden mellom to objekter på bakken som et kamera klarer å skille fra hverandre i bildet. Dersom avstanden blir mindre, vil objektene smelte sammen i bildet. Beregningene av GRD utføres etter fremgangsmåte beskrevet i *[Meißner and Berger, 2025]*.
 
-For å beregne GRD må det anvendes en Siemensstjerne innenfor prosjektområdet. Dette er en sirkel bestående av like store svarte og hvite segmenter. Anbefalt totalt antall segmenter s følger *[Meißner and Berger, 2025]* og bør ligge mellom 16 og 96 segmenter. Radiusen til stjernen beregnes etter <<formel-radius>>. Når <<formel-radius>> benyttes bør det etableres svart og hvite referanseflater som har en størrelse som sikrer helt svarte og helt hvite piksler. Dette benyttes i utregningene av GRD og styrker nøyaktigheten til beregningen.
+For å beregne GRD må det anvendes en Siemensstjerne innenfor prosjektområdet. Dette er en sirkel bestående av like store svarte og hvite segmenter. Anbefalt totalt antall segmenter s følger *[Meißner and Berger, 2025]* og bør ligge mellom 16 og 96 segmenter. Radiusen til stjernen beregnes etter xref:imgFormel2[xrefstyle=short]. Når xref:imgFormel2[xrefstyle=short] benyttes bør det etableres svart og hvite referanseflater som har en størrelse som sikrer helt svarte og helt hvite piksler. Dette benyttes i utregningene av GRD og styrker nøyaktigheten til beregningen.
 
-
+////
 [stem#formel-radius, reftext=formel 2]
 ++++
 \begin{equation}
 r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\pi} \right)
 \end{equation}
 ++++
+////
 
+[caption="Formel 2"]
+.: Radius til Siemensstjerne
+[#imgFormel2]
+image::figurer/Formel_2.png["Radius til Siemensstjerne",align="center"]
 
 
 
@@ -181,7 +193,7 @@ For øvrige krav til innmåling vises det til standarden <<SAT>>, og for krav ti
 ===== Krav til antall og plassering av kjentpunkter og kontrollpunkter
 Ved GNSS/INS-støttet fotografering kreves det i teorien kun et fåtall kjentpunkt for å kunne utføre aerotriangulering. Kjentpunktene er kun nødvendige for å kunne bestemme systematiske avvik i de GNSS-bestemte projeksjonssentrene (datumstransformasjon), samt for å ha en minimums-kontroll. I praksis trengs vesentlig flere punkt for å kunne:
 
-* Bestemme flere GNSS-skift på grunn av fotografering over flere dager.
+* Bestemme flere "GNSS-shift" på grunn av fotografering over flere dager.
 * Dokumentere kvaliteten i bildeorienteringen tilstrekkelig/godt.
 * Oppdage avvik i hele blokken.
 
@@ -191,7 +203,7 @@ Ved GNSS/INS-støttet fotografering kreves det i teorien kun et fåtall kjentpun
 
 * Det skal være minimum ett fullbestemt kjentpunkt i hver flystripe.
 * Kravet til antall kjentpunkt kan avvikes etter avtale. Dette må da kompenseres med flere tverrstriper.
-* I en bildeblokk skal det være minimum 5 fullbestemte kjentpunkter. Kravet gjelder også for enkeltstriper og enkeltstriper i kjede. Avvik fra dette (for eksempel ved svært små blokker og ved mange spredte øyer) kan tillates dersom oppdragsgiver har åpnet for dette i teknisk spesifikasjon for oppdraget. I slike tilfeller skal det sørges for at korrekte GNSS-skift blir påført bildene.
+* I en bildeblokk skal det være minimum 5 fullbestemte kjentpunkter. Kravet gjelder også for enkeltstriper og enkeltstriper i kjede. Avvik fra dette (for eksempel ved svært små blokker og ved mange spredte øyer) kan tillates dersom oppdragsgiver har åpnet for dette i teknisk spesifikasjon for oppdraget. I slike tilfeller skal det sørges for at korrekte "GNSS-shift" blir påført bildene.
 * I blokker som inneholder kjedede enkeltstriper skal det være minimum ett fullbestemt kjentpunkt i hvert overlappsområde mellom stripene, samt minimum ett i eller nær enden av hver kjede.
 * Kjentpunktene skal fordeles jevnt over hele bildeblokken og det skal påses at det finnes kjentpunkter nær blokkens ytterkanter. Det er dog ikke nødvendig å plassere kjentpunktene helt i ytterkant, dersom for eksempel adkomst gjør dette vanskelig.
 ====
@@ -423,7 +435,7 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 |Klarmelding|Dersom ikke annet er avtalt skal oppdragsgiver for fotograferingen gi skriftlig klarmelding om at fotografering kan starte. Klarmelding skal gis så tidlig som mulig, og for hvert eventuelle delområde. Klarmeldingen(e) skal bekreftes skriftlig av oppdragstaker.
 |Kameratype|Dersom ikke annet er avtalt skal fotograferingen utføres med geometrisk og radiometrisk kalibrert storformat digitalt kamera. Se <<Krav til kamera>> for krav til instrumenter, kalibrering og kontroll.
 |Eksponeringskontroll|Kameraet skal ha eksponeringskontroll og denne skal benyttes aktivt under fotografering for å unngå skadelig over- og undereksponering, uskarpe bilder og tap av detaljer.
-|Fotograferingsperiode|Et prosjekt skal fotograferes over et kortest mulig tidsrom og det skal tilstrebes at flystriper fotograferes mest mulig samlet. Ved fotografering over flere dager eller GNSS-sesjoner skal det sørges for at tilstrekkelig med kjentpunkter blir dekket slik at systematiske GNSS-skift kan bestemmes for hver dag/hver fotosesjon.
+|Fotograferingsperiode|Et prosjekt skal fotograferes over et kortest mulig tidsrom og det skal tilstrebes at flystriper fotograferes mest mulig samlet. Ved fotografering over flere dager eller GNSS-sesjoner skal det sørges for at tilstrekkelig med kjentpunkter blir dekket slik at systematiske "GNSS-shift" kan bestemmes for hver dag/hver fotosesjon.
 |Fotograferingstidspunkt|Mengden av skygge i bildene skal forsøkes holdt så lavt som mulig ved at fotografering blir utført på en tid på dagen som er mest mulig gunstig med hensyn til overflateforhold og topografi.
 |Fotograferingsavbrudd|Ved avbrudd i fotografering i en flystripe skal hele stripen som hovedregel fotograferes på ny. Unntakene er striper med lengde tilsvarende minimum 20 bilder ved 60 % lengdeoverdekning, eller der fortsettelse kan skje kort tid etter avbrudd og i samme fotosesjon. Dersom det ikke er mulig å fly om stripen før etter lengre tid skal oppdragstaker i samråd med oppdragsgiver vurdere hva som er til prosjektets beste med hensyn til nøyaktighet og samlet visuell kvalitet i bildene.
 |Stripeskjøting|Dersom striper må skjøtes skal det fotograferes tilstrekkelig overlapp over bruddet slik at nøyaktighetstap unngås og slik at stereodekning over bruddet fra begge sider blir mulig. Det skal være minst 4 bilder overlapp over stripebruddet.
@@ -801,7 +813,7 @@ Dette kapittelet angir krav og retningslinjer til aerotriangulering (AT) med blo
 *KRAV FOTO OBSERVASJONSVEKTING, PARAMETERE OG UKJENTE*
 
 * Observasjonstypene (kjentpunkter, GNSS- og INS-data, manuelle og automatiske bildemålinger) skal vektes i henhold til a priori eller erfaringsbasert nøyaktighet samt synlighet i bildene.
-* Konstante såkalte GNSS-skift kan bestemmes i blokkutjevningen. Behovet for GNSS-skift kan stamme fra ukorrigerte systematiske avvik i GNSS/INS-beregningen, men kan også være forårsaket av andre avvik med samme forløp (for eksempel avvik i kamerakonstanten). Slike skift kan bestemmes samlet for hele bildeblokken, pr. GNSS-sesjon, pr. fotodag eller pr. flystripe såfremt tilstrekkelig med kjentpunkter er tilgjengelig og målt innenfor det fragmentet som ønskes skiftet. Som hovedregel skal minst 3 kjentpunkter benyttes, men 2 og eventuelt 1 punkt kan aksepteres i mindre fragmenter.
+* Konstante såkalte "GNSS-shift" kan bestemmes i blokkutjevningen. Behovet for "GNSS-shift" kan stamme fra ukorrigerte systematiske avvik i GNSS/INS-beregningen, men kan også være forårsaket av andre avvik med samme forløp (for eksempel avvik i kamerakonstanten). Slike "shift" kan bestemmes samlet for hele bildeblokken, pr. GNSS-sesjon, pr. fotodag eller pr. flystripe såfremt tilstrekkelig med kjentpunkter er tilgjengelig og målt innenfor det fragmentet som ønskes "shiftet". Som hovedregel skal minst 3 kjentpunkter benyttes, men 2 og eventuelt 1 punkt kan aksepteres i mindre fragmenter.
 * Antatt lineær GNSS-drift kan bestemmes pr. flystripe så lenge det benyttes minst 1 kjentpunkt i hver ende av stripa.
 * Mindre, antatt prosjektspesifikke korreksjoner til eksisterende "boresight"-kalibrering (jamfør <<kapittel-krav-til-gnssins>>) kan bestemmes i blokkutjevningen så lenge blokken anses å ha tilstrekkelig geometrisk styrke, eventuelt et større antall bilder/striper.
 * Selvkalibrering ved hjelp av tilleggsparametere er tillatt ved avtale og skal følge <<krav-foto-selvkalibrering>>. Tilleggsparametere skal kun benyttes dersom bildeblokken har tilstrekkelig geometrisk styrke. Eventuell bruk skal avtales spesielt.
@@ -829,7 +841,7 @@ Dette kapittelet angir krav og retningslinjer til aerotriangulering (AT) med blo
 
 * Det skal utføres grovfeilsøk. 
 * Etter eventuell fjerning av grove avvik skal det påses at ingen vitale observasjoner er fjernet og at antall og plassering av sammenbindingspunkter er i henhold til kravene. Alle kjentpunktmålinger skal inkluderes i AT-beregningene, unntak kan gjøres der kjentpunkt(ene) har dårlig synbarhet, dårlig egnethet eller feil i gitt koordinat. Der kjentpunktmålinger utelates skal dette dokumenteres i rapporten. 
-* Bildenes ytre orienteringselementer, terrengkoordinatene til alle målte sammenbindingspunkter samt eventuelle tilleggsukjente (som spesifisert over) skal bestemmes i en samlet blokkutjevning. Konstante GNSS-skift, korreksjoner til "boresight"-kalibreringen og estimering av antenneeksentrisitet og andre systemavstander (lever arm) kan eventuelt bestemmes i forprosessering (ved hjelp av blokkutjevning) og deretter påføres endelig GNSS/INS-resultat, dette forutsetter tilstrekkelig observasjonsgrunnlag og geometrisk styrke i blokken.
+* Bildenes ytre orienteringselementer, terrengkoordinatene til alle målte sammenbindingspunkter samt eventuelle tilleggsukjente (som spesifisert over) skal bestemmes i en samlet blokkutjevning. Konstante "GNSS-shift", korreksjoner til "boresight"-kalibreringen og estimering av antenneeksentrisitet og andre systemavstander (lever arm) kan eventuelt bestemmes i forprosessering (ved hjelp av blokkutjevning) og deretter påføres endelig GNSS/INS-resultat, dette forutsetter tilstrekkelig observasjonsgrunnlag og geometrisk styrke i blokken.
 * Bildenes ytre orienteringselementer skal ha et totalt standardavvik maksimalt lik 2/3 av kravene for de aktuelle geodata. Med "totalt" menes det samlede avvik på et målt objekt, sammensatt av de enkelte orienteringselementenes feilbidrag. Se <<tab-nøyaktighetskrav-AT-FKB>> for eksempler på nøyaktighetskrav til sammenbindingspunkt og ytre orienteringselementer.
 * Standardavviket på vektsenheten skal være &#8804; 1/3 piksel.
 * De utjevnede sammenbindingspunktene ("nypunkter") skal bestemmes med et gjennomsnittlig estimert standardavvik maksimalt lik 1/2 av kravene for de aktuelle geodata som skal produseres i prosjektet. Maksimalt estimert standardavvik på hvert “nypunkt” skal være under grovfeilgrensen til kravet for “nypunkt”.
@@ -1305,7 +1317,7 @@ Målsetning: Innlegging i norgeibilder.no.
 * Bildene må aerotrianguleres i egnet programvare. AT-rapport krav: <<krav-foto-rapportering-aerotriangulering>>, men måling i stereo (DFA) er ikke nødvendig.
 * Beregningsrapporten fra prosesseringsprogramvaren må leveres og er en del av dokumentasjonen av kvaliteten til prosjektet. 
 * Kjentpunkter er nødvendig og antallet skal være tilstrekkelig til å oppnå ønsket nøyaktighet.
-* Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt («sjekkpunkter»). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktigheten til kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.
+* Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt («sjekkpunkter»). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktighetskrav for innmåling av kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.
 * Ortofotorapport: <<krav-foto-rapportering-ortofoto>>
 * Personopplysningsloven skal følges (inkluder GDPR).
 ====
@@ -1318,7 +1330,7 @@ Målsetning: Innlegging i norgeibilder.no.
 * Følge krav til gjeldene ortofotostandard.
 * Beregningsrapporten fra prosesseringsprogramvaren må leveres og er en del av dokumentasjonen av kvaliteten til prosjektet, men full AT-rapport er ikke nødvendig. 
 * Kjentpunkter er ikke nødvendig.
-* Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt («sjekkpunkter»). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktigheten til kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.
+* Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt («sjekkpunkter»). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktighetskrav for innmåling av kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.
 * Ortofotorapport: <<krav-foto-rapportering-ortofoto>>
 * Personopplysningsloven skal følges (inkluder GDPR).
 ====
@@ -1497,7 +1509,7 @@ Det er ikke krav om gyromount.
 
 [[kapittel-skråbilder]]
 === Skråbilder
-Det skilles mellom 4 kvaliteter for posisjon- og orienteringsnøyaktighet for skråbildeprosjekter tatt med skråbildekamera. Skråbildekamera er et kamerasystem med flere kamera, som for eksempel et kamerasystem med totalt 5 kamera der det er 1 vertikalbildekamera, 1 kamra framover, 1 kamera bakover, 1 kamera til venstre og 1 kamera til høyre:
+Det skilles mellom 4 kvalitetsnivå for posisjon- og orienteringsnøyaktighet for skråbildeprosjekter tatt med skråbildekamera. Skråbildekamera er et kamerasystem med flere kamera, som for eksempel et kamerasystem med totalt 5 kamera der det er 1 vertikalbildekamera, 1 kamra framover, 1 kamera bakover, 1 kamera til venstre og 1 kamera til høyre:
 
 * Minimum
 * Lav
@@ -1521,8 +1533,8 @@ Det skilles mellom 4 kvaliteter for posisjon- og orienteringsnøyaktighet for sk
 ==== Minimum
 
 ====
-[#krav-foto-minimum-skrabilder,reftext="Krav foto minimum skråbilder"]
-*KRAV FOTO MINIMUM SKRÅBILDER*
+[#krav-foto-minimum-skrabilder,reftext="Krav foto skråbilder kvalitetsnivå minimum"]
+*KRAV FOTO SKRÅBILDER KVALITETSNIVÅ MINIMUM*
 
 * Kun krav om direkte georeferering til visning av skråbilder i visningsløsninger.
 
@@ -1532,8 +1544,8 @@ Det skilles mellom 4 kvaliteter for posisjon- og orienteringsnøyaktighet for sk
 ====
 
 ====
-[#anbefaling-foto-skråbilder-minimum,reftext="Anbefaling foto minimum skråbilder"]
-*ANBEFALING FOTO MINIMUM SKRÅBILDER*
+[#anbefaling-foto-skråbilder-minimum,reftext="Anbefaling foto skråbilder kvalitetsnivå minimum"]
+*ANBEFALING FOTO SKRÅBILDER KVALITETSNIVÅ MINIMUM*
 
 * Det er anbefales å utføre en aerotriangulering. Denne kan være uten kjentpunkt, men med sammenbindingspunkter. Som minimum må sammenbindingspunktene være mellom vertikalbildene. Resultatene fra AT skal brukes til å forbedre posisjon og orientering av vertikalbildene og skråbildene.
 ====
@@ -1543,8 +1555,8 @@ Det skilles mellom 4 kvaliteter for posisjon- og orienteringsnøyaktighet for sk
 Forenklet aerotriangulering til ortofotoproduksjon og følger ikke kravet til aerotriangulering etter denne standarden.
 
 ====
-[#krav-foto-lav-skrabilder,reftext="Krav foto lav skråbilder"]
-*KRAV FOTO LAV SKRÅBILDER*
+[#krav-foto-lav-skrabilder,reftext="Krav foto skråbilder kvalitetsnivå lav"]
+*KRAV FOTO SKRÅBILDER KVALITETSNIVÅ LAV*
 
 * Trenger ikke å følge kravene til aerotriangulering av vertikalbilder.
 * Prosjektet må ha nok signalerte/naturlige kjentpunkt til å være innenfor stedfestingsnøyaktigheten til ortofotoet.
@@ -1562,8 +1574,8 @@ Forenklet aerotriangulering til ortofotoproduksjon og følger ikke kravet til ae
 AT utført på vertikalbildene, slik at konstruksjon fra vertikalbildene er mulig i stereo.
 
 ====
-[#krav-foto-middels-skrabilder,reftext="Krav foto middels skråbilder"]
-*KRAV FOTO MIDDELS SKRÅBILDER*
+[#krav-foto-middels-skrabilder,reftext="Krav foto skråbilder kvalitetsnivå middels"]
+*KRAV FOTO SKRÅBILDER KVALITETSNIVÅ MIDDELS*
 
 * Vertikalbildene skal tilfredsstille krav til vanlig vertikalbildeprosjekt. Hvis vertikalbildet har mindre enn 20000 piksler i den største retningen, så skaleres minstekravene til sammenbindingspunktene i kravet for vertikalbildene (xref:tab-ant-sammenbindingpkt[xrefstyle=short] og xref:tab-ant-stripesammenbindingpkt[xrefstyle=short]) med størrelsen på vertikalbildet, men ikke mindre enn 12 sammenbindingspunkt mellom påfølgende bilder og ikke mindre enn 4 stripesammenbindingspunkt. Ved for eksempel et vertikalbildekamera med 15000 piksler i den største retningen, så skaleres kravene med 15000/20000 = 0,75.
 * Skråbildene trenger ikke følge krav til vanlig vertikalbildeprosjekt.
@@ -1576,13 +1588,13 @@ AT utført på vertikalbildene, slik at konstruksjon fra vertikalbildene er muli
 AT på alle bilder, inkludert skråbilder.
 
 ====
-[#krav-foto-hoy-skrabilder,reftext="Krav foto høy skråbilder"]
-*KRAV FOTO HØY SKRÅBILDER*
+[#krav-foto-hoy-skrabilder,reftext="Krav foto skråbilder kvalitetsnivå høy"]
+*KRAV FOTO SKRÅBILDER KVALITETSNIVÅ HØY*
 
 * Vertikalbildene skal tilfredsstille krav til vanlig vertikalbildeprosjekt. Hvis vertikalbildet har mindre enn 20000 piksler i den største retningen, så skaleres minstekravene til sammenbindingspunktene i kravet for vertikalbildene (xref:tab-ant-sammenbindingpkt[xrefstyle=short] og xref:tab-ant-stripesammenbindingpkt[xrefstyle=short]) med størrelsen på vertikalbildet, men ikke mindre enn 12 sammenbindingspunkt mellom påfølgende bilder og ikke mindre enn 4 stripesammenbindingspunkt. Ved for eksempel et vertikalbildekamera med 15000 piksler i den største retningen, så skaleres kravene med 15000/20000 = 0,75.
 * Skråbildene har ikke det samme nøyaktighetskravet som vertikalbildene, så lenge det ikke er spesifisert i sluttproduktet.
 * Skråbildene må ha minst 12 sammenbindingspunkt mot neste flybilde i flystripen i en retning på kamera (høyre, venstre, fram og tilbake) og ha nok sammenbindingspunkt, slik at det ikke blir parallakser i stereomodellene innad i en flystripe og retning på kamera. Minstemålet skaleres etter hvor stor andel vann og skog det er i overlappsområdet, for eksempel så blir minstekravet på sammenbindingspunkt mot neste flybilde 12*(1-0,75) = 3 sammenbindingspunkt hvis overlappsområdet er dekket av 75% vann og skog.
-* Skråbildene må være bundet sammen med vertikalbildene godt nok til at nøyaktighetskravene til sluttproduktet overholdes. Minst 2 sammenbindingspunkt til vertikalbilder pr. skråbilde hvis det er gode forhold og overlappsområdet mellom bildene inneholder maksimalt 20% skog og vann, minst 1 sammenbindingspunkt til vertikalbilder hvis det er maksimalt 50% skog og vann i overlappsområdet mellom bildene og ingen sammenbindingspunkt til vertikalbilder hvis det er mer enn 50% skog og vann i overlappsområdet mellom bildene. Hvis det er avvik, så må det argumenteres at orienteringen mellom skråbildene og vertikalbildene blir god nok i AT-rapporten. Eventuelle avvik må begrunnes i AT-rapporten.
+* Skråbildene må være bundet sammen med vertikalbildene godt nok til at nøyaktighetskravene til sluttproduktet overholdes. Minst 2 sammenbindingspunkt til vertikalbilder pr. skråbilde hvis det er gode forhold og overlappsområdet mellom bildene inneholder maksimalt 20% skog og vann, minst 1 sammenbindingspunkt til vertikalbilder hvis det er maksimalt 50% skog og vann i overlappsområdet mellom bildene og ingen sammenbindingspunkt til vertikalbilder hvis det er mer enn 50% skog og vann i overlappsområdet mellom bildene. Hvis det er avvik, så må det argumenteres for at orienteringen mellom skråbildene og vertikalbildene blir god nok i AT-rapporten. 
 * Det skal være minst 6 eller flere sammenbindingspunkter for alle bilder. Dersom dette ikke er oppfylt for et eller flere bilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.
 * AT-rapport: <<krav-foto-rapportering-aerotriangulering>>. I tillegg så må dette inkluderes i rapporten:
 ** Vurdering av sammenbindingen mellom skråbildene.
