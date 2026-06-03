@@ -90,7 +90,7 @@ Revisjon av standarden til versjon 3.0 ble startet i 2025. Hele standarden ble g
 |Versjon |Dato|Utført av|Grunnlag for endringen
 |1.0|Mars 2015|Bjørn Barstad (Terratec) Leif Erik Blankenberg (Terratec) Gunhild Mæhlum (Blom Geomatics) Ivar Oveland (Blom Geomatics) Christian Malmquist (Kartverket) Håkon Dåsnes (Kartverket)|Revisjon av standarden Kart og geodata.
 |2.0|November 2022|Ivar Oveland (Kartverket), Andreas Prebensen Korsnes (Kartverket), Christian Malmquist (Kartverket) og Jon Otter Skaaret (Kartverket) med standardiseringsprosjektet for revisjon av Produksjon av basis geodata som referansegruppe|Revidere krav til kartlegging slik at standarden ikke utelukker nye kartleggingsmetoder og teknologisk utvikling.
-|3.0|202x|Ivar Oveland (Kartverket), Andreas Prebensen Korsnes (Kartverket), Sissel Skovly (Kartverket) og Marit Bunæs (Kartverket) med standardiseringsprosjektet for revisjon av Produksjon av basis geodata som referansegruppe|Revidere krav til kartlegging slik at standarden ikke utelukker nye kartleggingsmetoder og teknologisk utvikling.
+|3.0|Desember 2026|Ivar Oveland (Kartverket), Andreas Prebensen Korsnes (Kartverket), Sissel Skovly (Kartverket) og Marit Bunæs (Kartverket) med standardiseringsprosjektet for revisjon av Produksjon av basis geodata som referansegruppe|Oppdatere standarden slik at den inkluderer nye kartleggingsmetoder og teknologisk utvikling.
 |====
 
 
@@ -98,24 +98,18 @@ Revisjon av standarden til versjon 3.0 ble startet i 2025. Hele standarden ble g
 
 ==== Endringer fra Produksjon av basis geodata versjon 2 til Produksjon av basis geodata versjon 3
 
-Oppdatert skrivefeil, formateringsfeil og henvisninger i hele standarden.
+Generelt er standarden gjennomgått og det er utført språkvask, formateringsforbedringer og presiseringer der tidligere krav var utydelige i hele standarden. Alle krav er flyttet til kravbokser og alle anbefalinger er flyttet inn i anbefalingsbokser.
+Det er lagt til 2 nye kapitler (8 og 9) og Vedlegg A Solhøydetabell er fjernet.
 
-Alle krav skal være i kravbokser og alle anbefalinger skal være i anbefalingsbokser.
-
-Presiseringer der tidligere krav var utydelige i hele standarden.
-
-<<kapittel-kartlegging-med-mobil-datafangst>> og <<kapittel-vektorisering-fra-punktsky-og-modell>> er nye og de gamle kapitlene fra om med gamle kapittel 8 er flyttet ned 2 hakk, slik at gamle kapittel 8 nå er <<kapittel-konvertering-av-analoge-kart-til-digitale-vektordata>>.
 
 *Kapittel 3* +
-Splittet normative referanser til i normative referanser, juridiske og regulatative referanser og faglige referanser. +
-Oppdatert referanser.
+Oppdatert referanser og delt referansene inn i kategoriene normative referanser, juridiske og regulatative referanser og faglige referanser. +
 
 *Kapittel 4* +
-Oppdatert lenker til standarder, omtalt at noen standarder er på vei til å erstattes av en ny geodesistandard. +
-Presisert noen definisjoner.
+Oppdatert lenker til standarder og presisert definisjoner.
 
 *Kapittel 5* +
-
+Lagt til presisering om referanserammebruk.
 
 *Kapittel 6* +
 Nytt kapittel om bildekvalitet: <<kapittel-bildekvalitet>> +
@@ -128,7 +122,7 @@ Nytt kapittel om skråbilder: <<kapittel-skråbilder>> +
 
 *Kapittel 7* +
 Oppdatert krav om kontrollflater. +
-Lagt inn krav om tidsgyldighet på kontrollflater og mulighet å bruke krittspray. +
+Lagt inn krav om tidsgyldighet på kontrollflater og det skal brukes krittspray. +
 Tillatt å bruke hjulspormetoden som kontrollflater. +
 Ved avtale så er det tillatt å orientere flybilder og laserskanner samtidig. +
 
@@ -145,19 +139,21 @@ Kapittel 8 i 2.0 versjonen er flyttet til <<kapittel-konvertering-av-analoge-kar
 *Kapittel 11* +
 Kapittel 9 i 2.0 versjonen er flyttet til <<kapittel-arkivering-og-sikring>>.
 
-*Vedlegg A* +
+////
+*Vedlegg A* 
 Kapittel 10 i 2.0 versjonen er flyttet til <<kapittel-vedlegg-a-informativt-solhøydetabell>>.
+////
 
-*Vedlegg B* +
+*Vedlegg A* +
 Kapittel 11 i 2.0 versjonen er flyttet til <<kapittel-vedlegg-b-informativt-valg-av-bildeoppløsning-gsd>>.
 
-*Vedlegg C* +
+*Vedlegg B* +
 Kapittel 12 i 2.0 versjonen er flyttet til <<kapittel-vedlegg-c-eksempel-fly-og-signaleringsplaner>>.
 
-*Vedlegg D* +
+*Vedlegg C* +
 Kapittel 13 i 2.0 versjonen er flyttet til <<kapittel-vedlegg-d-liste-over-krav>>.
 
-*Vedlegg E* +
+*Vedlegg D* +
 Nytt vedlegg med liste over anbefalinger: <<kapittel-vedlegg-e-liste-over-anbefalinger>>
 
 
@@ -183,8 +179,6 @@ Lagt inn nytt kapittel 6.8 som stiller krav til dronedatafangst.
 Oppdatert eksempel på flyplan. +
 Flyttet oversikt over kravliste til eget vedlegg
 
-==== Revisjon
-Standardiseringsprosjektet avsluttes ikke med publisering av 3.0 versjonen av standarden. Det er fortsatt behov for å beskrive nye produksjonsmetoder (blant annet hybrid orientering), samt at en del innspill som kom i høringsrunden ikke ble tatt inn i standarden, men utsatt til neste revisjon da de var omfattende og må behandles grundig. En del av innspillene har også gått på å gjøre standarden mer generell og ikke knytte den så sterkt opp til nøyaktighetskravene som er stilt i FKB.
 
 
 
@@ -248,9 +242,11 @@ include::PABG_Kap10.adoc[]
 
 include::PABG_Kap11.adoc[]
 
+////
 <<<
 // Kap12 - Appendix - Solhøydetabell
 include::PABG_Kap12_App1.adoc[]
+////
 
 <<<
 // Kap13 - Appendix - Valg av bildeoppløsning (GSD)
