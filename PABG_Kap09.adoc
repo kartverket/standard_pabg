@@ -78,24 +78,29 @@ image::figurer/Kap9_Knekkpkt og tverravvik.png[Figuren illustrerer knekkpunktavv
 
 * Kvadratsummen av stedfestingsnøyaktighet på punktsky/modell, og den største verdien av geometrisk avvik eller tverravvik/pilhøyde må være bedre enn kvalitetskravet for den aktuelle objekttypen:
 
-
+////
 [stem]
 ++++
 Krav > sqrt(Nøyaktighet^2  + ("Største feil vektorisering")^2
 ++++
+////
+
+[caption="Formel 3"]
+.: Kvalitetskrav
+[#imgFormel3]
+image::figurer/Formel_3.png["Kvalitetskrav",align="center"]
 
 ====
 
 
+
 ==== Krav til fullstendighet
- 
 
 ====
 [#krav-vektor-fullstendighet,reftext="Krav vektor fullstendighet"]
 *KRAV VEKTOR FULLSTENDIGHET*
 
 * Krav til fullstendighet skal følge krav i aktuell produktspesifikasjon.
-
 
 ====
 
@@ -110,7 +115,7 @@ Avvik i grunnriss må i større grad kontrolleres ved manuelle inspeksjoner, eve
 :xrefstyle: short
 
 ==== Egnethet av vektorisering til fremstilling av vektordata
-Ulike typer av punktsky kan benyttes som grunnlag for vektorisering av FKB-datasett, avhengig av hvilken objekttype og hvilke kvalitetskrav som gjelder. Valg av datasett og metode har stor betydning for nøyaktigheten og detaljnivået på resultatet, og det er derfor viktig å vurdere egnetheten for hvert enkelt formål. <<tab-anbefalte-punktskydatasett-for-vektorisering>> gir eksempler på punktsky/modell som egner seg for vektorisering av ulike relevante datasett, sammen med kommentarer om relevante metoder og eventuelle begrensninger. Eksemplene vil endre seg i takt med teknologiutviklingen.
+Ulike typer av punktsky kan benyttes som grunnlag for vektorisering av FKB-datasett, avhengig av hvilken objekttype og hvilke kvalitetskrav som gjelder. Valg av datasett og metode har stor betydning for nøyaktigheten og detaljnivået på resultatet, og det er derfor viktig å vurdere egnetheten for hvert enkelt formål. <<tab-anbefalte-punktskydatasett-for-vektorisering>> gir eksempler på punktsky/modell som egner seg for vektorisering av ulike relevante datasett, sammen med kommentarer om relevante metoder og eventuelle begrensninger. Eksemplene vil endre seg i takt med teknologiutviklingen og produktspesifikasjonene.
 
 :xrefstyle: full
 
