@@ -237,20 +237,20 @@ Absolutt nøyaktighet på punktsky i vertikaldomene etterprøves ved hjelp av la
 |===
 
 
-.Kontrollflate - punkttetthet fra 2 punkt/m^2^
+.Kontrollflate - punkttetthet fra 2 punkt/m^2^ (Blågrønt felt viser buffersonen, røde prikker er innmålte punkt).
 [#imgKontrollflateUnder]
 //[caption="Figure 6:"]
-image::figurer/Kap7_KontrollflateUnder3.png["Kontrollflater under 3 punkt/m^2^",400,align="center"]
+image::figurer/Kap7_KontrollflateUnder4.png["Kontrollflater under 3 punkt/m^2^",400,align="center"]
 
-.Kontrollflate - punkttetthet fra 5 punkt/m^2^. Ved 10 punkt/m^2^ så er avstanden 0,75 meter ikke 1 meter.
+.Kontrollflate - punkttetthet fra 5 punkt/m^2^(Blågrønt felt viser buffersonen, røde prikker er innmålte punkt og hvit felt er malt signal). Ved 10 punkt/m^2^ så er avstanden 0,75 meter ikke 1 meter.
 [#imgKontrollflateOver]
 //[caption="Figure 7:"]
-image::figurer/Kap7_KontrollflateOver3.png["Kontrollflater over 3 punkt/m^2^",400,align="center"]
+image::figurer/Kap7_KontrollflateOver4.png["Kontrollflater over 3 punkt/m^2^",400,align="center"]
 
-.Kontrollflate - punkttetthet fra 80 punkt/m^2^
+.Kontrollflate - punkttetthet fra 80 punkt/m^2^ (Blågrønt felt viser buffersonen, røde prikker er innmålte punkt og hvit felt er malt signal).
 [#imgKontrollflateOver70]
 //[caption="Figure 8:"]
-image::figurer/Kap7_KontrollflateOver70.png["Kontrollflater over 70 punkt/m^2^",250,align="center"]
+image::figurer/Kap7_KontrollflateOver80.png["Kontrollflater over 70 punkt/m^2^",250,align="center"]
 
 ====
 
