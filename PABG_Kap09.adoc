@@ -179,7 +179,7 @@ Regneeksempel for digitalisering fra en laser punktsky kategori "Høy":
 
 [caption="Feilforplantning regneeksempel"]
 .: Laser punktsky katergori "Høy"
-[#imgFormel5]
+[#imgFormel6]
 image::figurer/kap9_feilforplantning_regneeksempel.png["Feilforplantning regneeksempel",align="center"]
 
 
