@@ -142,7 +142,7 @@ Punktsky fra drone (ved laserskanning |
 
 ==== Regneeksempel
 
-Hensiktikten med regneeksempelet er å vise en praktisk anvendelse av Formel 3: Kvalitetskrav. Formelen består av to komponenter nøyaktighet og største feil vektorisering. I det følgende gis det en definisjon av de to komponentene. For å beregne parameterne tas det som hovedregel hensyn til kravet i produktbestillingen, men det er også anledning til å ta utgangspunkt i oppnådd nøyaktighet der mengden kontrollpunkt gir et sannferdig bilde av nøyaktigheten. I det følgende regneeksempelet tas det utgangspunkt i bestilt nøyaktighet.  
+Hensiktikten med regneeksempelet er å vise en praktisk anvendelse av Formel 3: Kvalitetskrav. Formelen består av to komponenter nøyaktighet og største feil vektorisering. I det følgende gis et eksempel på en praktisk anvendelse av de to komponentene. For å beregne parameterne tas det som hovedregel hensyn til kravet i produktbestillingen, men det er også anledning til å ta utgangspunkt i oppnådd nøyaktighet der mengden kontrollpunkt/kontrollmetodikk gir et sannferdig bilde av nøyaktigheten. I det følgende regneeksempelet tas det utgangspunkt i bestilt nøyaktighet.  
 
 ===== Komponent Nøyaktighet
 
@@ -152,22 +152,37 @@ I ekesempelet defineres nøyaktighet som punktskyens eller modellens nøyaktighe
 [caption="Formel 4"]
 .: Feilforplantning
 [#imgFormel4]
-image::figurer/kap9_feilforplantning.png["Feilforplantning",align="center"]
+image::figurer/kap9_feilforplantning2.png["Feilforplantning",align="center"]
 
-I eksempelet tar en utgangspunkt i vektorisering av to dimensjonale objekter fra laser punktsky i kategori "Høy" definert i [punktsky]. Det tar defor utgangspunkt i den horisontale nøyaktuigheten. Da er den horisontale systematiske avviket 0.15 m og det horisontale standardavviket 0.05 m.
+I eksempelet tar en utgangspunkt i vektorisering av to dimensjonale objekter fra laser punktsky i kategori "Høy" definert i *[Punktsky]*. Det tas defor utgangspunkt i den horisontale nøyaktigheten. Dette gir at den horisontale systematiske avviket er 0.15 m og det horisontale standardavviket er 0.05 m.
 
-Tilsvarende utregning vil gjelde dersom en benytter en bildematachet punktsky, men det må da legges til en faktor fra selve bildematchingen. 
+Tilsvarende utregning vil gjelde dersom en benytter en bildematachet punktsky, men det må da legges til en faktor fra selve bildematchingen, se Formel 5. 
 
 [caption="Formel 5"]
 .: feilforplantning ved bildematching
 [#imgFormel5]
-image::figurer/kap9_feilforplantning_bildematching.png["feilforplantning ved bildematching",align="center"]
+image::figurer/kap9_feilforplantning_bildematching2.png["feilforplantning ved bildematching",align="center"]
 
 
 
 ===== Komponent Største feil vektorisering 
 
-Komponenten størst feil vektorisering kan også kalles digitaliseringspresisjonen. Den består av de to hovedmomentene pilhøyden og oppløsning til punktsky/modell. I dette eksempelet er det antatt at oppløsningen har størst betydning. Et viktig prinsipp er at modellen/punktskyen har god nok oppløsning og kvalitet til å skille objektene fra hverandre og digitalisere innenfor kravene.
+Komponenten størst feil vektorisering kan også kalles digitaliseringspresisjonen. Den består av de to hovedmomentene pilhøyden og oppløsning til punktsky/modell. I dette eksempelet er det antatt at oppløsningen har størst betydning. Et viktig prinsipp er at modellen/punktskyen har god nok oppløsning og kvalitet til å skille objektene fra hverandre.
 
-For laser er oppløsning satt til maksimal avstand mellom punktene fra produktbestilling. Se «maksimal punktavstand» i tabell 2 i «Produktspesifikasjon: Punktsky 1.0.3». For bildematchet punktsky gjelder gridavstanden som er benyttet i genereringen av den bildematchede punktskyen.
+For laser punktsky i kategori "Høy" *[Punktsky]* (tabell 2) er oppløsning definert som maksimal avstand mellom punktene og angitt til 0.32 m. Alternativ til å benytte «maksimal punktavstand» i tabell 2 er å benytte den faktiske maksimale punktavstanden innenfor digitaliseringsområdet. 
 
+For bildematchet punktsky gjelder gridavstanden som er benyttet i genereringen av den bildematchede punktskyen. For vektorisering direkte på vanlig ortofoto, sant ortofoto og 3D ortofoto benyttes ground resolved distance (GRD). Denne verdien angir minsteavstanden mellom objekter som er mulig å skille fra hverandre. For optiske datakilder settes denne lik en generell verdi: 1,5 x GSD. Det er viktig å merke seg at vektorisering kun kan utføres hvor rektifiseringsprosessen har benyttet riktig høydeverdier. Dette betyr at for et vanlig ortofoto kan en kun vektorisere objekter som er lokalisert på terrengmodellen. 
+
+===== Anvendelse av Formel 3: Kvalitetskrav
+
+Regneeksempel for digitalisering fra en laser punktsky kategori "Høy":
+
+[caption="Feilforplantning regneeksempel"]
+.: Laser punktsky katergori "Høy"
+[#imgFormel5]
+image::figurer/kap9_feilforplantning_regneeksempel.png["Feilforplantning regneeksempel",align="center"]
+
+
+
+
+ 
