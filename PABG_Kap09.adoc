@@ -144,13 +144,30 @@ Punktsky fra drone (ved laserskanning |
 
 Hensiktikten med regneeksempelet er å vise en praktisk anvendelse av Formel 3: Kvalitetskrav. Formelen består av to komponenter nøyaktighet og største feil vektorisering. I det følgende gis det en definisjon av de to komponentene. For å beregne parameterne tas det som hovedregel hensyn til kravet i produktbestillingen, men det er også anledning til å ta utgangspunkt i oppnådd nøyaktighet der mengden kontrollpunkt gir et sannferdig bilde av nøyaktigheten. I det følgende regneeksempelet tas det utgangspunkt i bestilt nøyaktighet.  
 
-I ekesempelet defineres nøyaktighet som punktskyens eller modellens nøyaktighet. 
+===== Komponent Nøyaktighet
+
+I ekesempelet defineres nøyaktighet som punktskyens eller modellens nøyaktighet. Den er gitt ved feilforplantning og  Formel 4, hvor μ er systematisk avvik og  σ= standardavvik.  
 
 
 [caption="Formel 4"]
 .: Feilforplantning
-[#imgFormel3]
+[#imgFormel4]
 image::figurer/kap9_feilforplantning.png["Feilforplantning",align="center"]
 
+I eksempelet tar en utgangspunkt i vektorisering av to dimensjonale objekter fra laser punktsky i kategori "Høy" definert i [punktsky]. Det tar defor utgangspunkt i den horisontale nøyaktuigheten. Da er den horisontale systematiske avviket 0.15 m og det horisontale standardavviket 0.05 m.
 
+Tilsvarende utregning vil gjelde dersom en benytter en bildematachet punktsky, men det må da legges til en faktor fra selve bildematchingen. 
+
+[caption="Formel 5"]
+.: feilforplantning ved bildematching
+[#imgFormel5]
+image::figurer/kap9_feilforplantning_bildematching.png["feilforplantning ved bildematching",align="center"]
+
+
+
+===== Komponent Største feil vektorisering 
+
+Komponenten størst feil vektorisering kan også kalles digitaliseringspresisjonen. Den består av de to hovedmomentene pilhøyden og oppløsning til punktsky/modell. I dette eksempelet er det antatt at oppløsningen har størst betydning. Et viktig prinsipp er at modellen/punktskyen har god nok oppløsning og kvalitet til å skille objektene fra hverandre og digitalisere innenfor kravene.
+
+For laser er oppløsning satt til maksimal avstand mellom punktene fra produktbestilling. Se «maksimal punktavstand» i tabell 2 i «Produktspesifikasjon: Punktsky 1.0.3». For bildematchet punktsky gjelder gridavstanden som er benyttet i genereringen av den bildematchede punktskyen.
 
