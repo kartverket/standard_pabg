@@ -142,5 +142,7 @@ Punktsky fra drone (ved laserskanning |
 
 ==== Regneeksempel
 
+Hensiktikten med regneeksempelet er å vise en praktisk anvendelse av Formel 3: Kvalitetskrav. Formelen består av 2 komponenter nøyaktighet og største feil vektorisering. I det følgende gis det en definisjon av de to komponentene. For å beregne parameterne tas det som hovedregel hensyn til kravet i produktbestillingen, men det er også anledning til å ta utgangspunkt i oppnådd nøyaktighet der mengden kontrollpunkt gir et sannferdig bilde av nøyaktigheten. I det følgende regneeksempelet tas det utgangspunkt i bestilt nøyaktighet. 
+
 
 
