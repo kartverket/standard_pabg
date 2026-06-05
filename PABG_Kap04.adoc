@@ -1,15 +1,7 @@
 == Termer og forkortelser
 
 === Kilder for termer og forkortelser
-Termer og forkortelser som er definert utenfor denne standarden er basert på følgende kilder:
-
-[#LASER]
-*[LASER]* : https://dokument.geonorge.no/produktspesifikasjoner/punktsky/1.0.3/index.html[Produktspesifikasjon Punktsky, versjon 1.0.3 2022]
-
-[#POF]
-*[POF]*	: https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/digitale-ortofoto[Produktspesifikasjon Ortofoto, versjon 5.0 2020] 
-
-
+Termer og forkortelser som er definert utenfor denne standarden er basert på følgende kildene *[Punktsky]* og *[POF]*:
 
 === Termer
 .aerotriangulering
