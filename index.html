@@ -448,7 +448,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_endringer_fra_produksjon_av_basis_geodata_versjon_2_til_produksjon_av_basis_geodata_versjon_3">1.3.1. Endringer fra Produksjon av basis geodata versjon 2 til Produksjon av basis geodata versjon 3</a></li>
 <li><a href="#_endringer_fra_produksjon_av_basis_geodata_versjon_1_til_produksjon_av_basis_geodata_versjon_2">1.3.2. Endringer fra Produksjon av basis geodata versjon 1 til Produksjon av basis geodata versjon 2</a></li>
-<li><a href="#_revisjon">1.3.3. Revisjon</a></li>
 </ul>
 </li>
 </ul>
@@ -492,7 +491,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#kapittel-fly-og-signalplanlegging">6.1. Fly- og signalplanlegging</a>
 <ul class="sectlevel3">
-<li><a href="#_bildekvalitet">6.1.1. Bildekvalitet</a>
+<li><a href="#kapittel-bildekvalitet">6.1.1. Bildekvalitet</a>
 <ul class="sectlevel4">
 <li><a href="#_oppløsning">6.1.1.1. Oppløsning</a></li>
 <li><a href="#_fargenøyaktighet">6.1.1.2. Fargenøyaktighet</a></li>
@@ -501,7 +500,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_planlegging_av_flyfotografering_flyplan">6.1.2. Planlegging av flyfotografering (flyplan)</a></li>
 <li><a href="#_planlegging_av_kjentpunkt_kontrollpunkt_og_signalering_signaleringsplan">6.1.3. Planlegging av kjentpunkt, kontrollpunkt og signalering (signaleringsplan)</a>
 <ul class="sectlevel4">
-<li><a href="#_krav_til_kjentpunkter_og_kontrollpunkter">6.1.3.1. Krav til kjentpunkter og kontrollpunkter</a></li>
+<li><a href="#kapittel-krav-til-kjentpunkter-og-kontrollpunkter">6.1.3.1. Krav til kjentpunkter og kontrollpunkter</a></li>
 <li><a href="#kapittel-krav-til-antall-og-plassering-av-kjentpunkter-og-kontrollpunkter">6.1.3.2. Krav til antall og plassering av kjentpunkter og kontrollpunkter</a></li>
 </ul>
 </li>
@@ -526,7 +525,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_gjennomføring_av_fotografering">6.3.2. Gjennomføring av fotografering</a>
 <ul class="sectlevel4">
 <li><a href="#_krav_til_fotografering">6.3.2.1. Krav til fotografering</a></li>
-<li><a href="#kapittel-krav-til-innsamling-av-gnssimu-data">6.3.2.2. Krav til innsamling av GNSS/IMU data</a></li>
+<li><a href="#kapittel-krav-til-innsamling-av-gnssimu-data">6.3.2.2. Krav til innsamling av GNSS/IMU-data</a></li>
 </ul>
 </li>
 <li><a href="#kapittel-beregning-av-GNSSINS-data">6.3.3. Beregning av GNSS/INS-data</a></li>
@@ -637,7 +636,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_prosessering_av_georeferert_punktsky">7.3. Prosessering av georeferert punktsky</a>
 <ul class="sectlevel3">
-<li><a href="#_prosessering_av_gnssins_data">7.3.1. Prosessering av GNSS/INS data</a></li>
+<li><a href="#_prosessering_av_gnssins_data">7.3.1. Prosessering av GNSS/INS-data</a></li>
 <li><a href="#kapittel-matching-av-punktsky">7.3.2. Matching av punktsky</a>
 <ul class="sectlevel4">
 <li><a href="#_dokumentasjon_av_daglig_kalibrering">7.3.2.1. Dokumentasjon av daglig kalibrering</a></li>
@@ -701,7 +700,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_kontroll">9.4. Kontroll</a>
 <ul class="sectlevel3">
 <li><a href="#_egnethet_av_vektorisering_til_fremstilling_av_vektordata">9.4.1. Egnethet av vektorisering til fremstilling av vektordata</a></li>
-<li><a href="#_regneeksempel">9.4.2. Regneeksempel</a></li>
+<li><a href="#_regneeksempel">9.4.2. Regneeksempel</a>
+<ul class="sectlevel4">
+<li><a href="#_komponent_nøyaktighet">9.4.2.1. Komponent Nøyaktighet</a></li>
+<li><a href="#_komponent_største_feil_vektorisering">9.4.2.2. Komponent Største feil vektorisering</a></li>
+<li><a href="#_anvendelse_av_formel_3_kvalitetskrav">9.4.2.3. Anvendelse av Formel 3: Kvalitetskrav</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -755,16 +760,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#kapittel-vedlegg-a-informativt-solhøydetabell">Vedlegg A: (informativt) - Solhøydetabell</a></li>
-<li><a href="#kapittel-vedlegg-b-informativt-valg-av-bildeoppløsning-gsd">Vedlegg B: (informativt) - Valg av bildeoppløsning (GSD)</a></li>
-<li><a href="#kapittel-vedlegg-c-eksempel-fly-og-signaleringsplaner">Vedlegg C: Eksempel fly- og signaleringsplaner</a>
+<li><a href="#kapittel-vedlegg-b-informativt-valg-av-bildeoppløsning-gsd">Vedlegg A: (informativt) - Valg av bildeoppløsning (GSD)</a></li>
+<li><a href="#kapittel-vedlegg-c-eksempel-fly-og-signaleringsplaner">Vedlegg B: Eksempel fly- og signaleringsplaner</a>
 <ul class="sectlevel2">
-<li><a href="#_eksempel_fly_og_signaleringsplan_foto">C.1. Eksempel fly- og signaleringsplan (foto)</a></li>
-<li><a href="#kapittel-eksempel-flyplan-laserskanning">C.2. Eksempel flyplan laserskanning</a></li>
+<li><a href="#_eksempel_fly_og_signaleringsplan_foto">B.1. Eksempel fly- og signaleringsplan (foto)</a></li>
+<li><a href="#kapittel-eksempel-flyplan-laserskanning">B.2. Eksempel flyplan laserskanning</a></li>
 </ul>
 </li>
-<li><a href="#kapittel-vedlegg-d-liste-over-krav">Vedlegg D: Liste over krav</a></li>
-<li><a href="#kapittel-vedlegg-e-liste-over-anbefalinger">Vedlegg E: Liste over anbefalinger</a></li>
+<li><a href="#kapittel-vedlegg-d-liste-over-krav">Vedlegg C: Liste over krav</a></li>
+<li><a href="#kapittel-vedlegg-e-liste-over-anbefalinger">Vedlegg D: Liste over anbefalinger</a></li>
 </ul>
 </div>
 </div>
@@ -777,7 +781,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Publisert</strong>: 202x-xx-xx<br>
 <strong>Denne versjonen finnes på</strong>: <a href="https://sosi.geonorge.no/Standarder/Produksjon_av_basis_geodata/3.0" class="bare">https://sosi.geonorge.no/Standarder/Produksjon_av_basis_geodata/3.0</a> under revisjon[<a href="https://sosi.geonorge.no/Standarder//Produksjon" class="bare">https://sosi.geonorge.no/Standarder//Produksjon</a> av basis geodata/3.0 under revisjon]<br>
 <strong>Nyeste versjon finnes på</strong>: <a href="https://sosi.geonorge.no/Standarder/Produksjon_av_basis_geodata">https://sosi.geonorge.no/Standarder//Produksjon av basis geodata</a><br>
-<strong>Denne versjonen erstatter</strong>: <a href="https://kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/produksjon-av-basis-geodata-1.0-standarder-geografisk-informasjon.pdf">Produksjon av basis geodata 2.0</a><br></p>
+<strong>Denne versjonen erstatter</strong>: <a href="https://sosi.geonorge.no/Standarder/Produksjon_av_basis_geodata/2.0/">Produksjon av basis geodata 2.0</a><br></p>
 </div>
 <div class="paragraph">
 <p>Vedtatt som standard av standardiseringskomiteen for geomatikk</p>
@@ -796,7 +800,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_bruk_av_krav_i_standarden">1.1. Bruk av krav i standarden</h3>
 <div class="paragraph">
-<p>Produksjon av basis geodata setter krav til produksjonsprosessene, dokumentasjon og rapportering. For å gjøre det lettere å identifisere kravene er disse uthevet og nummerert. Liste over krav finnes i <a href="#kapittel-vedlegg-d-liste-over-krav">Vedlegg D, <em>Liste over krav</em></a> og liste over anbefalinger finnes i <a href="#kapittel-vedlegg-e-liste-over-anbefalinger">Vedlegg E, <em>Liste over anbefalinger</em></a>.</p>
+<p>Produksjon av basis geodata setter krav til produksjonsprosessene, dokumentasjon og rapportering. For å gjøre det lettere å identifisere kravene er disse uthevet og nummerert. Liste over krav finnes i <a href="#kapittel-vedlegg-d-liste-over-krav">Vedlegg C, <em>Liste over krav</em></a> og liste over anbefalinger finnes i <a href="#kapittel-vedlegg-e-liste-over-anbefalinger">Vedlegg D, <em>Liste over anbefalinger</em></a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -805,7 +809,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Standarden ble etablert i 2015 og erstattet da den tidligere standarden Kart og Geodata (2008). Det har vært en stor teknologisk utvikling siden versjon 1 av standarden ble utgitt i 2015, som for eksempel kan ikke 1.0 versjonen av standarden benyttes til å bestille datafangst ved hjelp av drone. Det ble derfor startet en revisjon av standarden i 2022, revisjonen gjennomføres som et standardiseringsprosjekt.  For at standarden kan benyttes til anskaffelser i 2023 så ble det besluttet å gjennomføre en mindre revisjon som tok inn et underkapittel 6.8 som setter krav til fotografering med drone. I tillegg ble det gjort noen mindre presiseringer og rettinger i kapittel 6.</p>
 </div>
 <div class="paragraph">
-<p>Revisjon av standarden til versjon 3.0 ble startet i 2025. Hele standarden ble gått igjennom under revideringen. Dronedatafangstkapitlet ble revidert i tillegg til at skråbilder ble lagt til i kapittel 6. Det ble lagt til et kapittel om mobil datafangst og et kapittel om vektorisering fra punktsky/modell.</p>
+<p>Revisjon av standarden til versjon 3.0 ble startet i 2025. Hele standarden ble gått igjennom under revideringen. Det ble lagt til krav til skråbilder i kapittel 6, lagt til et nytt kapittel om mobil datafangst og et nytt kapittel om vektorisering fra punktsky/modell.</p>
 </div>
 <table class="tableblock frame-all grid-all fit-content">
 <colgroup>
@@ -837,9 +841,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">3.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">202x</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Revidere krav til kartlegging slik at standarden ikke utelukker nye kartleggingsmetoder og teknologisk utvikling.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Desember 2026</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ivar Oveland (Kartverket), Andreas Prebensen Korsnes (Kartverket), Sissel Skovly (Kartverket) og Marit Bunæs (Kartverket) med standardiseringsprosjektet for revisjon av Produksjon av basis geodata som referansegruppe</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oppdatere standarden slik at den inkluderer nye kartleggingsmetoder og teknologisk utvikling.</p></td>
 </tr>
 </tbody>
 </table>
@@ -849,137 +853,96 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect3">
 <h4 id="_endringer_fra_produksjon_av_basis_geodata_versjon_2_til_produksjon_av_basis_geodata_versjon_3">1.3.1. Endringer fra Produksjon av basis geodata versjon 2 til Produksjon av basis geodata versjon 3</h4>
 <div class="paragraph">
-<p>Oppdatert skrivefeil, formateringsfeil og henvisninger i hele standarden.</p>
+<p>Generelt er standarden gjennomgått og det er utført språkvask, formateringsforbedringer og presiseringer der tidligere krav var utydelige i hele standarden. Alle krav er flyttet til kravbokser og alle anbefalinger er flyttet inn i anbefalingsbokser.
+Det er lagt til 2 nye kapitler (8 og 9) og Vedlegg A Solhøydetabell er fjernet.</p>
 </div>
 <div class="paragraph">
-<p>Alle krav skal være i kravbokser og alle anbefalinger skal være i anbefalingsbokser.</p>
+<p><strong>Kapittel 3</strong><br>
+Oppdatert referanser og delt referansene inn i kategoriene normative referanser, juridiske og regulatative referanser og faglige referanser.<br></p>
 </div>
 <div class="paragraph">
-<p><a href="#kapittel-kartlegging-med-mobil-datafangst">Kapittel 8, <em>Kartlegging med mobil datafangst</em></a> og <a href="#kapittel-vektorisering-fra-punktsky-og-modell">Kapittel 9, <em>Vektorisering fra punktsky og modell som metode for etablering av basis geodata</em></a> er nye og de gamle kapitlene fra om med gamle kapittel 8 er flyttet ned 2 hakk, slik at gamle kapittel 8 nå er <a href="#kapittel-konvertering-av-analoge-kart-til-digitale-vektordata">Kapittel 10, <em>Konvertering av analoge kart til digitale vektordata</em></a>.</p>
+<p><strong>Kapittel 4</strong><br>
+Oppdatert lenker til standarder og presisert definisjoner.</p>
 </div>
 <div class="paragraph">
-<p><strong>Kapittel 3</strong></p>
+<p><strong>Kapittel 5</strong><br>
+Lagt til presisering om referanserammebruk.</p>
 </div>
 <div class="paragraph">
-<p>Splittet normative referanser til i normative referanser, juridiske og regulatative referanser og faglige referanser.</p>
+<p><strong>Kapittel 6</strong><br>
+Nytt kapittel om bildekvalitet: <a href="#kapittel-bildekvalitet">Kapittel 6.1.1, &#8220;Bildekvalitet&#8221;</a><br>
+Presisering av bildeblokk, tverrstriper, kontrollkrav ved færre kontrollpunkt enn 5 og nøyaktighetskrav fra nypunkt til punktmålinger i AT.<br>
+Ved avtale så er det tillatt å orientere flybilder og laserskanner samtidig.<br>
+Selvkalibrering av kamera er tillatt ved avtale.<br>
+Oppdatert <a href="#kapittel-fotografering-med-drone">Kapittel 6.8, &#8220;Fotografering med drone&#8221;</a> med bruksområder og oppdaterte krav.<br>
+Nytt kapittel om skråbilder: <a href="#kapittel-skråbilder">Kapittel 6.9, &#8220;Skråbilder&#8221;</a><br></p>
 </div>
 <div class="paragraph">
-<p><strong>Kapittel 4</strong></p>
+<p><strong>Kapittel 7</strong><br>
+Oppdatert krav om kontrollflater.<br>
+Lagt inn krav om tidsgyldighet på kontrollflater og det skal brukes krittspray.<br>
+Tillatt å bruke hjulspormetoden som kontrollflater.<br>
+Ved avtale så er det tillatt å orientere flybilder og laserskanner samtidig.<br></p>
 </div>
 <div class="paragraph">
-<p>Oppdatert lenker til standarder, omtalt at noen standarder er på vei til å erstattes av en ny geodesistandard.<br>
-Presisert noen definisjoner.</p>
+<p><strong>Kapittel 8</strong><br>
+Nytt kapittel om mobil datafangst: <a href="#kapittel-kartlegging-med-mobil-datafangst">Kapittel 8, <em>Kartlegging med mobil datafangst</em></a></p>
 </div>
 <div class="paragraph">
-<p><strong>Kapittel 5</strong></p>
+<p><strong>Kapittel 9</strong><br>
+Nytt kapittel om vektorisering fra punktsky og modell: <a href="#kapittel-vektorisering-fra-punktsky-og-modell">Kapittel 9, <em>Vektorisering fra punktsky og modell som metode for etablering av basis geodata</em></a></p>
 </div>
 <div class="paragraph">
-<p><strong>Kapittel 6</strong></p>
+<p><strong>Kapittel 10</strong><br>
+Kapittel 8 i 2.0 versjonen er flyttet til <a href="#kapittel-konvertering-av-analoge-kart-til-digitale-vektordata">Kapittel 10, <em>Konvertering av analoge kart til digitale vektordata</em></a>.</p>
 </div>
 <div class="paragraph">
-<p>Oppdatert <a href="#kapittel-fotografering-med-drone">Kapittel 6.8, &#8220;Fotografering med drone&#8221;</a> med bruksområder og oppdaterte krav.<br>
-Nytt kapittel om skråbilder: <a href="#kapittel-skråbilder">Kapittel 6.9, &#8220;Skråbilder&#8221;</a></p>
+<p><strong>Kapittel 11</strong><br>
+Kapittel 9 i 2.0 versjonen er flyttet til <a href="#kapittel-arkivering-og-sikring">Kapittel 11, <em>Arkivering og sikring</em></a>.</p>
 </div>
 <div class="paragraph">
-<p><strong>Kapittel 7</strong></p>
+<p><strong>Vedlegg A</strong><br>
+Kapittel 11 i 2.0 versjonen er flyttet til <a href="#kapittel-vedlegg-b-informativt-valg-av-bildeoppløsning-gsd">Vedlegg A, <em>(informativt) - Valg av bildeoppløsning (GSD)</em></a>.</p>
 </div>
 <div class="paragraph">
-<p><strong>Kapittel 8</strong></p>
+<p><strong>Vedlegg B</strong><br>
+Kapittel 12 i 2.0 versjonen er flyttet til <a href="#kapittel-vedlegg-c-eksempel-fly-og-signaleringsplaner">Vedlegg B, <em>Eksempel fly- og signaleringsplaner</em></a>.</p>
 </div>
 <div class="paragraph">
-<p>Nytt kapittel om mobil datafangst: <a href="#kapittel-kartlegging-med-mobil-datafangst">Kapittel 8, <em>Kartlegging med mobil datafangst</em></a></p>
+<p><strong>Vedlegg C</strong><br>
+Kapittel 13 i 2.0 versjonen er flyttet til <a href="#kapittel-vedlegg-d-liste-over-krav">Vedlegg C, <em>Liste over krav</em></a>.</p>
 </div>
 <div class="paragraph">
-<p><strong>Kapittel 9</strong></p>
-</div>
-<div class="paragraph">
-<p>Nytt kapittel om vektorisering fra punktsky og modell: <a href="#kapittel-vektorisering-fra-punktsky-og-modell">Kapittel 9, <em>Vektorisering fra punktsky og modell som metode for etablering av basis geodata</em></a></p>
-</div>
-<div class="paragraph">
-<p><strong>Kapittel 10</strong></p>
-</div>
-<div class="paragraph">
-<p>Kapittel 8 i 2.0 versjonen er flyttet til <a href="#kapittel-konvertering-av-analoge-kart-til-digitale-vektordata">Kapittel 10, <em>Konvertering av analoge kart til digitale vektordata</em></a>.</p>
-</div>
-<div class="paragraph">
-<p><strong>Kapittel 11</strong></p>
-</div>
-<div class="paragraph">
-<p>Kapittel 9 i 2.0 versjonen er flyttet til <a href="#kapittel-arkivering-og-sikring">Kapittel 11, <em>Arkivering og sikring</em></a>.</p>
-</div>
-<div class="paragraph">
-<p><strong>Vedlegg A</strong></p>
-</div>
-<div class="paragraph">
-<p>Kapittel 10 i 2.0 versjonen er flyttet til <a href="#kapittel-vedlegg-a-informativt-solhøydetabell">Vedlegg A, <em>(informativt) - Solhøydetabell</em></a>.</p>
-</div>
-<div class="paragraph">
-<p><strong>Vedlegg B</strong></p>
-</div>
-<div class="paragraph">
-<p>Kapittel 11 i 2.0 versjonen er flyttet til <a href="#kapittel-vedlegg-b-informativt-valg-av-bildeoppløsning-gsd">Vedlegg B, <em>(informativt) - Valg av bildeoppløsning (GSD)</em></a>.</p>
-</div>
-<div class="paragraph">
-<p><strong>Vedlegg C</strong></p>
-</div>
-<div class="paragraph">
-<p>Kapittel 12 i 2.0 versjonen er flyttet til <a href="#kapittel-vedlegg-c-eksempel-fly-og-signaleringsplaner">Vedlegg C, <em>Eksempel fly- og signaleringsplaner</em></a>.</p>
-</div>
-<div class="paragraph">
-<p><strong>Vedlegg D</strong></p>
-</div>
-<div class="paragraph">
-<p>Kapittel 13 i 2.0 versjonen er flyttet til <a href="#kapittel-vedlegg-d-liste-over-krav">Vedlegg D, <em>Liste over krav</em></a>.</p>
-</div>
-<div class="paragraph">
-<p><strong>Vedlegg E</strong></p>
-</div>
-<div class="paragraph">
-<p>Nytt vedlegg med liste over anbefalinger: <a href="#kapittel-vedlegg-e-liste-over-anbefalinger">Vedlegg E, <em>Liste over anbefalinger</em></a></p>
+<p><strong>Vedlegg D</strong><br>
+Nytt vedlegg med liste over anbefalinger: <a href="#kapittel-vedlegg-e-liste-over-anbefalinger">Vedlegg D, <em>Liste over anbefalinger</em></a></p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_endringer_fra_produksjon_av_basis_geodata_versjon_1_til_produksjon_av_basis_geodata_versjon_2">1.3.2. Endringer fra Produksjon av basis geodata versjon 1 til Produksjon av basis geodata versjon 2</h4>
 <div class="paragraph">
-<p><strong>Kapittel 3</strong></p>
+<p><strong>Kapittel 3</strong><br>
+Ryddet i henvisning til normative standarder</p>
 </div>
 <div class="paragraph">
-<p>Ryddet i henvisning til normative standarder</p>
-</div>
-<div class="paragraph">
-<p><strong>Kapittel 4</strong></p>
-</div>
-<div class="paragraph">
-<p>Oppdatert lenker til standarder, omtalt at noen standarder er på vei til å erstattes av en ny geodesistandard.<br>
+<p><strong>Kapittel 4</strong><br>
+Oppdatert lenker til standarder, omtalt at noen standarder er på vei til å erstattes av en ny geodesistandard.<br>
 Presisert noen definisjoner.</p>
 </div>
 <div class="paragraph">
-<p><strong>Kapittel 5</strong></p>
+<p><strong>Kapittel 5</strong><br>
+Oppdatert etter høringsinnspill, fjernet gammel informasjon og tilpasset krav til dagens standard.</p>
 </div>
 <div class="paragraph">
-<p>Oppdatert etter høringsinnspill, fjernet gammel informasjon og tilpasset krav til dagens standard.</p>
-</div>
-<div class="paragraph">
-<p><strong>Kapittel 6</strong></p>
-</div>
-<div class="paragraph">
-<p>Gjort tilpassinger i krav for å gjøre standarden mer oppdatert. Rettet opp i uklarheter.<br>
+<p><strong>Kapittel 6</strong><br>
+Gjort tilpassinger i krav for å gjøre standarden mer oppdatert. Rettet opp i uklarheter.<br>
 Strammet inn krav for hvordan terreng rundt et passpunkt skal være (så flatt som mulig).<br>
 Lagt inn krav om tverrstripe ved fotografering av blokker (på lik linje med krav om tverrstripe i laserskanning).<br>
 Lagt inn nytt kapittel 6.8 som stiller krav til dronedatafangst.</p>
 </div>
 <div class="paragraph">
-<p><strong>Vedlegg</strong></p>
-</div>
-<div class="paragraph">
-<p>Oppdatert eksempel på flyplan.<br>
+<p><strong>Vedlegg</strong><br>
+Oppdatert eksempel på flyplan.<br>
 Flyttet oversikt over kravliste til eget vedlegg</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_revisjon">1.3.3. Revisjon</h4>
-<div class="paragraph">
-<p>Standardiseringsprosjektet avsluttes ikke med publisering av 2.0 versjonen av standarden. Det er fortsatt behov for å beskrive nye produksjonsmetoder (blant annet hybrid orientering), samt at en del innspill som kom i høringsrunden ikke ble tatt inn i standarden, men utsatt til neste revisjon da de var omfattende og må behandles grundig. En del av innspillene har også gått på å gjøre standarden mer generell og ikke knytte den så sterkt opp til nøyaktighetskravene som er stilt i FKB.</p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -1036,6 +999,12 @@ Standarden kan nyttes som referansedokument ved inngåelse av avtaler om produks
 <div id="GG" class="paragraph">
 <p><strong>[GG]</strong> : <a href="https://sosi.geonorge.no/standarder/Geodetisk_grunnlag_-_koordinatbaserte_referansesystemer_og_kvalitetssikring_av_grunnlagspunkt/1.0/">Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt</a></p>
 </div>
+<div id="Punktsky" class="paragraph">
+<p><strong>[Punktsky]</strong> : <a href="https://dokument.geonorge.no/produktspesifikasjoner/punktsky/1.0.3/index.html">Produktspesifikasjon Punktsky</a></p>
+</div>
+<div id="POF" class="paragraph">
+<p><strong>[POF]</strong>	: <a href="https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/digitale-ortofoto">Produktspesifikasjon Ortofoto, versjon 5.0 2020</a></p>
+</div>
 <div class="paragraph">
 <p><a href="#GN">[GN]</a> er erstattet av en ny standard <a href="#GG">[GG]</a>.</p>
 </div>
@@ -1089,20 +1058,14 @@ Standarden kan nyttes som referansedokument ved inngåelse av avtaler om produks
 <div class="sect2">
 <h3 id="_kilder_for_termer_og_forkortelser">4.1. Kilder for termer og forkortelser</h3>
 <div class="paragraph">
-<p>Termer og forkortelser som er definert utenfor denne standarden er basert på følgende kilder:</p>
-</div>
-<div id="LASER" class="paragraph">
-<p><strong>[LASER]</strong> : <a href="https://dokument.geonorge.no/produktspesifikasjoner/punktsky/1.0.3/index.html">Produktspesifikasjon Punktsky, versjon 1.0.3 2022</a></p>
-</div>
-<div id="POF" class="paragraph">
-<p><strong>[POF]</strong>	: <a href="https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/digitale-ortofoto">Produktspesifikasjon Ortofoto, versjon 5.0 2020</a></p>
+<p>Termer og forkortelser som er definert utenfor denne standarden er basert på følgende kildene <strong>[Punktsky]</strong> og <strong>[POF]</strong>:</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_termer">4.2. Termer</h3>
 <div class="paragraph">
 <div class="title">aerotriangulering</div>
-<p>Metode for bestemmelse av flybilders ytre orientering ved hjelp av måling av punkter som knytter bilder og flystriper sammen.<br>
+<p>Metode for bestemmelse av flybilders ytre orientering ved hjelp av måling av punkter som knytter bilder og flystriper sammen. AT er forkortelse for aerotrinagulering.<br>
 <em>MERKNAD</em>: I tilegg til sammenbindingspunkter inngår kjentpunker og GNSS/INS-data som observasjoner i en samlet utjevningsberegning (blokkutjevning). I tillegg til sammenbindingspunktene og ytre orienteringselementene kan også andre ukjente defineres og løses ut i utjevningen.</p>
 </div>
 <div class="paragraph">
@@ -1589,12 +1552,12 @@ Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kje
 <div class="sect4">
 <h5 id="_transformasjoner">5.3.1.2. Transformasjoner</h5>
 <div class="paragraph">
-<p>Ved differensielle satellittbaserte metoder fremkommer ellipsoidiske høydeforskjeller. Ønskes høyder i NN1954/NN2000 eller et lokalt vertikalt datum, må høydeforskjellene korrigeres. Dette kan gjøres på flere måter:</p>
+<p>Ved differensielle satellittbaserte metoder fremkommer ellipsoidiske høydeforskjeller. For å sikre leveranse i NN2000 med gjeldene høydereferansemodell, må høydeforskjellene korrigeres. Dette kan gjøres på flere måter:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Korrigerte høydeforskjeller kan utledes fra transformasjonspunkt der både ellipsoidisk og ortometrisk høyde (NN1954/NN2000) er kjent, og der referansestasjonen er et av transformasjonspunktene.</p>
+<p>Korrigerte høydeforskjeller kan utledes fra transformasjonspunkt der både ellipsoidisk og ortometrisk høyde (NN2000) er kjent, og der referansestasjonen er et av transformasjonspunktene.</p>
 </li>
 <li>
 <p>Korrigerte høydeforskjeller kan utledes fra en eksisterende høydereferansemodell (se standarden "Norges offisielle høydesystem og referansenivåer").</p>
@@ -1864,7 +1827,7 @@ Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kje
 <p>Dette avsnittet angir krav og retningslinjer til planlegging av flyfotografering, kjentpunkter for aerotriangulering og signalering av disse. Oppdragstaker skal utføre planleggingen og det skal utarbeides en kombinert fly- og signalplan.</p>
 </div>
 <div class="sect3">
-<h4 id="_bildekvalitet">6.1.1. Bildekvalitet</h4>
+<h4 id="kapittel-bildekvalitet">6.1.1. Bildekvalitet</h4>
 <div class="paragraph">
 <p>En viktig faktor ved fotografering fra luften er bildekvalitet. Det er en rekke faktorer som er med på å påvirke vår opplevelse av bildekvalitet. Hva som er bra kvalitet vil bestemmes av bruken av bildene. Dersom bildene skal brukes av maskin er informasjonsmengden i bilde viktig, men når menneske skal benytte bildene er det persepsjon som er viktigst. For de fleste tilfeller vil en balansegang mellom de to tilnærmingene være beste løsning.</p>
 </div>
@@ -1880,27 +1843,25 @@ Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kje
 <p>Vi skiller mellom to ulike oppløsninger: bakkeoppløsning eller "Ground sample distance" (GSD) og "Ground Resolved Distance" (GRD).</p>
 </div>
 <div class="paragraph">
-<p>Bakkeoppløsning (GSD) er avstanden på bakken som tilsvarer en piksel i kameraet. GSD beregnes etter <a href="#formel-GSD">formel 1</a>, hvor p er pikselstørrelsen i kameraets bildesensor, H er flyhøyden over bakken og f er kamerakonstanten til kameraet.</p>
+<p>Bakkeoppløsning (GSD) er avstanden på bakken som tilsvarer en piksel i kameraet. GSD beregnes etter <a href="#imgFormel1">Formel 1</a>, hvor p er pikselstørrelsen i kameraets bildesensor, H er flyhøyden over bakken og f er kamerakonstanten til kameraet.</p>
 </div>
-<div id="formel-GSD" class="stemblock">
+<div id="imgFormel1" class="imageblock text-center">
 <div class="content">
-\$\begin{equation}
-GSD = \frac{p \cdot H}{f}
-\end{equation}\$
+<img src="figurer/Formel_1.png" alt="Formel 1: GSD">
 </div>
+<div class="title">Formel 1: GSD</div>
 </div>
 <div class="paragraph">
 <p>GRD beskriver den minste avstanden mellom to objekter på bakken som et kamera klarer å skille fra hverandre i bildet. Dersom avstanden blir mindre, vil objektene smelte sammen i bildet. Beregningene av GRD utføres etter fremgangsmåte beskrevet i <strong>[Meißner and Berger, 2025]</strong>.</p>
 </div>
 <div class="paragraph">
-<p>For å beregne GRD må det anvendes en Siemensstjerne innenfor prosjektområdet. Dette er en sirkel bestående av like store svarte og hvite segmenter. Anbefalt totalt antall segmenter s følger <strong>[Meißner and Berger, 2025]</strong> og bør ligge mellom 16 og 96 segmenter. Radiusen til stjernen beregnes etter <a href="#formel-radius">formel 2</a>. Når <a href="#formel-radius">formel 2</a> benyttes bør det etableres svart og hvite referanseflater som har en størrelse som sikrer helt svarte og helt hvite piksler. Dette benyttes i utregningene av GRD og styrker nøyaktigheten til beregningen.</p>
+<p>For å beregne GRD må det anvendes en Siemensstjerne innenfor prosjektområdet. Dette er en sirkel bestående av like store svarte og hvite segmenter. Anbefalt totalt antall segmenter s følger <strong>[Meißner and Berger, 2025]</strong> og bør ligge mellom 16 og 96 segmenter. Radiusen til stjernen beregnes etter <a href="#imgFormel2">Formel 2</a>. Når <a href="#imgFormel2">Formel 2</a> benyttes bør det etableres svart og hvite referanseflater som har en størrelse som sikrer helt svarte og helt hvite piksler. Dette benyttes i utregningene av GRD og styrker nøyaktigheten til beregningen.</p>
 </div>
-<div id="formel-radius" class="stemblock">
+<div id="imgFormel2" class="imageblock text-center">
 <div class="content">
-\$\begin{equation}
-r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\pi} \right)
-\end{equation}\$
+<img src="figurer/Formel_2.png" alt="Radius til Siemensstjerne">
 </div>
+<div class="title">Formel 2: Radius til Siemensstjerne</div>
 </div>
 </div>
 <div class="sect4">
@@ -1953,8 +1914,9 @@ r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\p
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bildeblokk</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Flystripene skal plasseres optimalt, slik at den resulterende bildeblokka får en mest mulig regulær form og flest mulig parallelt overlappende striper (for å sikre best mulig bildeorientering).</p>
-<p class="tableblock">En bildeblokk er en blokk med sammenhengende flybilder. Det er tillatt å fly over vann og sammenbinde flybilder så lenge ukjente parametere er stabile, som kamera og GNSS/INS, og det tas bilder kontinuerlig over vannområdet.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flystripene skal plasseres optimalt, slik at den resulterende bildeblokken får en mest mulig regulær form og flest mulig parallelt overlappende striper (for å sikre best mulig bildeorientering).</p>
+<p class="tableblock">En bildeblokk er en blokk med sammenhengende flybilder. Det er tillatt å fly over vann og sammenbinde flybilder så lenge ukjente parametere er stabile, som kamera og GNSS/INS, og det tas bilder kontinuerlig over vannområdet.</p>
+<p class="tableblock">For å sikre best mulig bildeorientering og redusere behovet for kjentpunkter, skal delområder i rimelig nærhet av hverandre forbindes ved at flystripene forlenges.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Innsyn og sammenbinding</p></td>
@@ -2022,9 +1984,6 @@ r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\p
 </table>
 </div>
 </div>
-<div class="paragraph">
-<p>For å sikre best mulig bildeorientering og redusere behovet for kjentpunkter, skal delområder i rimelig nærhet av hverandre forbindes ved at flystripene forlenges.</p>
-</div>
 </div>
 <div class="sect3">
 <h4 id="_planlegging_av_kjentpunkt_kontrollpunkt_og_signalering_signaleringsplan">6.1.3. Planlegging av kjentpunkt, kontrollpunkt og signalering (signaleringsplan)</h4>
@@ -2035,7 +1994,7 @@ r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\p
 <p>Signaleringen bør planlegges og utføres slik at fotograferingen kan starte opp så snart forholdene tillater det, eksempelvis ved at lavereliggende områder signaleres først.</p>
 </div>
 <div class="sect4">
-<h5 id="_krav_til_kjentpunkter_og_kontrollpunkter">6.1.3.1. Krav til kjentpunkter og kontrollpunkter</h5>
+<h5 id="kapittel-krav-til-kjentpunkter-og-kontrollpunkter">6.1.3.1. Krav til kjentpunkter og kontrollpunkter</h5>
 <div class="exampleblock">
 <div class="content">
 <div id="krav-foto-kjentpunktnoyaktighet" class="paragraph">
@@ -2067,46 +2026,46 @@ r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\p
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">FKB-Standard</th>
-<th class="tableblock halign-left valign-top" colspan="2">Krav til geodata, svært veldefinert detalj (cm)</th>
-<th class="tableblock halign-left valign-top" colspan="2">Krav til markmåling av kjentpunkter (cm)</th>
+<th class="tableblock halign-center valign-top">FKB-Standard</th>
+<th class="tableblock halign-center valign-top" colspan="2">Krav til geodata, svært veldefinert detalj (cm)</th>
+<th class="tableblock halign-center valign-top" colspan="2">Krav til markmåling av kjentpunkter (cm)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S<sub>p</sub></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S<sub>h</sub></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S<sub>p</sub></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S<sub>h</sub></p></td>
+<th class="tableblock halign-center valign-top"></th>
+<th class="tableblock halign-center valign-top"><p class="tableblock">S<sub>p</sub></p></th>
+<th class="tableblock halign-center valign-top"><p class="tableblock">S<sub>h</sub></p></th>
+<th class="tableblock halign-center valign-top"><p class="tableblock">S<sub>p</sub></p></th>
+<th class="tableblock halign-center valign-top"><p class="tableblock">S<sub>h</sub></p></th>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">FKB-A</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">FKB-B</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">FKB-B</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">FKB-C</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">FKB-C</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">48</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">48</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">12</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">FKB-D</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">48</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">48</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">12</p></td>
 </tr>
 </tbody>
 </table>
@@ -2120,18 +2079,18 @@ r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\p
 <div class="sect4">
 <h5 id="kapittel-krav-til-antall-og-plassering-av-kjentpunkter-og-kontrollpunkter">6.1.3.2. Krav til antall og plassering av kjentpunkter og kontrollpunkter</h5>
 <div class="paragraph">
-<p>Ved GNSS/INS-støttet fotografering kreves det i teorien kun et fåtall kjentpunkt for å kunne utføre AT. Kjentpunktene er kun nødvendige for å kunne bestemme systematiske avvik i de GNSS-bestemte projeksjonssentrene (datumstransformasjon), samt for å ha en minimums-kontroll. I praksis trengs vesentlig flere punkt for å kunne:</p>
+<p>Ved GNSS/INS-støttet fotografering kreves det i teorien kun et fåtall kjentpunkt for å kunne utføre aerotriangulering. Kjentpunktene er kun nødvendige for å kunne bestemme systematiske avvik i de GNSS-bestemte projeksjonssentrene (datumstransformasjon), samt for å ha en minimums-kontroll. I praksis trengs vesentlig flere punkt for å kunne:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Bestemme flere GNSS-skift på grunn av fotografering over flere dager.</p>
+<p>Bestemme flere "GNSS-shift" på grunn av fotografering over flere dager.</p>
 </li>
 <li>
 <p>Dokumentere kvaliteten i bildeorienteringen tilstrekkelig/godt.</p>
 </li>
 <li>
-<p>Oppdage avvik i hele blokka.</p>
+<p>Oppdage avvik i hele blokken.</p>
 </li>
 </ul>
 </div>
@@ -2149,13 +2108,13 @@ r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\p
 <p>Kravet til antall kjentpunkt kan avvikes etter avtale. Dette må da kompenseres med flere tverrstriper.</p>
 </li>
 <li>
-<p>I en bildeblokk skal det være minimum 5 fullbestemte kjentpunkter. Kravet gjelder også for enkeltstriper og enkeltstriper i kjede. Avvik fra dette (for eksempel ved svært små blokker og ved mange spredte øyer) kan tillates dersom oppdragsgiver har åpnet for dette i teknisk spesifikasjon for oppdraget. I slike tilfeller skal det sørges for at korrekte GNSS-skift blir påført bildene.</p>
+<p>I en bildeblokk skal det være minimum 5 fullbestemte kjentpunkter. Kravet gjelder også for enkeltstriper og enkeltstriper i kjede. Avvik fra dette (for eksempel ved svært små blokker og ved mange spredte øyer) kan tillates dersom oppdragsgiver har åpnet for dette i teknisk spesifikasjon for oppdraget. I slike tilfeller skal det sørges for at korrekte "GNSS-shift" blir påført bildene.</p>
 </li>
 <li>
 <p>I blokker som inneholder kjedede enkeltstriper skal det være minimum ett fullbestemt kjentpunkt i hvert overlappsområde mellom stripene, samt minimum ett i eller nær enden av hver kjede.</p>
 </li>
 <li>
-<p>Kjentpunktene skal fordeles jevnt over hele bildeblokka og det skal påses at det finnes kjentpunkter nær blokkas ytterkanter. Det er dog ikke nødvendig å plassere kjentpunktene helt i ytterkant, dersom for eksempel adkomst gjør dette vanskelig.</p>
+<p>Kjentpunktene skal fordeles jevnt over hele bildeblokken og det skal påses at det finnes kjentpunkter nær blokkens ytterkanter. Det er dog ikke nødvendig å plassere kjentpunktene helt i ytterkant, dersom for eksempel adkomst gjør dette vanskelig.</p>
 </li>
 </ul>
 </div>
@@ -2195,7 +2154,7 @@ r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\p
 <p>Planlagte kjentpunkter med navn og ulike farger eller lignende som skiller nye og eksisterende punkter.</p>
 </li>
 <li>
-<p>Estimert total effektiv flytid. Med effektiv flytid menes flytiden for å dekke prosjektområdet, (striper og svinger). Flytid til og fra prosjektområdet medregnes ikke.</p>
+<p>Estimert total effektiv flytid. Med effektiv flytid menes flytiden for å dekke prosjektområdet (striper og svinger). Flytid til og fra prosjektområdet medregnes ikke.</p>
 </li>
 <li>
 <p>Prosjektgrense og topografisk bakgrunnskart.</p>
@@ -2211,14 +2170,14 @@ r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\p
 </div>
 </div>
 <div class="paragraph">
-<p>Eksempel på fly- og signaleringsplan finnes i <a href="#_eksempel_fly_og_signaleringsplan_foto">Kapittel C.1, &#8220;Eksempel fly- og signaleringsplan (foto)&#8221;</a>.</p>
+<p>Eksempel på fly- og signaleringsplan finnes i <a href="#_eksempel_fly_og_signaleringsplan_foto">Kapittel B.1, &#8220;Eksempel fly- og signaleringsplan (foto)&#8221;</a>.</p>
 </div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="kapittel-signalering">6.2. Signalering</h3>
 <div class="paragraph">
-<p>Dette kapittelet angir krav og retningslinjer til signalering av kjentpunkter for aerotriangulering og eventuelle objekter som skal kartlegges og som er for små til å synes i flybildene. For innmåling av kjentpunkter henvises til krav i <a href="#Krav til kjentpunkter">[Krav til kjentpunkter]</a> og til standarden <a href="#SAT">[SAT]</a>.</p>
+<p>Dette kapittelet angir krav og retningslinjer til signalering av kjentpunkter for aerotriangulering og eventuelle objekter som skal kartlegges og som er for små til å synes i flybildene. For innmåling av kjentpunkter henvises til krav i <a href="#kapittel-krav-til-kjentpunkter-og-kontrollpunkter">Kapittel 6.1.3.1, &#8220;Krav til kjentpunkter og kontrollpunkter&#8221;</a> og til standarden <a href="#SAT">[SAT]</a>.</p>
 </div>
 <div class="sect3">
 <h4 id="_lovhjemmel_for_markarbeider_matrikkellova">6.2.1. Lovhjemmel for markarbeider - Matrikkellova</h4>
@@ -2235,7 +2194,7 @@ r = \frac{3 \cdot s \cdot GSD}{2\pi} + 0.1 \left( \frac{3 \cdot s \cdot GSD}{2\p
 <p>Lovens § 49 gir strafferettslig beskyttelse for fastmerker og signaler oppsatt etter loven.</p>
 </div>
 <div class="paragraph">
-<p>Plassering av fastmerker eller signal i eller på automatisk fredete kulturminner, eller innenfor et 5 m bredt belte regnet fra kulturminnets synlige ytterkant, er forbudt etter lov om kulturminner (Kulturminneloven §3 og §6).</p>
+<p>Plassering av fastmerker eller signal i eller på automatisk fredete kulturminner, eller innenfor et 5 meter bredt belte regnet fra kulturminnets synlige ytterkant, er forbudt etter lov om kulturminner (Kulturminneloven §3 og §6).</p>
 </div>
 </div>
 <div class="sect3">
@@ -2355,40 +2314,40 @@ Fjell, stein, sand, grus, asfalt eller betong gir dårlig kontrast, og det skal 
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">GSD</th>
-<th class="tableblock halign-left valign-top" colspan="2">Kvadratisk signal (cm)</th>
+<th class="tableblock halign-center valign-top">GSD (cm)</th>
+<th class="tableblock halign-center valign-top" colspan="2">Kvadratisk signal (cm)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Størrelse signal</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Størrelse med kontrast</p></td>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-center valign-top"><p class="tableblock">Størrelse signal</p></th>
+<th class="tableblock halign-center valign-top"><p class="tableblock">Størrelse med kontrast</p></th>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&lt; 7</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">21</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">42</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&lt; 7</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">21</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">42</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">21</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">42</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">21</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">42</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">60</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">60</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">20</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">60</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">120</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">20</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">60</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">120</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">60</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">120</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">25</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">60</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">120</p></td>
 </tr>
 </tbody>
 </table>
@@ -2687,7 +2646,7 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Fotograferingsperiode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Et prosjekt skal fotograferes over et kortest mulig tidsrom og det skal tilstrebes at flystriper fotograferes mest mulig samlet. Ved fotografering over flere dager eller GNSS-sesjoner skal det sørges for at tilstrekkelig med kjentpunkter blir dekket slik at systematiske GNSS-skift kan bestemmes for hver dag/hver fotosesjon.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Et prosjekt skal fotograferes over et kortest mulig tidsrom og det skal tilstrebes at flystriper fotograferes mest mulig samlet. Ved fotografering over flere dager eller GNSS-sesjoner skal det sørges for at tilstrekkelig med kjentpunkter blir dekket slik at systematiske "GNSS-shift" kan bestemmes for hver dag/hver fotosesjon.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Fotograferingstidspunkt</p></td>
@@ -2870,9 +2829,9 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 </div>
 </div>
 <div class="sect4">
-<h5 id="kapittel-krav-til-innsamling-av-gnssimu-data">6.3.2.2. Krav til innsamling av GNSS/IMU data</h5>
+<h5 id="kapittel-krav-til-innsamling-av-gnssimu-data">6.3.2.2. Krav til innsamling av GNSS/IMU-data</h5>
 <div class="paragraph">
-<p>Ved GNSS/INS-støttet flyfotografering kombineres observasjoner fra IMU (Inertial Measurement Unit) med data fra GNSS mottaker for å bestemme både posisjon og orientering på kameraet. Ulike beregningsmetoder kan benyttes for å komme fram til posisjon og rotasjon for hvert enkelt bilde.</p>
+<p>Ved GNSS/INS-støttet flyfotografering kombineres observasjoner fra IMU (Inertial Measurement Unit) med data fra GNSS-mottaker for å bestemme både posisjon og orientering på kameraet. Ulike beregningsmetoder kan benyttes for å komme fram til posisjon og rotasjon for hvert enkelt bilde.</p>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -2901,7 +2860,7 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 </div>
 </div>
 <div class="paragraph">
-<p>Metoden for GNSS-posisjonsbestemmelse ved bruk av DGNSS er basert på at det benyttes differensierte observasjoner mellom en eller flere GNSS basestasjoner på bakken (eventuelle virtuelle basestasjoner) og GNSS mottakeren i flyet.</p>
+<p>Metoden for GNSS-posisjonsbestemmelse ved bruk av DGNSS er basert på at det benyttes differensierte observasjoner mellom en eller flere GNSS-basestasjoner på bakken (eventuelle virtuelle basestasjoner) og GNSS-mottakeren i flyet.</p>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -2943,7 +2902,7 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 <p>Programvaren må i all vesentlighet forholde seg til de modeller og konvensjoner som følger av å benytte de aktuelle bane- og klokkeproduktene.</p>
 </li>
 <li>
-<p>Total måletid (på bakken og i lufta) må overstige en time for å sikre god konvergens i løsningen. Dette gjelder dersom kun GPS benyttes. Ved bruk av andre GNSS system i tillegg til GPS (for eksempel Galileo og GLONASS), kan noe kortere måletid aksepteres.</p>
+<p>Total måletid (på bakken og i lufta) må overstige en time for å sikre god konvergens i løsningen. Dette gjelder dersom kun GPS benyttes. Ved bruk av andre GNSS-system i tillegg til GPS (for eksempel Galileo og GLONASS), kan noe kortere måletid aksepteres.</p>
 </li>
 <li>
 <p>Satellittklokkekorreksjoner med oppløsning på 30 sekunder eller bedre skal benyttes.</p>
@@ -3379,7 +3338,7 @@ Ved vanskelige forhold skal det rapporteres hvilke striper/bilder dette kan ang�
 <td class="tableblock halign-left valign-top"><p class="tableblock">(fabrikat, versjonsnummer)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GNSS/INS filer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GNSS/INS-filer</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Beskrivelse av innhold i GNSS/INS-fil.
 En GNSS/INS-fil pr. fotosesjon.</p></td>
 </tr>
@@ -3615,34 +3574,34 @@ En GNSS/INS-fil pr. fotosesjon.</p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Lengdeoverlapp (%)</th>
-<th class="tableblock halign-left valign-top">Antall sammenbindingspunkt</th>
+<th class="tableblock halign-center valign-top">Lengdeoverlapp (%)</th>
+<th class="tableblock halign-center valign-top">Antall sammenbindingspunkt</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&lt; 15</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&lt; 15</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">12</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">15-25</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">18</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">15-25</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">18</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">25-35</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">25-35</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">24</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">35-55</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">35-55</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">32</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">55-85</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">40</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">55-85</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">40</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&gt; 85</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">50</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&gt; 85</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">50</p></td>
 </tr>
 </tbody>
 </table>
@@ -3661,34 +3620,34 @@ En GNSS/INS-fil pr. fotosesjon.</p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Sideoverlapp (%)</th>
-<th class="tableblock halign-left valign-top">Antall stripesammenbindingspunkt</th>
+<th class="tableblock halign-center valign-top">Sideoverlapp (%)</th>
+<th class="tableblock halign-center valign-top">Antall stripesammenbindingspunkt</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&lt; 15</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&lt; 15</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">15-25</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">15-25</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">6</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">25-35</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">25-35</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">12</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">35-55</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">18</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">35-55</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">18</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">55-75</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">55-75</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">30</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&gt;75</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">40</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&gt;75</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">40</p></td>
 </tr>
 </tbody>
 </table>
@@ -3756,7 +3715,7 @@ En GNSS/INS-fil pr. fotosesjon.</p></td>
 <p>Observasjonstypene (kjentpunkter, GNSS- og INS-data, manuelle og automatiske bildemålinger) skal vektes i henhold til a priori eller erfaringsbasert nøyaktighet samt synlighet i bildene.</p>
 </li>
 <li>
-<p>Konstante såkalte GNSS-skift kan bestemmes i blokkutjevningen. Behovet for GNSS-skift kan stamme fra ukorrigerte systematiske avvik i GNSS/INS-beregningen, men kan også være forårsaket av andre avvik med samme forløp (for eksempel avvik i kamerakonstanten). Slike skift kan bestemmes samlet for hele bildeblokken, pr. GNSS-sesjon, pr. fotodag eller pr. flystripe såfremt tilstrekkelig med kjentpunkter er tilgjengelig og målt innenfor det fragmentet som ønskes skiftet. Som hovedregel skal minst 3 kjentpunkter benyttes, men 2 og eventuelt 1 punkt kan aksepteres i mindre fragmenter.</p>
+<p>Konstante såkalte "GNSS-shift" kan bestemmes i blokkutjevningen. Behovet for "GNSS-shift" kan stamme fra ukorrigerte systematiske avvik i GNSS/INS-beregningen, men kan også være forårsaket av andre avvik med samme forløp (for eksempel avvik i kamerakonstanten). Slike "shift" kan bestemmes samlet for hele bildeblokken, pr. GNSS-sesjon, pr. fotodag eller pr. flystripe såfremt tilstrekkelig med kjentpunkter er tilgjengelig og målt innenfor det fragmentet som ønskes "shiftet". Som hovedregel skal minst 3 kjentpunkter benyttes, men 2 og eventuelt 1 punkt kan aksepteres i mindre fragmenter.</p>
 </li>
 <li>
 <p>Antatt lineær GNSS-drift kan bestemmes pr. flystripe så lenge det benyttes minst 1 kjentpunkt i hver ende av stripa.</p>
@@ -3820,10 +3779,10 @@ En GNSS/INS-fil pr. fotosesjon.</p></td>
 <p>Etter eventuell fjerning av grove avvik skal det påses at ingen vitale observasjoner er fjernet og at antall og plassering av sammenbindingspunkter er i henhold til kravene. Alle kjentpunktmålinger skal inkluderes i AT-beregningene, unntak kan gjøres der kjentpunkt(ene) har dårlig synbarhet, dårlig egnethet eller feil i gitt koordinat. Der kjentpunktmålinger utelates skal dette dokumenteres i rapporten.</p>
 </li>
 <li>
-<p>Bildenes ytre orienteringselementer, terrengkoordinatene til alle målte sammenbindingspunkter samt eventuelle tilleggsukjente (som spesifisert over) skal bestemmes i en samlet blokkutjevning. Konstante GNSS-skift, korreksjoner til "boresight"-kalibreringen og estimering av antenneeksentrisitet og andre systemavstander (lever arm) kan eventuelt bestemmes i forprosessering (ved hjelp av blokkutjevning) og deretter påføres endelig GNSS/INS resultat, dette forutsetter tilstrekkelig observasjonsgrunnlag og geometrisk styrke i blokka.</p>
+<p>Bildenes ytre orienteringselementer, terrengkoordinatene til alle målte sammenbindingspunkter samt eventuelle tilleggsukjente (som spesifisert over) skal bestemmes i en samlet blokkutjevning. Konstante "GNSS-shift", korreksjoner til "boresight"-kalibreringen og estimering av antenneeksentrisitet og andre systemavstander (lever arm) kan eventuelt bestemmes i forprosessering (ved hjelp av blokkutjevning) og deretter påføres endelig GNSS/INS-resultat, dette forutsetter tilstrekkelig observasjonsgrunnlag og geometrisk styrke i blokken.</p>
 </li>
 <li>
-<p>Bildenes ytre orienteringselementer skal ha et totalt standardavvik maksimalt lik 2/3 av kravene for de aktuelle geodata. Med "totalt" menes det samlede avvik på et målt objekt, sammensatt av de enkelte orienteringselementenes feilbidrag. Se <a href="#tab-nøyaktighetskrav-AT-FKB">Tabell 12</a> for eksempler på nøyaktighetskrav til nypunkter og ytre orienteringselementer.</p>
+<p>Bildenes ytre orienteringselementer skal ha et totalt standardavvik maksimalt lik 2/3 av kravene for de aktuelle geodata. Med "totalt" menes det samlede avvik på et målt objekt, sammensatt av de enkelte orienteringselementenes feilbidrag. Se <a href="#tab-nøyaktighetskrav-AT-FKB">Tabell 12</a> for eksempler på nøyaktighetskrav til sammenbindingspunkt og ytre orienteringselementer.</p>
 </li>
 <li>
 <p>Standardavviket på vektsenheten skal være &#8804; 1/3 piksel.</p>
@@ -3832,16 +3791,19 @@ En GNSS/INS-fil pr. fotosesjon.</p></td>
 <p>De utjevnede sammenbindingspunktene ("nypunkter") skal bestemmes med et gjennomsnittlig estimert standardavvik maksimalt lik 1/2 av kravene for de aktuelle geodata som skal produseres i prosjektet. Maksimalt estimert standardavvik på hvert “nypunkt” skal være under grovfeilgrensen til kravet for “nypunkt”.</p>
 </li>
 <li>
-<p>Nøyaktigheten på resultatet fra AT-en/blokkutjevningen, herunder bildenes ytre orienteringselementer, skal som hovedregel verifiseres ved hjelp av en utjevning med bruk av uavhengige kontrollpunkter ("sjekkpunkter") jevnt fordelt i bildeblokka. Standardavviket på restavvikene i kontrollpunktene kontrolleres mot kravet til ytre orienteringselementene. I tillegg skal resultatet kontrolleres ved at kjentpunktene (eventuelt et representativt utvalg) måles i stereoinstrument og sammenholdes med gitte koordinater. Deretter kontrolleres standardavviket på avvikene mot kravet til ytre orienteringselementene.</p>
+<p>Nøyaktigheten på resultatet fra AT-en/blokkutjevningen, herunder bildenes ytre orienteringselementer, skal som hovedregel verifiseres ved hjelp av en utjevning med bruk av uavhengige kontrollpunkter ("sjekkpunkter") jevnt fordelt i bildeblokken. Standardavviket på restavvikene i kontrollpunktene kontrolleres mot kravet til ytre orienteringselementene. I tillegg skal resultatet kontrolleres ved at kjentpunktene (eventuelt et representativt utvalg) måles i stereoinstrument og sammenholdes med gitte koordinater. Deretter kontrolleres standardavviket på avvikene mot kravet til ytre orienteringselementene.</p>
 </li>
 <li>
 <p>Ved færre kontrollpunt enn 5, så utføres kontrollen på bakgrunn av maksimalt avvik og kontrollpunktene skal da ikke ha avvik større enn 2 ganger standardavviket i grunnriss og høyde.</p>
 </li>
 <li>
-<p>Avvik på kjentpunktene skal ikke overstige 3 ganger standardavviket til ytre orientering i alle bildene.</p>
+<p>Avvik på kjentpunktene og kontrollpunktene skal ikke overstige 3 ganger standardavviket til ytre orientering i alle bildene.</p>
 </li>
 <li>
 <p>Systematisk avvik i nord, øst og høyde for krav til geodata, svært veldefinert detalj og krav til ytre orienteringselement skal ikke overstige 1/3 av kravet til standardavviket.</p>
+</li>
+<li>
+<p>Sammenbindingspunkter og kjentpunkter som er med i selve AT-beregningen skal i AT-bergningen ha nøyaktighet som er 1/2 av kravet til geodata.</p>
 </li>
 </ul>
 </div>
@@ -3860,68 +3822,67 @@ En GNSS/INS-fil pr. fotosesjon.</p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">FKB-Standard</th>
-<th class="tableblock halign-left valign-top" colspan="2">Krav til geodata, svært veldefinert detalj (cm)</th>
-<th class="tableblock halign-left valign-top" colspan="2">Krav til nypunkt, totalt standardavvik (cm)<sup>1</sup></th>
-<th class="tableblock halign-left valign-top" colspan="2">Krav til ytre orienteringselement (cm)<sup>2</sup></th>
+<th class="tableblock halign-center valign-top">FKB-Standard</th>
+<th class="tableblock halign-center valign-top" colspan="2">Krav til geodata, svært veldefinert detalj (cm)</th>
+<th class="tableblock halign-center valign-top" colspan="2">Krav til punkt i AT-beregning (cm)<sup>1</sup></th>
+<th class="tableblock halign-center valign-top" colspan="2">Krav til ytre orienteringselement (cm)<sup>2</sup></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S<sub>p</sub></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S<sub>z</sub></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S<sub>p</sub></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S<sub>z</sub></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S<sub>p</sub></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S<sub>z</sub></p></td>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-center valign-top"><p class="tableblock">S<sub>p</sub></p></th>
+<th class="tableblock halign-center valign-top"><p class="tableblock">S<sub>z</sub></p></th>
+<th class="tableblock halign-center valign-top"><p class="tableblock">S<sub>p</sub></p></th>
+<th class="tableblock halign-center valign-top"><p class="tableblock">S<sub>z</sub></p></th>
+<th class="tableblock halign-center valign-top"><p class="tableblock">S<sub>p</sub></p></th>
+<th class="tableblock halign-center valign-top"><p class="tableblock">S<sub>z</sub></p></th>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">FKB-A</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">FKB-A</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">7</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">FKB-B</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">FKB-B</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">10</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">FKB-C</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">FKB-C</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">48</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">48</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">32</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">32</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">FKB-D</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">FKB-D</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">48</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">48</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">32</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">32</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
 <p><em>Resultatene fra Aerotrianguleringen skal ha en slik kvalitet, i forhold til kravet til geodataene, at det er høyde for forventede feilbidrag fra påfølgende bildeorientering og kartkonstruksjon.</em><br>
-<em><sup>1</sup> 1/2 av kravet til geodata.</em><br>
-<em><sup>2</sup> 2/3 av kravet til geodata. Det stilles altså samme krav uavhengig av orienteringsmåte; gjennom transformasjon eller direkte bruk av eksisterende ytre orienteringselementer</em></p>
+<em><sup>1</sup> Med punkt menes sammenbindingspunkt og kjentpunkter og kravet er 1/2 av kravet til geodata.</em><br>
+<em><sup>2</sup> Kravet er 2/3 av kravet til geodata. Det stilles altså samme krav uavhengig av orienteringsmåte; gjennom transformasjon eller direkte bruk av eksisterende ytre orienteringselementer</em></p>
 </div>
 <div class="paragraph">
-<p>Det presiseres at tallene i <a href="#tab-nøyaktighetskrav-AT-FKB">Tabell 12</a> henviser til kravene som er stilt i FKB 5.1.1 produktspesifikasjonen, ved endringer i FKB spesifikasjonen vil eventuelle endringer til nøyaktighetskrav gjelde foran kravene som er satt opp i <a href="#tab-nøyaktighetskrav-AT-FKB">Tabell 12</a>.
-Kravet til nypunkt gjelder kun signalerte kjentpunkt og eventuelt ikke-signalerte høydepunkt med høy nøyaktighet.<br></p>
+<p>Det presiseres at tallene i <a href="#tab-nøyaktighetskrav-AT-FKB">Tabell 12</a> henviser til kravene som er stilt i produktspesifikasjonen FKB 5.1.1, ved endringer i FKB produktspesifikasjonen vil eventuelle endringer til nøyaktighetskrav gjelde foran kravene som er satt opp i <a href="#tab-nøyaktighetskrav-AT-FKB">Tabell 12</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -3931,8 +3892,8 @@ Kravet til nypunkt gjelder kun signalerte kjentpunkt og eventuelt ikke-signalert
 </div>
 <div class="exampleblock">
 <div class="content">
-<div id="krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringa" class="paragraph">
-<p><strong>KRAV FOTO KONTROLLMÅLING I DFA AV AEROTRIANGULERINGA</strong></p>
+<div id="krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringen" class="paragraph">
+<p><strong>KRAV FOTO KONTROLLMÅLING I DFA AV AEROTRIANGULERINGEN</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -4123,7 +4084,7 @@ Kravet til nypunkt gjelder kun signalerte kjentpunkt og eventuelt ikke-signalert
 <div class="ulist">
 <ul>
 <li>
-<p>Oversikt over kjentpunktmålinger som er utelatt i beregning.<br></p>
+<p>Oversikt over kjentpunktmålinger som er utelatt i beregningen.<br></p>
 </li>
 <li>
 <p>Beskrivelse av problemer, inkludert årsaker til disse, som vil eller kan resultere i negative konsekvenser for mellom- og/eller sluttprodukter.<br></p>
@@ -4156,7 +4117,7 @@ Kravet til nypunkt gjelder kun signalerte kjentpunkt og eventuelt ikke-signalert
 <p>Standardavvik og systematisk avvik av restavvik i kjentpunkter, inkludert maksimalt avvik.<br></p>
 </li>
 <li>
-<p>Gjennomsnittlig standardavvik i nypunkter, inkludert maksimalt avvik.<br></p>
+<p>Gjennomsnittlig standardavvik i sammenbindingspunkt, inkludert maksimalt avvik.<br></p>
 </li>
 <li>
 <p>Gjennomsnittlig standardavvik i ytre orienteringselementer.<br></p>
@@ -4341,7 +4302,7 @@ Kravet til nypunkt gjelder kun signalerte kjentpunkt og eventuelt ikke-signalert
 <div class="ulist">
 <ul>
 <li>
-<p>For å sikre god høydenøyaktighet skal konstruksjon gjøres i modeller som er nærmest 60% lengdeoverlapp, eller den stereooverlappen leverandøren har bestemt passer best i intervallet 35 % - 65 % lengdeoverlapp. Avvik fra dette skal begrunnes i konstruksjonsrapport.</p>
+<p>For å sikre god høydenøyaktighet skal konstruksjon gjøres i modeller som er nærmest 60% lengdeoverlapp, eller den stereooverlappen leverandøren har bestemt passer best i intervallet 35 % - 65 % lengdeoverlapp. Avvik fra dette skal begrunnes i konstruksjonsrapporten.</p>
 </li>
 <li>
 <p>Før konstruksjonen starter skal det kontrolleres at bildeorienteringen for hele prosjektet er korrekt implementert. Dette gjøres ved at alle kjentpunkter måles og kontrolleres mot gitte koordinater. Kontrollen skal utføres på alle DFA-er som skal benyttes.</p>
@@ -4567,16 +4528,16 @@ Antall ulovlige småpolygoner.<br></p></td>
 <div class="ulist">
 <ul>
 <li>
-<p>Systematisk avvik<br></p>
+<p>Systematisk avvik.</p>
 </li>
 <li>
-<p>Standardavvik og systematisk avvik av restavvik, inkludert maksimalt avvik<br></p>
+<p>Standardavvik og systematisk avvik av restavvik, inkludert maksimalt avvik.</p>
 </li>
 <li>
-<p>Antall kjentpunkter målt og antall stereomodeller det er målt i<br></p>
+<p>Antall kjentpunkter målt og antall stereomodeller det er målt i.</p>
 </li>
 <li>
-<p>Utlisting av individuelle avvik</p>
+<p>Utlisting av individuelle avvik.</p>
 </li>
 </ul>
 </div></div></td>
@@ -4753,7 +4714,7 @@ Manus og støttedata.<br></p></td>
 <p>Høydemodell må ha høy nok detaljeringsgrad og god nok stedfestingsnøyaktighet til å lage detaljert nok ortofoto, spesielt i kupert terreng.</p>
 </li>
 <li>
-<p>Primært vil høydemodellen referere seg til terrengoverflaten (DTM). For bruer, trafikkmaskiner og tekniske anlegg (som ligger over bakkenivå) skal imidlertid høydemodellen modifiseres til å gjelde for brubanen/vegbanen/topp anlegg, altså være en digital høydemodell (DHM) i disse områdene. Dette er nødvendig for å unngå at for eksempel bruer blir fortegnet i ortofotoet.</p>
+<p>Primært vil høydemodellen referere seg til terrengoverflaten (DTM). For bruer, trafikkmaskiner og tekniske anlegg (som ligger over bakkenivå) skal imidlertid høydemodellen modifiseres til å gjelde for brubanen/vegbanen/topp anlegg, altså være en digital overflatemodell (DOM) i disse områdene. Dette er nødvendig for å unngå at for eksempel bruer blir fortegnet i ortofotoet.</p>
 </li>
 </ul>
 </div>
@@ -5074,10 +5035,10 @@ Manus og støttedata.<br></p></td>
 <p>Beregningsrapporten fra prosesseringsprogramvaren må leveres og er en del av dokumentasjonen av kvaliteten til prosjektet.</p>
 </li>
 <li>
-<p>Kjentpunkter er nødvendig.</p>
+<p>Kjentpunkter er nødvendig og antallet skal være tilstrekkelig til å oppnå ønsket nøyaktighet.</p>
 </li>
 <li>
-<p>Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt («sjekkpunkter»). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktigheten til kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.</p>
+<p>Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt («sjekkpunkter»). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktighetskrav for innmåling av kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.</p>
 </li>
 <li>
 <p>Ortofotorapport: <a href="#krav-foto-rapportering-ortofoto">Krav foto rapportering ortofoto</a></p>
@@ -5109,7 +5070,7 @@ Manus og støttedata.<br></p></td>
 <p>Kjentpunkter er ikke nødvendig.</p>
 </li>
 <li>
-<p>Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt («sjekkpunkter»). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktigheten til kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.</p>
+<p>Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt («sjekkpunkter»). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktighetskrav for innmåling av kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.</p>
 </li>
 <li>
 <p>Ortofotorapport: <a href="#krav-foto-rapportering-ortofoto">Krav foto rapportering ortofoto</a></p>
@@ -5471,7 +5432,7 @@ Manus og støttedata.<br></p></td>
 <div class="ulist">
 <ul>
 <li>
-<p>Det er anbefalt at minst 1 flystripe flys i 2 forskjellige flyhøyder over terrenget, dette for å ha mulighet til å kontrollere kamerakonstanten. Høydeforskjellen mellom de to flyhøydene må være på minst 40 meter og stripen må dekke minimum 2 kjentpunkt.</p>
+<p>Det er anbefalt at minst 1 flystripe flys i 2 forskjellige flyhøyder over terrenget, dette for å ha mulighet til å kontrollere kamerakonstanten. Høydeforskjellen mellom de to flyhøydene bør være på minst 40 meter og stripen må dekke minimum 2 kjentpunkt.</p>
 </li>
 </ul>
 </div>
@@ -5500,7 +5461,7 @@ Manus og støttedata.<br></p></td>
 <div class="sect2">
 <h3 id="kapittel-skråbilder">6.9. Skråbilder</h3>
 <div class="paragraph">
-<p>Skille mellom 4 kvaliteter for posisjon- og orienteringsnøyaktighet for skråbildeprosjekter tatt med skråbildekamera som er et kamerasystem med flere kamera, som for eksempel et kamerasystem med totalt 5 kamera der det er 1 vertikalbildekamera, 1 kamra framover, 1 kamera bakover, 1 kamera til venstre og 1 kamera til høyre:</p>
+<p>Det skilles mellom 4 kvalitetsnivå for posisjon- og orienteringsnøyaktighet for skråbildeprosjekter tatt med skråbildekamera. Skråbildekamera er et kamerasystem med flere kamera, som for eksempel et kamerasystem med totalt 5 kamera der det er 1 vertikalbildekamera, 1 kamra framover, 1 kamera bakover, 1 kamera til venstre og 1 kamera til høyre:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -5532,12 +5493,12 @@ Manus og støttedata.<br></p></td>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top"></th>
-<th class="tableblock halign-left valign-top">Visningsløsning skråbilder</th>
-<th class="tableblock halign-left valign-top">Ortofoto</th>
-<th class="tableblock halign-left valign-top">Kartkonstruksjon vertikalbilder</th>
-<th class="tableblock halign-left valign-top">Overflatemodell</th>
-<th class="tableblock halign-left valign-top">Terrengmodell</th>
-<th class="tableblock halign-left valign-top">Kartkonstruksjon skråbilder</th>
+<th class="tableblock halign-center valign-top">Visningsløsning skråbilder</th>
+<th class="tableblock halign-center valign-top">Ortofoto</th>
+<th class="tableblock halign-center valign-top">Kartkonstruksjon vertikalbilder</th>
+<th class="tableblock halign-center valign-top">Overflatemodell</th>
+<th class="tableblock halign-center valign-top">Terrengmodell</th>
+<th class="tableblock halign-center valign-top">Kartkonstruksjon skråbilder</th>
 </tr>
 </thead>
 <tbody>
@@ -5584,7 +5545,7 @@ Manus og støttedata.<br></p></td>
 <div class="exampleblock">
 <div class="content">
 <div id="krav-foto-minimum-skrabilder" class="paragraph">
-<p><strong>KRAV FOTO MINIMUM SKRÅBILDER</strong></p>
+<p><strong>KRAV FOTO SKRÅBILDER KVALITETSNIVÅ MINIMUM</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5607,7 +5568,7 @@ Manus og støttedata.<br></p></td>
 <div class="exampleblock">
 <div class="content">
 <div id="anbefaling-foto-skråbilder-minimum" class="paragraph">
-<p><strong>ANBEFALING FOTO MINIMUM SKRÅBILDER</strong></p>
+<p><strong>ANBEFALING FOTO SKRÅBILDER KVALITETSNIVÅ MINIMUM</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5627,7 +5588,7 @@ Manus og støttedata.<br></p></td>
 <div class="exampleblock">
 <div class="content">
 <div id="krav-foto-lav-skrabilder" class="paragraph">
-<p><strong>KRAV FOTO LAV SKRÅBILDER</strong></p>
+<p><strong>KRAV FOTO SKRÅBILDER KVALITETSNIVÅ LAV</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -5638,7 +5599,7 @@ Manus og støttedata.<br></p></td>
 <p>Prosjektet må ha nok signalerte/naturlige kjentpunkt til å være innenfor stedfestingsnøyaktigheten til ortofotoet.</p>
 </li>
 <li>
-<p>Hver bildeblokk skal ha minimum 5 uavhengige kontrollpunkt («sjekkpunkt») jevnt fordelt i bildeblokka.</p>
+<p>Hver bildeblokk skal ha minimum 5 uavhengige kontrollpunkt («sjekkpunkt») jevnt fordelt i bildeblokken.</p>
 </li>
 <li>
 <p>Avvik mot uavhengige kontrollpunkt måles i sluttproduktet og dokumenteres.</p>
@@ -5663,17 +5624,17 @@ Manus og støttedata.<br></p></td>
 <div class="sect3">
 <h4 id="_middels">6.9.3. Middels</h4>
 <div class="paragraph">
-<p>AT utført på vertikalbildene slik at konstruksjon fra vertikalbildene er mulig i stereo.</p>
+<p>AT utført på vertikalbildene, slik at konstruksjon fra vertikalbildene er mulig i stereo.</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div id="krav-foto-middels-skrabilder" class="paragraph">
-<p><strong>KRAV FOTO MIDDELS SKRÅBILDER</strong></p>
+<p><strong>KRAV FOTO SKRÅBILDER KVALITETSNIVÅ MIDDELS</strong></p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Vertikalbildene skal tilfredsstille krav til vanlig vertikalbildeprosjekt. Hvis vertikalbildet har mindre enn 20000 piksler i den største retningen, så skaleres minstekravene til sammenbindingspunktene i kravet for vertikalbildene (<a href="#tab-ant-sammenbindingpkt">Tabell 10</a> og <a href="#tab-ant-stripesammenbindingpkt">Tabell 11</a>) med størrelsen på vertikalbildet, men ikke mindre enn 12 sammenbindingspunkt mellom påfølgende bilder og ikke mindre enn 4 stripesammenbindingspunkt. For eksempel et vertikalbildekamera med 15000 piksler i den største retningen så skaleres kravene med 15000/20000 = 0,75.</p>
+<p>Vertikalbildene skal tilfredsstille krav til vanlig vertikalbildeprosjekt. Hvis vertikalbildet har mindre enn 20000 piksler i den største retningen, så skaleres minstekravene til sammenbindingspunktene i kravet for vertikalbildene (<a href="#tab-ant-sammenbindingpkt">Tabell 10</a> og <a href="#tab-ant-stripesammenbindingpkt">Tabell 11</a>) med størrelsen på vertikalbildet, men ikke mindre enn 12 sammenbindingspunkt mellom påfølgende bilder og ikke mindre enn 4 stripesammenbindingspunkt. Ved for eksempel et vertikalbildekamera med 15000 piksler i den største retningen, så skaleres kravene med 15000/20000 = 0,75.</p>
 </li>
 <li>
 <p>Skråbildene trenger ikke følge krav til vanlig vertikalbildeprosjekt.</p>
@@ -5697,21 +5658,21 @@ Manus og støttedata.<br></p></td>
 <div class="exampleblock">
 <div class="content">
 <div id="krav-foto-hoy-skrabilder" class="paragraph">
-<p><strong>KRAV FOTO HØY SKRÅBILDER</strong></p>
+<p><strong>KRAV FOTO SKRÅBILDER KVALITETSNIVÅ HØY</strong></p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Vertikalbildene skal tilfredsstille krav til vanlig vertikalbildeprosjekt. Hvis vertikalbildet har mindre enn 20000 piksler i den største retningen, så skaleres minstekravene til sammenbindingspunktene i kravet for vertikalbildene (<a href="#tab-ant-sammenbindingpkt">Tabell 10</a> og <a href="#tab-ant-stripesammenbindingpkt">Tabell 11</a>) med størrelsen på vertikalbildet, men ikke mindre enn 12 sammenbindingspunkt mellom påfølgende bilder og ikke mindre enn 4 stripesammenbindingspunkt. For eksempel et vertikalbildekamera med 15000 piksler i den største retningen så skaleres kravene med 15000/20000 = 0,75.</p>
+<p>Vertikalbildene skal tilfredsstille krav til vanlig vertikalbildeprosjekt. Hvis vertikalbildet har mindre enn 20000 piksler i den største retningen, så skaleres minstekravene til sammenbindingspunktene i kravet for vertikalbildene (<a href="#tab-ant-sammenbindingpkt">Tabell 10</a> og <a href="#tab-ant-stripesammenbindingpkt">Tabell 11</a>) med størrelsen på vertikalbildet, men ikke mindre enn 12 sammenbindingspunkt mellom påfølgende bilder og ikke mindre enn 4 stripesammenbindingspunkt. Ved for eksempel et vertikalbildekamera med 15000 piksler i den største retningen, så skaleres kravene med 15000/20000 = 0,75.</p>
 </li>
 <li>
 <p>Skråbildene har ikke det samme nøyaktighetskravet som vertikalbildene, så lenge det ikke er spesifisert i sluttproduktet.</p>
 </li>
 <li>
-<p>Skråbildene må ha minst 12 sammenbindingspunkt mot neste flybilde i flystripen i en retning på kamera (høyre, venstre, fram og tilbake) og nok sammenbindingspunkt, slik at det ikke blir parallakser i stereomodellene innad i en flystripe og retning på kamera. Minstemålet skaleres etter hvor stor andel vann og skog det er i overlappsområdet, for eksempel så blir minstekravet på sammenbindingspunkt mot neste flybilde 12*(1-0,75) = 3 sammenbindingspunkt hvis overlappsområdet er dekket av 75% vann og skog.</p>
+<p>Skråbildene må ha minst 12 sammenbindingspunkt mot neste flybilde i flystripen i en retning på kamera (høyre, venstre, fram og tilbake) og ha nok sammenbindingspunkt, slik at det ikke blir parallakser i stereomodellene innad i en flystripe og retning på kamera. Minstemålet skaleres etter hvor stor andel vann og skog det er i overlappsområdet, for eksempel så blir minstekravet på sammenbindingspunkt mot neste flybilde 12*(1-0,75) = 3 sammenbindingspunkt hvis overlappsområdet er dekket av 75% vann og skog.</p>
 </li>
 <li>
-<p>Skråbildene må være bundet sammen med vertikalbildene nok til at nøyaktighetskravene til sluttproduktet overholdes. Minst 2 sammenbindingspunkt til vertikalbilder pr. skråbilde hvis det er gode forhold og overlappsområdet mellom bildene inneholder maksimalt 20% skog og vann, minst 1 sammenbindingspunkt til vertikalbilder hvis det er maksimalt 50% skog og vann i overlappsområdet mellom bildene og ingen sammenbindingspunkt til vertikalbilder hvis det er mer enn 50% skog og vann i overlappsområdet mellom bildene. Hvis det er avvik, så må det argumenteres for at orienteringen mellom skråbildene og vertikalbildene blir god nok i AT-rapporten.</p>
+<p>Skråbildene må være bundet sammen med vertikalbildene godt nok til at nøyaktighetskravene til sluttproduktet overholdes. Minst 2 sammenbindingspunkt til vertikalbilder pr. skråbilde hvis det er gode forhold og overlappsområdet mellom bildene inneholder maksimalt 20% skog og vann, minst 1 sammenbindingspunkt til vertikalbilder hvis det er maksimalt 50% skog og vann i overlappsområdet mellom bildene og ingen sammenbindingspunkt til vertikalbilder hvis det er mer enn 50% skog og vann i overlappsområdet mellom bildene. Hvis det er avvik, så må det argumenteres for at orienteringen mellom skråbildene og vertikalbildene blir god nok i AT-rapporten.</p>
 </li>
 <li>
 <p>Det skal være minst 6 eller flere sammenbindingspunkter for alle bilder. Dersom dette ikke er oppfylt for et eller flere bilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.</p>
@@ -5780,10 +5741,10 @@ Manus og støttedata.<br></p></td>
 <div class="sect4">
 <h5 id="_posisjons_og_rotasjonssystem">7.1.1.2. Posisjons- og rotasjonssystem</h5>
 <div class="paragraph">
-<p>Posisjons og rotasjonssystemet er bygd opp rundt et treghetsnavigasjonssystem også kalt “Inertial Navigation System” (INS). Systemet består av en “Inertial measurment Unit” (IMU), et eller flere “Global Navigation Satellite System” (GNSS) samt en datamaskin med tilhørende program. Programmene beregner i sanntid posisjons- og rotasjonsinformasjon som piloten kan navigere etter. I tillegg lagrer programmene alle rotasjons- og posisjonsobservasjoner. De lagrede dataene brukes til å beregne posisjon og rotasjon til laserskannerens koordinatsystem. I dette dokumentet er posisjons- og rotasjonssystemet kalt GNSS/INS System.</p>
+<p>Posisjons og rotasjonssystemet er bygd opp rundt et treghetsnavigasjonssystem også kalt “Inertial Navigation System” (INS). Systemet består av en “Inertial measurment Unit” (IMU), et eller flere “Global Navigation Satellite System” (GNSS) samt en datamaskin med tilhørende program. Programmene beregner i sanntid posisjons- og rotasjonsinformasjon som piloten kan navigere etter. I tillegg lagrer programmene alle rotasjons- og posisjonsobservasjoner. De lagrede dataene brukes til å beregne posisjon og rotasjon til laserskannerens koordinatsystem. I dette dokumentet er posisjons- og rotasjonssystemet kalt GNSS/INS-system.</p>
 </div>
 <div class="paragraph">
-<p>Ved å kombinere posisjonen og rotasjonen fra GNSS/INS systemet og de relative avstands- og vinkelmålingene fra laserskanneren får man et absolutt bestemt målepunkt på jordoverflaten.</p>
+<p>Ved å kombinere posisjonen og rotasjonen fra GNSS/INS-systemet og de relative avstands- og vinkelmålingene fra laserskanneren får man et absolutt bestemt målepunkt på jordoverflaten.</p>
 </div>
 <div class="paragraph">
 <p>Utstyret som benyttes for georeferering av dataene opererer i et globalt system basert på GNSS (WGS84/ITRF). Det er derfor behov for transformasjoner fra det globale systemet til det aktuelle lokale systemet som data skal leveres i.</p>
@@ -5791,7 +5752,7 @@ Manus og støttedata.<br></p></td>
 <div class="sect5">
 <h6 id="_stabilisert_plattform">Stabilisert plattform</h6>
 <div class="paragraph">
-<p>Fly og helikopter vil være utsatt for turbulens og for å sikre et jevnt sveip over terrengoverflaten kan laserskanneren monteres i en aktivt stabilisert plattform. Plattformen mottar rotasjonsinformasjon fra GNSS/INS systemet og vil rotere laserskanneren slik at den til enhver tid er orientert i flyets fartsretning og horisontalplan.</p>
+<p>Fly og helikopter vil være utsatt for turbulens og for å sikre et jevnt sveip over terrengoverflaten kan laserskanneren monteres i en aktivt stabilisert plattform. Plattformen mottar rotasjonsinformasjon fra GNSS/INS-systemet og vil rotere laserskanneren slik at den til enhver tid er orientert i flyets fartsretning og horisontalplan.</p>
 </div>
 </div>
 </div>
@@ -5843,7 +5804,7 @@ Fra punktskyen kan en produsere en rekke sekundærprodukter:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>GNSS/INS løsning (posisjon (Ø, N og H) og rotasjon (Pitch, Roll og Heading)).</p>
+<p>GNSS/INS-løsning (posisjon (Ø, N og H) og rotasjon (Pitch, Roll og Heading)).</p>
 </li>
 <li>
 <p>Avstands- og vinkelmåling til laserskanneren.</p>
@@ -5876,7 +5837,7 @@ Fra punktskyen kan en produsere en rekke sekundærprodukter:</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Punktskyens nøyaktighet kan beregnes ved bruk av kontrollflater og kontrollprofiler. Med dagens utstyr kan en forvente en punktnøyaktighet i størrelsesorden 0,02–0,20 m (standardavvik) i høyde.</p>
+<p>Punktskyens nøyaktighet kan beregnes ved bruk av kontrollflater og kontrollprofiler. Med dagens utstyr kan en forvente en punktnøyaktighet i størrelsesorden 0,02–0,20 meter (standardavvik) i høyde.</p>
 </div>
 </div>
 </div>
@@ -5959,7 +5920,7 @@ Fra punktskyen kan en produsere en rekke sekundærprodukter:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Avstand mellom GNSS antennens fasesenter og origo i laserskannerens referansesystem må bestemmes. Avstanden bestemmes ved landmåling, men kan også estimeres i egnet program.</p>
+<p>Avstand mellom GNSS-antennens fasesenter og origo i laserskannerens referansesystem må bestemmes. Avstanden bestemmes ved landmåling, men kan også estimeres i egnet program.</p>
 </li>
 <li>
 <p>Installasjonen må testes i luften for å verifisere at leverandørkalibreringen er stabil og av tilfredsstillende kvalitet. Dette gjelder særlig «boresight verdiene». Dersom dette ikke er tilfredsstillende må korrigerende tiltak utføres.</p>
@@ -6013,7 +5974,7 @@ Fra punktskyen kan en produsere en rekke sekundærprodukter:</p>
 <p>Ved flyplanlegging med FLS vil skanneparametere, samt flyhøyde og flyhastighet, bestemmes for det aktuelle prosjekt. Flyplanen lages ut fra oppdragets formål og forutsetninger (nøyaktighet og bestilt punktetthet), eventuelle tilgjengelige kontrollflater, forventet vegetasjonstetthet, topografi, arrondering og tilgjengelig instrument. Før utføring av laserskanning skal det leveres flyplan for oppdraget.</p>
 </div>
 <div class="paragraph">
-<p>Se <a href="#kapittel-eksempel-flyplan-laserskanning">Kapittel C.2, &#8220;Eksempel flyplan laserskanning&#8221;</a> for eksempel på en flyplan.</p>
+<p>Se <a href="#kapittel-eksempel-flyplan-laserskanning">Kapittel B.2, &#8220;Eksempel flyplan laserskanning&#8221;</a> for et eksempel på en flyplan.</p>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -6030,7 +5991,7 @@ Fra punktskyen kan en produsere en rekke sekundærprodukter:</p>
 <p>Flyplanen skal ha et lesbart bakgrunnskart med skalabar.</p>
 </li>
 <li>
-<p>Planlagte flystriper skal presenteres med dekningsområde, overlappsområde og nummerering på hver stripe. (Minste overlapp som følge av terrengvariasjoner eller turbulens skal være 5 %).</p>
+<p>Planlagte flystriper skal presenteres med dekningsområde, overlappsområde og nummerering på hver stripe. Minste overlapp som følge av terrengvariasjoner eller turbulens skal være 5 %.</p>
 </li>
 <li>
 <p>Planlagt stripeoverlapp i prosent.</p>
@@ -6154,13 +6115,13 @@ Fra punktskyen kan en produsere en rekke sekundærprodukter:</p>
 <div class="content">
 <img src="figurer/Kap7_TverrstripeVinkel.png" alt="Tverrstriper" width="400">
 </div>
-<div class="title">Figur 7. Minimum vinkel på tverrstriper</div>
+<div class="title">Figur 7. Eksempel på minste tillate vinkel på tverrstriper</div>
 </div>
 <div id="imgEnkeltstripe" class="imageblock text-center">
 <div class="content">
 <img src="figurer/Kap7_EnkeltstripeKjede.png" alt="Enkeltstripe" width="400">
 </div>
-<div class="title">Figur 8. Enkeltstriper i kjede</div>
+<div class="title">Figur 8. Eksempel på enkeltstriper i kjede</div>
 </div>
 </div>
 <div class="sect4">
@@ -6176,108 +6137,72 @@ Fra punktskyen kan en produsere en rekke sekundærprodukter:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Størrelsen på kontrollflaten er avhengig av den planlagte punkttettheten. Ved punkttetthet fra 0,5 punkt/m<sup>2</sup> til 3 punkt/m<sup>2</sup> skal størrelse på kontrollflaten være minimum 16 m<sup>2</sup>. Ved planlagt punkttettheten på 20 punkt/m<sup>2</sup> er minimumsstørrelsen 4 m<sup>2</sup>, se <a href="#tab-kontrollflate">Tabell 18</a>.</p>
-</li>
-<li>
-<p>I tilfeller hvor man ikke finner egnet lokasjon for en kvadratisk utformet kontrollflate kan det velges en rektangulær form hvor høyden halveres og størrelsen i m<sup>2</sup> blir ivaretatt. Et eksempel vil være å endre formen på kontrollflaten fra 4x4 meter til 2x8 meter.</p>
+<p>Størrelsen på kontrollflaten er avhengig av den planlagte punkttettheten, intensjonen er at hver kontrollflate inneholder minst 20 lasermålinger. Se <a href="#tab-kontrollflate">Tabell 18</a>.</p>
 </li>
 <li>
 <p>Rundt en kontrollflate skal det være 0,5 m buffersone fri for obstruksjoner.</p>
+</li>
+<li>
+<p>En kontrollflate er definert av et gitt antall landmålte punkt. Punktene skal fordeles jevnt som vist i <a href="#imgKontrollflateUnder">Figur 9</a>,  <a href="#imgKontrollflateOver">Figur 10</a> og <a href="#imgKontrollflateOver70">Figur 11</a> ut fra planlagt punkttetthet.</p>
 </li>
 </ul>
 </div>
 <table id="tab-kontrollflate" class="tableblock frame-all grid-all stretch">
 <caption class="title">Tabell 18. Minimumskrav til kontrollflatens form og størrelse</caption>
 <colgroup>
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Form Kontrollflate (m)</th>
-<th class="tableblock halign-left valign-top">Størrelse (m<sup>2</sup>)</th>
-<th class="tableblock halign-left valign-top">Antall landmålte punkt</th>
-<th class="tableblock halign-left valign-top" colspan="5">Antall lasermålinger innenfor kontrollflaten ved ulik punkttettheter</th>
+<th class="tableblock halign-center valign-top">Form Kontrollflate (m)</th>
+<th class="tableblock halign-center valign-top">Krav til antall landmålte punkt</th>
+<th class="tableblock halign-center valign-top">Planlagt punkttetthet</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0,5 pkt/m<sup>2</sup></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2 pkt/m<sup>2</sup></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3 pkt/m<sup>2</sup></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">5 pkt/m<sup>2</sup></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">70 pkt/m<sup>2</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4x4</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">25</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Fra 2 punkt/m<sup>2</sup></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4x4</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2x2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Fra 5 punkt/m<sup>2</sup></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2x8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">27</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1,5x1,5</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Fra 10 punkt/m<sup>2</sup></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2x2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">13</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">20</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0,5x0,5</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0,25</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">17</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,5x0,5</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Fra 80 punkt/m<sup>2</sup></p></td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
 <div id="imgKontrollflateUnder" class="imageblock text-center">
 <div class="content">
-<img src="figurer/Kap7_KontrollflateUnder3.png" alt="Kontrollflater under 3 punkt/m^2^" width="400">
+<img src="figurer/Kap7_KontrollflateUnder4.png" alt="Kontrollflater under 3 punkt/m^2^" width="400">
 </div>
-<div class="title">Figur 9. Kontrollflate - punkttetthet &lt; 3 punkt/m<sup>2</sup></div>
+<div class="title">Figur 9. Kontrollflate - punkttetthet fra 2 punkt/m<sup>2</sup> (Blågrønt felt viser buffersonen, røde prikker er innmålte punkt).</div>
 </div>
 <div id="imgKontrollflateOver" class="imageblock text-center">
 <div class="content">
-<img src="figurer/Kap7_KontrollflateOver3.png" alt="Kontrollflater over 3 punkt/m^2^" width="400">
+<img src="figurer/Kap7_KontrollflateOver4.png" alt="Kontrollflater over 3 punkt/m^2^" width="400">
 </div>
-<div class="title">Figur 10. Kontrollflate - punkttetthet &gt; 3 punkt/m<sup>2</sup></div>
+<div class="title">Figur 10. Kontrollflate - punkttetthet fra 5 punkt/m<sup>2</sup>(Blågrønt felt viser buffersonen, røde prikker er innmålte punkt og hvit felt er malt signal). Ved 10 punkt/m<sup>2</sup> så er avstanden 0,75 meter ikke 1 meter.</div>
 </div>
 <div id="imgKontrollflateOver70" class="imageblock text-center">
 <div class="content">
-<img src="figurer/Kap7_KontrollflateOver70.png" alt="Kontrollflater over 70 punkt/m^2^" width="250">
+<img src="figurer/Kap7_KontrollflateOver80.png" alt="Kontrollflater over 70 punkt/m^2^" width="250">
 </div>
-<div class="title">Figur 11. Kontrollflate - punkttetthet &gt; 70 punkt/m<sup>2</sup></div>
+<div class="title">Figur 11. Kontrollflate - punkttetthet fra 80 punkt/m<sup>2</sup> (Blågrønt felt viser buffersonen, røde prikker er innmålte punkt og hvit felt er malt signal).</div>
+</div>
+</div>
 </div>
 <div class="paragraph">
 <p>I kartleggingsprosjekt med både Laser og Foto kan senter av kontrollflate signaleres. Signalet skal i så fall inngå i signaleringsplan for foto.</p>
@@ -6307,13 +6232,13 @@ Fra punktskyen kan en produsere en rekke sekundærprodukter:</p>
 <p>En kontrollflates gyldighetsområde defineres med en buffer på 6 km radius fra kontrollflatens senter.</p>
 </li>
 <li>
-<p>Kontrollflater skal planlegges slik at hele prosjektområdet er dekket av kontrollflatenes gyldighetsområder. Se <a href="#imgKontrollflateGyldighet">Figur 12</a>.</p>
+<p>Kontrollflater skal planlegges slik at hele prosjektområdet er dekket av kontrollflatenes gyldighetsområder. Se <a href="#imgKontrollflateGyldighet">Figur 12</a> for et eksempel.</p>
 </li>
 <li>
-<p>Antall kontrollflater skal ikke være under et minimum på 3 flater pr. sammenhengende skanneblokk. Oppdragstaker kan slå sammen mindre områder til sammenhengende skanneblokk for å redusere behov for flater. Se <a href="#imgSammenslåingBlokk">Figur 13</a>.</p>
+<p>Antall kontrollflater skal ikke være under et minimum på 3 flater pr. sammenhengende skanneblokk. Oppdragstaker kan slå sammen mindre områder til sammenhengende skanneblokk for å redusere behov for flater. Se <a href="#imgSammenslåingBlokk">Figur 13</a> for et eksempel.</p>
 </li>
 <li>
-<p>Avvik fra antall og plassering av kontrollflater (for eksempel ved laserskanning av store områder uten infrastruktur eller mange spredte øyer) kan tillates dersom oppdragsgiver har åpnet for dette i teknisk spesifikasjon for oppdraget. I slike tilfeller skal det sørges for at korrekte GNSS-skift blir påført alle striper.</p>
+<p>Avvik fra antall og plassering av kontrollflater (for eksempel ved laserskanning av store områder uten infrastruktur eller mange spredte øyer) kan tillates dersom oppdragsgiver har åpnet for dette i teknisk spesifikasjon for oppdraget. I slike tilfeller skal det sørges for at korrekte "GNSS-shift" blir påført alle striper.</p>
 </li>
 <li>
 <p>Kontrollflatene skal plasseres på en hard flat flate (asfalt, betong, plan og hard grusveg). Som hovedregel skal kontrollflatene plasseres innenfor prosjektavgrensingen. Dersom dette ikke er praktisk mulig, plasseres kontrollflatene i umiddelbar nærhet. Uansett skal laserdata over kontrollflatene inngå i leveransen.</p>
@@ -6322,7 +6247,7 @@ Fra punktskyen kan en produsere en rekke sekundærprodukter:</p>
 <p>Maksimum helning internt i flaten skal ikke overstiger 5 %. Dersom helningen overstiger dette kan en grunnrissfeil påvirke resultatet av høydeanalyse.</p>
 </li>
 <li>
-<p>Rundt kontrollflatene skal det være en buffersone på minimum 0,5 m. Helningen på buffersonen skal ikke overskride 5 %. Dersom det ikke benyttes en buffersone rundt målt kontrollflate kan grunnrissfeil påvirke resultatet av høydeanalysen.</p>
+<p>Rundt kontrollflatene skal det være en buffersone på minimum 0,5 meter. Helningen på buffersonen skal ikke overskride 5 %. Dersom det ikke benyttes en buffersone rundt målt kontrollflate kan grunnrissfeil påvirke resultatet av høydeanalysen.</p>
 </li>
 <li>
 <p>Når kontrollflater måles inn i terrenget er det ikke krav om oppmerking av
@@ -6456,10 +6381,10 @@ målepunktene. I praksis så vil oppmerking være gunstig for å sikre at samme 
 <p>Ved mønelinjer skal det måles minimum 4 punkt på hver takflate slik at mønelinjen kan beregnes fra skjæringspunktet mellom flatene.</p>
 </li>
 <li>
-<p>Ved terrenglinjer skal det utføres minimum en måling pr. meter, total lengde bør være minimum 10m. Knekkpunkter i terrenget skal måles.</p>
+<p>Ved terrenglinjer skal det utføres minimum en måling pr. meter, total lengde bør være minimum 10 meter. Knekkpunkter i terrenget skal måles.</p>
 </li>
 <li>
-<p>Maksimal terrenghelning skal være 60 grader, og minimum terrengvariasjon i høyde på terrengprofilen skal være 2 m.</p>
+<p>Maksimal terrenghelning skal være 60 grader, og minimum terrengvariasjon i høyde på terrengprofilen skal være 2 meter.</p>
 </li>
 </ul>
 </div>
@@ -6493,7 +6418,7 @@ målepunktene. I praksis så vil oppmerking være gunstig for å sikre at samme 
 <p>Til forskjell fra flyfotografering, kan laserskanning utføres uavhengig av solvinkel og sollys. Laserskanneren er en aktiv sensor som skaper sin egen belysning av overflaten. Dette medfører at laserskanning i utgangspunktet kan utføres hele året og når som helst på døgnet. Det er likevel viktig å vurdere når på året det er ønskelig å fly med hensyn til vegetasjon og snø. Best gjennomtrengning til bakken vil oppnås før løvsprett eller etter løvfall. Dersom man ønsker å ha en god terrengmodell bør laserskanningen gjennomføres før åkrene og bunnvegetasjon i skog har kommet for langt i vekst.</p>
 </div>
 <div class="paragraph">
-<p>Laserskanning kan gjerne gjennomføres dersom det er skyer over flyet. Ved fuktighet mellom fly og bakke (snø, regn, tåke eller lavt skydekke) vil imidlertid lyset reflekteres og medføre svært få eller ingen retursignaler fra bakken. FLS bør derfor ikke gjennomføres ved slike forhold. For å unngå skjev punktfordeling og redusert nøyaktighet bør FLS heller ikke gjennomføres ved sterk vind (i flyhøyden) eller ved mye turbulens.</p>
+<p>Laserskanning kan gjerne gjennomføres dersom det er skyer over flyet. Hvis det kommer fuktighet mellom fly og bakke (snø, regn, tåke eller lavt skydekke) vil lyset reflekteres og medføre svært få eller ingen retursignaler fra bakken.</p>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -6503,13 +6428,30 @@ målepunktene. I praksis så vil oppmerking være gunstig for å sikre at samme 
 <div class="ulist">
 <ul>
 <li>
-<p>Krav til GNSS/INS sensor se <a href="#kapittel-krav-til-gnssins">Kapittel 6.3.1.2, &#8220;Krav til GNSS/INS&#8221;</a>.</p>
+<p>Krav til GNSS/INS-sensor se <a href="#kapittel-krav-til-gnssins">Kapittel 6.3.1.2, &#8220;Krav til GNSS/INS&#8221;</a>.</p>
 </li>
 <li>
-<p>Krav til GNSS/INS datafangst se <a href="#kapittel-krav-til-innsamling-av-gnssimu-data">Kapittel 6.3.2.2, &#8220;Krav til innsamling av GNSS/IMU data&#8221;</a>.</p>
+<p>Krav til GNSS/INS-datafangst se <a href="#kapittel-krav-til-innsamling-av-gnssimu-data">Kapittel 6.3.2.2, &#8220;Krav til innsamling av GNSS/IMU-data&#8221;</a>.</p>
 </li>
 <li>
 <p>Parallelle nabostriper skal som hovedregel flys i motsatt retning for å bestemme eventuelle systematiske avvik mellom stripene.</p>
+</li>
+<li>
+<p>Det skal ikke være fuktighet mellom fly og bakke (snø, regn, tåke eller lavt skydekke).</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div id="anbefaling-laser-utforing-av-laserskanning" class="paragraph">
+<p><strong>ANBEFALING LASER UTFØRING AV LASERSKANNING</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>For å unngå skjev punktfordeling og redusert nøyaktighet bør FLS ikke gjennomføres ved sterk vind (i flyhøyden) eller ved mye turbulens.</p>
 </li>
 </ul>
 </div>
@@ -6520,9 +6462,9 @@ målepunktene. I praksis så vil oppmerking være gunstig for å sikre at samme 
 <div class="sect2">
 <h3 id="_prosessering_av_georeferert_punktsky">7.3. Prosessering av georeferert punktsky</h3>
 <div class="sect3">
-<h4 id="_prosessering_av_gnssins_data">7.3.1. Prosessering av GNSS/INS data</h4>
+<h4 id="_prosessering_av_gnssins_data">7.3.1. Prosessering av GNSS/INS-data</h4>
 <div class="paragraph">
-<p>Krav til GNSS/INS prosessering for laserskanning baserer seg på krav til GNSS/INS prosessering for Fotogrammetri og det vises til relevante paragrafer i <a href="#kapittel-beregning-av-GNSSINS-data">Kapittel 6.3.3, &#8220;Beregning av GNSS/INS-data&#8221;</a>.</p>
+<p>Krav til GNSS/INS-prosessering for laserskanning baserer seg på krav til GNSS/INS-prosessering for Fotogrammetri og det vises til relevante paragrafer i <a href="#kapittel-beregning-av-GNSSINS-data">Kapittel 6.3.3, &#8220;Beregning av GNSS/INS-data&#8221;</a>.</p>
 </div>
 <div class="paragraph">
 <p>Ved avtale så er det tillatt å bruke flere sensorer (GNSS, IMU og stripejustering) enn det som er definert i dette kapittelet i posisjon- og orienteringsbestemmelse av punktskya.</p>
@@ -6619,7 +6561,7 @@ homogenitetsplott, se <a href="#krav-laser-dokumentasjon-pa-kontroll-av-punktsky
 <div class="ulist">
 <ul>
 <li>
-<p>GNSS/INS løsningen.</p>
+<p>GNSS/INS-løsningen.</p>
 </li>
 <li>
 <p>Systematisk avvik fra stripejustering.</p>
@@ -6702,9 +6644,9 @@ homogenitetsplott, se <a href="#krav-laser-dokumentasjon-pa-kontroll-av-punktsky
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Kontrollflate</th>
-<th class="tableblock halign-left valign-top">Gjennomsnitt dZ (m)</th>
-<th class="tableblock halign-left valign-top">Maksimum dZ (m)</th>
-<th class="tableblock halign-left valign-top">Minimum dZ (m)</th>
+<th class="tableblock halign-left valign-top">Gjennomsnitt dH (m)</th>
+<th class="tableblock halign-left valign-top">Maksimum dH (m)</th>
+<th class="tableblock halign-left valign-top">Minimum dH (m)</th>
 <th class="tableblock halign-left valign-top">RMS (m)</th>
 <th class="tableblock halign-left valign-top">Standardavvik (m)</th>
 </tr>
@@ -6804,7 +6746,7 @@ homogenitetsplott, se <a href="#krav-laser-dokumentasjon-pa-kontroll-av-punktsky
 <th class="tableblock halign-left valign-top">Retning (grader)</th>
 <th class="tableblock halign-left valign-top">Målt avvik (m)</th>
 <th class="tableblock halign-left valign-top">Avvik dN (m)</th>
-<th class="tableblock halign-left valign-top">Avvik dE (m)</th>
+<th class="tableblock halign-left valign-top">Avvik dØ (m)</th>
 </tr>
 </thead>
 <tbody>
@@ -6926,7 +6868,7 @@ Typiske feilkilder er:</p>
 <p>Resultat fra daglig kalibrering, stripejustering og homogenitetsplott etter matching/stripejustering.</p>
 </li>
 <li>
-<p>Homogenitetsplottet skal dokumenteres med kartbladvise georefererte TIF-filer med oppløsning 1m, med tilhørende dZ-verdi pr. piksel i meter med 2 desimaler.</p>
+<p>Homogenitetsplottet skal dokumenteres med kartbladvise georefererte TIF-filer med oppløsning 1 meter, med tilhørende dH-verdi pr. piksel i meter med 2 desimaler.</p>
 </li>
 </ul>
 </div>
@@ -6940,10 +6882,10 @@ Typiske feilkilder er:</p>
 <div class="sect2">
 <h3 id="kapittel-bearbeiding-av-laserdata-klassifisering">7.4. Bearbeiding av laserdata (klassifisering)</h3>
 <div class="paragraph">
-<p>Hvert punkt i punktskyen kan klassifiseres i separate klasser. Vanligste form for klassifisering er å klassifisere en terrengmodell ved å skille punkter som er treff på bakken fra de øvrige punktene i punktskyen. Avhengig av formålet med laserskanningen vil oppdragstakeren kunne klassifisere punktene i ulike lag, for eksempel bygninger, broer, vann, objekter 0–2 m over bakken.</p>
+<p>Hvert punkt i punktskyen kan klassifiseres i separate klasser. Vanligste form for klassifisering er å klassifisere en terrengmodell ved å skille punkter som er treff på bakken fra de øvrige punktene i punktskyen. Avhengig av formålet med laserskanningen vil oppdragstakeren kunne klassifisere punktene i ulike lag, for eksempel bygninger, broer, vann, objekter 0–2 meter over bakken.</p>
 </div>
 <div class="paragraph">
-<p>Gjeldende versjon av <a href="https://dokument.geonorge.no/produktspesifikasjoner/punktsky/1.0.3/index.html">Produktspesifikasjon Punktsky</a> detaljerer hvilke klasser som tillates.</p>
+<p>Gjeldende versjon av <a href="https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/fkb-laser">Produktspesifikasjon Punktsky</a> detaljerer hvilke klasser som tillates.</p>
 </div>
 <div class="paragraph">
 <p>For å sikre et godt sluttresultat må datasettet gjennomgå en manuell etterkontroll for å fange eventuelle feil introdusert ved kjøring av automatiske klassifiseringsrutiner.</p>
@@ -7066,7 +7008,7 @@ Typiske feilkilder er:</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dokumentasjon i henhold til krav stilt i <a href="#kapittel-kontrollflater">Kapittel 7.2.2.3, &#8220;Kontrollflater&#8221;</a>.
 Rapport fra innmåling av kontrollflater skal legges ved som vedlegg til
 prosjektrapporten. Rapporten fra innmålingen skal inneholde bilder av
-innmålte flater, gjelder ikke for hjulspormetoden.</p></td>
+innmålte flater.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Rapport innmåling kontrollprofiler</p></td>
@@ -7126,7 +7068,7 @@ Dokumentasjon i henhold til krav stilt i <a href="#kapittel-kalibrering-av-laser
 </div>
 </li>
 <li>
-<p>Beskrivelse av hvordan antenneeksentrisitet er bestemt og dokumentasjon av andre eksentrisiteter (for eksempel IMU montering)<br></p>
+<p>Beskrivelse av hvordan antenneeksentrisitet er bestemt og dokumentasjon av andre eksentrisiteter (for eksempel IMU-montering)<br></p>
 </li>
 <li>
 <p>Installasjonskalibreringer:<br>
@@ -7185,7 +7127,7 @@ Ved vanskelige forhold skal det rapporteres hvilke striper dette kan angå.</p><
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" rowspan="5"><p class="tableblock">Bearbeiding av laserdata</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GNSS/INS Beregning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GNSS/INS-beregning</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
@@ -7286,7 +7228,7 @@ Ved vanskelige forhold skal det rapporteres hvilke striper dette kan angå.</p><
 <div class="sect2">
 <h3 id="_omfang_2">8.2. Omfang</h3>
 <div class="paragraph">
-<p>Standarden omfatter mobil datafangst med laserskanner med opsjonelt kamera.</p>
+<p>Kapittelet omfatter mobil datafangst med laserskanner med opsjonelt kamera.</p>
 </div>
 </div>
 <div class="sect2">
@@ -7298,7 +7240,21 @@ Ved vanskelige forhold skal det rapporteres hvilke striper dette kan angå.</p><
 <div class="sect2">
 <h3 id="_gdpr">8.4. GDPR</h3>
 <div class="paragraph">
-<p>Laser punktsky (også fargelagt punktsky) fra mobil datafangst vil i de fleste tilfellene ikke kunne brukes til å identifisere personer eller bilskilt.  Produktet vil da ikke omfattes av <a href="https://lovdata.no/dokument/NL/lov/2018-06-15-38">GDPR-forordningen</a>. Det vil være oppdragsgivers ansvar å påse at dette gjelder for sitt prosjekt. Bildematerialet fra mobil datafangst, vil som hovedregel være omfattet av GDPR forordningen og nødvendige tiltak må utføres.</p>
+<p>Laser punktsky (også fargelagt punktsky) fra mobil datafangst vil i de fleste tilfellene ikke kunne brukes til å identifisere personer eller bilskilt. Produktet vil da ikke omfattes av <a href="https://lovdata.no/dokument/NL/lov/2018-06-15-38">GDPR-forordningen</a>. Bildematerialet fra mobil datafangst, vil som hovedregel være omfattet av GDPR forordningen og nødvendige tiltak må utføres.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div id="krav-mobil-gdpr" class="paragraph">
+<p><strong>KRAV MOBIL GDPR</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Oppdragsgiver har ansvar for å påse at GDPR følges, dersom ikke annet er avtalt. Dette avklares i samarbeid med oppdragstaker pr. prosjekt.</p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -7354,7 +7310,7 @@ Ved vanskelige forhold skal det rapporteres hvilke striper dette kan angå.</p><
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">GDPR</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Informasjon som faller inn under GDPR-forordningen.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Skal redigeres.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Informasjon som faller under GDPR skal manipuleres, slik at sluttproduktet er innenfor GDPR-forordningen.</p></td>
 </tr>
 </tbody>
 </table>
@@ -7481,15 +7437,15 @@ Ved vanskelige forhold skal det rapporteres hvilke striper dette kan angå.</p><
 <tr>
 <th class="tableblock halign-left valign-top">Kvalitetselement</th>
 <th class="tableblock halign-left valign-top">Kvalitetsmål</th>
-<th class="tableblock halign-left valign-top">Lav (cm)</th>
-<th class="tableblock halign-left valign-top">Middels (cm)</th>
-<th class="tableblock halign-left valign-top">God (cm)</th>
-<th class="tableblock halign-left valign-top">Høy (cm)</th>
+<th class="tableblock halign-center valign-top">Lav (cm)</th>
+<th class="tableblock halign-center valign-top">Middels (cm)</th>
+<th class="tableblock halign-center valign-top">God (cm)</th>
+<th class="tableblock halign-center valign-top">Høy (cm)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Absolutt stedfestingsnøyaktighet</p></td>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">Absolutt stedfestingsnøyaktighet</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Systematisk avvik</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">0 - 200</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">0 - 20</p></td>
@@ -7497,7 +7453,6 @@ Ved vanskelige forhold skal det rapporteres hvilke striper dette kan angå.</p><
 <td class="tableblock halign-center valign-top"><p class="tableblock">0 - 2</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Standardavvik</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">&lt;50</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">&lt;5</p></td>
@@ -7505,12 +7460,11 @@ Ved vanskelige forhold skal det rapporteres hvilke striper dette kan angå.</p><
 <td class="tableblock halign-center valign-top"><p class="tableblock">&lt;1</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maksimalt avvik</p></td>
-<td class="tableblock halign-center valign-top" colspan="4"><p class="tableblock">Systematisk avvik + 2 x Standardavvik</p></td>
+<td class="tableblock halign-center valign-top" colspan="4"><p class="tableblock">Systematisk avvik + 2 ganger Standardavvik</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Relativ nøyaktighet</p></td>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">Relativ nøyaktighet</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Systematisk avvik</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">0 - 200</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">0 - 10</p></td>
@@ -7518,7 +7472,6 @@ Ved vanskelige forhold skal det rapporteres hvilke striper dette kan angå.</p><
 <td class="tableblock halign-center valign-top"><p class="tableblock">0 - 2</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tilfeldig variasjon og toleranse</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">5 (+0/-5)</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">5 (+0/-5)</p></td>
@@ -7540,8 +7493,22 @@ Ved vanskelige forhold skal det rapporteres hvilke striper dette kan angå.</p><
 <div class="paragraph">
 <p>Se definisjon <a href="#termer-kontrollpunkt">Kontrollpunkt</a>.</p>
 </div>
-<div class="paragraph">
-<p>Den absolutte nøyaktighet til kjentpunktet skal være lik eller bedre enn kravet til den absolutte nøyaktigheten til punktskyen. Dersom nøyaktigheten er 1/3 av kravet, kan kontrollpunktene benyttes direkte i statestikkberegningene. Dersom nøyaktighetene til kontrollpunktene er dårligere, skal standardavviket til kjentpunktene benyttes i statestikkberegningene. Dette etter krav i standarden <a href="https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet">Geodatakvalitet</a>. Det stilles ikke konkrete krav til omfang av kjent- og kontrollpunkt, ettersom prosjektområde, GNSS-tilgjengelighet, målesystem og prosesseringsløyper har stor betydning for kvaliteten som oppnås rett fra INS. Metodikk og omfang skal være behovsstyrt og faglig begrunnet av leverandør i hvert enkelt oppdrag.</p>
+<div class="exampleblock">
+<div class="content">
+<div id="krav-mobil-kjentpunkt-og-kontrollpunkt" class="paragraph">
+<p><strong>KRAV MOBIL KJENTPUNKT OG KONTOLLPUNKT</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Den absolutte nøyaktighet til kjentpunktet skal være lik eller bedre enn kravet til den absolutte nøyaktigheten til punktskyen. Dersom nøyaktigheten er 1/3 av kravet, kan kontrollpunktene benyttes direkte i statestikkberegningene. Dersom nøyaktighetene til kontrollpunktene er dårligere, skal standardavviket til kjentpunktene benyttes i statestikkberegningene. Dette etter krav i standarden <a href="https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet">Geodatakvalitet</a>.</p>
+</li>
+<li>
+<p>Det stilles ikke konkrete krav til omfang av kjent- og kontrollpunkt, ettersom prosjektområde, GNSS-tilgjengelighet, målesystem og prosesseringsløyper har stor betydning for kvaliteten som oppnås rett fra INS. Metodikk og omfang skal være behovsstyrt og faglig begrunnet av leverandør i hvert enkelt oppdrag.</p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 <div class="sect4">
@@ -7552,8 +7519,7 @@ Ved vanskelige forhold skal det rapporteres hvilke striper dette kan angå.</p><
 <div class="ulist">
 <ul>
 <li>
-<p>Innmålte kontrollpunkt,
-Tradisjonelt innmålte kontrollpunkt er fysiske objekt som lar seg gjenfinne i punktskyen, for eksempel i form av geometri eller intensitet. Kontrollpunkt kan eksempelvis være signalerte flater, targets eller skarpe detaljer.</p>
+<p>Innmålte kontrollpunkt. Tradisjonelt innmålte kontrollpunkt er fysiske objekt som lar seg gjenfinne i punktskyen, for eksempel i form av geometri eller intensitet. Kontrollpunkt kan eksempelvis være signalerte flater, targets eller skarpe detaljer.</p>
 </li>
 <li>
 <p>Gjentatte passeringer ved mobil datafangst kan gi observasjoner/målinger av samme område. Metoden kan erstatte innmålte kontrollpunkt dersom:</p>
@@ -7685,7 +7651,7 @@ Med egenskapskvalitet i standarden <a href="https://register.geonorge.no/standar
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Klassifisering</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger krav fra <a href="#kapittel-bearbeiding-av-laserdata-klassifisering">Kapittel 7.4, &#8220;Bearbeiding av laserdata (klassifisering)&#8221;</a> samt [LASER]. Klassifisering er valgfritt og opp til det enkelte prosjekt å vurdere om relevant og derfor om det skal stilles krav til dette eller ikke.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Følger krav fra <a href="#kapittel-bearbeiding-av-laserdata-klassifisering">Kapittel 7.4, &#8220;Bearbeiding av laserdata (klassifisering)&#8221;</a> samt <a href="https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/fkb-laser">Produktspesifikasjon Punktsky</a>. Klassifisering er valgfritt og opp til det enkelte prosjekt å vurdere om relevant og derfor om det skal stilles krav til dette eller ikke.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Målemetode (fase/puls)</p></td>
@@ -7794,7 +7760,7 @@ Med egenskapskvalitet i standarden <a href="https://register.geonorge.no/standar
 <div class="sect2">
 <h3 id="_kvalitetsparametere_ved_vektorisering_fra_punktsky">9.2. Kvalitetsparametere ved vektorisering fra punktsky</h3>
 <div class="paragraph">
-<p>Oppnådd kvalitet på vektordata kartlagt fra punktsky/modell vil være påvirket av flere faktorer. Vi kan skille mellom kvalitetselementer knyttet til datagrunnlaget og kvalitetselementer i selve arbeidet med fremstilling av vektordata fra datagrunnlaget. Kvalitetselementene til datagrunnlaget følger angitte elementer gitt av datafangstmetode. Kartlegging fra bildedata følger <a href="#kapittel-kartlegging-med-fotogrammetri">Kapittel 6, <em>Kartlegging med fotogrammetri</em></a>, punktsky fra bil følger <a href="#kapittel-kartlegging-med-mobil-datafangst">Kapittel 8, <em>Kartlegging med mobil datafangst</em></a> og punktsky fra luftbøren sensor følger <a href="#kapittel-kartlegging-med-flybåren-laserskanning">Kapittel 7, <em>Kartlegging med flybåren laserskanning</em></a></p>
+<p>Oppnådd kvalitet på vektordata kartlagt fra punktsky/modell vil være påvirket av flere faktorer. Vi kan skille mellom kvalitetselementer knyttet til datagrunnlaget og kvalitetselementer i selve arbeidet med fremstilling av vektordata fra datagrunnlaget. Kvalitetselementene til datagrunnlaget følger angitte elementer gitt av datafangstmetode. Kartlegging fra bildedata følger <a href="#kapittel-kartlegging-med-fotogrammetri">Kapittel 6, <em>Kartlegging med fotogrammetri</em></a>, punktsky fra bil følger <a href="#kapittel-kartlegging-med-mobil-datafangst">Kapittel 8, <em>Kartlegging med mobil datafangst</em></a> og punktsky fra luftbåren sensor følger <a href="#kapittel-kartlegging-med-flybåren-laserskanning">Kapittel 7, <em>Kartlegging med flybåren laserskanning</em></a></p>
 </div>
 <div class="paragraph">
 <p>Kvalitetselementer i datagrunnlaget:</p>
@@ -7885,10 +7851,11 @@ Samsvaret bør vurderes basert på senter av punktskyens «målestøy» da dette
 </li>
 </ul>
 </div>
-<div class="stemblock">
+<div id="imgFormel3" class="imageblock text-center">
 <div class="content">
-\$Krav &gt; sqrt(Nøyaktighet^2  + ("Største feil vektorisering")^2\$
+<img src="figurer/Formel_3.png" alt="Kvalitetskrav">
 </div>
+<div class="title">Formel 3: Kvalitetskrav</div>
 </div>
 </div>
 </div>
@@ -7903,7 +7870,7 @@ Samsvaret bør vurderes basert på senter av punktskyens «målestøy» da dette
 <div class="ulist">
 <ul>
 <li>
-<p>Krav til fullstendighet vil følge av krav i aktuell produktspesifikasjon.</p>
+<p>Krav til fullstendighet skal følge krav i aktuell produktspesifikasjon.</p>
 </li>
 </ul>
 </div>
@@ -7925,7 +7892,7 @@ Samsvaret bør vurderes basert på senter av punktskyens «målestøy» da dette
 <div class="sect3">
 <h4 id="_egnethet_av_vektorisering_til_fremstilling_av_vektordata">9.4.1. Egnethet av vektorisering til fremstilling av vektordata</h4>
 <div class="paragraph">
-<p>Ulike typer av punktsky kan benyttes som grunnlag for vektorisering av FKB-datasett, avhengig av hvilken objekttype og hvilke kvalitetskrav som gjelder. Valg av datasett og metode har stor betydning for nøyaktigheten og detaljnivået på resultatet, og det er derfor viktig å vurdere egnetheten for hvert enkelt formål. <a href="#tab-anbefalte-punktskydatasett-for-vektorisering">Tabell 28</a> gir eksempler på punktsky/modell som egner seg for vektorisering av ulike relevante datasett, sammen med kommentarer om relevante metoder og eventuelle begrensninger. Eksemplene vil endre seg i takt med teknologiutviklingen.</p>
+<p>Ulike typer av punktsky kan benyttes som grunnlag for vektorisering av FKB-datasett, avhengig av hvilken objekttype og hvilke kvalitetskrav som gjelder. Valg av datasett og metode har stor betydning for nøyaktigheten og detaljnivået på resultatet, og det er derfor viktig å vurdere egnetheten for hvert enkelt formål. <a href="#tab-anbefalte-punktskydatasett-for-vektorisering">Tabell 28</a> gir eksempler på punktsky/modell som egner seg for vektorisering av ulike relevante datasett, sammen med kommentarer om relevante metoder og eventuelle begrensninger. Eksemplene vil endre seg i takt med teknologiutviklingen og produktspesifikasjonene.</p>
 </div>
 <table id="tab-anbefalte-punktskydatasett-for-vektorisering" class="tableblock frame-all grid-all stretch">
 <caption class="title">Tabell 28. Eksempler på datasett egnethet for vektorisering fra punktsky/modell</caption>
@@ -7984,7 +7951,58 @@ Punktsky fra drone (ved laserskanning</p></td>
 </div>
 <div class="sect3">
 <h4 id="_regneeksempel">9.4.2. Regneeksempel</h4>
+<div class="paragraph">
+<p>Hensiktikten med regneeksempelet er å vise en praktisk bruk av Formel 3: Kvalitetskrav. Formelen består av to komponenter nøyaktighet og største feil vektorisering. I det følgende gis et eksempel på en praktisk anvendelse av de to komponentene. For å beregne parameterne tas det som hovedregel hensyn til kravet i produktbestillingen, men det er også anledning til å ta utgangspunkt i oppnådd nøyaktighet der mengden kontrollpunkt/kontrollmetodikk gir et sannferdig bilde av nøyaktigheten. I det følgende regneeksempelet tas det utgangspunkt i bestilt nøyaktighet.</p>
+</div>
+<div class="sect4">
+<h5 id="_komponent_nøyaktighet">9.4.2.1. Komponent Nøyaktighet</h5>
+<div class="paragraph">
+<p>I eksempelet defineres nøyaktighet som punktskyens eller modellens nøyaktighet. Den er gitt ved feilforplantning og  Formel 4, hvor μ er systematisk avvik og  σ= standardavvik.</p>
+</div>
+<div id="imgFormel4" class="imageblock text-center">
+<div class="content">
+<img src="figurer/kap9_feilforplantning2.png" alt="Feilforplantning">
+</div>
+<div class="title">Formel 4: Feilforplantning</div>
+</div>
+<div class="paragraph">
+<p>Eksempelet tar utgangspunkt i vektorisering av to dimensjonale objekter fra laser punktsky i kategori "Høy" definert i <strong>[Punktsky]</strong>. Det tas derfor utgangspunkt i den horisontale nøyaktigheten. Dette gir at den horisontale systematiske avviket er 0.15 m og det horisontale standardavviket er 0.05 m.</p>
+</div>
+<div class="paragraph">
+<p>Tilsvarende utregning vil gjelde dersom en benytter en bildematachet punktsky, men det må da legges til en faktor fra selve bildematchingen, se Formel 5.</p>
+</div>
+<div id="imgFormel5" class="imageblock text-center">
+<div class="content">
+<img src="figurer/kap9_feilforplantning_bildematching2.png" alt="feilforplantning ved bildematching">
+</div>
+<div class="title">Formel 5: feilforplantning ved bildematching</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_komponent_største_feil_vektorisering">9.4.2.2. Komponent Største feil vektorisering</h5>
+<div class="paragraph">
+<p>Komponenten størst feil vektorisering kan også kalles digitaliseringspresisjonen. Den består av de to hovedmomentene pilhøyden og oppløsning til punktsky/modell. I dette eksempelet er det antatt at oppløsningen har størst betydning. Et viktig prinsipp er at modellen/punktskyen har god nok oppløsning og kvalitet til å skille objektene fra hverandre.</p>
+</div>
+<div class="paragraph">
+<p>For laser punktsky i kategori "Høy" <strong>[Punktsky]</strong> (tabell 2) er oppløsning definert som maksimal avstand mellom punktene og angitt til 0.32 m. Alternativ til å benytte «maksimal punktavstand» i tabell 2 er å benytte den faktiske maksimale punktavstanden innenfor digitaliseringsområdet.</p>
+</div>
+<div class="paragraph">
+<p>For bildematchet punktsky gjelder gridavstanden som er benyttet i genereringen av den bildematchede punktskyen. For vektorisering direkte på vanlig ortofoto, sant ortofoto og 3D ortofoto benyttes ground resolved distance (GRD). Denne verdien angir minsteavstanden mellom objekter som er mulig å skille fra hverandre. For optiske datakilder settes denne lik en generell verdi: 1,5 x GSD. Det er viktig å merke seg at vektorisering kun kan utføres hvor rektifiseringsprosessen har benyttet riktig høydeverdier. Dette betyr at for et vanlig ortofoto kan en kun vektorisere objekter som er lokalisert på terrengmodellen.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_anvendelse_av_formel_3_kvalitetskrav">9.4.2.3. Anvendelse av Formel 3: Kvalitetskrav</h5>
+<div class="paragraph">
+<p>Regneeksempel for digitalisering fra en laser punktsky kategori "Høy":</p>
+</div>
+<div id="imgFormel5" class="imageblock text-center">
+<div class="content">
+<img src="figurer/kap9_feilforplantning_regneeksempel.png" alt="Feilforplantning regneeksempel">
+</div>
+<div class="title">Feilforplantning regneeksempel: Laser punktsky katergori "Høy"</div>
+</div>
 <div style="page-break-after: always;"></div>
+</div>
 </div>
 </div>
 </div>
@@ -8248,31 +8266,7 @@ etablering og drift av kommunens kartgrunnlag i henhold til kapittelet om kartve
 </div>
 </div>
 <div class="sect1">
-<h2 id="kapittel-vedlegg-a-informativt-solhøydetabell">Vedlegg A: (informativt) - Solhøydetabell</h2>
-<div class="sectionbody">
-<div id="imgSolhøyde1" class="imageblock text-center">
-<div class="content">
-<img src="figurer/App_Solhøyde1.jpg" alt="Solhøyde1" width="800">
-</div>
-</div>
-<div id="imgSolhøyde2" class="imageblock text-center">
-<div class="content">
-<img src="figurer/App_solhøyde2.png" alt="Solhøyde2" width="800">
-</div>
-</div>
-<div id="imgSolhøyde3" class="imageblock text-center">
-<div class="content">
-<img src="figurer/App_solhøyde3.png" alt="Solhøyde3" width="800">
-</div>
-</div>
-<div class="paragraph">
-<p>Eksempel: Man søker solhøyden 60<sup>o</sup> nord den 7. september klokken 11.00. Av Datotabellen får man bokstaven H for 7. september, nordlig halvkule. For 60<sup>o</sup> nord, bokstav H og klokkeslett 11.00, får man da en solhøyde lik 35<sup>o</sup>.</p>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="kapittel-vedlegg-b-informativt-valg-av-bildeoppløsning-gsd">Vedlegg B: (informativt) - Valg av bildeoppløsning (GSD)</h2>
+<h2 id="kapittel-vedlegg-b-informativt-valg-av-bildeoppløsning-gsd">Vedlegg A: (informativt) - Valg av bildeoppløsning (GSD)</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Bildeoppløsning (GSD) bestemmer hvilken kvalitet som kan forventes ved kartkonstruksjon (jamfør Produktspesifikasjon FKB), aerotriangulering, fremstilling av DTM eller ortofoto og så videre. Bildeoppløsningen må være god nok til at kartkonstruktøren kan identifisere alle objektene som skal konstrueres, og til at nøyaktigheten blir som forutsatt.</p>
@@ -8373,10 +8367,10 @@ mindre grøfter mistes helt</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="kapittel-vedlegg-c-eksempel-fly-og-signaleringsplaner">Vedlegg C: Eksempel fly- og signaleringsplaner</h2>
+<h2 id="kapittel-vedlegg-c-eksempel-fly-og-signaleringsplaner">Vedlegg B: Eksempel fly- og signaleringsplaner</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_eksempel_fly_og_signaleringsplan_foto">C.1. Eksempel fly- og signaleringsplan (foto)</h3>
+<h3 id="_eksempel_fly_og_signaleringsplan_foto">B.1. Eksempel fly- og signaleringsplan (foto)</h3>
 <div id="imgFlyplan" class="imageblock text-center">
 <div class="content">
 <img src="figurer/App_flyplan.png" alt="Flyplan" width="800">
@@ -8384,7 +8378,7 @@ mindre grøfter mistes helt</p></td>
 </div>
 </div>
 <div class="sect2">
-<h3 id="kapittel-eksempel-flyplan-laserskanning">C.2. Eksempel flyplan laserskanning</h3>
+<h3 id="kapittel-eksempel-flyplan-laserskanning">B.2. Eksempel flyplan laserskanning</h3>
 <div id="imgSkanneplan" class="imageblock text-center">
 <div class="content">
 <img src="figurer/App_skanneplan.png" alt="Skanneplan" width="800">
@@ -8395,7 +8389,7 @@ mindre grøfter mistes helt</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="kapittel-vedlegg-d-liste-over-krav">Vedlegg D: Liste over krav</h2>
+<h2 id="kapittel-vedlegg-d-liste-over-krav">Vedlegg C: Liste over krav</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a href="#krav-landmaling-referanserammer-transformasjoner">Krav landmåling referanserammer og transformasjoner</a><br>
@@ -8423,7 +8417,7 @@ mindre grøfter mistes helt</p></td>
 <a href="#krav-foto-observasjonsvekting-parametere-og-ukjente">Krav foto observasjonsvektig, parametere og ukjente</a><br>
 <a href="#krav-foto-selvkalibrering">Krav foto selvkalibrering</a><br>
 <a href="#krav-foto-at-beregninger-og-resultat">Krav foto AT-beregninger og -resultat</a><br>
-<a href="#krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringa">Krav foto kontrollmåling i DFA av aerotrianguleringa</a><br>
+<a href="#krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringen">Krav foto kontrollmåling i DFA av aerotrianguleringrn</a><br>
 <a href="#krav-foto-rapportering-aerotriangulering">Krav foto rapportering aerotriangulering</a><br>
 <a href="#krav-foto-konstruksjon">Krav foto konstruksjon</a><br>
 <a href="#krav-foto-logisk-konsistens">Krav foto logisk konsistens</a><br>
@@ -8444,10 +8438,10 @@ mindre grøfter mistes helt</p></td>
 <a href="#krav-foto-signalering-i-droneprosjekt">Krav foto signalering i droneprosjekt</a><br>
 <a href="#krav-foto-flyplan-i-droneprosjekt">Krav foto flyplan i droneprosjekt</a><br>
 <a href="#krav-foto-flyfotografering-i-droneprosjekt">Krav foto flyfotografering i droneprosjekt</a><br>
-<a href="#krav-foto-minimum-skrabilder">Krav foto minimum skråbilder</a><br>
-<a href="#krav-foto-lav-skrabilder">Krav foto lav skråbilder</a><br>
-<a href="#krav-foto-middels-skrabilder">Krav foto middels skråbilder</a><br>
-<a href="#krav-foto-hoy-skrabilder">Krav foto høy skråbilder</a><br>
+<a href="#krav-foto-minimum-skrabilder">Krav foto skråbilder kvalitetsnivå minimum</a><br>
+<a href="#krav-foto-lav-skrabilder">Krav foto skråbilder kvalitetsnivå lav</a><br>
+<a href="#krav-foto-middels-skrabilder">Krav foto skråbilder kvalitetsnivå middels</a><br>
+<a href="#krav-foto-hoy-skrabilder">Krav foto skråbilder kvalitetsnivå høy</a><br>
 <a href="#krav-laser-referanserammer-transformasjoner">Krav laser referanserammer og transformasjoner</a><br>
 <a href="#krav-laser-leverandørkalibrering">Krav laser leverandørkalibrering</a><br>
 <a href="#krav-laser-installasjonskalibrering">Krav laser installasjonskalibrering</a><br>
@@ -8475,7 +8469,9 @@ mindre grøfter mistes helt</p></td>
 <a href="#krav-laser-klassifisering">Krav laser klassifisering</a><br>
 <a href="#krav-laser-rapportering-laserskanning">Krav laser rapportering laserskanning</a><br>
 <a href="#krav-mobil-referanserammer-transformasjoner">Krav mobil referanserammer og transformasjoner</a><br>
+<a href="#krav-mobil-gdpr">Krav mobil GDPR</a><br>
 <a href="#krav-mobil-stedfestingsnøyaktighet-ved-mobil-datafangst">Krav mobil stedfestingsnøyaktighet ved mobil datafangst</a><br>
+<a href="#krav-mobil-kjentpunkt-og-kontrollpunkt">Krav mobil kjentpunkt og kontrollpunkt</a><br>
 <a href="#krav-mobil-dokumentasjon-av-mobil-datafangst">Krav mobil dokumentasjon av mobil datafangst</a><br>
 <a href="#krav-vektor-geometrisk-avvik-og-tverravvik-pilhøyde">Krav vektor geometrisk avvik og tverravvik/pilhøyde</a><br>
 <a href="#krav-vektor-fullstendighet">Krav vektor fullstendighet</a><br></p>
@@ -8484,7 +8480,7 @@ mindre grøfter mistes helt</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="kapittel-vedlegg-e-liste-over-anbefalinger">Vedlegg E: Liste over anbefalinger</h2>
+<h2 id="kapittel-vedlegg-e-liste-over-anbefalinger">Vedlegg D: Liste over anbefalinger</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a href="#anbefaling-foto-signalstørrelser">Anbefaling foto signalstørrelser</a><br>
@@ -8492,8 +8488,9 @@ mindre grøfter mistes helt</p></td>
 <a href="#anbefaling-foto-drone-kartkonstruksjon-i-stereo">Anbefaling foto kartkonstruksjon i stereo fra dronebilder</a><br>
 <a href="#anbefaling-foto-signalering-i-droneprosjekter">Anbefaling foto signalering i droneprosjekter</a><br>
 <a href="#anbefaling-foto-drone-detaljerte-prosjekter">Anbefaling foto flyplan i droneprosjekter</a><br>
-<a href="#anbefaling-foto-skråbilder-minimum">Anbefaling foto minimum skråbilder</a><br>
+<a href="#anbefaling-foto-skråbilder-minimum">Anbefaling foto skråbilder kvalitetsnivå minimum</a><br>
 <a href="#anbefaling-laser-tverrstriper">Anbefaling laser tverrstriper</a><br>
+<a href="#anbefaling-laser-utforing-av-laserskanning">Anbefaling laser utføring av laserskanning</a><br>
 <a href="#anbefaling-mobil-fargelegging-av-punktsky">Anbefaling mobil fargelegging av punktsky</a><br></p>
 </div>
 <div style="page-break-after: always;"></div>
@@ -8556,7 +8553,7 @@ av denne lisensen og ikke kan viderebrukes</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-04-17 12:28:54 +0200
+Last updated 2026-06-05 12:13:47 +0200
 </div>
 </div>
 <script type="text/x-mathjax-config">
