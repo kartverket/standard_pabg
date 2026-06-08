@@ -3,26 +3,34 @@
 === Normative referanser
 
 [#FKB]
-*[FKB]*	: https://sosi.geonorge.no/standarder/FKB_generell_del/[SOSI abstrakte spesifikasjoner – FKB generell del 5.0]
+*[FKB]*: https://sosi.geonorge.no/standarder/FKB_generell_del/[SOSI abstrakte spesifikasjoner – FKB generell del 5.0]
 
 [#G]
-*[G]* : https://standarder.geonorge.no/sosi/standarder-geografisk-informasjon/geodatakvalitet/1.0/geodatakvalitet-10-standarder-geografisk-informasjon.pdf[Geodatakvalitet, versjon 1.0 2015]
+*[G]*: https://standarder.geonorge.no/sosi/standarder-geografisk-informasjon/geodatakvalitet/1.0/geodatakvalitet-10-standarder-geografisk-informasjon.pdf[Geodatakvalitet, versjon 1.0 2015]
 
 [#GN]
-*[GN]* : https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/grunnlagsnett-1.1-standarder-geografisk-informasjon.pdf[Grunnlagsnett, versjon 1.1 2009]
+*[GN]*: https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/grunnlagsnett-1.1-standarder-geografisk-informasjon.pdf[Grunnlagsnett, versjon 1.1 2009]
 
 [#SAT]
-*[SAT]* : https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/satellittbasert-posisjonsbestemmelse[Satellittbasert posisjonsbestemmelse, versjon 2.1 2009]
+*[SAT]*: https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/satellittbasert-posisjonsbestemmelse[Satellittbasert posisjonsbestemmelse, versjon 2.1 2009]
 
 [#GG]
-*[GG]* : https://sosi.geonorge.no/standarder/Geodetisk_grunnlag_-_koordinatbaserte_referansesystemer_og_kvalitetssikring_av_grunnlagspunkt/1.0/[Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt]
+*[GG]*: https://sosi.geonorge.no/standarder/Geodetisk_grunnlag_-_koordinatbaserte_referansesystemer_og_kvalitetssikring_av_grunnlagspunkt/1.0/[Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt]
 
 [#Punktsky]
 *[Punktsky]* : https://dokument.geonorge.no/produktspesifikasjoner/punktsky/1.0.3/index.html[Produktspesifikasjon Punktsky]
 
+[#Batymetri]
+*[Batymetri]*: https://github.com/kartverket/ALB_Best_Practice_Manual[Airborne LiDAR Bathymetry - Best Practice Manual]
 
 [#POF]
-*[POF]*	: https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/digitale-ortofoto[Produktspesifikasjon Ortofoto, versjon 5.0 2020] 
+*[POF]*: https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/digitale-ortofoto[Produktspesifikasjon Ortofoto, versjon 5.0 2020] 
+
+[#PV]
+*[PV]*: https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/vertikalbilde[Produktspesifikasjon Vertikalbilde, versjon 2.2 2017]
+
+[#GK]
+*[GK]*: https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet[Geodatakvalitet]
 
 
 <<GN>> er erstattet av en ny standard <<GG>>. 
