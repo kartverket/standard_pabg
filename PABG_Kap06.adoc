@@ -82,7 +82,7 @@ image::figurer/Formel_2.png["Radius til Siemensstjerne",align="center"]
 
 Fargenøyaktighet kan måles ved å måle fargen på naturlige eller kunstige fargereferanser innad i prosjektområdet. Fargereferansen bør ha en homogen farge, tilnærmet horisontal og ha en størrelse som sikrer 3x3 piksler som kun er påvirket av fargereferansens farge og ikke omliggende flater. For pansharpenings systemer med forhold 1:3 bør da fargereferanse ha en størrelse på 9x9 piksler. Tilsvarende for bayer pattern systemer bør størrelsen være 6x6 piksler. 
 
-For å kunne benytte fargereferansene må fargen måles med et fargespektrometer. Det måles da i forhold til en referanselyskilde og observasjonsvinkel definert av «International Commission on Illumination». Referanselyskilden bør være D65 som tilsvarer midlere dagslys med en fargetemperatur på ca. 6504 kelvin og observasjonsvinkel bør være 10°. Observasjonsvinkelen refereres til øyets observasjonsvinkel. For å få et varmere fargeuttrykk kan en alternativt benytte D50 med fargetemperatur på ca. 5003 kelvin. Det anbefales at feltmålinger leveres i ulike formateringer som RGB, CIEXYZ, CIELAB med fargetemperatur D50 og D65.
+For å kunne benytte fargereferansene må fargen måles med et fargespektrometer. Det måles da i forhold til en referanselyskilde og observasjonsvinkel definert av "International Commission on Illumination". Referanselyskilden bør være D65 som tilsvarer midlere dagslys med en fargetemperatur på ca. 6504 kelvin og observasjonsvinkel bør være 10°. Observasjonsvinkelen refereres til øyets observasjonsvinkel. For å få et varmere fargeuttrykk kan en alternativt benytte D50 med fargetemperatur på ca. 5003 kelvin. Det anbefales at feltmålinger leveres i ulike formateringer som RGB, CIEXYZ, CIELAB med fargetemperatur D50 og D65.
 
 Målt farger og korresponderende fargereferanser i bildet sammenlignes i fargerommet CIELAB, hvor avstanden mellom dem beregnes. Denne avstanden kalles ofte ∆E. Når ∆E verdien er under 1 er det vanskelig å se forskjell på fargene. Farger med ∆E verdier over 2 er lette å se forskjell på. Når en beregner ∆E kan en gjøre dette i 2 eller 3 dimensjoner. Dersom en benytter 2 dimensjoner ser en kun på CIELAB (a*b) som uttrykker selve fargen. Ved å inkludere 3 dimensjoner CIELAB (L*a*b) vil fargens lysstyrke også bli evaluert. Dersom dette gjøres må feltmålingene utføres med riktig kalibrert lysstyrke. 
 
@@ -237,7 +237,7 @@ Dette kapittelet angir krav og retningslinjer til signalering av kjentpunkter fo
 ==== Lovhjemmel for markarbeider - Matrikkellova
 Tillatelse til utsetting av fastmerker og signaler og rydding for sikt ved offentlige kart- og oppmålingsarbeider er hjemlet i Matrikkellova, §41 _Rett til å utføre oppmålingsarbeid på offentleg og privat grunn._
 
-Bestemmelsene i §43 om plikt til varsling av grunneiere og brukere skal ivaretas: _«Før oppmålingsarbeid blir sett i verk, skal alle som arbeidet vedkjem, få varsel på ein etter forholda formålstenlig måte. Departementet kan gi forskrift om varsling.»_.
+Bestemmelsene i §43 om plikt til varsling av grunneiere og brukere skal ivaretas: _"Før oppmålingsarbeid blir sett i verk, skal alle som arbeidet vedkjem, få varsel på ein etter forholda formålstenlig måte. Departementet kan gi forskrift om varsling."_.
 
 Under målearbeider skal det utvises forsiktighet slik at arbeidet fører til minst mulig skade og ulempe for grunneier eller bruker.
 
@@ -412,7 +412,7 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 
 * Utstyr og metode som velges skal kunne gi en kvalitet på resultatet som, sett i sammenheng med andre innsatsfaktorer, er tilstrekkelig for å oppfylle krav til sluttprodukt i de enkelte prosjekt. 
 
-* Ved oppstarten av en ny fotosesong, skal det utføres en «boresight»-kalibrering for å bestemme avviket i orientering mellom IMU og kamera. Til dette skal det utføres en egen fotografering med tilstrekkelig geometrisk styrke (stor sideoverdekning og alternerende og kryssende striperetninger) for sikker bestemmelse av kalibreringen. Kalibreringsverdiene skal bestemmes ved hjelp av aerotriangulering. Denne fotograferingen skal også tjene som en funksjonstest av kamerautstyret, og dataene skal brukes til å kontrollere at visuell kvalitet i bildene er som forventet. Dersom IMU-en har vært fjernet fra kameraet, eller dersom andre forhold tilsier at dette er nødvendig, skal ny «boresight»-kalibrering utføres.
+* Ved oppstarten av en ny fotosesong, skal det utføres en "boresight"-kalibrering for å bestemme avviket i orientering mellom IMU og kamera. Til dette skal det utføres en egen fotografering med tilstrekkelig geometrisk styrke (stor sideoverdekning og alternerende og kryssende striperetninger) for sikker bestemmelse av kalibreringen. Kalibreringsverdiene skal bestemmes ved hjelp av aerotriangulering. Denne fotograferingen skal også tjene som en funksjonstest av kamerautstyret, og dataene skal brukes til å kontrollere at visuell kvalitet i bildene er som forventet. Dersom IMU-en har vært fjernet fra kameraet, eller dersom andre forhold tilsier at dette er nødvendig, skal ny "boresight"-kalibrering utføres.
 ====
 
 
@@ -558,12 +558,12 @@ Samtidig georeferering av flere sensorplattformer som flybildekamera og laserska
 
 ** Korrigeres for eksentrisiteter mellom IMU, GNSS-antenne(r), og projeksjonssenter, også når disse ikke er konstante.
 ** Korrigeres for GNSS-antennen(e)s fasesentereksentrisitet og fasesentervariasjoner. 
-** Korrigeres for vinkelavvik mellom INS-koordinatsystem og kamerakoordinatsystem («boresight misalignment»).
+** Korrigeres for vinkelavvik mellom INS-koordinatsystem og kamerakoordinatsystem ("boresight misalignment").
 * Fil med ytre orienteringsparametere skal minimum inneholde:
 ** En header som inneholder informasjon om:
 *** Koordinat- og høydesystem for ytre orienteringsparameterne.
 *** Definisjon av rotasjonsrekkefølgen og vinkelenhet for rotasjonene (Omega, Phi og Kappa).
-*** «Boresight misalignment»-vinklene.
+*** "Boresight misalignment"-vinklene.
 *** Beskrivelse av data-kolonnene i fila.
 
 ** En linje pr. bilde, som inneholder minimum: 
@@ -593,7 +593,7 @@ Kravene til dokumentasjon fra beregningen er listet opp i avsnittet om egenkontr
 * Dersom en stripe må skjøtes, og fortsettelse av fotograferingen ble gjort på et senere tidspunkt slik at lys/skygge- og eventuelle overflateforhold er endret, skal stripeseksjonene i det endelige bildesettet overlappe hverandre slik at de hver for seg har stereodekning over stripebruddet.
 * Ved sammensetting av det endelige bildesettet i prosjekt der det finnes overlappende versjoner av bilder, skal overskytende bilder fjernes. Fragmentering av striper eller områder på grunn av fotografering over flere dager skal reduseres til et minimum.
 * Filnavn på bilder skal som hovedregel være på formen _Dekningsnr_Stripenr_Bildenr_Kameraløpenr_ og alle representasjoner av bildene skal benytte/vise til samme filnavn (for eksempel i GNSS/INS-filer, i aerotrianguleringen og i ortofotoproduksjonen).
-* I stripeskjøter skal navnet på de overlappende bildene skilles med suffiks «_2» i bildenummeret for de senest fotograferte bildene hvis ikke annen informasjon skiller bildene, slik som telleverksnummer.
+* I stripeskjøter skal navnet på de overlappende bildene skilles med suffiks "_2" i bildenummeret for de senest fotograferte bildene hvis ikke annen informasjon skiller bildene, slik som telleverksnummer.
 ====
 
 [[kapittel-egenkontroll-og-rapportering-fotorapport]]
@@ -666,7 +666,7 @@ a| * Omega og Phi:
 ** Gjennomsnittlige kamerarotasjoner.
 ** Maksimalt avvik fra vertikal.
 
-* Kappa («crab»):
+* Kappa ("crab"):
 ** Systematisk avvik fra planlagt flyretning.
 ** Maksimal rotasjonsendring mellom to påfølgende bilder.
 |Flyhøyde|Systematisk og maksimalt avvik fra planlagt flyhøyde, pr. stripe (planlagt minus reell).
@@ -1317,7 +1317,7 @@ Målsetning: Innlegging i norgeibilder.no.
 * Bildene må aerotrianguleres i egnet programvare. AT-rapport krav: <<krav-foto-rapportering-aerotriangulering>>, men måling i stereo (DFA) er ikke nødvendig.
 * Beregningsrapporten fra prosesseringsprogramvaren må leveres og er en del av dokumentasjonen av kvaliteten til prosjektet. 
 * Kjentpunkter er nødvendig og antallet skal være tilstrekkelig til å oppnå ønsket nøyaktighet.
-* Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt («sjekkpunkter»). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktighetskrav for innmåling av kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.
+* Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt ("sjekkpunkter"). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktighetskrav for innmåling av kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.
 * Ortofotorapport: <<krav-foto-rapportering-ortofoto>>
 * Personopplysningsloven skal følges (inkluder GDPR).
 ====
@@ -1330,7 +1330,7 @@ Målsetning: Innlegging i norgeibilder.no.
 * Følge krav til gjeldene ortofotostandard.
 * Beregningsrapporten fra prosesseringsprogramvaren må leveres og er en del av dokumentasjonen av kvaliteten til prosjektet, men full AT-rapport er ikke nødvendig. 
 * Kjentpunkter er ikke nødvendig.
-* Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt («sjekkpunkter»). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktighetskrav for innmåling av kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.
+* Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt ("sjekkpunkter"). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktighetskrav for innmåling av kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.
 * Ortofotorapport: <<krav-foto-rapportering-ortofoto>>
 * Personopplysningsloven skal følges (inkluder GDPR).
 ====
@@ -1412,7 +1412,7 @@ Målsetning: Konstruksjon fra flybiler i en Digital Fotogrammetrisk Arbeidsstasj
 * Helst en stabil plattform, slik at det lite vinkelforskjell mellom flybildene i stereomodellen, for å få gode stereomodeller. Modeller med store vinkelforskjeller mellom flybildene er tyngre å arbeide på.
 * Enkeltbildene bør dekke et tilstrekkelig stort område slik at konstruksjonen blir effektiv.
 * God kvalitet på kamera og linse. 
-* Bruk helst ikke de ytterste 10% av bildene under konstruksjon.
+* Bruk helst ikke de ytterste 10 % av bildene under konstruksjon.
 
 ====
 
@@ -1560,7 +1560,7 @@ Forenklet aerotriangulering til ortofotoproduksjon og følger ikke kravet til ae
 
 * Trenger ikke å følge kravene til aerotriangulering av vertikalbilder.
 * Prosjektet må ha nok signalerte/naturlige kjentpunkt til å være innenfor stedfestingsnøyaktigheten til ortofotoet.
-* Hver bildeblokk skal ha minimum 5 uavhengige kontrollpunkt («sjekkpunkt») jevnt fordelt i bildeblokken.
+* Hver bildeblokk skal ha minimum 5 uavhengige kontrollpunkt ("sjekkpunkt") jevnt fordelt i bildeblokken.
 * Avvik mot uavhengige kontrollpunkt måles i sluttproduktet og dokumenteres.
 * Prosjektet må ha tilstrekkelig med sammenbindingspunkter for å oppnå tilstrekkelig nøyaktighet på ortofotoet.
 * Det skal være minst 6 eller flere sammenbindingspunkter for alle vertikalbilder. Dersom dette ikke er oppfylt for et eller flere vertikalbilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.
