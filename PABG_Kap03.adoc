@@ -18,7 +18,7 @@
 *[GG]*: https://sosi.geonorge.no/standarder/Geodetisk_grunnlag_-_koordinatbaserte_referansesystemer_og_kvalitetssikring_av_grunnlagspunkt/1.0/[Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt]
 
 [#Punktsky]
-*[Punktsky]* : https://dokument.geonorge.no/produktspesifikasjoner/punktsky/1.0.3/index.html[Produktspesifikasjon Punktsky]
+*[Punktsky]*: https://dokument.geonorge.no/produktspesifikasjoner/punktsky/1.0.3/index.html[Produktspesifikasjon Punktsky]
 
 [#Batymetri]
 *[Batymetri]*: https://github.com/kartverket/ALB_Best_Practice_Manual[Airborne LiDAR Bathymetry - Best Practice Manual]
@@ -39,7 +39,7 @@
 
 === Juridiske og regulative referanser
 
-Det er de til en hver tid gjeldende juridiske og regulative føringer som berører standardens tematikk, som skal benyttes. Listen under viser et utvalg av aktuelle referanser: 
+Det er de til enhver tid gjeldende juridiske og regulative føringer som berører standardens tematikk, som skal benyttes. Listen under viser et utvalg av aktuelle referanser: 
 
 * https://lovdata.no/dokument/NL/lov/2018-06-15-38[Lov om behandling av personopplysninger] (også kalt GDPR - General Data Protection Regulation)
 * https://lovdata.no/dokument/SF/forskrift/2018-06-22-951[Forskrift om kontroll med informasjon innhentet med luftbårne sensorsystemer]
