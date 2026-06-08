@@ -360,7 +360,7 @@ For krav til rapportering av innmålingsarbeidet vises til standarden <<SAT>>.
 
 [[kapittel-flyfotografering]]
 === Flyfotografering
-Dette avsnittet angir krav og retningslinjer til gjennomføring av fotograferingen, til fremstilling av GNSS/INS-data og bilder samt til egenkontroller og rapportering av arbeidene. For krav til leveranse av flyfoto vises det til nyeste versjon av https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/vertikalbilde[Produktspesifikasjon Vertikalbilde, versjon 2.2 2017].
+Dette avsnittet angir krav og retningslinjer til gjennomføring av fotograferingen, til fremstilling av GNSS/INS-data og bilder samt til egenkontroller og rapportering av arbeidene. For krav til leveranse av flyfoto vises det til nyeste versjon av Produktspesifikasjon Vertikalbilde <<PV>>.
 
 
 ==== Krav til kamerasystem
@@ -1157,7 +1157,7 @@ Stedfestingsnøyaktigheten avtar med økende pikselstørrelse (GSD).
 
 Automatisk generering av DTM fra bildematching forutsetter at terrengmodellen blir grundig kontrollert og editert i etterkant. 
 
-Spesifikasjon for etablering og forvaltning av punktskyer ligger i gjeldende versjon av https://dokument.geonorge.no/produktspesifikasjoner/punktsky/1.0.3/index.html[Produktspesifikasjon Punktsky]
+Spesifikasjon for etablering og forvaltning av punktskyer ligger i gjeldende versjon av Produktspesifikasjon Punktsky <<Punktsky>>.
 
 Krav for DTM og høydekurver (høydegrunnlag) står i Produktspesifikasjon FKB-Høydekurve, mens kontrollen er beskrevet i standarden Geodatakvalitet. 
 
