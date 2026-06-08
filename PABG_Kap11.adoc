@@ -11,7 +11,7 @@ Kart og geodata (herunder flybilder (originaler, kopier og digitale opptak), kar
 Av standarder og veiledere kan spesielt nevnes:
 
 * "Noark 4 standarden" som spesifiserer kravene til elektroniske arkivsystemer i offentlig forvaltning.
-* Miljøverndepartementets veileder "Det offentlige kartgrunnlaget " som beskriver
+* Miljøverndepartementets veileder "Det offentlige kartgrunnlaget" som beskriver
 etablering og drift av kommunens kartgrunnlag i henhold til kapittelet om kartverk i de tekniske forskriftene til plan- og bygningsloven.
 
 ==== Arkivering
