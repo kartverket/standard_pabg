@@ -118,11 +118,11 @@ Det skal leveres en rapport for den geodetiske kartleggingen, med leveransene so
 |Oppdragstaker|(adresse, prosjektleder, fagansvarlig og underleverandører)
 |Beskrivelse av oppdraget|(kontraktsarbeid, areal, standard)
 |Antall eksemplar av rapport|(antall og oppbevaringssted)
-|Datering og signatur|(dd.mm.åååå, sign)
-.11+|Geodetisk kartlegging|Utførelse av målearbeidene|(navn, tidspunkt, beskrivelse av eventuelle vanskeligeheter)
+|Datering og signatur|(dd.mm.åååå, signatur)
+.11+|Geodetisk kartlegging|Utførelse av målearbeidene|(navn, tidspunkt, beskrivelse av eventuelle vanskeligheter)
 |Benyttet måleutstyr|(merke, type, nummer)
 |Dokumentasjon|(kalibreringssertifikat)
-|Geodetisk og vertikalt grunnlag|(geodetsik datum, vertikalt datum, ellipsoidisk/ortometrisk høyde, kartprojeksjon, akse/sone)
+|Geodetisk og vertikalt grunnlag|(geodetisk datum, vertikalt datum, ellipsoidisk/ortometrisk høyde, kartprojeksjon, akse/sone)
 |Benyttede grunnlagspunkter|(navn, nummer, dokumentasjon av kvalitet)
 |Målemetode og -prosedyre|Valgt målemetode og -prosedyre skal begrunnes
 |HREF|Versjon av HREF benyttet under datafangst
@@ -132,7 +132,7 @@ Det skal leveres en rapport for den geodetiske kartleggingen, med leveransene so
 |Dataleveranse|Spesifikasjon av leveranseformat og eventuell inndeling i filer
 .4+|Vedlegg|Observasjoner|Sortert utlisting av observasjonene på digital form
 |Beregninger|Beregningsresultatet på digital form
-|Transformasjon|Resultat av eventuelle grovefeil-søk, transformasjonsparametre og restfeil i transformasjonspunktene, avvik i kontrollpunktene skal dokumenteres
+|Transformasjon|Resultat av eventuelle grovefeilsøk, transformasjonsparametere og restfeil i transformasjonspunktene, avvik i kontrollpunktene skal dokumenteres
 |Innmålte objekter|Innmålte objekter på avtalt vektorformat
 |===
 
