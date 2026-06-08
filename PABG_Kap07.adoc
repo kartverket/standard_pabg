@@ -109,7 +109,7 @@ Leverandørkalibrering utføres av leverandøren. Selve kalibreringen gjøres p�
 
 * For hver installasjon i et fly eller helikopter må det utføres en kalibrering:
 ** Avstand mellom GNSS-antennens fasesenter og origo i laserskannerens referansesystem må bestemmes. Avstanden bestemmes ved landmåling, men kan også estimeres i egnet program.
-** Installasjonen må testes i luften for å verifisere at leverandørkalibreringen er stabil og av tilfredsstillende kvalitet. Dette gjelder særlig «boresight verdiene». Dersom dette ikke er tilfredsstillende må korrigerende tiltak utføres.
+** Installasjonen må testes i luften for å verifisere at leverandørkalibreringen er stabil og av tilfredsstillende kvalitet. Dette gjelder særlig "boresight"-verdiene. Dersom dette ikke er tilfredsstillende må korrigerende tiltak utføres.
 * Installasjonskalibrering skal gjennomføres minimum en gang i året.
 * Installasjonskalibrering skal gjennomføres etter endringer på installasjonen.
 * Oppdragstaker skal dokumentere gjeldende installasjonskalibrering.
