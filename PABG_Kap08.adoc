@@ -34,7 +34,7 @@ Laser punktsky (også fargelagt punktsky) fra mobil datafangst vil i de fleste t
 ====
 
 === Fargelegging av punktsky
-Påføring av fargeverdier på punktskyen, er opsjonelt. Dersom opsjon utløses, bør  kvalitetselementer gitt i xref:tab-fargelegging-av-punktsky[xrefstyle=short] hensyntas:
+Påføring av fargeverdier på punktskyen, er opsjonelt. Dersom opsjon utløses, bør kvalitetselementer gitt i xref:tab-fargelegging-av-punktsky[xrefstyle=short] hensyntas:
 
 ====
 
