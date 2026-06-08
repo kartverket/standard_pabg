@@ -103,7 +103,7 @@ Det er lagt til 2 nye kapitler (8 og 9) og Vedlegg A Solhøydetabell er fjernet.
 
 
 *Kapittel 3* +
-Oppdatert referanser og delt referansene inn i kategoriene normative referanser, juridiske og regulatative referanser og faglige referanser. +
+Oppdatert referanser og delt referansene inn i kategoriene normative referanser, juridiske og regulative referanser og faglige referanser. +
 
 *Kapittel 4* +
 Oppdatert lenker til standarder og presisert definisjoner.
