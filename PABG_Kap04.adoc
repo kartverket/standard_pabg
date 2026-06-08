@@ -1,7 +1,7 @@
 == Termer og forkortelser
 
 === Kilder for termer og forkortelser
-Termer og forkortelser som er definert utenfor denne standarden er basert på følgende kildene *[Punktsky]* og *[POF]*:
+Termer og forkortelser som er definert utenfor denne standarden er basert på følgende kildene <<Punktsky>> og <<POF>>:
 
 === Termer
 .aerotriangulering
