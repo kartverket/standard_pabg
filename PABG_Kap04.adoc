@@ -26,7 +26,7 @@ _MERKNAD 3_: Se definisjonen av grov feil, sant avvik, standardavvik, systematis
 _MERKNAD 4_: Det man antar er den sanne verdi, er svært ofte den utjevnede verdi.
 
 .bakkeoppløsning (for digitale kamera/sensorer)
-Geometrisk utstrekning av et piksel i terrengmålestokk. +
+Geometrisk utstrekning av en piksel i terrengmålestokk. +
 _Kilde_: <<POF>> +
 _MERKNAD_: Se også GSD.
 
@@ -48,12 +48,12 @@ _MERKNAD_: Se digitalt stereoinstrument.
 .digital høydemodell (DHM)
 En digital representasjon av høydeverdier som varierer over en flate. +
 _Kilde_: <<POF>> +
-_MERKNAD_: En DHM er en samling av et stort antall høydepunkter på en flate. Punktene kan være organisert som et regelmessig rutenett eller i et uregelmessig mønster. Den siste metoden vil normalt gi den beste beskrivelsen av flaten. Alternativ engelsk betegnelse er «Digital Elevation Model (DEM)».
+_MERKNAD_: En DHM er en samling av et stort antall høydepunkter på en flate. Punktene kan være organisert som et regelmessig rutenett eller i et uregelmessig mønster. Den siste metoden vil normalt gi den beste beskrivelsen av flaten. Alternativ engelsk betegnelse er "Digital Elevation Model (DEM)".
 
 .digital overflatemodell (DOM)
 En digital høydemodell (DHM) som beskriver overflaten av terrenget inkludert objekter som vegetasjon, bygninger og så videre. +
 Kilde: <<POF>> +
-_MERKNAD_: Alternativ engelsk betegnelse er «Digital Surface Model (DSM)».
+_MERKNAD_: Alternativ engelsk betegnelse er "Digital Surface Model (DSM)".
 
 
 .digital terrengmodell (DTM)
