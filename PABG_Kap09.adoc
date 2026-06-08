@@ -50,7 +50,7 @@ Kvalitetselementer i vektorisering:
 |====================
 | Kvalitetselement |  Beskrivelse
 | Knekkpunkt avvik (i grunnriss og høyde) | Mål på hvor godt samsvar det er mellom vektoriserte punkt eller noder i kurve med punktskyen. Måles som avstand fra node til punktsky (i grunnriss og høyde).
-Samsvaret bør vurderes basert på senter av punktskyens «målestøy» da dette midler feil som følge av målesystemets presisjon.
+Samsvaret bør vurderes basert på senter av punktskyens "målestøy" da dette midler feil som følge av målesystemets presisjon.
  
 |Tverravvik/pilhøyde (i grunnriss og høyde)  |  Mål på graden av generalisering i vektoriseringen. Definerer avviket mellom vektorisert linjestykke (mellom noder) og det virkelige linjeforløpet i punktskyen (i grunnriss og høyde).
 
@@ -169,7 +169,7 @@ image::figurer/kap9_feilforplantning_bildematching2.png["feilforplantning ved bi
 
 Komponenten størst feil vektorisering kan også kalles digitaliseringspresisjonen. Den består av de to hovedmomentene pilhøyden og oppløsning til punktsky/modell. I dette eksempelet er det antatt at oppløsningen har størst betydning. Et viktig prinsipp er at modellen/punktskyen har god nok oppløsning og kvalitet til å skille objektene fra hverandre.
 
-For laser punktsky i kategori "Høy" <<Punktsky>> (tabell 2) er oppløsning definert som maksimal avstand mellom punktene og angitt til 0,32 m. Alternativ til å benytte «maksimal punktavstand» i tabell 2 er å benytte den faktiske maksimale punktavstanden innenfor digitaliseringsområdet.
+For laser punktsky i kategori "Høy" <<Punktsky>> (tabell 2) er oppløsning definert som maksimal avstand mellom punktene og angitt til 0,32 m. Alternativ til å benytte "maksimal punktavstand" i tabell 2 er å benytte den faktiske maksimale punktavstanden innenfor digitaliseringsområdet.
 
 For bildematchet punktsky gjelder gridavstanden som er benyttet i genereringen av den bildematchede punktskyen. For vektorisering direkte på vanlig ortofoto, sant ortofoto og 3D ortofoto benyttes ground resolved distance (GRD). Denne verdien angir minsteavstanden mellom objekter som er mulig å skille fra hverandre. For optiske datakilder settes denne lik en generell verdi: 1,5 ganger GSD. Det er viktig å merke seg at vektorisering kun kan utføres hvor rektifiseringsprosessen har benyttet riktig høydeverdier. Dette betyr at for et vanlig ortofoto kan en kun vektorisere objekter som er lokalisert på terrengmodellen.
 
