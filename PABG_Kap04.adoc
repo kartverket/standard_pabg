@@ -5,8 +5,8 @@ Termer og forkortelser som er definert utenfor denne standarden er basert på f�
 
 === Termer
 .aerotriangulering
-Metode for bestemmelse av flybilders ytre orientering ved hjelp av måling av punkter som knytter bilder og flystriper sammen. AT er forkortelse for aerotrinagulering. +
-_MERKNAD_: I tilegg til sammenbindingspunkter inngår kjentpunker og GNSS/INS-data som observasjoner i en samlet utjevningsberegning (blokkutjevning). I tillegg til sammenbindingspunktene og ytre orienteringselementene kan også andre ukjente defineres og løses ut i utjevningen.
+Metode for bestemmelse av flybilders ytre orientering ved hjelp av måling av punkter som knytter bilder og flystriper sammen. AT er forkortelse for aerotriangulering. +
+_MERKNAD_: I tillegg til sammenbindingspunkter inngår kjentpunker og GNSS/INS-data som observasjoner i en samlet utjevningsberegning (blokkutjevning). I tillegg til sammenbindingspunktene og ytre orienteringselementene kan også andre ukjente defineres og løses ut i utjevningen.
 
 .affin transformasjon
 Koordinattransformasjon som ikke bevarer vinkelstørrelser uendret. +
@@ -40,7 +40,7 @@ Samling av flybilder som er forbundet med sammenbindingspunkt og dermed utgjør 
 _MERKNAD_: Et flyfotograferingsprosjekt kan ha flere delområder og dermed flere bildeblokker. Et flyfotograferingsområde kan eventuelt deles opp i flere bildeblokker.
 
 .boresight
-Boresight parametrene beskriver vinkelforskjellen mellom koordinatsystem til kartleggingssensor (LiDAR eller kamera) og bevegelsessensor (IMU).
+"Boresight"-parameterne beskriver vinkelforskjellen mellom koordinatsystem til kartleggingssensor (laserskanner eller kamera) og bevegelsessensor (IMU).
 
 .digital fotogrammetrisk arbeidsstasjon (DFA)
 _MERKNAD_: Se digitalt stereoinstrument.
@@ -132,7 +132,7 @@ _MERKNAD 1_: Inkluderer geodetisk stasjon, som ikke trenger være varig merket +
 _MERKNAD 2_: Tilsvarer det engelske begrepet "Control point"
 
 .GSD (Ground Sample Distance)
-Geometrisk utstrekning av et piksel i terrengmålestokk. +
+Geometrisk utstrekning av en piksel i terrengmålestokk. +
 _MERKNAD_: Se også bakkeoppløsning.
 
 .indre pålitelighet
@@ -201,7 +201,7 @@ Forbedring av den datatekniske kvaliteten av eksisterende data.
 
 .ortofoto
 Georeferert fly- eller satellittbilde i ortogonalprojeksjon. +
-_MERKNAD_: Ortofotoet har samme geometriske egenskaper som et kart og er knyttet til et kart-koordinatsystem. Objekter (for eksempel hus, stolper, trær, broer) som ikke er modellert i høydemodellen, vil ha avvikende projeksjon. Det kan også lages ortofoto av for eksempel en fasade fotografert med terrestrisk kamera.
+_MERKNAD_: Ortofotoet har samme geometriske egenskaper som et kart og er knyttet til et kart-koordinatsystem. Objekter (for eksempel hus, stolper, trær og broer) som ikke er modellert i høydemodellen, vil ha avvikende projeksjon. Det kan også lages ortofoto av for eksempel en fasade fotografert med terrestrisk kamera.
 
 .piksel
 Et digitalt bildes minste enhet med en definert geometrisk utstrekning og intensitetsverdi.
@@ -217,7 +217,7 @@ Et definert geodatasett som består av de mest detaljerte og nøyaktige data inn
 Metode for transformasjon av et fotografisk bilde (sentralprojeksjon) til en ortogonalprojeksjon. Rektifisering er en sentral del av ortofotoproduksjon.
 
 .resampling
-Metode for å bestemme gråtonen/fargen til et piksel. Resampling kan brukes til å endre bakkeoppløsning og/eller lokasjon til piksler i optiske produkter.
+Metode for å bestemme gråtonen/fargen til en piksel. Resampling kan brukes til å endre bakkeoppløsning og/eller lokasjon til piksler i optiske produkter.
 
 .sammenbindingspunkt
 Punkt i fellesområdet mellom bilder som brukes ved aerotriangulering til å binde sammen bilder, modeller og striper. +
