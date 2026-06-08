@@ -28,7 +28,7 @@ Laserskanneren måler retning og avstand ned til bakken i laserskannerens koordi
 
 ===== Posisjons- og rotasjonssystem
 
-Posisjons og rotasjonssystemet er bygd opp rundt et treghetsnavigasjonssystem også kalt “Inertial Navigation System” (INS). Systemet består av en “Inertial measurment Unit” (IMU), et eller flere “Global Navigation Satellite System” (GNSS) samt en datamaskin med tilhørende program. Programmene beregner i sanntid posisjons- og rotasjonsinformasjon som piloten kan navigere etter. I tillegg lagrer programmene alle rotasjons- og posisjonsobservasjoner. De lagrede dataene brukes til å beregne posisjon og rotasjon til laserskannerens koordinatsystem. I dette dokumentet er posisjons- og rotasjonssystemet kalt GNSS/INS-system.
+Posisjons og rotasjonssystemet er bygd opp rundt et treghetsnavigasjonssystem også kalt "Inertial Navigation System" (INS). Systemet består av en "Inertial measurment Unit" (IMU), et eller flere "Global Navigation Satellite System" (GNSS) samt en datamaskin med tilhørende program. Programmene beregner i sanntid posisjons- og rotasjonsinformasjon som piloten kan navigere etter. I tillegg lagrer programmene alle rotasjons- og posisjonsobservasjoner. De lagrede dataene brukes til å beregne posisjon og rotasjon til laserskannerens koordinatsystem. I dette dokumentet er posisjons- og rotasjonssystemet kalt GNSS/INS-system.
 
 Ved å kombinere posisjonen og rotasjonen fra GNSS/INS-systemet og de relative avstands- og vinkelmålingene fra laserskanneren får man et absolutt bestemt målepunkt på jordoverflaten. 
 
@@ -143,7 +143,7 @@ Se <<kapittel-eksempel-flyplan-laserskanning>> for et eksempel på en flyplan.
 ** Planlagt stripeoverlapp i prosent.
 ** Planlagte tverrstriper skal tydelig fremkomme.
 ** Planlagte kontrollflater med gyldighetsområde.
-** Antall flystriper, total stripelengde og effektiv flytid. Med effektiv flytid menes flytiden for å dekke prosjektområdet, (striper + svinger). Flytid til og fra prosjektområdet medregnes ikke. +
+** Antall flystriper, total stripelengde og effektiv flytid. Med effektiv flytid menes flytiden for å dekke prosjektområdet, (striper + svinger). Flytid til og fra prosjektområdet medregnes ikke.
 ** Opplysninger om skanneparametere (se <<krav-laser-opplysninger-om-skanneparametre>>).
 ====
 
@@ -398,7 +398,7 @@ Ved avtale så er det tillatt å bruke flere sensorer (GNSS, IMU og stripejuster
 
 Samtidig georeferering av flere sensorplattformer som flybildekamera og laserskanner er tillatt ved avtale. Alle kravene for hver sensor skal følges. Det kreveres at vinkler og avstander mellom koordinatsystemet til hvert sensorsystem er kjent. Dersom vinkler og avstander mellom koordinatsystemene endres under datafangsten skal denne endringen måles og anvendes i navigasjonsløsningen for hvert enkelt sensorsystem. Hvis det er avvik mellom kravene som stilles for hver sensor, så brukes det strengeste kravet.
 
-Krav til rapportering er detaljert i <<kapittel-egenkontroll-og-rapportering-fotorapport>>, kategori «GNSS/INS».
+Krav til rapportering er detaljert i <<kapittel-egenkontroll-og-rapportering-fotorapport>>, kategori "GNSS/INS".
 
 [[kapittel-matching-av-punktsky]]
 ==== Matching av punktsky
@@ -469,7 +469,7 @@ Med bakgrunn i dette stilles krav om bruk av kontrolldata. For å kontrollere h�
 [#krav-laser-hoydekontroll,reftext="Krav laser høydekontroll"]
 *KRAV LASER HØYDEKONTROLL*
 
-* Kontrollflater skal benyttes for å kontrollere og eventuelt justere for systematisk avvik i høyde på punktskyen. Analysen mot kontrollflaten skal utføres mot alle klasser med unntak av klasse 7 «støy-punkter». 
+* Kontrollflater skal benyttes for å kontrollere og eventuelt justere for systematisk avvik i høyde på punktskyen. Analysen mot kontrollflaten skal utføres mot alle klasser med unntak av klasse 7 "støy-punkter". 
 * Oppdragstaker skal begrunne årsak til at en kontrollflater som skiller seg fra resterende flater forkastes. Benyttede kontrollflater i justering og statistikk skal være i henhold til antall spesifisert i godkjent flyplan. Ved avvik uten åpenbare forklaringer (terrengendringer) skal det utføres kontrollmåling. 
 
 ====
