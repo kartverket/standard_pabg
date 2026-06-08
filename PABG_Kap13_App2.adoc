@@ -18,7 +18,7 @@ På denne bakgrunn benyttes som oftest følgende GSD til de ulike FKB-standarden
 |===
 
 
-xref:tab-tolkning-flyhøyde[xrefstyle=short] gir informasjon om begrensninger i muligheten til å tolke bildene. Tabellen er basert på analog fotografering, tilsvarende tabell er ikke utarbeidet for fotografering med digitalt kamera. (Kilde: «Handbok till mätningskunngjörelse – Fotogrammetri»).
+xref:tab-tolkning-flyhøyde[xrefstyle=short] gir informasjon om begrensninger i muligheten til å tolke bildene. Tabellen er basert på analog fotografering, tilsvarende tabell er ikke utarbeidet for fotografering med digitalt kamera. (Kilde: "Handbok till mätningskunngjörelse – Fotogrammetri").
 
 [[tab-tolkning-flyhøyde]]
 .Eksempler på vanskeligheter ved tolkning av objekter i bildene fra ulike flyhøyder
