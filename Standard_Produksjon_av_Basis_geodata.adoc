@@ -122,7 +122,7 @@ Nytt kapittel om skråbilder: <<kapittel-skråbilder>> +
 
 *Kapittel 7* +
 Oppdatert krav om kontrollflater. +
-Lagt inn krav om tidsgyldighet på kontrollflater og det skal brukes krittspray. +
+Lagt inn krav om tidsgyldighet på kontrollflater og at det skal brukes krittspray. +
 Tillatt å bruke hjulspormetoden som kontrollflater. +
 Ved avtale så er det tillatt å orientere flybilder og laserskanner samtidig. +
 
