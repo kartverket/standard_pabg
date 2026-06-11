@@ -592,7 +592,7 @@ Kravene til dokumentasjon fra beregningen er listet opp i avsnittet om egenkontr
 * Eventuell konvertering til lavere radiometrisk oppløsning (for eksempel 8 bit) og eventuell komprimering skal utføres som siste ledd før leveranse for å unngå akkumulert tap av informasjon gjennom prosesseringen.
 * Dersom en stripe må skjøtes, og fortsettelse av fotograferingen ble gjort på et senere tidspunkt slik at lys/skygge- og eventuelle overflateforhold er endret, skal stripeseksjonene i det endelige bildesettet overlappe hverandre slik at de hver for seg har stereodekning over stripebruddet.
 * Ved sammensetting av det endelige bildesettet i prosjekt der det finnes overlappende versjoner av bilder, skal overskytende bilder fjernes. Fragmentering av striper eller områder på grunn av fotografering over flere dager skal reduseres til et minimum.
-* Filnavn på bilder skal som hovedregel være på formen _FirmaID-Dekningsnr_Stripenr_Bildenr_Kameraløpenr_ (FirmaID som vanligvis er to bokstaver) og alle representasjoner av bildene skal benytte/vise til samme filnavn (for eksempel i GNSS/INS-filer, i aerotrianguleringen og i ortofotoproduksjonen).
+* Filnavn på bilder skal som hovedregel være på formen _FirmaID-Dekningsnr_Stripenr_Bildenr_Kameraløpenr_ (FirmaID er vanligvis to bokstaver) og alle representasjoner av bildene skal benytte/vise til samme filnavn (for eksempel i GNSS/INS-filer, i aerotrianguleringen og i ortofotoproduksjonen).
 * I stripeskjøter skal navnet på de overlappende bildene skilles med suffiks "_2" i bildenummeret for de senest fotograferte bildene hvis ikke annen informasjon skiller bildene, slik som telleverksnummer.
 ====
 
