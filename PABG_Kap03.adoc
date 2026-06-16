@@ -32,6 +32,20 @@
 [#GK]
 *[GK]*: https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet[Geodatakvalitet]
 
+[#BF]
+*[BF]*: https://lovdata.no/dokument/SF/forskrift/2025-12-19-2729[Bevaringsforskrifta]
+
+[#AF]
+*[AF]*: https://lovdata.no/dokument/SF/forskrift/2025-12-17-2647[Arkivforskrifta]
+
+[#AL]
+*[AL]*: https://lovdata.no/dokument/NL/lov/2025-06-20-96[Arkivlova]
+
+[#PL]
+*[PL]*: https://lovdata.no/dokument/NL/lov/2018-06-15-38[Personopplysningsloven]
+
+[#SL]
+*[SL]*: https://lovdata.no/dokument/NL/lov/2018-06-01-24[Sikkerhetsloven]
 
 <<GN>> er erstattet av en ny standard <<GG>>. 
 
