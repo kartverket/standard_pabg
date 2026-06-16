@@ -656,7 +656,7 @@ a| * Tidspunkt for avgitt klarmelding(er) for fotografering.
 * Kopi av klarmelding(er) og fotofirmaets bekreftelse på denne/disse.
 
 |Bildeoversikt|(antall striper, antall bilder pr. stripe, fotodato pr. flystripe)
-|Sikkerhetsgradering|Oversikt over eventuelle bilder som ikke er levert på grunn av sikkerhetsgradering (jamfør sikkerhetsloven).
+|Sikkerhetsgradering|Oversikt over eventuelle bilder som ikke er levert på grunn av sikkerhetsgradering (jamfør sikkerhetsloven <<SL>>).
 |Solvinkel|(minste solvinkel)
 |Værforhold|Beskrivelse av generelle forhold, inkludert skyforhold, sikt, vind og turbulens.
 Ved vanskelige forhold skal det rapporteres hvilke striper/bilder dette kan angå.
