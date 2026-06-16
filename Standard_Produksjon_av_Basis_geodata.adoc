@@ -137,7 +137,8 @@ Nytt kapittel om vektorisering fra punktsky og modell: <<kapittel-vektorisering-
 Kapittel 8 i 2.0 versjonen er flyttet til <<kapittel-konvertering-av-analoge-kart-til-digitale-vektordata>>.
 
 *Kapittel 11* +
-Kapittel 9 i 2.0 versjonen er flyttet til <<kapittel-arkivering-og-sikring>>.
+Kapittel 9 i 2.0 versjonen er flyttet til <<kapittel-arkivering-og-sikring>>.+
+Lover og forskrifter er oppdatert.
 
 ////
 *Vedlegg A* 
