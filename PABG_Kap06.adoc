@@ -187,7 +187,8 @@ Signaleringen bør planlegges og utføres slik at fotograferingen kan starte opp
 |====================
 Det presiseres at tallene i xref:tab-nøyaktighet-innmåling-kjentpunkt-FKB[xrefstyle=short] henviser til kravene som er stilt i FKB 5.0 produktspesifikasjonen, ved endringer i FKB spesifikasjonen vil eventuelle endringer til nøyaktighetskrav gjelde foran kravene som er satt opp i xref:tab-nøyaktighet-innmåling-kjentpunkt-FKB[xrefstyle=short]. Det stilles krav til henholdsvis punktstandardavvik, grunnriss (S~p~) og standardavvik i høyde (S~h~). For systematisk avvik skal dette for FKB være 1/3 av standardavvikskravet.
 
-For øvrige krav til innmåling vises det til standarden <<SAT>>, og for krav til utførelse av signaleringen vises det til <<Signalering>>.
+//For øvrige krav til innmåling vises det til standarden <<SAT>>, og for krav til utførelse av signaleringen vises det til <<Signalering>>.
+For krav til utførelse av signaleringen vises det til <<Signalering>>.
 
 [[kapittel-krav-til-antall-og-plassering-av-kjentpunkter-og-kontrollpunkter]]
 ===== Krav til antall og plassering av kjentpunkter og kontrollpunkter
@@ -232,7 +233,9 @@ Eksempel på fly- og signaleringsplan finnes i <<Eksempel fly- og signaleringspl
 
 [[kapittel-signalering]]
 === Signalering
-Dette kapittelet angir krav og retningslinjer til signalering av kjentpunkter for aerotriangulering og eventuelle objekter som skal kartlegges og som er for små til å synes i flybildene. For innmåling av kjentpunkter henvises til krav i <<kapittel-krav-til-kjentpunkter-og-kontrollpunkter>> og til standarden <<SAT>>.
+Dette kapittelet angir krav og retningslinjer til signalering av kjentpunkter for aerotriangulering og eventuelle objekter som skal kartlegges og som er for små til å synes i flybildene. For innmåling av kjentpunkter henvises til krav i <<kapittel-krav-til-kjentpunkter-og-kontrollpunkter>>.
+
+// og til standarden <<SAT>>.
 
 ==== Lovhjemmel for markarbeider - Matrikkellova
 Tillatelse til utsetting av fastmerker og signaler og rydding for sikt ved offentlige kart- og oppmålingsarbeider er hjemlet i Matrikkellova, §41 _Rett til å utføre oppmålingsarbeid på offentleg og privat grunn._
@@ -356,7 +359,7 @@ image::figurer/Kap6_IkkeLovligSignal2.png[Signaler_ikke_lovlig,600,align="center
 |====
 ====
 
-For krav til rapportering av innmålingsarbeidet vises til standarden <<SAT>>.
+// For krav til rapportering av innmålingsarbeidet vises til standarden <<SAT>>.
 
 [[kapittel-flyfotografering]]
 === Flyfotografering
@@ -1080,7 +1083,7 @@ Objekter som har like egenskapsdata bør være "sydd" slik at disse er sammenhen
 
 Dersom det er relevant for oppdraget, skal det kjøres høydesjekk (skjæringsberegning av høydeforskjell i kryssende elementer).
 
-Alle kontroller skal gjennomføres i henhold til krav i standarden Geodatakvalitet.
+Alle kontroller skal gjennomføres i henhold til krav i standarden Geodatakvalitet <<GK>>.
 
 ==== Egenkontroll og rapportering (konstruksjon)
 Rapport fra konstruksjonsarbeidene skal minimum inneholde:
@@ -1133,7 +1136,7 @@ Manus og støttedata. +
 .4+|Ferdigstilling|Programvare|Benyttet utstyr og programvare: (fabrikat, type og versjonsnummer)
 |Dato|Tidspunkt for ferdigstilling
 |Metode|Beskrivelse av utført redigeringsarbeid (oppgradering, sammenpassing og topologidanning)
-|Egenkontroll|Dokumentasjon av gjennomførte kontroller, i henhold til krav i standarden Geodatakvalitet.
+|Egenkontroll|Dokumentasjon av gjennomførte kontroller, i henhold til krav i standarden Geodatakvalitet <<GK>>.
 .2+|Leveranser|Produktspesifikasjon|Versjon av produktspesifikasjon og objektkatalog.
 |Leveranser a|En fullstendig oversikt over alle leverte data, metadata og eventuell medfølgende dokumentasjon skal stilles opp. Oversikten skal minimum inneholde: +
 
@@ -1159,7 +1162,7 @@ Automatisk generering av DTM fra bildematching forutsetter at terrengmodellen bl
 
 Spesifikasjon for etablering og forvaltning av punktskyer ligger i gjeldende versjon av Produktspesifikasjon Punktsky <<Punktsky>>.
 
-Krav for DTM og høydekurver (høydegrunnlag) står i Produktspesifikasjon FKB-Høydekurve, mens kontrollen er beskrevet i standarden Geodatakvalitet. 
+Krav for DTM og høydekurver (høydegrunnlag) står i Produktspesifikasjon FKB-Høydekurve, mens kontrollen er beskrevet i standarden Geodatakvalitet <<GK>>. 
 
 
 
