@@ -1506,7 +1506,7 @@ Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kje
 <p>Produksjonen av produktene beskrevet i denne standarden skal anvende Kartverkets offisielle transformasjonsformler. Se også kapittel "6.5 Omforming av koordinater" i <a href="#GG">[GG]</a>.</p>
 </li>
 <li>
-<p>Det skal kun benyttes referanserammer som ivaretar sluttproduktets nøyaktighetskrav i hele produksjonskjeden. Dersom dette ikke er mulig så må dette avtales.</p>
+<p>Når det benyttes globale referanserammer, må referansetidspunktet for datafangsten (epoke) være kjent og skal benyttes i transformasjon mellom globale og nasjonale referanserammer. Dette medføre at EPSG koder som utgjøre en samling (ensemble) av EPSG koder ikke skal benyttes.</p>
 </li>
 </ul>
 </div>
@@ -7706,6 +7706,9 @@ Med egenskapskvalitet i standarden Geodatakvalitet <a href="#GK">[GK]</a>, menes
 <div class="paragraph">
 <p>Vektorisering fra modell innebærer bruk av automatiserte og manuelle operasjoner som tar utgangspunkt i geometri og fargeinformasjon fra et 3D ortofoto / 3D Mesh. Egnethet og kvalitet vil variere for ulike objekttyper.</p>
 </div>
+<div class="paragraph">
+<p>Ulike datakilder har ulike egenskaper og kvaliteter. Dette kan ha betydning for datakildenes egnethet til å gjengi objektene etter kravene gitt i benyttet registeringsinstruks. Uavhengig av benyttet datakilde er det det til enhver gjeldene registreringsinstruks som er gjeldene for sluttproduktet.</p>
+</div>
 <div class="exampleblock">
 <div class="content">
 <div id="krav-vektor-sensortyper" class="paragraph">
@@ -8162,16 +8165,16 @@ etablering og drift av kommunens kartgrunnlag i henhold til kapittelet om kartve
 <div class="ulist">
 <ul>
 <li>
-<p>Arkivet være enkelt å vedlikeholde.</p>
+<p>Arkivet skal være enkelt å vedlikeholde.</p>
 </li>
 <li>
 <p>Arkivet skal, med tilhørende arkivbeskrivelse og påfølgende metadata, gi en fullstendig, systematisk og varig oversikt over innholdet. Dette skal sikre at informasjonen er tilgjengelig, lesbar og gjenfinnbar på lang sikt.</p>
 </li>
 <li>
-<p>Det foreligge instruks for arkivtjenesten og rutiner som skal følges.</p>
+<p>Det skal foreligge instruks for arkivtjenesten og rutiner som skal følges.</p>
 </li>
 <li>
-<p>Arkivet ha en ansvarshavende som plikter å påse at rutinene følges.</p>
+<p>Arkivet skal ha en ansvarshavende som plikter å påse at rutinene følges.</p>
 </li>
 </ul>
 </div>
