@@ -8,6 +8,7 @@ Vektorisering fra punktsky innebærer bruk av automatiserte og manuelle operasjo
 
 Vektorisering fra modell innebærer bruk av automatiserte og manuelle operasjoner som tar utgangspunkt i geometri og fargeinformasjon fra et 3D ortofoto / 3D Mesh. Egnethet og kvalitet vil variere for ulike objekttyper. 
 
+Ulike datakilder har ulike egenskaper og kvaliteter. Dette kan ha betydning for datakildenes egnethet til å gjengi objektene etter kravene gitt i benyttet registeringsinstruks. Uavhengig av benyttet datakilde er det det til enhver gjeldene registreringsinstruks som er gjeldene for sluttproduktet.
 
 ====
 [#krav-vektor-sensortyper,reftext="Krav vektor sensortyper"]
