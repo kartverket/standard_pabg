@@ -4,7 +4,7 @@
 
 Geodetiske metoder benyttes til kartlegging ved høye krav til nøyaktighet eller når forholdene ellers gjør det naturlig, for eksempel ved mindre ajourføringer eller ved måling i områder som ikke kan kartlegges fotogrammetrisk på grunn av dårlig innsyn.
 
-Standarden <<SAT>> gir anbefalinger om hvordan posisjonsbestemmelse med satellitter bør utføres i kart- og oppmålingsarbeider.
+// Standarden <<SAT>> gir anbefalinger om hvordan posisjonsbestemmelse med satellitter bør utføres i kart- og oppmålingsarbeider.
 
 
 === Referanserammer og transformasjoner
@@ -42,23 +42,25 @@ Den mest aktuelle metoden for posisjonsbestemmelse i sanntid er RTK. I RTK overf
 
 RTK kan benyttes med VRS eller egen referansestasjon. Referansestasjonen settes opp over et fastmerke med kjent kvalitet, nærmere enn 5-10 km fra måleområdet.
 
-Når det gjelder den praktiske gjennomføringen av målearbeidene og kravene til disse, vises det til standarden <<SAT>>.
+// Når det gjelder den praktiske gjennomføringen av målearbeidene og kravene til disse, vises det til standarden <<SAT>>.
 
 ===== Transformasjoner
 Ved differensielle satellittbaserte metoder fremkommer ellipsoidiske høydeforskjeller. For å sikre leveranse i NN2000 med gjeldene høydereferansemodell, må høydeforskjellene korrigeres. Dette kan gjøres på flere måter:
 
 * Korrigerte høydeforskjeller kan utledes fra transformasjonspunkt der både ellipsoidisk og ortometrisk høyde (NN2000) er kjent, og der referansestasjonen er et av transformasjonspunktene.
 
-* Korrigerte høydeforskjeller kan utledes fra en eksisterende høydereferansemodell (se standarden "Norges offisielle høydesystem og referansenivåer").
+* Korrigerte høydeforskjeller kan utledes fra en eksisterende høydereferansemodell. 
 
-For videre beskrivelse av transformasjon se standardene <<SAT>> og https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/koordinatbaserte-referansesystemer-2.1-standarder-geografisk-informasjon.pdf[Koordinatbaserte referansesystemer, 2.1 2009].
+// (se standarden "Norges offisielle høydesystem og referansenivåer").
 
+// For videre beskrivelse av transformasjon se standardene <<SAT>> og https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/koordinatbaserte-referansesystemer-2.1-standarder-geografisk-informasjon.pdf[Koordinatbaserte referansesystemer, 2.1 2009].
+For videre beskrivelse av transformasjon se standarden <<GG>>.
 
 
 ==== Bruk av totalstasjon
 Stasjonspunkter kan være et fastmerke eller et punkt som bestemmes med kontroll, for eksempel ved fri oppstilling. Ved fri oppstilling skal en måle retning, avstand og vertikalvinkel mot minimum to fastmerker.
 	
-Stasjonspunkter og orienteringspunkter skal fortrinnsvis være fastmerker i Stamnettet, Landsnettet eller det kommunale nettet (gjelder for kommuner), eller egenetablerte fastmerker etablert med GNSS med tilstrekkelig kvalitet. Slike punkter dokumenteres ved beregning av ytre pålitelighet i programvare som håndterer dette. Påliteligheten må tilfredsstille de krav som stilles i standarden Grunnlagsnett for den aktuelle områdetypen.
+Stasjonspunkter og orienteringspunkter skal fortrinnsvis være fastmerker i Stamnettet, Landsnettet eller det kommunale nettet (gjelder for kommuner), eller egenetablerte fastmerker etablert med GNSS med tilstrekkelig kvalitet. Slike punkter dokumenteres ved beregning av ytre pålitelighet i programvare som håndterer dette. Påliteligheten må tilfredsstille de krav som stilles i standarden <<GG>> for den aktuelle områdetypen.
 
 ====
 [#krav-landmaling-innmaling-med-totalstasjon,reftext="Krav landmåling innmåling med totalstasjon"]
@@ -79,20 +81,25 @@ Innmåling av kartobjekter ved bruk av totalstasjon kan utføres i en kikkertsti
 === Måleinstrumenter
 
 Oppdragstaker er ansvarlig for å bruke instrumenter, materiell og måleopplegg som gir tilfredsstillende resultater i forhold til oppgavene. Det skal fortrinnsvis utføres årlig service på benyttede måleinstrumenter.
-	
+
+////	
 Aktuelle dokumenter:
 
 * Standarden <<GN>>, kapittel 6 Kontroll og kalibrering av måleutstyr.
 * Standarden https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/kontroll-og-kalibrering-av-elektrooptiske-avstandsmalere-2.1-standarder-geografisk-informasjon.pdf[Kontroll og kalibrering av elektrooptiske avstandsmålere 2.1 2009].
 * Standarden <<SAT>>.
 
-Oppdragstakeren skal i sin rapport dokumentere at instrumentene som blir brukt, minst har den nøyaktigheten som kreves for å tilfredsstille kravene til sluttproduktet. En slik dokumentasjon gis for hvert benyttet instrument. Fabrikkmerke, type og serienummer oppgis. Det vises til Instrument-levnetsoversikten i Tillegg B i standarden <<GN>>.
+////
+
+Oppdragstakeren skal i sin rapport dokumentere at instrumentene som blir brukt, minst har den nøyaktigheten som kreves for å tilfredsstille kravene til sluttproduktet. En slik dokumentasjon gis for hvert benyttet instrument. Fabrikkmerke, type og serienummer oppgis. 
+
+// Det vises til Instrument-levnetsoversikten i Tillegg B i standarden <<GN>>.
 
 
 === Beregning
 Oppdragstaker er ansvarlig for at valg av måleopplegg, programvare og beregningsopplegg gir god nok nøyaktighet i forhold til kravene.
 
-Ved bruk av satellittutstyr er beregning beskrevet i standarden <<SAT>>.
+// Ved bruk av satellittutstyr er beregning beskrevet i standarden <<SAT>>.
 
 === Egenkontroll og rapportering (geodetisk kartlegging)
 Det skal leveres en rapport for den geodetiske kartleggingen, med leveransene som vedlegg til rapporten. Generelt gjelder at alle resultat fra beregninger skal vurderes og kommenteres. Eventuelle problemer i prosjektet skal omtales spesielt. Rapporten er en del av leveransen og skal leveres samtidig med det produktet som rapporten omhandler. 
