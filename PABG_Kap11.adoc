@@ -17,10 +17,10 @@ etablering og drift av kommunens kartgrunnlag i henhold til kapittelet om kartve
 ==== Arkivering
 Ved arkivering av både analogt og digitalt materiale skal:
 
-* Arkivet være enkelt å vedlikeholde.
+* Arkivet skal være enkelt å vedlikeholde.
 * Arkivet skal, med tilhørende arkivbeskrivelse og påfølgende metadata, gi en fullstendig, systematisk og varig oversikt over innholdet. Dette skal sikre at informasjonen er tilgjengelig, lesbar og gjenfinnbar på lang sikt.
-* Det foreligge instruks for arkivtjenesten og rutiner som skal følges.
-* Arkivet ha en ansvarshavende som plikter å påse at rutinene følges.
+* Det skal foreligge instruks for arkivtjenesten og rutiner som skal følges.
+* Arkivet skal ha en ansvarshavende som plikter å påse at rutinene følges.
 
 ==== Sikring
 Arkivmaterialet er offentlig informasjon som alle har rett til innsyn i. I noen tilfeller må imidlertid behandling og utlevering vurderes i forhold til personvernet (se veilederen "Kartgrunnlag for plan- og byggesaksbehandlingen").
