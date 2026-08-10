@@ -19,7 +19,7 @@ _MERKNAD 2_: Oppgradering til nyere og bedre standard defineres som noe annet en
 
 .avvik
 Forskjell fra sann verdi, fra det man antar er den sanne verdi, eller forskjellen mellom to målte verdier for samme størrelse. +
-_Kilde_: <<G>> +
+_Kilde_: <<GK>> +
 _MERKNAD 1_: Innen standardisering defineres vanligvis avvik som mangel på oppfyllelse av et krav [NS-ISO 9000:2015]. +
 _MERKNAD 2_: Avvik er vanlig. Som oftest er de små og skyldes de vanlige målevariasjonene. Men et lite antall av dem kan være store, og noen kan utgjøre grove feil som bør grovfeil-/avviksbehandles. +
 _MERKNAD 3_: Se definisjonen av grov feil, sant avvik, standardavvik, systematisk avvik, tilfeldig avvik og tilfeldig variasjon. +
@@ -70,7 +70,7 @@ Ubemannet luftfartøy som kan kontrolleres med fjernstyring eller autonomt ved h
 
 .egenskap
 Navngitt kjennetegn eller karakteristikk av et objekt. +
-_Kilde_: <<G>> +
+_Kilde_: <<GK>> +
 _MERKNAD_: Egenskap defineres ved navn (for eksempel "bygge-år"), datatype (for eksempel årstall) og verdiområde (for eksempel "Kristi fødsel - dags dato"). Egenskapsverdi er verdien til egenskapen for det aktuelle objektet, for eksempel 1998. Egenskapsdata kalles noen ganger for attributtdata. +
 Eksempel: Form, materiale, farge, høyde, størrelse, juridiske forhold, bruk, beskaffenhet, konsistens, økonomisk verdi og så videre.
 
@@ -98,12 +98,12 @@ _MERKNAD_: Til vanlig kalt bare "signal".
 
 .fullstendighet
 Tallfesting av hvilke enheter som er med i et datasett i forhold til de som burde vært med. +
-_Kilde_: <<G>> +
+_Kilde_: <<GK>> +
 _MERKNAD_: Brukes først og fremst ved sammenligning med "virkeligheten"/fasit. Ved sammenligning med krav i en informasjonsmodell brukes fortrinnsvis kvalitetsmål under Logisk konsistens. Fullstendighet karakteriseres ved kvalitetsmålene andel manglende enheter og andel overskytende enheter.
 
 .geodata
 Stedfestet informasjon. +
-_Kilde_: <<G>>
+_Kilde_: <<GK>>
 
 .georeferere
 Stedfeste ved koordinater i et kjent geodetisk referansesystem. +
@@ -116,7 +116,7 @@ _MERKNAD_: Se også TIN.
 
 .grov feil
 Feil som er vesentlig større enn de tilfeldige avvikene. +
-_Kilde_: <<G>> +
+_Kilde_: <<GK>> +
 _MERKNAD_: For målbare størrelser antas ofte grov feil som avvik større enn 3 ganger standardavviket.
 
 .grunnlagsnett
@@ -163,11 +163,11 @@ Kontrollpunkt ("sjekkpunkt") er signalerte eller naturlige punkt eller flater me
 
 .krav
 Grenseverdi satt i en produktspesifikasjon, ytelsen til et datasett skal være bedre enn kravet. +
-_Kilde_: <<G>>
+_Kilde_: <<GK>>
 
 .kvalitet
 I hvilken grad en samling av iboende egenskaper oppfyller krav <<NS-EN ISO 9000>>. +
-_Kilde_: <<G>> +
+_Kilde_: <<GK>> +
 _MERKNAD_: Engelsk original: degree to which a set of inherent characteristics fulfils requirements.
 
 .landsnett
@@ -188,7 +188,7 @@ Retning på laserpulsen endres av refleksjon mot objekter i signalbanen. Multipa
 
 .nøyaktighet
 Mål for en verdis nærhet til sin sanne verdi eller til det man antar er den sanne verdi. +
-_Kilde_: <<G>>
+_Kilde_: <<GK>>
 
 .oppdragsgiver
 Kontraktspart som skal ha utført det geodataarbeid som kontrakten omfatter.
@@ -208,7 +208,7 @@ Et digitalt bildes minste enhet med en definert geometrisk utstrekning og intens
 
 .posisjon
 Sted angitt ved hjelp av koordinater i et geodetisk referansesystem. +
-_Kilde_: <<G>>
+_Kilde_: <<GK>>
 
 .primærdatasett
 Et definert geodatasett som består av de mest detaljerte og nøyaktige data innen et definert område, har en viss utbredelse og jevnlig blir produsert og/eller ajourholdt.
@@ -225,7 +225,7 @@ _MERKNAD_: Punktet får sine terrengkoordinater bestemt ved aerotriangulering. E
 
 .sant avvik
 Differanse mellom målt/beregnet verdi og sann verdi. +
-_Kilde_: <<G>> +
+_Kilde_: <<GK>> +
 _MERKNAD_: Sann verdi vil ofte være ukjent, men den brukes i utjevningsregningen som en teoretisk størrelse. Ved kontroller blir den vanligvis erstattet med en verdi som er målt/beregnet med vesentlig høyere nøyaktighet enn den verdien som skal kontrolleres.
 
 .sanntidsmåling
@@ -251,22 +251,22 @@ _MERKNAD_: Avløste det tidligere 1. ordens trekantnettet. Har sidelengder på c
 
 .standardavvik
 Statistisk størrelse som angir spredningen for en gruppe måle- eller beregningsverdier i forhold til deres sanne eller estimerte verdier. +
-_Kilde_: <<G>> +
+_Kilde_: <<GK>> +
 _MERKNAD_: Internasjonalt benyttes også begrepet RMSE. Ved høy overbestemmelse (mange målinger) vil RMSE og standardavvik være sammenfallende, forutsatt at eventuelt systematisk avvik er avspaltet.
 
 .systematisk avvik
 Avvik som er regelmessig med hensyn til fortegn og tallverdi. +
-_Kilde_: <<G>> +
+_Kilde_: <<GK>> +
 _MERKNAD_: Systematisk avvik beregnes ofte som gjennomsnittlig avvik.
 
 .tilfeldig avvik
 Avvik som følger tilfeldighetens lov, slik at en ikke kan forutsi det enkelte avvik verken med hensyn til fortegn eller størrelse. +
-_Kilde_: <<G>> +
+_Kilde_: <<GK>> +
 _MERKNAD_: Ofte er disse avvikene normalfordelt eller tilnærmet normalfordelt, men andre fordelinger kan forekomme.
 
 .tilfeldig variasjon
 Variasjonen eller spredningen for en gruppe måle- eller beregningsverdier i forhold til deres sanne eller estimerte verdier. +
-_Kilde_: <<G>> +
+_Kilde_: <<GK>> +
 _MERKNAD_: Ordet "tilfeldig" i definisjonen markerer at det forutsettes at hver enkel forskjell mellom en måle- eller beregningsverdi og størrelsens sanne verdi eller middelverdi er et tilfeldig avvik. Et tallmessig uttrykk for tilfeldig variasjon er standardavvik.
 
 .TIN
@@ -275,7 +275,7 @@ _MERKNAD_: Fra engelsk: Triangulated Irregular Network. Trekantene kan ha ulik f
 
 .topologi
 Beskrivelse av den romlige sammenhengen mellom geografiske objekter. +
-_Kilde_: <<G>> +
+_Kilde_: <<GK>> +
 _MERKNAD_: Topologi er de av objektenes egenskaper som overlever det som er kalt "kontinuerlige transformasjoner" (også kalt "rubber sheet"-transformasjoner). Alle tallverdier (lengder, areal, retninger) kan bli forandret, mens for eksempel naboskapsforhold vil være uendret.
 
 .ytre pålitelighet
