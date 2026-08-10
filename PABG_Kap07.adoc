@@ -8,7 +8,7 @@ Flybåren laserskanning (FLS) brukes ombord i fly eller helikopter for å utfør
 
 Laserskanning kan også utføres fra andre plattformer slik som fra drone (UAV), fra kjøretøy (bilbåren laserskanning) og fra fast oppstilling (terrestrisk/bakkebasert laserskanning). I dette kapittel omtales datafangst med laserskanning fra luften (drone, fly eller helikopter). 
 
-Krav til produkt og leveranser spesifiseres i nyeste versjon av Produktspesifikasjon Punktsky <<Punktsky>>. For definisjon av kvalitetsmål vises det til standarden Geodatakvalitet.
+Krav til produkt og leveranser spesifiseres i nyeste versjon av Produktspesifikasjon Punktsky <<Punktsky>>. For definisjon av kvalitetsmål vises det til standarden Geodatakvalitet <<GK>>.
 
 ====
 [#krav-laser-referanserammer-transformasjoner,reftext="Krav laser referanserammer og transformasjoner"]
@@ -312,7 +312,9 @@ Som et alternativ til innmåling av tradisjonelle kontrollflater, kan hjulsportm
 
 * Punktene i kontrollflaten skal måles inn med standardavvik maksimalt lik 1/3 av kravet til høydenøyaktighet i den ferdige punktskyen. 
 * Samme høydereferansemodell skal benyttes for innmåling av kontrollflate som for laser punktskyen.
-* Landmålingsarbeidene inkludert rapportering skal utføres i henhold til standarden <<SAT>>.
+* Landmålingsrapport.
+
+// * Landmålingsarbeidene inkludert rapportering skal utføres i henhold til standarden <<SAT>>.
 ====
 
 .Kontrollflaters gyldighetsområde
@@ -362,7 +364,9 @@ image::figurer/Kap7_SammenslåingBlokk.jpg["Sammenslåing av polygoner til en sk
 
 * De enkelte punktene i kontrollprofilen skal måles inn med standardavvik maksimalt lik 1/3 av kravet til grunnrissnøyaktigheten i den ferdige punktskyen. 
 * Samme høydereferansemodell skal benyttes for innmåling av kontrollprofil som for laser punktskyen. 
-* Landmålingsrapport, der hvor GNSS er benyttet, skal utføres i henhold til standarden Satellittbasert Posisjonsbestemmelse <<SAT>>.
+* Landmålingsrapport.
+
+//* Landmålingsrapport, der hvor GNSS er benyttet, skal utføres i henhold til standarden Satellittbasert Posisjonsbestemmelse <<SAT>>.
 ====
 
 ==== Utføring av datainnsamling
