@@ -230,7 +230,6 @@ _MERKNAD_: Sann verdi vil ofte være ukjent, men den brukes i utjevningsregninge
 
 .sanntidsmåling
 Kode- eller fasemåling der beregninger skjer samtidig med at man måler. +
-_Kilde_: <<SAT>> +
 
 .signal
 _MERKNAD_: Se fotogrammetrisk signal.
