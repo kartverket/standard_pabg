@@ -8,8 +8,9 @@
 [#G]
 *[G]*: https://standarder.geonorge.no/sosi/standarder-geografisk-informasjon/geodatakvalitet/1.0/geodatakvalitet-10-standarder-geografisk-informasjon.pdf[Geodatakvalitet, versjon 1.0 2015]
 
-[#GN]
-*[GN]*: https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/grunnlagsnett-1.1-standarder-geografisk-informasjon.pdf[Grunnlagsnett, versjon 1.1 2009]
+//[#GN]
+
+// *[GN]*: https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/grunnlagsnett-1.1-standarder-geografisk-informasjon.pdf[Grunnlagsnett, versjon 1.1 2009]
 
 [#SAT]
 *[SAT]*: https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/satellittbasert-posisjonsbestemmelse[Satellittbasert posisjonsbestemmelse, versjon 2.1 2009]
@@ -47,9 +48,9 @@
 [#SL]
 *[SL]*: https://lovdata.no/dokument/NL/lov/2018-06-01-24[Sikkerhetsloven]
 
-<<GN>> er erstattet av en ny standard <<GG>>. 
+// <<GN>> er erstattet av en ny standard <<GG>>. 
 
-<<SAT>> er en tilbaketrukket standard, men enkelte deler vil bli oppdatert og videreført i en planlagt veileder.
+// <<SAT>> er en tilbaketrukket standard, men enkelte deler vil bli oppdatert og videreført i en planlagt veileder.
 
 === Juridiske og regulative referanser
 
