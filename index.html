@@ -991,9 +991,6 @@ Standarden kan nyttes som referansedokument ved inngåelse av avtaler om produks
 <div id="G" class="paragraph">
 <p><strong>[G]</strong>: <a href="https://standarder.geonorge.no/sosi/standarder-geografisk-informasjon/geodatakvalitet/1.0/geodatakvalitet-10-standarder-geografisk-informasjon.pdf">Geodatakvalitet, versjon 1.0 2015</a></p>
 </div>
-<div id="GN" class="paragraph">
-<p><strong>[GN]</strong>: <a href="https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/grunnlagsnett-1.1-standarder-geografisk-informasjon.pdf">Grunnlagsnett, versjon 1.1 2009</a></p>
-</div>
 <div id="SAT" class="paragraph">
 <p><strong>[SAT]</strong>: <a href="https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/satellittbasert-posisjonsbestemmelse">Satellittbasert posisjonsbestemmelse, versjon 2.1 2009</a></p>
 </div>
@@ -1029,12 +1026,6 @@ Standarden kan nyttes som referansedokument ved inngåelse av avtaler om produks
 </div>
 <div id="SL" class="paragraph">
 <p><strong>[SL]</strong>: <a href="https://lovdata.no/dokument/NL/lov/2018-06-01-24">Sikkerhetsloven</a></p>
-</div>
-<div class="paragraph">
-<p><a href="#GN">[GN]</a> er erstattet av en ny standard <a href="#GG">[GG]</a>.</p>
-</div>
-<div class="paragraph">
-<p><a href="#SAT">[SAT]</a> er en tilbaketrukket standard, men enkelte deler vil bli oppdatert og videreført i en planlagt veileder.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1364,8 +1355,7 @@ Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kje
 </div>
 <div class="paragraph">
 <div class="title">sanntidsmåling</div>
-<p>Kode- eller fasemåling der beregninger skjer samtidig med at man måler.<br>
-<em>Kilde</em>: <a href="#SAT">[SAT]</a><br></p>
+<p>Kode- eller fasemåling der beregninger skjer samtidig med at man måler.<br></p>
 </div>
 <div class="paragraph">
 <div class="title">signal</div>
@@ -1508,9 +1498,6 @@ Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kje
 <div class="paragraph">
 <p>Geodetiske metoder benyttes til kartlegging ved høye krav til nøyaktighet eller når forholdene ellers gjør det naturlig, for eksempel ved mindre ajourføringer eller ved måling i områder som ikke kan kartlegges fotogrammetrisk på grunn av dårlig innsyn.</p>
 </div>
-<div class="paragraph">
-<p>Standarden <a href="#SAT">[SAT]</a> gir anbefalinger om hvordan posisjonsbestemmelse med satellitter bør utføres i kart- og oppmålingsarbeider.</p>
-</div>
 </div>
 <div class="sect2">
 <h3 id="_referanserammer_og_transformasjoner">5.2. Referanserammer og transformasjoner</h3>
@@ -1570,9 +1557,6 @@ Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kje
 <div class="paragraph">
 <p>RTK kan benyttes med VRS eller egen referansestasjon. Referansestasjonen settes opp over et fastmerke med kjent kvalitet, nærmere enn 5-10 km fra måleområdet.</p>
 </div>
-<div class="paragraph">
-<p>Når det gjelder den praktiske gjennomføringen av målearbeidene og kravene til disse, vises det til standarden <a href="#SAT">[SAT]</a>.</p>
-</div>
 </div>
 <div class="sect4">
 <h5 id="_transformasjoner">5.3.1.2. Transformasjoner</h5>
@@ -1585,12 +1569,12 @@ Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kje
 <p>Korrigerte høydeforskjeller kan utledes fra transformasjonspunkt der både ellipsoidisk og ortometrisk høyde (NN2000) er kjent, og der referansestasjonen er et av transformasjonspunktene.</p>
 </li>
 <li>
-<p>Korrigerte høydeforskjeller kan utledes fra en eksisterende høydereferansemodell (se standarden "Norges offisielle høydesystem og referansenivåer").</p>
+<p>Korrigerte høydeforskjeller kan utledes fra en eksisterende høydereferansemodell.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>For videre beskrivelse av transformasjon se standardene <a href="#SAT">[SAT]</a> og <a href="https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/koordinatbaserte-referansesystemer-2.1-standarder-geografisk-informasjon.pdf">Koordinatbaserte referansesystemer, 2.1 2009</a>.</p>
+<p>For videre beskrivelse av transformasjon se standarden <a href="#GG">[GG]</a>.</p>
 </div>
 </div>
 </div>
@@ -1600,7 +1584,7 @@ Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kje
 <p>Stasjonspunkter kan være et fastmerke eller et punkt som bestemmes med kontroll, for eksempel ved fri oppstilling. Ved fri oppstilling skal en måle retning, avstand og vertikalvinkel mot minimum to fastmerker.</p>
 </div>
 <div class="paragraph">
-<p>Stasjonspunkter og orienteringspunkter skal fortrinnsvis være fastmerker i Stamnettet, Landsnettet eller det kommunale nettet (gjelder for kommuner), eller egenetablerte fastmerker etablert med GNSS med tilstrekkelig kvalitet. Slike punkter dokumenteres ved beregning av ytre pålitelighet i programvare som håndterer dette. Påliteligheten må tilfredsstille de krav som stilles i standarden Grunnlagsnett for den aktuelle områdetypen.</p>
+<p>Stasjonspunkter og orienteringspunkter skal fortrinnsvis være fastmerker i Stamnettet, Landsnettet eller det kommunale nettet (gjelder for kommuner), eller egenetablerte fastmerker etablert med GNSS med tilstrekkelig kvalitet. Slike punkter dokumenteres ved beregning av ytre pålitelighet i programvare som håndterer dette. Påliteligheten må tilfredsstille de krav som stilles i standarden <a href="#GG">[GG]</a> for den aktuelle områdetypen.</p>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -1642,32 +1626,13 @@ Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kje
 <p>Oppdragstaker er ansvarlig for å bruke instrumenter, materiell og måleopplegg som gir tilfredsstillende resultater i forhold til oppgavene. Det skal fortrinnsvis utføres årlig service på benyttede måleinstrumenter.</p>
 </div>
 <div class="paragraph">
-<p>Aktuelle dokumenter:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Standarden <a href="#GN">[GN]</a>, kapittel 6 Kontroll og kalibrering av måleutstyr.</p>
-</li>
-<li>
-<p>Standarden <a href="https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/kontroll-og-kalibrering-av-elektrooptiske-avstandsmalere-2.1-standarder-geografisk-informasjon.pdf">Kontroll og kalibrering av elektrooptiske avstandsmålere 2.1 2009</a>.</p>
-</li>
-<li>
-<p>Standarden <a href="#SAT">[SAT]</a>.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Oppdragstakeren skal i sin rapport dokumentere at instrumentene som blir brukt, minst har den nøyaktigheten som kreves for å tilfredsstille kravene til sluttproduktet. En slik dokumentasjon gis for hvert benyttet instrument. Fabrikkmerke, type og serienummer oppgis. Det vises til Instrument-levnetsoversikten i Tillegg B i standarden <a href="#GN">[GN]</a>.</p>
+<p>Oppdragstakeren skal i sin rapport dokumentere at instrumentene som blir brukt, minst har den nøyaktigheten som kreves for å tilfredsstille kravene til sluttproduktet. En slik dokumentasjon gis for hvert benyttet instrument. Fabrikkmerke, type og serienummer oppgis.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_beregning">5.5. Beregning</h3>
 <div class="paragraph">
 <p>Oppdragstaker er ansvarlig for at valg av måleopplegg, programvare og beregningsopplegg gir god nok nøyaktighet i forhold til kravene.</p>
-</div>
-<div class="paragraph">
-<p>Ved bruk av satellittutstyr er beregning beskrevet i standarden <a href="#SAT">[SAT]</a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -2098,7 +2063,7 @@ Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kje
 <p>Det presiseres at tallene i <a href="#tab-nøyaktighet-innmåling-kjentpunkt-FKB">Tabell 3</a> henviser til kravene som er stilt i FKB 5.0 produktspesifikasjonen, ved endringer i FKB spesifikasjonen vil eventuelle endringer til nøyaktighetskrav gjelde foran kravene som er satt opp i <a href="#tab-nøyaktighet-innmåling-kjentpunkt-FKB">Tabell 3</a>. Det stilles krav til henholdsvis punktstandardavvik, grunnriss (S<sub>p</sub>) og standardavvik i høyde (S<sub>h</sub>). For systematisk avvik skal dette for FKB være 1/3 av standardavvikskravet.</p>
 </div>
 <div class="paragraph">
-<p>For øvrige krav til innmåling vises det til standarden <a href="#SAT">[SAT]</a>, og for krav til utførelse av signaleringen vises det til <a href="#kapittel-signalering">Kapittel 6.2, &#8220;Signalering&#8221;</a>.</p>
+<p>For krav til utførelse av signaleringen vises det til <a href="#kapittel-signalering">Kapittel 6.2, &#8220;Signalering&#8221;</a>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -2202,7 +2167,7 @@ Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kje
 <div class="sect2">
 <h3 id="kapittel-signalering">6.2. Signalering</h3>
 <div class="paragraph">
-<p>Dette kapittelet angir krav og retningslinjer til signalering av kjentpunkter for aerotriangulering og eventuelle objekter som skal kartlegges og som er for små til å synes i flybildene. For innmåling av kjentpunkter henvises til krav i <a href="#kapittel-krav-til-kjentpunkter-og-kontrollpunkter">Kapittel 6.1.3.1, &#8220;Krav til kjentpunkter og kontrollpunkter&#8221;</a> og til standarden <a href="#SAT">[SAT]</a>.</p>
+<p>Dette kapittelet angir krav og retningslinjer til signalering av kjentpunkter for aerotriangulering og eventuelle objekter som skal kartlegges og som er for små til å synes i flybildene. For innmåling av kjentpunkter henvises til krav i <a href="#kapittel-krav-til-kjentpunkter-og-kontrollpunkter">Kapittel 6.1.3.1, &#8220;Krav til kjentpunkter og kontrollpunkter&#8221;</a>.</p>
 </div>
 <div class="sect3">
 <h4 id="_lovhjemmel_for_markarbeider_matrikkellova">6.2.1. Lovhjemmel for markarbeider - Matrikkellova</h4>
@@ -2499,9 +2464,6 @@ Fjell, stein, sand, grus, asfalt eller betong gir dårlig kontrast, og det skal 
 </tbody>
 </table>
 </div>
-</div>
-<div class="paragraph">
-<p>For krav til rapportering av innmålingsarbeidet vises til standarden <a href="#SAT">[SAT]</a>.</p>
 </div>
 </div>
 </div>
@@ -4468,7 +4430,7 @@ Antall ulovlige småpolygoner.<br></p></td>
 <p>Dersom det er relevant for oppdraget, skal det kjøres høydesjekk (skjæringsberegning av høydeforskjell i kryssende elementer).</p>
 </div>
 <div class="paragraph">
-<p>Alle kontroller skal gjennomføres i henhold til krav i standarden Geodatakvalitet.</p>
+<p>Alle kontroller skal gjennomføres i henhold til krav i standarden Geodatakvalitet <a href="#GK">[GK]</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -4632,7 +4594,7 @@ Manus og støttedata.<br></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Egenkontroll</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dokumentasjon av gjennomførte kontroller, i henhold til krav i standarden Geodatakvalitet.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dokumentasjon av gjennomførte kontroller, i henhold til krav i standarden Geodatakvalitet <a href="#GK">[GK]</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">Leveranser</p></td>
@@ -4698,7 +4660,7 @@ Manus og støttedata.<br></p></td>
 <p>Spesifikasjon for etablering og forvaltning av punktskyer ligger i gjeldende versjon av Produktspesifikasjon Punktsky <a href="#Punktsky">[Punktsky]</a>.</p>
 </div>
 <div class="paragraph">
-<p>Krav for DTM og høydekurver (høydegrunnlag) står i Produktspesifikasjon FKB-Høydekurve, mens kontrollen er beskrevet i standarden Geodatakvalitet.</p>
+<p>Krav for DTM og høydekurver (høydegrunnlag) står i Produktspesifikasjon FKB-Høydekurve, mens kontrollen er beskrevet i standarden Geodatakvalitet <a href="#GK">[GK]</a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -5739,7 +5701,7 @@ Manus og støttedata.<br></p></td>
 <p>Laserskanning kan også utføres fra andre plattformer slik som fra drone (UAV), fra kjøretøy (bilbåren laserskanning) og fra fast oppstilling (terrestrisk/bakkebasert laserskanning). I dette kapittel omtales datafangst med laserskanning fra luften (drone, fly eller helikopter).</p>
 </div>
 <div class="paragraph">
-<p>Krav til produkt og leveranser spesifiseres i nyeste versjon av Produktspesifikasjon Punktsky <a href="#Punktsky">[Punktsky]</a>. For definisjon av kvalitetsmål vises det til standarden Geodatakvalitet.</p>
+<p>Krav til produkt og leveranser spesifiseres i nyeste versjon av Produktspesifikasjon Punktsky <a href="#Punktsky">[Punktsky]</a>. For definisjon av kvalitetsmål vises det til standarden Geodatakvalitet <a href="#GK">[GK]</a>.</p>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -6337,7 +6299,7 @@ målepunktene. I praksis så vil oppmerking være gunstig for å sikre at samme 
 <p>Samme høydereferansemodell skal benyttes for innmåling av kontrollflate som for laser punktskyen.</p>
 </li>
 <li>
-<p>Landmålingsarbeidene inkludert rapportering skal utføres i henhold til standarden <a href="#SAT">[SAT]</a>.</p>
+<p>Landmålingsrapport.</p>
 </li>
 </ul>
 </div>
@@ -6429,7 +6391,7 @@ målepunktene. I praksis så vil oppmerking være gunstig for å sikre at samme 
 <p>Samme høydereferansemodell skal benyttes for innmåling av kontrollprofil som for laser punktskyen.</p>
 </li>
 <li>
-<p>Landmålingsrapport, der hvor GNSS er benyttet, skal utføres i henhold til standarden Satellittbasert Posisjonsbestemmelse <a href="#SAT">[SAT]</a>.</p>
+<p>Landmålingsrapport.</p>
 </li>
 </ul>
 </div>
