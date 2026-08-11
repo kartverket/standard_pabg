@@ -31,7 +31,7 @@ Dette avsnittet angir krav og retningslinjer til planlegging av flyfotografering
 [[kapittel-bildekvalitet]]
 ==== Bildekvalitet
 
-En viktig faktor ved fotografering fra luften er bildekvalitet. Det er en rekke faktorer som er med på å påvirke vår opplevelse av bildekvalitet. Hva som er bra kvalitet vil bestemmes av bruken av bildene. Dersom bildene skal brukes av maskin er informasjonsmengden i bilde viktig, men når menneske skal benytte bildene er det persepsjon som er viktigst. For de fleste tilfeller vil en balansegang mellom de to tilnærmingene være beste løsning. 
+En viktig faktor ved fotografering fra luften er bildekvalitet. Det er en rekke faktorer som er med på å påvirke vår opplevelse av bildekvalitet. Hva som er bra kvalitet, vil bestemmes av bruken av bildene. Dersom bildene skal brukes av maskin er informasjonsmengden i bilde viktig, men når menneske skal benytte bildene er det persepsjon som er viktigst. For de fleste tilfeller vil en balansegang mellom de to tilnærmingene være beste løsning. 
 
 I kvalitetsmodellen kan vi knytte ulike bildekvalitetsmål til kategorien egenskapskvalitet - Kvantitativ egenskaps nøyaktighet. Noen vil også kunne havne under kategorien egenskapskvalitet - Ikke kvantitativ egenskapsriktighet.
 
@@ -84,7 +84,7 @@ Fargenøyaktighet kan måles ved å måle fargen på naturlige eller kunstige fa
 
 For å kunne benytte fargereferansene må fargen måles med et fargespektrometer. Det måles da i forhold til en referanselyskilde og observasjonsvinkel definert av "International Commission on Illumination". Referanselyskilden bør være D65 som tilsvarer midlere dagslys med en fargetemperatur på ca. 6504 kelvin og observasjonsvinkel bør være 10°. Observasjonsvinkelen refereres til øyets observasjonsvinkel. For å få et varmere fargeuttrykk kan en alternativt benytte D50 med fargetemperatur på ca. 5003 kelvin. Det anbefales at feltmålinger leveres i ulike formateringer som RGB, CIEXYZ, CIELAB med fargetemperatur D50 og D65.
 
-Målt farger og korresponderende fargereferanser i bildet sammenlignes i fargerommet CIELAB, hvor avstanden mellom dem beregnes. Denne avstanden kalles ofte ∆E. Når ∆E verdien er under 1 er det vanskelig å se forskjell på fargene. Farger med ∆E verdier over 2 er lette å se forskjell på. Når en beregner ∆E kan en gjøre dette i 2 eller 3 dimensjoner. Dersom en benytter 2 dimensjoner ser en kun på CIELAB (a*b) som uttrykker selve fargen. Ved å inkludere 3 dimensjoner CIELAB (L*a*b) vil fargens lysstyrke også bli evaluert. Dersom dette gjøres må feltmålingene utføres med riktig kalibrert lysstyrke. 
+Målt farger og korresponderende fargereferanser i bildet sammenlignes i fargerommet CIELAB, hvor avstanden mellom dem beregnes. Denne avstanden kalles ofte ∆E. Når ∆E verdien er under 1 er det vanskelig å se forskjell på fargene. Farger med ∆E verdier over 2 er lette å se forskjell på. Når en beregner ∆E kan en gjøre dette i 2 eller 3 dimensjoner. Dersom en benytter 2 dimensjoner ser en kun på CIELAB (a*b) som uttrykker selve fargen. Ved å inkludere 3 dimensjoner CIELAB (L*a*b) vil fargens lysstyrke også bli evaluert. Dersom dette gjøres, må feltmålingene utføres med riktig kalibrert lysstyrke. 
 
 
 ////
