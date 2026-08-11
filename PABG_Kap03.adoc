@@ -72,6 +72,6 @@ Det er de til enhver tid gjeldende juridiske og regulative føringer som berøre
 
 === Faglige referanser
 
-// Benytter ISO690 til å beskreve referansene
+// Benytter ISO690 til å beskrive referansene
 
 *[Meißner and Berger, 2025]* : MEIßNER, Henry; BERGER, Ralf. Adaptable Siemens Star Targets for Reliable and Standardized Spatial Resolution Measurement under DIN 18740-8. The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, 2025, 48: 139-146. 
