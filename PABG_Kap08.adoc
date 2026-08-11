@@ -231,7 +231,7 @@ Kvalitetselementer knyttet til kriteriet om egenskapskvalitet er angitt i <<tab-
 |Farge| Punktene i punktskyen kan gis RGB-farge fra bilder tatt samtidig som laserskanningen, med forutsetning om at datainnsamling kan utføres i tilstrekkelige lysforhold. Farge er valgfritt og opp til det enkelte prosjekt å vurdere om relevant og derfor om det skal stilles krav til dette eller ikke.
 |Klassifisering| Følger krav fra <<kapittel-bearbeiding-av-laserdata-klassifisering>> samt Produktspesifikasjon Punktsky <<Punktsky>>. Klassifisering er valgfritt og opp til det enkelte prosjekt å vurdere om relevant og derfor om det skal stilles krav til dette eller ikke.
 |Målemetode (fase/puls)|Valg av lasersensortype, fase- eller pulsskanner, avhenger av sluttprodukt og bruksområde.
-|SensorID|Punkter fra ulike skannere skal kunne skilles fra hverandre.
+|Sensor-ID|Punkter fra ulike skannere skal kunne skilles fra hverandre.
 |Tidsstempling|Dato og tid for målepunkter, hvis tilgjengelig for sensortypen, angitt som GPS-standardtid. Dersom systemet ikke angir GPS-tid skal siste datafangst dato angis i punktskyfilens hode.
 |====================
 
