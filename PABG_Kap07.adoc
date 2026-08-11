@@ -642,7 +642,7 @@ Ved behov kan oppdragsgiver etterspørre klassifisering av objekter utover terre
 |Punkttetthet|(X pr m^2^)
 |Datum|(horisontalt datum, vertikalt datum, projeksjon og benyttet HREF-modell)
 |Oppdragstaker|(adresse, prosjektleder, fagansvarlig og underleverandører)
-|Beskrivelse av oppdraget|(produkt, areal og referanse til standarddokumenter)(eventuelle endringer/utvidelser til opprinnelig teknisk spesifikasjon)
+|Beskrivelse av oppdraget|(produkt, areal og referanse til standarddokumenter) (eventuelle endringer/utvidelser til opprinnelig teknisk spesifikasjon)
 |Antall eksemplar av rapport|(antall og oppbevaringssted)
 |Versjon|(rapportversjonsnummer)
 |Datering og signatur|(dd.mm.åååå, signatur)
