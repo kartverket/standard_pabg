@@ -139,7 +139,7 @@ Det skal leveres en rapport for den geodetiske kartleggingen, med leveransene so
 |Dataleveranse|Spesifikasjon av leveranseformat og eventuell inndeling i filer
 .4+|Vedlegg|Observasjoner|Sortert utlisting av observasjonene på digital form
 |Beregninger|Beregningsresultatet på digital form
-|Transformasjon|Resultat av eventuelle grovefeilsøk, transformasjonsparametere og restfeil i transformasjonspunktene, avvik i kontrollpunktene skal dokumenteres
+|Transformasjon|Resultat av eventuelle grovfeilsøk, transformasjonsparametere og restfeil i transformasjonspunktene, avvik i kontrollpunktene skal dokumenteres
 |Innmålte objekter|Innmålte objekter på avtalt vektorformat
 |===
 
