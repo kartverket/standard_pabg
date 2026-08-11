@@ -157,7 +157,7 @@ image::figurer/kap9_feilforplantning2.png["Feilforplantning",align="center"]
 
 Eksempelet tar utgangspunkt i vektorisering av to dimensjonale objekter fra laser punktsky i kategori "Høy" definert i <<Punktsky>>. Det tas derfor utgangspunkt i den horisontale nøyaktigheten. Dette gir at det horisontale systematiske avviket er 0,15 m og det horisontale standardavviket er 0,05 m.
 
-Tilsvarende utregning vil gjelde dersom en benytter en bildematachet punktsky, men det må da legges til en faktor fra selve bildematchingen, se xref:imgFormel5[xrefstyle=short].
+Tilsvarende utregning vil gjelde dersom en benytter en bildematchet punktsky, men det må da legges til en faktor fra selve bildematchingen, se xref:imgFormel5[xrefstyle=short].
 
 [caption="Formel 5"]
 .: feilforplantning ved bildematching
