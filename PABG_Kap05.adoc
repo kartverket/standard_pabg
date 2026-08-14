@@ -15,7 +15,7 @@ Geodetiske metoder benyttes til kartlegging ved høye krav til nøyaktighet elle
 *KRAV LANDMÅLING REFERANSERAMMER OG TRANSFORMASJONER*
 
 * Produksjonen av produktene beskrevet i denne standarden skal anvende Kartverkets offisielle transformasjonsformler. Se også kapittel "6.5 Omforming av koordinater" i <<GG>>.
-* Når det benyttes globale referanserammer, må referansetidspunktet for datafangsten (epoke) være kjent og skal benyttes i transformasjon mellom globale og nasjonale referanserammer. Dette medføre at EPSG koder som utgjøre en samling (ensemble) av EPSG koder ikke skal benyttes.
+* Når det benyttes globale referanserammer, må referansetidspunktet for datafangsten (epoke) være kjent og skal benyttes i transformasjon mellom globale og nasjonale referanserammer. Dette medfører at EPSG-koder som utgjør en samling (ensemble) av EPSG-koder ikke skal benyttes.
 ====
 
 
