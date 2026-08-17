@@ -52,14 +52,14 @@ Flybilder og annet materiale som inneholder informasjon av betydning for landets
 Oppdragsgivere for fotografering som mottar bildedata, skal sikre disse mot uvedkommende i henhold til lov om forebyggende sikkerhetstjeneste (sikkerhetsloven <<SL>>) med forskrifter. Slikt materiale skal ikke bringes ut av landet uten forutgående samtykke fra Nasjonal sikkerhetsmyndighet (NSM).
 
 === Originalt materiale
-Inntil levering har funnet sted, har oppdragstaker risikoen for alt originalt materiale, inklusive forsvarlig håndtering og midlertidig oppbevaring ref. "Avtale for geodataarbeider". Arkivansvaret overføres til Kartverket ved godkjent levering.
+Inntil levering har funnet sted, har oppdragstaker risikoen for alt originalt materiale, inklusive forsvarlig håndtering og midlertidig oppbevaring. Arkivansvaret overføres til Kartverket ved godkjent levering.
 
 ==== Film og digitale opptak
 Her omtales både analogt og digitalt filmmateriale og opptak med digitale sensorer. Oppdragstakeren for fotografering skal oppbevare originalmaterialet ved jevn og riktig temperatur og relativ fuktighet (klimarom), slik at plastiske deformasjoner og skader på dataene unngås. Oppbevaringen skal være slik at materialet ikke utsettes for nedstøving eller kjemisk og fysisk påvirkning som resulterer i at emulsjon, base eller data skades eller deformeres. Data må sikres mot avmagnetisering, samt tap på grunn av lang lagringstid på datamediet.
 
-Oppdragstaker skal oppbevare originalmaterialet i minimum 4 år etter fotograferingsåret. Deretter skal det overføres til Statens kartverk Sentralarkivet for vertikalbilder.
+Oppdragstaker skal oppbevare originalmaterialet i minimum 4 år etter fotograferingsåret. Deretter skal det overføres til Kartverkets Sentralarkiv for vertikalbilder.
 
-Oppdragstakers arkiv skal godkjennes av Statens kartverk og NSM. NSM gir instruks for og kontrollerer den sikkerhetsmessige behandlingen av materialet. Dersom arkivet ikke blir godkjent, plikter oppdragstaker å overføre originalmaterialet til et godkjent arkiv tilvist av Statens kartverk.
+Oppdragstakers arkiv skal godkjennes av Kartverket og NSM. NSM gir instruks for og kontrollerer den sikkerhetsmessige behandlingen av materialet. Dersom arkivet ikke blir godkjent, plikter oppdragstaker å overføre originalmaterialet til et godkjent arkiv tilvist av Kartverket.
 
 ==== Kartmateriale og geodata
 Originalt kartmateriale og geodata skal oppbevares på en slik måte at det til enhver tid kan fremstilles kopier uten at kvaliteten forringes.
