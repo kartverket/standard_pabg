@@ -85,6 +85,8 @@ Standarden ble etablert i 2015 og erstattet da den tidligere standarden Kart og 
 
 Revisjon av standarden til versjon 3.0 ble startet i 2025. Hele standarden ble gått igjennom under revideringen. Det ble lagt til krav til skråbilder i kapittel 6, lagt til et nytt kapittel om mobil datafangst og et nytt kapittel om vektorisering fra punktsky/modell.
 
+Standardene Norges offisielle høydesystemer og referansenivåer 2.1 (2009) og Satellittbasert posisjonsbestemmelse 2.1 (2009) ble trukket tilbake når den nye standarden for Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt 1.0 <<GG>> kom i 2024. Enkelte deler av de tilbaketrukne standardene vil bli oppdatert og videreført i en veileder som er under utarbeiding. Referanser til de tilbaketrukne standardene er fjernet i denne standarden og den nye veilederen vil være prioritert hvis det blir konflikt mellom denne standarden og den nye veilederen.
+
 [options=autowidth,options=header]
 |====
 |Versjon |Dato|Utført av|Grunnlag for endringen
