@@ -245,7 +245,7 @@ Sveipeprosess for konvertering fra analog til digital representasjon av bilder, 
 _MERKNAD_: Skanneråpning = FOV (Field of View) = 2 ganger åpningsvinkel fra nadir 
 
 .stamnett
-Tidligere overordnet nett av fastmerker i Norge, etablert av Statens kartverk i forbindelse med overgang til EUREF89. +
+Tidligere overordnet nett av fastmerker i Norge, etablert av Kartverket i forbindelse med overgang til EUREF89. +
 _Kilde_: <<GG>> +
 _MERKNAD_: Avløste det tidligere 1. ordens trekantnettet. Har sidelengder på ca. 20 km i bebygde strøk. Kartverket er ansvarlig for vedlikehold og forvaltning av Stamnettet.
 
