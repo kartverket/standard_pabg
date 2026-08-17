@@ -28,7 +28,7 @@ Geodetisk kartlegging foregår enten med satellittbaserte metoder eller ved bruk
 Satellittbasert måling baseres på ulike typer utstyr og satellittsystemer. Målingene kan utføres som sanntidsmåling eller med posisjonsberegning i ettertid.  
 
 ===== Sanntidsmåling
-Den mest aktuelle metoden for posisjonsbestemmelse i sanntid er RTK. I RTK overføres korreksjonsdata til satellittmottakeren (roveren) fra en referansestasjon i et kjent punkt. En variant av RTK er nettverks-RTK hvor korreksjonsdataene kommer fra en virtuell referansestasjon (VRS), beregnet fra et nett av faste stasjoner og overføres til satellittmottakeren fra et sentralt kontrollsenter. Både private firma og Statens kartverk tilbyr sanntidstjenester basert på nettverks-RTK. 
+Den mest aktuelle metoden for posisjonsbestemmelse i sanntid er RTK. I RTK overføres korreksjonsdata til satellittmottakeren (roveren) fra en referansestasjon i et kjent punkt. En variant av RTK er nettverks-RTK hvor korreksjonsdataene kommer fra en virtuell referansestasjon (VRS), beregnet fra et nett av faste stasjoner og overføres til satellittmottakeren fra et sentralt kontrollsenter. Både private firma og Kartverket tilbyr sanntidstjenester basert på nettverks-RTK. 
 
 ====
 [#krav-landmaling-sanntidsmaling,reftext="Krav landmåling sanntidsmåling"]
