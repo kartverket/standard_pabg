@@ -28,7 +28,7 @@ Geodetisk kartlegging foregår enten med satellittbaserte metoder eller ved bruk
 Satellittbasert måling baseres på ulike typer utstyr og satellittsystemer. Målingene kan utføres som sanntidsmåling eller med posisjonsberegning i ettertid.  
 
 ===== Sanntidsmåling
-Den mest aktuelle metoden for posisjonsbestemmelse i sanntid er RTK. I RTK overføres korreksjonsdata til satellittmottakeren (roveren) fra en referansestasjon i et kjent punkt. En variant av RTK er nettverks-RTK hvor korreksjonsdataene kommer fra en virtuell referansestasjon (VRS), beregnet fra et nett av faste stasjoner og overføres til satellittmottakeren fra et sentralt kontrollsenter. Både private firma og Kartverket tilbyr sanntidstjenester basert på nettverks-RTK. 
+Den mest aktuelle metoden for posisjonsbestemmelse i sanntid er Real Time Kinematic (RTK). I RTK overføres korreksjonsdata til satellittmottakeren (roveren) fra en referansestasjon i et kjent punkt. En variant av RTK er nettverks-RTK hvor korreksjonsdataene kommer fra en virtuell referansestasjon (VRS), beregnet fra et nett av faste stasjoner og overføres til satellittmottakeren fra et sentralt kontrollsenter. Både private firma og Kartverket tilbyr sanntidstjenester basert på nettverks-RTK. 
 
 ====
 [#krav-landmaling-sanntidsmaling,reftext="Krav landmåling sanntidsmåling"]
@@ -45,11 +45,11 @@ RTK kan benyttes med VRS eller egen referansestasjon. Referansestasjonen settes 
 // Når det gjelder den praktiske gjennomføringen av målearbeidene og kravene til disse, vises det til standarden <<SAT>>.
 
 ===== Transformasjoner
-Ved differensielle satellittbaserte metoder fremkommer ellipsoidiske høydeforskjeller. For å sikre leveranse i NN2000 med gjeldene høydereferansemodell, må høydeforskjellene korrigeres. Dette kan gjøres på flere måter:
+Ved differensielle satellittbaserte metoder fremkommer ellipsoidiske høydeforskjeller. For å sikre leveranse i NN2000 med gjeldene høydereferansemodell (HREF), må høydeforskjellene korrigeres. Dette kan gjøres på flere måter:
 
 * Korrigerte høydeforskjeller kan utledes fra transformasjonspunkt der både ellipsoidisk og ortometrisk høyde (NN2000) er kjent, og der referansestasjonen er et av transformasjonspunktene.
 
-* Korrigerte høydeforskjeller kan utledes fra en eksisterende høydereferansemodell. 
+* Korrigerte høydeforskjeller kan utledes fra en eksisterende høydereferansemodell (HREF). 
 
 // (se standarden "Norges offisielle høydesystem og referansenivåer").
 
@@ -132,7 +132,7 @@ Det skal leveres en rapport for den geodetiske kartleggingen, med leveransene so
 |Geodetisk og vertikalt grunnlag|(geodetisk datum, vertikalt datum, ellipsoidisk/ortometrisk høyde, kartprojeksjon, akse/sone)
 |Benyttede grunnlagspunkter|(navn, nummer, dokumentasjon av kvalitet)
 |Målemetode og -prosedyre|Valgt målemetode og -prosedyre skal begrunnes
-|HREF|Versjon av HREF benyttet under datafangst
+|Høydereferansemodell (HREF)|Versjon av høydereferansemodell (HREF) benyttet under datafangst
 |Innmålte objekttyper|Liste over alle objekter
 |Produktspesifikasjon, objektkatalog og topologisk nivå|(versjon)
 |Egenkontroll|Avvik ved kontrollmåling av objekter innmålt fra flere stasjoner, samt kontroll av tidligere kartlagte objekter
