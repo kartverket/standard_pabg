@@ -77,13 +77,13 @@ Denne standarden er utarbeidet for å gi en oversikt over aktuell teknologi for 
 
 
 === Bruk av krav i standarden
-Produksjon av basis geodata setter krav til produksjonsprosessene, dokumentasjon og rapportering. For å gjøre det lettere å identifisere kravene er disse uthevet og nummerert. Liste over krav finnes i <<kapittel-vedlegg-d-liste-over-krav>> og liste over anbefalinger finnes i <<kapittel-vedlegg-e-liste-over-anbefalinger>>.
+Produksjon av basis geodata setter krav til produksjonsprosessene, dokumentasjon og rapportering. For å gjøre det lettere å identifisere kravene og anbefalingene er disse uthevet og navngitt. Liste over krav finnes i <<kapittel-vedlegg-d-liste-over-krav>> og liste over anbefalinger finnes i <<kapittel-vedlegg-e-liste-over-anbefalinger>>.
 
 === Historikk og status
 
 Standarden ble etablert i 2015 og erstattet da den tidligere standarden Kart og Geodata (2008). Det har vært en stor teknologisk utvikling siden versjon 1 av standarden ble utgitt i 2015, som for eksempel kan ikke 1.0 versjonen av standarden benyttes til å bestille datafangst ved hjelp av drone. Det ble derfor startet en revisjon av standarden i 2022, revisjonen gjennomføres som et standardiseringsprosjekt.  For at standarden kan benyttes til anskaffelser i 2023 så ble det besluttet å gjennomføre en mindre revisjon som tok inn et underkapittel 6.8 som setter krav til fotografering med drone. I tillegg ble det gjort noen mindre presiseringer og rettinger i kapittel 6.
 
-Revisjon av standarden til versjon 3.0 ble startet i 2025. Hele standarden ble gått igjennom under revideringen. Det ble lagt til krav til skråbilder i kapittel 6, lagt til et nytt kapittel om mobil datafangst og et nytt kapittel om vektorisering fra punktsky/modell.
+Revisjon av standarden til versjon 3.0 ble startet i 2025. Hele standarden ble gått igjennom under revideringen. Det ble lagt til krav til skråbilder i kapittel 6, et nytt kapittel om mobil datafangst og et nytt kapittel om vektorisering fra punktsky/modell.
 
 Standardene Norges offisielle høydesystemer og referansenivåer 2.1 (2009) og Satellittbasert posisjonsbestemmelse 2.1 (2009) ble trukket tilbake når den nye standarden for Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt 1.0 <<GG>> kom i 2024. Enkelte deler av de tilbaketrukne standardene vil bli oppdatert og videreført i en veileder som er under utarbeiding. Referanser til de tilbaketrukne standardene er fjernet i denne standarden og den nye veilederen vil være prioritert hvis det blir konflikt mellom denne standarden og den nye veilederen.
 
@@ -163,7 +163,7 @@ Nytt vedlegg med liste over anbefalinger: <<kapittel-vedlegg-e-liste-over-anbefa
 ==== Endringer fra Produksjon av basis geodata versjon 1 til Produksjon av basis geodata versjon 2
 
 *Kapittel 3* +
-Ryddet i henvisning til normative standarder
+Ryddet i henvisning til normative standarder.
 
 *Kapittel 4* +
 Oppdatert lenker til standarder, omtalt at noen standarder er på vei til å erstattes av en ny geodesistandard. +
@@ -180,7 +180,7 @@ Lagt inn nytt kapittel 6.8 som stiller krav til dronedatafangst.
 
 *Vedlegg* +
 Oppdatert eksempel på flyplan. +
-Flyttet oversikt over kravliste til eget vedlegg
+Flyttet oversikt over kravliste til eget vedlegg.
 
 
 
