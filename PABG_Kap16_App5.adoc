@@ -3,6 +3,7 @@
 == Liste over anbefalinger
 
 <<anbefaling-foto-signalstørrelser>> +
+<<anbefaling-foto-maling-av-sammenbindingspunkt>> +
 <<anbefaling-foto-drone-ortofoto-med-rtk>> +
 <<anbefaling-foto-drone-kartkonstruksjon-i-stereo>> +
 <<anbefaling-foto-signalering-i-droneprosjekter>> +
