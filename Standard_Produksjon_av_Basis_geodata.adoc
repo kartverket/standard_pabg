@@ -148,13 +148,13 @@ Kapittel 10 i 2.0 versjonen er flyttet til <<kapittel-vedlegg-a-informativt-solh
 ////
 
 *Vedlegg A* +
-Kapittel 11 i 2.0 versjonen er flyttet til <<kapittel-vedlegg-b-informativt-valg-av-bildeoppløsning-gsd>>.
+Vedlegg B i 2.0 versjonen er flyttet til <<kapittel-vedlegg-b-informativt-valg-av-bildeoppløsning-gsd>>.
 
 *Vedlegg B* +
-Kapittel 12 i 2.0 versjonen er flyttet til <<kapittel-vedlegg-c-eksempel-fly-og-signaleringsplaner>>.
+Vedlegg C i 2.0 versjonen er flyttet til <<kapittel-vedlegg-c-eksempel-fly-og-signaleringsplaner>>.
 
 *Vedlegg C* +
-Kapittel 13 i 2.0 versjonen er flyttet til <<kapittel-vedlegg-d-liste-over-krav>>.
+Vedlegg D i 2.0 versjonen er flyttet til <<kapittel-vedlegg-d-liste-over-krav>>.
 
 *Vedlegg D* +
 Nytt vedlegg med liste over anbefalinger: <<kapittel-vedlegg-e-liste-over-anbefalinger>>
