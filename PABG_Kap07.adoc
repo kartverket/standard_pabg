@@ -311,7 +311,7 @@ Som et alternativ til innmåling av tradisjonelle kontrollflater, kan hjulsportm
 *KRAV LASER KONTROLLFLATER - NØYAKTIGHET*
 
 * Punktene i kontrollflaten skal måles inn med standardavvik maksimalt lik 1/3 av kravet til høydenøyaktighet i den ferdige punktskyen. 
-* Samme høydereferansemodell skal benyttes for innmåling av kontrollflate som for laser punktskyen.
+* Samme høydereferansemodell (HREF) skal benyttes for innmåling av kontrollflate som for laser punktskyen.
 * Landmålingsrapport.
 
 // * Landmålingsarbeidene inkludert rapportering skal utføres i henhold til standarden <<SAT>>.
@@ -363,7 +363,7 @@ image::figurer/Kap7_SammenslåingBlokk.jpg["Sammenslåing av polygoner til en sk
 *KRAV LASER KONTROLLPROFILER - NØYAKTIGHET*
 
 * De enkelte punktene i kontrollprofilen skal måles inn med standardavvik maksimalt lik 1/3 av kravet til grunnrissnøyaktigheten i den ferdige punktskyen. 
-* Samme høydereferansemodell skal benyttes for innmåling av kontrollprofil som for laser punktskyen. 
+* Samme høydereferansemodell (HREF) skal benyttes for innmåling av kontrollprofil som for laser punktskyen. 
 * Landmålingsrapport.
 
 //* Landmålingsrapport, der hvor GNSS er benyttet, skal utføres i henhold til standarden Satellittbasert Posisjonsbestemmelse <<SAT>>.
