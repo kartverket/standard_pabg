@@ -174,7 +174,7 @@ _MERKNAD_: Engelsk original: degree to which a set of inherent characteristics f
 Overordnet nett av fastmerker som Kartverket vedlikeholder og har ansvaret for. +
 _Kilde_: <<GG>> +
 _MERKNAD 1_: Historisk var koordinatene i Landsnettet en fortetting av koordinatene i Stamnettet, men ved oppdateringer i høyde i 2015 og grunnriss i 2018 er ikke denne koblinga ivaretatt. +
-_MERKNAD 2_: I dag er Landnettet en samlebetegnelse på både Stamnettet, det opprinnelige Landsnettet og nye overordnede grunnlagspunkt som er etablert. +
+_MERKNAD 2_: I dag er Landsnettet en samlebetegnelse på både Stamnettet, det opprinnelige Landsnettet og nye overordnede grunnlagspunkt som er etablert. +
 _MERKNAD 3_: Kartverkets trekantpunkt er ikke en del Landsnettet.
 
 .laserskudd
