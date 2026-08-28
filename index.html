@@ -975,7 +975,7 @@ Flyttet oversikt over kravliste til eget vedlegg.</p>
 <div class="paragraph">
 <p>Standarden spesifiserer generelle kvalitetskrav for produksjon og dokumentasjon av basis geodata på land. Beskrevne datafangstmetoder er geodetiske metoder (landmåling), fotogrammetri og laserskanning.
 Kvalitetskravene til produktene finnes i produktspesifikasjonene for det enkelte produkt, for eksempel <a href="https://sosi.geonorge.no/produktspesifikasjoner/FKB-Bygning/">FKB-Bygning 5.1.1</a>. Hvordan produktene skal kontrolleres er beskrevet i standarden Geodatakvalitet <a href="#GK">[GK]</a>.
-Standarden kan nyttes som referansedokument ved inngåelse av avtaler om produksjon av basis geodata. I det enkelte prosjekt kan det avtales avvikende krav fra denne standarden, disse vil da være gjeldende for prosjektet.</p>
+Standarden Produksjon av basis geodata kan nyttes som referansedokument ved inngåelse av avtaler om produksjon av basis geodata. I det enkelte prosjekt kan det avtales avvikende krav fra denne standarden, disse vil da være gjeldende for prosjektet.</p>
 </div>
 <div class="paragraph">
 <p>Innmåling av eiendomsgrenser (matrikkelenhetsgrenser) og ledninger behandles ikke i denne standarden. I stedet vises det til standardene "Stedfesting av matrikkelenhets- og råderettsgrenser", "Norm for ledningskart" og "Norm for VA-ledningskartverk".</p>
@@ -1454,9 +1454,6 @@ Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kje
 <p><strong>LIDAR</strong>: LIght Detection And Ranging. Betegner et prinsipp for avstandsmålingen</p>
 </div>
 <div class="paragraph">
-<p><strong>NN1954</strong>: Normal null av 1954</p>
-</div>
-<div class="paragraph">
 <p><strong>NN2000</strong>: Normal null av 2000</p>
 </div>
 <div class="paragraph">
@@ -1506,7 +1503,7 @@ Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kje
 <div class="ulist">
 <ul>
 <li>
-<p>Produksjonen av produktene beskrevet i denne standarden skal anvende Kartverkets offisielle transformasjonsformler. Se også kapittel "6.5 Omforming av koordinater" i <a href="#GG">[GG]</a>.</p>
+<p>Produksjonen av produktene beskrevet i denne standarden skal anvende Kartverkets offisielle transformasjonsformler. Se også kapittel "6.5 Omforming av koordinater" i standarden Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt <a href="#GG">[GG]</a>.</p>
 </li>
 <li>
 <p>Når det benyttes globale referanserammer, må referansetidspunktet for datafangsten (epoke) være kjent og skal benyttes i transformasjon mellom globale og nasjonale referanserammer. Dette medfører at EPSG-koder som utgjør en samling (ensemble) av EPSG-koder ikke skal benyttes.</p>
@@ -1571,7 +1568,7 @@ Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kje
 </ul>
 </div>
 <div class="paragraph">
-<p>For videre beskrivelse av transformasjon se standarden <a href="#GG">[GG]</a>.</p>
+<p>For videre beskrivelse av transformasjon se standarden Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt <a href="#GG">[GG]</a>.</p>
 </div>
 </div>
 </div>
@@ -1581,7 +1578,7 @@ Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kje
 <p>Stasjonspunkter kan være et fastmerke eller et punkt som bestemmes med kontroll, for eksempel ved fri oppstilling. Ved fri oppstilling skal en måle retning, avstand og vertikalvinkel mot minimum to fastmerker.</p>
 </div>
 <div class="paragraph">
-<p>Stasjonspunkter og orienteringspunkter skal fortrinnsvis være fastmerker i Stamnettet, Landsnettet eller det kommunale nettet (gjelder for kommuner), eller egenetablerte fastmerker etablert med GNSS med tilstrekkelig kvalitet. Slike punkter dokumenteres ved beregning av ytre pålitelighet i programvare som håndterer dette. Påliteligheten må tilfredsstille de krav som stilles i standarden <a href="#GG">[GG]</a> for den aktuelle områdetypen.</p>
+<p>Stasjonspunkter og orienteringspunkter skal fortrinnsvis være fastmerker i Stamnettet, Landsnettet eller det kommunale nettet (gjelder for kommuner), eller egenetablerte fastmerker etablert med GNSS med tilstrekkelig kvalitet. Slike punkter dokumenteres ved beregning av ytre pålitelighet i programvare som håndterer dette. Påliteligheten må tilfredsstille de krav som stilles i standarden Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt <a href="#GG">[GG]</a> for den aktuelle områdetypen.</p>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -3649,6 +3646,9 @@ En GNSS/INS-fil pr. fotosesjon.</p></td>
 <p>Sammenbindingspunktene skal være jevnt fordelt langs midten og langs kanten av bildene. Unntak fra dette aksepteres dersom vann eller kontrastløs overflate gjør måling umulig. I bildeblokker med kryssende enkeltstriper skal det spesielt påses at stripesammenbindingspunktene er plassert langs ytterkantene av bildene.</p>
 </li>
 <li>
+<p>Det anbefales å tynne de automatisk målte ("matchede") punktene noe ut, for å oppnå en noe bedre balanse mellom de ulike observasjonstypene i blokkutjevningen. Graden av tynning avhenger av valgt punkttetthet under matching. Tynningen skal ikke medføre at kravene til antall og fordeling av punkter avvikes.</p>
+</li>
+<li>
 <p>Det skal kontrolleres visuelt at antall og fordeling av sammenbindingspunkter oppfyller kravene. Kontrollmetoden må være i stand til å vise at punktene er målt i et tilstrekkelig antall bilder og striper.</p>
 </li>
 <li>
@@ -3662,20 +3662,6 @@ En GNSS/INS-fil pr. fotosesjon.</p></td>
 </li>
 <li>
 <p>Alle målinger i bildene, inkludert kjentpunkter, skal korrigeres for jordkrumning og refraksjon. Dersom korreksjonene blir påført selve målingen skal det påses at ikke dobbelkorreksjon påføres i den påfølgende blokkutjevningen.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="exampleblock">
-<div class="content">
-<div id="anbefaling-foto-maling-av-sammenbindingspunkt" class="paragraph">
-<p><strong>ANBEFALING FOTO MÅLING AV SAMMENBINDINGSPUNKT</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Det anbefales å tynne de automatisk målte ("matchede") punktene noe ut, for å oppnå en noe bedre balanse mellom de ulike observasjonstypene i blokkutjevningen. Graden av tynning avhenger av valgt punkttetthet under matching. Tynningen skal ikke medføre at kravene til antall og fordeling av punkter avvikes.</p>
 </li>
 </ul>
 </div>
@@ -3779,7 +3765,7 @@ En GNSS/INS-fil pr. fotosesjon.</p></td>
 <p>Etter eventuell fjerning av grove avvik skal det påses at ingen vitale observasjoner er fjernet og at antall og plassering av sammenbindingspunkter er i henhold til kravene. Alle kjentpunktmålinger skal inkluderes i AT-beregningene, unntak kan gjøres der kjentpunkt(ene) har dårlig synbarhet, dårlig egnethet eller feil i gitt koordinat. Der kjentpunktmålinger utelates skal dette dokumenteres i rapporten.</p>
 </li>
 <li>
-<p>Bildenes ytre orienteringselementer, terrengkoordinatene til alle målte sammenbindingspunkter samt eventuelle tilleggsukjente (som spesifisert over) skal bestemmes i en samlet blokkutjevning. Konstante "GNSS-shift", korreksjoner til "boresight"-kalibreringen og estimering av antenneeksentrisitet og andre systemavstander (lever arm) kan eventuelt bestemmes i forprosessering (ved hjelp av blokkutjevning) og deretter påføres endelig GNSS/INS-resultat, dette forutsetter tilstrekkelig observasjonsgrunnlag og geometrisk styrke i blokken.</p>
+<p>Bildenes ytre orienteringselementer, terrengkoordinatene til alle målte sammenbindingspunkter samt eventuelle tilleggsukjente (som spesifisert over) skal bestemmes i en samlet blokkutjevning. Konstante "GNSS-shift", korreksjoner til "boresight"-kalibreringen og estimering av antenneeksentrisitet og andre systemavstander kan eventuelt bestemmes i forprosessering (ved hjelp av blokkutjevning) og deretter påføres endelig GNSS/INS-resultat, dette forutsetter tilstrekkelig observasjonsgrunnlag og geometrisk styrke i blokken.</p>
 </li>
 <li>
 <p>Bildenes ytre orienteringselementer skal ha et totalt standardavvik maksimalt lik 2/3 av kravene for de aktuelle geodata. Med "totalt" menes det samlede avvik på et målt objekt, sammensatt av de enkelte orienteringselementenes feilbidrag. Se <a href="#tab-nøyaktighetskrav-AT-FKB">Tabell 12</a> for eksempler på nøyaktighetskrav til sammenbindingspunkt og ytre orienteringselementer.</p>
@@ -5774,7 +5760,7 @@ Fra punktskyen kan en produsere en rekke sekundærprodukter:</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Videre kan primær og/eller sekundærprodukter benyttes til å generere en rekke avledede datasett:</p>
+<p>Videre kan primær og/eller sekundærprodukter benyttes til å generere en rekke avledede datasett som for eksempel:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -7898,7 +7884,7 @@ Samsvaret bør vurderes basert på senter av punktskyens "målestøy" da dette m
 <p>Ulike typer av punktsky kan benyttes som grunnlag for vektorisering av FKB-datasett, avhengig av hvilken objekttype og hvilke kvalitetskrav som gjelder. Valg av datasett og metode har stor betydning for nøyaktigheten og detaljnivået på resultatet, og det er derfor viktig å vurdere egnetheten for hvert enkelt formål. <a href="#tab-anbefalte-punktskydatasett-for-vektorisering">Tabell 28</a> gir eksempler på punktsky/modell som egner seg for vektorisering av ulike relevante datasett, sammen med kommentarer om relevante metoder og eventuelle begrensninger. Eksemplene vil endre seg i takt med teknologiutviklingen og produktspesifikasjonene.</p>
 </div>
 <table id="tab-anbefalte-punktskydatasett-for-vektorisering" class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabell 28. Eksempler på datasett egnethet for vektorisering fra punktsky/modell</caption>
+<caption class="title">Tabell 28. Eksempler på ulike datasetts egnethet for vektorisering fra punktsky/modell</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -8504,7 +8490,6 @@ mindre grøfter mistes helt</p></td>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a href="#anbefaling-foto-signalstørrelser">Anbefaling foto signalstørrelser</a><br>
-<a href="#anbefaling-foto-maling-av-sammenbindingspunkt">Anbefaling foto måling av sammenbindingspunkt</a><br>
 <a href="#anbefaling-foto-drone-ortofoto-med-rtk">Anbefaling foto droneortofoto med RTK-drone</a><br>
 <a href="#anbefaling-foto-drone-kartkonstruksjon-i-stereo">Anbefaling foto kartkonstruksjon i stereo fra dronebilder</a><br>
 <a href="#anbefaling-foto-signalering-i-droneprosjekter">Anbefaling foto signalering i droneprosjekter</a><br>
