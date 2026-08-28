@@ -305,8 +305,6 @@ _MERKNAD_: Pålitelighet bestemmes i egne pålitelighetsanalyser. Beregnet ytre 
 
 *LIDAR*: LIght Detection And Ranging. Betegner et prinsipp for avstandsmålingen
 
-*NN1954*: Normal null av 1954
-
 *NN2000*: Normal null av 2000
 
 *NS-EN ISO*: Betegnelse på standard som er utviklet internasjonalt (ISO) og som deretter har blitt fastsatt som europeiske standard (CEN), eller den kan være utviklet parallelt i CEN og ISO, for deretter igjen å bli fastsatt som Norsk Standard (NS). 
