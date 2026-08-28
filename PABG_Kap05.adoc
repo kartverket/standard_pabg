@@ -14,7 +14,7 @@ Geodetiske metoder benyttes til kartlegging ved høye krav til nøyaktighet elle
 [#krav-landmaling-referanserammer-transformasjoner,reftext="Krav landmåling referanserammer og transformasjoner"]
 *KRAV LANDMÅLING REFERANSERAMMER OG TRANSFORMASJONER*
 
-* Produksjonen av produktene beskrevet i denne standarden skal anvende Kartverkets offisielle transformasjonsformler. Se også kapittel "6.5 Omforming av koordinater" i <<GG>>.
+* Produksjonen av produktene beskrevet i denne standarden skal anvende Kartverkets offisielle transformasjonsformler. Se også kapittel "6.5 Omforming av koordinater" i standarden Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt <<GG>>.
 * Når det benyttes globale referanserammer, må referansetidspunktet for datafangsten (epoke) være kjent og skal benyttes i transformasjon mellom globale og nasjonale referanserammer. Dette medfører at EPSG-koder som utgjør en samling (ensemble) av EPSG-koder ikke skal benyttes.
 ====
 
@@ -54,13 +54,13 @@ Ved differensielle satellittbaserte metoder fremkommer ellipsoidiske høydeforsk
 // (se standarden "Norges offisielle høydesystem og referansenivåer").
 
 // For videre beskrivelse av transformasjon se standardene <<SAT>> og https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/koordinatbaserte-referansesystemer-2.1-standarder-geografisk-informasjon.pdf[Koordinatbaserte referansesystemer, 2.1 2009].
-For videre beskrivelse av transformasjon se standarden <<GG>>.
+For videre beskrivelse av transformasjon se standarden Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt <<GG>>.
 
 
 ==== Bruk av totalstasjon
 Stasjonspunkter kan være et fastmerke eller et punkt som bestemmes med kontroll, for eksempel ved fri oppstilling. Ved fri oppstilling skal en måle retning, avstand og vertikalvinkel mot minimum to fastmerker.
 	
-Stasjonspunkter og orienteringspunkter skal fortrinnsvis være fastmerker i Stamnettet, Landsnettet eller det kommunale nettet (gjelder for kommuner), eller egenetablerte fastmerker etablert med GNSS med tilstrekkelig kvalitet. Slike punkter dokumenteres ved beregning av ytre pålitelighet i programvare som håndterer dette. Påliteligheten må tilfredsstille de krav som stilles i standarden <<GG>> for den aktuelle områdetypen.
+Stasjonspunkter og orienteringspunkter skal fortrinnsvis være fastmerker i Stamnettet, Landsnettet eller det kommunale nettet (gjelder for kommuner), eller egenetablerte fastmerker etablert med GNSS med tilstrekkelig kvalitet. Slike punkter dokumenteres ved beregning av ytre pålitelighet i programvare som håndterer dette. Påliteligheten må tilfredsstille de krav som stilles i standarden Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt <<GG>> for den aktuelle områdetypen.
 
 ====
 [#krav-landmaling-innmaling-med-totalstasjon,reftext="Krav landmåling innmåling med totalstasjon"]
