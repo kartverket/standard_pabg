@@ -793,18 +793,12 @@ Dette kapittelet angir krav og retningslinjer til aerotriangulering (AT) med blo
 
 * Som hovedregel skal de samme punktene benyttes til både bilde- og stripesammenbinding. Dette gir flere observasjoner pr. punkt og dermed bedre kontroll mot grove avvik. Punkt målt i kun to bilder skal som hovedregel ikke forekomme, men aksepteres i stripeender og i områder med mye vann.
 * Sammenbindingspunktene skal være jevnt fordelt langs midten og langs kanten av bildene. Unntak fra dette aksepteres dersom vann eller kontrastløs overflate gjør måling umulig. I bildeblokker med kryssende enkeltstriper skal det spesielt påses at stripesammenbindingspunktene er plassert langs ytterkantene av bildene.
+* Det anbefales å tynne de automatisk målte ("matchede") punktene noe ut, for å oppnå en noe bedre balanse mellom de ulike observasjonstypene i blokkutjevningen. Graden av tynning avhenger av valgt punkttetthet under matching. Tynningen skal ikke medføre at kravene til antall og fordeling av punkter avvikes.
 * Det skal kontrolleres visuelt at antall og fordeling av sammenbindingspunkter oppfyller kravene. Kontrollmetoden må være i stand til å vise at punktene er målt i et tilstrekkelig antall bilder og striper.
 * Der matchingen ikke oppfyller kravene til antall og fordeling skal det suppleres med manuelt eller halvautomatisk målte punkter.
 * Punkter i vann skal som hovedregel fjernes. Punkter på bunnen av grunt vann kan som unntak aksepteres dersom de er målt i tilstrekkelig mange bilder til at en eventuell grov feil kan oppdages. Dersom det er vurdert at måling av punkter i vann (på bunnen) er nødvendig for å sikre tilstrekkelig sammenbinding kan dette i sjeldne tilfeller aksepteres. Dette skal beskrives i aerotrianguleringsrapporten.
 * Det skal som hovedregel ikke være sammenbindingspunkter på flytende objekter. Hvis det flytende objektet er stabilt i tidsrommet mellom bildene og bruken kan begrunnes, så kan sammenbindingspunktene tillates i samme flystripe tatt med noen sekunders mellomrom.
 * Alle målinger i bildene, inkludert kjentpunkter, skal korrigeres for jordkrumning og refraksjon. Dersom korreksjonene blir påført selve målingen skal det påses at ikke dobbelkorreksjon påføres i den påfølgende blokkutjevningen.
-====
-
-====
-[#anbefaling-foto-maling-av-sammenbindingspunkt,reftext="Anbefaling foto måling av sammenbindingspunkt"]
-*ANBEFALING FOTO MÅLING AV SAMMENBINDINGSPUNKT*
-
-* Det anbefales å tynne de automatisk målte ("matchede") punktene noe ut, for å oppnå en noe bedre balanse mellom de ulike observasjonstypene i blokkutjevningen. Graden av tynning avhenger av valgt punkttetthet under matching. Tynningen skal ikke medføre at kravene til antall og fordeling av punkter avvikes.
 ====
 
 ====
@@ -851,7 +845,7 @@ Dette kapittelet angir krav og retningslinjer til aerotriangulering (AT) med blo
 
 * Det skal utføres grovfeilsøk. 
 * Etter eventuell fjerning av grove avvik skal det påses at ingen vitale observasjoner er fjernet og at antall og plassering av sammenbindingspunkter er i henhold til kravene. Alle kjentpunktmålinger skal inkluderes i AT-beregningene, unntak kan gjøres der kjentpunkt(ene) har dårlig synbarhet, dårlig egnethet eller feil i gitt koordinat. Der kjentpunktmålinger utelates skal dette dokumenteres i rapporten. 
-* Bildenes ytre orienteringselementer, terrengkoordinatene til alle målte sammenbindingspunkter samt eventuelle tilleggsukjente (som spesifisert over) skal bestemmes i en samlet blokkutjevning. Konstante "GNSS-shift", korreksjoner til "boresight"-kalibreringen og estimering av antenneeksentrisitet og andre systemavstander (lever arm) kan eventuelt bestemmes i forprosessering (ved hjelp av blokkutjevning) og deretter påføres endelig GNSS/INS-resultat, dette forutsetter tilstrekkelig observasjonsgrunnlag og geometrisk styrke i blokken.
+* Bildenes ytre orienteringselementer, terrengkoordinatene til alle målte sammenbindingspunkter samt eventuelle tilleggsukjente (som spesifisert over) skal bestemmes i en samlet blokkutjevning. Konstante "GNSS-shift", korreksjoner til "boresight"-kalibreringen og estimering av antenneeksentrisitet og andre systemavstander kan eventuelt bestemmes i forprosessering (ved hjelp av blokkutjevning) og deretter påføres endelig GNSS/INS-resultat, dette forutsetter tilstrekkelig observasjonsgrunnlag og geometrisk styrke i blokken.
 * Bildenes ytre orienteringselementer skal ha et totalt standardavvik maksimalt lik 2/3 av kravene for de aktuelle geodata. Med "totalt" menes det samlede avvik på et målt objekt, sammensatt av de enkelte orienteringselementenes feilbidrag. Se <<tab-nøyaktighetskrav-AT-FKB>> for eksempler på nøyaktighetskrav til sammenbindingspunkt og ytre orienteringselementer.
 * Standardavviket på vektsenheten skal være &#8804; 1/3 piksel.
 * De utjevnede sammenbindingspunktene ("nypunkter") skal bestemmes med et gjennomsnittlig estimert standardavvik maksimalt lik 1/2 av kravene for de aktuelle geodata som skal produseres i prosjektet. Maksimalt estimert standardavvik på hvert “nypunkt” skal være under grovfeilgrensen til kravet til punkt i AT-beregningen.
