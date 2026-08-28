@@ -44,7 +44,7 @@ Fra punktskyen kan en produsere en rekke sekundærprodukter:
 * Terrengmodell som grid eller triangelmodell.
 * Overflatemodell som grid eller triangelmodell.
 
-Videre kan primær og/eller sekundærprodukter benyttes til å generere en rekke avledede datasett:
+Videre kan primær og/eller sekundærprodukter benyttes til å generere en rekke avledede datasett som for eksempel:
 
 * Høydekurver.
 * Geoanalyse (skygge, støy, signaldekning, flom og skred).
