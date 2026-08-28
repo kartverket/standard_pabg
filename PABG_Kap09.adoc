@@ -122,7 +122,7 @@ Ulike typer av punktsky kan benyttes som grunnlag for vektorisering av FKB-datas
 
 [[tab-anbefalte-punktskydatasett-for-vektorisering]]
 
-.Eksempler på datasett egnethet for vektorisering fra punktsky/modell
+.Eksempler på ulike datasetts egnethet for vektorisering fra punktsky/modell
 [width="100%",options="header"]
 |====================
 |Datasett  |Egnethet av punktsky  | Kommentar 
