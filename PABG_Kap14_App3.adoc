@@ -1,4 +1,6 @@
-== Vedlegg C.  Eksempel fly- og signaleringsplaner
+[appendix]
+[[kapittel-vedlegg-c-eksempel-fly-og-signaleringsplaner]]
+== Eksempel fly- og signaleringsplaner
 
 === Eksempel fly- og signaleringsplan (foto)
 
@@ -7,6 +9,7 @@
 image::figurer/App_flyplan.png[Flyplan,800,align="center"]
 
 
+[[kapittel-eksempel-flyplan-laserskanning]]
 === Eksempel flyplan laserskanning
 
 

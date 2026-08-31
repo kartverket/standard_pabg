@@ -1,0 +1,42 @@
+[appendix]
+[[kapittel-vedlegg-b-informativt-valg-av-bildeoppløsning-gsd]]
+== (informativt) - Valg av bildeoppløsning (GSD)
+
+Bildeoppløsning (GSD) bestemmer hvilken kvalitet som kan forventes ved kartkonstruksjon (jamfør Produktspesifikasjon FKB), aerotriangulering, fremstilling av DTM eller ortofoto og så videre. Bildeoppløsningen må være god nok til at kartkonstruktøren kan identifisere alle objektene som skal konstrueres, og til at nøyaktigheten blir som forutsatt.
+
+På denne bakgrunn benyttes som oftest følgende GSD til de ulike FKB-standardene, se xref:tab-FKB-GSD[xrefstyle=short].
+
+[[tab-FKB-GSD]]
+.Eksempler på sammenheng mellom FKB standard og GSD
+[width="100%",options="header"]
+|===
+|FKB-Standard|GSD
+|A|4 - 8
+|B|10 - 12
+|C|20 - 25
+|D|25 - 50
+|===
+
+
+xref:tab-tolkning-flyhøyde[xrefstyle=short] gir informasjon om begrensninger i muligheten til å tolke bildene. Tabellen er basert på analog fotografering, tilsvarende tabell er ikke utarbeidet for fotografering med digitalt kamera. (Kilde: "Handbok till mätningskunngjörelse – Fotogrammetri").
+
+[[tab-tolkning-flyhøyde]]
+.Eksempler på vanskeligheter ved tolkning av objekter i bildene fra ulike flyhøyder
+[width="100%",options="header"]
+|===
+|Eksempel på tolkningsvanskeligheter|Flyhøyde (med omsyn til)|Bildemålestokk
+|Noe tap av trågjerde +
+mulig å tolke ikke-signalerte kummer|600|1:4000
+|noe tap av fortauskanter +
+betydelig tap av trågjerder +
+usikker tolkning av ikke-signalerte kummer|800|1:5300
+|betydelig tap av fortauskanter +
+usikker tolkning av stakittgjerder og hekker +
+noe tap av stolper|1000|1:6500
+|noe tap av trapper +
+noe tap av stakittgjerder og hekker|1200|1:8000
+|usikker tolkning av bygningstype +
+noe tap av tilbygg +
+mindre grøfter mistes helt|1500|1:10 000
+|betydelig tap av tilbygg|2300|1:15 000
+|===

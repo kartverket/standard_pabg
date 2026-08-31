@@ -1,16 +1,77 @@
-== Normative referanser
+== Referanser
 
+=== Normative referanser
 
 [#FKB]
-*[FKB]*	: https://sosi.geonorge.no/standarder/FKB_generell_del/[SOSI abstrakte spesifikasjoner – FKB generell del 5.0]
+*[FKB]*: https://sosi.geonorge.no/standarder/FKB_generell_del/[SOSI abstrakte spesifikasjoner – FKB generell del 5.0]
 
-[#G]
-*[G]* : https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/geodatakvalitet-1.0-standarder-geografisk-informasjon.pdf[Geodatakvalitet, versjon 1.0 2015]
+// [#G]
 
-[#GN]
-*[GN]* : https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/grunnlagsnett-1.1-standarder-geografisk-informasjon.pdf[Grunnlagsnett, versjon 1.1 2009]
+// *[G]*: https://standarder.geonorge.no/sosi/standarder-geografisk-informasjon/geodatakvalitet/1.0/geodatakvalitet-10-standarder-geografisk-informasjon.pdf[Geodatakvalitet, versjon 1.0 2015]
 
-[#SAT]
-*[SAT]* : https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/satellittbasert-posisjonsbestemmelse-2.1-standarder-geografisk-informasjon.pdf[Satellittbasert posisjonsbestemmelse, versjon 2.1 2009]
+//[#GN]
 
-<<GN>> og <<SAT>> er utgående standarder og vil bli erstattet av en ny Geodesistandard som er under utarbeidelse. 
+// *[GN]*: https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/grunnlagsnett-1.1-standarder-geografisk-informasjon.pdf[Grunnlagsnett, versjon 1.1 2009]
+
+// [#SAT]
+
+// *[SAT]*: https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/satellittbasert-posisjonsbestemmelse[Satellittbasert posisjonsbestemmelse, versjon 2.1 2009]
+
+[#GG]
+*[GG]*: https://sosi.geonorge.no/standarder/Geodetisk_grunnlag_-_koordinatbaserte_referansesystemer_og_kvalitetssikring_av_grunnlagspunkt/1.0/[Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt]
+
+[#Punktsky]
+*[Punktsky]*: https://dokument.geonorge.no/produktspesifikasjoner/punktsky/1.0.3/index.html[Produktspesifikasjon Punktsky]
+
+[#Batymetri]
+*[Batymetri]*: https://github.com/kartverket/ALB_Best_Practice_Manual[Airborne LiDAR Bathymetry - Best Practice Manual]
+
+[#POF]
+*[POF]*: https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/digitale-ortofoto[Produktspesifikasjon Ortofoto, versjon 5.0 2020] 
+
+[#PV]
+*[PV]*: https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/vertikalbilde[Produktspesifikasjon Vertikalbilde, versjon 2.2 2017]
+
+[#GK]
+*[GK]*: https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet[Geodatakvalitet]
+
+[#BF]
+*[BF]*: https://lovdata.no/dokument/SF/forskrift/2025-12-19-2729[Bevaringsforskrifta]
+
+[#AF]
+*[AF]*: https://lovdata.no/dokument/SF/forskrift/2025-12-17-2647[Arkivforskrifta]
+
+[#AL]
+*[AL]*: https://lovdata.no/dokument/NL/lov/2025-06-20-96[Arkivlova]
+
+[#PL]
+*[PL]*: https://lovdata.no/dokument/NL/lov/2018-06-15-38[Personopplysningsloven]
+
+[#SL]
+*[SL]*: https://lovdata.no/dokument/NL/lov/2018-06-01-24[Sikkerhetsloven]
+
+// <<GN>> er erstattet av en ny standard <<GG>>. 
+
+// <<SAT>> er en tilbaketrukket standard, men enkelte deler vil bli oppdatert og videreført i en planlagt veileder.
+
+=== Juridiske og regulative referanser
+
+Det er de til enhver tid gjeldende juridiske og regulative føringer som berører standardens tematikk, som skal benyttes. Listen under viser et utvalg av aktuelle referanser: 
+
+* https://lovdata.no/dokument/NL/lov/2018-06-15-38[Lov om behandling av personopplysninger] (også kalt GDPR - General Data Protection Regulation)
+* https://lovdata.no/dokument/SF/forskrift/2018-06-22-951[Forskrift om kontroll med informasjon innhentet med luftbårne sensorsystemer]
+* https://nsm.no/fysisk/luftbarne-sensorsystemer/[Nasjonal sikkerhetsmyndighet (NSM)] fører kontroll med fotografering og filming fra luften og andre luftbårne sensorsystemer for å skjerme detaljer ved militære og andre forbudsområder.
+* https://lovdata.no/dokument/NL/lov/2025-06-20-96[Lov om dokumentasjon og arkiv]
+* Stortingsproposisjon nr.1 1979-1980 som viser til Kartverkets oppdrag om å etablere et bildearkiv og sikre at alle flybilder og fjernmåledata arkiveres i dette.
+
+* https://www.luftfartstilsynet.no/[Luftfartstilsynet]. Krav om operative flytillatelser
+* https://lovdata.no/dokument/NL/lov/2005-06-17-101/KAPITTEL_8#KAPITTEL_8[Matrikkelloven kapittel 8] - Om geodetisk grunnlag og oppmålingsarbeid
+
+
+// huskeliste: DSA vertikalbilder
+
+=== Faglige referanser
+
+// Benytter ISO690 til å beskrive referansene
+
+*[Meißner and Berger, 2025]* : MEIßNER, Henry; BERGER, Ralf. Adaptable Siemens Star Targets for Reliable and Standardized Spatial Resolution Measurement under DIN 18740-8. The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, 2025, 48: 139-146. 

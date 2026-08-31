@@ -1,65 +1,257 @@
-== Konvertering av analoge kart til digitale vektordata
-
-=== Generelt
-De metoder som omtales her, manuell digitalisering og skanning/vektorisering, gir kun x- og y-koordinater. Om dataene i tillegg skal tildeles z-koordinat (høyde), må dette gjennomføres ut fra behov og muligheter.
-I dette kapitlet behandles ikke produksjonsmetoder for etablering av rasterdata (georeferert digitalt kartbilde) som produkt.
-
-=== Manuell digitalisering
-Manuell digitalisering av eksisterende kart blir ofte benyttet som en rask og enkel måte å skaffe til veie et digitalt kart. Kartet blir digitalisert av en operatør som følger alle linjer/punkter og tildeler objekttype og egenskaper basert på sin tolking.
-
-Dette kapittelet omfatter digitaliseringen direkte på skjerm, metoden forutsetter at kartet som skal digitaliseres er skannet og georeferert.
- 
-==== Innpassing
-Ved skjermdigitalisering er kartbildet normalt allerede innpasset. Man skal likevel, så langt som mulig, kontrollere innpassingen. Dette gjøres ved at man digitaliserer 2 kontrollpunkter, f.eks. rutenettskryss.
-
-Opplysninger om målemetode og nøyaktighet kommer til syne under kvalitetsangivelsen som blir lagt til hver gruppe som blir digitalisert.
-
-==== Tildeling av objekttype
-Alt som digitaliseres, skal gis en objekttype og ev. andre egenskaper (f.eks. ..HØYDE) i henhold til gjeldende spesifikasjoner for oppdraget. Det normale vil være at operatøren tolker kartet og gir objekttype i henhold til denne tolkingen, eller at kartet er utarbeidet som et manuskart der kodingen går klart frem av farge- eller symbolbruk.
-
-==== Registreringsmetode
-Registrering av enkeltpunkter gir x- og y-koordinater og tilhørende objekttype. Registrering av linjer kan gjøres på ulike måter:
-
-* Kontinuerlig registrering: Dette innebærer et gitt antall punkter pr. tidsenhet eller pr. avstandsenhet. Denne metoden kan gi svært mange punkter, men blir ofte benyttet fordi den er rask. Antall punkter som registreres pr. sekund, må sees i sammenheng med aktuell målestokk som benyttes. Likeså må en ev. punktsiling, dvs. reduksjon av antall punkter uten at linjens utseende endres, tilpasses til den aktuelle målestokk som benyttes.
-* Enkeltpunkter i sekvens: Dette gir færre punkter, men kan gi en noe kantete kurve og ta noe lenger tid enn ovenstående metode.
-
-Ved digitalisering benyttes de samme registreringsmetodene som ved fotogrammetrisk kartlegging. I Produktspesifikasjon FKB er det for hver objekttype angitt hvilken metode som fortrinnsvis skal benyttes.
+[[kapittel-kartlegging-med-mobil-datafangst]]
+== Kartlegging med mobil datafangst
 
 
-==== Topologi
-Under digitaliseringen er det viktig å ta hensyn til hvilken topologi det ferdige resultatet skal ha, og hvilke metoder som skal benyttes for å etablere topologien. Produktspesifikasjoner vil angi krav til topologi.
+=== Innledning
+Datainnsamling med mobile lasersystemer (MLS), brukes ofte i kombinasjon med andre innsamlingsmetoder. I tillegg til laserskanner, kan datainnsamlingen utføres med opptak fra ulike sensorer som optiske kamera og georadar.
 
-Datasett med topologi vil være på SOSI-nivå 3 (linjenettverk) eller 4 (lukkede polygoner). Under digitaliseringen må alle linjer ende i et knutepunkt mot andre linjer. Dette kan skje ved at digitaliseringsprogrammet beregner knutepunktet under digitaliseringen, eller at det skjer i en prosess etter selve digitaliseringen. Danning av knutepunkt, under eller etter digitaliseringen, skjer ved at punkter som ligger innen en viss avstand (snapperadius), slås sammen. Linjer som krysser hverandre, eller som ender innen en viss avstand fra en annen linje, vil også få dannet knutepunkt. Hvis enkelte linjer har en høyere nøyaktighet enn andre, bør de gis en tyngre vekting i beregning av endelig plassering av knutepunktet.
+Standarden beskriver krav og anbefalinger for å sikre kvaliteten til sluttproduktet. Selve definisjonen av og kravet til sluttproduktene, vil ligge i registreringsinstrukser og produktspesifikasjoner. En viktig målsetting med standarden, er å legge til rette for økt bruk og gjenbruk av data fra MLS-datafangst.
 
-=== Automatisk digitalisering
-Automatisk digitalisering omhandler skanning, vektorisering og ev. mønster-/symbol-gjenkjenning. Skanning gir rasterdata, mens vektorisering konverterer rasterdata til vektordata. Mønster-/symbolgjenkjenning konverterer rasterbilder av symboler, tekst og tall til meningsfylt informasjon. Metoden forutsetter ofte interaktiv styring og kontroll fra operatøren. Nøyaktighetsmessig vil det være liten praktisk forskjell på denne metoden i forhold til manuell digitalisering. Automatisk digitalisering kan resultere i en "dårlig datastruktur", f.eks. er det vanlig at rette linjer blir oppdelt i flere små linjebiter. Dette kan rettes opp ved etterprosessering.
+====
+[#krav-mobil-referanserammer-transformasjoner,reftext="Krav mobil referanserammer og transformasjoner"]
+*KRAV MOBIL REFERANSERAMMER OG TRANSFORMASJONER*
 
-Ved skanning av rissefolier blir det best resultat med gjennomlysning, altså underlys.
+* Referanserammer og transformasjoner som er brukt skal følge kravene gitt i <<krav-landmaling-referanserammer-transformasjoner>>.
 
-==== Skanneoppløsning
-Kravet til oppløsning vil være avhengig av kartet som skal skannes. Oppløsningen skal være bedre enn halvparten av den tynneste linje eller detalj som skal skannes. Det betyr at hvis tynneste linje er 0,1 mm, skal oppløsningen være 0,05 mm eller bedre. Oppløsningen må oppgis i optisk verdi, altså det som leses direkte i skanneren, og ikke som en oppløsning som er et resultat av en beregning i etterkant.
+====
 
-==== Kalibrering av skanner
-Skannere skal kalibreres for systematiske feil, og rasterfila fra skanningen skal korrigeres for systematiske feil ved hjelp av denne kalibreringen. Kalibreringen av skanneren foretas med jevne mellomrom, f.eks. en gang hvert år.
+=== Omfang
+Kapittelet omfatter mobil datafangst med laserskanner med opsjonelt kamera.
 
-==== Innpassing/transformasjoner
-Kartet som skal skannes, må ha klart definerte merker eller punkter (rammemerker), med kjente terrengkoordinater for at de skannede data skal kunne transformeres til terrengkoordinater. Det bør være minst 6 slike rammemerker på kartet, men av praktiske årsaker vil det ofte være vanskelig å få flere enn 4. Dette kan godtas hvis kartet er av stabilt fysisk materiale (f.eks. kartfolier) og nøyaktighetskravet ikke er for høyt.
+=== Posisjonering av mobil datafangst
+MLS benytter seg av posisjons- og orienteringssystemer bygd opp rundt et treghetsnavigasjonssystem, også kalt "Inertial Navigation System" (INS). Et INS består av en "Inertial measurement Unit" (IMU) og tilhørende støttesensorer. Den primære støttesensoren er vanligvis en eller flere GNSS-mottakere ("Global Navigation Satellite System"), ofte i kombinasjon med optisk eller mekanisk hastighets- eller distansemåling (odometer). Det er også mulig å benytte andre former for støtteobservasjoner fra ulike sensorer sammen med et INS. Eksempler på dette har vi fra robotverden og "Simultaneous Localization and Mapping" (SLAM).
 
-==== Vektorisering
-===== Topologi
-På samme måte som ved manuell digitalisering må det spesifiseres hvilken topologi som skal ligge i det ferdige resultatet. Krav for danning av knutepunkt (avstand mellom punkter og linjer) må oppgis.
+=== GDPR
+Laser punktsky (også fargelagt punktsky) fra mobil datafangst vil i de fleste tilfellene ikke kunne brukes til å identifisere personer eller bilskilt. Produktet vil da ikke omfattes av https://lovdata.no/dokument/NL/lov/2018-06-15-38[GDPR-forordningen]. Bildematerialet fra mobil datafangst, vil som hovedregel være omfattet av GDPR forordningen og nødvendige tiltak må utføres.
 
-===== Klipping mot kartkant
-Alle linjer skal klippes eksakt mot kartkant. Kartkant skal være oppgitt eller mulig å beregne. Linjer som slutter innenfor en gitt avstand til kartkant (f.eks. 2 mm), forlenges til skjæring med kartkant. Punkter eller linjer som går utenfor kartkanten, skal ikke med i det endelige resultatet med mindre det er spesielt avtalt og kodet på en spesiell måte.
 
-===== Punkttetthet
-Linjer kan representeres ved et punkt i hvert knekkpunkt, dvs. der linjen endrer retning, ved en serie punkter med konstant avstand eller en serie punkter med avstand varierende med hvor mye linjen endrer retning. Måten linjer representeres på, skal oppgis.
+====
+[#krav-mobil-gdpr,reftext="Krav mobil GDPR"]
+*KRAV MOBIL GDPR*
 
-===== Gap
-I linjer som skal være sammenhengende, kan det være små brudd. Det skal oppgis hvor store gap som skal "tettes". Det normale vil være inntil 2 mm, men dette vil variere med kartets kompleksitet og innhold. Linjer med gap som lukkes, gis en kvalitetskode som viser at automatisk lukking er foretatt.
+* Oppdragsgiver har ansvar for å påse at GDPR følges, dersom ikke annet er avtalt. Dette avklares i samarbeid med oppdragstaker pr. prosjekt.
 
-==== Mønster-/symbolgjenkjenning
-Det kan utføres automatisk eller halvautomatisk mønstergjenkjenning på det skannede kartet. Normalt vil mønstergjenkjenningen være best å utføre på rasterfila, men det vil avhenge av hvilket program som benyttes. Objekter som er mønstergjenkjent, skal kodes i henhold til de egenskaper objektet har. Det må fremgå klart av kvalitetsinformasjonen (i hodet på fila) hvilket program og hvilken metode som er benyttet. Usikre gjenkjenninger må kodes spesielt.
+====
 
-=== Kvalitetskoding
-Det er viktig å registrere kvalitetskoder under digitaliseringen. Med kvalitetskoding menes at alle registrerte objekter skal ha registrert målemetode, f.eks. digitalisert på digitaliseringsbord fra papirkart, og stedfestingsnøyaktighet. Det påhviler operatøren et ansvar for at alle vurderinger og tolkinger som blir gjort, kommer til kjennskap for de som skal benytte dataene senere.
+=== Fargelegging av punktsky
+Påføring av fargeverdier på punktskyen, er opsjonelt. Dersom opsjon utløses, bør kvalitetselementer gitt i xref:tab-fargelegging-av-punktsky[xrefstyle=short] hensyntas:
+
+====
+
+[#anbefaling-mobil-fargelegging-av-punktsky, reftext="Anbefaling mobil fargelegging av punktsky"]
+*ANBEFALING MOBIL FARGELEGGING AV PUNKTSKY*
+
+[[tab-fargelegging-av-punktsky]]
+.Fargelegging av punktsky
+[width="100%",options="header"]
+|====================
+| Kvalitetselement  | Beskrivelse | Kvalitetsmål
+| Tidsriktighet |Tiden mellom bilder og lasermålinger.  | Bør være tatt samme dag.
+| Fargekvalitet | Naturtro farger.  |  Subjektiv vurdering.  
+| Lysforhold | Tilstrekkelig lysmengde til at lukkertid/bilens hastighet kan settes slik at bildene forbli skarpe.   |  Lysforholdene bør være tilstrekkelige for å få fram informasjonen ønsket i hovedmålsettingen.
+| Oppløsning | Bildepikslenes faktiske størrelse i terrenget. | Bør sammenfalle med produktets krav til detaljrikdom.
+| Posisjon og orientering | Geometrisk nøyaktighet til kameraet. |Bør ha samme kvalitet som laserdataene.
+|GDPR  | Informasjon som faller inn under GDPR-forordningen.  | Informasjon som faller under GDPR skal manipuleres, slik at sluttproduktet er innenfor GDPR-forordningen.
+|==================== 
+
+
+
+====
+
+=== Klassifisering
+
+Klassifisering av punktsky er opsjonelt. Der produktets målsetting krever klassifisering, følges kravene til klassifisering gitt i <<kapittel-bearbeiding-av-laserdata-klassifisering>>.
+
+=== Ulike kvalitetsnivåer
+
+Produkter fra mobil datafangst deles inn i ulike kvalitetsnivåer. De ulike nivåene vil påvirke kompleksitet, kostnad og krav til stedfestingsnøyaktighet. Det laveste nivået innebærer lav absoluttnøyaktighet. Mulige bruksområder kan være analyser knyttet til kollisjon, kjøreboks og vegetasjon, der relative målinger er viktigst. Nivåene "middels" og "god" kan brukes til generell prosjektering, tunnelinnmåling, NVDB/FKB-kartlegging og overvannsanalyser. Punktskyen er her en større del av sluttproduktet og ofte supplert med ekstra målemetoder som landmåling, terrestrisk skanning eller flybåren laserskanning. Det høyeste nivået brukes der høy absolutt stedfestingsnøyaktighet er nødvendig, for eksempel i jernbaneprosjektering, kontroll og vedlikehold av spor og tunneler, samt endringsanalyser som krever svært presise punktskydata.
+
+=== Kvalitetselement og kvalitetsmål
+
+For mobil datafangst, deles kvalitetselementene i stedfestingsnøyaktighet, fullstendighet og egenskapskvalitet. Innenfor hver kategori defineres et sett med ulike kvalitetselementer med videre definerte kvalitetsmål. Ved bestilling må alle kvalitetselementene tas stilling til.
+
+
+
+==== Stedfestingsnøyaktighet
+
+:xrefstyle: short
+
+Med stedfestingsnøyaktighet menes hvor godt stedfestingen til et objekt samsvarer med virkeligheten, realisert i angitt referanseramme. Metoden som brukes til å evaluere absolutt stedfestningsnøyaktighet følger standarden Geodatakvalitet <<GK>>. Kravene gjelder for tydelige, veldefinerte objekter innenfor prosjektområdet. Kvalitetselement knyttet til kriteriet om stedfestingsnøyaktighet er angitt i    <<tab-kvalitetselementer-knyttet-til-kategorien-stedfestingsnøyaktighet>> med beskrivelse.
+
+:xrefstyle: full
+
+[[tab-kvalitetselementer-knyttet-til-kategorien-stedfestingsnøyaktighet]]
+.Kvalitetselementer knyttet til kategorien stedfestingsnøyaktighet
+[cols="1,1a"]
+[width="100%",options="header"]
+|====================
+|Kvalitetselement|Beskrivelse 
+
+|Absolutt stedfestingsnøyaktighet| Absolutt stedfestingsnøyaktighet deles inn i tre kvalitetsmål: Systematisk avvik, tilfeldig variasjon og maksimalt avvik.
+
+
+*Kvalitetsmålet systematisk avvik* baserer seg på avvik mellom senter punktsky og punktskyens sanne verdi, målt i enten i høyde (Z), grunnriss (XY), eller 3D (XYZ). Dette gitt i prosjektets referanseramme. Den midlere verdien av de målte avvikene gir det systematiske avviket. Kvalitetsmålet følger standarden Geodatakvalitet <<GK>>.
+
+.Rød pil viser en måling som kan inngå i beregningen av absolutt stedfestingsnøyaktighet, systematisk avvik. 
+image::figurer/Kap8_Absolutt stedfestingsnøyaktighet_Systematisk avvik4.png[Rød pil viser en måling som kan inngå i beregningen av absolutt stedfestingsnøyaktighet, systematisk avvik.,400,align="center"]
+
+*Kvalitetsmålet tilfeldig variasjon* tar utgangspunkt i målingene utført for å beregne systematisk avvik. Målingene brukes til å beregne standardavvik og følger standarden Geodatakvalitet <<GK>>. 
+
+
+*Kvalitetsmålet maksimalt avvik* tar utgangspunkt i målingene utført for å beregne systematisk avvik, hvor størst målte avvik angir kvalitetsmålet maksimalt avvik.
+
+
+|Relativ Stedfestningsnøyaktighet| Relativ stedfestningsnøyaktighet undersøkes innad i et avgrenset observerbart område på harde veldefinerte flater. 
+
+Avgrensing:
+
+* Avstand fra skanner (maksimalt 10 meter). Der skannerens posisjon ikke er kjent gjelder avstand til senterlinje for kjørebane.
+* Fysisk utstrekning (minst 20 laserpunkt, maksimalt 1 m^2^).
+* Området må være flatt, men flaten kan være orientert i alle himmelretninger.
+
+Målingene for å beregne relativ stedfestningsnøyaktighet utføres langs normalvektoren til avgrensningens senterpunkt. Relativ stedfestningsnøyaktighet deles inn i de to kvalitetsmålene systematisk avvik og tilfeldig variasjon:
+
+*Systematisk avvik* beregnes ut fra flere utvalgte avgrensningsområder. For hvert område måles avstanden mellom senter punktsky for skanninger utført i forskjellig tidsintervaller. Et tidsintervall vil typisk være kun få sekunder. Middelet av målingene fra alle de utvalgte avgrensningsområdene gir det systematiske avviket. 
+
+.Figuren viser to ulike skanninger av det samme avgrensningsområdet. Rød pil viser måling som kan inngå i beregning av relativ nøyaktighet, systematisk avvik i høyde.
+image::figurer/Kap8_Relative nøyaktighet systematisk avvik.png[Figuren viser to ulike skanninger av det samme avgrensningsområdet. Rød pil viser måling som kan inngå i beregning av relativ stedfestningsnøyaktighet, systematisk avvik i høyde.,400,align="center"]
+
+
+*Tilfeldig variasjon* angir målestøy til sensoren. Den tilfeldige variasjonen måles innenfor godkjente avgrensingsområder hvor lasermålingene er utført innenfor et svært tidsbegrenset intervall (kun få sekunder). Dersom avgrensningsområdet er skannet flere ganger skal skanningene behandles hver for seg når en beregner tilfeldig variasjon.
+
+.Figuren viser en skannet punktsky sett fra siden, rød pil viser relativ nøyaktighet, tilfeldig variasjon
+image::figurer/Kap8_Relative nøyaktighet Tilfeldig variasjon2.png[Figuren viser en skannet punktsky sett fra siden, rød pil viser relativ stedfestningsnøyaktighet, tilfeldig variasjon,400,align="center"]
+
+
+|====================
+
+====
+[#krav-mobil-stedfestingsnøyaktighet-ved-mobil-datafangst, reftext="Krav mobil stedfestingsnøyaktighet ved mobil datafangst"]
+*KRAV MOBIL STEDFESTINGSNØYAKTIGHET VED MOBIL DATAFANGST*
+
+[[tab-krav-til-stedfestingsnøyaktighet-ved-mobil-datafangst]]
+.Krav knyttet til kriterier om stedfestingsnøyaktighet
+[cols="1,1,1,1,1,1]
+[width="100%",options="header"]
+|====================
+|Kvalitetselement |Kvalitetsmål ^|Lav (cm) ^|Middels (cm) ^|God (cm) ^|Høy (cm)
+.3+|Absolutt stedfestingsnøyaktighet |Systematisk avvik ^|0 - 200 ^|0 - 20 ^|0 - 6 ^|0 - 2
+|Standardavvik ^|<50 ^|<5 ^|<2 ^|<1 
+|Maksimalt avvik 4+^|Systematisk avvik + 2 ganger Standardavvik
+.2+|Relativ nøyaktighet |  Systematisk avvik  ^| 0 - 200 ^|0 - 10 ^| 0 - 4 ^|0 - 2
+|Tilfeldig variasjon og toleranse ^|5 (+0/-5) ^|5 (+0/-5) ^|3 (+0/-3) ^|1 (+0/-1) 
+|====================
+
+====
+
+===== Kjentpunkt
+Se definisjon <<termer-kjentpunkt>>.
+
+===== Kontrollpunkt
+
+Se definisjon <<termer-kontrollpunkt>>.
+
+====
+[#krav-mobil-kjentpunkt-og-kontrollpunkt,reftext="Krav mobil kjentpunkt og kontrollpunkt"]
+*KRAV MOBIL KJENTPUNKT OG KONTOLLPUNKT*
+
+* Den absolutte nøyaktighet til kjentpunktet skal være lik eller bedre enn kravet til den absolutte nøyaktigheten til punktskyen. Dersom nøyaktigheten er 1/3 av kravet, kan kontrollpunktene benyttes direkte i statestikkberegningene. Dersom nøyaktighetene til kontrollpunktene er dårligere, skal standardavviket til kjentpunktene benyttes i statestikkberegningene. Dette etter krav i standarden Geodatakvalitet <<GK>>. 
+* Det stilles ikke konkrete krav til omfang av kjent- og kontrollpunkt, ettersom prosjektområde, GNSS-tilgjengelighet, målesystem og prosesseringsløyper har stor betydning for kvaliteten som oppnås rett fra INS. Metodikk og omfang skal være behovsstyrt og faglig begrunnet av leverandør i hvert enkelt oppdrag.
+====
+
+[[kapittel-kontrollmetode-og-kontrollplan]]
+===== Kontrollmetode og kontrollplan
+
+Kontroll kan gjennomføres ved å benytte en eller flere metodikker:
+
+* Innmålte kontrollpunkt. Tradisjonelt innmålte kontrollpunkt er fysiske objekt som lar seg gjenfinne i punktskyen, for eksempel i form av geometri eller intensitet. Kontrollpunkt kan eksempelvis være signalerte flater, targets eller skarpe detaljer.
+* Gjentatte passeringer ved mobil datafangst kan gi observasjoner/målinger av samme område. Metoden kan erstatte innmålte kontrollpunkt dersom:
+** Passeringene har tilstrekkelig tidsforskyvning over 15 minutter.
+** Datasettene skal være fri for systematiske avvik, dokumentert med kalibrering.
+** Samsvaret mellom passeringene dokumenteres i XY og Z.
+** Avviket ligger innenfor kravene for valgt nøyaktighetsnivå.
+* Andre uavhengige datakilder kan benyttes dersom deres kvalitet er tilstrekkelig for kontroll av det aktuelle kravet. Eksempler på andre uavhengige kilder er:
+** Eksisterende høydedata.
+** FKB/NVDB eller andre kvalitetssikrede vektordatasett.
+** Andre datasett av kjent kvalitet.
+
+
+====
+[#krav-mobil-kontrollplan,reftext="Krav mobil kontrollplan"]
+*KRAV MOBIL KONTROLLPLAN*
+
+* Uavhengig av kontrollmetodikk skal leverandøren utarbeide en kontrollplan hvor det beskrives hvor store feil kontrollmetodikken er i stand til å avdekke ved kontrollpunktene. 
+* Kontrollplanen skal angi hvor store feil som kan oppstå mellom kontrollpunktene.
+====
+
+==== Fullstendighet
+
+:xrefstyle: short
+
+I kvalitetskategorien fullstendighet inngår elementene _dekning,_ __punkttetthet__, __detaljeringsgrad__, _punktdistribusjon_ og __overlapp foto__. Disse beskriver hvor komplett datasettet er, hvor tett punktene ligger, hvor detaljert informasjonen er, hvordan punktene fordeler seg i området og hvor mye fotodata overlapper hverandre. Kvalitetselementer knyttet til kriteriet om fullstendighet er angitt i <<tab-kvalitetselementer-knyttet-til-kriteriet-om-fullstendighet>> med beskrivelse.
+
+:xrefstyle: full
+
+[[tab-kvalitetselementer-knyttet-til-kriteriet-om-fullstendighet]]
+.Kvalitetselementer knyttet til kriterier om fullstendighet
+[width="100%",options="header"]
+|====================
+|Kvalitetselement | Beskrivelse 
+|Dekning |Punktsky fra bilbåren laserskanning begrenser seg til å dekke omgivelser der sensoren har innsyn fra de kjørbare, harde flatene i prosjektet. Krav til dekning innenfor prosjektområdet må komme frem av produktspesifikasjonen i det enkelte prosjektet. Eksempelvis dersom det er krav til full dekning innenfor hele prosjektområdet må dette komme frem av kravspesifikasjonen, slik at eventuelle skyggepartier fra den bilbårne innsamlingen kan vurderes supplert med andre innsamlingsmetoder.
+
+
+
+
+|Punkttetthet|Punkttettheten må være tilstrekkelig høy til å kunne identifisere og definere objekter i punktskyen relevant for det enkelte prosjekt.
+|Detaljeringsgrad | Detaljeringsgraden i prosjektet angir krav til definerbarhet av relevante objekter i punktskyen. 
+|Punktdistribusjon | Hvordan punktene blir fordelt i punktskyen er avhengig av valg av skanner under datainnsamling, samt valg av skanningsparametere og -hastighet. Hva som er optimal punktdistribusjon i det enkelte prosjekt er avhengig av bruksområde og sluttprodukt. 
+|====================
+
+
+
+==== Egenskapskvalitet
+
+I kategorien egenskapskvalitet inngår elementene __fotavtrykk__, __intensitet__, __farge__, __klassifisering__, _målemetode (fase/puls)_ , __sensorID__ og __tidsstempling__. 
+Disse elementene beskriver kvaliteten på ulike egenskaper ved datainnsamlingen, som fotavtrykkets størrelse <<kapittel-laserskanner>>, målt intensitet, eventuell fargeinformasjon, hvilken målemetode som er brukt, samt identifikasjonen til sensoren som har samlet inn dataene.
+Med egenskapskvalitet i standarden Geodatakvalitet <<GK>>, menes nøyaktighet av kvantitative egenskaper (kan måles på en skala) og riktighet av ikke-kvantitative egenskaper (egenskaper som skiller ut informasjon, men uten å kunne rangeres) og eventuelt objektenes klassifisering og relasjoner. 
+
+:xrefstyle: short
+
+Kvalitetselementer knyttet til kriteriet om egenskapskvalitet er angitt i <<tab-kvalitetselementer-knyttet-til-kriterier-om-egenskapskvalitet>> med beskrivelse.
+
+:xrefstyle: full
+
+[[tab-kvalitetselementer-knyttet-til-kriterier-om-egenskapskvalitet]]
+.Kvalitetselementer knyttet til kriterier om egenskapskvalitet
+[width="100%",options="header"]
+|====================
+|Kvalitetselement |Beskrivelse
+|Fotavtrykk|Laserstrålens fotavtrykk er avhengig av sensorens spesifikasjoner, avstanden mellom observert objektet og lasersensoren, samt innfallsvinkelen til objektet som måles. Fotavtrykkets avgrensning defineres ut fra en prosentvis reduksjon av lysintensitet fra fotavtrykkets senter. Fotavtrykkets yttergrense settes der energien målt fra fotavtrykkets senter er redusert til 1/e^2^ som utgjør omtrent 13,5 %.
+|Intensitet|Alle målepunkter i punktskyen skal ha en intensitetsverdi. Ved bruk av flere lasersensorer i innsamlingen må intensitetsverdier tilpasses (strekkes) ved behov for å oppnå en homogen punktsky.
+|Farge| Punktene i punktskyen kan gis RGB-farge fra bilder tatt samtidig som laserskanningen, med forutsetning om at datainnsamling kan utføres i tilstrekkelige lysforhold. Farge er valgfritt og opp til det enkelte prosjekt å vurdere om relevant og derfor om det skal stilles krav til dette eller ikke.
+|Klassifisering| Følger krav fra <<kapittel-bearbeiding-av-laserdata-klassifisering>> samt Produktspesifikasjon Punktsky <<Punktsky>>. Klassifisering er valgfritt og opp til det enkelte prosjekt å vurdere om relevant og derfor om det skal stilles krav til dette eller ikke.
+|Målemetode (fase/puls)|Valg av lasersensortype, fase- eller pulsskanner, avhenger av sluttprodukt og bruksområde.
+|Sensor-ID|Punkter fra ulike skannere skal kunne skilles fra hverandre.
+|Tidsstempling|Dato og tid for målepunkter, hvis tilgjengelig for sensortypen, angitt som GPS-standardtid. Dersom systemet ikke angir GPS-tid skal siste datafangst dato angis i punktskyfilens hode.
+|====================
+
+:xrefstyle: full
+
+=== Dokumentasjonskrav
+
+====
+[#krav-mobil-dokumentasjon-av-mobil-datafangst, reftext="Krav mobil dokumentasjon av mobil datafangst"]
+*KRAV MOBIL DOKUMENTASJON AV MOBIL DATAFANGST*
+
+Leverandøren skal utarbeide en sluttrapport som svarer ut:
+
+* Kravene til rapportering beskrevet i <<kapittel-kartlegging-med-flybåren-laserskanning>> (det som er aktuelt for mobil datafangst). 
+* Kontrollplan, se <<kapittel-kontrollmetode-og-kontrollplan>>
+* Beskrive og dokumentere oppnådd resultat for alle kvalitetskategoriene:
+** Stedfestingsnøyaktighet
+** Fullstendighet
+** Egenskapskvalitet
+====
+
+
+
