@@ -317,7 +317,7 @@ Som et alternativ til innmåling av tradisjonelle kontrollflater, kan hjulsportm
 // * Landmålingsarbeidene inkludert rapportering skal utføres i henhold til standarden <<SAT>>.
 ====
 
-.Kontrollflaters gyldighetsområde
+.Figuren viser begge kontrollmetodene: Grønn sirkel angir kontrollflatenes gyldighetsområde, mens lilla viser et eksempel på hjulspor som har en gyldighetsområde på 6 km fra hjulsporet.
 [#imgKontrollflateGyldighet]
 //[caption="Figure 8:"]
 image::figurer/Kap7_KontrollflateGyldighet2.png["Kontrollflate gyldighet",400,align="center"]
