@@ -35,7 +35,7 @@ Den mest aktuelle metoden for posisjonsbestemmelse i sanntid er Real Time Kinema
 *KRAV LANDMÅLING SANNTIDSMÅLING*
 
 * For kontroll skal minimum ett fastmerke (kontrollpunkt) med tilfredsstillende kvalitet registreres før og etter innmåling.
-* Under målingen skal en også oppsøke andre fastmerker. Dersom det ikke finnes lett tilgjengelige fastmerker, kan en kontrollere mot tidligere bestemte objekttyper av god kvalitet og som er godt definert, for eksempel kummer. Avvikene skal ikke overstige 1/3 av kravet til stedfestingsnøyaktighet for de mest nøyaktige objekttypene som skal innmåles. Avvikene skal dokumenteres.
+* Under målingen skal en også oppsøke andre fastmerker. Dersom det ikke finnes lett tilgjengelige fastmerker, kan en kontrollere mot tidligere bestemte objekter av god kvalitet og som er godt definert, for eksempel kummer. Avvikene skal ikke overstige 1/3 av kravet til stedfestingsnøyaktighet for de mest nøyaktige objekttypene som skal innmåles. Avvikene skal dokumenteres.
 * Ved bytte av referansestasjon, skal minst en godt definert objekttype fra forrige oppstilling innmåles på nytt for kontroll. Avvikene skal dokumenteres.
 ====
 
@@ -66,13 +66,13 @@ Stasjonspunkter og orienteringspunkter skal fortrinnsvis være fastmerker i Stam
 [#krav-landmaling-innmaling-med-totalstasjon,reftext="Krav landmåling innmåling med totalstasjon"]
 *KRAV LANDMÅLING INNMÅLING MED TOTALSTASJON*
 
-For å sikre seg så godt som mulig mot grove feil må det settes krav til innmålingen av objekttyper: 
+For å sikre seg så godt som mulig mot grove feil må det settes krav til innmålingen av objekter: 
 
 * Det skal leses av mot samme orienteringspunkt først og sist i oppstillingen. +
 * Det skal om mulig benyttes minst to orienteringssikt i hver oppstilling. +
 * Ved ny oppstilling skal minst en godt definert objekttype fra forrige oppstilling innmåles på nytt for kontroll. +
 * Ved fri oppstilling skal standardavviket på bestemmelsen av oppstillingspunktet ikke overstige 1/3 av kravene til de mest nøyaktige objekttypene som skal innmåles. +
-* Innmåling av objekttyper skal bare unntaksvis gjøres med større avstander enn 500 m. Avstandene må ikke i noe tilfelle overstige avstanden til orienteringspunktene. Refraksjonsforholdene kan være avgjørende for høydenøyaktigheten. I noen tilfeller vil det innebære at avstandene må være kortere.
+* Innmåling av objekter skal bare unntaksvis gjøres med større avstander enn 500 m. Avstandene må ikke i noe tilfelle overstige avstanden til orienteringspunktene. Refraksjonsforholdene kan være avgjørende for høydenøyaktigheten. I noen tilfeller vil det innebære at avstandene må være kortere.
 ====
 
 Innmåling av kartobjekter ved bruk av totalstasjon kan utføres i en kikkertstilling dersom instrumentleverandørens anbefalte kalibreringsprosedyrer av instrumentet er foretatt. Utførte kalibreringer skal dokumenteres.
@@ -91,7 +91,12 @@ Aktuelle dokumenter:
 
 ////
 
-Oppdragstakeren skal i sin rapport dokumentere at instrumentene som blir brukt, minst har den nøyaktigheten som kreves for å tilfredsstille kravene til sluttproduktet. En slik dokumentasjon gis for hvert benyttet instrument. Fabrikkmerke, type og serienummer oppgis. 
+====
+[#krav-landmaling-instrumentdokumentasjon,reftext="Krav landmåling instrumentdokumentasjon"]
+*KRAV LANDMÅLING INSTRUMENTDOKUMENTASJON*
+
+* Oppdragstakeren skal i sin rapport dokumentere at instrumentene som blir brukt, minst har den nøyaktigheten som kreves for å tilfredsstille kravene til sluttproduktet. En slik dokumentasjon gis for hvert benyttet instrument. Fabrikkmerke, type og serienummer oppgis. 
+====
 
 // Det vises til Instrument-levnetsoversikten i Tillegg B i standarden <<GN>>.
 
@@ -118,6 +123,7 @@ Det skal leveres en rapport for den geodetiske kartleggingen, med leveransene so
 [[tab-rapp-geodetisk-kartlegging]]
 .Rapport for geodetisk kartlegging
 [cols="3*",options="header"]
+[cols="20%,30%,50%"]
 |===
 |Kategori|Element|Innhold
 .6+|Generell informasjon|Oppdragsgiver|(adresse og prosjektleder)
@@ -133,7 +139,7 @@ Det skal leveres en rapport for den geodetiske kartleggingen, med leveransene so
 |Benyttede grunnlagspunkter|(navn, nummer, dokumentasjon av kvalitet)
 |Målemetode og -prosedyre|Valgt målemetode og -prosedyre skal begrunnes
 |Høydereferansemodell (HREF)|Versjon av høydereferansemodell (HREF) benyttet under datafangst
-|Innmålte objekttyper|Liste over alle objekter
+|Innmålte objekter|Liste over alle objekter
 |Produktspesifikasjon, objektkatalog og topologisk nivå|(versjon)
 |Egenkontroll|Avvik ved kontrollmåling av objekter innmålt fra flere stasjoner, samt kontroll av tidligere kartlagte objekter
 |Dataleveranse|Spesifikasjon av leveranseformat og eventuell inndeling i filer
