@@ -48,6 +48,7 @@ Kvalitetselementer i vektorisering:
 [[tab-kvalitetselementer-i-vektorisering]]
 .Kvalitetselementer i vektorisering
 [width="100%",options="header"]
+[cols="20%,80%"]
 |====================
 | Kvalitetselement |  Beskrivelse
 | Knekkpunkt avvik (i grunnriss og høyde) | Mål på hvor godt samsvar det er mellom vektoriserte punkt eller noder i kurve med punktskyen. Måles som avstand fra node til punktsky (i grunnriss og høyde).
@@ -124,6 +125,7 @@ Ulike typer av punktsky kan benyttes som grunnlag for vektorisering av FKB-datas
 
 .Eksempler på ulike datasetts egnethet for vektorisering fra punktsky/modell
 [width="100%",options="header"]
+[cols="20%,40%,40%"]
 |====================
 |Datasett  |Egnethet av punktsky  | Kommentar 
 |FKB-Bane |Mobil datafangst |Svært godt egnet
