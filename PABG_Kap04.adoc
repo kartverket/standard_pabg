@@ -1,7 +1,6 @@
 == Termer og forkortelser
 
 === Kilder for termer og forkortelser
-Termer og forkortelser som er definert utenfor denne standarden er basert på følgende kildene <<Punktsky>> og <<POF>>:
 
 === Termer
 .aerotriangulering
@@ -150,7 +149,7 @@ Minimumsavstand mellom laserinstrument og person som ser direkte mot laserinstru
 
 [#termer-kjentpunkt,reftext="Kjentpunkt"]
 .kjentpunkt
-Kjentpunkt er signalerte eller naturlige punkt eller flater med kjente absolutte koordinater gitt i prosjektet referanseramme. Kjentpunkt brukes til justering, aerotriangulering, kalibrering av instrument og lignende. Justeringen kan utføres på selve posisjon og orienteringsløsningen til instrumentet, eller til å justere selve datasettet (punktsky, bilder, med mer) med formål å forbedre den absolutte stedfestingsnøyaktigheten.
+Kjentpunkt er signalerte eller naturlige punkt eller flater med kjente absolutte koordinater gitt i prosjektet referanseramme. Kjentpunkt brukes til justering, aerotriangulering, kalibrering av instrument og lignende. Justeringen kan utføres på selve posisjon og orienteringsløsningen til instrumentet, eller til å justere selve datasettet, som punktsky, bilder, med formål å forbedre den absolutte stedfestingsnøyaktigheten.
 
 .konform transformasjon
 Overføring av et punktsystem fra et koordinatsystem til et annet med origoforflytning (translasjon), dreining(er) og målestokkendring (lik i alle akseretninger). +
