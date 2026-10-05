@@ -13,7 +13,7 @@ Kapittelet avgrenses til å gjelde følgende:
 * Bruk av digitale flybildekamera.
 * Bruk av GNSS/INS-støttet fotografering.
 * Bruk av digital fotogrammetrisk arbeidsstasjon / ren programvarebasert produktfremstilling.
-* Fremstilling av produkter definert i <<FKB>> og <<POF>>.
+* Fremstilling av datasett definert i <<FKB>> og <<POF>>.
 
 ====
 [#krav-foto-referanserammer-transformasjoner,reftext="Krav foto referanserammer og transformasjoner"]
@@ -60,7 +60,7 @@ image::figurer/Formel_1.png["Formel 1: GSD",align="center"]
 
 GRD beskriver den minste avstanden mellom to objekter på bakken som et kamera klarer å skille fra hverandre i bildet. Dersom avstanden blir mindre, vil objektene smelte sammen i bildet. Beregningene av GRD utføres etter fremgangsmåte beskrevet i *[Meißner and Berger, 2025]*.
 
-For å beregne GRD må det anvendes en Siemensstjerne innenfor prosjektområdet. Dette er en sirkel bestående av like store svarte og hvite segmenter. Anbefalt totalt antall segmenter s følger *[Meißner and Berger, 2025]* og bør ligge mellom 16 og 96 segmenter. Radiusen til stjernen beregnes etter xref:imgFormel2[xrefstyle=short]. Når xref:imgFormel2[xrefstyle=short] benyttes bør det etableres svart og hvite referanseflater som har en størrelse som sikrer helt svarte og helt hvite piksler. Dette benyttes i utregningene av GRD og styrker nøyaktigheten til beregningen.
+For å beregne GRD må det anvendes en Siemensstjerne innenfor prosjektområdet. Dette er en sirkel bestående av like store svarte og hvite segmenter. Anbefalt totalt antall segmenter s følger *[Meißner and Berger, 2025]* og bør ligge mellom 16 og 96 segmenter. Radiusen til stjernen beregnes etter xref:imgFormel2[xrefstyle=short]. Når xref:imgFormel2[xrefstyle=short] benyttes bør det etableres svarte og hvite referanseflater som har en størrelse som sikrer helt svarte og helt hvite piksler. Dette benyttes i utregningene av GRD og styrker nøyaktigheten til beregningen.
 
 ////
 [stem#formel-radius, reftext=formel 2]
@@ -115,6 +115,7 @@ Målt farger og korresponderende fargereferanser i bildet sammenlignes i fargero
 [[tab-flyplanlegging]]
 .Krav til flyplanlegging
 [width="100%",options="header"]
+[cols="20%,80%"]
 |====================
 |Parameter|Krav
 |Bakkeoppløsning (GSD)| Bakkeoppløsning (GSD) bestemmes av oppdragsgiver og velges slik at kravene til fullstendighet og nøyaktighet blir oppfylt. Se xref:tab-FKB-GSD[xrefstyle=short].
@@ -126,17 +127,17 @@ En bildeblokk er en blokk med sammenhengende flybilder. Det er tillatt å fly ov
 For å sikre best mulig bildeorientering og redusere behovet for kjentpunkter, skal delområder i rimelig nærhet av hverandre forbindes ved at flystripene forlenges.
 |Innsyn og sammenbinding|Flystripene skal plasseres, og overdekningen skal eventuelt økes, slik at det sikres best mulig innsyn i alle områder og god bilde- og stripesammenbinding i områder med mye vann.
 |Sideoverdekning|Sideoverdekningen skal i gjennomsnitt ikke være mindre enn avtalt verdi. På høyeste punkt mellom stripene kan det planlegges ned til 5 % sideoverdekning. Lengre strekk med slik marginal sideoverdekning skal ikke forekomme.
-|Lengdeoverdekning|Lengdeoverdekningen skal være avtalt verdi overalt i fotograferingsområdet. Det tillates kortere avvik +/- 5 prosentpoeng, som eksempel ved bestilt 80% overlapp tillates det inntil 75% eller 85% overlapp over kortere strekninger.
-|Stereodekning på utsiden av prosjektområdet|For å sikre god stereodekning i hele prosjektområdet skal flystripene forlenges slik at det alltid tas ekstra bilder utenfor avtalt prosjektområde ved flystripestart og flystripeslutt, slik at det er minst en full 60% stereomodell ut over prosjektområdet. Normalt vil dette utgjøre 3-4 bilder. Det er ikke krav om en slik buffersone ut i vannområder. På langs av fotoretning skal stereodekning på utsiden av prosjektområdet dekke tilsvarende bestilt sideoverdekning. Ved fotografering av enkeltstriper settes krav til stereodekning på utsiden av prosjektområdet til minimum 10% av stripebredden.
+|Lengdeoverdekning|Lengdeoverdekningen skal være avtalt verdi overalt i fotograferingsområdet. Det tillates kortere avvik +/- 5 prosentpoeng, som eksempel ved bestilt 80 % overlapp tillates det inntil 75 % eller 85 % overlapp over kortere strekninger.
+|Stereodekning på utsiden av prosjektområdet|For å sikre god stereodekning i hele prosjektområdet skal flystripene forlenges slik at det alltid tas ekstra bilder utenfor avtalt prosjektområde ved flystripestart og flystripeslutt, slik at det er minst en full 60 % stereomodell ut over prosjektområdet. Normalt vil dette utgjøre 3-4 bilder. Det er ikke krav om en slik buffersone ut i vannområder. På langs av fotoretning skal stereodekning på utsiden av prosjektområdet dekke tilsvarende bestilt sideoverdekning. Ved fotografering av enkeltstriper settes krav til stereodekning på utsiden av prosjektområdet til minimum 10 % av stripebredden.
 |Overlapp kryssende striper|I bildeblokker med flere striperetninger skal striper med kryssende retning ha stereodekning over hele bredden til kryssende flystripe.
-|Overlapp kjedede enkeltstriper|Kjedede enkeltstriper, dreid en vinkel i forhold til hverandre, skal overlappe hverandre med minimum to stereomodeller i hver stripe og med minimum 60% stereomodell over hele stripebredden. Det skal være tilstrekkelig med terreng for å kunne finne nok sammenbindingspunkter mellom stripene. I overlappsområdet mellom kryssende flystriper skal som hovedregel minimum 50% av overlapsområde være land.
+|Overlapp kjedede enkeltstriper|Kjedede enkeltstriper, dreid en vinkel i forhold til hverandre, skal overlappe hverandre med minimum to stereomodeller i hver stripe og med minimum 60 % stereomodell over hele stripebredden. Det skal være tilstrekkelig med terreng for å kunne finne nok sammenbindingspunkter mellom stripene. I overlappsområdet mellom kryssende flystriper skal som hovedregel minimum 50 % av overlapsområde være land.
 |Plassering kjedede enkeltstriper|For vegkartlegging eller annen stripekartlegging skal det tilstrebes at vegen blir sentrisk i stripene. Dette skal likevel ikke hindre en hensiktsmessig flyplan og kravene til bildeorientering skal ivaretas
 |Tverrstriper a| Tverrstriper skal fortrinnsvis ligge vinkelrett på flystripene. Tverrstriper har reduserte krav til sky og skyskygge så lenge normale flystriper med god kvalitet dekker området, men dekningen må være god nok til å lage en sammenhengende flystripe i aerotrianguleringen (krav til antall sammenbindingspunkt vil være gjeldene for tverrstriper).
 
-I blokker med mer enn to flystriper og med mindre sideoverlapp enn 50%, så må et av disse to alternativene være dekket på alle flystripene i blokken:
+I blokker med mer enn to flystriper og med mindre sideoverlapp enn 50 %, så må et av disse to alternativene være dekket på alle flystripene i blokken:
 
-* Alle stripene skal dekkes av minst en tverrstripe. Tverrstripen må ha en stereomodell som er over midten av flybildet i en hel 60% stereomodell. Se xref:imgTverrstripe2[xrefstyle=short]. 
-* Alle flystriper må ha minst en stereomodell med 60% lengeoverlapp som dekker minimum 50% av bredden av flybildet fra en annen flystripe, i deler av flystripen. Se xref:imgTverrstripe1[xrefstyle=short].
+* Alle stripene skal dekkes av minst en tverrstripe. Tverrstripen må ha en stereomodell som er over midten av flybildet i en hel 60 % stereomodell. Se xref:imgTverrstripe2[xrefstyle=short]. 
+* Alle flystriper må ha minst en stereomodell med 60 % lengeoverlapp som dekker minimum 50 % av bredden av flybildet fra en annen flystripe, i deler av flystripen. Se xref:imgTverrstripe1[xrefstyle=short].
 
 Felles for begge alternativene er at det overlappende området skal ligge i et område egnet for etablering av sammenbindingspunkt. Det betyr at overlappsområdet for eksempel ikke bare skal inneholde vann. 
 
@@ -262,6 +263,7 @@ Den som signalerer, skal påse at signaleringen utføres i samsvar med gjeldende
 [[tab-krav-signaleringsarbeid]]
 .Krav til signaleringsarbeidet
 [width="100%",options="header"]
+[cols="20%,80%"]
 |===
 |Parameter|Krav
 |Markering av nye kjentpunkt|Nye kjentpunkt skal markeres med bolt, spiker eller annen varig markering.
@@ -337,6 +339,7 @@ image::figurer/Kap6_IkkeLovligSignal2.png[Signaler_ikke_lovlig,600,align="center
 [[tab-signaleringsrapport]]
 .Signaleringsrapport
 [cols="3*",options="header"]
+[cols="20%,30%,50%"]
 |====
 |Kategori|Element|Innhold
 .6+|Generell informasjon|Oppdragsgiver|(adresse og prosjektleder)
@@ -382,6 +385,7 @@ Oppdragstakeren for fotogrammetriske kart- og målearbeider er ansvarlig for at 
 [[tab-krav-digitalkamera]]
 .Krav til digitale kamera
 [width="100%",options="header"]
+[cols="20%,80%"]
 |===
 |Moment|Krav
 |Bildevandring|Kameraene skal ha digital eller mekanisk bildevandringskompensasjon (FMC). For linjesensorene er ikke dette påkrevd. Alternativt må lukkerhastigheten være så kort at sensorens bevegelse under eksponeringsøyeblikket ikke påvirker bildets kvalitet.
@@ -433,6 +437,7 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 [[tab-krav-fotografering-digitalkamera]]
 .Krav til fotografering
 [width="100%",options="header"]
+[cols="20%,80%"]
 |===
 |Moment|Krav
 |Klarmelding|Dersom ikke annet er avtalt skal oppdragsgiver for fotograferingen gi skriftlig klarmelding om at fotografering kan starte. Klarmelding skal gis så tidlig som mulig, og for hvert eventuelle delområde. Klarmeldingen(e) skal bekreftes skriftlig av oppdragstaker.
@@ -617,6 +622,7 @@ For hvert av de nevnte arbeidene, inkludert leveransene, skal resultatet av utf�
 [[tab-rapport-fotografering]]
 .Krav til rapportering av fotografering
 [cols="3*",options="header"]
+[cols="20%,30%,50%"]
 |====
 |Kategori|Element|Innhold
 .10+|Generell informasjon|Oppdragsgiver|(adresse og prosjektleder)
@@ -755,7 +761,7 @@ Dette kapittelet angir krav og retningslinjer til aerotriangulering (AT) med blo
 
 * Overlappende bilder og flystriper skal identifiseres og settes sammen til en samlet enhet (bildeblokk) som er egnet til å knyttes sammen ved hjelp av måling av sammenbindingspunkter.
 * Bildeblokker kan deles opp, måles og utjevnes hver for seg. Det skal da være rikelig overdekning mellom delblokkene og hver blokk skal ha foreskrevet antall og plassering av kjentpunkter. Avvik mellom veldefinerte detaljer skal ikke overstige 3 ganger standardavvikskravet til ytre orienteringselement mellom de overlappende delblokkene.
-* Hvert bilde skal ha minst 50 sammenbindingspunkt jevnt fordelt over hele bildet. Hvis bildet for eksempel dekker 70% land og 30% vann så reduseres kravet til antall sammenbindingspunkt med 30%. Det samme gjelder for andre typer terreng (for eksempel tett skog) hvor det er vanskelig å måle sammenbindingspunkt.
+* Hvert bilde skal ha minst 50 sammenbindingspunkt jevnt fordelt over hele bildet. Hvis bildet for eksempel dekker 70 % land og 30 % vann så reduseres kravet til antall sammenbindingspunkt med 30 %. Det samme gjelder for andre typer terreng (for eksempel tett skog) hvor det er vanskelig å måle sammenbindingspunkt.
 * Kravene til sammenbindingspunkt kan avvikes dersom det er absolutt umulig å måle gode punkt. Det er bare delen av overlappen mellom bildene som det er mulig å måle gode punkt i som teller i kravene.
 * Avstand mellom sammenbindingspunkt skal være minst 100 piksler, inkludert kjentpunktsmålinger. Sammenbindingspunkter som er nærmere enn kravet kan godtas hvis det er en god begrunnelse for avviket.
 * Det skal være minst antall sammenbindingspunkter nevnt i <<tab-ant-sammenbindingpkt>> mellom 2 påfølgende bilder i flystripen og mellom bilder som er nærmest 60 % overlapp i flystripen. Sammenbindingspunktene skal være jevnt fordelt over overlappen mellom bildene.
@@ -892,7 +898,7 @@ Det skal leveres en rapport for de utførte arbeidene, med leveransene som vedle
 [#krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringen,reftext="Krav foto kontrollmåling i DFA av aerotrianguleringrn"]
 *KRAV FOTO KONTROLLMÅLING I DFA AV AEROTRIANGULERINGEN*
 
-* Alle kjentpunkt og kontrollpunkt skal kontrollmåles i DFA i alle 60% modeller eller den stereooverlappen leverandøren har bestemt passer best i intervallet 35 % - 65 % lengdeoverlapp, der kjentpunktet/kontrollpunktet er synlig. 
+* Alle kjentpunkt og kontrollpunkt skal kontrollmåles i DFA i alle 60 % modeller eller den stereooverlappen leverandøren har bestemt passer best i intervallet 35 % - 65 % lengdeoverlapp, der kjentpunktet/kontrollpunktet er synlig. 
 * Stereomodeller benyttet i målearbeidet skal beskrives. 
 ====
 
@@ -909,6 +915,7 @@ Det skal leveres en rapport for de utførte arbeidene, med leveransene som vedle
 [[tab-rapportering-AT]]
 .Krav til rapportering av aerotriangulering
 [cols="3*",options="header"]
+[cols="20%,30%,50%"]
 |====
 |Kategori|Element|Innhold
 .9+|Generell informasjon|Oppdragsgiver|(adresse og prosjektleder)
@@ -1020,7 +1027,7 @@ Produktspesifikasjonen definerer hvordan objekttypene skal registreres:
 [#krav-foto-konstruksjon,reftext="Krav foto konstruksjon"]
 *KRAV FOTO KONSTRUKSJON*
 
-* For å sikre god høydenøyaktighet skal konstruksjon gjøres i modeller som er nærmest 60% lengdeoverlapp, eller den stereooverlappen leverandøren har bestemt passer best i intervallet 35 % - 65 % lengdeoverlapp. Avvik fra dette skal begrunnes i konstruksjonsrapporten.
+* For å sikre god høydenøyaktighet skal konstruksjon gjøres i modeller som er nærmest 60 % lengdeoverlapp, eller den stereooverlappen leverandøren har bestemt passer best i intervallet 35 % - 65 % lengdeoverlapp. Avvik fra dette skal begrunnes i konstruksjonsrapporten.
 * Før konstruksjonen starter skal det kontrolleres at bildeorienteringen for hele prosjektet er korrekt implementert. Dette gjøres ved at alle kjentpunkter måles og kontrolleres mot gitte koordinater. Kontrollen skal utføres på alle DFA-er som skal benyttes.
 * Under konstruksjon skal det kontrolleres for y-parallakse og for avvik mellom stereomodeller. Kjentpunkter skal oppsøkes i alle modeller de er synlige og koordinater for disse skal avleses og kontrolleres mot gitte koordinater. Ved unormale avvik skal implementeringen av bildeorienteringen utføres og kontrolleres på nytt. Dersom tilsvarende kontroll er utført under aerotriangulering i samme programvare som blir benyttet under konstruksjon kan kontrollen utelates.
 * Dersom det er brukt tilleggsparametere i forutgående AT/blokkutjevning skal det verifiseres at aktuell DFA kan påføre korresponderende korreksjoner under konstruksjonen.
@@ -1102,6 +1109,7 @@ Rapport fra konstruksjonsarbeidene skal minimum inneholde:
 [[tab-rapportering-konstruksjon]]
 .Krav til rapportering av konstruksjonsarbeider
 [cols="3*",options="header"]
+[cols="20%,30%,50%"]
 |===
 |Kategori|Element|Innhold
 .10+|Generell informasjon|Oppdragsgiver|(adresse og prosjektleder)
@@ -1266,6 +1274,7 @@ Egenkontrollen begrenses her til å være en ren visuell kontroll. Geometrisk kv
 [[tab-rapport-orto]]
 .Krav til rapportering av ortofoto
 [cols="3*",options="header"]
+[cols="20%,30%,50%"]
 |===
 |Kategori|Element|Innhold
 .10+|Generell informasjon|Oppdragsgiver|(adresse og prosjektleder)
@@ -1597,8 +1606,8 @@ AT på alle bilder, inkludert skråbilder.
 
 * Vertikalbildene skal tilfredsstille krav til vanlig vertikalbildeprosjekt. Hvis vertikalbildet har mindre enn 20000 piksler i den største retningen, så skaleres minstekravene til sammenbindingspunktene i kravet for vertikalbildene (xref:tab-ant-sammenbindingpkt[xrefstyle=short] og xref:tab-ant-stripesammenbindingpkt[xrefstyle=short]) med størrelsen på vertikalbildet, men ikke mindre enn 12 sammenbindingspunkt mellom påfølgende bilder og ikke mindre enn 4 stripesammenbindingspunkt. Ved for eksempel et vertikalbildekamera med 15000 piksler i den største retningen, så skaleres kravene med 15000/20000 = 0,75.
 * Skråbildene har ikke det samme nøyaktighetskravet som vertikalbildene, så lenge det ikke er spesifisert i sluttproduktet.
-* Skråbildene må ha minst 12 sammenbindingspunkt mot neste flybilde i flystripen i en retning på kamera (høyre, venstre, fram og tilbake) og ha nok sammenbindingspunkt, slik at det ikke blir parallakser i stereomodellene innad i en flystripe og retning på kamera. Minstemålet skaleres etter hvor stor andel vann og skog det er i overlappsområdet, for eksempel så blir minstekravet på sammenbindingspunkt mot neste flybilde 12*(1-0,75) = 3 sammenbindingspunkt hvis overlappsområdet er dekket av 75% vann og skog.
-* Skråbildene må være bundet sammen med vertikalbildene godt nok til at nøyaktighetskravene til sluttproduktet overholdes. Minst 2 sammenbindingspunkt til vertikalbilder pr. skråbilde hvis det er gode forhold og overlappsområdet mellom bildene inneholder maksimalt 20% skog og vann, minst 1 sammenbindingspunkt til vertikalbilder hvis det er maksimalt 50% skog og vann i overlappsområdet mellom bildene og ingen sammenbindingspunkt til vertikalbilder hvis det er mer enn 50% skog og vann i overlappsområdet mellom bildene. Hvis det er avvik, så må det argumenteres for at orienteringen mellom skråbildene og vertikalbildene blir god nok i AT-rapporten. 
+* Skråbildene må ha minst 12 sammenbindingspunkt mot neste flybilde i flystripen i en retning på kamera (høyre, venstre, fram og tilbake) og ha nok sammenbindingspunkt, slik at det ikke blir parallakser i stereomodellene innad i en flystripe og retning på kamera. Minstemålet skaleres etter hvor stor andel vann og skog det er i overlappsområdet, for eksempel så blir minstekravet på sammenbindingspunkt mot neste flybilde 12*(1-0,75) = 3 sammenbindingspunkt hvis overlappsområdet er dekket av 75 % vann og skog.
+* Skråbildene må være bundet sammen med vertikalbildene godt nok til at nøyaktighetskravene til sluttproduktet overholdes. Minst 2 sammenbindingspunkt til vertikalbilder pr. skråbilde hvis det er gode forhold og overlappsområdet mellom bildene inneholder maksimalt 20 % skog og vann, minst 1 sammenbindingspunkt til vertikalbilder hvis det er maksimalt 50 % skog og vann i overlappsområdet mellom bildene og ingen sammenbindingspunkt til vertikalbilder hvis det er mer enn 50 % skog og vann i overlappsområdet mellom bildene. Hvis det er avvik, så må det argumenteres for at orienteringen mellom skråbildene og vertikalbildene blir god nok i AT-rapporten. 
 * Det skal være minst 6 eller flere sammenbindingspunkter for alle bilder. Dersom dette ikke er oppfylt for et eller flere bilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.
 * AT-rapport: <<krav-foto-rapportering-aerotriangulering>>. I tillegg så må dette inkluderes i rapporten:
 ** Vurdering av sammenbindingen mellom skråbildene.
