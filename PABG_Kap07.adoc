@@ -634,6 +634,7 @@ Ved behov kan oppdragsgiver etterspørre klassifisering av objekter utover terre
 [[tab-rapport-laserskanning]]
 .Krav til rapportering av laserskanning
 [cols="3*",options="header"]
+[cols="20%,30%,50%"]
 |===
 |Kategori|Element|Innhold
 .10+|Generell informasjon|Oppdragsgiver|(adresse og prosjektleder)
