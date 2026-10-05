@@ -3,7 +3,7 @@
 === Normative referanser
 
 [#FKB]
-*[FKB]*: https://sosi.geonorge.no/standarder/FKB_generell_del/[SOSI abstrakte spesifikasjoner – FKB generell del 5.0]
+*[FKB]*: https://sosi.geonorge.no/standarder/FKB_generell_del/[SOSI abstrakte spesifikasjoner – FKB generell del]
 
 // [#G]
 
@@ -27,10 +27,10 @@
 *[Batymetri]*: https://github.com/kartverket/ALB_Best_Practice_Manual[Airborne LiDAR Bathymetry - Best Practice Manual]
 
 [#POF]
-*[POF]*: https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/digitale-ortofoto[Produktspesifikasjon Ortofoto, versjon 5.0 2020] 
+*[POF]*: https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/digitale-ortofoto[Produktspesifikasjon Ortofoto] 
 
 [#PV]
-*[PV]*: https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/vertikalbilde[Produktspesifikasjon Vertikalbilde, versjon 2.2 2017]
+*[PV]*: https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/vertikalbilde[Produktspesifikasjon Vertikalbilde]
 
 [#GK]
 *[GK]*: https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet[Geodatakvalitet]
@@ -65,7 +65,8 @@ Det er de til enhver tid gjeldende juridiske og regulative føringer som berøre
 * Stortingsproposisjon nr.1 1979-1980 som viser til Kartverkets oppdrag om å etablere et bildearkiv og sikre at alle flybilder og fjernmåledata arkiveres i dette.
 
 * https://www.luftfartstilsynet.no/[Luftfartstilsynet]. Krav om operative flytillatelser
-* https://lovdata.no/dokument/NL/lov/2005-06-17-101/KAPITTEL_8#KAPITTEL_8[Matrikkelloven kapittel 8] - Om geodetisk grunnlag og oppmålingsarbeid
+
+* https://lovdata.no/dokument/NL/lov/2005-06-17-101/KAPITTEL_8#KAPITTEL_8[Matrikkelloven kapittel 8] – Om geodetisk grunnlag og oppmålingsarbeid
 
 
 // huskeliste: DSA vertikalbilder
