@@ -44,6 +44,7 @@ Påføring av fargeverdier på punktskyen, er opsjonelt. Dersom opsjon utløses,
 [[tab-fargelegging-av-punktsky]]
 .Fargelegging av punktsky
 [width="100%",options="header"]
+[cols="20%,40%,40%"]
 |====================
 | Kvalitetselement  | Beskrivelse | Kvalitetsmål
 | Tidsriktighet |Tiden mellom bilder og lasermålinger.  | Bør være tatt samme dag.
@@ -84,6 +85,7 @@ Med stedfestingsnøyaktighet menes hvor godt stedfestingen til et objekt samsvar
 .Kvalitetselementer knyttet til kategorien stedfestingsnøyaktighet
 [cols="1,1a"]
 [width="100%",options="header"]
+[cols="20%,80%"]
 |====================
 |Kvalitetselement|Beskrivelse 
 
@@ -101,7 +103,7 @@ image::figurer/Kap8_Absolutt stedfestingsnøyaktighet_Systematisk avvik4.png[Rø
 *Kvalitetsmålet maksimalt avvik* tar utgangspunkt i målingene utført for å beregne systematisk avvik, hvor størst målte avvik angir kvalitetsmålet maksimalt avvik.
 
 
-|Relativ Stedfestningsnøyaktighet| Relativ stedfestningsnøyaktighet undersøkes innad i et avgrenset observerbart område på harde veldefinerte flater. 
+|Relativ Stedfestningsnøyaktighet a| Relativ stedfestningsnøyaktighet undersøkes innad i et avgrenset observerbart område på harde veldefinerte flater. 
 
 Avgrensing:
 
@@ -195,6 +197,7 @@ I kvalitetskategorien fullstendighet inngår elementene _dekning,_ __punkttetthe
 [[tab-kvalitetselementer-knyttet-til-kriteriet-om-fullstendighet]]
 .Kvalitetselementer knyttet til kriterier om fullstendighet
 [width="100%",options="header"]
+[cols="20%,80%"]
 |====================
 |Kvalitetselement | Beskrivelse 
 |Dekning |Punktsky fra bilbåren laserskanning begrenser seg til å dekke omgivelser der sensoren har innsyn fra de kjørbare, harde flatene i prosjektet. Krav til dekning innenfor prosjektområdet må komme frem av produktspesifikasjonen i det enkelte prosjektet. Eksempelvis dersom det er krav til full dekning innenfor hele prosjektområdet må dette komme frem av kravspesifikasjonen, slik at eventuelle skyggepartier fra den bilbårne innsamlingen kan vurderes supplert med andre innsamlingsmetoder.
@@ -224,6 +227,7 @@ Kvalitetselementer knyttet til kriteriet om egenskapskvalitet er angitt i <<tab-
 [[tab-kvalitetselementer-knyttet-til-kriterier-om-egenskapskvalitet]]
 .Kvalitetselementer knyttet til kriterier om egenskapskvalitet
 [width="100%",options="header"]
+[cols="20%,80%"]
 |====================
 |Kvalitetselement |Beskrivelse
 |Fotavtrykk|Laserstrålens fotavtrykk er avhengig av sensorens spesifikasjoner, avstanden mellom observert objektet og lasersensoren, samt innfallsvinkelen til objektet som måles. Fotavtrykkets avgrensning defineres ut fra en prosentvis reduksjon av lysintensitet fra fotavtrykkets senter. Fotavtrykkets yttergrense settes der energien målt fra fotavtrykkets senter er redusert til 1/e^2^ som utgjør omtrent 13,5 %.
