@@ -58,9 +58,9 @@ GSD = \frac{p \cdot H}{f}
 [#imgFormel1]
 image::figurer/Formel_1.png["Formel 1: GSD",align="center"]
 
-GRD beskriver den minste avstanden mellom to objekter på bakken som et kamera klarer å skille fra hverandre i bildet. Dersom avstanden blir mindre, vil objektene smelte sammen i bildet. Beregningene av GRD utføres etter fremgangsmåte beskrevet i *[Meißner and Berger, 2025]*.
+GRD beskriver den minste avstanden mellom to objekter på bakken som et kamera klarer å skille fra hverandre i bildet. Dersom avstanden blir mindre, vil objektene smelte sammen i bildet. Beregningene av GRD utføres etter fremgangsmåte beskrevet i <<Meissner-and-Berger>> og i <<Oveland-et-al-2026>>.
 
-For å beregne GRD må det anvendes en Siemensstjerne innenfor prosjektområdet. Dette er en sirkel bestående av like store svarte og hvite segmenter. Anbefalt totalt antall segmenter s følger *[Meißner and Berger, 2025]* og bør ligge mellom 16 og 96 segmenter. Radiusen til stjernen beregnes etter xref:imgFormel2[xrefstyle=short]. Når xref:imgFormel2[xrefstyle=short] benyttes bør det etableres svarte og hvite referanseflater som har en størrelse som sikrer helt svarte og helt hvite piksler. Dette benyttes i utregningene av GRD og styrker nøyaktigheten til beregningen.
+For å beregne GRD må det anvendes en Siemensstjerne innenfor prosjektområdet. Dette er en sirkel bestående av like store svarte og hvite segmenter. Anbefalt totalt antall segmenter s følger <<Meissner-and-Berger>> og bør ligge mellom 16 og 96 segmenter. Radiusen til stjernen beregnes etter xref:imgFormel2[xrefstyle=short]. Når xref:imgFormel2[xrefstyle=short] benyttes bør det etableres svarte og hvite referanseflater som har en størrelse som sikrer helt svarte og helt hvite piksler. Dette benyttes i utregningene av GRD og styrker nøyaktigheten til beregningen.
 
 ////
 [stem#formel-radius, reftext=formel 2]
@@ -80,7 +80,7 @@ image::figurer/Formel_2.png["Radius til Siemensstjerne",align="center"]
 
 ===== Fargenøyaktighet
 
-Fargenøyaktighet kan måles ved å måle fargen på naturlige eller kunstige fargereferanser innad i prosjektområdet. Fargereferansen bør ha en homogen farge, tilnærmet horisontal og ha en størrelse som sikrer 3x3 piksler som kun er påvirket av fargereferansens farge og ikke omliggende flater. For pansharpenings systemer med forhold 1:3 bør da fargereferanse ha en størrelse på 9x9 piksler. Tilsvarende for bayer pattern systemer bør størrelsen være 6x6 piksler. 
+Fargenøyaktighet kan måles ved å måle fargen på naturlige eller kunstige fargereferanser innad i prosjektområdet, <<Oveland-og-Le-Moan-2026>>. Fargereferansen bør ha en homogen farge, tilnærmet horisontal og ha en størrelse som sikrer 3x3 piksler som kun er påvirket av fargereferansens farge og ikke omliggende flater. For pansharpenings systemer med forhold 1:3 bør da fargereferanse ha en størrelse på 9x9 piksler. Tilsvarende for bayer pattern systemer bør størrelsen være 6x6 piksler. 
 
 For å kunne benytte fargereferansene må fargen måles med et fargespektrometer. Det måles da i forhold til en referanselyskilde og observasjonsvinkel definert av "International Commission on Illumination". Referanselyskilden bør være D65 som tilsvarer midlere dagslys med en fargetemperatur på ca. 6504 kelvin og observasjonsvinkel bør være 10°. Observasjonsvinkelen refereres til øyets observasjonsvinkel. For å få et varmere fargeuttrykk kan en alternativt benytte D50 med fargetemperatur på ca. 5003 kelvin. Det anbefales at feltmålinger leveres i ulike formateringer som RGB, CIEXYZ, CIELAB med fargetemperatur D50 og D65.
 
@@ -289,7 +289,7 @@ image::figurer/Kap6_InnsynMotSor.png[InnsynSor,400,align="center"]
 |Skygge|Skygge på signalet skal unngås. De samlede retningslinjene til innsyn går fram av <<#imgInnsynSign>> og <<#imgInnsynSor>>. Det skal være godt innsyn til signalet hele veien rundt. For å unngå skygge på signalet skal det være innsyn ned til 67 gon fra vertikalen i en sektor mot sør. Retningslinjene forutsetter fotografering i det mest vanlige tidsrommet på dagen.
 |Rydding av vegetasjon|Rydding av vegetasjon skal utføres med varsomhet. På privat grunn skal alltid grunneieren kontaktes før man går i gang med rydding.
 |Erstatningspunkt|Dersom planlagt posisjon blir funnet å være ubrukelig på grunn av innsyn, eller lignende skal et nytt eller eksisterende punkt etableres så nær som mulig det opprinnelig planlagte.
-|Signaleringsstørrelse | Krav til signalstørrelse settes til 2 til 3 ganger GSD, eller etter avtale med oppdragsgiver. Anbefalte signalstørrelser kan sees i <<tab-krav-signalstørrelser>>. Alle typer signaler i <<#imgSignalutforming>> kan benyttes for de forskjellige oppløsningene. For <<#imgSignaler>> vises eksempler på signal som overholder krav til planhet (1) og signaler som ikke overholder krav til planhet (2 og 3).
+|Signaleringsstørrelse | Krav til signalstørrelse settes til 3 ganger GSD, eller etter avtale med oppdragsgiver. Anbefalte signalstørrelser kan sees i <<tab-krav-signalstørrelser>>. Alle typer signaler i <<#imgSignalutforming>> kan benyttes for de forskjellige oppløsningene. <<#imgSignaler1>> viser eksempel på signal som overholder krav til planhet. <<#imgSignaler2>> og <<#imgSignaler3>> viser eksempler på signaler som ikke overholder krav til planhet.
 |Signaltyper a|
 .Ulike signaltyper (a, b, c og d)
 [#imgSignalutforming]
@@ -321,11 +321,14 @@ h| ^h|Størrelse signal ^h|Størrelse med kontrast
 
 ====
 
-
+.Signalers egnethet i forhold til signalets planhet. Eksempel på godkjent signal.
+[#imgSignaler1]
 image::figurer/Kap6_LovligSignal.png[Signaler_lovlig,600,align="center"]
+.Signalers egnethet i forhold til signalets planhet. Eksempel på ikke godkjent signal.
+[#imgSignaler2]
 image::figurer/Kap6_IkkeLovligSignal1.png[Signaler_ikke_lovlig,600,align="center"]
-.Signalers egnethet i forhold til signalets planhet. Bilde 1 er eksempel på godkjent signal. Bilde 2 og 3 er eksempel på ikke godkjent signal
-[#imgSignaler]
+.Signalers egnethet i forhold til signalets planhet. Eksempel på ikke godkjent signal.
+[#imgSignaler3]
 //[caption="Figure 4:"]
 image::figurer/Kap6_IkkeLovligSignal2.png[Signaler_ikke_lovlig,600,align="center"]
 
@@ -834,13 +837,12 @@ Dette kapittelet angir krav og retningslinjer til aerotriangulering (AT) med blo
 [#krav-foto-selvkalibrering,reftext="Krav foto selvkalibrering"]
 *KRAV FOTO SELVKALIBRERING*
 
-* Selvkalibrering ved hjelp av tilleggsparametere og grid er tillatt brukt ved avtale. 
-* Korreksjonene kan være som tilleggsparametere eller grid som er på et format som kan brukes av relevante programvarer.
-* Korreksjonene skal påføres bildene, så lenge det ikke innfører unøyaktigheter som er signifikante sammenlignet med ønsket nøyaktighet og kvalitet. Dette gjøres for å at bildene enkelt kan brukes i andre programvarer. 
+* Selvkalibrering ved hjelp av tilleggsparametere, inklusivt korreksjonsgrid, er tillatt brukt ved avtale. 
+* Korreksjonene kan være som tilleggsparametere som er på et format som kan brukes av relevante programvarer.
+* Som hovedregel skal korreksjonene påføres bildene. Dette gjøres for å at bildene enkelt kan brukes i andre programvarer. Unntaket er om korreksjonen innfører unøyaktigheter som er signifikante sammenlignet med ønsket nøyaktighet og kvalitet. Unntaket kan tre i kraft etter avtale med bestiller.  
 * Parameterne som brukes i selvkalibreringen skal være signifikante og unødvendige parametere skal ikke brukes.
 * Det er tillatt å fly kalibreringsflygninger av glassplaten for kamera i trykkabin, som korrigerer bilder på alle prosjekter i samme fly, glassplate og flyhøyder i samme fotosesong. Denne korreksjonen fører ikke til en ny kalibrering av kameraene, men bildene blir korrigert med glassplatekorreksjonen etter at kamerakalibreringa er påført.
-* Hvis ikke korreksjonene er påført bildene, så skal korreksjonsgrid brukes for å korrigere for avvikene. Hvis ikke korreksjonsgridet blir bra nok, så kan det avtales å levere korreksjonene som tilleggsparametere.
-* Format på korreksjonsgridet og tilleggsparameterne avtales med bestiller, slik at orienteringen kan brukes i alle relevante programvarer.
+* Hvis ikke korreksjonene er påført bildene, så skal korreksjonsgrid brukes for å korrigere for avvikene. Hvis ikke korreksjonsgridet blir bra nok, så kan det avtales å levere korreksjonene som tilleggsparametere. Format på tilleggsparameterne avtales med bestiller, slik at orienteringen kan brukes i alle relevante programvarer.
 ====
 
 ====
