@@ -242,7 +242,7 @@ Absolutt nøyaktighet på punktsky i vertikaldomene etterprøves ved hjelp av la
 //[caption="Figure 6:"]
 image::figurer/Kap7_KontrollflateUnder4.png["Kontrollflater under 3 punkt/m^2^",400,align="center"]
 
-.Kontrollflate - punkttetthet fra 5 punkt/m^2^(Blågrønt felt viser buffersonen, røde prikker er innmålte punkt og hvit felt er malt signal). Ved 10 punkt/m^2^ så er avstanden 0,75 meter ikke 1 meter.
+.Kontrollflate - punkttetthet fra 5 punkt/m^2^(Blågrønt felt viser buffersonen, røde prikker er innmålte punkt og hvit felt er malt signal). Ved 10 punkt/m^2^ er avstanden 0,75 meter ikke 1 meter.
 [#imgKontrollflateOver]
 //[caption="Figure 7:"]
 image::figurer/Kap7_KontrollflateOver4.png["Kontrollflater over 3 punkt/m^2^",400,align="center"]
@@ -280,7 +280,7 @@ I kartleggingsprosjekt med både Laser og Foto kan senter av kontrollflate signa
 * Maksimum helning internt i flaten skal ikke overstiger 5 %. Dersom helningen overstiger dette kan en grunnrissfeil påvirke resultatet av høydeanalyse.
 * Rundt kontrollflatene skal det være en buffersone på minimum 0,5 meter. Helningen på buffersonen skal ikke overskride 5 %. Dersom det ikke benyttes en buffersone rundt målt kontrollflate kan grunnrissfeil påvirke resultatet av høydeanalysen.
 * Når kontrollflater måles inn i terrenget er det ikke krav om oppmerking av
-målepunktene. I praksis så vil oppmerking være gunstig for å sikre at samme målepunkt blir benyttet. Dersom målepunktene merkes i felt skal det benyttes en krittspray eller kritt som forsvinner etter kort tid.
+målepunktene. I praksis vil oppmerking være gunstig for å sikre at samme målepunkt blir benyttet. Dersom målepunktene merkes i felt skal det benyttes en krittspray eller kritt som forsvinner etter kort tid.
 * Det skal leveres gyldighetsplott for kontrollflatemetoden.
 ====
 
@@ -398,9 +398,9 @@ Laserskanning kan gjerne gjennomføres dersom det er skyer over flyet. Hvis det 
 ==== Prosessering av GNSS/INS-data
 Krav til GNSS/INS-prosessering for laserskanning baserer seg på krav til GNSS/INS-prosessering for Fotogrammetri og det vises til relevante paragrafer i <<kapittel-beregning-av-GNSSINS-data>>. 
 
-Ved avtale så er det tillatt å bruke flere sensorer (GNSS, IMU og stripejustering) enn det som er definert i dette kapittelet i posisjon- og orienteringsbestemmelse av punktskya. 
+Ved avtale er det tillatt å bruke flere sensorer (GNSS, IMU og stripejustering) enn det som er definert i dette kapittelet i posisjon- og orienteringsbestemmelse av punktskya. 
 
-Samtidig georeferering av flere sensorplattformer som flybildekamera og laserskanner er tillatt ved avtale. Alle kravene for hver sensor skal følges. Det kreveres at vinkler og avstander mellom koordinatsystemet til hvert sensorsystem er kjent. Dersom vinkler og avstander mellom koordinatsystemene endres under datafangsten skal denne endringen måles og anvendes i navigasjonsløsningen for hvert enkelt sensorsystem. Hvis det er avvik mellom kravene som stilles for hver sensor, så brukes det strengeste kravet.
+Samtidig georeferering av flere sensorplattformer som flybildekamera og laserskanner er tillatt ved avtale. Alle kravene for hver sensor skal følges. Det kreves at vinkler og avstander mellom koordinatsystemet til hvert sensorsystem er kjent. Dersom vinkler og avstander mellom koordinatsystemene endres under datafangsten skal denne endringen måles og anvendes i navigasjonsløsningen for hvert enkelt sensorsystem. Hvis det er avvik mellom kravene som stilles for hver sensor, brukes det strengeste kravet.
 
 Krav til rapportering er detaljert i <<kapittel-egenkontroll-og-rapportering-fotorapport>>, kategori "GNSS/INS".
 
