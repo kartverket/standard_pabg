@@ -60,7 +60,7 @@ image::figurer/Formel_1.png["Formel 1: GSD",align="center"]
 
 GRD beskriver den minste avstanden mellom to objekter på bakken som et kamera klarer å skille fra hverandre i bildet. Dersom avstanden blir mindre, vil objektene smelte sammen i bildet. Beregningene av GRD utføres etter fremgangsmåte beskrevet i <<Meissner-and-Berger>> og i <<Oveland-et-al-2026>>.
 
-For å beregne GRD må det anvendes en Siemensstjerne innenfor prosjektområdet. Dette er en sirkel bestående av like store svarte og hvite segmenter. Anbefalt totalt antall segmenter s følger <<Meissner-and-Berger>> og bør ligge mellom 16 og 96 segmenter. Radiusen til stjernen beregnes etter xref:imgFormel2[xrefstyle=short]. Når xref:imgFormel2[xrefstyle=short] benyttes bør det etableres svarte og hvite referanseflater som har en størrelse som sikrer helt svarte og helt hvite piksler. Dette benyttes i utregningene av GRD og styrker nøyaktigheten til beregningen.
+For å beregne GRD anvendes Siemensstjerne innenfor prosjektområdet. Dette er en sirkel bestående av like store svarte og hvite segmenter. Anbefalt totalt antall segmenter s følger <<Meissner-and-Berger>>. Radiusen til stjernen beregnes etter xref:imgFormel2[xrefstyle=short]. Når xref:imgFormel2[xrefstyle=short] benyttes, etableres svarte og hvite referanseflater som har en størrelse som sikrer helt svarte og helt hvite piksler, <<Oveland-et-al-2026>>. Dette benyttes i utregningene av GRD og styrker nøyaktigheten til beregningen.
 
 ////
 [stem#formel-radius, reftext=formel 2]
@@ -205,7 +205,7 @@ Ved GNSS/INS-støttet fotografering kreves det i teorien kun et fåtall kjentpun
 
 * Det skal være minimum ett fullbestemt kjentpunkt i hver flystripe.
 * Kravet til antall kjentpunkt kan avvikes etter avtale. Dette må da kompenseres med flere tverrstriper.
-* I en bildeblokk skal det være minimum 5 fullbestemte kjentpunkter. Kravet gjelder også for enkeltstriper og enkeltstriper i kjede. Avvik fra dette (for eksempel ved svært små blokker og ved mange spredte øyer) kan tillates dersom oppdragsgiver har åpnet for dette i teknisk spesifikasjon for oppdraget. I slike tilfeller skal det sørges for at korrekte "GNSS-shift" blir påført bildene.
+* I en bildeblokk skal det være minimum 5 fullbestemte kjentpunkter. Kravet gjelder også for enkeltstriper og enkeltstriper i kjede. Avvik fra dette (for eksempel ved svært små blokker og ved mange spredte øyer) kan tillates dersom oppdragsgiver har åpnet for dette i teknisk spesifikasjon for oppdraget. I slike tilfeller skal det sørges for at "GNSS-shift" blir påført bildene gjennom bruk av øvrige data i prosjektet og fortrinnsvis fra en fotosesjon som ligger nær i tid og sted til den som mangler kjentpunkt.
 * I blokker som inneholder kjedede enkeltstriper skal det være minimum ett fullbestemt kjentpunkt i hvert overlappsområde mellom stripene, samt minimum ett i eller nær enden av hver kjede.
 * Kjentpunktene skal fordeles jevnt over hele bildeblokken og det skal påses at det finnes kjentpunkter nær blokkens ytterkanter. Det er dog ikke nødvendig å plassere kjentpunktene helt i ytterkant, dersom for eksempel adkomst gjør dette vanskelig.
 ====
@@ -474,7 +474,7 @@ Fotografering under slørskyer kan aksepteres så lenge de ovenfor nevnte kraven
 ** Systematisk avvik fra flyretningen: &#8804; 5,0^o^
 ** Avvik mellom to påfølgende bilder: &#8804; 5,0^o^
 
-Avvik fra disse kravene kan aksepteres av oppdragsgiver der oppdragstaker kan dokumentere at det ikke medfører kvalitetstap eller problemer i produksjonen. Avviket skal varsles oppdragsvier uten ugrunnet opphold. Avvikene skal beskrives i fotorapporten. 
+Avvik fra disse kravene kan aksepteres av oppdragsgiver der oppdragstaker kan dokumentere at det ikke medfører kvalitetstap eller problemer i produksjonen. Avviket skal varsles oppdragsgiver uten ugrunnet opphold. Avvikene skal beskrives i fotorapporten. 
 
 |Bakkeoppløsning 
 a| * Gjennomsnittlig GSD i prosjektområdet: Avtalt verdi
@@ -532,7 +532,7 @@ Metoden for GNSS-posisjonsbestemmelse ved bruk av DGNSS er basert på at det ben
 *KRAV FOTO DGNSS*
 
 * Maksimal avstand mellom fly/helikopter/drone og referansemottakere på bakken må ikke være lengere enn at nøyaktighetskravet til projeksjonssentrene oppnås.
-* Ved bruk av egen referansemottaker må koordinatene til benyttet kjentpunkt være bestemt med 1/3 av nøyaktighetskravet til projeksjonssentrene.
+* Ved bruk av egen referansemottaker må koordinatene til benyttet kjentpunkt ha en nøyaktighet på 1/3 av nøyaktighetskravet til projeksjonssentrene.
 ====
 
 
