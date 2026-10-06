@@ -75,4 +75,11 @@ Det er de til enhver tid gjeldende juridiske og regulative føringer som berøre
 
 // Benytter ISO690 til å beskrive referansene
 
-*[Meißner and Berger, 2025]* : MEIßNER, Henry; BERGER, Ralf. Adaptable Siemens Star Targets for Reliable and Standardized Spatial Resolution Measurement under DIN 18740-8. The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, 2025, 48: 139-146. 
+[#Meissner-and-Berger,reftext="[Meißner and Berger, 2025]"]
+*[Meißner and Berger, 2025]*: MEIßNER, Henry; BERGER, Ralf. Adaptable Siemens Star Targets for Reliable and Standardized Spatial Resolution Measurement under DIN 18740-8. The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, 2025, 48: 139-146. 
+
+[#Oveland-et-al-2026,reftext="[Oveland et al, 2026]"]
+*[Oveland et al, 2026]*: Oveland, I., Prebensen Korsnes, A., Honkavaara, E., Markelin, L., Flatman, A.C. and Meißner, H., 2026. Aerial image quality control-spatial resolution. The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, 49, pp.489-495.
+
+[#Oveland-og-Le-Moan-2026,reftext="[Oveland og Le Moan, 2026]"]
+*[Oveland og Le Moan, 2026]*: Oveland, I. and Le Moan, S., 2026. Colour Adjustment of Aerial Images from 2000–3000 m Altitude: Empirical Normalisation using Large Ground Colour Targets. ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, 11, pp.337-344.
