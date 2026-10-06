@@ -73,31 +73,46 @@ toc::[]
 
 == Orientering og introduksjon
 
-Denne standarden er utarbeidet for å gi en oversikt over aktuell teknologi for produksjon av basis geodata. Det settes krav til dokumentasjon og rapportering, samt en del krav til utføring av produksjonsprosesser.
+Denne standarden er utarbeidet for å gi en oversikt over aktuell teknologi for produksjon av basis geodata. Det settes krav til dokumentasjon og rapportering, samt en del krav til utføring av produksjonsprosesser. Hensikten med standarden er å angi krav og anbefalinger for produksjon av basis geodata.
 
 
 === Bruk av krav i standarden
-Produksjon av basis geodata setter krav til produksjonsprosessene, dokumentasjon og rapportering. For å gjøre det lettere å identifisere kravene og anbefalingene er disse uthevet og navngitt. Liste over krav finnes i <<kapittel-vedlegg-d-liste-over-krav>> og liste over anbefalinger finnes i <<kapittel-vedlegg-e-liste-over-anbefalinger>>.
 
-=== Historikk og status
+Standarden er bygd modulært opp i ulike kapitler, hvor hvert kapittel beskriver krav til produksjonsprosess, dokumentasjon og rapportering til ulike dataprodukter, som landmåling, flyfoto, laserskanning, mobil datafangst og vektorisering fra modell. Kravene til hvert dataprodukt er angitt i dataproduktets kapittel.
+ 
+For å gjøre det lettere å identifisere kravene og anbefalingene er disse uthevet og navngitt. Liste over krav finnes i <<kapittel-vedlegg-d-liste-over-krav>> og liste over anbefalinger finnes i <<kapittel-vedlegg-e-liste-over-anbefalinger>>.
 
-Standarden ble etablert i 2015 og erstattet da den tidligere standarden Kart og Geodata (2008). Det har vært en stor teknologisk utvikling siden versjon 1 av standarden ble utgitt i 2015, som for eksempel kan ikke 1.0 versjonen av standarden benyttes til å bestille datafangst ved hjelp av drone. Det ble derfor startet en revisjon av standarden i 2022 (versjon 2.0), revisjonen gjennomføres som et standardiseringsprosjekt.  For at standarden kan benyttes til anskaffelser i 2023 så ble det besluttet å gjennomføre en mindre revisjon som tok inn et underkapittel 6.8 som setter krav til fotografering med drone. I tillegg ble det gjort noen mindre presiseringer og rettinger i kapittel 6.
+Standarden kan brukes som referansedokument ved inngåelse av avtaler om produksjon av basis geodata. Dersom kravene skal avvikes må dette komme fram av avtalen.
 
-Revisjon av standarden til versjon 3.0 ble startet i 2025. Hele standarden ble gått igjennom under revideringen. Det ble lagt til krav til skråbilder i kapittel 6, et nytt kapittel om mobil datafangst og et nytt kapittel om vektorisering fra punktsky/modell.
+=== Status
+
+Hele standarden er gjennomgått og store deler er revidert.
+
+Det ble lagt til krav til skråbilder i kapittel 6, et nytt kapittel om mobil datafangst og et nytt kapittel om vektorisering fra punktsky/modell. Se <<kapittel-endringer-versjon2-til-3>> for flere endringer.
 
 Standardene Norges offisielle høydesystemer og referansenivåer 2.1 (2009) og Satellittbasert posisjonsbestemmelse 2.1 (2009) ble trukket tilbake når den nye standarden for Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt 1.0 <<GG>> kom i 2024. Enkelte deler av de tilbaketrukne standardene vil bli oppdatert og videreført i en veileder som er under utarbeiding. Referanser til de tilbaketrukne standardene er fjernet i denne standarden.
 
-[options=autowidth,options=header]
+Siste revisjon er gjennomført av Kartverket med bistand av en revisjonsgruppe som var åpen for alle og hadde medlemmer både fra leverandører og bestillere.
+
+=== Historikk
+
+Standarden ble etablert i 2015 og erstattet da den tidligere standarden Kart og Geodata (2008). Det har vært en stor teknologisk utvikling siden versjon 1 av standarden ble utgitt i 2015, som for eksempel kan ikke 1.0 versjonen av standarden benyttes til å bestille datafangst ved hjelp av drone. Det ble derfor startet en revisjon av standarden i 2022 (versjon 2.0), revisjonen gjennomføres som et standardiseringsprosjekt. For at versjon 2.0 av standarden kunne benyttes til anskaffelser i 2023 så ble det besluttet å gjennomføre en mindre revisjon som tok inn et underkapittel 6.8 som setter krav til fotografering med drone. I tillegg ble det gjort noen mindre presiseringer og rettinger i kapittel 6.
+
+Revisjon av standarden til versjon 3.0 ble startet i 2025.  
+
+[cols="3*",options="header"]
+[cols="10%,15%,75%"]
 |====
-|Versjon |Dato|Utført av|Grunnlag for endringen
-|1.0|Mars 2015|Bjørn Barstad (Terratec) Leif Erik Blankenberg (Terratec) Gunhild Mæhlum (Blom Geomatics) Ivar Oveland (Blom Geomatics) Christian Malmquist (Kartverket) Håkon Dåsnes (Kartverket)|Revisjon av standarden Kart og geodata.
-|2.0|November 2022|Ivar Oveland (Kartverket), Andreas Prebensen Korsnes (Kartverket), Christian Malmquist (Kartverket) og Jon Otter Skaaret (Kartverket) med standardiseringsprosjektet for revisjon av Produksjon av basis geodata som referansegruppe|Revidere krav til kartlegging slik at standarden ikke utelukker nye kartleggingsmetoder og teknologisk utvikling.
-|3.0|Desember 2026|Ivar Oveland (Kartverket), Andreas Prebensen Korsnes (Kartverket), Sissel Skovly (Kartverket) og Marit Bunæs (Kartverket) med standardiseringsprosjektet for revisjon av Produksjon av basis geodata som referansegruppe|Oppdatere standarden slik at den inkluderer nye kartleggingsmetoder og teknologisk utvikling.
+|Versjon |Dato|Grunnlag for endringen
+|1.0|Mars 2015|Revisjon av standarden Kart og geodata.
+|2.0|November 2022|Revidere krav til kartlegging slik at standarden ikke utelukker nye kartleggingsmetoder og teknologisk utvikling.
+|3.0|Desember 2026|Oppdatere standarden slik at den inkluderer nye kartleggingsmetoder og teknologisk utvikling.
 |====
 
 
 === Endringslogg
 
+[[kapittel-endringer-versjon2-til-3]]
 ==== Endringer fra versjon 2 til versjon 3
 
 Generelt er standarden gjennomgått og det er utført språkvask, formateringsforbedringer og presiseringer der tidligere krav var utydelige i hele standarden. Alle krav er flyttet til kravbokser og alle anbefalinger er flyttet inn i anbefalingsbokser.
