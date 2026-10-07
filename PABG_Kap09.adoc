@@ -74,11 +74,11 @@ image::figurer/Kap9_Knekkpkt og tverravvik.png[Figuren illustrerer knekkpunktavv
 [#krav-vektor-geometrisk-avvik-og-tverravvik-pilhøyde,reftext="Krav vektor geometrisk avvik og tverravvik/pilhøyde"]
 *KRAV VEKTOR GEOMETRISK AVVIK OG TVERRAVVIK/PILHØYDE*
 
-* Ved vurdering av kvalitet på vektordata basert på vektorisering i punktsky/modell, må både stedfestingsnøyaktighet for punktskyen, geometrisk avvik i vektorisering og tverravvik/pilhøyde i grunnriss og høyde (tverravvik/pilhøyde) vurderes.
+* Ved vurdering av kvalitet på vektordata basert på vektorisering i punktsky/modell, skal både stedfestingsnøyaktighet for punktskyen, geometrisk avvik i vektorisering og tverravvik/pilhøyde i grunnriss og høyde (tverravvik/pilhøyde) vurderes.
 
 * Når metoden brukes som alternativ til kartkonstruksjon vil kvalitetskrav til vektordata følge av kartleggingsstandard og kvalitetsklasser på objekttyper definert i aktuell produktspesifikasjon.
 
-* Kvadratsummen av stedfestingsnøyaktighet på punktsky/modell, og den største verdien av geometrisk avvik eller tverravvik/pilhøyde må være bedre enn kvalitetskravet for den aktuelle objekttypen:
+* Kvadratsummen av stedfestingsnøyaktighet på punktsky/modell, og den største verdien av geometrisk avvik eller tverravvik/pilhøyde skal være bedre enn kvalitetskravet for den aktuelle objekttypen:
 
 ////
 [stem]
