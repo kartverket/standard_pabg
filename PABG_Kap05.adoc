@@ -106,7 +106,7 @@ Oppdragstaker er ansvarlig for at valg av måleopplegg, programvare og beregning
 
 // Ved bruk av satellittutstyr er beregning beskrevet i standarden <<SAT>>.
 
-=== Egenkontroll og rapportering (geodetisk kartlegging)
+=== Egenkontroll og rapportering geodetisk kartlegging
 Det skal leveres en rapport for den geodetiske kartleggingen, med leveransene som vedlegg til rapporten. Generelt gjelder at alle resultat fra beregninger skal vurderes og kommenteres. Eventuelle problemer i prosjektet skal omtales spesielt. Rapporten er en del av leveransen og skal leveres samtidig med det produktet som rapporten omhandler. 
 
 :xrefstyle: short
