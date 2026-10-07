@@ -54,6 +54,9 @@
 
 // <<SAT>> er en tilbaketrukket standard, men enkelte deler vil bli oppdatert og videreført i en planlagt veileder.
 
+[#GDPR]
+*[GDPR]*: https://lovdata.no/dokument/NL/lov/2018-06-15-38[GDPR-forordningen]
+
 === Juridiske og regulative referanser
 
 Det er de til enhver tid gjeldende juridiske og regulative føringer som berører standardens tematikk, som skal benyttes. Listen under viser et utvalg av aktuelle referanser: 
