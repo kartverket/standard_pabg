@@ -109,7 +109,7 @@ Avgrensing:
 
 * Avstand fra skanner (maksimalt 10 meter). Der skannerens posisjon ikke er kjent gjelder avstand til senterlinje for kjørebane.
 * Fysisk utstrekning (minst 20 laserpunkt, maksimalt 1 m^2^).
-* Området må være flatt, men flaten kan være orientert i alle himmelretninger.
+* Området skal være flatt, men flaten kan være orientert i alle himmelretninger.
 
 Målingene for å beregne relativ stedfestningsnøyaktighet utføres langs normalvektoren til avgrensningens senterpunkt. Relativ stedfestningsnøyaktighet deles inn i de to kvalitetsmålene systematisk avvik og tilfeldig variasjon:
 
