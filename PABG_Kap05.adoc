@@ -15,7 +15,7 @@ Geodetiske metoder benyttes til kartlegging ved høye krav til nøyaktighet elle
 *KRAV LANDMÅLING REFERANSERAMMER OG TRANSFORMASJONER*
 
 * Produksjonen av produktene beskrevet i denne standarden skal anvende Kartverkets offisielle transformasjonsformler. Se også kapittel "6.5 Omforming av koordinater" i standarden Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt <<GG>>.
-* Når det benyttes globale referanserammer, må referansetidspunktet for datafangsten (epoke) være kjent og skal benyttes i transformasjon mellom globale og nasjonale referanserammer. Dette medfører at EPSG-koder som utgjør en samling (ensemble) av EPSG-koder ikke skal benyttes.
+* Når det benyttes globale referanserammer, skal referansetidspunktet for datafangsten (epoke) være kjent og skal benyttes i transformasjon mellom globale og nasjonale referanserammer. Dette medfører at EPSG-koder som utgjør en samling (ensemble) av EPSG-koder ikke skal benyttes.
 ====
 
 
@@ -45,7 +45,7 @@ RTK kan benyttes med VRS eller egen referansestasjon. Referansestasjonen settes 
 // Når det gjelder den praktiske gjennomføringen av målearbeidene og kravene til disse, vises det til standarden <<SAT>>.
 
 ===== Transformasjoner
-Ved differensielle satellittbaserte metoder fremkommer ellipsoidiske høydeforskjeller. For å sikre leveranse i NN2000 med gjeldene høydereferansemodell (HREF), må høydeforskjellene korrigeres. Dette kan gjøres på flere måter:
+Ved differensielle satellittbaserte metoder fremkommer ellipsoidiske høydeforskjeller. For å sikre leveranse i NN2000 med gjeldene høydereferansemodell (HREF), skal høydeforskjellene korrigeres. Dette kan gjøres på flere måter:
 
 * Korrigerte høydeforskjeller kan utledes fra transformasjonspunkt der både ellipsoidisk og ortometrisk høyde (NN2000) er kjent, og der referansestasjonen er et av transformasjonspunktene.
 
@@ -60,19 +60,19 @@ For videre beskrivelse av transformasjon se standarden Geodetisk grunnlag – ko
 ==== Bruk av totalstasjon
 Stasjonspunkter kan være et fastmerke eller et punkt som bestemmes med kontroll, for eksempel ved fri oppstilling. Ved fri oppstilling skal en måle retning, avstand og vertikalvinkel mot minimum to fastmerker.
 	
-Stasjonspunkter og orienteringspunkter skal fortrinnsvis være fastmerker i Stamnettet, Landsnettet eller det kommunale nettet (gjelder for kommuner), eller egenetablerte fastmerker etablert med GNSS med tilstrekkelig kvalitet. Slike punkter dokumenteres ved beregning av ytre pålitelighet i programvare som håndterer dette. Påliteligheten må tilfredsstille de krav som stilles i standarden Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt <<GG>> for den aktuelle områdetypen.
+Stasjonspunkter og orienteringspunkter skal fortrinnsvis være fastmerker i Stamnettet, Landsnettet eller det kommunale nettet (gjelder for kommuner), eller egenetablerte fastmerker etablert med GNSS med tilstrekkelig kvalitet. Slike punkter dokumenteres ved beregning av ytre pålitelighet i programvare som håndterer dette. Påliteligheten skal tilfredsstille de krav som stilles i standarden Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt <<GG>> for den aktuelle områdetypen.
 
 ====
 [#krav-landmaling-innmaling-med-totalstasjon,reftext="Krav landmåling innmåling med totalstasjon"]
 *KRAV LANDMÅLING INNMÅLING MED TOTALSTASJON*
 
-For å sikre seg så godt som mulig mot grove feil må det settes krav til innmålingen av objekter: 
+For å sikre seg så godt som mulig mot grove feil skal det settes krav til innmålingen av objekter: 
 
 * Det skal leses av mot samme orienteringspunkt først og sist i oppstillingen. +
 * Det skal om mulig benyttes minst to orienteringssikt i hver oppstilling. +
 * Ved ny oppstilling skal minst en godt definert objekttype fra forrige oppstilling innmåles på nytt for kontroll. +
 * Ved fri oppstilling skal standardavviket på bestemmelsen av oppstillingspunktet ikke overstige 1/3 av kravene til de mest nøyaktige objekttypene som skal innmåles. +
-* Innmåling av objekter skal bare unntaksvis gjøres med større avstander enn 500 m. Avstandene må ikke i noe tilfelle overstige avstanden til orienteringspunktene. Refraksjonsforholdene kan være avgjørende for høydenøyaktigheten. I noen tilfeller vil det innebære at avstandene må være kortere.
+* Innmåling av objekter skal bare unntaksvis gjøres med større avstander enn 500 m. Avstandene skal ikke i noe tilfelle overstige avstanden til orienteringspunktene. Refraksjonsforholdene kan være avgjørende for høydenøyaktigheten. I noen tilfeller vil det innebære at avstandene skal være kortere.
 ====
 
 Innmåling av kartobjekter ved bruk av totalstasjon kan utføres i en kikkertstilling dersom instrumentleverandørens anbefalte kalibreringsprosedyrer av instrumentet er foretatt. Utførte kalibreringer skal dokumenteres.
