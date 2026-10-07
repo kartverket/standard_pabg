@@ -82,9 +82,9 @@ image::figurer/Formel_2.png["Radius til Siemensstjerne",align="center"]
 
 Fargenøyaktighet kan måles ved å måle fargen på naturlige eller kunstige fargereferanser innad i prosjektområdet, <<Oveland-og-Le-Moan-2026>>. Fargereferansen bør ha en homogen farge, tilnærmet horisontal og ha en størrelse som sikrer 3x3 piksler som kun er påvirket av fargereferansens farge og ikke omliggende flater. For pansharpenings systemer med forhold 1:3 bør da fargereferanse ha en størrelse på 9x9 piksler. Tilsvarende for bayer pattern systemer bør størrelsen være 6x6 piksler. 
 
-For å kunne benytte fargereferansene må fargen måles med et fargespektrometer. Det måles da i forhold til en referanselyskilde og observasjonsvinkel definert av "International Commission on Illumination". Referanselyskilden bør være D65 som tilsvarer midlere dagslys med en fargetemperatur på ca. 6504 kelvin og observasjonsvinkel bør være 10°. Observasjonsvinkelen refereres til øyets observasjonsvinkel. For å få et varmere fargeuttrykk kan en alternativt benytte D50 med fargetemperatur på ca. 5003 kelvin. Det anbefales at feltmålinger leveres i ulike formateringer som RGB, CIEXYZ, CIELAB med fargetemperatur D50 og D65.
+For å kunne benytte fargereferansene måles fargen med et fargespektrometer. Det måles da i forhold til en referanselyskilde og observasjonsvinkel definert av "International Commission on Illumination". Referanselyskilden bør være D65 som tilsvarer midlere dagslys med en fargetemperatur på ca. 6504 kelvin og observasjonsvinkel bør være 10°. Observasjonsvinkelen refereres til øyets observasjonsvinkel. For å få et varmere fargeuttrykk kan en alternativt benytte D50 med fargetemperatur på ca. 5003 kelvin. Det anbefales at feltmålinger leveres i ulike formateringer som RGB, CIEXYZ, CIELAB med fargetemperatur D50 og D65.
 
-Målt farger og korresponderende fargereferanser i bildet sammenlignes i fargerommet CIELAB, hvor avstanden mellom dem beregnes. Denne avstanden kalles ofte ∆E. Når ∆E verdien er under 1 er det vanskelig å se forskjell på fargene. Farger med ∆E verdier over 2 er lette å se forskjell på. Når en beregner ∆E kan en gjøre dette i 2 eller 3 dimensjoner. Dersom en benytter 2 dimensjoner ser en kun på CIELAB (a*b) som uttrykker selve fargen. Ved å inkludere 3 dimensjoner CIELAB (L*a*b) vil fargens lysstyrke også bli evaluert. Dersom dette gjøres, må feltmålingene utføres med riktig kalibrert lysstyrke. 
+Målt farger og korresponderende fargereferanser i bildet sammenlignes i fargerommet CIELAB, hvor avstanden mellom dem beregnes. Denne avstanden kalles ofte ∆E. Når ∆E verdien er under 1 er det vanskelig å se forskjell på fargene. Farger med ∆E verdier over 2 er lette å se forskjell på. Når en beregner ∆E kan en gjøre dette i 2 eller 3 dimensjoner. Dersom en benytter 2 dimensjoner ser en kun på CIELAB (a*b) som uttrykker selve fargen. Ved å inkludere 3 dimensjoner CIELAB (L*a*b) vil fargens lysstyrke også bli evaluert. Da er det viktig at feltmålingene utføres med riktig kalibrert lysstyrke. 
 
 
 ////
@@ -270,7 +270,7 @@ Den som signalerer, skal påse at signaleringen utføres i samsvar med gjeldende
 |Plassering av signal|Signalet plasseres på horisontalt flatt/plant underlag og skal som hovedregel males. Signal skal ikke plasseres på løse gjenstander som kumlokk. Prefabrikkerte signalplater skal ha sentrumshull og plasseres og festes slik at de ikke kommer ut av posisjon/horisontering eller blir ødelagt før fotografering. Sentrisk plassering skal være innenfor 1/3 av krav til markmåling av kjentpunkt se <<tab-nøyaktighet-innmåling-kjentpunkt-FKB>>. 
 |Signalfarge|Signalfargen skal være matt hvit med matt svart kontrastfelt.
 |Signalform og -størrelse|Signalet skal ha en regulær og symmetrisk form. Størrelsen skal avpasses etter bildeoppløsning (GSD). Krav til størrelser på signaler er vist i <<tab-krav-signalstørrelser>>, mens tillatte signaltyper er vist i <<#imgSignalutforming>>.
-|Planhet for signal og kontrastområdet|Krav til flatt/plant underlag gjelder både signal og kontrastområdet. Høydevariasjon på signal og kontrastområdet målt fra senter av signal skal ikke overstige kravet til markmåling av kjentpunkt se <<tab-nøyaktighet-innmåling-kjentpunkt-FKB>>. Eksempler på egnede og ikke egnede signaler kan sees i <<#imgSignaler>>. Dersom det ikke er mulig å etablere signal som overholder krav til planhet i området hvor signalet må etableres, kan kravet om planhet til signal og kontrastområdet fravikes etter avtale med oppdragsgiver.
+|Planhet for signal og kontrastområdet|Krav til flatt/plant underlag gjelder både signal og kontrastområdet. Høydevariasjon på signal og kontrastområdet målt fra senter av signal skal ikke overstige kravet til markmåling av kjentpunkt se <<tab-nøyaktighet-innmåling-kjentpunkt-FKB>>. Eksempler på egnede og ikke egnede signaler kan sees i <<#imgSignaler>>. Dersom det ikke er mulig å etablere signal som overholder krav til planhet i området hvor signal er påkrevd, kan kravet om planhet til signal og kontrastområdet fravikes etter avtale med oppdragsgiver.
 |Kontrast|Det skal sørges for god kontrast rundt signalet. Kontrastfeltet skal være minst halvparten av signalbredden (til hver side av signalet).
 Fjell, stein, sand, grus, asfalt eller betong gir dårlig kontrast, og det skal da lages kunstig kontrast rundt signalet. Kontrastområdet skal være horisontalt flatt/plant og ha samme høyde som signalet.
 |Bolthøyde|Høydeforskjellen mellom punktets høydereferanse og signalmidt skal alltid måles. Ved signalering av eksisterende punkter skal punktets høydereferanse observert i marka verifiseres mot den oppgitte og målt bolthøyde skal verifiseres mot oppgitt bolthøyde. Ved uoverensstemmelse eller dersom bolten er borte eller bøyd skal som hovedregel den oppgitte bolthøyden antas å være korrekt.
@@ -332,7 +332,7 @@ image::figurer/Kap6_IkkeLovligSignal1.png[Signaler_ikke_lovlig,600,align="center
 //[caption="Figure 4:"]
 image::figurer/Kap6_IkkeLovligSignal2.png[Signaler_ikke_lovlig,600,align="center"]
 
-==== Egenkontroll og rapportering (signaleringsrapport)
+==== Egenkontroll og rapportering signaleringsrapport
 ====
 [#krav-foto-rapport-signalering,reftext="Krav foto rapport signalering"]
 *KRAV FOTO RAPPORT SIGNALERING*
@@ -449,7 +449,7 @@ Levnetsdokumentasjonen skal alltid være à jour, og den skal kunne fremlegges n
 |Fotograferingsperiode|Et prosjekt skal fotograferes over et kortest mulig tidsrom og det skal tilstrebes at flystriper fotograferes mest mulig samlet. Ved fotografering over flere dager eller GNSS-sesjoner skal det sørges for at tilstrekkelig med kjentpunkter blir dekket slik at systematiske "GNSS-shift" kan bestemmes for hver dag / hver fotosesjon.
 |Fotograferingstidspunkt|Mengden av skygge i bildene skal forsøkes holdt så lavt som mulig ved at fotografering blir utført på en tid på dagen som er mest mulig gunstig med hensyn til overflateforhold og topografi.
 |Fotograferingsavbrudd|Ved avbrudd i fotografering i en flystripe skal hele stripen som hovedregel fotograferes på ny. Unntakene er striper med lengde tilsvarende minimum 20 bilder ved 60 % lengdeoverdekning, eller der fortsettelse kan skje kort tid etter avbrudd og i samme fotosesjon. Dersom det ikke er mulig å fly om stripen før etter lengre tid skal oppdragstaker i samråd med oppdragsgiver vurdere hva som er til prosjektets beste med hensyn til nøyaktighet og samlet visuell kvalitet i bildene.
-|Stripeskjøting|Dersom striper må skjøtes skal det fotograferes tilstrekkelig overlapp over bruddet slik at nøyaktighetstap unngås og slik at stereodekning over bruddet fra begge sider blir mulig. Det skal være minst 4 bilder overlapp over stripebruddet.
+|Stripeskjøting|I tilfeller der striper skjøtes, skal det fotograferes tilstrekkelig overlapp over bruddet slik at nøyaktighetstap unngås og slik at stereodekning over bruddet fra begge sider blir mulig. Det skal være minst 4 bilder overlapp over stripebruddet.
 |Fotograferingsretning|Parallelle nabostriper skal som hovedregel fotograferes i motsatt retning.
 |Solhøyde|Krav til minste solhøyde under fotografering &#8805; 27^o^ eller etter avtale.
 |Skyer og skyskygger a|Krav til maksimalt innhold av skyer og skyskygger under fotografering:
@@ -602,13 +602,13 @@ Kravene til dokumentasjon fra beregningen er listet opp i avsnittet om egenkontr
 * Dersom det ikke lar seg gjøre å oppnå forventet visuell kvalitet i bildene (på grunn av værforhold eller lignende) skal oppdragsgiver informeres tidligst mulig og involveres i eventuell tiltaksplan.
 * Eventuell konvertering til lavere radiometrisk oppløsning (for eksempel 8 bit) og eventuell komprimering skal utføres som siste ledd før leveranse for å unngå akkumulert tap av informasjon gjennom prosesseringen.
 * Dersom en stripe må skjøtes, og fortsettelse av fotograferingen ble gjort på et senere tidspunkt slik at lys/skygge- og eventuelle overflateforhold er endret, skal stripeseksjonene i det endelige bildesettet overlappe hverandre slik at de hver for seg har stereodekning over stripebruddet.
-* Ved sammensetting av det endelige bildesettet i prosjekt der det finnes overlappende versjoner av bilder, skal overskytende bilder fjernes, men ikke hvis de er nødvendige i stripeoverlapp eller det er en grunn til at de må beholdes. Fragmentering av striper eller områder på grunn av fotografering over flere dager skal reduseres til et minimum.
+* Ved sammensetting av det endelige bildesettet i prosjekt der det finnes overlappende versjoner av bilder, skal overskytende bilder fjernes, men ikke hvis de er nødvendige i stripeoverlapp eller det er en grunn til at de skal beholdes. Fragmentering av striper eller områder på grunn av fotografering over flere dager skal reduseres til et minimum.
 * Filnavn på bilder skal som hovedregel være på formen _FirmaID-Dekningsnr_Stripenr_Bildenr_Kameraløpenr_ (FirmaID er vanligvis to bokstaver) og alle representasjoner av bildene skal benytte/vise til samme filnavn (for eksempel i GNSS/INS-filer, i aerotrianguleringen og i ortofotoproduksjonen).
 * I stripeskjøter skal navnet på de overlappende bildene skilles med suffiks "_2" i bildenummeret for de senest fotograferte bildene hvis ikke annen informasjon skiller bildene, slik som telleverksnummer.
 ====
 
 [[kapittel-egenkontroll-og-rapportering-fotorapport]]
-==== Egenkontroll og rapportering (fotorapport)
+==== Egenkontroll og rapportering fotorapport
 Det skal leveres en rapport (fotorapport) for de utførte arbeidene, med leveransene som vedlegg til rapporten. Rapporten skal ha egne seksjoner for generell informasjon, utføring av fotograferingen, beregning av GNSS/INS-data og fremstilling av bilder, samt en egen seksjon med oversikt og spesifikasjon av vedlagte leveranser.
 For hvert av de nevnte arbeidene, inkludert leveransene, skal resultatet av utførte kvalitetskontroller dokumenteres. 
 
@@ -892,7 +892,7 @@ Det presiseres at tallene i <<tab-nøyaktighetskrav-AT-FKB>> henviser til kraven
 :xrefstyle: full
 
 
-==== Egenkontroll og rapportering (AT-rapport)
+==== Egenkontroll og rapportering AT-rapport
 
 Det skal leveres en rapport for de utførte arbeidene, med leveransene som vedlegg til rapporten. Rapporten skal ha egne seksjoner for generell informasjon, måle- og beregningsarbeidene, samt resultater og kontroll av resultatene. For hvert av de nevnte arbeidene, inkludert leveransene, skal resultatet av utførte kvalitetskontroller dokumenteres.
 
@@ -1095,7 +1095,7 @@ Dersom det er relevant for oppdraget, skal det kjøres høydesjekk (skjæringsbe
 
 Alle kontroller skal gjennomføres i henhold til krav i standarden Geodatakvalitet <<GK>>.
 
-==== Egenkontroll og rapportering (konstruksjon)
+==== Egenkontroll og rapportering konstruksjon
 Rapport fra konstruksjonsarbeidene skal minimum inneholde:
 
 ====
@@ -1257,14 +1257,14 @@ En DTM referer seg til terrengoverflaten slik at oppstikkende detaljer som for e
 [#krav-foto-ortofotomosaikk,reftext="Krav foto ortofotomosaikk"]
 *KRAV FOTO ORTOFOTOMOSAIKK*
 
-* Et ortofoto for et større område må settes sammen av ortofoto laget fra flere flybilder; det må lages en mosaikk. Dette skal i utgangspunktet gjøres slik at hvert lille ortofotoutsnitt lages fra det flybildet hvor utsnittet er nærmest bildenadir. 
+* Et ortofoto er satt sammen av et eller flere flybilder. Dette skal gjøres slik at utsnittet nærmest bildenadir benyttes i ortofotomosaikken.
 * I de tilfeller der flybilder i tverrstripen er bedre enn de andre flystripene, skal tverrstripebildene brukes i ortofotomosaikken.
 * Når man setter sammen flere bilder, er målsettingen at skjøtene mellom bildene blir usynlige. Det mest representative bildet for hele arealet, velges som referansebilde. Gråtonene/fargene i de andre bildene justeres slik at de samsvarer med referansebildets. De fleste programsystemer som brukes til ortofotoproduksjon, har automatiske algoritmer for å utføre dette arbeidet, men ofte vil en halvautomatisk metode gi bedre resultat. Da vil operatøren manuelt bestemme hvor sømlinjene mellom bildene skal gå. 
 * Sømlinjer skal ikke gå gjennom bygninger, over broer eller lignende, og sømlinjene skal følge naturlige kanter i terrenget som for eksempel vannkanter.
 
 ====
 
-==== Egenkontroll og rapportering (ortofotorapport)
+==== Egenkontroll og rapportering ortofotorapport
 Egenkontrollen begrenses her til å være en ren visuell kontroll. Geometrisk kvalitet kan kontrolleres ved å sammenlikne med eksisterende kartdata i samme projeksjon, og ved å se etter for eksempel krumme broer. Radiometrisk kvalitet sjekkes ved å påse at det ikke er noen nyanseforskjeller i gråtone/farge og kontrast i ortofotoet (typisk kan det bli forskjeller i områder som stammer fra ulike flybilder), og at sømlinjer er minimalt synlige i mosaikken. Det vises for øvrig til kravene til ortofotokvalitet i "Produktspesifikasjon for ortofoto".
 
 ====
@@ -1339,9 +1339,9 @@ Målsetting: Innlegging i norgeibilder.no.
 
 ====
 [#krav-foto-drone-ortofoto-med-rtk,reftext="Krav foto droneortofoto med RTK-drone"]
-*KRAV FOTO DRONEORTOFOTO MED RTK-DRONE*
+*KRAV FOTO DRONEORTOFOTO GNSS MED RTK*
 
-* Bildene skal være tatt med RTK-drone.
+* Bildene skal være tatt med drone utstryrt med GNSS RTK.
 * Følge krav til gjeldene ortofotostandard.
 * Beregningsrapporten fra prosesseringsprogramvaren skal leveres og er en del av dokumentasjonen av kvaliteten til prosjektet, men full AT-rapport er ikke nødvendig. 
 * Kjentpunkter er ikke nødvendig.
@@ -1367,7 +1367,7 @@ Laserskanning fra drone følger samme krav som laserskanning fra fly og helikopt
 *KRAV FOTO HØYDEMODELL DRONE*
 
 * Skal følge kravene i <<kapittel-detaljert-kartlegging-med-kamera-i-drone>>.
-* Bildene skal være tatt med en RTK-drone med IMU.
+* Bildene skal være tatt med drone utstryrt med GNSS RTK og IMU.
 * Bildene skal aerotrianguleres i egnet programvare. AT-rapport krav: <<krav-foto-rapportering-aerotriangulering>>, men måling i stereo (DFA) er ikke nødvendig.
 * Krav om antall signalerte kjentpunkt og kontrollpunkt følger <<krav-foto-signalering-i-droneprosjekt>>.
 * Sluttkontroll skal utføres på sluttproduktet.  
@@ -1389,7 +1389,7 @@ Målsetting: Innlegging i Felles kart database (FKB), fellesløsninger og offent
 
 * Skal følge kravene i <<kapittel-detaljert-kartlegging-med-kamera-i-drone>>.
 * Følge krav til høydemodell
-* Bildene skal være tatt med en RTK-drone med IMU.
+* Bildene skal være tatt med drone utstryrt med GNSS RTK og IMU.
 * Bildene skal aerotrianguleres i egnet programvare. AT-rapport krav: <<krav-foto-rapportering-aerotriangulering>>, men måling i stereo (DFA) er ikke nødvendig.
 * Krav om antall signalerte kjentpunkt og kontrollpunkt følger <<krav-foto-signalering-i-droneprosjekt>>.
 * Detaljeringsgrad skal være tilstrekkelig for å kunne identifisere kartobjektet samt digitalisere kartobjekter med tilstrekkelig geografisk nøyaktighet etter gjeldene standard for sluttproduktet. (metodekrav skal diskuteres og utarbeides)
@@ -1409,7 +1409,7 @@ Målsetting: Konstruksjon fra flybiler i en Digital Fotogrammetrisk Arbeidsstasj
 *KRAV FOTO KARTKONSTRUKSJON I STEREO FRA DRONEBILDER*
 
 * Skal følge kravene i <<kapittel-detaljert-kartlegging-med-kamera-i-drone>>.
-* Bildene skal være tatt med en RTK-drone med IMU.
+* Bildene skal være tatt med drone utstryrt med GNSS RTK og IMU.
 * Bildene skal aerotrianguleres i egnet programvare. AT-rapport krav: <<krav-foto-rapportering-aerotriangulering>>.
 * Innad i en stereomodell skal delen av stereomodellen som skal brukes til konstruksjon tilfredsstille nøyaktighetskravene og eventuelle deler av stereomodellen som ikke bør brukes skal begrunnes i AT-rapporten. 
 * Krav om antall signalerte kjentpunkt og kontrollpunkt følger <<krav-foto-signalering-i-droneprosjekt>>.
