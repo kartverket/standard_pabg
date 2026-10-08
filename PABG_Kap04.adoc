@@ -1,7 +1,5 @@
 == Termer og forkortelser
 
-=== Kilder for termer og forkortelser
-
 === Termer
 .aerotriangulering
 Metode for bestemmelse av flybilders ytre orientering ved hjelp av måling av punkter som knytter bilder og flystriper sammen. AT er forkortelse for aerotriangulering. +
