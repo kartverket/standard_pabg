@@ -88,6 +88,8 @@
 <<krav-vektor-fullstendighet>> +
 <<krav-arkiv-arkivering>> +
 <<krav-arkiv-sikring>> +
+<<krav-arkiv-historisk-lagring>> +
+<<krav-arkiv-sikkerhetsgradert-materiale>> +
 <<krav-arkiv-fil-og-digitale-opptak>> +
 <<krav-arkiv-kartmateriale-og-geodata>> +
 <<krav-arkiv-måledata-og-beregninger>> +
