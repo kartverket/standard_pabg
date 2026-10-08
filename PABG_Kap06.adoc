@@ -837,12 +837,12 @@ Dette kapittelet angir krav og retningslinjer til aerotriangulering (AT) med blo
 [#krav-foto-selvkalibrering,reftext="Krav foto selvkalibrering"]
 *KRAV FOTO SELVKALIBRERING*
 
-* Selvkalibrering ved hjelp av tilleggsparametere, inklusivt korreksjonsgrid, er tillatt brukt ved avtale. 
-* Korreksjonene kan være som tilleggsparametere som er på et format som kan brukes av relevante programvarer.
-* Som hovedregel skal korreksjonene påføres bildene. Dette gjøres for å at bildene enkelt kan brukes i andre programvarer. Unntaket er om korreksjonen innfører unøyaktigheter som er signifikante sammenlignet med ønsket nøyaktighet og kvalitet. Unntaket kan tre i kraft etter avtale med bestiller.  
+* Selvkalibrering ved hjelp av tilleggsparametere er tillatt brukt etter avtale. Tilleggsparametere kan realiseres med et korreksjonsgrid.
+* Bildene skal påføres korreksjon hvis tilleggsparametere benyttes. Dette gjøres for at bildene enkelt kan brukes i andre programvarer. Unntaket er om korreksjonen innfører unøyaktigheter som er signifikante sammenlignet med ønsket nøyaktighet og kvalitet. Unntaket kan tre i kraft etter avtale med bestiller.
 * Parameterne som brukes i selvkalibreringen skal være signifikante og unødvendige parametere skal ikke brukes.
 * Det er tillatt å fly kalibreringsflygninger av glassplaten for kamera i trykkabin, som korrigerer bilder på alle prosjekter i samme fly, glassplate og flyhøyder i samme fotosesong. Denne korreksjonen fører ikke til en ny kalibrering av kameraene, men bildene blir korrigert med glassplatekorreksjonen etter at kamerakalibreringa er påført.
-* Hvis ikke korreksjonene er påført bildene, skal korreksjonsgrid brukes for å korrigere for avvikene. Hvis ikke korreksjonsgridet blir bra nok, kan det avtales å levere korreksjonene som tilleggsparametere. Format på tilleggsparameterne avtales med bestiller, slik at orienteringen kan brukes i alle relevante programvarer.
+* Korreksjonsgrid skal brukes for å korrigere for avvikene hvis ikke korreksjonene er påført bildene. Hvis ikke korreksjonsgridet blir bra nok, kan det avtales å levere korreksjonene som tilleggsparametere. Format på tilleggsparameterne avtales med bestiller, slik at orienteringen kan brukes i alle relevante programvarer. Korreksjonene som blir levert som tilleggsparametere skal være på et format som kan brukes av relevante programvarer.
+
 ====
 
 ====
@@ -1201,8 +1201,8 @@ Høydemodellen etableres ut fra høydedata som punktskyer fra laserskanning elle
 [#krav-foto-ortofoto-høydemodell,reftext="Krav foto ortofoto høydemodell"]
 *KRAV FOTO ORTOFOTO HØYDEMODELL*
 
-*  Høydemodell skal ha høy nok detaljeringsgrad og god nok stedfestingsnøyaktighet til å lage detaljert nok ortofoto, spesielt i kupert terreng.
-* Primært vil høydemodellen referere seg til terrengoverflaten (DTM). For bruer, trafikkmaskiner og tekniske anlegg (som ligger over bakkenivå) skal imidlertid høydemodellen modifiseres til å gjelde for brubanen/vegbanen/topp anlegg, altså være en digital overflatemodell (DOM) i disse områdene. Dette er nødvendig for å unngå at for eksempel bruer blir fortegnet i ortofotoet.
+* Høydemodell skal ha høy nok detaljeringsgrad og god nok stedfestingsnøyaktighet til å lage detaljert nok ortofoto, spesielt i kupert terreng.
+* Høydemodellen skal referere seg til terrengoverflaten (DTM). For bruer, trafikkmaskiner og tekniske anlegg (som ligger over bakkenivå) skal høydemodellen modifiseres til å gjelde for brubanen/vegbanen/topp anlegg, altså være en digital overflatemodell (DOM) i disse områdene. Dette er nødvendig for å unngå at for eksempel bruer blir fortegnet i ortofotoet.
 
 ====
 
@@ -1226,7 +1226,7 @@ Det er også mulig å benytte en høydemodell som referer seg til overflatens h�
 I en del sammenhenger vil det være aktuelt å framstille enkelt ortofoto. Dette gjøres ved en helautomatisk prosess der eksisterende DTM benyttes uten modifiseringer og sømlinjer genereres automatisk. Dette er en rask og billig måte å produsere ortofoto på, men gir ikke ortofoto som følger produktspesifikasjonens krav til geometrisk og visuell kvalitet.
 
 ==== Ortofotooppløsning
-Ortofoto-oppløsningen oppgis som bakkeoppløsning for det ferdige ortofotoet. 
+Ortofotooppløsningen oppgis som bakkeoppløsning for det ferdige ortofotoet. 
 
 Ortofoto vil ikke ha samme bakkeoppløsning (GSD) som de originale flybildene. 
 
@@ -1239,30 +1239,36 @@ Ortofoto vil ikke ha samme bakkeoppløsning (GSD) som de originale flybildene.
 ====
 
 ==== Fremstilling av ortofoto
+
+Det fremstilles ortofoto for alle bildene som til sammen dekker ønsket område.
+
+Gråtonen/fargen til ortofotopikslene tas fra pikslene i flybildet. Som regel korresponderer ikke en ortofotopiksel helt med en bildepiksel. Gråtonen/fargen til ortofotopikselet bestemmes for eksempel ved interpolering av gråtonene/fargene til de nærmeste bildepikslene. Dette kalles resampling.
+
+En DTM referer seg til terrengoverflaten slik at oppstikkende detaljer som for eksempel bygninger og høye tårn får en radiell forskyvning. Den radielle forskyvningen blir større dess lengre man kommer ut fra bildesenteret. Det kan være aktuelt å korrigere for den radielle forskyvningen, men det er bedre å redusere denne ved å benytte kun de sentrale delene av hvert flybilde. En slik tilnærming krever at flyfotograferingen utføres med tilstrekkelig lengde- og sideoverlapp.
+
 ====
 [#krav-foto-fremstilling-av-ortofoto,reftext="Krav foto fremstilling av ortofoto"]
 *KRAV FOTO FREMSTILLING AV ORTOFOTO*
 
-* Det fremstilles ortofoto for alle bildene som til sammen dekker ønsket område.
 * Ved rektifiseringen skal programmet innhente informasjon fra terrengmodellen (DTM) med tilstrekkelig hyppighet for formålet.
-* Gråtonen/fargen til ortofotopikslene tas fra pikslene i flybildet. Som regel korresponderer ikke en ortofotopiksel helt med en bildepiksel. Gråtonen/fargen til ortofotopikselet bestemmes for eksempel ved interpolering av gråtonene/fargene til de nærmeste bildepikslene. Dette kalles resampling.
 
 ====
 
-En DTM referer seg til terrengoverflaten slik at oppstikkende detaljer som for eksempel bygninger og høye tårn får en radiell forskyvning. Den radielle forskyvningen blir større dess lengre man kommer ut fra bildesenteret. Det kan være aktuelt å korrigere for den radielle forskyvningen, men det er bedre å redusere denne ved å benytte kun de sentrale delene av hvert flybilde. En slik tilnærming krever at flyfotograferingen utføres med tilstrekkelig lengde- og sideoverlapp.
-
-
 ==== Ortofotomosaikk
+Et ortofoto er satt sammen av et eller flere flybilder og blir satt sammen til en ortofotomosaikk.
+
 ====
 [#krav-foto-ortofotomosaikk,reftext="Krav foto ortofotomosaikk"]
 *KRAV FOTO ORTOFOTOMOSAIKK*
 
-* Et ortofoto er satt sammen av et eller flere flybilder. Dette skal gjøres slik at utsnittet nærmest bildenadir benyttes i ortofotomosaikken.
+* Utsnittet nærmest bildenadir skal benyttes i ortofotomosaikken.
 * I de tilfeller der flybilder i tverrstripen er bedre enn de andre flystripene, skal tverrstripebildene brukes i ortofotomosaikken.
-* Når man setter sammen flere bilder, er målsettingen at skjøtene mellom bildene blir usynlige. Det mest representative bildet for hele arealet, velges som referansebilde. Gråtonene/fargene i de andre bildene justeres slik at de samsvarer med referansebildets. De fleste programsystemer som brukes til ortofotoproduksjon, har automatiske algoritmer for å utføre dette arbeidet, men ofte vil en halvautomatisk metode gi bedre resultat. Da vil operatøren manuelt bestemme hvor sømlinjene mellom bildene skal gå. 
+* Bildene skal fargejusteres slik at fargene blir homogene i hele ortofotomosaikken.
 * Sømlinjer skal ikke gå gjennom bygninger, over broer eller lignende, og sømlinjene skal følge naturlige kanter i terrenget som for eksempel vannkanter.
 
 ====
+
+Når man setter sammen flere bilder, er målsettingen at skjøtene mellom bildene blir usynlige. Det mest representative bildet for hele arealet, velges som referansebilde. Gråtonene/fargene i de andre bildene justeres slik at de samsvarer med referansebildets. De fleste programsystemer som brukes til ortofotoproduksjon, har automatiske algoritmer for å utføre dette arbeidet, men ofte vil en halvautomatisk metode gi bedre resultat. Da vil operatøren manuelt bestemme hvor sømlinjene mellom bildene skal gå. 
 
 ==== Egenkontroll og rapportering ortofotorapport
 Egenkontrollen begrenses her til å være en ren visuell kontroll. Geometrisk kvalitet kan kontrolleres ved å sammenlikne med eksisterende kartdata i samme projeksjon, og ved å se etter for eksempel krumme broer. Radiometrisk kvalitet sjekkes ved å påse at det ikke er noen nyanseforskjeller i gråtone/farge og kontrast i ortofotoet (typisk kan det bli forskjeller i områder som stammer fra ulike flybilder), og at sømlinjer er minimalt synlige i mosaikken. Det vises for øvrig til kravene til ortofotokvalitet i "Produktspesifikasjon for ortofoto".
@@ -1323,11 +1329,15 @@ Egenkontrollen begrenses her til å være en ren visuell kontroll. Geometrisk kv
 ===== Ortofoto
 Målsetting: Innlegging i norgeibilder.no.
 
+Hvis det blir brukt en drone med GNSS med RTK i datainnsamlingen så er kravene definert i <<krav-foto-drone-ortofoto-med-rtk>> og anbefaling i <<anbefaling-foto-drone-ortofoto-med-rtk>>.
+
+Hvis det blir brukt en drone med GNSS uten RTK i datainnsamlingen så er kravene definert i <<krav-foto-drone-ortofoto-uten-rtk>>.
+
 ====
 [#krav-foto-drone-ortofoto-uten-rtk,reftext="Krav foto droneortofoto uten RTK-drone"]
 *KRAV FOTO DRONEORTOFOTO GNSS UTEN RTK*
 
-* Bildene skal være tatt med GNSS-drone.
+* Bildene skal være tatt med drone med GNSS.
 * Følge krav til gjeldene ortofotostandard.
 * Bildene skal aerotrianguleres i egnet programvare. AT-rapport krav: <<krav-foto-rapportering-aerotriangulering>>, men måling i stereo (DFA) er ikke nødvendig.
 * Beregningsrapporten fra prosesseringsprogramvaren skal leveres og er en del av dokumentasjonen av kvaliteten til prosjektet. 
@@ -1353,7 +1363,7 @@ Målsetting: Innlegging i norgeibilder.no.
 
 ====
 [#anbefaling-foto-drone-ortofoto-med-rtk,reftext="Anbefaling foto droneortofoto med RTK-drone"]
-*ANBEFALING FOTO DRONEORTOFOTO MED RTK-DRONE*
+*ANBEFALING FOTO DRONEORTOFOTO GNSS MED RTK*
 
 * For beste nøyaktighet på ortofotoet er det anbefalt ha tilstrekkelig med signalerte/naturlige kjentpunkt i aerotrianguleringen for å få god nøyaktighet i hele prosjektområdet.
 ====
@@ -1442,7 +1452,7 @@ Målsetting: Konstruksjon fra flybiler i en Digital Fotogrammetrisk Arbeidsstasj
 *KRAV FOTO DRONEKAMERA*
 
 * Kameraet skal ikke benytte elektronisk lukker (engelsk: rolling shutter).
-* Minstestørrelse på kameraet er 15 megapiksel.
+* Kameraet skal være større enn 15 megapiksel.
 * Kameraet kan kalibreres sammen med blokkutjevningen som en del av aerotrianguleringen.
 * Kameraet skal kaliberes for hver delblokk og kan utføres som selvkalibrering, se <<krav-foto-observasjonsvekting-parametere-og-ukjente>>.
 * Kamerakalibreringen kan påføres bildene.
@@ -1470,8 +1480,8 @@ Det er ikke krav om gyromount.
 *KRAV FOTO SIGNALERING I DRONEPROSJEKT*
 
 * Signalering skal følge standardkravene <<krav-foto-signalering>>.
-* Minst 5 kjentpunkter og kontrollpunkt til sammen i alle blokker, jevnt fordelt i hele blokken.
-* Minst 2 kontrollpunkter i alle blokker.
+* Det skal være minst 5 kjentpunkter og kontrollpunkt til sammen i alle blokker, jevnt fordelt i hele blokken.
+* Det skal være minst 2 kontrollpunkter i alle blokker.
 * Maksimal avstand til kjentpunkt/kontrollpunkt i meter = bestilt GSD i meter ganger 10000:
 ** GSD 1 cm gir en radius på 100 m
 ** GSD 5 cm gir en radius på 500 m
@@ -1546,12 +1556,11 @@ Det skilles mellom 4 kvalitetsnivå for posisjon- og orienteringsnøyaktighet fo
 
 
 ==== Minimum
-
 ====
 [#krav-foto-minimum-skrabilder,reftext="Krav foto skråbilder kvalitetsnivå minimum"]
 *KRAV FOTO SKRÅBILDER KVALITETSNIVÅ MINIMUM*
 
-* Kun krav om direkte georeferering til visning av skråbilder i visningsløsninger.
+* Det er kun krav om direkte georeferering til visning av skråbilder i visningsløsninger.
 
 * Orienteringen av alle bildene skal være innenfor nøyaktighetskravene til slutt produktet.
 * Dersom AT benyttes skal det være minst 6 eller flere sammenbindingspunkter for alle vertikalbilder. Dersom dette ikke er oppfylt for et eller flere vertikalbilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.
@@ -1567,7 +1576,7 @@ Det skilles mellom 4 kvalitetsnivå for posisjon- og orienteringsnøyaktighet fo
 
 ==== Lav
 
-Forenklet aerotriangulering til ortofotoproduksjon og følger ikke kravet til aerotriangulering etter denne standarden.
+Kvalitetsnivå lav har en forenklet aerotriangulering til ortofotoproduksjon og følger ikke kravet til aerotriangulering etter denne standarden.
 
 ====
 [#krav-foto-lav-skrabilder,reftext="Krav foto skråbilder kvalitetsnivå lav"]
@@ -1585,13 +1594,13 @@ Forenklet aerotriangulering til ortofotoproduksjon og følger ikke kravet til ae
 [#anbefaling-foto-lav-skrabilder,reftext="Anbefaling foto skråbilder kvalitetsnivå lav"]
 *ANBEFALING FOTO SKRÅBILDER KVALITETSNIVÅ LAV*
 
-* Anbefalt å følge kravene til aerotriangulering av vertikalbilder.
+* Det er anbefalt å følge kravene til aerotriangulering av vertikalbilder.
 ====
 
 
 ==== Middels
 
-AT utført på vertikalbildene, slik at konstruksjon fra vertikalbildene er mulig i stereo.
+Kvalitetsnivå middels har AT utført på vertikalbildene, slik at konstruksjon fra vertikalbildene er mulig i stereo.
 
 ====
 [#krav-foto-middels-skrabilder,reftext="Krav foto skråbilder kvalitetsnivå middels"]
@@ -1607,12 +1616,12 @@ AT utført på vertikalbildene, slik at konstruksjon fra vertikalbildene er muli
 [#anbefaling-foto-middels-skrabilder,reftext="Anbefaling foto skråbilder kvalitetsnivå middels"]
 *ANBEFALING FOTO SKRÅBILDER KVALITETSNIVÅ MIDDELS*
 
-* Anbefalt å følge kravene til aerotriangulering av vertikalbilder.
+* Det er anbefalt å følge kravene til aerotriangulering av vertikalbilder.
 ====
 
 
 ==== Høy
-AT på alle bilder, inkludert skråbilder.
+Kvalitetsnivå høy har AT på alle bilder, inkludert skråbilder.
 
 ====
 [#krav-foto-hoy-skrabilder,reftext="Krav foto skråbilder kvalitetsnivå høy"]
@@ -1620,6 +1629,7 @@ AT på alle bilder, inkludert skråbilder.
 
 * Vertikalbildene skal tilfredsstille krav til vanlig vertikalbildeprosjekt. Hvis vertikalbildet har mindre enn 20000 piksler i den største retningen, skaleres minstekravene til sammenbindingspunktene i kravet for vertikalbildene (xref:tab-ant-sammenbindingpkt[xrefstyle=short] og xref:tab-ant-stripesammenbindingpkt[xrefstyle=short]) med størrelsen på vertikalbildet, men ikke mindre enn 12 sammenbindingspunkt mellom påfølgende bilder og ikke mindre enn 4 stripesammenbindingspunkt. Ved for eksempel et vertikalbildekamera med 15000 piksler i den største retningen, skaleres kravene med 15000/20000 = 0,75.
 * Skråbildene har ikke det samme nøyaktighetskravet som vertikalbildene, hvis det ikke er spesifisert i sluttproduktet.
+* Skråbildene skal ha det samme nøyaktighetskravet som vertikalbildene hvis det er spesifisert i sluttproduktet.
 * Skråbildene skal ha minst 12 sammenbindingspunkt mot neste flybilde i flystripen i en retning på kamera (høyre, venstre, fram og tilbake) og ha nok sammenbindingspunkt, slik at det ikke blir parallakser i stereomodellene innad i en flystripe og retning på kamera. Minstemålet skaleres etter hvor stor andel vann og skog det er i overlappsområdet, for eksempel blir minstekravet på sammenbindingspunkt mot neste flybilde 12*(1-0,75) = 3 sammenbindingspunkt hvis overlappsområdet er dekket av 75 % vann og skog.
 * Skråbildene skal være bundet sammen med vertikalbildene godt nok til at nøyaktighetskravene til sluttproduktet overholdes. Minst 2 sammenbindingspunkt til vertikalbilder pr. skråbilde hvis det er gode forhold og overlappsområdet mellom bildene inneholder maksimalt 20 % skog og vann, minst 1 sammenbindingspunkt til vertikalbilder hvis det er maksimalt 50 % skog og vann i overlappsområdet mellom bildene og ingen sammenbindingspunkt til vertikalbilder hvis det er mer enn 50 % skog og vann i overlappsområdet mellom bildene. Hvis det er avvik skal det argumenteres for at orienteringen mellom skråbildene og vertikalbildene blir god nok i AT-rapporten. 
 * Det skal være minst 6 eller flere sammenbindingspunkter for alle bilder. Dersom dette ikke er oppfylt for et eller flere bilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.
