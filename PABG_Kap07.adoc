@@ -10,13 +10,42 @@ Laserskanning kan også utføres fra andre plattformer slik som fra drone (UAV),
 
 Krav til produkt og leveranser spesifiseres i nyeste versjon av Produktspesifikasjon Punktsky <<Punktsky>>. For definisjon av kvalitetsmål vises det til standarden Geodatakvalitet <<GK>>.
 
-====
-[#krav-laser-referanserammer-transformasjoner,reftext="Krav laser referanserammer og transformasjoner"]
-*KRAV LASER REFERANSERAMMER OG TRANSFORMASJONER*
 
-* Referanserammer og transformasjoner som er brukt skal følge kravene gitt i <<krav-landmaling-referanserammer-transformasjoner>>.
-
-====
+[[tab-kravklasse-laserskanning]]
+.Kravklasse kartlegging med flybåren laserskanning
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse|Kartlegging med flybåren laserskanning
+|Krav |<<krav-landmaling-referanserammer-transformasjoner>>
+|Krav |<<krav-laser-leverandørkalibrering>> +
+|Krav |<<krav-laser-installasjonskalibrering>> +
+|Krav |<<krav-laser-daglig-kalibrering>> +
+|Krav |<<krav-laser-flyplan-laserskanning>> +
+|Krav |<<krav-laser-opplysninger-om-skanneparametre>> +
+|Krav |<<krav-laser-tverrstriper>> +
+|Krav |<<krav-laser-kontrollflater-antall-og-plassering>> +
+|Krav |<<krav-laser-kontrollflater-form-og-storrelse>> +
+|Krav |<<krav-laser-kontrollflater-hjulspormetoden>> +
+|Krav |<<krav-laser-kontrollflater-noyaktighet>> +
+|Krav |<<krav-laser-kontrollprofiler>> +
+|Krav |<<krav-laser-kontrollprofiler-antall-og-plassering>> +
+|Krav |<<krav-laser-kontrollprofiler-form-og-storrelse>> +
+|Krav |<<krav-laser-kontrollprofiler-noyaktighet>> +
+|Krav |<<krav-laser-utforing-av-laserskanning>> +
+|Krav |<<krav-laser-dokumentasjon-pa-daglig-kalibrering>> +
+|Krav |<<krav-laser-dokumentasjon-pa-stripejustering>> +
+|Krav |<<krav-laser-hoydekontroll>> +
+|Krav |<<krav-laser-dokumentasjon-pa-hoydekontroll>> +
+|Krav |<<krav-laser-grunnrisskontroll>> +
+|Krav |<<krav-laser-dokumentasjon-pa-grunnrisskontroll>> +
+|Krav |<<krav-laser-kontroll-av-punktsky>> +
+|Krav |<<krav-laser-dokumentasjon-pa-kontroll-av-punktsky>> +
+|Krav |<<krav-laser-klassifisering>> +
+|Krav |<<krav-laser-rapportering-laserskanning>> +
+|Anbefaling |<<anbefaling-laser-tverrstriper>> +
+|Anbefaling |<<anbefaling-laser-utforing-av-laserskanning>> +
+|===
 
 
 ==== Virkemåte
