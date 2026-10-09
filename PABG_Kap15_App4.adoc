@@ -20,6 +20,7 @@
 <<krav-foto-innsamling-gnss-imu>> +
 <<krav-foto-dgnss>> +
 <<krav-foto-ppp>> +
+<<krav-foto-samtidig-georeferering>> +
 <<krav-foto-beregning-gnss-ins>> +
 <<krav-foto-fremstilling-av-bilder>> +
 <<krav-foto-rapportering-flyfotografering>> +
