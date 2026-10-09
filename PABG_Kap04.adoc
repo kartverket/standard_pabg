@@ -3,11 +3,7 @@
 === Termer
 .aerotriangulering
 Metode for bestemmelse av flybilders ytre orientering ved hjelp av måling av punkter som knytter bilder og flystriper sammen. AT er forkortelse for aerotriangulering. +
-_MERKNAD_: I tillegg til sammenbindingspunkter inngår kjentpunker og GNSS/INS-data som observasjoner i en samlet utjevningsberegning (blokkutjevning). I tillegg til sammenbindingspunktene og ytre orienteringselementene kan også andre ukjente defineres og løses ut i utjevningen.
-
-.affin transformasjon
-Koordinattransformasjon som ikke bevarer vinkelstørrelser uendret. +
-_MERKNAD_: I motsetning til konform transformasjon kan hver koordinatakse ved affin transformasjon ha individuell målestokk og rotasjon. Affin transformasjon kan utføres som lineær eller utvidet (ikke-lineær) transformasjon. I fotogrammetri benyttes affin transformasjon blant annet ved korreksjon av bildekoordinater. 
+_MERKNAD_: I tillegg til sammenbindingspunkter inngår kjentpunkter og GNSS/INS-data som observasjoner i en samlet utjevningsberegning (blokkutjevning). I tillegg til sammenbindingspunktene og ytre orienteringselementene kan også andre ukjente defineres og løses ut i utjevningen.
 
 .ajourføring
 Korrigering av innholdet i geodataene slik at de fremstiller de faktiske forhold på et gitt tidspunkt, etter de retningslinjer som gjelder for innhold og kvalitet. +
@@ -72,19 +68,22 @@ _MERKNAD_: Egenskap defineres ved navn (for eksempel "bygge-år"), datatype (for
 Eksempel: Form, materiale, farge, høyde, størrelse, juridiske forhold, bruk, beskaffenhet, konsistens, økonomisk verdi og så videre.
 
 .elektronisk lukker
-Fungerer ved at kameraets bildebrikke leser av linje for linje sekvensielt for å kontrollere eksponeringen. Når motiver beveger seg raskt kan rullende lukker-fortegning oppstå.
+Lukkerfunksjon som styres elektronisk ved avlesning av bildebrikken uten mekaniske lukkergardiner. Kan være global eller sekvensiell (rolling shutter). Når motiver beveger seg raskt kan rullende lukker-fortegning oppstå.
 
 .fastmerke
 Varig merket grunnlagspunkt, markert med bolt eller annen egnet permanent markering, der plane koordinater og/eller høyde er bestemt, eller planlagt bestemt i et geodetisk referansesystem. +
 _MERKNAD_: Fastmerke tjener hovedsakelig som grunnlag ved kartlegging og oppmåling.
 
 .flybåren laserskanning
-Lasermåling fra fly, helikopter eller droner. Lasermåling er en avstandsobservasjon som gjøres fra en kjent posisjon og orientering. Observasjonsstørrelsene brukes til å beregne koordinaten samt egenskapsinformasjon til refleksjonsoverflaten. Lasermålingene fordeles utover skanningsområdet av lasersystemet slik at målingene gir en fulldekkende beskrivelse av måleområdet. +
+Lasermåling fra fly, helikopter eller droner. Lasermåling er en avstandsobservasjon som gjøres fra en kjent posisjon og orientering. Observasjonsstørrelsene brukes til å beregne koordinater og egenskapsinformasjon til refleksjonsoverflaten. Lasermålingene fordeles utover skanningsområdet av lasersystemet slik at målingene gir en fulldekkende beskrivelse av måleområdet. +
 _MERKNAD_: Flybåren laserskanning kalles også laseraltimetri.
 
 .flykamera
 Kamera som er spesielt bygd for fotografering fra fly. +
 _MERKNAD_: Denne standarden omfatter kun bruk av digitale flykamera.
+
+.flyplan
+Plan for utføring av flyfotografering av et område.
 
 .fotavtrykk
 Laserkjeglens størrelse på bakken.
@@ -143,11 +142,11 @@ Bestemmelse av en eller flere av parameterne kamerakonstant, beliggenhet til sym
 Avstanden fra ytre projeksjon til bildeplan.
 
 .kikkertsikker høyde
-Minimumsavstand mellom laserinstrument og person som ser direkte mot laserinstrumentet i kikkert.
+Minimumsavstand mellom laserinstrument og person som ser direkte mot laserinstrumentet i kikkert uten å skade øynene.
 
 [#termer-kjentpunkt,reftext="Kjentpunkt"]
 .kjentpunkt
-Kjentpunkt er signalerte eller naturlige punkt eller flater med kjente absolutte koordinater gitt i prosjektet referanseramme. Kjentpunkt brukes til justering, aerotriangulering, kalibrering av instrument og lignende. Justeringen kan utføres på selve posisjon og orienteringsløsningen til instrumentet, eller til å justere selve datasettet, som punktsky, bilder, med formål å forbedre den absolutte stedfestingsnøyaktigheten.
+Kjentpunkt er signalerte eller naturlige punkt eller flater med kjente absolutte koordinater gitt i prosjektets referanseramme. Kjentpunkt brukes til justering, aerotriangulering, kalibrering av instrument og lignende. Justeringen kan utføres på selve posisjon og orienteringsløsningen til instrumentet, eller til å justere selve datasettet, som punktsky, bilder, med formål å forbedre den absolutte stedfestingsnøyaktigheten.
 
 .konform transformasjon
 Overføring av et punktsystem fra et koordinatsystem til et annet med origoforflytning (translasjon), dreining(er) og målestokkendring (lik i alle akseretninger). +
@@ -157,6 +156,9 @@ _MERKNAD_: Konform transformasjon kjennetegnes ved at vinkelstørrelser (formen)
 [#termer-kontrollpunkt,reftext="Kontrollpunkt"]
 .kontrollpunkt
 Kontrollpunkt ("sjekkpunkt") er signalerte eller naturlige punkt eller flater med kjente absolutte koordinater gitt i prosjektets referanseramme.  Kontrollpunkt er uavhengige punkt som ikke skal benyttes i fremstilling og prosesseringen av produktet. Punktene skal kun benyttes til å dokumentere og kontrollere absolutt stedfestingsnøyaktighet til sluttproduktet. Kontrollpunkt skal være egnet til å kontrollere det aktuelle datasettet. De skal ha kjent og dokumentert kvalitet.
+
+.korreksjonsgrid
+Regulært grid med korreksjoner av bildepikslene i et bilde.
 
 .krav
 Grenseverdi satt i en produktspesifikasjon, ytelsen til et datasett skal være bedre enn kravet. +
@@ -172,13 +174,16 @@ Overordnet nett av fastmerker som Kartverket vedlikeholder og har ansvaret for. 
 _Kilde_: <<GG>> +
 _MERKNAD 1_: Historisk var koordinatene i Landsnettet en fortetting av koordinatene i Stamnettet, men ved oppdateringer i høyde i 2015 og grunnriss i 2018 er ikke denne koblinga ivaretatt. +
 _MERKNAD 2_: I dag er Landsnettet en samlebetegnelse på både Stamnettet, det opprinnelige Landsnettet og nye overordnede grunnlagspunkt som er etablert. +
-_MERKNAD 3_: Kartverkets trekantpunkt er ikke en del Landsnettet.
+_MERKNAD 3_: Kartverkets trekantpunkt er ikke en del av Landsnettet.
 
 .laserskudd
 Laserskanneren (LiDAR) avfyrer hurtige skudd, eller pulser. En enkelt puls refereres til som et laserskudd.
 
 .laserkjegle
 Laserlysets tredimensjonale avtrykk mellom laserinstrument og bakken. Kjegleformet grunnet divergens.
+
+.modell
+Er en digital modell av virkeligheten, som for eksempel ortofoto / 3D ortofoto / 3D Mesh.
 
 .multipath
 Retning på laserpulsen endres av refleksjon mot objekter i signalbanen. Multipath fører til feilaktig registrering av bakkeretur.
@@ -232,14 +237,13 @@ Kode- eller fasemåling der beregninger skjer samtidig med at man måler. +
 _MERKNAD_: Se fotogrammetrisk signal.
 
 .skanneblokk
-Sammenhengende området dekket i en laserskanning.
+Sammenhengende område dekket i et laserskanningsprosjekt.
 
 .skanning
 Sveipeprosess for konvertering fra analog til digital representasjon av bilder, kart og andre dokumenter.
 
 .skanneråpning
-Åpningsvinkel for laserskanner (LiDAR). +
-_MERKNAD_: Skanneråpning = FOV (Field of View) = 2 ganger åpningsvinkel fra nadir 
+Total åpningsvinkel, på engelsk Field of View (FOV), som laserskanneren dekker under skanning.
 
 .stamnett
 Tidligere overordnet nett av fastmerker i Norge, etablert av Kartverket i forbindelse med overgang til EUREF89. +
