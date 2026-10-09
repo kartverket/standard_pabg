@@ -558,8 +558,15 @@ Beregningsarbeidet leder fram til en fil med ytreorienteringselementer for hvert
 
 Ved avtale er det tillatt å bruke flere sensorer (GNSS, IMU og AT) enn det som er definert i dette kapittelet i posisjon- og orienteringsbestemmelse av flybildene. 
 
-Samtidig georeferering av flere sensorplattformer som flybildekamera og laserskanner er tillatt ved avtale. Alle kravene for hver sensor skal følges. Det kreves at vinkler og avstander mellom koordinatsystemet til hvert sensorsystem er kjent. Dersom vinkler og avstander mellom koordinatsystemene endres under datafangsten skal denne endringen måles og anvendes i navigasjonsløsningen for hvert enkelt sensorsystem. Hvis det er avvik mellom kravene som stilles for hver sensor, brukes det strengeste kravet.
+====
+[#krav-foto-samtidig-georeferering,reftext="Krav foto samtidig georeferering"]
+*KRAV FOTO SAMTIDIG GEOREFERERING*
 
+* Samtidig georeferering av flere sensorplattformer som flybildekamera og laserskanner er tillatt ved avtale. 
+* Alle kravene for hver sensor skal følges. 
+* Det kreves at vinkler og avstander mellom koordinatsystemet til hvert sensorsystem er kjent. Dersom vinkler og avstander mellom koordinatsystemene endres under datafangsten skal denne endringen måles og anvendes i navigasjonsløsningen for hvert enkelt sensorsystem. Det strengeste kravet skal brukes hvis det er avvik mellom kravene som stilles for hver sensor.
+
+====
 
 ====
 [#krav-foto-beregning-gnss-ins,reftext="Krav foto beregning GNSS/INS"]
@@ -1207,7 +1214,7 @@ Høydemodellen etableres ut fra høydedata som punktskyer fra laserskanning elle
 ====
 
 
-==== Ortofoto-typer
+==== Ortofototyper
 I produksjon av ortofoto brukes en litt modifisert terrengmodell, DTM, som referer seg til terrengoverflaten med enkelte unntak for broer og store tekniske anlegg. Se <<kapittel-ortofoto-høydemodell>>.
 
 ===== Sant ortofoto (True orthophoto)
@@ -1255,7 +1262,7 @@ En DTM referer seg til terrengoverflaten slik at oppstikkende detaljer som for e
 ====
 
 ==== Ortofotomosaikk
-Et ortofoto er satt sammen av et eller flere flybilder og blir satt sammen til en ortofotomosaikk.
+Et ortofoto er satt sammen av et eller flere flybilder til en ortofotomosaikk.
 
 ====
 [#krav-foto-ortofotomosaikk,reftext="Krav foto ortofotomosaikk"]
@@ -1263,7 +1270,7 @@ Et ortofoto er satt sammen av et eller flere flybilder og blir satt sammen til e
 
 * Utsnittet nærmest bildenadir skal benyttes i ortofotomosaikken.
 * I de tilfeller der flybilder i tverrstripen er bedre enn de andre flystripene, skal tverrstripebildene brukes i ortofotomosaikken.
-* Bildene skal fargejusteres slik at fargene blir homogene i hele ortofotomosaikken.
+* Bildene skal fargejusteres slik at fargeuttrykket blir homoget i hele ortofotomosaikken.
 * Sømlinjer skal ikke gå gjennom bygninger, over broer eller lignende, og sømlinjene skal følge naturlige kanter i terrenget som for eksempel vannkanter.
 
 ====
@@ -1402,7 +1409,7 @@ Målsetting: Innlegging i Felles kart database (FKB), fellesløsninger og offent
 * Bildene skal være tatt med drone utstryrt med GNSS RTK og IMU.
 * Bildene skal aerotrianguleres i egnet programvare. AT-rapport krav: <<krav-foto-rapportering-aerotriangulering>>, men måling i stereo (DFA) er ikke nødvendig.
 * Krav om antall signalerte kjentpunkt og kontrollpunkt følger <<krav-foto-signalering-i-droneprosjekt>>.
-* Detaljeringsgrad skal være tilstrekkelig for å kunne identifisere kartobjektet samt digitalisere kartobjekter med tilstrekkelig geografisk nøyaktighet etter gjeldene standard for sluttproduktet. (metodekrav skal diskuteres og utarbeides)
+* Detaljeringsgrad skal være tilstrekkelig for å kunne identifisere kartobjektet samt digitalisere kartobjekter med tilstrekkelig geografisk nøyaktighet etter gjeldene standard for sluttproduktet.
 * Vektoriseringskapittelet skal følges: <<kapittel-vektorisering-fra-punktsky-og-modell>>
 * Personopplysningsloven skal følges (inkludert GDPR).
 * Dokumentasjon av kamera og kamerakalibrering:
@@ -1628,8 +1635,7 @@ Kvalitetsnivå høy har AT på alle bilder, inkludert skråbilder.
 *KRAV FOTO SKRÅBILDER KVALITETSNIVÅ HØY*
 
 * Vertikalbildene skal tilfredsstille krav til vanlig vertikalbildeprosjekt. Hvis vertikalbildet har mindre enn 20000 piksler i den største retningen, skaleres minstekravene til sammenbindingspunktene i kravet for vertikalbildene (xref:tab-ant-sammenbindingpkt[xrefstyle=short] og xref:tab-ant-stripesammenbindingpkt[xrefstyle=short]) med størrelsen på vertikalbildet, men ikke mindre enn 12 sammenbindingspunkt mellom påfølgende bilder og ikke mindre enn 4 stripesammenbindingspunkt. Ved for eksempel et vertikalbildekamera med 15000 piksler i den største retningen, skaleres kravene med 15000/20000 = 0,75.
-* Skråbildene har ikke det samme nøyaktighetskravet som vertikalbildene, hvis det ikke er spesifisert i sluttproduktet.
-* Skråbildene skal ha det samme nøyaktighetskravet som vertikalbildene hvis det er spesifisert i sluttproduktet.
+* Skråbildene skal ha samme nøyaktighetskrav som vertikalbildene hvis det er spesifisert i sluttproduktet.
 * Skråbildene skal ha minst 12 sammenbindingspunkt mot neste flybilde i flystripen i en retning på kamera (høyre, venstre, fram og tilbake) og ha nok sammenbindingspunkt, slik at det ikke blir parallakser i stereomodellene innad i en flystripe og retning på kamera. Minstemålet skaleres etter hvor stor andel vann og skog det er i overlappsområdet, for eksempel blir minstekravet på sammenbindingspunkt mot neste flybilde 12*(1-0,75) = 3 sammenbindingspunkt hvis overlappsområdet er dekket av 75 % vann og skog.
 * Skråbildene skal være bundet sammen med vertikalbildene godt nok til at nøyaktighetskravene til sluttproduktet overholdes. Minst 2 sammenbindingspunkt til vertikalbilder pr. skråbilde hvis det er gode forhold og overlappsområdet mellom bildene inneholder maksimalt 20 % skog og vann, minst 1 sammenbindingspunkt til vertikalbilder hvis det er maksimalt 50 % skog og vann i overlappsområdet mellom bildene og ingen sammenbindingspunkt til vertikalbilder hvis det er mer enn 50 % skog og vann i overlappsområdet mellom bildene. Hvis det er avvik skal det argumenteres for at orienteringen mellom skråbildene og vertikalbildene blir god nok i AT-rapporten. 
 * Det skal være minst 6 eller flere sammenbindingspunkter for alle bilder. Dersom dette ikke er oppfylt for et eller flere bilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.
