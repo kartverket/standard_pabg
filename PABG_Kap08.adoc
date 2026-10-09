@@ -22,8 +22,7 @@ Kapittelet omfatter mobil datafangst med laserskanner med opsjonelt kamera.
 MLS benytter seg av posisjons- og orienteringssystemer bygd opp rundt et treghetsnavigasjonssystem, også kalt "Inertial Navigation System" (INS). Et INS består av en "Inertial measurement Unit" (IMU) og tilhørende støttesensorer. Den primære støttesensoren er vanligvis en eller flere GNSS-mottakere ("Global Navigation Satellite System"), ofte i kombinasjon med optisk eller mekanisk hastighets- eller distansemåling (odometer). Det er også mulig å benytte andre former for støtteobservasjoner fra ulike sensorer sammen med et INS. Eksempler på dette har vi fra robotverden og "Simultaneous Localization and Mapping" (SLAM).
 
 === GDPR
-Laser punktsky (også fargelagt punktsky) fra mobil datafangst vil i de fleste tilfellene ikke kunne brukes til å identifisere personer eller bilskilt. Produktet vil da ikke omfattes av GDPR-forordningen <<GDPR>>. Bildematerialet fra mobil datafangst, vil som hovedregel være omfattet av GDPR forordningen og nødvendige tiltak må utføres. Oppdragsgiver har ansvar for å påse at GDPR følges, dersom ikke annet er avtalt. Dette avklares i samarbeid med oppdragstaker pr. prosjekt.
-
+Laser punktsky (også fargelagt punktsky) fra mobil datafangst vil i de fleste tilfellene ikke kunne brukes til å identifisere personer eller bilskilt. Produktet vil da ikke omfattes av GDPR-forordningen <<GDPR>>. Bildematerialet fra mobil datafangst, vil som hovedregel være omfattet av GDPR forordningen og nødvendige tiltak må utføres. 
 
 
 === Fargelegging av punktsky
