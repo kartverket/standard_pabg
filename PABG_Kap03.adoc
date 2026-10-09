@@ -57,6 +57,9 @@
 [#GDPR]
 *[GDPR]*: https://lovdata.no/dokument/NL/lov/2018-06-15-38[GDPR-forordningen]
 
+[#NS-EN ISO 9000]
+*[NS-EN ISO 9000]*: 
+
 === Juridiske og regulative referanser
 
 Det er de til enhver tid gjeldende juridiske og regulative føringer som berører standardens tematikk, som skal benyttes. Listen under viser et utvalg av aktuelle referanser: 
