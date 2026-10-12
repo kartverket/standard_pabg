@@ -24,8 +24,9 @@ Krav til produkt og leveranser spesifiseres i nyeste versjon av Produktspesifika
 |Krav |<<krav-laser-flyplan-laserskanning>> +
 |Krav |<<krav-laser-opplysninger-om-skanneparametre>> +
 |Krav |<<krav-laser-tverrstriper>> +
-|Krav |<<krav-laser-kontrollflater-antall-og-plassering>> +
 |Krav |<<krav-laser-kontrollflater-form-og-storrelse>> +
+|Krav |<<krav-laser-kontrollflater-Tidsgyldighet>> +
+|Krav |<<krav-laser-kontrollflater-antall-og-plassering>> +
 |Krav |<<krav-laser-kontrollflater-hjulspormetoden>> +
 |Krav |<<krav-laser-kontrollflater-noyaktighet>> +
 |Krav |<<krav-laser-kontrollprofiler>> +
