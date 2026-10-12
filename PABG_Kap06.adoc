@@ -15,13 +15,47 @@ Kapittelet avgrenses til å gjelde følgende:
 * Bruk av digital fotogrammetrisk arbeidsstasjon / ren programvarebasert produktfremstilling.
 * Fremstilling av datasett definert i <<FKB>> og <<POF>>.
 
-====
-[#krav-foto-referanserammer-transformasjoner,reftext="Krav foto referanserammer og transformasjoner"]
-*KRAV FOTO REFERANSERAMMER OG TRANSFORMASJONER*
 
-* Referanserammer og transformasjoner som er brukt skal følge kravene gitt i <<krav-landmaling-referanserammer-transformasjoner>>.
-
-====
+[[tab-kravklasse-fotogrammetri]]
+.Kravklasse kartlegging med fotogrammetri
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse|Kartlegging med fotogrammetri
+|Krav |<<krav-landmaling-referanserammer-transformasjoner>>
+|Krav |<<krav-foto-flyplanlegging>> +
+|Krav |<<krav-foto-kjentpunktnoyaktighet>> +
+|Krav |<<krav-foto-kjentpunkt-antall-og-plassering>> +
+|Krav |<<krav-foto-fly-og-signaleringsplan>> +
+|Krav |<<krav-foto-signalering>> +
+|Krav |<<krav-foto-rapport-signalering>> +
+|Krav |<<krav-foto-digitale-kamera>> +
+|Krav |<<krav-foto-gnssins-system>> +
+|Krav |<<krav-foto-fotografering>> +
+|Krav |<<krav-foto-innsamling-gnss-imu>> +
+|Krav |<<krav-foto-dgnss>> +
+|Krav |<<krav-foto-ppp>> +
+|Krav |<<krav-foto-samtidig-georeferering>> +
+|Krav |<<krav-foto-beregning-gnss-ins>> +
+|Krav |<<krav-foto-fremstilling-av-bilder>> +
+|Krav |<<krav-foto-rapportering-flyfotografering>> +
+|Krav |<<krav-foto-maling-av-sammenbindingspunkt>> +
+|Krav |<<krav-foto-maling-av-kjentpunkter>> +
+|Krav |<<krav-foto-observasjonsvekting-parametere-og-ukjente>> +
+|Krav |<<krav-foto-selvkalibrering>> +
+|Krav |<<krav-foto-at-beregninger-og-resultat>> +
+|Krav |<<krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringen>> +
+|Krav |<<krav-foto-rapportering-aerotriangulering>> +
+|Krav |<<krav-foto-konstruksjon>> +
+|Krav |<<krav-foto-logisk-konsistens>> +
+|Krav |<<krav-foto-rapportering-konstruksjon>> +
+|Krav |<<krav-foto-ortofoto-høydemodell>> +
+|Krav |<<krav-foto-sant-ortofoto>> +
+|Krav |<<krav-foto-ortofotooppløsning>> +
+|Krav |<<krav-foto-fremstilling-av-ortofoto>> +
+|Krav |<<krav-foto-ortofotomosaikk>> +
+|Anbefaling |<<anbefaling-foto-signalstørrelser>> +
+|===
 
 [[kapittel-fly-og-signalplanlegging]]
 === Fly- og signalplanlegging
@@ -1191,6 +1225,29 @@ Omregningsprosessen vil være en digital transformasjon av det originale flybild
 
 Dette kapittelet inneholder generelle krav og anbefalinger til produksjon av ortofoto og dokumentasjon av denne. Krav til produkt og leveranser er spesifisert i Produktspesifikasjon for ortofoto i Norge.
 
+[[tab-kravklasse-ortofoto]]
+.Kravklasse ortofoto
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse|Ortofoto
+|Krav |<<krav-foto-ortofoto-høydemodell>> +
+|Krav |<<krav-foto-sant-ortofoto>> +
+|Krav |<<krav-foto-ortofotooppløsning>> +
+|Krav |<<krav-foto-fremstilling-av-ortofoto>> +
+|Krav |<<krav-foto-ortofotomosaikk>> +
+|===
+
+
+[[tab-kravklasse-ortofoto]]
+.Kravklasse ortofoto
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+||Kravklasse Sant ortofoto
+|Avhengighet |<<tab-kravklasse-ortofoto>> +
+|Krav |<<krav-foto-sant-ortofoto>> +
+|===
 
 ==== Grunnlag
 
@@ -1339,6 +1396,26 @@ Målsetting: Innlegging i norgeibilder.no.
 Hvis det blir brukt en drone med GNSS med RTK i datainnsamlingen så er kravene definert i <<krav-foto-drone-ortofoto-med-rtk>> og anbefaling i <<anbefaling-foto-drone-ortofoto-med-rtk>>.
 
 Hvis det blir brukt en drone med GNSS uten RTK i datainnsamlingen så er kravene definert i <<krav-foto-drone-ortofoto-uten-rtk>>.
+
+[[tab-kravklasse-drone-GNSS-uten-RTK]]
+.Kravklasse kartlegging med drone med GNSS uten RTK
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse|Kartlegging med fotogrammetri
+|Krav |<<krav-landmaling-referanserammer-transformasjoner>>
+|Krav |<<krav-foto-drone-ortofoto-uten-rtk>>
+|===
+
+[[tab-kravklasse-drone-GNSS-med-RTK]]
+.Kravklasse kartlegging med drone med GNSS med RTK
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse|Kartlegging med fotogrammetri
+|Krav |<<krav-landmaling-referanserammer-transformasjoner>>
+|Krav |<<krav-foto-drone-ortofoto-med-rtk>>
+|===
 
 ====
 [#krav-foto-drone-ortofoto-uten-rtk,reftext="Krav foto droneortofoto uten RTK-drone"]
