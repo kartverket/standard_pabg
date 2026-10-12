@@ -318,7 +318,7 @@ I kartleggingsprosjekt med både laser og foto kan senter av kontrollflate signa
 
 
 
-Som et alternativ til innmåling av tradisjonelle kontrollflater, kan hjulsportmetoden benyttes. Ved hjulspormetoden måler man inn posisjonen til målebilens bakhjul ved hjelp av GNSS og treghetsnavigasjonsutstyr (INS). De målte punktene brukes til kontroll og støtte for stripejusteringen. Det benyttes robust statistikk i analysen av høydedifferanser mellom hjulspor og laserdata for å filtrere bort grove feil. Det store antallet målepunkt gir et bra datagrunnlag slik at eventuell støy vil bli utlignet av antall målinger. Målinger utført med hjulspormetoden har et gyldighetsområdet tilsvarende en sirkel med radius 6 km. Dette gjelder for samtlige innmålte punkt med hjulspormetoden med tilstrekkelig nøyaktighet.
+Som et alternativ til innmåling av tradisjonelle kontrollflater, kan hjulspormetoden benyttes. Ved hjulspormetoden måler man inn posisjonen til målebilens bakhjul ved hjelp av GNSS og treghetsnavigasjonsutstyr (INS). De målte punktene brukes til kontroll og støtte for stripejusteringen. Det benyttes robust statistikk i analysen av høydedifferanser mellom hjulspor og laserdata for å filtrere bort grove feil. Det store antallet målepunkt gir et bra datagrunnlag slik at eventuell støy vil bli utlignet av antall målinger. Målinger utført med hjulspormetoden har et gyldighetsområdet tilsvarende en sirkel med radius 6 km. Dette gjelder for samtlige innmålte punkt med hjulspormetoden med tilstrekkelig nøyaktighet.
 
 ====
 
@@ -330,7 +330,7 @@ Som et alternativ til innmåling av tradisjonelle kontrollflater, kan hjulsportm
 * Krav til målingenes utstrekning/spredning er likt for kontrollflatemetoden og hjulspormetoden.
 * Ved datainnsamling med hjulspormetoden skal målingene utføres kontinuerlig gjennom prosjektområdet. Dette på en slik måte at hele området er dekket av kontrollmålingenes gyldighetsområder.
 * Nøyaktigheten på hjulspormetoden skal tilsvare nøyaktigheten til kontrollflate metoden.
-* Alle prosjekt skal ha minst en kontrollflate målt med kontrollflatemetoden. Dette for å kontrollere innmålingssystem for hjulspormetoden der denne metodikken er benyttet. Lokasjonen til denne kontrollflaten skal da være i umiddelbar nærhet til hjulspordataene.
+* Alle prosjekt skal ha minst en kontrollflate målt med kontrollflatemetoden. Dette for å kontrollere innmålingssystem for hjulspormetoden der denne metodikken er benyttet. Lokasjonen til denne kontrollflaten skal da være i umiddelbar nærhet til hjulspordataene, se <<#imgKontrollflateGyldighetHjulspor>>.
 * Helningskravet på maksimalt 5 % i <<krav-laser-kontrollflater-antall-og-plassering>> gjelder ikke for hjulspormetoden.
 * Det skal leveres gyldighetsplott for hjulspormetoden.
 
@@ -354,7 +354,7 @@ image::figurer/Kap7_KontrollflateGyldighet.png["Kontrollflate gyldighet",400,ali
 
 
 .Figuren viser hjulspormetoden som kontrollmetode: Grønn skravering angir hjulsporets gyldighetsområde (6 km buffersone), grønt kryss viser plaseringen av kontrollflaten som kontrollerer hjulsporet.
-[#imgKontrollflateGyldighet]
+[#imgKontrollflateGyldighetHjulspor]
 //[caption="Figure 8:"]
 image::figurer/Kap7_KontrollflateGyldighet_hjulspor_del2.png["Kontrollspor gyldighet",400,align="center"]
 
