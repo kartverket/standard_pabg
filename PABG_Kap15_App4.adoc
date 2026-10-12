@@ -7,7 +7,6 @@
 <<krav-landmaling-innmaling-med-totalstasjon>> +
 <<krav-landmaling-instrumentdokumentasjon>> +
 <<krav-landmaling-rapportering-geodetisk-kartlegging>> +
-<<krav-foto-referanserammer-transformasjoner>> +
 <<krav-foto-flyplanlegging>> +
 <<krav-foto-kjentpunktnoyaktighet>> +
 <<krav-foto-kjentpunkt-antall-og-plassering>> +
