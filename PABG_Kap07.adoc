@@ -61,7 +61,7 @@ Posisjons og rotasjonssystemet er bygd opp rundt et treghetsnavigasjonssystem og
 
 Ved å kombinere posisjonen og rotasjonen fra GNSS/INS-systemet og de relative avstands- og vinkelmålingene fra laserskanneren får man et absolutt bestemt målepunkt på jordoverflaten. 
 
-Utstyret som benyttes for georeferering av dataene opererer i et globalt system basert på GNSS (WGS84/ITRF). Det er derfor behov for transformasjoner fra det globale systemet til det aktuelle lokale systemet som data skal leveres i. 
+Utstyret som benyttes for georeferering av dataene opererer i et globalt system basert på GNSS (WGS84/ITRF). Det er derfor behov for transformasjoner fra det globale systemet til det aktuelle lokale systemet med gjeldene tidsepoke som data skal leveres i. 
   
 ====== Stabilisert plattform
 Fly og helikopter vil være utsatt for turbulens og for å sikre et jevnt sveip over terrengoverflaten kan laserskanneren monteres i en aktivt stabilisert plattform. Plattformen mottar rotasjonsinformasjon fra GNSS/INS-systemet og vil rotere laserskanneren slik at den til enhver tid er orientert i flyets fartsretning og horisontalplan. 
@@ -70,6 +70,7 @@ Fly og helikopter vil være utsatt for turbulens og for å sikre et jevnt sveip 
 Primærproduktet fra et laserskanningssystem er frittstående punkter bestemt i XYZ med tilhørende attributter. Punktene omtales som en punktsky. 
 Fra punktskyen kan en produsere en rekke sekundærprodukter:
 
+* Klassifisert punktsky
 * Terrengmodell som grid eller triangelmodell.
 * Overflatemodell som grid eller triangelmodell.
 
@@ -97,7 +98,7 @@ Den absolutte nøyaktigheten til eventuelle avledede produkter vil videre avheng
 * Punktfordeling: Ved lang avstand mellom punktene vil en eventuell interpolasjon introdusere svakheter i det avledede produktet.
 * Klassifisering: Feilklassifiserte punkt, for eksempel vegetasjonspunkt klassifisert som bakke, vil gi et unøyaktig produkt.
 
-Punktskyens nøyaktighet kan beregnes ved bruk av kontrollflater og kontrollprofiler. Med dagens utstyr kan en forvente en punktnøyaktighet i størrelsesorden 0,02–0,20 meter (standardavvik) i høyde.
+Punktskyens nøyaktighet kan beregnes ved bruk av kontrollflater og kontrollprofiler. Med dagens utstyr kan en forvente en punktnøyaktighet i størrelsesorden 0,02–0,10 meter (standardavvik) i høyde.
 
 === Gjennomføring av laserskanning
 
@@ -238,7 +239,7 @@ image::figurer/Kap7_EnkeltstripeKjede.png[Enkeltstripe,400,align="center"]
 
 [[kapittel-kontrollflater]]
 ===== Kontrollflater
-Absolutt nøyaktighet på punktsky i vertikaldomene etterprøves ved hjelp av landmålte kontrollflater innenfor kartleggingsområdet. Antall og plassering av kontrollflater bestemmes ved flyplanlegging og kontrollflater plasseres på en egnet hard og plan flate. Kontrollflater kan legges til områder med grusdekke hvor harde flater ikke er tilgjengelig. 
+Absolutt nøyaktighet til punktskyen i vertikaldomet etterprøves ved hjelp av landmålte kontrollflater innenfor kartleggingsområdet. Antall og plassering av kontrollflater bestemmes ved flyplanlegging og kontrollflater plasseres på en egnet hard og plan flate. Kontrollflater kan legges til områder med grusdekke hvor harde flater ikke er tilgjengelig. 
 
 
 
@@ -257,7 +258,7 @@ Absolutt nøyaktighet på punktsky i vertikaldomene etterprøves ved hjelp av la
 [cols="3*",options="header"]
 [cols="1,1,1",options="header"]
 |===
-^| Form Kontrollflate (m)
+^| Form kontrollflate (m)
 ^| Krav til antall landmålte punkt
 ^| Planlagt punkttetthet
 ^|4x4 ^|25 ^|Fra 2 punkt/m^2^
@@ -272,12 +273,12 @@ Absolutt nøyaktighet på punktsky i vertikaldomene etterprøves ved hjelp av la
 //[caption="Figure 6:"]
 image::figurer/Kap7_KontrollflateUnder4.png["Kontrollflater under 3 punkt/m^2^",400,align="center"]
 
-.Kontrollflate - punkttetthet fra 5 punkt/m^2^(Blågrønt felt viser buffersonen, røde prikker er innmålte punkt og hvit felt er malt signal). Ved 10 punkt/m^2^ er avstanden 0,75 meter ikke 1 meter.
+.Kontrollflate - punkttetthet fra 5 punkt/m^2^(Blågrønt felt viser buffersonen, røde prikker er innmålte punkt og hvit felt er malt signal). Ved 10 punkt/m^2^ vil avstanden mellom innmålte punkt kunne reduseres fra 1 meter til 0,75 meter.
 [#imgKontrollflateOver]
 //[caption="Figure 7:"]
 image::figurer/Kap7_KontrollflateOver4.png["Kontrollflater over 3 punkt/m^2^",400,align="center"]
 
-.Kontrollflate - punkttetthet fra 80 punkt/m^2^ (Blågrønt felt viser buffersonen, røde prikker er innmålte punkt og hvit felt er malt signal).
+.Kontrollflate - punkttetthet fra 80 punkt/m^2^ (Blågrønt felt viser buffersonen, røde prikker er innmålte punkt, grått viser malt signal kontrast og hvit felt er malt signal).
 [#imgKontrollflateOver70]
 //[caption="Figure 8:"]
 image::figurer/Kap7_KontrollflateOver80.png["Kontrollflater over 70 punkt/m^2^",250,align="center"]
@@ -286,7 +287,7 @@ image::figurer/Kap7_KontrollflateOver80.png["Kontrollflater over 70 punkt/m^2^",
 
 :xrefstyle: full
 
-I kartleggingsprosjekt med både Laser og Foto kan senter av kontrollflate signaleres. Signalet skal i så fall inngå i signaleringsplan for foto.
+I kartleggingsprosjekt med både laser og foto kan senter av kontrollflate signaleres. Signalet inngår da i signaleringsplan for foto.
 
 ====
 [#krav-laser-kontrollflater-Tidsgyldighet="krav-laser-kontrollflater-Tidsgyldighet"]
@@ -346,10 +347,17 @@ Som et alternativ til innmåling av tradisjonelle kontrollflater, kan hjulsportm
 // * Landmålingsarbeidene inkludert rapportering skal utføres i henhold til standarden <<SAT>>.
 ====
 
-.Figuren viser begge kontrollmetodene: Grønn sirkel angir kontrollflatenes gyldighetsområde, mens lilla viser et eksempel på hjulspor som har en gyldighetsområde på 6 km fra hjulsporet.
+.Figuren viser bruken av kontrollflater som kontrollmetode: Grønn sirkel med 6 km radius angir kontrollflatenes gyldighetsområde.
 [#imgKontrollflateGyldighet]
 //[caption="Figure 8:"]
-image::figurer/Kap7_KontrollflateGyldighet2.png["Kontrollflate gyldighet",400,align="center"]
+image::figurer/Kap7_KontrollflateGyldighet.png["Kontrollflate gyldighet",400,align="center"]
+
+
+.Figuren viser hjulspormetoden som kontrollmetode: Grønn skravering angir hjulsporets gyldighetsområde (6 km buffersone), grønt kryss viser plaseringen av kontrollflaten som kontrollerer hjulsporet.
+[#imgKontrollflateGyldighet]
+//[caption="Figure 8:"]
+image::figurer/Kap7_KontrollflateGyldighet_hjulspor_del2.png["Kontrollspor gyldighet",400,align="center"]
+
 
 
 .Sammenslåing av polygoner til en skanneblokk
