@@ -24,6 +24,7 @@ Kapittelet avgrenses til å gjelde følgende:
 |Kravklasse|Kartlegging med fotogrammetri
 |Avhengighet |xref:tab-kravklasse-referanseramme-og-transformasjoner[xrefstyle=basic]
 |Avhengighet |xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic]
+|Avhengighet |xref:tab-kravklasse-ortofoto[xrefstyle=basic]
 |Krav |<<krav-foto-flyplanlegging>> +
 |Krav |<<krav-foto-kjentpunktnoyaktighet>> +
 |Krav |<<krav-foto-kjentpunkt-antall-og-plassering>> +
@@ -166,6 +167,9 @@ I blokker med mer enn to flystriper og med mindre sideoverlapp enn 50 %, skal et
 
 Felles for begge alternativene er at det overlappende området skal ligge i et område egnet for etablering av sammenbindingspunkt. Det betyr at overlappsområdet for eksempel ikke bare skal inneholde vann. 
 
+|====================
+====
+
 .Viser overlapp som er nødvendig for at stripen som går oppover skal være tverrstripe for de 2 andre flystripene. Stereomodellen som lages av de 2 svarte bildeomrissene krysser midten av flybildene i den øverste flystripen. Dermed er alternativ 2 oppfylt.
 [#imgTverrstripe2]
 image::figurer/Kap6_Tverrstripe2.png[Viser overlapp som er nødvendig for at stripen som går oppover skal være tverrstripe for de 2 andre flystripene. Stereomodellen som lages av de 2 svarte bildeomrissene krysser midten av flybildene i den øverste flystripen. Dermed er alternativ 2 oppfylt,400,align="center"]
@@ -173,11 +177,6 @@ image::figurer/Kap6_Tverrstripe2.png[Viser overlapp som er nødvendig for at str
 .Viser flystriper som er tverrstriper for hverandre. Stereomodellen som lages av de 2 svarte bildeomrissene krysser midten av flybildene i stripen under. Dermed er alternativ 1 oppfylt.
 [#imgTverrstripe1]
 image::figurer/Kap6_Tverrstripe1.png[Viser flystriper som er tverrstriper for hverandre. Stereomodellen som lages av de 2 svarte bildeomrissene krysser midten av flybildene i stripen under. Dermed er valg 1 oppfylt,400,align="center"]
-
-|====================
-====
-
-
 
 
 ==== Planlegging av kjentpunkt, kontrollpunkt og signalering (signaleringsplan)
@@ -301,6 +300,15 @@ Fjell, stein, sand, grus, asfalt eller betong gir dårlig kontrast, og det skal 
 |Bolthøyde|Høydeforskjellen mellom punktets høydereferanse og signalmidt skal alltid måles. Ved signalering av eksisterende punkter skal punktets høydereferanse observert i marka verifiseres mot den oppgitte og målt bolthøyde skal verifiseres mot oppgitt bolthøyde. Ved uoverensstemmelse eller dersom bolten er borte eller bøyd skal som hovedregel den oppgitte bolthøyden antas å være korrekt.
 |Innsyn a|Signalet skal være synlig i alle bildene/stripene som er planlagt å dekke punktet (for å sikre at det er synlig også i bilder/striper som eventuelt fotograferes på ulike datoer eller flysesjoner). Vegetasjon som kan hindre dette skal ryddes bort. Som tommelfingerregel kan benyttes at synslinjen fra et signal på marka til flyet skal gå på skrå med en vinkel på opptil 40 gon fra senit, se <<#imgInnsynSign>> og <<#imgInnsynSor>>.
 
+|Skygge|Skygge på signalet skal unngås. De samlede retningslinjene til innsyn går fram av <<#imgInnsynSign>> og <<#imgInnsynSor>>. Det skal være godt innsyn til signalet hele veien rundt. For å unngå skygge på signalet skal det være innsyn ned til 67 gon fra vertikalen i en sektor mot sør. Retningslinjene forutsetter fotografering i det mest vanlige tidsrommet på dagen.
+|Rydding av vegetasjon|Rydding av vegetasjon skal utføres med varsomhet. På privat grunn skal alltid grunneieren kontaktes før man går i gang med rydding.
+|Erstatningspunkt|Dersom planlagt posisjon blir funnet å være ubrukelig på grunn av innsyn, eller lignende skal et nytt eller eksisterende punkt etableres så nær som mulig det opprinnelig planlagte.
+|Signaleringsstørrelse | Krav til signalstørrelse settes til 3 ganger GSD, eller etter avtale med oppdragsgiver. Anbefalte signalstørrelser kan sees i <<tab-krav-signalstørrelser>>. Alle typer signaler i <<#imgSignalutforming>> kan benyttes for de forskjellige oppløsningene. <<#imgSignaler1>> viser eksempel på signal som overholder krav til planhet. <<#imgSignaler2>> og <<#imgSignaler3>> viser eksempler på signaler som ikke overholder krav til planhet.
+|Signaltyper a| Signaltypene i <<#imgSignalutforming>> skal brukes på signalerte punkt.
+
+|===
+====
+
 .Innsyn rundt signalet
 [#imgInnsynSign]
 //[caption="Figure 1:"]
@@ -311,17 +319,10 @@ image::figurer/Kap6_InnsynRundtSignal.png[InnsynSign,400,align="center"]
 //[caption="Figure 2:"]
 image::figurer/Kap6_InnsynMotSor.png[InnsynSor,400,align="center"]
 
-|Skygge|Skygge på signalet skal unngås. De samlede retningslinjene til innsyn går fram av <<#imgInnsynSign>> og <<#imgInnsynSor>>. Det skal være godt innsyn til signalet hele veien rundt. For å unngå skygge på signalet skal det være innsyn ned til 67 gon fra vertikalen i en sektor mot sør. Retningslinjene forutsetter fotografering i det mest vanlige tidsrommet på dagen.
-|Rydding av vegetasjon|Rydding av vegetasjon skal utføres med varsomhet. På privat grunn skal alltid grunneieren kontaktes før man går i gang med rydding.
-|Erstatningspunkt|Dersom planlagt posisjon blir funnet å være ubrukelig på grunn av innsyn, eller lignende skal et nytt eller eksisterende punkt etableres så nær som mulig det opprinnelig planlagte.
-|Signaleringsstørrelse | Krav til signalstørrelse settes til 3 ganger GSD, eller etter avtale med oppdragsgiver. Anbefalte signalstørrelser kan sees i <<tab-krav-signalstørrelser>>. Alle typer signaler i <<#imgSignalutforming>> kan benyttes for de forskjellige oppløsningene. <<#imgSignaler1>> viser eksempel på signal som overholder krav til planhet. <<#imgSignaler2>> og <<#imgSignaler3>> viser eksempler på signaler som ikke overholder krav til planhet.
-|Signaltyper a|
 .Ulike signaltyper (a, b, c og d)
 [#imgSignalutforming]
 //[caption="Figure 3:"]
 image::figurer/Kap6_Signalutforming.png[Signalutforming,400,align="center"]
-|===
-====
 
 :xrefstyle: full
 
@@ -929,11 +930,11 @@ Det presiseres at tallene i <<tab-nøyaktighetskrav-AT-FKB>> henviser til kraven
 Det skal leveres en rapport for de utførte arbeidene, med leveransene som vedlegg til rapporten. Rapporten skal ha egne seksjoner for generell informasjon, måle- og beregningsarbeidene, samt resultater og kontroll av resultatene. For hvert av de nevnte arbeidene, inkludert leveransene, skal resultatet av utførte kvalitetskontroller dokumenteres.
 
 [[tab-kravklasse-aerotrinagulering]]
-.Kravklasse Aerotriangulering
+.Kravklasse egenkontroll og rapportering aerotriangulering
 [cols="2*",options="header"]
 [cols="20%,80%"]
 |===
-|Kravklasse|Aerotriangulering
+|Kravklasse|Egenkontroll og rapportering aerotriangulering
 |Krav |<<krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringen>> +
 |Krav |<<krav-foto-rapportering-aerotriangulering>> +
 |===
@@ -1356,11 +1357,11 @@ Egenkontrollen begrenses her til å være en ren visuell kontroll. Geometrisk kv
 
 
 [[tab-kravklasse-ortofotorapport]]
-.Kravklasse rapportering ortofotorapport
+.Kravklasse egenkontroll og rapportering ortofoto
 [cols="2*",options="header"]
 [cols="20%,80%"]
 |===
-|Kravklasse|Rapportering ortofotorapport
+|Kravklasse|Egenkontroll og rapportering ortofoto
 |Krav |<<krav-foto-rapportering-ortofoto>> +
 |===
 
@@ -1420,7 +1421,7 @@ Egenkontrollen begrenses her til å være en ren visuell kontroll. Geometrisk kv
 ===== Ortofoto
 Målsetting: Innlegging i norgeibilder.no.
 
-Norgeibilder.no har definerte hvordan ortofotoet skal være for å kunne legges inn i norgeibilder. Disse må følges hvis ortofotoet skal legges inn i norgeibilder.no. 
+Norgeibilder.no har definert hvordan ortofotoet skal være for å kunne legges inn i norgeibilder. Disse må følges hvis ortofotoet skal legges inn i norgeibilder.no. 
 
 xref:tab-kravklasse-drone-GNSS-med-RTK[xrefstyle=basic] brukes når bildene er samlet inn med GNSS med RTK.
 
@@ -1532,6 +1533,7 @@ Målsetting: Innlegging i Felles kart database (FKB), fellesløsninger og offent
 |Avhengighet |xref:tab-kravklasse-referanseramme-og-transformasjoner[xrefstyle=basic]
 |Avhengighet |xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic]
 |Avhengighet |xref:tab-kravklasse-drone-detaljert-kartlegging-med-kamera[xrefstyle=basic]
+|Avhengighet |xref:tab-kravklasse-vektorisering-fra-punktsky-og-modell[xrefstyle=basic]
 |Krav |<<krav-foto-vektorisering-fra-modell>>
 |===
 
@@ -1589,9 +1591,9 @@ Målsetting: Konstruksjon fra flybiler i en Digital Fotogrammetrisk Arbeidsstasj
 [#anbefaling-foto-drone-kartkonstruksjon-i-stereo,reftext="Anbefaling foto kartkonstruksjon i stereo fra dronebilder"]
 *ANBEFALING FOTO KARTKONSTRUKSJON I STEREO FRA DRONEBILDER*
 
-* Helst en stabil plattform, slik at det lite vinkelforskjell mellom flybildene i stereomodellen, for å få gode stereomodeller. Modeller med store vinkelforskjeller mellom flybildene er tyngre å arbeide på.
+* En stabil plattform bør helst brukes, slik at det lite vinkelforskjell mellom flybildene i stereomodellen, for å få gode stereomodeller. Modeller med store vinkelforskjeller mellom flybildene er tyngre å arbeide på.
 * Enkeltbildene bør dekke et tilstrekkelig stort område slik at konstruksjonen blir effektiv.
-* God kvalitet på kamera og linse. 
+* Det er anbefalt å ha god kvalitet på kamera og linse. 
 * Bruk helst ikke de ytterste 10 % av bildene under konstruksjon.
 
 ====
