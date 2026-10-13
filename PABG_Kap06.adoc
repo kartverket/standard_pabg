@@ -23,13 +23,10 @@ Kapittelet avgrenses til å gjelde følgende:
 |===
 |Kravklasse|Kartlegging med fotogrammetri
 |Avhengighet |xref:tab-kravklasse-referanseramme-og-transformasjoner[xrefstyle=basic]
-|Avhengighet |xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic]
-|Avhengighet |xref:tab-kravklasse-ortofoto[xrefstyle=basic]
 |Krav |<<krav-foto-flyplanlegging>> +
 |Krav |<<krav-foto-kjentpunktnoyaktighet>> +
 |Krav |<<krav-foto-kjentpunkt-antall-og-plassering>> +
 |Krav |<<krav-foto-fly-og-signaleringsplan>> +
-|Krav |<<krav-foto-digitale-kamera>> +
 |Krav |<<krav-foto-signalering>> +
 |Krav |<<krav-foto-rapport-signalering>> +
 |Krav |<<krav-foto-digitale-kamera>> +
@@ -936,6 +933,7 @@ Det skal leveres en rapport for de utførte arbeidene, med leveransene som vedle
 [cols="20%,80%"]
 |===
 |Kravklasse|Egenkontroll og rapportering aerotriangulering
+|Avhengighet |xref:tab-kravklasse-fotogrammetri[xrefstyle=basic]
 |Krav |<<krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringen>> +
 |Krav |<<krav-foto-rapportering-aerotriangulering>> +
 |===
@@ -1062,6 +1060,7 @@ Dette nedfelles i en konstruksjonsinstruks med tilhørende grafisk oversikt som 
 [cols="20%,80%"]
 |===
 |Kravklasse|Konstruksjon
+|Avhengighet |xref:tab-kravklasse-fotogrammetri[xrefstyle=basic]
 |Krav |<<krav-foto-konstruksjon>> +
 |Krav |<<krav-foto-logisk-konsistens>> +
 |Krav |<<krav-foto-rapportering-konstruksjon>> +
@@ -1243,6 +1242,7 @@ Dette kapittelet inneholder generelle krav og anbefalinger til produksjon av ort
 [cols="20%,80%"]
 |===
 |Kravklasse|Ortofoto
+|Avhengighet |xref:tab-kravklasse-fotogrammetri[xrefstyle=basic]
 |Avhengighet |xref:tab-kravklasse-ortofotorapport[xrefstyle=basic] +
 |Krav |<<krav-foto-ortofoto-høydemodell>> +
 |Krav |<<krav-foto-sant-ortofoto>> +
@@ -1297,6 +1297,19 @@ Det er også mulig å benytte en høydemodell som referer seg til overflatens h�
 * En overflatemodell skal brukes til å lage ortofotoet.
 
 ====
+
+===== 3D ortofoto (3D Mesh)
+3D ortofoto er produsert med DOM og har egenskaper som et 3 dimensjonal kart. Basis for et 3D ortofoto er et TIN som mest optimal beskriver formen på jordoverflaten og ønskede kartobjekter (3D Mesh). Hver trekant har sin egen ortogonalprojektsjon slik at hver individuelle trekant fremstår med egenskaper som et tradisjonelt ortofoto.
+
+
+====
+[#krav-foto-3D-ortofoto,reftext="Krav foto 3D ortofoto"]
+*KRAV FOTO 3D ORTOFOTO*
+
+* En overflatemodell skal brukes til å lage ortofotoet.
+
+====
+
 
 //// 
 

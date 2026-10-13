@@ -554,6 +554,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_ortofototyper">6.7.2. Ortofototyper</a>
 <ul class="sectlevel4">
 <li><a href="#_sant_ortofoto_true_orthophoto">6.7.2.1. Sant ortofoto (True orthophoto)</a></li>
+<li><a href="#_3d_ortofoto_3d_mesh">6.7.2.2. 3D ortofoto (3D Mesh)</a></li>
 </ul>
 </li>
 <li><a href="#_ortofotooppløsning">6.7.3. Ortofotooppløsning</a></li>
@@ -873,7 +874,7 @@ Det er lagt til 2 nye kapitler (8 og 9) og Vedlegg A Solhøydetabell er fjernet.
 </div>
 <div class="paragraph">
 <p><strong>Kapittel 3</strong><br>
-Oppdatert referanser og delt referansene inn i kategoriene normative referanser, juridiske og regulative referanser og faglige referanser.<br></p>
+Inneholder kun normative referanser. Ikke-normative referanser flyttet til kapittelet Bibliografi.<br></p>
 </div>
 <div class="paragraph">
 <p><strong>Kapittel 4</strong><br>
@@ -969,7 +970,7 @@ Flyttet oversikt over kravliste til eget vedlegg.</p>
 <h2 id="_omfang">2. Omfang</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Hensikten med standarden Produksjon av basis geodata, er å bidra til høy kvalitet på basis geodata.</p>
+<p>Standarden spesifiserer generelle kvalitetskrav for produksjon og dokumentasjon av basis geodata på land. Beskrevne datafangstmetoder er geodetiske metoder (landmåling, fotogrammetri og laserskanning).</p>
 </div>
 <div class="paragraph">
 <p>Standarden er:</p>
@@ -1002,12 +1003,6 @@ Flyttet oversikt over kravliste til eget vedlegg.</p>
 <p>Innmåling av eiendomsgrenser (matrikkelenhetsgrenser) og ledninger behandles ikke i denne standarden. I stedet vises det til standardene <a href="https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/stedfesting-av-matrikkelenhets-og-råderettsgrenser/">Stedfesting av matrikkelenhets- og råderettsgrenser</a>, <a href="https://standarder.geonorge.no/sosi/standarder-geografisk-informasjon/norm-for-ledningskart/2.0/norm-for-ledningskart-20-standarder-geografisk-informasjon.pdf/">Norm for ledningskart</a> og <a href="https://standarder.geonorge.no/sosi/standarder-geografisk-informasjon/norm-for-va-ledningskartverk/2.0/norm-for-va-ledningskartverk-20-standarder-geografisk-informasjon.pdf/">Norm for VA-ledningskartverk</a>.</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>Standarden spesifiserer generelle kvalitetskrav for produksjon og dokumentasjon av basis geodata på land. Beskrevne datafangstmetoder er geodetiske metoder (landmåling), fotogrammetri og laserskanning.</p>
-</div>
-<div class="paragraph">
-<p>Standarden Produksjon av basis geodata kan nyttes som referansedokument ved inngåelse av avtaler om produksjon av basis geodata. I det enkelte prosjekt kan det avtales avvikende krav fra denne standarden, disse vil da være gjeldende for prosjektet.</p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -1901,14 +1896,6 @@ Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kje
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#tab-kravklasse-referanseramme-og-transformasjoner">Kravklasse referanseramme og transformasjoner</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Avhengighet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#tab-kravklasse-aerotrinagulering">Kravklasse egenkontroll og rapportering aerotriangulering</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Avhengighet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#tab-kravklasse-ortofoto">Kravklasse ortofoto</a></p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Krav</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#krav-foto-flyplanlegging">Krav foto flyplanlegging</a><br></p></td>
 </tr>
@@ -1923,10 +1910,6 @@ Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kje
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Krav</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#krav-foto-fly-og-signaleringsplan">Krav foto fly- og signaleringsplan</a><br></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Krav</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#krav-foto-digitale-kamera">Krav foto digitale kamera</a><br></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Krav</p></td>
@@ -4103,6 +4086,10 @@ En GNSS/INS-fil pr. fotosesjon.</p></td>
 </thead>
 <tbody>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Avhengighet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#tab-kravklasse-fotogrammetri">Kravklasse kartlegging med fotogrammetri</a></p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Krav</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringen">Krav foto kontrollmåling i DFA av aerotrianguleringrn</a><br></p></td>
 </tr>
@@ -4501,6 +4488,10 @@ En GNSS/INS-fil pr. fotosesjon.</p></td>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Avhengighet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#tab-kravklasse-fotogrammetri">Kravklasse kartlegging med fotogrammetri</a></p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Krav</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#krav-foto-konstruksjon">Krav foto konstruksjon</a><br></p></td>
@@ -4951,6 +4942,10 @@ Manus og støttedata.<br></p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Avhengighet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#tab-kravklasse-fotogrammetri">Kravklasse kartlegging med fotogrammetri</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Avhengighet</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#tab-kravklasse-ortofotorapport">Kravklasse egenkontroll og rapportering ortofoto</a><br></p></td>
 </tr>
 <tr>
@@ -5047,6 +5042,26 @@ Manus og støttedata.<br></p></td>
 <div class="content">
 <div id="krav-foto-sant-ortofoto" class="paragraph">
 <p><strong>KRAV FOTO SANT ORTOFOTO</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>En overflatemodell skal brukes til å lage ortofotoet.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_3d_ortofoto_3d_mesh">6.7.2.2. 3D ortofoto (3D Mesh)</h5>
+<div class="paragraph">
+<p>3D ortofoto er produsert med DOM og har egenskaper som et 3 dimensjonal kart. Basis for et 3D ortofoto er et TIN som mest optimal beskriver formen på jordoverflaten og ønskede kartobjekter (3D Mesh). Hver trekant har sin egen ortogonalprojektsjon slik at hver individuelle trekant fremstår med egenskaper som et tradisjonelt ortofoto.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div id="krav-foto-3D-ortofoto" class="paragraph">
+<p><strong>KRAV FOTO 3D ORTOFOTO</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -9643,7 +9658,7 @@ av denne lisensen og ikke kan viderebrukes</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-10-13 13:48:36 +0200
+Last updated 2026-10-13 14:01:21 +0200
 </div>
 </div>
 <script type="text/x-mathjax-config">
