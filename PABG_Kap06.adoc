@@ -27,6 +27,7 @@ Kapittelet avgrenses til å gjelde følgende:
 |Krav |<<krav-foto-kjentpunktnoyaktighet>> +
 |Krav |<<krav-foto-kjentpunkt-antall-og-plassering>> +
 |Krav |<<krav-foto-fly-og-signaleringsplan>> +
+|Krav |<<krav-foto-digitale-kamera>> +
 |Krav |<<krav-foto-signalering>> +
 |Krav |<<krav-foto-rapport-signalering>> +
 |Krav |<<krav-foto-digitale-kamera>> +
