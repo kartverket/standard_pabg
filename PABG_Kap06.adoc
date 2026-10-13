@@ -22,7 +22,8 @@ Kapittelet avgrenses til å gjelde følgende:
 [cols="20%,80%"]
 |===
 |Kravklasse|Kartlegging med fotogrammetri
-|Krav |<<krav-landmaling-referanserammer-transformasjoner>>
+|Avhengighet |xref:tab-kravklasse-referanseramme-og-transformasjoner[xrefstyle=basic]
+|Avhengighet |xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic]
 |Krav |<<krav-foto-flyplanlegging>> +
 |Krav |<<krav-foto-kjentpunktnoyaktighet>> +
 |Krav |<<krav-foto-kjentpunkt-antall-og-plassering>> +
@@ -44,16 +45,6 @@ Kapittelet avgrenses til å gjelde følgende:
 |Krav |<<krav-foto-observasjonsvekting-parametere-og-ukjente>> +
 |Krav |<<krav-foto-selvkalibrering>> +
 |Krav |<<krav-foto-at-beregninger-og-resultat>> +
-|Krav |<<krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringen>> +
-|Krav |<<krav-foto-rapportering-aerotriangulering>> +
-|Krav |<<krav-foto-konstruksjon>> +
-|Krav |<<krav-foto-logisk-konsistens>> +
-|Krav |<<krav-foto-rapportering-konstruksjon>> +
-|Krav |<<krav-foto-ortofoto-høydemodell>> +
-|Krav |<<krav-foto-sant-ortofoto>> +
-|Krav |<<krav-foto-ortofotooppløsning>> +
-|Krav |<<krav-foto-fremstilling-av-ortofoto>> +
-|Krav |<<krav-foto-ortofotomosaikk>> +
 |Anbefaling |<<anbefaling-foto-signalstørrelser>> +
 |===
 
@@ -937,6 +928,16 @@ Det presiseres at tallene i <<tab-nøyaktighetskrav-AT-FKB>> henviser til kraven
 
 Det skal leveres en rapport for de utførte arbeidene, med leveransene som vedlegg til rapporten. Rapporten skal ha egne seksjoner for generell informasjon, måle- og beregningsarbeidene, samt resultater og kontroll av resultatene. For hvert av de nevnte arbeidene, inkludert leveransene, skal resultatet av utførte kvalitetskontroller dokumenteres.
 
+[[tab-kravklasse-aerotrinagulering]]
+.Kravklasse Aerotriangulering
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse|Aerotriangulering
+|Krav |<<krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringen>> +
+|Krav |<<krav-foto-rapportering-aerotriangulering>> +
+|===
+
 ====
 [#krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringen,reftext="Krav foto kontrollmåling i DFA av aerotrianguleringrn"]
 *KRAV FOTO KONTROLLMÅLING I DFA AV AEROTRIANGULERINGEN*
@@ -1053,7 +1054,16 @@ Før oppstart av konstruksjonsarbeidet, avklares følgende momenter med oppdrags
 
 Dette nedfelles i en konstruksjonsinstruks med tilhørende grafisk oversikt som er tilgjengelig under konstruksjonsarbeidet. Oppdraget håndteres slik at dataflyt og editeringer er sporbare gjennom hele prosessen, slik at eventuelle avvik kan lokaliseres og korrigeres.
 
-
+[[tab-kravklasse-konstruksjon]]
+.Kravklasse konstruksjon
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse|Konstruksjon
+|Krav |<<krav-foto-konstruksjon>> +
+|Krav |<<krav-foto-logisk-konsistens>> +
+|Krav |<<krav-foto-rapportering-konstruksjon>> +
+|===
 
 
 ==== Konstruksjon
@@ -1231,6 +1241,7 @@ Dette kapittelet inneholder generelle krav og anbefalinger til produksjon av ort
 [cols="20%,80%"]
 |===
 |Kravklasse|Ortofoto
+|Avhengighet |xref:tab-kravklasse-ortofotorapport[xrefstyle=basic] +
 |Krav |<<krav-foto-ortofoto-høydemodell>> +
 |Krav |<<krav-foto-sant-ortofoto>> +
 |Krav |<<krav-foto-ortofotooppløsning>> +
@@ -1239,13 +1250,18 @@ Dette kapittelet inneholder generelle krav og anbefalinger til produksjon av ort
 |===
 
 
+<<<<<<< Updated upstream
 [[tab-kravklasse-santortofoto]]
 .Kravklasse santortofoto
+=======
+[[tab-kravklasse-sant-ortofoto]]
+.Kravklasse sant ortofoto
+>>>>>>> Stashed changes
 [cols="2*",options="header"]
 [cols="20%,80%"]
 |===
-||Kravklasse Sant ortofoto
-|Avhengighet |<<tab-kravklasse-ortofoto>> +
+|Kravklasse |Sant ortofoto
+|Avhengighet |xref:tab-kravklasse-ortofoto[xrefstyle=basic] +
 |Krav |<<krav-foto-sant-ortofoto>> +
 |===
 
@@ -1343,6 +1359,16 @@ Når man setter sammen flere bilder, er målsettingen at skjøtene mellom bilden
 ==== Egenkontroll og rapportering ortofotorapport
 Egenkontrollen begrenses her til å være en ren visuell kontroll. Geometrisk kvalitet kan kontrolleres ved å sammenlikne med eksisterende kartdata i samme projeksjon, og ved å se etter for eksempel krumme broer. Radiometrisk kvalitet sjekkes ved å påse at det ikke er noen nyanseforskjeller i gråtone/farge og kontrast i ortofotoet (typisk kan det bli forskjeller i områder som stammer fra ulike flybilder), og at sømlinjer er minimalt synlige i mosaikken. Det vises for øvrig til kravene til ortofotokvalitet i "Produktspesifikasjon for ortofoto".
 
+
+[[tab-kravklasse-ortofotorapport]]
+.Kravklasse rapportering ortofotorapport
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse|Rapportering ortofotorapport
+|Krav |<<krav-foto-rapportering-ortofoto>> +
+|===
+
 ====
 [#krav-foto-rapportering-ortofoto,reftext="Krav foto rapportering ortofoto"]
 *KRAV FOTO RAPPORTERING ORTOFOTO*
@@ -1399,17 +1425,21 @@ Egenkontrollen begrenses her til å være en ren visuell kontroll. Geometrisk kv
 ===== Ortofoto
 Målsetting: Innlegging i norgeibilder.no.
 
-Hvis det blir brukt en drone med GNSS med RTK i datainnsamlingen så er kravene definert i <<krav-foto-drone-ortofoto-med-rtk>> og anbefaling i <<anbefaling-foto-drone-ortofoto-med-rtk>>.
+Norgeibilder.no har definerte hvordan ortofotoet skal være for å kunne legges inn i norgeibilder. Disse må følges hvis ortofotoet skal legges inn i norgeibilder.no. 
 
-Hvis det blir brukt en drone med GNSS uten RTK i datainnsamlingen så er kravene definert i <<krav-foto-drone-ortofoto-uten-rtk>>.
+xref:tab-kravklasse-drone-GNSS-med-RTK[xrefstyle=basic] brukes når bildene er samlet inn med GNSS med RTK.
+
+xref:tab-kravklasse-drone-GNSS-uten-RTK[xrefstyle=basic] brukes når bildene er samlet inn med GNSS uten RTK.
 
 [[tab-kravklasse-drone-GNSS-uten-RTK]]
 .Kravklasse kartlegging med drone med GNSS uten RTK
 [cols="2*",options="header"]
 [cols="20%,80%"]
 |===
-|Kravklasse|Kartlegging med fotogrammetri
-|Krav |<<krav-landmaling-referanserammer-transformasjoner>>
+|Kravklasse|Kartlegging med drone med GNSS uten RTK
+|Avhengighet |xref:tab-kravklasse-referanseramme-og-transformasjoner[xrefstyle=basic]
+|Avhengighet |xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic]
+|Avhengighet |xref:tab-kravklasse-ortofotorapport[xrefstyle=basic]
 |Krav |<<krav-foto-drone-ortofoto-uten-rtk>>
 |===
 
@@ -1418,18 +1448,20 @@ Hvis det blir brukt en drone med GNSS uten RTK i datainnsamlingen så er kravene
 [cols="2*",options="header"]
 [cols="20%,80%"]
 |===
-|Kravklasse|Kartlegging med fotogrammetri
-|Krav |<<krav-landmaling-referanserammer-transformasjoner>>
+|Kravklasse|Kartlegging med drone med GNSS med RTK
+|Avhengighet |xref:tab-kravklasse-referanseramme-og-transformasjoner[xrefstyle=basic]
+|Avhengighet |xref:tab-kravklasse-ortofotorapport[xrefstyle=basic]
+|Anbefalt avhengighet |xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic]
 |Krav |<<krav-foto-drone-ortofoto-med-rtk>>
+|Anbefaling |<<anbefaling-foto-drone-ortofoto-med-rtk>>
 |===
 
 ====
 [#krav-foto-drone-ortofoto-uten-rtk,reftext="Krav foto droneortofoto uten RTK-drone"]
 *KRAV FOTO DRONEORTOFOTO GNSS UTEN RTK*
 
-* Bildene skal være tatt med drone med GNSS.
-* Følge krav til gjeldene ortofotostandard.
-* Bildene skal aerotrianguleres i egnet programvare. AT-rapport krav: <<krav-foto-rapportering-aerotriangulering>>, men måling i stereo (DFA) er ikke nødvendig.
+* Bildene skal være tatt med drone som ved datainnsamlingen bruker GNSS.
+* Bildene skal aerotrianguleres i egnet programvare. AT-rapport skal følge xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic], men måling i stereo (DFA) er ikke nødvendig.
 * Beregningsrapporten fra prosesseringsprogramvaren skal leveres og er en del av dokumentasjonen av kvaliteten til prosjektet. 
 * Kjentpunkter er nødvendig og antallet skal være tilstrekkelig til å oppnå ønsket nøyaktighet.
 * Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt ("sjekkpunkter"). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktighetskrav for innmåling av kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.
@@ -1441,10 +1473,8 @@ Hvis det blir brukt en drone med GNSS uten RTK i datainnsamlingen så er kravene
 [#krav-foto-drone-ortofoto-med-rtk,reftext="Krav foto droneortofoto med RTK-drone"]
 *KRAV FOTO DRONEORTOFOTO GNSS MED RTK*
 
-* Bildene skal være tatt med drone utstryrt med GNSS RTK.
-* Følge krav til gjeldene ortofotostandard.
-* Beregningsrapporten fra prosesseringsprogramvaren skal leveres og er en del av dokumentasjonen av kvaliteten til prosjektet, men full AT-rapport er ikke nødvendig. 
-* Kjentpunkter er ikke nødvendig.
+* Bildene skal være tatt med drone som ved datainnsamlingen bruker GNSS med RTK.
+* Bildene skal aerotrianguleres i egnet programvare. AT-rapport skal følge xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic], men måling i stereo (DFA) er ikke nødvendig.
 * Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt ("sjekkpunkter"). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktighetskrav for innmåling av kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.
 * Ortofotorapport: <<krav-foto-rapportering-ortofoto>>
 * Personopplysningsloven skal følges (inkluder GDPR).
@@ -1455,6 +1485,7 @@ Hvis det blir brukt en drone med GNSS uten RTK i datainnsamlingen så er kravene
 [#anbefaling-foto-drone-ortofoto-med-rtk,reftext="Anbefaling foto droneortofoto med RTK-drone"]
 *ANBEFALING FOTO DRONEORTOFOTO GNSS MED RTK*
 
+* Kjentpunkter er anbefalt brukt i aerotrinaguleringen. 
 * For beste nøyaktighet på ortofotoet er det anbefalt ha tilstrekkelig med signalerte/naturlige kjentpunkt i aerotrianguleringen for å få god nøyaktighet i hele prosjektområdet.
 ====
 
@@ -1462,13 +1493,27 @@ Hvis det blir brukt en drone med GNSS uten RTK i datainnsamlingen så er kravene
 Målsetting: Produktet gjelder for punktsky, terrengmodell og overflatemodell. Innlegging i hoydedata.no. Høydemodell generert fra bilder har vanligvis dårligere gjengivelse av terrenget i vegeterte områder. Laserskanning finner ofte en åpning i vegetasjonen, mens bildematching som trenger to ulike innsynsvinkler har større problemer med å få gode terrengpunkt i vegeterte områder.
 
 Laserskanning fra drone følger samme krav som laserskanning fra fly og helikopter i <<kapittel-kartlegging-med-flybåren-laserskanning>>.
+
+
+[[tab-kravklasse-drone-hoydemodell]]
+.Kravklasse høydemodell fra dronebilder
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse|Høydemodell fra dronebilder
+|Avhengighet |xref:tab-kravklasse-referanseramme-og-transformasjoner[xrefstyle=basic]
+|Avhengighet |xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic]
+|Avhengighet |xref:tab-kravklasse-drone-detaljert-kartlegging-med-kamera[xrefstyle=basic]
+|Krav |<<krav-foto-hoydemodell-drone>>
+|===
+
 ====
 [#krav-foto-hoydemodell-drone,reftext="Krav foto høydemodell drone"]
 *KRAV FOTO HØYDEMODELL DRONE*
 
 * Skal følge kravene i <<kapittel-detaljert-kartlegging-med-kamera-i-drone>>.
-* Bildene skal være tatt med drone utstryrt med GNSS RTK og IMU.
-* Bildene skal aerotrianguleres i egnet programvare. AT-rapport krav: <<krav-foto-rapportering-aerotriangulering>>, men måling i stereo (DFA) er ikke nødvendig.
+* Bildene skal være tatt med drone som ved datainnsamlingen bruker GNSS med RTK og IMU.
+* Bildene skal aerotrianguleres i egnet programvare. AT-rapport skal følge xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic], men måling i stereo (DFA) er ikke nødvendig.
 * Krav om antall signalerte kjentpunkt og kontrollpunkt følger <<krav-foto-signalering-i-droneprosjekt>>.
 * Sluttkontroll skal utføres på sluttproduktet.  
 * Generelt følger krav etter denne standard samt gjeldene punktsky standard.
@@ -1483,14 +1528,26 @@ Laserskanning fra drone følger samme krav som laserskanning fra fly og helikopt
 ===== Vektorisering fra modell (punktsky, høydemodell og 3D ortofoto)
 Målsetting: Innlegging i Felles kart database (FKB), fellesløsninger og offentlige kartgrunnlag.
 
+[[tab-kravklassedrone-drone-vektorisering-fra-modell]]
+.Kravklasse vektorisering fra modell laget av dronebilder
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse|Vektorisering fra modell laget av dronebilder
+|Avhengighet |xref:tab-kravklasse-referanseramme-og-transformasjoner[xrefstyle=basic]
+|Avhengighet |xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic]
+|Avhengighet |xref:tab-kravklasse-drone-detaljert-kartlegging-med-kamera[xrefstyle=basic]
+|Krav |<<krav-foto-vektorisering-fra-modell>>
+|===
+
 ====
 [#krav-foto-vektorisering-fra-modell,reftext="Krav vektorisering fra modell fra dronebilder"]
 *KRAV FOTO VEKTORISERNIG FRA MODELL FRA DRONEBILDER*
 
 * Skal følge kravene i <<kapittel-detaljert-kartlegging-med-kamera-i-drone>>.
 * Følge krav til høydemodell
-* Bildene skal være tatt med drone utstryrt med GNSS RTK og IMU.
-* Bildene skal aerotrianguleres i egnet programvare. AT-rapport krav: <<krav-foto-rapportering-aerotriangulering>>, men måling i stereo (DFA) er ikke nødvendig.
+* Bildene skal være tatt med drone som ved datainnsamlingen bruker GNSS med RTK og IMU.
+* Bildene skal aerotrianguleres i egnet programvare. AT-rapport skal følge xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic], men måling i stereo (DFA) er ikke nødvendig.
 * Krav om antall signalerte kjentpunkt og kontrollpunkt følger <<krav-foto-signalering-i-droneprosjekt>>.
 * Detaljeringsgrad skal være tilstrekkelig for å kunne identifisere kartobjektet samt digitalisere kartobjekter med tilstrekkelig geografisk nøyaktighet etter gjeldene standard for sluttproduktet.
 * Vektoriseringskapittelet skal følges: <<kapittel-vektorisering-fra-punktsky-og-modell>>
@@ -1504,13 +1561,26 @@ Målsetting: Innlegging i Felles kart database (FKB), fellesløsninger og offent
 ===== Konstruksjon fra dronebilder
 Målsetting: Konstruksjon fra flybiler i en Digital Fotogrammetrisk Arbeidsstasjon (DFA). For innlegging i Felles kart database, fellesløsninger og offentlige kartgrunnlag.
 
+[[tab-kravklassedrone-drone-konstruksjon]]
+.Kravklasse konstruksjon fra dronebilder
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse |Konstruksjon fra dronebilder
+|Avhengighet |xref:tab-kravklasse-referanseramme-og-transformasjoner[xrefstyle=basic]
+|Avhengighet |xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic]
+|Avhengighet |xref:tab-kravklasse-drone-detaljert-kartlegging-med-kamera[xrefstyle=basic]
+|Krav |<<krav-foto-kartkonstruksjon-i-stereo-fra-dronebilder>>
+|Anbefaling |<<anbefaling-foto-drone-kartkonstruksjon-i-stereo>>
+|===
+
 ====
 [#krav-foto-kartkonstruksjon-i-stereo-fra-dronebilder,reftext="Krav foto kartkonstruksjon i stereo fra dronebilder"]
 *KRAV FOTO KARTKONSTRUKSJON I STEREO FRA DRONEBILDER*
 
 * Skal følge kravene i <<kapittel-detaljert-kartlegging-med-kamera-i-drone>>.
-* Bildene skal være tatt med drone utstryrt med GNSS RTK og IMU.
-* Bildene skal aerotrianguleres i egnet programvare. AT-rapport krav: <<krav-foto-rapportering-aerotriangulering>>.
+* Bildene skal være tatt med drone som ved datainnsamlingen bruker GNSS med RTK og IMU.
+* Bildene skal aerotrianguleres i egnet programvare. AT-rapport skal følge xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic].
 * Innad i en stereomodell skal delen av stereomodellen som skal brukes til konstruksjon tilfredsstille nøyaktighetskravene og eventuelle deler av stereomodellen som ikke bør brukes skal begrunnes i AT-rapporten. 
 * Krav om antall signalerte kjentpunkt og kontrollpunkt følger <<krav-foto-signalering-i-droneprosjekt>>.
 * Personopplysningsloven skal følges (inkludert GDPR).
@@ -1534,6 +1604,23 @@ Målsetting: Konstruksjon fra flybiler i en Digital Fotogrammetrisk Arbeidsstasj
 [[kapittel-detaljert-kartlegging-med-kamera-i-drone]]
 ==== Detaljert kartlegging med kamera i drone
 
+
+[[tab-kravklasse-drone-detaljert-kartlegging-med-kamera]]
+.Kravklasse detaljert kartlegging med kamera i drone
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse |Detaljert kartlegging med kamera i drone
+|Avhengighet |xref:tab-kravklasse-referanseramme-og-transformasjoner[xrefstyle=basic]
+|Avhengighet |xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic]
+|Anbefalt |xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic]
+|Krav |<<krav-foto-dronekamera>>
+|Krav |<<krav-foto-gnss-ins-i-drone>>
+|Krav |<<krav-foto-signalering-i-droneprosjekt>>
+|Krav |<<krav-foto-flyplan-i-droneprosjekt>>
+|Krav |<<krav-foto-flyfotografering-i-droneprosjekt>>
+|Anbefaling |<<anbefaling-foto-signalering-i-droneprosjekter>>
+|===
 
 ===== Kamera
 
@@ -1646,6 +1733,19 @@ Det skilles mellom 4 kvalitetsnivå for posisjon- og orienteringsnøyaktighet fo
 
 
 ==== Minimum
+
+[[tab-kravklassedrone-skrabilder-minimum]]
+.Kravklasse skråbilder minimum
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse |Skråbilder minimum
+|Avhengighet |xref:tab-kravklasse-referanseramme-og-transformasjoner[xrefstyle=basic]
+|Anbefalt avhengighet |xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic]
+|Krav |<<krav-foto-minimum-skrabilder>>
+|Anbefaling |<<anbefaling-foto-skråbilder-minimum>>
+|===
+
 ====
 [#krav-foto-minimum-skrabilder,reftext="Krav foto skråbilder kvalitetsnivå minimum"]
 *KRAV FOTO SKRÅBILDER KVALITETSNIVÅ MINIMUM*
@@ -1654,7 +1754,7 @@ Det skilles mellom 4 kvalitetsnivå for posisjon- og orienteringsnøyaktighet fo
 
 * Orienteringen av alle bildene skal være innenfor nøyaktighetskravene til slutt produktet.
 * Dersom AT benyttes skal det være minst 6 eller flere sammenbindingspunkter for alle vertikalbilder. Dersom dette ikke er oppfylt for et eller flere vertikalbilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.
-* Hvis det gjøres en aerotriangulering skal AT-rapporten følge <<krav-foto-rapportering-aerotriangulering>>, men måling i stereo (DFA) er ikke nødvendig.
+* Hvis det gjøres en aerotriangulering skal AT-rapporten følge xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic], men måling i stereo (DFA) er ikke nødvendig.
 ====
 
 ====
@@ -1667,6 +1767,19 @@ Det skilles mellom 4 kvalitetsnivå for posisjon- og orienteringsnøyaktighet fo
 ==== Lav
 
 Kvalitetsnivå lav har en forenklet aerotriangulering til ortofotoproduksjon og følger ikke kravet til aerotriangulering etter denne standarden.
+
+[[tab-kravklassedrone-skrabilder-lav]]
+.Kravklasse skråbilder lav
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse |Skråbilder lav
+|Avhengighet |xref:tab-kravklasse-referanseramme-og-transformasjoner[xrefstyle=basic]
+|Avhengighet |xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic]
+|Anbefalt avhengighet for vertikalbildene |xref:tab-kravklasse-fotogrammetri[xrefstyle=basic]
+|Krav |<<krav-foto-lav-skrabilder>>
+|Anbefaling |<<anbefaling-foto-lav-skrabilder>>
+|===
 
 ====
 [#krav-foto-lav-skrabilder,reftext="Krav foto skråbilder kvalitetsnivå lav"]
@@ -1684,7 +1797,8 @@ Kvalitetsnivå lav har en forenklet aerotriangulering til ortofotoproduksjon og 
 [#anbefaling-foto-lav-skrabilder,reftext="Anbefaling foto skråbilder kvalitetsnivå lav"]
 *ANBEFALING FOTO SKRÅBILDER KVALITETSNIVÅ LAV*
 
-* Det er anbefalt å følge kravene til aerotriangulering av vertikalbilder.
+* Det er anbefalt at vertikalbildene følger kravene i xref:tab-kravklasse-fotogrammetri[xrefstyle=basic]
+
 ====
 
 
@@ -1692,11 +1806,23 @@ Kvalitetsnivå lav har en forenklet aerotriangulering til ortofotoproduksjon og 
 
 Kvalitetsnivå middels har AT utført på vertikalbildene, slik at konstruksjon fra vertikalbildene er mulig i stereo.
 
+[[tab-kravklassedrone-skrabilder-middels]]
+.Kravklasse skråbilder middels
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse |Skråbilder middels
+|Avhengighet |xref:tab-kravklasse-referanseramme-og-transformasjoner[xrefstyle=basic]
+|Avhengighet for vertikalbildene |xref:tab-kravklasse-fotogrammetri[xrefstyle=basic]
+|Krav |<<krav-foto-middels-skrabilder>>
+|Anbefaling |<<anbefaling-foto-middels-skrabilder>>
+|===
+
 ====
 [#krav-foto-middels-skrabilder,reftext="Krav foto skråbilder kvalitetsnivå middels"]
 *KRAV FOTO SKRÅBILDER KVALITETSNIVÅ MIDDELS*
 
-* Vertikalbildene skal tilfredsstille krav til vanlig vertikalbildeprosjekt. Hvis vertikalbildet har mindre enn 20000 piksler i den største retningen, skaleres minstekravene til sammenbindingspunktene i kravet for vertikalbildene (xref:tab-ant-sammenbindingpkt[xrefstyle=short] og xref:tab-ant-stripesammenbindingpkt[xrefstyle=short]) med størrelsen på vertikalbildet, men ikke mindre enn 12 sammenbindingspunkt mellom påfølgende bilder og ikke mindre enn 4 stripesammenbindingspunkt. Ved for eksempel et vertikalbildekamera med 15000 piksler i den største retningen, skaleres kravene med 15000/20000 = 0,75.
+* Vertikalbildene skal følge kravene i xref:tab-kravklasse-fotogrammetri[xrefstyle=basic]. Hvis vertikalbildet har mindre enn 20000 piksler i den største retningen, skaleres minstekravene til sammenbindingspunktene i kravet for vertikalbildene (xref:tab-ant-sammenbindingpkt[xrefstyle=short] og xref:tab-ant-stripesammenbindingpkt[xrefstyle=short]) med størrelsen på vertikalbildet, men ikke mindre enn 12 sammenbindingspunkt mellom påfølgende bilder og ikke mindre enn 4 stripesammenbindingspunkt. Ved for eksempel et vertikalbildekamera med 15000 piksler i den største retningen, skaleres kravene med 15000/20000 = 0,75.
 * Resultatene fra AT skal brukes til å forbedre posisjon og orientering av vertikalbildene og skråbildene.
 * AT-rapport: <<krav-foto-rapportering-aerotriangulering>>.
 
@@ -1712,6 +1838,18 @@ Kvalitetsnivå middels har AT utført på vertikalbildene, slik at konstruksjon 
 
 ==== Høy
 Kvalitetsnivå høy har AT på alle bilder, inkludert skråbilder.
+
+[[tab-kravklassedrone-skrabilder-hoy]]
+.Kravklasse skråbilder høy
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse |Skråbilder høy
+|Avhengighet |xref:tab-kravklasse-referanseramme-og-transformasjoner[xrefstyle=basic]
+|Avhengighet for vertikalbildene |xref:tab-kravklasse-fotogrammetri[xrefstyle=basic]
+|Krav |<<krav-foto-hoy-skrabilder>>
+|Anbefaling |<<anbefaling-foto-middels-skrabilder>>
+|===
 
 ====
 [#krav-foto-hoy-skrabilder,reftext="Krav foto skråbilder kvalitetsnivå høy"]
