@@ -50,6 +50,9 @@ https://www.luftfartstilsynet.no/[Luftfartstilsynet] - setter krav om operative 
 [#FKB]
 *[FKB]*: https://sosi.geonorge.no/standarder/FKB_generell_del/[SOSI abstrakte spesifikasjoner – FKB generell del]
 
+[FKB Bygning 5.1.1]
+*[FKB Bygning 5.1.1]*: https://sosi.geonorge.no/produktspesifikasjoner/FKB-Bygning/[FKB-Bygning 5.1.1]
+
 [#Punktsky]
 *[Punktsky]*: https://dokument.geonorge.no/produktspesifikasjoner/punktsky/1.0.3/index.html[Produktspesifikasjon Punktsky]
 
