@@ -1,16 +1,3 @@
-== Normative referanser
-
-[#GG]
-*[GG]*: https://sosi.geonorge.no/standarder/Geodetisk_grunnlag_-_koordinatbaserte_referansesystemer_og_kvalitetssikring_av_grunnlagspunkt/1.0/[Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt]
-
-[#GK]
-*[GK]*: https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet[Geodatakvalitet]
-
-[#NS-EN ISO 9000]
-*[NS-EN ISO 9000]*: https://online.standards.no/nb/ns-en-iso-9000-2026[Kvalitesledelse]
-
-
-
 == Bibliografi
 
 Det er de til enhver tid gjeldende juridiske, faglige og regulative føringer som berører standardens tematikk, som skal benyttes. Listen under viser et utvalg av aktuelle referanser.
@@ -22,15 +9,11 @@ Det er de til enhver tid gjeldende juridiske, faglige og regulative føringer so
 
 https://lovdata.no/dokument/SF/forskrift/2018-06-22-951[Forskrift om kontroll med informasjon innhentet med luftbårne sensorsystemer]
 
-https://nsm.no/fysisk/luftbarne-sensorsystemer/[Nasjonal sikkerhetsmyndighet (NSM)] fører kontroll med fotografering og filming fra luften og andre luftbårne sensorsystemer for å skjerme detaljer ved militære og andre forbudsområder.
-
 [#AL]
 *[AL]*: https://lovdata.no/dokument/NL/lov/2025-06-20-96[Arkivlova] - Lov om dokumenatsjon og arkiv
 
 [#AF]
 *[AF]*: https://lovdata.no/dokument/SF/forskrift/2025-12-17-2647[Arkivforskrifta]
-
-Stortingsproposisjon nr.1 1979-1980 som viser til Kartverkets oppdrag om å etablere et bildearkiv og sikre at alle flybilder og fjernmåledata arkiveres i dette.
 
 [#BF]
 *[BF]*: https://lovdata.no/dokument/SF/forskrift/2025-12-19-2729[Bevaringsforskrifta]
@@ -44,7 +27,6 @@ Stortingsproposisjon nr.1 1979-1980 som viser til Kartverkets oppdrag om å etab
 [#ML]
 *[ML]*: https://lovdata.no/dokument/NL/lov/2005-06-17-101/KAPITTEL_8#KAPITTEL_8[Matrikkellova, kapittel 8] – om geodetisk grunnlag og oppmålingsarbeid
 
-https://www.luftfartstilsynet.no/[Luftfartstilsynet] - krav om operative flytillatelser
 
 === Faglige referanser
 
@@ -58,6 +40,12 @@ https://www.luftfartstilsynet.no/[Luftfartstilsynet] - krav om operative flytill
 *[Oveland og Le Moan, 2026]*: Oveland, I. and Le Moan, S., 2026. Colour Adjustment of Aerial Images from 2000–3000 m Altitude: Empirical Normalisation using Large Ground Colour Targets. ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, 11, pp.337-344. https://isprs-annals.copernicus.org/articles/XI-1-2026/337/2026/isprs-annals-XI-1-2026-337-2026.pdf
 
 === Andre referanser
+
+https://stortinget.no/no/Saker-og-publikasjoner/Stortingsforhandlinger/Lesevisning/?p=1979-80&paid=1&wid=a&psid=DIVL555/[Stortingsproposisjon nr.1 1979-1980] som viser til Kartverkets oppdrag om å etablere et bildearkiv og sikre at alle flybilder og fjernmåledata arkiveres i dette.
+
+https://nsm.no/fysisk/luftbarne-sensorsystemer/[Nasjonal sikkerhetsmyndighet (NSM)] fører kontroll med fotografering og filming fra luften og andre luftbårne sensorsystemer for å skjerme detaljer ved militære og andre forbudsområder.
+
+https://www.luftfartstilsynet.no/[Luftfartstilsynet] - setter krav om operative flytillatelser
 
 [#FKB]
 *[FKB]*: https://sosi.geonorge.no/standarder/FKB_generell_del/[SOSI abstrakte spesifikasjoner – FKB generell del]
