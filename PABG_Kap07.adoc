@@ -292,7 +292,7 @@ I kartleggingsprosjekt med både laser og foto kan senter av kontrollflate signa
 
 ====
 [#krav-laser-kontrollflater-Tidsgyldighet="krav-laser-kontrollflater-Tidsgyldighet"]
-*KRAV LASER KONTROLFLATER  TIDSGYLDIGHET*
+*KRAV LASER KONTROLLFLATER  TIDSGYLDIGHET*
 
 * Kontrollflater og hjulspor skal måles inn samme år som datafangsten gjennomføres. Unntak kan avtales der prosjekter går over flere år.
 
