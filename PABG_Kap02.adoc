@@ -1,7 +1,5 @@
 == Omfang
 
-Standarden spesifiserer generelle kvalitetskrav for produksjon og dokumentasjon av basis geodata på land. Beskrevne datafangstmetoder er geodetiske metoder (landmåling, fotogrammetri og laserskanning). 
-
 Standarden er:
 
 ** Et verktøy for oppdragsgivere for å sette krav og anbefalinger for metodikk og resultat ved oppdrag
