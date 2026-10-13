@@ -260,6 +260,12 @@ include::PABG_Kap10.adoc[]
 
 include::PABG_Kap11.adoc[]
 
+<<<
+// Kap12 - Bibliografi
+// 
+
+include::PABG_Kap17.adoc[]
+
 ////
 <<<
 // Kap12 - Appendix - Solhøydetabell
