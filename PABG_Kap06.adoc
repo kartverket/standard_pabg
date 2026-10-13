@@ -1466,6 +1466,8 @@ xref:tab-kravklasse-drone-GNSS-uten-RTK[xrefstyle=basic] brukes når bildene er 
 |Anbefaling |<<anbefaling-foto-drone-ortofoto-med-rtk>>
 |===
 
+Ortofoto er ofte så detaljert at det må tas hensyn til Personopplysningsloven.
+
 ====
 [#krav-foto-drone-ortofoto-uten-rtk,reftext="Krav foto droneortofoto uten RTK-drone"]
 *KRAV FOTO DRONEORTOFOTO GNSS UTEN RTK*
@@ -1475,8 +1477,6 @@ xref:tab-kravklasse-drone-GNSS-uten-RTK[xrefstyle=basic] brukes når bildene er 
 * Beregningsrapporten fra prosesseringsprogramvaren skal leveres og er en del av dokumentasjonen av kvaliteten til prosjektet. 
 * Kjentpunkter er nødvendig og antallet skal være tilstrekkelig til å oppnå ønsket nøyaktighet.
 * Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt ("sjekkpunkter"). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktighetskrav for innmåling av kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.
-* Ortofotorapport: <<krav-foto-rapportering-ortofoto>>
-* Personopplysningsloven skal følges (inkluder GDPR).
 ====
 
 ====
@@ -1486,8 +1486,6 @@ xref:tab-kravklasse-drone-GNSS-uten-RTK[xrefstyle=basic] brukes når bildene er 
 * Bildene skal være tatt med drone som ved datainnsamlingen bruker GNSS med RTK.
 * Bildene skal aerotrianguleres i egnet programvare. AT-rapport skal følge xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic], men måling i stereo (DFA) er ikke nødvendig.
 * Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt ("sjekkpunkter"). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktighetskrav for innmåling av kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.
-* Ortofotorapport: <<krav-foto-rapportering-ortofoto>>
-* Personopplysningsloven skal følges (inkluder GDPR).
 ====
 
 
