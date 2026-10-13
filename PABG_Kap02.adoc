@@ -15,7 +15,7 @@ Standarden omfatter ikke:
 
 ** Hvordan produktene skal kontrolleres. Dette er beskrevet i standarden Geodatakvalitet <<GK>>.
 
-** Innmåling av eiendomsgrenser (matrikkelenhetsgrenser) og ledninger behandles ikke i denne standarden. I stedet vises det til standardene "Stedfesting av matrikkelenhets- og råderettsgrenser", "Norm for ledningskart" og "Norm for VA-ledningskartverk".
+** Innmåling av eiendomsgrenser (matrikkelenhetsgrenser) og ledninger behandles ikke i denne standarden. I stedet vises det til standardene https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/stedfesting-av-matrikkelenhets-og-råderettsgrenser/[Stedfesting av matrikkelenhets- og råderettsgrenser], https://standarder.geonorge.no/sosi/standarder-geografisk-informasjon/norm-for-ledningskart/2.0/norm-for-ledningskart-20-standarder-geografisk-informasjon.pdf/[Norm for ledningskart] og https://standarder.geonorge.no/sosi/standarder-geografisk-informasjon/norm-for-va-ledningskartverk/2.0/norm-for-va-ledningskartverk-20-standarder-geografisk-informasjon.pdf/[Norm for VA-ledningskartverk].
 
 
 
