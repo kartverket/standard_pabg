@@ -767,8 +767,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#kapittel-eksempel-flyplan-laserskanning">B.2. Eksempel flyplan laserskanning</a></li>
 </ul>
 </li>
-<li><a href="#kapittel-vedlegg-d-liste-over-krav">Vedlegg C: Liste over krav</a></li>
-<li><a href="#kapittel-vedlegg-e-liste-over-anbefalinger">Vedlegg D: Liste over anbefalinger</a></li>
 </ul>
 </div>
 </div>
@@ -803,7 +801,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Standarden er bygd modulært opp i ulike kapitler, hvor hvert kapittel beskriver krav til produksjonsprosess, dokumentasjon og rapportering til ulike dataprodukter, som landmåling, flyfoto, laserskanning, mobil datafangst og vektorisering fra modell. Kravene til hvert dataprodukt er angitt i dataproduktets kapittel.</p>
 </div>
 <div class="paragraph">
-<p>For å gjøre det lettere å identifisere kravene og anbefalingene er disse uthevet og navngitt. Liste over krav finnes i <a href="#kapittel-vedlegg-d-liste-over-krav">Vedlegg C, <em>Liste over krav</em></a> og liste over anbefalinger finnes i <a href="#kapittel-vedlegg-e-liste-over-anbefalinger">Vedlegg D, <em>Liste over anbefalinger</em></a>.</p>
+<p>For å gjøre det lettere å identifisere kravene og anbefalingene, er det laget kravklasser som presenteres i hvert produktkapittel.</p>
 </div>
 <div class="paragraph">
 <p>Standarden kan brukes som referansedokument ved inngåelse av avtaler om produksjon av basis geodata. Dersom kravene skal avvikes må dette komme fram av avtalen.</p>
@@ -927,11 +925,11 @@ Vedlegg C i 2.0 versjonen er flyttet til <a href="#kapittel-vedlegg-c-eksempel-f
 </div>
 <div class="paragraph">
 <p><strong>Vedlegg C</strong><br>
-Vedlegg D i 2.0 versjonen er flyttet til <a href="#kapittel-vedlegg-d-liste-over-krav">Vedlegg C, <em>Liste over krav</em></a>.</p>
+Vedlegg D i 2.0 versjonen er flyttet til <a href="#kapittel-vedlegg-d-liste-over-krav">[kapittel-vedlegg-d-liste-over-krav]</a>.</p>
 </div>
 <div class="paragraph">
 <p><strong>Vedlegg D</strong><br>
-Nytt vedlegg med liste over anbefalinger: <a href="#kapittel-vedlegg-e-liste-over-anbefalinger">Vedlegg D, <em>Liste over anbefalinger</em></a></p>
+Nytt vedlegg med liste over anbefalinger: <a href="#kapittel-vedlegg-e-liste-over-anbefalinger">[kapittel-vedlegg-e-liste-over-anbefalinger]</a></p>
 </div>
 </div>
 <div class="sect3">
@@ -969,9 +967,6 @@ Flyttet oversikt over kravliste til eget vedlegg.</p>
 <div class="sect1">
 <h2 id="_omfang">2. Omfang</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Standarden spesifiserer generelle kvalitetskrav for produksjon og dokumentasjon av basis geodata på land. Beskrevne datafangstmetoder er geodetiske metoder (landmåling, fotogrammetri og laserskanning).</p>
-</div>
 <div class="paragraph">
 <p>Standarden er:</p>
 </div>
@@ -1223,6 +1218,10 @@ Eksempel: Et flybilde er georeferert når dets ytre orienteringselementer er kje
 <div class="title">krav</div>
 <p>Grenseverdi satt i en produktspesifikasjon, ytelsen til et datasett skal være bedre enn kravet.<br>
 <em>Kilde</em>: <a href="#GK">[GK]</a></p>
+</div>
+<div class="paragraph">
+<div class="title">kravklasse</div>
+<p>Samling av krav som gjelder for et spesifikt tema eller prosess.</p>
 </div>
 <div class="paragraph">
 <div class="title">kvalitet</div>
@@ -5435,6 +5434,9 @@ Manus og støttedata.<br></p></td>
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Ortofoto er ofte så detaljert at det må tas hensyn til Personopplysningsloven.</p>
+</div>
 <div class="exampleblock">
 <div class="content">
 <div id="krav-foto-drone-ortofoto-uten-rtk" class="paragraph">
@@ -5457,12 +5459,6 @@ Manus og støttedata.<br></p></td>
 <li>
 <p>Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt ("sjekkpunkter"). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktighetskrav for innmåling av kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.</p>
 </li>
-<li>
-<p>Ortofotorapport: <a href="#krav-foto-rapportering-ortofoto">Krav foto rapportering ortofoto</a></p>
-</li>
-<li>
-<p>Personopplysningsloven skal følges (inkluder GDPR).</p>
-</li>
 </ul>
 </div>
 </div>
@@ -5482,12 +5478,6 @@ Manus og støttedata.<br></p></td>
 </li>
 <li>
 <p>Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt ("sjekkpunkter"). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktighetskrav for innmåling av kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.</p>
-</li>
-<li>
-<p>Ortofotorapport: <a href="#krav-foto-rapportering-ortofoto">Krav foto rapportering ortofoto</a></p>
-</li>
-<li>
-<p>Personopplysningsloven skal følges (inkluder GDPR).</p>
 </li>
 </ul>
 </div>
@@ -7046,7 +7036,7 @@ Fra punktskyen kan en produsere en rekke sekundærprodukter:</p>
 <div class="exampleblock">
 <div class="content">
 <div id="krav-laser-kontrollflater-Tidsgyldighet="krav-laser-kontrollflater-Tidsgyldighet"" class="paragraph">
-<p><strong>KRAV LASER KONTROLFLATER  TIDSGYLDIGHET</strong></p>
+<p><strong>KRAV LASER KONTROLLFLATER  TIDSGYLDIGHET</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -9097,7 +9087,7 @@ I dette kapitlet behandles ikke produksjonsmetoder for etablering av rasterdata 
 <p>Bevaringsforskrifta <a href="#BF">[BF]</a> og arkivforskrifta <a href="#AF">[AF]</a> av 01.01.2026 spesifiserer kravene til langtidsbevaring i offentlig forvaltning.</p>
 </li>
 <li>
-<p>Miljøverndepartementets veileder "Det offentlige kartgrunnlaget" som beskriver
+<p>Kommunal og disrtriktsdepartementets  <a href="https://www.regjeringen.no/contentassets/44bc900da8a744a39f33ee0bf077b09a/veileder_kartforskriften_2025.">Veileder til forskrift om kart, stedfestet informasjon, arealformål og digitalt planregister</a> som beskriver
 etablering og drift av kommunens kartgrunnlag i henhold til kapittelet om kartverk i de tekniske forskriftene til plan- og bygningsloven.</p>
 </li>
 </ul>
@@ -9343,9 +9333,6 @@ For destruksjon gjelder følgende:</p>
 <div id="FKB" class="paragraph">
 <p><strong>[FKB]</strong>: <a href="https://sosi.geonorge.no/standarder/FKB_generell_del/">SOSI abstrakte spesifikasjoner – FKB generell del</a></p>
 </div>
-<div class="paragraph">
-<p><strong>[FKB Bygning 5.1.1]</strong>: <a href="https://sosi.geonorge.no/produktspesifikasjoner/FKB-Bygning/">FKB-Bygning 5.1.1</a></p>
-</div>
 <div id="Punktsky" class="paragraph">
 <p><strong>[Punktsky]</strong>: <a href="https://dokument.geonorge.no/produktspesifikasjoner/punktsky/1.0.3/index.html">Produktspesifikasjon Punktsky</a></p>
 </div>
@@ -9482,123 +9469,6 @@ mindre grøfter mistes helt</p></td>
 </div>
 </div>
 <div style="page-break-after: always;"></div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="kapittel-vedlegg-d-liste-over-krav">Vedlegg C: Liste over krav</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><a href="#krav-landmaling-referanserammer-transformasjoner">Krav landmåling referanserammer og transformasjoner</a><br>
-<a href="#krav-landmaling-sanntidsmaling">Krav landmåling sanntidsmåling</a><br>
-<a href="#krav-landmaling-innmaling-med-totalstasjon">Krav landmåling innmåling med totalstasjon</a><br>
-<a href="#krav-landmaling-instrumentdokumentasjon">Krav landmåling instrumentdokumentasjon</a><br>
-<a href="#krav-landmaling-rapportering-geodetisk-kartlegging">Krav landmåling rapportering - geodetisk kartlegging</a><br>
-<a href="#krav-foto-flyplanlegging">Krav foto flyplanlegging</a><br>
-<a href="#krav-foto-kjentpunktnoyaktighet">Krav foto kjentpunktnøyaktighet og kontrollpunktnøyaktighet</a><br>
-<a href="#krav-foto-kjentpunkt-antall-og-plassering">Krav foto kjentpunkt - Antall og plassering</a><br>
-<a href="#krav-foto-fly-og-signaleringsplan">Krav foto fly- og signaleringsplan</a><br>
-<a href="#krav-foto-signalering">Krav foto signalering</a><br>
-<a href="#krav-foto-rapport-signalering">Krav foto rapport signalering</a><br>
-<a href="#krav-foto-digitale-kamera">Krav foto digitale kamera</a><br>
-<a href="#krav-foto-gnssins-system">Krav foto GNSS/INS-system</a><br>
-<a href="#krav-foto-fotografering">Krav foto fotografering</a><br>
-<a href="#krav-foto-innsamling-gnss-imu">Krav foto innsamling GNSS/IMU</a><br>
-<a href="#krav-foto-dgnss">Krav foto DGNSS</a><br>
-<a href="#krav-foto-ppp">Krav foto PPP (Precise Point Positioning)</a><br>
-<a href="#krav-foto-samtidig-georeferering">Krav foto samtidig georeferering</a><br>
-<a href="#krav-foto-beregning-gnss-ins">Krav foto beregning GNSS/INS</a><br>
-<a href="#krav-foto-fremstilling-av-bilder">Krav foto fremstilling av bilder</a><br>
-<a href="#krav-foto-rapportering-flyfotografering">Krav foto rapportering flyfotografering</a><br>
-<a href="#krav-foto-maling-av-sammenbindingspunkt">Krav foto måling av sammenbindingspunkt</a><br>
-<a href="#krav-foto-maling-av-kjentpunkter">Krav foto måling av kjentpunkter</a><br>
-<a href="#krav-foto-observasjonsvekting-parametere-og-ukjente">Krav foto observasjonsvektig, parametere og ukjente</a><br>
-<a href="#krav-foto-selvkalibrering">Krav foto selvkalibrering</a><br>
-<a href="#krav-foto-at-beregninger-og-resultat">Krav foto AT-beregninger og -resultat</a><br>
-<a href="#krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringen">Krav foto kontrollmåling i DFA av aerotrianguleringrn</a><br>
-<a href="#krav-foto-rapportering-aerotriangulering">Krav foto rapportering aerotriangulering</a><br>
-<a href="#krav-foto-konstruksjon">Krav foto konstruksjon</a><br>
-<a href="#krav-foto-logisk-konsistens">Krav foto logisk konsistens</a><br>
-<a href="#krav-foto-rapportering-konstruksjon">Krav foto rapportering konstruksjon</a><br>
-<a href="#krav-foto-ortofoto-høydemodell">Krav foto ortofoto høydemodell</a><br>
-<a href="#krav-foto-sant-ortofoto">Krav foto sant ortofoto</a><br>
-<a href="#krav-foto-ortofotooppløsning">Krav foto ortofotooppløsning</a><br>
-<a href="#krav-foto-fremstilling-av-ortofoto">Krav foto fremstilling av ortofoto</a><br>
-<a href="#krav-foto-ortofotomosaikk">Krav foto ortofotomosaikk</a><br>
-<a href="#krav-foto-rapportering-ortofoto">Krav foto rapportering ortofoto</a><br>
-<a href="#krav-foto-drone-ortofoto-uten-rtk">Krav foto droneortofoto uten RTK-drone</a><br>
-<a href="#krav-foto-drone-ortofoto-med-rtk">Krav foto droneortofoto med RTK-drone</a><br>
-<a href="#krav-foto-hoydemodell-drone">Krav foto høydemodell drone</a><br>
-<a href="#krav-foto-vektorisering-fra-modell">Krav vektorisering fra modell fra dronebilder</a><br>
-<a href="#krav-foto-kartkonstruksjon-i-stereo-fra-dronebilder">Krav foto kartkonstruksjon i stereo fra dronebilder</a><br>
-<a href="#krav-foto-dronekamera">Krav foto dronekamera</a><br>
-<a href="#krav-foto-gnss-ins-i-drone">Krav foto GNSS/INS i drone</a><br>
-<a href="#krav-foto-signalering-i-droneprosjekt">Krav foto signalering i droneprosjekt</a><br>
-<a href="#krav-foto-flyplan-i-droneprosjekt">Krav foto flyplan i droneprosjekt</a><br>
-<a href="#krav-foto-flyfotografering-i-droneprosjekt">Krav foto flyfotografering i droneprosjekt</a><br>
-<a href="#krav-foto-minimum-skrabilder">Krav foto skråbilder kvalitetsnivå minimum</a><br>
-<a href="#krav-foto-lav-skrabilder">Krav foto skråbilder kvalitetsnivå lav</a><br>
-<a href="#krav-foto-middels-skrabilder">Krav foto skråbilder kvalitetsnivå middels</a><br>
-<a href="#krav-foto-hoy-skrabilder">Krav foto skråbilder kvalitetsnivå høy</a><br>
-<a href="#krav-laser-referanserammer-transformasjoner">[krav-laser-referanserammer-transformasjoner]</a><br>
-<a href="#krav-laser-leverandørkalibrering">Krav laser leverandørkalibrering</a><br>
-<a href="#krav-laser-installasjonskalibrering">Krav laser installasjonskalibrering</a><br>
-<a href="#krav-laser-daglig-kalibrering">Krav laser daglig kalibrering</a><br>
-<a href="#krav-laser-flyplan-laserskanning">Krav laser flyplan laserskanning</a><br>
-<a href="#krav-laser-opplysninger-om-skanneparametre">Krav laser opplysninger om skanneparametre</a><br>
-<a href="#krav-laser-tverrstriper">Krav laser tverrstriper</a><br>
-<a href="#krav-laser-kontrollflater-antall-og-plassering">Krav laser kontrollflater - antall og plassering</a><br>
-<a href="#krav-laser-kontrollflater-form-og-storrelse">Krav laser kontrollflater - form og størrelse</a><br>
-<a href="#krav-laser-kontrollflater-hjulspormetoden">Krav laser kontrollflater - hjulspormetoden</a><br>
-<a href="#krav-laser-kontrollflater-noyaktighet">Krav laser kontrollflater - nøyaktighet</a><br>
-<a href="#krav-laser-kontrollprofiler">Krav laser kontrollprofiler</a><br>
-<a href="#krav-laser-kontrollprofiler-antall-og-plassering">Krav laser kontrollprofiler - antall og plassering</a><br>
-<a href="#krav-laser-kontrollprofiler-form-og-storrelse">Krav laser kontrollprofiler - form og størrelse</a><br>
-<a href="#krav-laser-kontrollprofiler-noyaktighet">Krav laser kontrollprofiler - nøyaktighet</a><br>
-<a href="#krav-laser-utforing-av-laserskanning">Krav laser utføring av laserskanning</a><br>
-<a href="#krav-laser-dokumentasjon-pa-daglig-kalibrering">Krav laser dokumentasjon på daglig kalibrering</a><br>
-<a href="#krav-laser-dokumentasjon-pa-stripejustering">Krav laser dokumentasjon på stripejustering</a><br>
-<a href="#krav-laser-hoydekontroll">Krav laser høydekontroll</a><br>
-<a href="#krav-laser-dokumentasjon-pa-hoydekontroll">Krav laser dokumentasjon på høydekontroll</a><br>
-<a href="#krav-laser-grunnrisskontroll">Krav laser grunnrisskontroll</a><br>
-<a href="#krav-laser-dokumentasjon-pa-grunnrisskontroll">Krav laser dokumentasjon på grunnrisskontroll</a><br>
-<a href="#krav-laser-kontroll-av-punktsky">Krav laser kontroll av punktsky</a><br>
-<a href="#krav-laser-dokumentasjon-pa-kontroll-av-punktsky">Krav laser dokumentasjon på kontroll av punktsky</a><br>
-<a href="#krav-laser-klassifisering">Krav laser klassifisering</a><br>
-<a href="#krav-laser-rapportering-laserskanning">Krav laser rapportering laserskanning</a><br>
-<a href="#krav-mobil-referanserammer-transformasjoner">[krav-mobil-referanserammer-transformasjoner]</a><br>
-<a href="#krav-mobil-kvalitetselement">Krav mobil kvalitetselement</a><br>
-<a href="#krav-mobil-stedfestingsnøyaktighet-ved-mobil-datafangst">Krav mobil stedfestingsnøyaktighet ved mobil datafangst</a><br>
-<a href="#krav-mobil-kjentpunkt-og-kontrollpunkt">Krav mobil kjentpunkt og kontrollpunkt</a><br>
-<a href="#krav-mobil-dokumentasjon-av-mobil-datafangst">Krav mobil dokumentasjon av mobil datafangst</a><br>
-<a href="#krav-vektor-geometrisk-avvik-og-tverravvik-pilhøyde">Krav vektor geometrisk avvik og tverravvik/pilhøyde</a><br>
-<a href="#krav-vektor-fullstendighet">Krav vektor fullstendighet</a><br>
-<a href="#krav-arkiv-arkivering">Krav arkiv arkivering av analogt og digitalt materiale</a><br>
-<a href="#krav-arkiv-sikring">Krav arkiv sikring</a><br>
-<a href="#krav-arkiv-historisk-lagring">Krav arkiv historisk lagring</a><br>
-<a href="#krav-arkiv-sikkerhetsgradert-materiale">Krav arkiv sikkerhetsgradert materiale</a><br>
-<a href="#krav-arkiv-fil-og-digitale-opptak">Krav arkiv film og digitale opptak</a><br>
-<a href="#krav-arkiv-kartmateriale-og-geodata">Krav arkiv kartmateriale og geodata</a><br>
-<a href="#krav-arkiv-måledata-og-beregninger">Krav arkiv måledata og beregninger</a><br></p>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="kapittel-vedlegg-e-liste-over-anbefalinger">Vedlegg D: Liste over anbefalinger</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><a href="#anbefaling-foto-signalstørrelser">Anbefaling foto signalstørrelser</a><br>
-<a href="#anbefaling-foto-drone-ortofoto-med-rtk">Anbefaling foto droneortofoto med RTK-drone</a><br>
-<a href="#anbefaling-foto-drone-kartkonstruksjon-i-stereo">Anbefaling foto kartkonstruksjon i stereo fra dronebilder</a><br>
-<a href="#anbefaling-foto-signalering-i-droneprosjekter">Anbefaling foto signalering i droneprosjekter</a><br>
-<a href="#anbefaling-foto-drone-detaljerte-prosjekter">Anbefaling foto flyplan i droneprosjekter</a><br>
-<a href="#anbefaling-foto-skråbilder-minimum">Anbefaling foto skråbilder kvalitetsnivå minimum</a><br>
-<a href="#anbefaling-laser-tverrstriper">Anbefaling laser tverrstriper</a><br>
-<a href="#anbefaling-laser-utforing-av-laserskanning">Anbefaling laser utføring av laserskanning</a><br>
-<a href="#anbefaling-mobil-fargelegging-av-punktsky">Anbefaling mobil fargelegging av punktsky</a><br></p>
-</div>
-<div style="page-break-after: always;"></div>
 <h2 id="_lisensvilkår" class="discrete">Lisensvilkår</h2>
 <h3 id="_lisens" class="discrete">Lisens</h3>
 <div class="paragraph">
@@ -9656,9 +9526,10 @@ av denne lisensen og ikke kan viderebrukes</p>
 </div>
 </div>
 </div>
+</div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-10-13 14:01:21 +0200
+Last updated 2026-10-13 15:34:18 +0200
 </div>
 </div>
 <script type="text/x-mathjax-config">
