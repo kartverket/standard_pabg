@@ -17,7 +17,7 @@ Krav til produkt og leveranser spesifiseres i nyeste versjon av Produktspesifika
 [cols="20%,80%"]
 |===
 |Kravklasse|Kartlegging med flybåren laserskanning
-|Krav |<<krav-landmaling-referanserammer-transformasjoner>>
+|Avhengighet |xref:tab-kravklasse-referanseramme-og-transformasjoner[xrefstyle=basic]
 |Krav |<<krav-laser-leverandørkalibrering>> +
 |Krav |<<krav-laser-installasjonskalibrering>> +
 |Krav |<<krav-laser-daglig-kalibrering>> +

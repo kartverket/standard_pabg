@@ -39,6 +39,18 @@ Satellittbasert måling baseres på ulike typer utstyr og satellittsystemer. Må
 ===== Sanntidsmåling
 Den mest aktuelle metoden for posisjonsbestemmelse i sanntid er Real Time Kinematic (RTK). I RTK overføres korreksjonsdata til satellittmottakeren (roveren) fra en referansestasjon i et kjent punkt. En variant av RTK er nettverks-RTK hvor korreksjonsdataene kommer fra en virtuell referansestasjon (VRS), beregnet fra et nett av faste stasjoner og overføres til satellittmottakeren fra et sentralt kontrollsenter. Både private firma og Kartverket tilbyr sanntidstjenester basert på nettverks-RTK. 
 
+[[tab-kravklasse-sanntidsmåling-GNSS]]
+.Kravklasse innmåling med sanntidsmåling
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse|Innmåling med sanntidsmåling
+|Avhengighet |xref:tab-kravklasse-referanseramme-og-transformasjoner[xrefstyle=basic]
+|Avhengighet |xref:tab-kravklasse-instrumentdokumentsjon[xrefstyle=basic]
+|Avhengighet |xref:tab-kravklasse-egenkontroll-og-rapportering-geodetisk-kartlegging[xrefstyle=basic]
+|Krav |<<krav-landmaling-sanntidsmaling>>
+|===
+
 ====
 [#krav-landmaling-sanntidsmaling,reftext="Krav landmåling sanntidsmåling"]
 *KRAV LANDMÅLING SANNTIDSMÅLING*
@@ -71,6 +83,18 @@ Stasjonspunkter kan være et fastmerke eller et punkt som bestemmes med kontroll
 	
 Stasjonspunkter og orienteringspunkter skal fortrinnsvis være fastmerker i Stamnettet, Landsnettet eller det kommunale nettet (gjelder for kommuner), eller egenetablerte fastmerker etablert med GNSS med tilstrekkelig kvalitet. Slike punkter dokumenteres ved beregning av ytre pålitelighet i programvare som håndterer dette. Påliteligheten skal tilfredsstille de krav som stilles i standarden Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt <<GG>> for den aktuelle områdetypen.
 
+[[tab-kravklasse-totalstasjon]]
+.Kravklasse innmåling med totalstasjon
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse|Innmåling med totalstasjon
+|Avhengighet |xref:tab-kravklasse-referanseramme-og-transformasjoner[xrefstyle=basic]
+|Avhengighet |xref:tab-kravklasse-instrumentdokumentsjon[xrefstyle=basic]
+|Avhengighet |xref:tab-kravklasse-egenkontroll-og-rapportering-geodetisk-kartlegging[xrefstyle=basic]
+|Krav |<<krav-landmaling-innmaling-med-totalstasjon>>
+|===
+
 ====
 [#krav-landmaling-innmaling-med-totalstasjon,reftext="Krav landmåling innmåling med totalstasjon"]
 *KRAV LANDMÅLING INNMÅLING MED TOTALSTASJON*
@@ -100,6 +124,16 @@ Aktuelle dokumenter:
 
 ////
 
+
+[[tab-kravklasse-instrumentdokumentsjon]]
+.Kravklasse instrumentdokumentsjon
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse|Instrumentdokumentsjon
+|Krav |<<krav-landmaling-instrumentdokumentasjon>>
+|===
+
 ====
 [#krav-landmaling-instrumentdokumentasjon,reftext="Krav landmåling instrumentdokumentasjon"]
 *KRAV LANDMÅLING INSTRUMENTDOKUMENTASJON*
@@ -117,6 +151,15 @@ Oppdragstaker er ansvarlig for at valg av måleopplegg, programvare og beregning
 
 === Egenkontroll og rapportering geodetisk kartlegging
 Det skal leveres en rapport for den geodetiske kartleggingen, med leveransene som vedlegg til rapporten. Generelt gjelder at alle resultat fra beregninger skal vurderes og kommenteres. Eventuelle problemer i prosjektet skal omtales spesielt. Rapporten er en del av leveransen og skal leveres samtidig med det produktet som rapporten omhandler. 
+
+[[tab-kravklasse-egenkontroll-og-rapportering-geodetisk-kartlegging]]
+.Kravklasse egenkontroll og rapportering geodetisk kartlegging
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse|Egenkontroll og rapportering geodetisk kartlegging
+|Krav |<<krav-landmaling-rapportering-geodetisk-kartlegging>>
+|===
 
 :xrefstyle: short
 
