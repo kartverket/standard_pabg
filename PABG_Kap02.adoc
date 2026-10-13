@@ -1,6 +1,6 @@
 == Omfang
 
-Hensikten med standarden Produksjon av basis geodata, er å bidra til høy kvalitet på basis geodata. 
+Standarden spesifiserer generelle kvalitetskrav for produksjon og dokumentasjon av basis geodata på land. Beskrevne datafangstmetoder er geodetiske metoder (landmåling, fotogrammetri og laserskanning). 
 
 Standarden er:
 
@@ -16,9 +16,3 @@ Standarden omfatter ikke:
 ** Hvordan produktene skal kontrolleres. Dette er beskrevet i standarden Geodatakvalitet <<GK>>.
 
 ** Innmåling av eiendomsgrenser (matrikkelenhetsgrenser) og ledninger behandles ikke i denne standarden. I stedet vises det til standardene https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/stedfesting-av-matrikkelenhets-og-råderettsgrenser/[Stedfesting av matrikkelenhets- og råderettsgrenser], https://standarder.geonorge.no/sosi/standarder-geografisk-informasjon/norm-for-ledningskart/2.0/norm-for-ledningskart-20-standarder-geografisk-informasjon.pdf/[Norm for ledningskart] og https://standarder.geonorge.no/sosi/standarder-geografisk-informasjon/norm-for-va-ledningskartverk/2.0/norm-for-va-ledningskartverk-20-standarder-geografisk-informasjon.pdf/[Norm for VA-ledningskartverk].
-
-
-
-Standarden spesifiserer generelle kvalitetskrav for produksjon og dokumentasjon av basis geodata på land. Beskrevne datafangstmetoder er geodetiske metoder (landmåling), fotogrammetri og laserskanning.
-
-Standarden Produksjon av basis geodata kan nyttes som referansedokument ved inngåelse av avtaler om produksjon av basis geodata. I det enkelte prosjekt kan det avtales avvikende krav fra denne standarden, disse vil da være gjeldende for prosjektet.
