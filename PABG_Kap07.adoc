@@ -324,7 +324,7 @@ Som et alternativ til innmåling av tradisjonelle kontrollflater, kan hjulsporme
 ====
 
 [#krav-laser-kontrollflater-hjulspormetoden,reftext="Krav laser kontrollflater - hjulspormetoden"]
-*KRAV LASER KONTROLLFLATER - HJULSPORMETODEN*
+*KRAV LASER KONTROLL - HJULSPORMETODEN*
 
 * Svake posisjonsløsninger skal utelates. Nøyaktighet til målingene skal følge <<krav-laser-kontrollflater-noyaktighet>>.
 *  Måleutstyret skal kalibreres for hver installasjon. Dokumentasjon for kalibrering skal leveres sammen med kontrollflaten.
@@ -351,7 +351,7 @@ Som et alternativ til innmåling av tradisjonelle kontrollflater, kan hjulsporme
 .Figuren viser bruken av kontrollflater som kontrollmetode: Grønn sirkel med 6 km radius angir kontrollflatenes gyldighetsområde.
 [#imgKontrollflateGyldighet]
 //[caption="Figure 8:"]
-image::figurer/Kap7_KontrollflateGyldighet.png["Kontrollflate gyldighet",400,align="center"]
+image::figurer/Kap7_KontrollflateGyldighet skravert.png["Kontrollflate gyldighet",400,align="center"]
 
 
 .Figuren viser hjulspormetoden som kontrollmetode: Grønn skravering angir hjulsporets gyldighetsområde (6 km buffersone), grønt kryss viser plaseringen av kontrollflaten som kontrollerer hjulsporet.
