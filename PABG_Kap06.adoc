@@ -1250,13 +1250,8 @@ Dette kapittelet inneholder generelle krav og anbefalinger til produksjon av ort
 |===
 
 
-<<<<<<< Updated upstream
-[[tab-kravklasse-santortofoto]]
-.Kravklasse santortofoto
-=======
 [[tab-kravklasse-sant-ortofoto]]
 .Kravklasse sant ortofoto
->>>>>>> Stashed changes
 [cols="2*",options="header"]
 [cols="20%,80%"]
 |===
