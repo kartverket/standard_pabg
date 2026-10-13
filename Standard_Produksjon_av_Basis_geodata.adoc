@@ -80,7 +80,7 @@ Denne standarden er utarbeidet for å gi en oversikt over aktuell teknologi for 
 
 Standarden er bygd modulært opp i ulike kapitler, hvor hvert kapittel beskriver krav til produksjonsprosess, dokumentasjon og rapportering til ulike dataprodukter, som landmåling, flyfoto, laserskanning, mobil datafangst og vektorisering fra modell. Kravene til hvert dataprodukt er angitt i dataproduktets kapittel.
  
-For å gjøre det lettere å identifisere kravene og anbefalingene er disse uthevet og navngitt. Liste over krav finnes i <<kapittel-vedlegg-d-liste-over-krav>> og liste over anbefalinger finnes i <<kapittel-vedlegg-e-liste-over-anbefalinger>>.
+For å gjøre det lettere å identifisere kravene og anbefalingene, er det laget kravklasser som presenteres i hvert produktkapittel. 
 
 Standarden kan brukes som referansedokument ved inngåelse av avtaler om produksjon av basis geodata. Dersom kravene skal avvikes må dette komme fram av avtalen.
 
@@ -280,6 +280,7 @@ include::PABG_Kap13_App2.adoc[]
 // Kap14 - Appendix - Eksempel fly og signaleringsplaner
 include::PABG_Kap14_App3.adoc[]
 
+////
 <<<
 // Kap15 - Appendix - Liste over krav
 include::PABG_Kap15_App4.adoc[]
@@ -288,6 +289,7 @@ include::PABG_Kap15_App4.adoc[]
 // Kap16 - Appendix - Liste over anbefalinger
 include::PABG_Kap16_App5.adoc[]
 
+////
 <<<
 // Kap17 - Appendix
 [discrete]
