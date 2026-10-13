@@ -872,7 +872,7 @@ Dette kapittelet angir krav og retningslinjer til aerotriangulering (AT) med blo
 *KRAV FOTO SELVKALIBRERING*
 
 * Selvkalibrering ved hjelp av tilleggsparametere er tillatt brukt etter avtale. Tilleggsparametere kan realiseres med et korreksjonsgrid.
-* Bildene skal påføres korreksjon hvis tilleggsparametere benyttes. Dette gjøres for at bildene enkelt kan brukes i andre programvarer. Unntaket er om korreksjonen innfører unøyaktigheter som er signifikante sammenlignet med ønsket nøyaktighet og kvalitet. Unntaket kan tre i kraft etter avtale med bestiller.
+* Bildene skal påføres korreksjon hvis tilleggsparametere benyttes. Dette gjøres for at bildene enkelt kan brukes i andre programvarer. Unntaket er om korreksjonen innfører unøyaktigheter som er signifikante sammenlignet med ønsket nøyaktighet og kvalitet. Unntaket kan tre i kraft etter avtale med oppdragsgiver.
 * Parameterne som brukes i selvkalibreringen skal være signifikante og unødvendige parametere skal ikke brukes.
 * Det er tillatt å fly kalibreringsflygninger av glassplaten for kamera i trykkabin, som korrigerer bilder på alle prosjekter i samme fly, glassplate og flyhøyder i samme fotosesong. Denne korreksjonen fører ikke til en ny kalibrering av kameraene, men bildene blir korrigert med glassplatekorreksjonen etter at kamerakalibreringa er påført.
 * Korreksjonsgrid skal brukes for å korrigere for avvikene hvis ikke korreksjonene er påført bildene. Hvis ikke korreksjonsgridet blir bra nok, kan det avtales å levere korreksjonene som tilleggsparametere. Format på tilleggsparameterne avtales med bestiller, slik at orienteringen kan brukes i alle relevante programvarer. Korreksjonene som blir levert som tilleggsparametere skal være på et format som kan brukes av relevante programvarer.
@@ -944,7 +944,7 @@ Det skal leveres en rapport for de utførte arbeidene, med leveransene som vedle
 [#krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringen,reftext="Krav foto kontrollmåling i DFA av aerotrianguleringrn"]
 *KRAV FOTO KONTROLLMÅLING I DFA AV AEROTRIANGULERINGEN*
 
-* Alle kjentpunkt og kontrollpunkt skal kontrollmåles i DFA i alle 60 % modeller eller den stereooverlappen leverandøren har bestemt passer best i intervallet 35 % - 65 % lengdeoverlapp, der kjentpunktet/kontrollpunktet er synlig. 
+* Alle kjentpunkt og kontrollpunkt skal kontrollmåles i DFA i alle 60 % modeller eller den stereooverlappen oppdragstaker har bestemt passer best i intervallet 35 % - 65 % lengdeoverlapp, der kjentpunktet/kontrollpunktet er synlig. 
 * Stereomodeller benyttet i målearbeidet skal beskrives. 
 ====
 
@@ -1082,7 +1082,7 @@ Produktspesifikasjonen definerer hvordan objekttypene skal registreres:
 [#krav-foto-konstruksjon,reftext="Krav foto konstruksjon"]
 *KRAV FOTO KONSTRUKSJON*
 
-* For å sikre god høydenøyaktighet skal konstruksjon gjøres i modeller som er nærmest 60 % lengdeoverlapp, eller den stereooverlappen leverandøren har bestemt passer best i intervallet 35 % - 65 % lengdeoverlapp. Avvik fra dette skal begrunnes i konstruksjonsrapporten.
+* For å sikre god høydenøyaktighet skal konstruksjon gjøres i modeller som er nærmest 60 % lengdeoverlapp, eller den stereooverlappen oppdragstaker har bestemt passer best i intervallet 35 % - 65 % lengdeoverlapp. Avvik fra dette skal begrunnes i konstruksjonsrapporten.
 * Før konstruksjonen starter skal det kontrolleres at bildeorienteringen for hele prosjektet er korrekt implementert. Dette gjøres ved at alle kjentpunkter måles og kontrolleres mot gitte koordinater. Kontrollen skal utføres på alle DFA-er som skal benyttes.
 * Under konstruksjon skal det kontrolleres for y-parallakse og for avvik mellom stereomodeller. Kjentpunkter skal oppsøkes i alle modeller de er synlige og koordinater for disse skal avleses og kontrolleres mot gitte koordinater. Ved unormale avvik skal implementeringen av bildeorienteringen utføres og kontrolleres på nytt. Dersom tilsvarende kontroll er utført under aerotriangulering i samme programvare som blir benyttet under konstruksjon kan kontrollen utelates.
 * Dersom det er brukt tilleggsparametere i forutgående AT/blokkutjevning skal det verifiseres at aktuell DFA kan påføre korresponderende korreksjoner under konstruksjonen.
