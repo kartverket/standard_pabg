@@ -26,7 +26,7 @@ Kart og geodata (herunder flybilder (originaler, kopier og digitale opptak), kar
 Av standarder og veiledere kan spesielt nevnes:
 
 * Bevaringsforskrifta <<BF>> og arkivforskrifta <<AF>> av 01.01.2026 spesifiserer kravene til langtidsbevaring i offentlig forvaltning.
-* Miljøverndepartementets veileder "Det offentlige kartgrunnlaget" som beskriver
+* Kommunal- og distriktsdepartementets  https://www.regjeringen.no/contentassets/44bc900da8a744a39f33ee0bf077b09a/veileder_kartforskriften_2025.[Veileder til forskrift om kart, stedfestet informasjon, arealformål og digitalt planregister] som beskriver
 etablering og drift av kommunens kartgrunnlag i henhold til kapittelet om kartverk i de tekniske forskriftene til plan- og bygningsloven.
 
 ==== Arkivering
