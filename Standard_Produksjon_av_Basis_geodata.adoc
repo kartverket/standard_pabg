@@ -115,8 +115,8 @@ Revisjon av standarden til versjon 3.0 ble startet i 2025.
 [[kapittel-endringer-versjon2-til-3]]
 ==== Endringer fra versjon 2 til versjon 3
 
-Hele standarden er gjennomgått og det er utført språkvask, formateringsforbedringer og presiseringer der tidligere krav var utydelige i hele standarden. Alle krav er flyttet til kravbokser og alle anbefalinger er flyttet inn i anbefalingsbokser.
-Det er lagt til 2 nye kapitler (8 og 9) og Vedlegg A Solhøydetabell er fjernet.
+Hele standarden er gjennomgått og det er utført språkvask, formateringsforbedringer og presiseringer der tidligere krav ikke var normativt utformet. Alle krav er flyttet til kravbokser og alle anbefalinger er flyttet inn i anbefalingsbokser.
+Det er lagt til 3 nye kapitler (8, 9 og 12). Vedlegg A Solhøydetabell og Vedlegg D Liste over krav, er fjernet.
 
 
 *Kapittel 3* +
