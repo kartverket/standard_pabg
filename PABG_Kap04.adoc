@@ -13,7 +13,7 @@ _MERKNAD 2_: Oppgradering til nyere og bedre standard defineres som noe annet en
 .avvik
 Forskjell fra sann verdi, fra det man antar er den sanne verdi, eller forskjellen mellom to målte verdier for samme størrelse. +
 _Kilde_: <<GK>> +
-_MERKNAD 1_: Innen standardisering defineres vanligvis avvik som mangel på oppfyllelse av et krav [NS-ISO 9000:2015]. +
+_MERKNAD 1_: Innen standardisering defineres vanligvis avvik som mangel på oppfyllelse av et krav <<NS-EN ISO 9000>> . +
 _MERKNAD 2_: Avvik er vanlig. Som oftest er de små og skyldes de vanlige målevariasjonene. Men et lite antall av dem kan være store, og noen kan utgjøre grove feil som bør grovfeil-/avviksbehandles. +
 _MERKNAD 3_: Se definisjonen av grov feil, sant avvik, standardavvik, systematisk avvik, tilfeldig avvik og tilfeldig variasjon. +
 _MERKNAD 4_: Det man antar er den sanne verdi, er svært ofte den utjevnede verdi.
@@ -180,7 +180,7 @@ _MERKNAD 2_: I dag er Landsnettet en samlebetegnelse på både Stamnettet, det o
 _MERKNAD 3_: Kartverkets trekantpunkt er ikke en del av Landsnettet.
 
 .laserskudd
-Laserskanneren (LiDAR) avfyrer hurtige skudd, eller pulser. En enkelt puls refereres til som et laserskudd.
+Laserskanneren (LIDAR) avfyrer hurtige skudd, eller pulser. En enkelt puls refereres til som et laserskudd.
 
 .laserkjegle
 Laserlysets tredimensjonale avtrykk mellom laserinstrument og bakken. Kjegleformet grunnet divergens.
@@ -289,9 +289,11 @@ _MERKNAD_: Pålitelighet bestemmes i egne pålitelighetsanalyser. Beregnet ytre 
 === Forkortelser
 *AT*: Aerotriangulering
 
-*CPOS*: CentimeterPOSisjonering
-
 *DGNSS*: Differensiell Global Navigation Satellite System
+
+*EPSG*: European Petroleum Survey Group
+
+*EUREF89*: European Reference Frame 1989
 
 *FKB*: Felles KartdataBase <<FKB>>
 
@@ -301,11 +303,15 @@ _MERKNAD_: Pålitelighet bestemmes i egne pålitelighetsanalyser. Beregnet ytre 
 
 *GSD*: Ground Sample Distance
 
+*HREF*: Høydereferansemodell
+
 *IMU*: Inertial Measurement Unit
 
 *INS*: Inertial Navigation System
 
 *ISO*: International Organization for Standardization. Organisasjonen som utgir internasjonale standarder
+
+*ITRF*: International Terrestrial Reference Frame
 
 *LIDAR*: LIght Detection And Ranging. Betegner et prinsipp for avstandsmålingen
 
@@ -319,11 +325,13 @@ _MERKNAD_: Pålitelighet bestemmes i egne pålitelighetsanalyser. Beregnet ytre 
 
 *PPP*: Precise Point Positioning
 
+*RMSE*: Root Mean Square Error
+
 *RTK*: Real Time Kinematic
 
 *SOSI*: Samordnet Opplegg for Stedfestet Informasjon
 
-*UTM*: Universal Transverse Mercator
+*VRS*: Virtuell referansestasjon
 
 *WGS84*: World Geodetic System 1984
 
