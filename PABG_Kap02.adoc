@@ -9,8 +9,8 @@ Krav og anbefalingene i denne standarden utfylles med beskrivelser av metoder fo
 
 Standarden omfatter ikke:
 
-** Krav til kvalitet på produktene. Dette er beskrevet i produktspesifikasjonene for det enkelte produkt, for eksempel https://sosi.geonorge.no/produktspesifikasjoner/FKB-Bygning/[FKB-Bygning 5.1.1]. 
+** Krav til kvalitet på produktene. Dette er beskrevet i produktspesifikasjonene for det enkelte produkt, for eksempel FKB-Bygning 5.1.1. 
 
 ** Hvordan produktene skal kontrolleres. Dette er beskrevet i standarden Geodatakvalitet <<GK>>.
 
-** Innmåling av eiendomsgrenser (matrikkelenhetsgrenser) og ledninger behandles ikke i denne standarden. I stedet vises det til standardene https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/stedfesting-av-matrikkelenhets-og-råderettsgrenser/[Stedfesting av matrikkelenhets- og råderettsgrenser], https://standarder.geonorge.no/sosi/standarder-geografisk-informasjon/norm-for-ledningskart/2.0/norm-for-ledningskart-20-standarder-geografisk-informasjon.pdf/[Norm for ledningskart] og https://standarder.geonorge.no/sosi/standarder-geografisk-informasjon/norm-for-va-ledningskartverk/2.0/norm-for-va-ledningskartverk-20-standarder-geografisk-informasjon.pdf/[Norm for VA-ledningskartverk].
+** Innmåling av eiendomsgrenser (matrikkelenhetsgrenser) og ledninger behandles ikke i denne standarden. I stedet vises det til standardene Stedfesting av matrikkelenhets- og råderettsgrenser, Norm for ledningskart og Norm for VA-ledningskartverk.
