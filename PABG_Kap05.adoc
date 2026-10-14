@@ -99,7 +99,7 @@ Stasjonspunkter og orienteringspunkter skal fortrinnsvis være fastmerker i Stam
 [#krav-landmaling-innmaling-med-totalstasjon,reftext="Krav landmåling innmåling med totalstasjon"]
 *KRAV LANDMÅLING INNMÅLING MED TOTALSTASJON*
 
-For å sikre seg så godt som mulig mot grove feil skal det settes krav til innmålingen av objekter: 
+For å sikre seg så godt som mulig mot grove feil, skal det settes krav til innmålingen av objekter: 
 
 * Det skal leses av mot samme orienteringspunkt først og sist i oppstillingen. +
 * Det skal om mulig benyttes minst to orienteringssikt i hver oppstilling. +
