@@ -60,4 +60,4 @@ https://www.luftfartstilsynet.no/[Luftfartstilsynet] - setter krav om operative 
 *[PV]*: https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/vertikalbilde[Produktspesifikasjon Vertikalbilde]
 
 [#Batymetri]
-*[Batymetri]*: https://github.com/kartverket/ALB_Best_Practice_Manual[Airborne LiDAR Bathymetry - Best Practice Manual]
+*[Batymetri]*: https://github.com/kartverket/ALB_Best_Practice_Manual[Airborne LIDAR Bathymetry - Best Practice Manual]
