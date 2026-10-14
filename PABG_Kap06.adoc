@@ -5,15 +5,15 @@
 
 Dette kapittelet angir krav og retningslinjer for følgende arbeider:
 
-* Fremstilling av grunnlaget for fotogrammetrisk kartlegging; herunder fly- og signalplanlegging, kalibrering og vedlikehold av kamera og instrumenter, signalering, flyfotografering og aerotriangulering.
-* Fremstilling av produkter ved hjelp av fotogrammetri; herunder kartkonstruksjon, bildematching for høydemodellering og ortofotoproduksjon.
+* Fremstilling av grunnlaget for fotogrammetrisk kartlegging; herunder fly- og signalplanlegging, kalibrering og vedlikehold av kamera og instrumenter, signalering, flyfotografering og aerotriangulering
+* Fremstilling av produkter ved hjelp av fotogrammetri; herunder kartkonstruksjon, bildematching for høydemodellering og ortofotoproduksjon
 
 Kapittelet avgrenses til å gjelde følgende:
 
-* Bruk av digitale flybildekamera.
-* Bruk av GNSS/INS-støttet fotografering.
-* Bruk av digital fotogrammetrisk arbeidsstasjon / ren programvarebasert produktfremstilling.
-* Fremstilling av datasett definert i <<FKB>> og <<POF>>.
+* Bruk av digitale flybildekamera
+* Bruk av GNSS/INS-støttet fotografering
+* Bruk av digital fotogrammetrisk arbeidsstasjon / ren programvarebasert produktfremstilling
+* Fremstilling av datasett definert i <<FKB>> og <<POF>>
 
 
 [[tab-kravklasse-fotogrammetri]]
