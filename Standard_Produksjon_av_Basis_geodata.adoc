@@ -169,10 +169,7 @@ Vedlegg B i 2.0 versjonen er flyttet til <<kapittel-vedlegg-b-informativt-valg-a
 Vedlegg C i 2.0 versjonen er flyttet til <<kapittel-vedlegg-c-eksempel-fly-og-signaleringsplaner>>.
 
 *Vedlegg C* +
-Vedlegg D i 2.0 versjonen er flyttet til <<kapittel-vedlegg-d-liste-over-krav>>.
-
-*Vedlegg D* +
-Nytt vedlegg med liste over anbefalinger: <<kapittel-vedlegg-e-liste-over-anbefalinger>>
+Vedlegg D i 2.0 versjonen er fjernet og erstattet av kravklasser i kapitlene
 
 
 ==== Endringer fra versjon 1 til versjon 2
@@ -181,7 +178,7 @@ Nytt vedlegg med liste over anbefalinger: <<kapittel-vedlegg-e-liste-over-anbefa
 Ryddet i henvisning til normative standarder.
 
 *Kapittel 4* +
-Oppdatert lenker til standarder, omtalt at noen standarder er på vei til å erstattes av en ny geodesistandard. +
+Fjernet kapittel 4.1 i 2.0-versjonen. Oppdatert lenker til standarder, omtalt at noen standarder er på vei til å erstattes av en ny geodesistandard. +
 Presisert noen definisjoner.
 
 *Kapittel 5* +
