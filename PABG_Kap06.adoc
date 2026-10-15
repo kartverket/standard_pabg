@@ -23,6 +23,7 @@ Kapittelet avgrenses til å gjelde følgende:
 |===
 |Kravklasse|Kartlegging med fotogrammetri
 |Avhengighet |xref:tab-kravklasse-referanseramme-og-transformasjoner[xrefstyle=basic]
+|Avhengighet |xref:tab-kravklasse-aerotrinagulering[xrefstyle=basic]
 |Krav |<<krav-foto-flyplanlegging>> +
 |Krav |<<krav-foto-kjentpunktnoyaktighet>> +
 |Krav |<<krav-foto-kjentpunkt-antall-og-plassering>> +
@@ -151,6 +152,8 @@ En bildeblokk er en blokk med sammenhengende flybilder. Det er tillatt å fly ov
 For å sikre best mulig bildeorientering og redusere behovet for kjentpunkter, skal delområder i rimelig nærhet av hverandre forbindes ved at flystripene forlenges.
 |Innsyn og sammenbinding|Flystripene skal plasseres, og overlappen skal eventuelt økes, slik at det sikres best mulig innsyn i alle områder og god bilde- og stripesammenbinding i områder med mye vann.
 |Sideoverlapp|Sideoverlappen skal i gjennomsnitt ikke være mindre enn avtalt verdi. På høyeste punkt mellom stripene kan det planlegges ned til 5 % sideoverlapp. Lengre strekk med slik marginal sideoverlapp skal ikke forekomme.
+
+Utenfor prosjektområdet er det tillatt å ha ingen sideoverlapp på parallelle flystriper, men sammenbindingen skal være god nok i resten av prosjektet. 
 |Lengdeoverlapp|Lengdeoverlappen skal være avtalt verdi overalt i fotograferingsområdet. Det tillates kortere avvik +/- 5 prosentpoeng, som eksempel ved bestilt 80 % overlapp tillates det inntil 75 % eller 85 % overlapp over kortere strekninger.
 |Stereodekning på utsiden av prosjektområdet|For å sikre god stereodekning i hele prosjektområdet skal flystripene forlenges slik at det alltid tas ekstra bilder utenfor avtalt prosjektområde ved flystripestart og flystripeslutt, slik at det er minst en full 60 % stereomodell ut over prosjektområdet. Normalt vil dette utgjøre 3-4 bilder. Det er ikke krav om en slik buffersone ut i vannområder. På langs av fotoretning skal stereodekning på utsiden av prosjektområdet dekke tilsvarende bestilt sideoverlapp. Ved fotografering av enkeltstriper settes krav til stereodekning på utsiden av prosjektområdet til minimum 10 % av stripebredden.
 |Overlapp kryssende striper|I bildeblokker med flere striperetninger skal striper med kryssende retning ha stereodekning over hele bredden til kryssende flystripe.
@@ -580,6 +583,15 @@ Ved beregning av GNSS/INS-dataene står oppdragstager fritt til å velge egnet b
 
 Beregningsarbeidet leder fram til en fil med ytreorienteringselementer for hvert bilde, i det koordinat- og høydesystem som er spesifisert av oppdragsgiver. Ytre orienteringsparameterne skal referere seg til kameraets projeksjonssenter.
 
+[[tab-kravklasse-samtidig-georeferering]]
+.Kravklasse samtidig georeferering
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse|Samtidig-georeferering
+|Krav |<<krav-foto-samtidig-georeferering>> +
+|===
+
 Ved avtale er det tillatt å bruke flere sensorer (GNSS, IMU og AT) enn det som er definert i dette kapittelet i posisjon- og orienteringsbestemmelse av flybildene. 
 
 ====
@@ -933,13 +945,12 @@ Det skal leveres en rapport for de utførte arbeidene, med leveransene som vedle
 [cols="20%,80%"]
 |===
 |Kravklasse|Egenkontroll og rapportering aerotriangulering
-|Avhengighet |xref:tab-kravklasse-fotogrammetri[xrefstyle=basic]
 |Krav |<<krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringen>> +
 |Krav |<<krav-foto-rapportering-aerotriangulering>> +
 |===
 
 ====
-[#krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringen,reftext="Krav foto kontrollmåling i DFA av aerotrianguleringrn"]
+[#krav-foto-kontrollmaling-i-dfa-av-aerotrianguleringen,reftext="Krav foto kontrollmåling i DFA av aerotriangulering"]
 *KRAV FOTO KONTROLLMÅLING I DFA AV AEROTRIANGULERINGEN*
 
 * Alle kjentpunkt og kontrollpunkt skal kontrollmåles i DFA i alle 60 % modeller eller den stereooverlappen oppdragstaker har bestemt passer best i intervallet 35 % - 65 % lengdeoverlapp, der kjentpunktet/kontrollpunktet er synlig. 
@@ -1242,10 +1253,20 @@ Dette kapittelet inneholder generelle krav og anbefalinger til produksjon av ort
 [cols="20%,80%"]
 |===
 |Kravklasse|Ortofoto
-|Avhengighet |xref:tab-kravklasse-fotogrammetri[xrefstyle=basic]
+|Avhengighet a|Kan lages av en av disse kravklassene: 
+
+* xref:tab-kravklasse-fotogrammetri[xrefstyle=basic]
+* xref:tab-kravklasse-drone-GNSS-uten-RTK[xrefstyle=basic]
+* xref:tab-kravklasse-drone-GNSS-med-RTK[xrefstyle=basic]
+* xref:tab-kravklasse-drone-hoydemodell[xrefstyle=basic]
+* xref:tab-kravklassedrone-drone-vektorisering-fra-modell[xrefstyle=basic]
+* xref:tab-kravklassedrone-drone-konstruksjon[xrefstyle=basic]
+* xref:tab-kravklasse-drone-detaljert-kartlegging-med-kamera[xrefstyle=basic]
+* xref:tab-kravklassedrone-skrabilder-lav[xrefstyle=basic]
+* xref:tab-kravklassedrone-skrabilder-middels[xrefstyle=basic]
+* xref:tab-kravklassedrone-skrabilder-hoy[xrefstyle=basic]
 |Avhengighet |xref:tab-kravklasse-ortofotorapport[xrefstyle=basic] +
 |Krav |<<krav-foto-ortofoto-høydemodell>> +
-|Krav |<<krav-foto-sant-ortofoto>> +
 |Krav |<<krav-foto-ortofotooppløsning>> +
 |Krav |<<krav-foto-fremstilling-av-ortofoto>> +
 |Krav |<<krav-foto-ortofotomosaikk>> +
@@ -1260,6 +1281,17 @@ Dette kapittelet inneholder generelle krav og anbefalinger til produksjon av ort
 |Kravklasse |Sant ortofoto
 |Avhengighet |xref:tab-kravklasse-ortofoto[xrefstyle=basic] +
 |Krav |<<krav-foto-sant-ortofoto>> +
+|===
+
+
+[[tab-kravklasse-3D-ortofoto]]
+.Kravklasse 3D ortofoto
+[cols="2*",options="header"]
+[cols="20%,80%"]
+|===
+|Kravklasse |3D ortofoto
+|Avhengighet |xref:tab-kravklasse-ortofoto[xrefstyle=basic] +
+|Krav |<<krav-foto-3D-ortofoto>> +
 |===
 
 ==== Grunnlag
