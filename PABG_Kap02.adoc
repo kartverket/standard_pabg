@@ -2,15 +2,15 @@
 
 Standarden er:
 
-** Et verktøy for oppdragsgivere for å sette krav og anbefalinger for metodikk og resultat ved oppdrag
-** Et verktøy for oppdragstakere for å sikre at krav blir oppfylt. 
+* Et verktøy for oppdragsgivere for å sette krav og anbefalinger for metodikk og resultat ved oppdrag.
+* Et verktøy for oppdragstakere for å sikre at krav blir oppfylt. 
 
 Krav og anbefalingene i denne standarden utfylles med beskrivelser av metoder for produksjon av basis geodata, hvilken kvalitet som forventes ved ulike produksjonsmetoder og -prosesser samt dokumentasjon av prosessene.
 
 Standarden omfatter ikke:
 
-** Krav til kvalitet på produktene. Dette er beskrevet i produktspesifikasjonene for det enkelte produkt, for eksempel FKB-Bygning 5.1.1. 
+* Krav til kvalitet på produktene. Dette er beskrevet i produktspesifikasjonene for det enkelte produkt, for eksempel FKB-Bygning 5.1.1. 
 
-** Hvordan produktene skal kontrolleres. Dette er beskrevet i standarden Geodatakvalitet <<GK>>.
+* Hvordan produktene skal kontrolleres. Dette er beskrevet i standarden Geodatakvalitet <<GK>>.
 
-** Innmåling av eiendomsgrenser (matrikkelenhetsgrenser) og ledninger behandles ikke i denne standarden. I stedet vises det til standardene Stedfesting av matrikkelenhets- og råderettsgrenser, Norm for ledningskart og Norm for VA-ledningskartverk.
+* Innmåling av eiendomsgrenser (matrikkelenhetsgrenser) og ledninger behandles ikke i denne standarden. I stedet vises det til standardene Stedfesting av matrikkelenhets- og råderettsgrenser, Norm for ledningskart og Norm for VA-ledningskartverk.
