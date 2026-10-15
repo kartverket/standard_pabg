@@ -95,7 +95,7 @@ Med stedfestingsnøyaktighet menes hvor godt stedfestingen til et objekt samsvar
 |====================
 |Kvalitetselement|Beskrivelse 
 
-|Absolutt stedfestingsnøyaktighet| Absolutt stedfestingsnøyaktighet deles inn i tre kvalitetsmål: Systematisk avvik, tilfeldig variasjon og maksimalt avvik.
+|Absolutt stedfestingsnøyaktighet a| Absolutt stedfestingsnøyaktighet deles inn i tre kvalitetsmål: Systematisk avvik, tilfeldig variasjon og maksimalt avvik.
 
 
 *Kvalitetsmålet systematisk avvik* baserer seg på avvik mellom senter punktsky og punktskyens sanne verdi, målt i enten i høyde (Z), grunnriss (XY), eller 3D (XYZ). Dette gitt i prosjektets referanseramme. Den midlere verdien av de målte avvikene gir det systematiske avviket. Kvalitetsmålet følger standarden Geodatakvalitet <<GK>>.
