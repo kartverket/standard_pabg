@@ -6,5 +6,5 @@
 [#GK]
 *[GK]*: https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet[Geodatakvalitet]
 
-[#NS-EN ISO 9000]
-*[NS-EN ISO 9000]*: https://online.standards.no/nb/ns-en-iso-9000-2026[Kvalitetsledelse]
+[#NS-EN-ISO-9000]
+*[NS-EN ISO 9000]*: https://online.standard.no/nb/ns-en-iso-9000-2026[Kvalitetsledelse]
