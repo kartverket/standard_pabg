@@ -268,6 +268,7 @@ Absolutt nøyaktighet til punktskyen i vertikaldomet etterprøves ved hjelp av l
 ^|0,5x0,5 ^|5 ^|Fra 80 punkt/m^2^
 |===
 
+====
 
 .Kontrollflate - punkttetthet fra 2 punkt/m^2^ (Blågrønt felt viser buffersonen, røde prikker er innmålte punkt).
 [#imgKontrollflateUnder]
@@ -284,7 +285,7 @@ image::figurer/Kap7_KontrollflateOver4.png["Kontrollflater over 3 punkt/m^2^",40
 //[caption="Figure 8:"]
 image::figurer/Kap7_KontrollflateOver80.png["Kontrollflater over 70 punkt/m^2^",250,align="center"]
 
-====
+
 
 :xrefstyle: full
 
@@ -331,7 +332,7 @@ Som et alternativ til innmåling av tradisjonelle kontrollflater, kan hjulsporme
 * Krav til målingenes utstrekning/spredning er likt for kontrollflatemetoden og hjulspormetoden.
 * Ved datainnsamling med hjulspormetoden skal målingene utføres kontinuerlig gjennom prosjektområdet. Dette på en slik måte at hele området er dekket av kontrollmålingenes gyldighetsområder.
 * Nøyaktigheten på hjulspormetoden skal tilsvare nøyaktigheten til kontrollflate metoden.
-* Alle prosjekt skal ha minst en kontrollflate målt med kontrollflatemetoden. Dette for å kontrollere innmålingssystem for hjulspormetoden der denne metodikken er benyttet. Lokasjonen til denne kontrollflaten skal da være i umiddelbar nærhet til hjulspordataene, se <<#imgKontrollflateGyldighetHjulspor>>.
+* Alle prosjekt skal ha minst en kontrollflate målt med kontrollflatemetoden. Dette for å kontrollere innmålingssystem for hjulspormetoden der denne metodikken er benyttet. Lokasjonen til denne kontrollflaten skal da være i umiddelbar nærhet til hjulspordataene, se xref:#imgKontrollflateGyldighetHjulspor[xrefstyle=short].
 * Helningskravet på maksimalt 5 % i <<krav-laser-kontrollflater-antall-og-plassering>> gjelder ikke for hjulspormetoden.
 * Det skal leveres gyldighetsplott for hjulspormetoden.
 
@@ -435,9 +436,9 @@ Laserskanning kan gjerne gjennomføres dersom det er skyer over flyet. Hvis det 
 ==== Prosessering av GNSS/INS-data
 Krav til GNSS/INS-prosessering for laserskanning baserer seg på krav til GNSS/INS-prosessering for Fotogrammetri og det vises til relevante paragrafer i <<kapittel-beregning-av-GNSSINS-data>>. 
 
-Ved avtale er det tillatt å bruke flere sensorer (GNSS, IMU og stripejustering) enn det som er definert i dette kapittelet i posisjon- og orienteringsbestemmelse av punktskya. 
+Ved avtale er det tillatt å bruke flere sensorer (GNSS, IMU og stripejustering) enn det som er definert i dette kapittelet i posisjon- og orienteringsbestemmelse av punktskya. Krav er definert i xref:tab-kravklasse-samtidig-georeferering[xrefstyle=basic].
 
-Samtidig georeferering av flere sensorplattformer som flybildekamera og laserskanner er tillatt ved avtale. Alle kravene for hver sensor skal følges. Det kreves at vinkler og avstander mellom koordinatsystemet til hvert sensorsystem er kjent. Dersom vinkler og avstander mellom koordinatsystemene endres under datafangsten skal denne endringen måles og anvendes i navigasjonsløsningen for hvert enkelt sensorsystem. Hvis det er avvik mellom kravene som stilles for hver sensor, brukes det strengeste kravet.
+//Samtidig georeferering av flere sensorplattformer som flybildekamera og laserskanner er tillatt ved avtale. Alle kravene for hver sensor skal følges. Det kreves at vinkler og avstander mellom koordinatsystemet til hvert sensorsystem er kjent. Dersom vinkler og avstander mellom koordinatsystemene endres under datafangsten skal denne endringen måles og anvendes i navigasjonsløsningen for hvert enkelt sensorsystem. Hvis det er avvik mellom kravene som stilles for hver sensor, brukes det strengeste kravet.
 
 Krav til rapportering er detaljert i <<kapittel-egenkontroll-og-rapportering-fotorapport>>, kategori "GNSS/INS".
 
