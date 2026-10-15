@@ -13,7 +13,7 @@ _MERKNAD 2_: Oppgradering til nyere og bedre standard defineres som noe annet en
 .avvik
 Forskjell fra sann verdi, fra det man antar er den sanne verdi, eller forskjellen mellom to målte verdier for samme størrelse. +
 _Kilde_: <<GK>> +
-_MERKNAD 1_: Innen standardisering defineres vanligvis avvik som mangel på oppfyllelse av et krav <<NS-EN ISO 9000>> . +
+_MERKNAD 1_: Innen standardisering defineres vanligvis avvik som mangel på oppfyllelse av et krav <<NS-EN-ISO-9000>> . +
 _MERKNAD 2_: Avvik er vanlig. Som oftest er de små og skyldes de vanlige målevariasjonene. Men et lite antall av dem kan være store, og noen kan utgjøre grove feil som bør grovfeil-/avviksbehandles. +
 _MERKNAD 3_: Se definisjonen av grov feil, sant avvik, standardavvik, systematisk avvik, tilfeldig avvik og tilfeldig variasjon. +
 _MERKNAD 4_: Det man antar er den sanne verdi, er svært ofte den utjevnede verdi.
@@ -168,7 +168,7 @@ _Kilde_: <<GK>>
 Samling av krav som gjelder for et spesifikt tema eller prosess.
 
 .kvalitet
-I hvilken grad en samling av iboende egenskaper oppfyller krav <<NS-EN ISO 9000>>. +
+I hvilken grad en samling av iboende egenskaper oppfyller krav <<NS-EN-ISO-9000>>. +
 _Kilde_: <<GK>> +
 _MERKNAD_: Engelsk original: degree to which a set of inherent characteristics fulfils requirements.
 
