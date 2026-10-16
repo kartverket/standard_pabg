@@ -1,3 +1,4 @@
+[[kapittel-bibliografi]]
 == Bibliografi
 
 Det er de til enhver tid gjeldende juridiske, faglige og regulative føringer som berører standardens tematikk, som skal benyttes. Listen under viser et utvalg av aktuelle referanser.
@@ -25,7 +26,7 @@ https://lovdata.no/dokument/SF/forskrift/2018-06-22-951[Forskrift om kontroll me
 *[SL]*: https://lovdata.no/dokument/NL/lov/2018-06-01-24[Sikkerhetsloven]
 
 [#ML]
-*[ML]*: https://lovdata.no/dokument/NL/lov/2005-06-17-101/KAPITTEL_8#KAPITTEL_8[Matrikkellova, kapittel 8] – om geodetisk grunnlag og oppmålingsarbeid
+*[ML]*: https://lovdata.no/dokument/NL/lov/2005-06-17-101[Matrikkellova] – om geodetisk grunnlag og oppmålingsarbeid
 
 
 === Faglige referanser
