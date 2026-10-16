@@ -1,0 +1,14 @@
+[appendix]
+[[kapittel-vedlegg-e-liste-over-anbefalinger]]
+== Liste over anbefalinger
+
+<<anbefaling-foto-signalstørrelser>> +
+<<anbefaling-foto-drone-ortofoto-med-rtk>> +
+<<anbefaling-foto-drone-kartkonstruksjon-i-stereo>> +
+<<anbefaling-foto-signalering-i-droneprosjekter>> +
+<<anbefaling-foto-drone-detaljerte-prosjekter>> +
+<<anbefaling-foto-skråbilder-minimum>> +
+<<anbefaling-laser-tverrstriper>> +
+<<anbefaling-laser-utforing-av-laserskanning>> +
+<<anbefaling-mobil-fargelegging-av-punktsky>> +
+
