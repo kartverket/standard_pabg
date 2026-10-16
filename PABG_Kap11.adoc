@@ -1,6 +1,7 @@
 [[kapittel-arkivering-og-sikring]]
 == Arkivering og sikring
 
+////
 [[tab-kravklasse-arkivering-og-sikring]]
 .Kravklasse arkivering og sikring
 [cols="2*",options="header"]
@@ -15,6 +16,7 @@
 |Krav |<<krav-arkiv-kartmateriale-og-geodata>> +
 |Krav |<<krav-arkiv-måledata-og-beregninger>> +
 |===
+////
 
 === Generelle bestemmelser
 Kart og geodata (herunder flybilder (originaler, kopier og digitale opptak), kart (folier, papir) og måledata) er i utgangspunktet offentlig informasjon som skal arkiveres og behandles etter generelle lover og standarder. De viktigste lovene er:
