@@ -7,6 +7,7 @@
 <<krav-landmaling-innmaling-med-totalstasjon>> +
 <<krav-landmaling-instrumentdokumentasjon>> +
 <<krav-landmaling-rapportering-geodetisk-kartlegging>> +
+<<krav-foto-referanserammer-transformasjoner>> +
 <<krav-foto-flyplanlegging>> +
 <<krav-foto-kjentpunktnoyaktighet>> +
 <<krav-foto-kjentpunkt-antall-og-plassering>> +
@@ -84,6 +85,8 @@
 <<krav-mobil-stedfestingsnøyaktighet-ved-mobil-datafangst>> +
 <<krav-mobil-kjentpunkt-og-kontrollpunkt>> +
 <<krav-mobil-dokumentasjon-av-mobil-datafangst>> +
+<<krav-vektor-sensortyper>> +
+<<krav-vektor-referanserammer-transformasjoner>> +
 <<krav-vektor-geometrisk-avvik-og-tverravvik-pilhøyde>> +
 <<krav-vektor-fullstendighet>> +
 <<krav-arkiv-arkivering>> +
