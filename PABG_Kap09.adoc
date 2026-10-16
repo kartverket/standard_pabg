@@ -34,6 +34,13 @@ Ulike datakilder har ulike egenskaper og kvaliteter. Dette kan ha betydning for 
 
 Felles for begge tilnærmingene er at krav til vektorisering følger kravene i registreringsinstruksen gitt for den objekttypen som skal vektoriseres.
 
+====
+[#krav-vektor-referanserammer-transformasjoner,reftext="Krav vektor referanserammer og transformasjoner"]
+*KRAV VEKTOR REFERANSERAMMER OG TRANSFORMASJONER*
+
+* Referanserammer og transformasjoner som er brukt skal følge kravene gitt i <<krav-landmaling-referanserammer-transformasjoner>>.
+
+====
 
 === Kvalitetsparametere ved vektorisering fra punktsky
 Oppnådd kvalitet på vektordata kartlagt fra punktsky/modell vil være påvirket av flere faktorer. Vi kan skille mellom kvalitetselementer knyttet til datagrunnlaget og kvalitetselementer i selve arbeidet med fremstilling av vektordata fra datagrunnlaget. Kvalitetselementene til datagrunnlaget følger angitte elementer gitt av datafangstmetode. Kartlegging fra bildedata følger <<kapittel-kartlegging-med-fotogrammetri>>, punktsky fra bil følger <<kapittel-kartlegging-med-mobil-datafangst>> og punktsky fra luftbåren sensor følger <<kapittel-kartlegging-med-flybåren-laserskanning>> 
