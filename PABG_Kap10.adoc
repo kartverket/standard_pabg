@@ -5,6 +5,7 @@
 De metoder som omtales her, manuell digitalisering og skanning/vektorisering, gir kun x- og y-koordinater. Om dataene i tillegg skal tildeles z-koordinat (høyde), må dette gjennomføres ut fra behov og muligheter.
 I dette kapitlet behandles ikke produksjonsmetoder for etablering av rasterdata (georeferert digitalt kartbilde) som produkt.
 
+////
 [[tab-kravklasse-manuell-digitalisering]]
 .Kravklasse manuell konvertering av analoge kart til digitale vektordata
 [cols="2*",options="header"]
@@ -32,6 +33,7 @@ I dette kapitlet behandles ikke produksjonsmetoder for etablering av rasterdata 
 |Krav |<<krav-digitalisering-gap>>
 |Krav |<<krav-digitalisering-mønster-symbolgjenkjenning>>
 |===
+////
 
 
 === Manuell digitalisering
