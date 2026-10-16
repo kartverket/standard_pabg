@@ -133,6 +133,7 @@ Nytt kapittel om bildekvalitet: <<kapittel-bildekvalitet>> +
 Presisering av bildeblokk, tverrstriper, kontrollkrav ved færre kontrollpunkt enn 5 og nøyaktighetskrav fra nypunkt til punktmålinger i AT. +
 Ved avtale er det tillatt å orientere flybilder og laserskanner samtidig. +
 Selvkalibrering av kamera er tillatt ved avtale. +
+Lagt til en ortofototype (3D ortofoto) fra produktspesifikasjon ortofoto.
 Oppdatert <<kapittel-fotografering-med-drone>> med bruksområder og oppdaterte krav. +
 Nytt kapittel om skråbilder: <<kapittel-skråbilder>> +
 
