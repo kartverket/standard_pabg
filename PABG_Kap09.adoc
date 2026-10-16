@@ -1,6 +1,7 @@
 [[kapittel-vektorisering-fra-punktsky-og-modell]]
 == Vektorisering fra punktsky og modell som metode for etablering av basis geodata
 
+////
 [[tab-kravklasse-vektorisering-fra-punktsky-og-modell]]
 .Kravklasse vektorisering fra punktsky og modell
 [cols="2*",options="header"]
@@ -12,6 +13,7 @@
 |Krav |<<krav-vektor-geometrisk-avvik-og-tverravvik-pilhøyde>> +
 |Krav |<<krav-vektor-fullstendighet>> +
 |===
+////
 
 === Innledning
 Vektorisering fra punktsky og modell kan være en alternativ metode til fotogrammetrisk kartkonstruksjon for fremstilling av vektordata. Metoden er særlig aktuell for punktskyer fra mobil datafangst og drone, men kan også være aktuell for andre datafangstmetoder.
