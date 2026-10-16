@@ -215,11 +215,13 @@ include::PABG_Kap03.adoc[]
 
 include::PABG_Kap04.adoc[]
 
+////
 <<<
 // Kap5 - Kravklasser
 // 
 
 include::PABG_Kap18.adoc[]
+////
 
 <<<
 // Kap5 - Kartlegging med geodetiske metoder
