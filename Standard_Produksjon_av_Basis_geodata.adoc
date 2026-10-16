@@ -285,7 +285,7 @@ include::PABG_Kap13_App2.adoc[]
 // Kap14 - Appendix - Eksempel fly og signaleringsplaner
 include::PABG_Kap14_App3.adoc[]
 
-////
+
 <<<
 // Kap15 - Appendix - Liste over krav
 include::PABG_Kap15_App4.adoc[]
@@ -294,7 +294,7 @@ include::PABG_Kap15_App4.adoc[]
 // Kap16 - Appendix - Liste over anbefalinger
 include::PABG_Kap16_App5.adoc[]
 
-////
+
 <<<
 // Kap17 - Appendix
 [discrete]
