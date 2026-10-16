@@ -164,9 +164,6 @@ Regulært grid med korreksjoner av bildepikslene i et bilde.
 Grenseverdi satt i en produktspesifikasjon, ytelsen til et datasett skal være bedre enn kravet. +
 _Kilde_: <<GK>>
 
-.kravklasse
-Samling av krav som gjelder for et spesifikt tema eller prosess.
-
 .kvalitet
 I hvilken grad en samling av iboende egenskaper oppfyller krav <<NS-EN-ISO-9000>>. +
 _Kilde_: <<GK>> +

@@ -80,7 +80,7 @@ Denne standarden er utarbeidet for å gi en oversikt over aktuell teknologi for 
 
 Standarden er bygd modulært opp i ulike kapitler, hvor hvert kapittel beskriver krav til produksjonsprosess, dokumentasjon og rapportering til ulike dataprodukter, som landmåling, flyfoto, laserskanning, mobil datafangst og vektorisering fra modell. Kravene til hvert dataprodukt er angitt i dataproduktets kapittel.
  
-For å gjøre det lettere å identifisere krav og anbefalinger, har hvert kapittel innledningsvis en oversikt (kravklasse) over hvilke krav og anbefalinger som gjelder for dataproduktet kapittelet omfatter.  Hvert krav og anbefaling er lagt i egne bokser som er navngitt etter dataproduktet og hva kravet gjelder.
+Hvert krav og anbefaling er lagt i egne bokser som er navngitt etter dataproduktet og hva kravet gjelder.
 
 Standarden kan brukes som referansedokument ved inngåelse av avtaler om produksjon av basis geodata. Dersom kravene skal avvikes må dette komme fram av avtalen.
 
@@ -116,11 +116,11 @@ Revisjon av standarden til versjon 3.0 ble startet i 2025.
 ==== Endringer fra versjon 2 til versjon 3
 
 Hele standarden er gjennomgått og det er utført språkvask, formateringsforbedringer og presiseringer der tidligere krav ikke var normativt utformet. Alle krav er flyttet til kravbokser og alle anbefalinger er flyttet inn i anbefalingsbokser.
-Det er lagt til 3 nye kapitler (8, 9 og 12). Vedlegg A Solhøydetabell og Vedlegg D Liste over krav, er fjernet.
+Det er lagt til 3 nye kapitler (8, 9 og 12). Vedlegg A Solhøydetabell er fjernet.
 
 
 *Kapittel 3* +
-Inneholder kun normative referanser. Ikke-normative referanser er flyttet til kapittelet Bibliografi. +
+Inneholder kun normative referanser. Ikke-normative referanser er flyttet til <<kapittel-bibliografi>>. +
 
 *Kapittel 4* +
 Oppdatert lenker til standarder og presisert definisjoner.
@@ -149,14 +149,18 @@ Ved avtale er det tillatt å orientere flybilder og laserskanner samtidig. +
 Nytt kapittel om mobil datafangst: <<kapittel-kartlegging-med-mobil-datafangst>>
 
 *Kapittel 9* +
-Nytt kapittel om vektorisering fra punktsky og modell: <<kapittel-vektorisering-fra-punktsky-og-modell>>
+Nytt kapittel om vektorisering fra punktsky og modell: <<kapittel-vektorisering-fra-punktsky-og-modell>>.
 
 *Kapittel 10* +
 Kapittel 8 i 2.0 versjonen er flyttet til <<kapittel-konvertering-av-analoge-kart-til-digitale-vektordata>>.
 
 *Kapittel 11* +
-Kapittel 9 i 2.0 versjonen er flyttet til <<kapittel-arkivering-og-sikring>>. +
+Kapittel 9 i 2.0 versjonen er flyttet til <<kapittel-arkivering-og-sikring>>. 
 Lover og forskrifter er oppdatert.
+
+*Kapittel 12* +
+Nytt kapittel for referanser som er ikke-normative: <<kapittel-bibliografi>>. +
+
 
 ////
 *Vedlegg A* 
@@ -170,7 +174,10 @@ Vedlegg B i 2.0 versjonen er flyttet til <<kapittel-vedlegg-b-informativt-valg-a
 Vedlegg C i 2.0 versjonen er flyttet til <<kapittel-vedlegg-c-eksempel-fly-og-signaleringsplaner>>.
 
 *Vedlegg C* +
-Vedlegg D i 2.0 versjonen er fjernet og erstattet av kravklasser i kapitlene.
+Vedlegg D i 2.0 versjonen er flyttet til <<kapittel-vedlegg-d-liste-over-krav>>.
+
+*Vedlegg D* +
+Vedlegg D er nytt <<kapittel-liste-over-anbefalinger>>
 
 
 ==== Endringer fra versjon 1 til versjon 2
