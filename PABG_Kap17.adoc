@@ -10,7 +10,7 @@ Det er de til enhver tid gjeldende juridiske, faglige og regulative føringer so
 https://lovdata.no/dokument/SF/forskrift/2018-06-22-951[Forskrift om kontroll med informasjon innhentet med luftbårne sensorsystemer]
 
 [#AL]
-*[AL]*: https://lovdata.no/dokument/NL/lov/2025-06-20-96[Arkivlova] - Lov om dokumenatsjon og arkiv
+*[AL]*: https://lovdata.no/dokument/NL/lov/2025-06-20-96[Arkivlova] - Lov om dokumentasjon og arkiv
 
 [#AF]
 *[AF]*: https://lovdata.no/dokument/SF/forskrift/2025-12-17-2647[Arkivforskrifta]
