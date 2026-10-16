@@ -494,7 +494,7 @@ image::figurer/Kap7_Stripejust.png[Stripejust,400,align="center"]
 ** Oppdragstakers vurdering av resultatet.
 ** Begrunnelse dersom stripejustering ikke påføres.
 ** Stripejustering og datasettets homogenitet skal dokumenteres med
-homogenitetsplott, se <<krav-laser-dokumentasjon-pa-kontroll-av-punktsky>>.
+homogenitetsplott, følger <<krav-laser-dokumentasjon-pa-kontroll-av-punktsky>>.
 
 
 ====
