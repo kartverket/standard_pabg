@@ -49,6 +49,15 @@ Kapittelet avgrenses til å gjelde følgende:
 |===
 ////
 
+====
+[#krav-foto-referanserammer-transformasjoner,reftext="Krav foto referanserammer og transformasjoner"]
+*KRAV FOTO REFERANSERAMMER OG TRANSFORMASJONER*
+
+* Referanserammer og transformasjoner som er brukt skal følge kravene gitt i <<krav-landmaling-referanserammer-transformasjoner>>.
+
+====
+
+
 [[kapittel-fly-og-signalplanlegging]]
 === Fly- og signalplanlegging
 
@@ -154,7 +163,7 @@ For å sikre best mulig bildeorientering og redusere behovet for kjentpunkter, s
 |Innsyn og sammenbinding|Flystripene skal plasseres, og overlappen skal eventuelt økes, slik at det sikres best mulig innsyn i alle områder og god bilde- og stripesammenbinding i områder med mye vann.
 |Sideoverlapp|Sideoverlappen skal i gjennomsnitt ikke være mindre enn avtalt verdi. På høyeste punkt mellom stripene kan det planlegges ned til 5 % sideoverlapp. Lengre strekk med slik marginal sideoverlapp skal ikke forekomme.
 
-Utenfor prosjektområdet er det ikke krav om sideoverlapp mellom parallelle flystriper, men skal hensynstas for å gi tilstrekkelig sammenbinding i prosjektet.
+Utenfor prosjektområdet er det ikke krav om sideoverlapp mellom parallelle flystriper, men skal hensyntas for å gi tilstrekkelig sammenbinding i prosjektet.
 |Lengdeoverlapp|Lengdeoverlappen skal være avtalt verdi overalt i fotograferingsområdet. Det tillates kortere avvik +/- 5 prosentpoeng, som eksempel ved bestilt 80 % overlapp tillates det inntil 75 % eller 85 % overlapp over kortere strekninger.
 |Stereodekning på utsiden av prosjektområdet|For å sikre god stereodekning i hele prosjektområdet skal flystripene forlenges slik at det alltid tas ekstra bilder utenfor avtalt prosjektområde ved flystripestart og flystripeslutt, slik at det er minst en full 60 % stereomodell ut over prosjektområdet. Normalt vil dette utgjøre 3-4 bilder. Det er ikke krav om en slik buffersone ut i vannområder. På langs av fotoretning skal stereodekning på utsiden av prosjektområdet dekke tilsvarende bestilt sideoverlapp. Ved fotografering av enkeltstriper settes krav til stereodekning på utsiden av prosjektområdet til minimum 10 % av stripebredden.
 |Overlapp kryssende striper|I bildeblokker med flere striperetninger skal striper med kryssende retning ha stereodekning over hele bredden til kryssende flystripe.
@@ -265,7 +274,7 @@ Dette kapittelet angir krav og retningslinjer til signalering av kjentpunkter fo
 // og til standarden <<SAT>>.
 
 ==== Lovhjemmel for markarbeider - Matrikkellova
-Tillatelse til utsetting av fastmerker og signaler og rydding for sikt ved offentlige kart- og oppmålingsarbeider er hjemlet i Matrikkellova, §41 _Rett til å utføre oppmålingsarbeid på offentleg og privat grunn._
+Tillatelse til utsetting av fastmerker og signaler og rydding for sikt ved offentlige kart- og oppmålingsarbeider er hjemlet i Matrikkellova <<ML>>, §41 _Rett til å utføre oppmålingsarbeid på offentleg og privat grunn._
 
 Bestemmelsene i §43 om plikt til varsling av grunneiere og brukere skal ivaretas: _"Før oppmålingsarbeid blir sett i verk, skal alle som arbeidet vedkjem, få varsel på ein etter forholda formålstenlig måte. Departementet kan gi forskrift om varsling."_.
 
@@ -1397,7 +1406,7 @@ Et ortofoto er satt sammen av et eller flere flybilder til en ortofotomosaikk.
 
 * Utsnittet nærmest bildenadir skal benyttes i ortofotomosaikken.
 * I de tilfeller der flybilder i tverrstripen er bedre enn de andre flystripene, skal tverrstripebildene brukes i ortofotomosaikken.
-* Bildene skal fargejusteres slik at fargeuttrykket blir homoget i hele ortofotomosaikken.
+* Bildene skal fargejusteres slik at fargeuttrykket blir homogent i hele ortofotomosaikken.
 * Sømlinjer skal ikke gå gjennom bygninger, over broer eller lignende, og sømlinjene skal følge naturlige kanter i terrenget som for eksempel vannkanter.
 
 ====
@@ -1518,6 +1527,7 @@ Ortofoto er ofte så detaljert at det må tas hensyn til GDPR-forordningen <<GDP
 * Beregningsrapporten fra prosesseringsprogramvaren skal leveres og er en del av dokumentasjonen av kvaliteten til prosjektet. 
 * Antall kjentpunkter skal være tilstrekkelig til å oppnå ønsket nøyaktighet.
 * Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt ("sjekkpunkter"). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktighetskrav for innmåling av kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.
+* Ortofotorapport skal følge <<krav-foto-rapportering-ortofoto>>.
 ====
 
 ====
@@ -1528,6 +1538,7 @@ Ortofoto er ofte så detaljert at det må tas hensyn til GDPR-forordningen <<GDP
 * Bildene skal aerotrianguleres i egnet programvare. AT-rapport skal følge <<krav-foto-rapportering-aerotriangulering>>, men måling i stereo (DFA) er ikke nødvendig.
 * Beregningsrapporten fra prosesseringsprogramvaren skal leveres og er en del av dokumentasjonen av kvaliteten til prosjektet.
 * Kontrollen utføres på sluttproduktet (ortofotoet) med minimum 5 uavhengige kontrollpunkt ("sjekkpunkter"). Krav til signalerte/naturlige kontrollpunkt skal stå i forhold til nøyaktighetskravene til sluttproduktet. Eksisterende vektordata og ortofoto kan brukes som uavhengige kontrollpunkt der dette er mulig ut ifra kvalitetskravet til sluttproduktet. Nøyaktighetskrav for innmåling av kontrollpunktene skal være 1/3 av kravet til nøyaktighet til sluttproduktet.
+* Ortofotorapport skal følge <<krav-foto-rapportering-ortofoto>>.
 ====
 
 
@@ -1535,7 +1546,7 @@ Ortofoto er ofte så detaljert at det må tas hensyn til GDPR-forordningen <<GDP
 [#anbefaling-foto-drone-ortofoto-med-rtk,reftext="Anbefaling foto droneortofoto med RTK-drone"]
 *ANBEFALING FOTO DRONEORTOFOTO GNSS MED RTK*
 
-* Kjentpunkter er anbefalt brukt i aerotrinaguleringen. 
+* Kjentpunkter er anbefalt brukt i aerotrianguleringen. 
 * For beste nøyaktighet på ortofotoet er det anbefalt ha tilstrekkelig med signalerte/naturlige kjentpunkt i aerotrianguleringen for å få god nøyaktighet i hele prosjektområdet.
 ====
 
@@ -1842,6 +1853,7 @@ Gjeldene versjon av "Produktspesifikasjon for ortofoto i Norge" <<POF>> må føl
 * Prosjektet skal ha tilstrekkelig med sammenbindingspunkter for å oppnå tilstrekkelig nøyaktighet på ortofotoet.
 * Det skal være minst 6 eller flere sammenbindingspunkter for alle vertikalbilder. Hvis dette ikke er oppfylt for et eller flere vertikalbilder, skal den direkte georefereringa benyttes eller sjekkes for feil. Dette skal dokumenteres i AT-rapporten.
 * AT-rapport skal følge <<krav-foto-rapportering-aerotriangulering>>, men måling i stereo (DFA) er ikke nødvendig.
+* Ortofotorapport skal følge <<krav-foto-rapportering-ortofoto>>.
 
 ====
 
