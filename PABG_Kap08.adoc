@@ -7,6 +7,7 @@ Datainnsamling med mobile lasersystemer (MLS), brukes ofte i kombinasjon med and
 
 Standarden beskriver krav og anbefalinger for å sikre kvaliteten til sluttproduktet. Selve definisjonen av og kravet til sluttproduktene, vil ligge i registreringsinstrukser og produktspesifikasjoner. En viktig målsetting med standarden, er å legge til rette for økt bruk og gjenbruk av data fra MLS-datafangst.
 
+////
 [[tab-kravklasse-kartlegging-med-mobil-datafangst]]
 .Kravklasse kartlegging med mobil datafangst
 [cols="2*",options="header"]
@@ -20,7 +21,7 @@ Standarden beskriver krav og anbefalinger for å sikre kvaliteten til sluttprodu
 |Krav |<<krav-mobil-dokumentasjon-av-mobil-datafangst>> +
 |Anbefaling |<<anbefaling-mobil-fargelegging-av-punktsky>> +
 |===
-
+////
 
 === Omfang
 Kapittelet omfatter mobil datafangst med laserskanner med opsjonelt kamera.
