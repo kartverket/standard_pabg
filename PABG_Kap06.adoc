@@ -183,11 +183,11 @@ Felles for begge alternativene er at det overlappende området skal ligge i et o
 
 .Viser overlapp som er nødvendig for at stripen som går oppover skal være tverrstripe for de 2 andre flystripene. Stereomodellen som lages av de 2 svarte bildeomrissene krysser midten av flybildene i den øverste flystripen. Dermed er alternativ 2 oppfylt.
 [#imgTverrstripe2]
-image::figurer/Kap6_Tverrstripe2.png[Viser overlapp som er nødvendig for at stripen som går oppover skal være tverrstripe for de 2 andre flystripene. Stereomodellen som lages av de 2 svarte bildeomrissene krysser midten av flybildene i den øverste flystripen. Dermed er alternativ 2 oppfylt,400,align="center"]
+image::figurer/Kap6_Tverrstripe2.png[Viser overlapp som er nødvendig for at stripen som går oppover skal være tverrstripe for de 2 andre flystripene. Stereomodellen som lages av de 2 svarte bildeomrissene krysser midten av flybildene i den øverste flystripen. Dermed er alternativ 2 oppfylt,600,align="center"]
 
-.Viser flystriper som er tverrstriper for hverandre. Stereomodellen som lages av de 2 svarte bildeomrissene krysser midten av flybildene i stripen under. Dermed er alternativ 1 oppfylt.
+.De to øverste flystripene er tverrstriper for hverandre. Stereomodellen som lages av de 2 svarte bildeomrissene krysser midten av flybildene i stripen under. Dermed er alternativ 1 oppfylt for de to flystripene.
 [#imgTverrstripe1]
-image::figurer/Kap6_Tverrstripe1.png[Viser flystriper som er tverrstriper for hverandre. Stereomodellen som lages av de 2 svarte bildeomrissene krysser midten av flybildene i stripen under. Dermed er valg 1 oppfylt,400,align="center"]
+image::figurer/Kap6_Tverrstripe1.png[De to øverste flystripene er tverrstriper for hverandre. Stereomodellen som lages av de 2 svarte bildeomrissene krysser midten av flybildene i stripen under. Dermed er alternativ 1 oppfylt for de to flystripene,600,align="center"]
 
 
 ==== Planlegging av kjentpunkt, kontrollpunkt og signalering (signaleringsplan)
