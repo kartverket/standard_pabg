@@ -10,7 +10,7 @@ Laserskanning kan også utføres fra andre plattformer slik som fra drone (UAV),
 
 Krav til produkt og leveranser spesifiseres i nyeste versjon av Produktspesifikasjon Punktsky <<Punktsky>>. For definisjon av kvalitetsmål vises det til standarden Geodatakvalitet <<GK>>.
 
-
+////
 [[tab-kravklasse-laserskanning]]
 .Kravklasse kartlegging med flybåren laserskanning
 [cols="2*",options="header"]
@@ -47,7 +47,7 @@ Krav til produkt og leveranser spesifiseres i nyeste versjon av Produktspesifika
 |Anbefaling |<<anbefaling-laser-tverrstriper>> +
 |Anbefaling |<<anbefaling-laser-utforing-av-laserskanning>> +
 |===
-
+////
 
 ==== Virkemåte
 
@@ -416,8 +416,8 @@ Laserskanning kan gjerne gjennomføres dersom det er skyer over flyet. Hvis det 
 [#krav-laser-utforing-av-laserskanning,reftext="Krav laser utføring av laserskanning"]
 *KRAV LASER UTFØRING AV LASERSKANNING*
 
-* Krav til GNSS/INS-sensor se <<kapittel-krav-til-gnssins>>.
-* Krav til GNSS/INS-datafangst se <<kapittel-krav-til-innsamling-av-gnssimu-data>>.
+* Krav til GNSS/INS-sensor følger <<kapittel-krav-til-gnssins>>.
+* Krav til GNSS/INS-datafangst følger <<kapittel-krav-til-innsamling-av-gnssimu-data>>.
 * Parallelle nabostriper skal som hovedregel flys i motsatt retning for å bestemme eventuelle systematiske avvik mellom stripene.
 * Det skal ikke være fuktighet mellom fly og bakke (snø, regn, tåke eller lavt skydekke).
 ====
@@ -436,7 +436,7 @@ Laserskanning kan gjerne gjennomføres dersom det er skyer over flyet. Hvis det 
 ==== Prosessering av GNSS/INS-data
 Krav til GNSS/INS-prosessering for laserskanning baserer seg på krav til GNSS/INS-prosessering for Fotogrammetri og det vises til relevante paragrafer i <<kapittel-beregning-av-GNSSINS-data>>. 
 
-Ved avtale er det tillatt å bruke flere sensorer (GNSS, IMU og stripejustering) enn det som er definert i dette kapittelet i posisjon- og orienteringsbestemmelse av punktskya. Krav er definert i xref:tab-kravklasse-samtidig-georeferering[xrefstyle=basic].
+Ved avtale er det tillatt å bruke flere sensorer (GNSS, IMU og stripejustering) enn det som er definert i dette kapittelet i posisjon- og orienteringsbestemmelse av punktskya. Krav er definert i <<krav-foto-samtidig-georeferering>>.
 
 //Samtidig georeferering av flere sensorplattformer som flybildekamera og laserskanner er tillatt ved avtale. Alle kravene for hver sensor skal følges. Det kreves at vinkler og avstander mellom koordinatsystemet til hvert sensorsystem er kjent. Dersom vinkler og avstander mellom koordinatsystemene endres under datafangsten skal denne endringen måles og anvendes i navigasjonsløsningen for hvert enkelt sensorsystem. Hvis det er avvik mellom kravene som stilles for hver sensor, brukes det strengeste kravet.
 
