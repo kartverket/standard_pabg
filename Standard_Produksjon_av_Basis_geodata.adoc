@@ -106,7 +106,7 @@ Revisjon av standarden til versjon 3.0 ble startet i 2025.
 |Versjon |Dato|Grunnlag for endringen
 |1.0|Mars 2015|Revisjon av standarden Kart og geodata.
 |2.0|November 2022|Revidere krav til kartlegging slik at standarden ikke utelukker nye kartleggingsmetoder og teknologisk utvikling.
-|3.0|Desember 2026|Oppdatere standarden slik at den inkluderer nye kartleggingsmetoder og teknologisk utvikling.
+|3.0|November 2026|Oppdatere standarden slik at den inkluderer nye kartleggingsmetoder og teknologisk utvikling.
 |====
 
 
