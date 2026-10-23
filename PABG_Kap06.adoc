@@ -1483,11 +1483,11 @@ Egenkontrollen begrenses her til å være en ren visuell kontroll. Geometrisk kv
 ===== Ortofoto
 Målsetting: Innlegging i norgeibilder.no.
 
-Gjeldene versjon av "Produktspesifikasjon for ortofoto i Norge" <<POF>> må følges hvis ortofotoet skal legges inn i norgeibilder.no. 
+Gjeldene versjon av "Produktspesifikasjon for ortofoto i Norge" <<POF>> skal følges hvis ortofotoet legges inn i norgeibilder.no. 
 
-<<krav-foto-drone-ortofoto-uten-rtk>> brukes når bildene er samlet inn med GNSS uten RTK.
+<<krav-foto-drone-ortofoto-uten-rtk>> skal brukes når bildene er samlet inn med GNSS uten RTK.
 
-<<krav-foto-drone-ortofoto-med-rtk>> og <<anbefaling-foto-drone-ortofoto-med-rtk>> brukes når bildene er samlet inn med GNSS med RTK.
+<<krav-foto-drone-ortofoto-med-rtk>> og <<anbefaling-foto-drone-ortofoto-med-rtk>> skal brukes når bildene er samlet inn med GNSS med RTK.
 
 ////
 [[tab-kravklasse-drone-GNSS-uten-RTK]]
