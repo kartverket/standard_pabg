@@ -1487,7 +1487,7 @@ Gjeldene versjon av "Produktspesifikasjon for ortofoto i Norge" <<POF>> må føl
 
 <<krav-foto-drone-ortofoto-uten-rtk>> brukes når bildene er samlet inn med GNSS uten RTK.
 
-<<krav-foto-drone-ortofoto-uten-rtk>> og <<anbefaling-foto-drone-ortofoto-med-rtk>> brukes når bildene er samlet inn med GNSS med RTK.
+<<krav-foto-drone-ortofoto-med-rtk>> og <<anbefaling-foto-drone-ortofoto-med-rtk>> brukes når bildene er samlet inn med GNSS med RTK.
 
 ////
 [[tab-kravklasse-drone-GNSS-uten-RTK]]
