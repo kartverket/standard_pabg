@@ -1,16 +1,10 @@
 == Normative referanser
 
+[#GG]
+*[GG]*: https://sosi.geonorge.no/standarder/Geodetisk_grunnlag_-_koordinatbaserte_referansesystemer_og_kvalitetssikring_av_grunnlagspunkt/1.0/[Geodetisk grunnlag – koordinatbaserte referansesystemer og kvalitetssikring av grunnlagspunkt]
 
-[#FKB]
-*[FKB]*	: https://sosi.geonorge.no/standarder/FKB_generell_del/[SOSI abstrakte spesifikasjoner – FKB generell del 5.0]
+[#GK]
+*[GK]*: https://register.geonorge.no/standarder/sosi/standarder-geografisk-informasjon/geodatakvalitet[Geodatakvalitet]
 
-[#G]
-*[G]* : https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/geodatakvalitet-1.0-standarder-geografisk-informasjon.pdf[Geodatakvalitet, versjon 1.0 2015]
-
-[#GN]
-*[GN]* : https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/grunnlagsnett-1.1-standarder-geografisk-informasjon.pdf[Grunnlagsnett, versjon 1.1 2009]
-
-[#SAT]
-*[SAT]* : https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/satellittbasert-posisjonsbestemmelse-2.1-standarder-geografisk-informasjon.pdf[Satellittbasert posisjonsbestemmelse, versjon 2.1 2009]
-
-<<GN>> og <<SAT>> er utgående standarder og vil bli erstattet av en ny Geodesistandard som er under utarbeidelse. 
+[#NS-EN-ISO-9000]
+*[NS-EN ISO 9000]*: https://online.standard.no/nb/ns-en-iso-9000-2026[Kvalitetsledelse]
