@@ -1,7 +1,7 @@
 :datasett: Produksjon av basis geodata
 :versjon: 3.0
 :versjon-forrige: 2.0
-:publisert: 2026-11-xx
+:publisert: 2026-11-18
 :prodspek-forrige: Standard_Produksjon_av_basis_geodata_{versjon-forrige}.pdf
 
 :encoding: utf-8
